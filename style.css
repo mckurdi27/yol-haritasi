@@ -1,7 +1,3 @@
-/* =========================================
-   TEMEL
-========================================= */
-
 * {
   box-sizing: border-box;
 }
@@ -30,7 +26,6 @@ body {
     );
 
   color: #222;
-
   min-height: 100vh;
 }
 
@@ -55,11 +50,31 @@ body {
 
   margin: 0 auto;
 
-  padding:
-    30px 20px
-    10px;
+  padding: 20px 20px 10px;
 
   text-align: center;
+}
+
+
+/* =========================================
+   ANA SAYFA DİL SEÇİCİ
+========================================= */
+
+#home-language-selector {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin:
+    0 auto 14px;
+
+  min-height: 38px;
 }
 
 
@@ -68,7 +83,6 @@ body {
 ========================================= */
 
 .holy-sites {
-
   position: relative;
 
   width: 100%;
@@ -85,7 +99,6 @@ body {
 ========================================= */
 
 .holy-site {
-
   position: absolute;
 
   display: flex;
@@ -114,11 +127,9 @@ body {
 
 /* =========================================
    KÂBE
-   ÜST ORTA
 ========================================= */
 
 .holy-site-kaaba {
-
   width: 190px;
   height: 145px;
 
@@ -134,11 +145,9 @@ body {
 
 /* =========================================
    AKSA
-   ALT SOL
 ========================================= */
 
 .holy-site-aqsa {
-
   width: 260px;
   height: 165px;
 
@@ -151,11 +160,9 @@ body {
 
 /* =========================================
    NEBEVÎ
-   ALT SAĞ
 ========================================= */
 
 .holy-site-nabawi {
-
   width: 260px;
   height: 165px;
 
@@ -171,7 +178,6 @@ body {
 ========================================= */
 
 .holy-site img {
-
   width: 100%;
   height: 100%;
 
@@ -181,13 +187,9 @@ body {
 }
 
 
-/*
-  Kâbe çizim/PNG ise
-  arka planın görünmesi için contain
-*/
+/* Kâbe */
 
 .holy-site-kaaba img {
-
   object-fit: contain;
 
   padding: 10px;
@@ -195,12 +197,10 @@ body {
 
 
 /* =========================================
-   BAŞLIK
-   İKİ KUTSAL MEKÂNIN ARASINDA
+   ORTA BAŞLIK
 ========================================= */
 
 .roadmap-title {
-
   position: absolute;
 
   left: 50%;
@@ -229,20 +229,14 @@ body {
     rgba(255, 255, 255, 0.95);
 }
 
-
 .roadmap-title div:first-child {
-
   font-size: 24px;
-
 }
 
-
 .roadmap-title div:last-child {
-
   font-size: 30px;
 
   margin-top: 5px;
-
 }
 
 
@@ -251,10 +245,8 @@ body {
 ========================================= */
 
 .home-subtitle {
-
   margin:
-    8px auto
-    20px;
+    8px auto 20px;
 
   font-size: 17px;
 
@@ -269,27 +261,21 @@ body {
 ========================================= */
 
 .days-section {
-
   width: 100%;
 
   max-width: 850px;
 
-  margin:
-    0 auto;
+  margin: 0 auto;
 
   padding:
-    10px 20px
-    40px;
+    10px 20px 40px;
 }
 
-
 .days-section h2 {
-
   text-align: center;
 
   margin:
-    10px 0
-    20px;
+    10px 0 20px;
 
   font-size: 26px;
 }
@@ -300,7 +286,6 @@ body {
 ========================================= */
 
 #days-list {
-
   display: grid;
 
   grid-template-columns:
@@ -312,9 +297,7 @@ body {
   gap: 15px;
 }
 
-
 .day-card {
-
   width: 100%;
 
   border: 0;
@@ -340,9 +323,7 @@ body {
   font-family: inherit;
 }
 
-
 .day-card:hover {
-
   transform:
     translateY(-3px);
 
@@ -351,16 +332,12 @@ body {
     rgba(0, 0, 0, 0.12);
 }
 
-
 .day-card:active {
-
   transform:
     translateY(0);
 }
 
-
 .day-card-title {
-
   font-size: 18px;
 
   font-weight: 700;
@@ -368,9 +345,7 @@ body {
   margin-bottom: 7px;
 }
 
-
 .day-card-subtitle {
-
   font-size: 14px;
 
   line-height: 1.5;
@@ -384,20 +359,16 @@ body {
 ========================================= */
 
 #question-page {
-
   width: 100%;
 
   max-width: 1000px;
 
   margin: 0 auto;
 
-  padding:
-    15px;
+  padding: 15px;
 }
 
-
 .question-day-title {
-
   text-align: center;
 
   margin:
@@ -406,15 +377,11 @@ body {
   font-size: 26px;
 }
 
-
 .question-content {
-
   width: 100%;
 }
 
-
 .question-card {
-
   background: white;
 
   border-radius: 20px;
@@ -432,7 +399,6 @@ body {
 ========================================= */
 
 .language-block {
-
   padding:
     17px 10px;
 
@@ -442,15 +408,11 @@ body {
   line-height: 1.6;
 }
 
-
 .language-block:last-of-type {
-
   border-bottom: 0;
 }
 
-
 .selected-language {
-
   background:
     #faf7ed;
 
@@ -462,9 +424,7 @@ body {
   margin-bottom: 8px;
 }
 
-
 .question-line {
-
   font-weight: 700;
 
   font-size: 17px;
@@ -472,9 +432,7 @@ body {
   margin-bottom: 7px;
 }
 
-
 .answer-line {
-
   font-size: 16px;
 
   color: #444;
@@ -486,7 +444,6 @@ body {
 ========================================= */
 
 .sources {
-
   margin-top: 25px;
 
   padding-top: 18px;
@@ -495,34 +452,26 @@ body {
     2px solid #eeeeee;
 }
 
-
 .sources h3 {
-
   margin:
     0 0 12px;
 
   font-size: 18px;
 }
 
-
 .sources ul {
-
   margin: 0;
 
   padding-left: 22px;
 }
 
-
 .sources li {
-
   margin-bottom: 8px;
 
   line-height: 1.5;
 }
 
-
 .sources a {
-
   color: #1769aa;
 
   font-weight: 600;
@@ -530,9 +479,7 @@ body {
   text-decoration: none;
 }
 
-
 .sources a:hover {
-
   text-decoration: underline;
 }
 
@@ -542,16 +489,13 @@ body {
 ========================================= */
 
 .navigation {
-
   width: 100%;
 
   margin:
     10px 0;
 }
 
-
 .navigation-row {
-
   display: flex;
 
   flex-wrap: wrap;
@@ -561,9 +505,7 @@ body {
   gap: 8px;
 }
 
-
 .navigation button {
-
   border: 0;
 
   border-radius: 10px;
@@ -582,15 +524,11 @@ body {
   font-family: inherit;
 }
 
-
 .navigation button:hover:not(:disabled) {
-
   background: #f4f4f4;
 }
 
-
 .navigation button:disabled {
-
   opacity: 0.4;
 
   cursor: not-allowed;
@@ -599,26 +537,22 @@ body {
 
 /* =========================================
    DİL SEÇİCİ
+   SADECE BAYRAK
 ========================================= */
 
 .language-selector {
-
   display: flex;
 
   flex-wrap: wrap;
 
   justify-content: center;
 
-  gap: 7px;
+  align-items: center;
 
-  margin:
-    10px 0
-    20px;
+  gap: 6px;
 }
 
-
 .language-selector button {
-
   border: 1px solid #ddd;
 
   background: white;
@@ -626,23 +560,44 @@ body {
   border-radius: 10px;
 
   padding:
-    8px 11px;
+    7px 9px;
 
   cursor: pointer;
 
   font-family: inherit;
+
+  font-size: 20px;
+
+  line-height: 1;
+
+  min-width: 42px;
+
+  min-height: 38px;
+
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease,
+    border-color 0.15s ease;
 }
 
+.language-selector button:hover {
+  transform:
+    translateY(-1px);
+
+  background:
+    #fafafa;
+}
 
 .language-selector button.active {
-
   background:
     #eee8d8;
 
   border-color:
     #cfc5ae;
 
-  font-weight: 700;
+  box-shadow:
+    0 2px 8px
+    rgba(0, 0, 0, 0.08);
 }
 
 
@@ -651,7 +606,6 @@ body {
 ========================================= */
 
 footer {
-
   text-align: center;
 
   padding:
@@ -670,28 +624,44 @@ footer {
 @media (max-width: 700px) {
 
   .home-header {
-
-    padding-top: 20px;
+    padding-top: 12px;
 
     padding-left: 10px;
     padding-right: 10px;
   }
 
 
-  .holy-sites {
+  /* 11 bayrağın rahat sığması */
 
+  #home-language-selector {
+    gap: 4px;
+
+    margin-bottom: 8px;
+  }
+
+  #home-language-selector
+  .language-selector button,
+  .language-selector button {
+    min-width: 34px;
+    min-height: 34px;
+
+    padding:
+      5px 6px;
+
+    font-size: 18px;
+  }
+
+
+  .holy-sites {
     height: 365px;
 
     max-width: 390px;
   }
 
 
-  /*
-    KÂBE
-  */
+  /* KÂBE */
 
   .holy-site-kaaba {
-
     width: 135px;
     height: 105px;
 
@@ -699,12 +669,9 @@ footer {
   }
 
 
-  /*
-    AKSA
-  */
+  /* AKSA */
 
   .holy-site-aqsa {
-
     width: 155px;
     height: 125px;
 
@@ -714,12 +681,9 @@ footer {
   }
 
 
-  /*
-    NEBEVÎ
-  */
+  /* NEBEVÎ */
 
   .holy-site-nabawi {
-
     width: 155px;
     height: 125px;
 
@@ -729,26 +693,19 @@ footer {
   }
 
 
-  /*
-    BAŞLIK
-  */
+  /* BAŞLIK */
 
   .roadmap-title {
-
     top: 218px;
 
     width: 150px;
   }
 
-
   .roadmap-title div:first-child {
-
     font-size: 17px;
   }
 
-
   .roadmap-title div:last-child {
-
     font-size: 22px;
 
     margin-top: 3px;
@@ -756,7 +713,6 @@ footer {
 
 
   .home-subtitle {
-
     font-size: 15px;
 
     margin-top: 2px;
@@ -764,27 +720,23 @@ footer {
 
 
   .days-section {
-
     padding-left: 12px;
     padding-right: 12px;
   }
 
 
   #days-list {
-
     grid-template-columns:
       1fr;
   }
 
 
   .question-card {
-
     padding: 14px;
   }
 
 
   .navigation-row {
-
     display: grid;
 
     grid-template-columns:
@@ -793,24 +745,27 @@ footer {
 
 
   .navigation-row button {
-
     width: 100%;
   }
 
 
   .navigation-row button:nth-child(3) {
-
     grid-column:
       1 / -1;
   }
 
 
-  .language-selector button {
+  /* Soru sayfasındaki bayraklar */
 
-    font-size: 13px;
+  #question-page
+  .language-selector button {
+    font-size: 18px;
+
+    min-width: 36px;
+    min-height: 34px;
 
     padding:
-      7px 9px;
+      5px 7px;
   }
 
 }
@@ -822,8 +777,20 @@ footer {
 
 @media (max-width: 360px) {
 
-  .holy-sites {
+  #home-language-selector
+  .language-selector button,
+  .language-selector button {
+    min-width: 30px;
+    min-height: 31px;
 
+    font-size: 16px;
+
+    padding:
+      4px 5px;
+  }
+
+
+  .holy-sites {
     transform:
       scale(0.90);
 
@@ -834,4 +801,4 @@ footer {
       -35px;
   }
 
-}
+   }
