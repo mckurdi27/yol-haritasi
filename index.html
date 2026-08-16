@@ -2,7 +2,6 @@
 <html lang="tr">
 
 <head>
-
   <meta charset="UTF-8">
 
   <meta
@@ -26,12 +25,9 @@
     rel="stylesheet"
     href="style.css"
   >
-
 </head>
 
-
 <body>
-
 
   <!-- =========================================
        ANA SAYFA
@@ -39,18 +35,11 @@
 
   <main id="home-page">
 
-
-    <!-- =====================================
-         ÜST ALAN
-    ====================================== -->
-
     <header class="home-header">
 
-
-      <!-- ===================================
-           DİL SEÇİCİ
-           EN ÜSTTE
-      ==================================== -->
+      <!-- =====================================
+           DİL SEÇİMİ
+      ====================================== -->
 
       <div
         id="home-language-selector"
@@ -59,22 +48,22 @@
       ></div>
 
 
-      <!-- ===================================
+      <!-- =====================================
            KUTSAL MEKÂNLAR
-      ==================================== -->
+           
+           Kâbe   : üstte büyük yatay
+           Aksâ   : sol altta küçük dikey
+           Nebevî : sağ altta küçük dikey
+      ====================================== -->
 
       <div class="holy-sites">
 
-
-        <!-- =================================
-             KÂBE
-             ÜSTTE / BÜYÜK / YATAY
-        ================================== -->
+        <!-- KÂBE -->
 
         <div class="holy-site holy-site-kaaba">
 
           <img
-            src="Images/Kabe.jpg"
+            src="images/Kabe.jpg"
             alt="Kâbe"
             loading="eager"
           >
@@ -82,75 +71,58 @@
         </div>
 
 
+        <!-- MESCİD-İ AKSÂ -->
+
+        <div class="holy-site holy-site-aqsa">
+
+          <img
+            src="images/Aksa.jpg"
+            alt="Mescid-i Aksâ"
+            loading="eager"
+          >
+
+        </div>
+
+
+        <!-- MESCİD-İ NEBEVÎ -->
+
+        <div class="holy-site holy-site-nabawi">
+
+          <img
+            src="images/Nebevi.jpg"
+            alt="Mescid-i Nebevî"
+            loading="eager"
+          >
+
+        </div>
+
+
         <!-- =================================
-             ALT BÖLÜM
+             ORTA BAŞLIK
         ================================== -->
 
-        <div class="bottom-sites">
+        <div class="roadmap-title">
 
-
-          <!-- ===============================
-               AKSA
-               SOLDA / DİKEY
-          ================================ -->
-
-          <div class="holy-site holy-site-aqsa">
-
-            <img
-              src="Images/Aksa.jpg"
-              alt="Mescid-i Aksâ"
-              loading="eager"
-            >
-
+          <div class="roadmap-title-line-1">
+            Bir Müslümanın
           </div>
 
-
-          <!-- ===============================
-               ORTA BAŞLIK
-          ================================ -->
-
-          <div class="roadmap-title">
-
-            <div class="roadmap-title-line">
-              Bir Müslümanın
-            </div>
-
-            <div class="roadmap-title-line">
-              Yol Haritası
-            </div>
-
+          <div class="roadmap-title-line-2">
+            Yol Haritası
           </div>
-
-
-          <!-- ===============================
-               NEBEVÎ
-               SAĞDA / DİKEY
-          ================================ -->
-
-          <div class="holy-site holy-site-nabawi">
-
-            <img
-              src="Images/Nebevi.jpg"
-              alt="Mescid-i Nebevî"
-              loading="eager"
-            >
-
-          </div>
-
 
         </div>
 
       </div>
 
 
-      <!-- ===================================
+      <!-- =====================================
            ALT AÇIKLAMA
-      ==================================== -->
+      ====================================== -->
 
       <p class="home-subtitle">
         İslâm'ı adım adım öğren
       </p>
-
 
     </header>
 
@@ -167,7 +139,6 @@
 
     </section>
 
-
   </main>
 
 
@@ -177,13 +148,10 @@
 
   <main
     id="question-page"
-    style="display:none;"
+    style="display: none;"
   >
 
-
-    <!-- =====================================
-         ÜST NAVİGASYON
-    ====================================== -->
+    <!-- DİL SEÇİCİ + ÜST NAVİGASYON -->
 
     <nav
       id="top-navigation"
@@ -191,9 +159,7 @@
     ></nav>
 
 
-    <!-- =====================================
-         SORU İÇERİĞİ
-    ====================================== -->
+    <!-- SORU İÇERİĞİ -->
 
     <section
       id="question-content"
@@ -201,15 +167,12 @@
     ></section>
 
 
-    <!-- =====================================
-         ALT NAVİGASYON
-    ====================================== -->
+    <!-- ALT NAVİGASYON -->
 
     <nav
       id="bottom-navigation"
       class="navigation"
     ></nav>
-
 
   </main>
 
@@ -235,7 +198,6 @@
     src="app.js"
     defer
   ></script>
-
 
 </body>
 
