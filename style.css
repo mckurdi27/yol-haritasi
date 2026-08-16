@@ -1,3 +1,8 @@
+/* =========================================
+   BİR MÜSLÜMANIN YOL HARİTASI
+   ANA STİL DOSYASI
+========================================= */
+
 * {
   box-sizing: border-box;
 }
@@ -26,6 +31,7 @@ body {
     );
 
   color: #222;
+
   min-height: 100vh;
 }
 
@@ -187,7 +193,9 @@ body {
 }
 
 
-/* Kâbe */
+/* =========================================
+   KÂBE GÖRSELİ
+========================================= */
 
 .holy-site-kaaba img {
   object-fit: contain;
@@ -355,6 +363,21 @@ body {
 
 
 /* =========================================
+   YÜKLENİYOR
+========================================= */
+
+.loading-days {
+  text-align: center;
+
+  color: #777;
+
+  padding: 30px 10px;
+
+  font-size: 16px;
+}
+
+
+/* =========================================
    SORU SAYFASI
 ========================================= */
 
@@ -423,10 +446,23 @@ body {
 
   margin-bottom: 8px;
 }
+
+
+/* =========================================
+   ARAPÇA
+========================================= */
+
 .arabic-language {
   direction: rtl;
+
   text-align: right;
 }
+
+
+/* =========================================
+   SORU
+========================================= */
+
 .question-line {
   font-weight: 700;
 
@@ -434,6 +470,11 @@ body {
 
   margin-bottom: 7px;
 }
+
+
+/* =========================================
+   CEVAP
+========================================= */
 
 .answer-line {
   font-size: 16px;
@@ -642,6 +683,7 @@ footer {
     margin-bottom: 8px;
   }
 
+
   #home-language-selector
   .language-selector button,
   .language-selector button {
@@ -804,4 +846,4 @@ footer {
       -35px;
   }
 
-   }
+}
