@@ -1,6 +1,6 @@
 /* =========================================
    BİR MÜSLÜMANIN YOL HARİTASI
-   9 DİL
+   11 DİL
    APP.JS
 ========================================= */
 
@@ -23,6 +23,11 @@ const LANGS = [
 
   { key: "fr", flag: "🇫🇷", name: "Français" },
   { key: "es", flag: "🇪🇸", name: "Español" },
+
+  // Yeni diller
+  { key: "nl", flag: "🇳🇱", name: "Nederlands" },
+  { key: "it", flag: "🇮🇹", name: "Italiano" },
+
   { key: "ar", flag: "🇸🇦", name: "العربية" }
 ];
 
@@ -145,6 +150,34 @@ const UI = {
     questionCount: "Preguntas"
   },
 
+  nl: {
+    title: "De routekaart van een moslim",
+    subtitle: "Leer de islam stap voor stap",
+    days: "Dagen",
+    previousQuestion: "← Vorige vraag",
+    nextQuestion: "Volgende vraag →",
+    home: "🏠 Home",
+    previousDay: "← Vorige dag",
+    nextDay: "Volgende dag →",
+    source: "📚 Bronnen",
+    openSource: "Bron openen",
+    questionCount: "Vragen"
+  },
+
+  it: {
+    title: "La guida del musulmano",
+    subtitle: "Imparare l'Islam passo dopo passo",
+    days: "Giorni",
+    previousQuestion: "← Domanda precedente",
+    nextQuestion: "Domanda successiva →",
+    home: "🏠 Home",
+    previousDay: "← Giorno precedente",
+    nextDay: "Giorno successivo →",
+    source: "📚 Fonti",
+    openSource: "Apri fonte",
+    questionCount: "Domande"
+  },
+
   ar: {
     title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
     subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
@@ -167,6 +200,10 @@ const UI = {
 
 let selectedLang =
   localStorage.getItem("selectedLang") || "tr";
+
+if (!UI[selectedLang]) {
+  selectedLang = "tr";
+}
 
 let days = [];
 
@@ -192,7 +229,7 @@ async function init() {
 
   /*
     Ana sayfayı hemen göster.
-    JSON beklenmez.
+    JSON dosyalarının yüklenmesini beklemez.
   */
 
   renderHome();
@@ -223,9 +260,9 @@ async function loadDays() {
   const requests = [];
 
   /*
-    Şimdilik 30 günlük proje.
-    365 dosya aramak yerine sadece
-    30 dosya kontrol edilir.
+    30 günlük proje.
+    365 dosya aramak yerine
+    sadece mevcut proje günleri kontrol edilir.
   */
 
   for (
@@ -329,16 +366,9 @@ function renderHome() {
 
 
   /*
-    DİKKAT:
-
-    home-header içeriğini SİLMİYORUZ.
-
-    Böylece index.html içindeki:
-
-    Kabe
-    Mescid-i Aksa
-    Mescid-i Nebevi
-    üçgen tasarımı korunur.
+    INDEX.HTML'deki Kâbe,
+    Aksâ ve Nebevî görsellerine
+    dokunmuyoruz.
   */
 
 
@@ -405,16 +435,6 @@ function renderHome() {
     const title =
       UI[selectedLang].title;
 
-
-    /*
-      Türkçe:
-
-      Bir Müslümanın
-      Yol Haritası
-
-      Diğer dillerde de iki satır
-      oluşturulur.
-    */
 
     const words =
       title
@@ -618,10 +638,8 @@ function renderHome() {
           currentDayIndex =
             index;
 
-
           currentQuestionIndex =
             0;
-
 
           renderQuestion();
         }
@@ -805,19 +823,13 @@ function renderLanguageButtons(
 
 
       /*
-        SADECE BAYRAK
+        SADECE BAYRAK GÖSTERİLİR.
+        Dil adı ekranda görünmez.
       */
 
       button.textContent =
         language.flag;
 
-
-      /*
-        İsim görünmez.
-        Sadece erişilebilirlik
-        ve fare üzerine gelince
-        bilgi için kullanılır.
-      */
 
       button.title =
         language.name;
@@ -856,12 +868,6 @@ function renderLanguageButtons(
           document.documentElement.lang =
             selectedLang;
 
-
-          /*
-            Ana sayfadaysak ana sayfayı,
-            soru sayfasındaysak soru
-            sayfasını yeniden oluştur.
-          */
 
           const questionPage =
             document.querySelector(
@@ -924,7 +930,6 @@ function renderQuestion() {
   home.style.display =
     "none";
 
-
   page.style.display =
     "block";
 
@@ -948,6 +953,11 @@ function renderQuestion() {
     document.querySelector(
       "#question-content"
     );
+
+
+  if (!content) {
+    return;
+  }
 
 
   content.innerHTML = "";
@@ -1090,9 +1100,9 @@ function renderQuestion() {
   );
 
 
-  /*
-    KAYNAKLAR
-  */
+  /* =====================================
+     KAYNAKLAR
+  ===================================== */
 
   if (
     Array.isArray(question.sources) &&
@@ -1128,19 +1138,20 @@ function renderQuestion() {
     );
 
 
-  top.innerHTML = "";
-
-  bottom.innerHTML = "";
-
-
-  top.appendChild(
-    createNavigation()
-  );
+  if (top) {
+    top.innerHTML = "";
+    top.appendChild(
+      createNavigation()
+    );
+  }
 
 
-  bottom.appendChild(
-    createNavigation()
-  );
+  if (bottom) {
+    bottom.innerHTML = "";
+    bottom.appendChild(
+      createNavigation()
+    );
+  }
 
 
   /* =====================================
@@ -1197,10 +1208,13 @@ function addQuestionLanguageSelector() {
       );
 
 
-    page.insertBefore(
-      selector,
-      nav
-    );
+    if (page && nav) {
+
+      page.insertBefore(
+        selector,
+        nav
+      );
+    }
   }
 
 
@@ -1339,4 +1353,357 @@ function createNavigation() {
 
       if (
         currentDayIndex <
-        days.length - 
+        days.length - 1
+      ) {
+
+        currentDayIndex++;
+
+        currentQuestionIndex =
+          0;
+
+        renderQuestion();
+      }
+    };
+
+
+  row.appendChild(
+    previousQuestion
+  );
+
+
+  row.appendChild(
+    nextQuestion
+  );
+
+
+  row.appendChild(
+    home
+  );
+
+
+  row.appendChild(
+    previousDay
+  );
+
+
+  row.appendChild(
+    nextDay
+  );
+
+
+  return row;
+}
+
+
+/* =========================================
+   BUTON OLUŞTUR
+========================================= */
+
+function makeButton(
+  text
+) {
+
+  const button =
+    document.createElement(
+      "button"
+    );
+
+
+  button.type =
+    "button";
+
+
+  button.textContent =
+    text;
+
+
+  return button;
+}
+
+
+/* =========================================
+   KAYNAKLAR
+========================================= */
+
+function renderSources(
+  sources
+) {
+
+  const box =
+    document.createElement(
+      "div"
+    );
+
+
+  box.className =
+    "sources";
+
+
+  const title =
+    document.createElement(
+      "h3"
+    );
+
+
+  title.textContent =
+    UI[selectedLang].source;
+
+
+  box.appendChild(
+    title
+  );
+
+
+  const list =
+    document.createElement(
+      "ul"
+    );
+
+
+  sources.forEach(
+    source => {
+
+      const li =
+        document.createElement(
+          "li"
+        );
+
+
+      let text = "";
+      let url = "";
+
+
+      /*
+        Yeni JSON biçimi:
+
+        {
+          "title": "...",
+          "url": "..."
+        }
+      */
+
+      if (
+        typeof source === "object" &&
+        source !== null
+      ) {
+
+        text =
+          source.title ||
+          source.name ||
+          "Kaynak";
+
+
+        url =
+          source.url ||
+          "";
+
+      } else {
+
+        text =
+          String(source);
+
+
+        const match =
+          text.match(
+            /https?:\/\/[^\s|]+/i
+          );
+
+
+        if (match) {
+
+          url =
+            match[0];
+
+
+          text =
+            text
+              .replace(
+                url,
+                ""
+              )
+              .trim();
+        }
+      }
+
+
+      /*
+        URL JSON'da yoksa
+        bilinen kaynakları otomatik
+        bağlantıya çevirmeyi dene.
+      */
+
+      if (!url) {
+
+        url =
+          getSourceUrl(text);
+      }
+
+
+      if (url) {
+
+        const link =
+          document.createElement(
+            "a"
+          );
+
+
+        link.href =
+          url;
+
+
+        link.target =
+          "_blank";
+
+
+        link.rel =
+          "noopener noreferrer";
+
+
+        link.textContent =
+          text;
+
+
+        link.title =
+          UI[selectedLang].openSource;
+
+
+        li.appendChild(
+          link
+        );
+
+      } else {
+
+        li.textContent =
+          text;
+      }
+
+
+      list.appendChild(
+        li
+      );
+    }
+  );
+
+
+  box.appendChild(
+    list
+  );
+
+
+  return box;
+}
+
+
+/* =========================================
+   KAYNAK URL'LERİ
+========================================= */
+
+function getSourceUrl(
+  source
+) {
+
+  const text =
+    String(source).toLowerCase();
+
+
+  /* =====================================
+     KUR'AN
+  ===================================== */
+
+  const quranMatch =
+    text.match(
+      /(?:kur['’]an|qur['’]?an|coran|corán|коран|коръән)[^0-9]*(\d+)[\s:.-]+(\d+)(?:[-–](\d+))?/i
+    );
+
+
+  if (quranMatch) {
+
+    const surah =
+      quranMatch[1];
+
+
+    const start =
+      quranMatch[2];
+
+
+    return (
+      `https://quran.com/${surah}?startingVerse=${start}`
+    );
+  }
+
+
+  /* =====================================
+     SAHİH MÜSLİM
+  ===================================== */
+
+  if (
+    text.includes("sahih müslim") ||
+    text.includes("sahih muslim")
+  ) {
+
+    return "https://sunnah.com/muslim";
+  }
+
+
+  /* =====================================
+     SAHİH BUHARİ
+  ===================================== */
+
+  if (
+    text.includes("sahih buhari") ||
+    text.includes("sahih buhârî") ||
+    text.includes("sahih bukhari")
+  ) {
+
+    return "https://sunnah.com/bukhari";
+  }
+
+
+  /* =====================================
+     ÖMER NASUHİ BİLMEN
+  ===================================== */
+
+  if (
+    text.includes("ömer nasuhi bilmen")
+  ) {
+
+    return "https://archive.org/search?query=%C3%96mer+Nasuhi+Bilmen+B%C3%BCy%C3%BCk+%C4%B0slam+%C4%B0lmihali";
+  }
+
+
+  /* =====================================
+     PROJE SİTESİ
+  ===================================== */
+
+  if (
+    text.includes("bir müslümanın yol haritası") ||
+    text.includes("akademi")
+  ) {
+
+    return "https://mckurdi27.github.io/yol-haritasi/";
+  }
+
+
+  return "";
+}
+
+
+/* =========================================
+   HATA YAKALAMA
+========================================= */
+
+window.addEventListener(
+  "error",
+  event => {
+
+    console.error(
+      "Yol Haritası JavaScript hatası:",
+      event.error || event.message
+    );
+  }
+);
+
+
+/* =========================================
+   APP.JS SONU
+========================================= */
