@@ -11,7 +11,6 @@
     "es": "Día 1 — El primer paso hacia el Islam",
     "ar": "اليوم الأول — الخطوة الأولى إلى الإسلام"
   },
-
   "daySubtitle": {
     "tr": "İslâm, iman, Allah, Kur'an ve Peygamberimizi tanımak",
     "en": "Learning about Islam, faith, Allah, the Qur'an and our Prophet",
@@ -27,7 +26,6 @@
   "questions": [
     {
       "id": 1,
-      "day": 1,
       "tr": {
         "q": "İslâm nedir?",
         "a": "İslâm, Allah'ın birliğini kabul etmek, O'na teslim olmak ve O'nun bildirdiği şekilde yaşamaktır."
@@ -72,7 +70,6 @@
 
     {
       "id": 2,
-      "day": 1,
       "tr": {
         "q": "Müslüman kimdir?",
         "a": "Allah'a ve O'nun bildirdiği iman esaslarına inanıp İslâm'a teslim olan kişidir."
@@ -113,12 +110,754 @@
         "📖 Kur'an — Hucurât 49:14",
         "📚 Ömer Nasuhi Bilmen — Büyük İslâm İlmihali"
       ]
-    }
+    },
 
-    /*
-      BURADAN SONRA 3–19. SORULAR
-      SENİN GÖNDERDİĞİN İÇERİKLE AYNI YAPIDA
-      "questions" DİZİSİNİN İÇİNDE OLMALI.
-    */
+    {
+      "id": 3,
+      "tr": {
+        "q": "Allah kimdir?",
+        "a": "Allah, bütün varlıkların yaratıcısı, tek ilah ve ibadete layık olan yegâne mabuttur."
+      },
+      "en": {
+        "q": "Who is Allah?",
+        "a": "Allah is the Creator of all existence, the one true God and the only One worthy of worship."
+      },
+      "de": {
+        "q": "Wer ist Allah?",
+        "a": "Allah ist der Schöpfer aller Dinge, der einzige wahre Gott und der Einzige, der der Anbetung würdig ist."
+      },
+      "ru": {
+        "q": "Кто такой Аллах?",
+        "a": "Аллах — Создатель всего сущего, единственный истинный Бог и единственный, кто достоин поклонения."
+      },
+      "ku": {
+        "q": "Xwedê kî ye?",
+        "a": "Xwedê Afirînerê hemû tiştan, Yek Xwedayê rast û tenê yê ku hêjayî îbadetê ye."
+      },
+      "tt": {
+        "q": "Аллаһ кем ул?",
+        "a": "Аллаһ — барлык нәрсәләрнең Барлыкка Китерүчесе, бердәнбер Хак Тәңре һәм гыйбадәткә лаек булган бердәнбер Зат."
+      },
+      "fr": {
+        "q": "Qui est Allah ?",
+        "a": "Allah est le Créateur de toute chose, le seul vrai Dieu et le seul digne d'être adoré."
+      },
+      "es": {
+        "q": "¿Quién es Allah?",
+        "a": "Allah es el Creador de todo, el único Dios verdadero y el único digno de adoración."
+      },
+      "ar": {
+        "q": "مَنْ هُوَ اللَّهُ؟",
+        "a": "اللَّهُ هُوَ خَالِقُ كُلِّ شَيْءٍ، وَالْإِلَهُ الْحَقُّ الْوَاحِدُ، وَالْمَعْبُودُ بِحَقٍّ."
+      },
+      "sources": [
+        "📖 Kur'an — İhlâs 112:1-4",
+        "📖 Kur'an — Bakara 2:255"
+      ]
+    },
+
+    {
+      "id": 4,
+      "tr": {
+        "q": "Allah'ın ortağı var mıdır?",
+        "a": "Hayır. Allah birdir; O'nun hiçbir ortağı ve benzeri yoktur."
+      },
+      "en": {
+        "q": "Does Allah have a partner?",
+        "a": "No. Allah is One; He has no partner and nothing is comparable to Him."
+      },
+      "de": {
+        "q": "Hat Allah einen Teilhaber?",
+        "a": "Nein. Allah ist Einer; Er hat keinen Teilhaber und nichts ist Ihm gleich."
+      },
+      "ru": {
+        "q": "Есть ли у Аллаха сотоварищ?",
+        "a": "Нет. Аллах Един; у Него нет сотоварища, и ничто не подобно Ему."
+      },
+      "ku": {
+        "q": "Ma Xwedê şirîk heye?",
+        "a": "Na. Xwedê yek e; ji bo Wî tu şirîk tune ye û tiştek wekî Wî nîne."
+      },
+      "tt": {
+        "q": "Аллаһның тиңдәше яки шериге бармы?",
+        "a": "Юк. Аллаһ Бер; Аның тиңдәше дә, шериге дә юк."
+      },
+      "fr": {
+        "q": "Allah a-t-Il un associé ?",
+        "a": "Non. Allah est Un ; Il n'a aucun associé et rien ne Lui ressemble."
+      },
+      "es": {
+        "q": "¿Tiene Allah algún socio?",
+        "a": "No. Allah es Uno; no tiene ningún socio y nada se Le parece."
+      },
+      "ar": {
+        "q": "هَلْ لِلَّهِ شَرِيكٌ؟",
+        "a": "لَا. اللَّهُ وَاحِدٌ، لَا شَرِيكَ لَهُ، وَلَيْسَ كَمِثْلِهِ شَيْءٌ."
+      },
+      "sources": [
+        "📖 Kur'an — İhlâs 112:1-4",
+        "📖 Kur'an — Bakara 2:163"
+      ]
+    },
+
+    {
+      "id": 5,
+      "tr": {
+        "q": "Kur'an nedir?",
+        "a": "Kur'an, Allah'ın Peygamberimiz Muhammed'e vahyettiği son ilahî kitaptır."
+      },
+      "en": {
+        "q": "What is the Qur'an?",
+        "a": "The Qur'an is the final divine Book revealed by Allah to our Prophet Muhammad."
+      },
+      "de": {
+        "q": "Was ist der Qur'an?",
+        "a": "Der Qur'an ist das letzte göttliche Buch, das Allah unserem Propheten Muhammad offenbart hat."
+      },
+      "ru": {
+        "q": "Что такое Коран?",
+        "a": "Коран — последняя Божественная Книга, ниспосланная Аллахом нашему Пророку Мухаммаду."
+      },
+      "ku": {
+        "q": "Qur'an çi ye?",
+        "a": "Qur'an pirtûka dawîn a îlahî ye ku Xwedê ji Peyxemberê me Muhammed re daxuyand."
+      },
+      "tt": {
+        "q": "Коръән нәрсә ул?",
+        "a": "Коръән — Аллаһның Пәйгамбәребез Мөхәммәдкә иңдергән соңгы илаһи Китабы."
+      },
+      "fr": {
+        "q": "Qu'est-ce que le Coran ?",
+        "a": "Le Coran est le dernier Livre divin révélé par Allah à notre Prophète Muhammad."
+      },
+      "es": {
+        "q": "¿Qué es el Corán?",
+        "a": "El Corán es el último Libro divino revelado por Allah a nuestro Profeta Muhammad."
+      },
+      "ar": {
+        "q": "مَا هُوَ الْقُرْآنُ؟",
+        "a": "الْقُرْآنُ هُوَ كِتَابُ اللَّهِ الْإِلَهِيُّ الْخَاتَمُ، أَنْزَلَهُ اللَّهُ عَلَى نَبِيِّنَا مُحَمَّدٍ ﷺ."
+      },
+      "sources": [
+        "📖 Kur'an — Bakara 2:2",
+        "📖 Kur'an — Hicr 15:9"
+      ]
+    }     ,
+
+    {
+      "id": 6,
+      "tr": {
+        "q": "Peygamberimiz kimdir?",
+        "a": "Peygamberimiz Hz. Muhammed Mustafa ﷺ'dir. Allah'ın son peygamberidir."
+      },
+      "en": {
+        "q": "Who is our Prophet?",
+        "a": "Our Prophet is Muhammad Mustafa ﷺ. He is the final Prophet of Allah."
+      },
+      "de": {
+        "q": "Wer ist unser Prophet?",
+        "a": "Unser Prophet ist Muhammad Mustafa ﷺ. Er ist der letzte Prophet Allahs."
+      },
+      "ru": {
+        "q": "Кто наш Пророк?",
+        "a": "Наш Пророк — Мухаммад Мустафа ﷺ. Он последний Пророк Аллаха."
+      },
+      "ku": {
+        "q": "Peyxemberê me kî ye?",
+        "a": "Peyxemberê me Muhammed Mustafa ﷺ ye. Ew dawî peyxemberê Xwedê ye."
+      },
+      "tt": {
+        "q": "Пәйгамбәребез кем?",
+        "a": "Пәйгамбәребез — Мөхәммәд Мостафа ﷺ. Ул Аллаһның соңгы Пәйгамбәре."
+      },
+      "fr": {
+        "q": "Qui est notre Prophète ?",
+        "a": "Notre Prophète est Muhammad Mustafa ﷺ. Il est le dernier Prophète d'Allah."
+      },
+      "es": {
+        "q": "¿Quién es nuestro Profeta?",
+        "a": "Nuestro Profeta es Muhammad Mustafa ﷺ. Él es el último Profeta de Allah."
+      },
+      "ar": {
+        "q": "مَنْ هُوَ نَبِيُّنَا؟",
+        "a": "نَبِيُّنَا هُوَ مُحَمَّدٌ الْمُصْطَفَى ﷺ، وَهُوَ خَاتَمُ أَنْبِيَاءِ اللَّهِ."
+      },
+      "sources": [
+        "📖 Kur'an — Ahzâb 33:40",
+        "📖 Kur'an — Fetih 48:29"
+      ]
+    },
+
+    {
+      "id": 7,
+      "tr": {
+        "q": "İman nedir?",
+        "a": "İman, Allah'a, meleklerine, kitaplarına, peygamberlerine, âhiret gününe ve kadere inanıp tasdik etmektir."
+      },
+      "en": {
+        "q": "What is faith?",
+        "a": "Faith is believing in Allah, His angels, His Books, His messengers, the Last Day, and divine decree."
+      },
+      "de": {
+        "q": "Was ist der Glaube?",
+        "a": "Glaube bedeutet, an Allah, Seine Engel, Seine Bücher, Seine Propheten, den Jüngsten Tag und die göttliche Vorherbestimmung zu glauben."
+      },
+      "ru": {
+        "q": "Что такое вера?",
+        "a": "Вера — это вера в Аллаха, Его ангелов, Его Писания, Его посланников, Судный день и предопределение."
+      },
+      "ku": {
+        "q": "Bawerî çi ye?",
+        "a": "Bawerî ew e ku mirov bi Xwedê, milyaketên Wî, pirtûkên Wî, peyxemberên Wî, roja axretê û qederê bawer bike."
+      },
+      "tt": {
+        "q": "Иман нәрсә ул?",
+        "a": "Иман — Аллаһка, Аның фәрештәләренә, китапларына, пәйгамбәрләренә, Ахирәт көненә һәм тәкъдиргә ышану."
+      },
+      "fr": {
+        "q": "Qu'est-ce que la foi ?",
+        "a": "La foi consiste à croire en Allah, en Ses anges, Ses Livres, Ses messagers, au Jour dernier et au destin."
+      },
+      "es": {
+        "q": "¿Qué es la fe?",
+        "a": "La fe consiste en creer en Allah, Sus ángeles, Sus Libros, Sus mensajeros, el Día del Juicio y el destino."
+      },
+      "ar": {
+        "q": "مَا هُوَ الْإِيمَانُ؟",
+        "a": "الْإِيمَانُ هُوَ التَّصْدِيقُ بِاللَّهِ، وَمَلَائِكَتِهِ، وَكُتُبِهِ، وَرُسُلِهِ، وَالْيَوْمِ الْآخِرِ، وَالْقَدَرِ."
+      },
+      "sources": [
+        "📖 Kur'an — Bakara 2:177",
+        "📜 Sahih Müslim — Îman 1"
+      ]
+    },
+
+    {
+      "id": 8,
+      "tr": {
+        "q": "İmanın şartları nelerdir?",
+        "a": "Allah'a, meleklerine, kitaplarına, peygamberlerine, âhiret gününe ve kadere iman etmektir."
+      },
+      "en": {
+        "q": "What are the pillars of faith?",
+        "a": "They are belief in Allah, His angels, His Books, His messengers, the Last Day, and divine decree."
+      },
+      "de": {
+        "q": "Was sind die Glaubensgrundsätze?",
+        "a": "Es sind der Glaube an Allah, Seine Engel, Seine Bücher, Seine Propheten, den Jüngsten Tag und die göttliche Vorherbestimmung."
+      },
+      "ru": {
+        "q": "Каковы основы веры?",
+        "a": "Это вера в Аллаха, Его ангелов, Его Писания, Его посланников, Судный день и предопределение."
+      },
+      "ku": {
+        "q": "Şertên baweriyê çi ne?",
+        "a": "Bawerî bi Xwedê, milyaketên Wî, pirtûkên Wî, peyxemberên Wî, roja axretê û qederê ye."
+      },
+      "tt": {
+        "q": "Иманның шартлары нинди?",
+        "a": "Аллаһка, Аның фәрештәләренә, китапларына, пәйгамбәрләренә, Ахирәт көненә һәм тәкъдиргә иман китерү."
+      },
+      "fr": {
+        "q": "Quels sont les piliers de la foi ?",
+        "a": "Ce sont la foi en Allah, Ses anges, Ses Livres, Ses messagers, au Jour dernier et au destin."
+      },
+      "es": {
+        "q": "¿Cuáles son los pilares de la fe?",
+        "a": "Son creer en Allah, Sus ángeles, Sus Libros, Sus mensajeros, el Día del Juicio y el destino."
+      },
+      "ar": {
+        "q": "مَا أَرْكَانُ الْإِيمَانِ؟",
+        "a": "هِيَ: الْإِيمَانُ بِاللَّهِ، وَمَلَائِكَتِهِ، وَكُتُبِهِ، وَرُسُلِهِ، وَالْيَوْمِ الْآخِرِ، وَالْقَدَرِ."
+      },
+      "sources": [
+        "📜 Sahih Müslim — Îman 1",
+        "📚 Ömer Nasuhi Bilmen — Büyük İslâm İlmihali"
+      ]
+    },
+
+    {
+      "id": 9,
+      "tr": {
+        "q": "İslâm'ın şartları nelerdir?",
+        "a": "Kelime-i şehadet getirmek, namaz kılmak, zekât vermek, Ramazan orucunu tutmak ve gücü yetenlerin haccetmesidir."
+      },
+      "en": {
+        "q": "What are the pillars of Islam?",
+        "a": "They are the testimony of faith, prayer, zakat, fasting Ramadan, and pilgrimage for those who are able."
+      },
+      "de": {
+        "q": "Was sind die fünf Säulen des Islam?",
+        "a": "Das Glaubenszeugnis, das Gebet, die Zakat, das Fasten im Ramadan und die Pilgerfahrt für diejenigen, die dazu fähig sind."
+      },
+      "ru": {
+        "q": "Каковы столпы Ислама?",
+        "a": "Это свидетельство веры, молитва, закят, пост в Рамадан и хадж для тех, кто способен его совершить."
+      },
+      "ku": {
+        "q": "Şertên Îslamê çi ne?",
+        "a": "Şehadet, nimêj, zekat, rojiya Remezanê û hec ji bo kesên ku dikarin."
+      },
+      "tt": {
+        "q": "Исламның шартлары нинди?",
+        "a": "Шәһадәт кәлимәсен әйтү, намаз уку, зәкят бирү, Рамазан уразасын тоту һәм мөмкинлеге булган кешегә хаҗ кылу."
+      },
+      "fr": {
+        "q": "Quels sont les piliers de l'islam ?",
+        "a": "Ce sont la profession de foi, la prière, la zakat, le jeûne du Ramadan et le pèlerinage pour celui qui en a la capacité."
+      },
+      "es": {
+        "q": "¿Cuáles son los pilares del islam?",
+        "a": "Son el testimonio de fe, la oración, el zakat, el ayuno de Ramadán y la peregrinación para quien tenga capacidad."
+      },
+      "ar": {
+        "q": "مَا أَرْكَانُ الْإِسْلَامِ؟",
+        "a": "أَرْكَانُ الْإِسْلَامِ: الشَّهَادَتَانِ، وَإِقَامُ الصَّلَاةِ، وَإِيتَاءُ الزَّكَاةِ، وَصَوْمُ رَمَضَانَ، وَحَجُّ الْبَيْتِ لِمَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا."
+      },
+      "sources": [
+        "📜 Sahih Buhârî — Îman 1",
+        "📜 Sahih Müslim — Îman 19"
+      ]
+    },
+
+    {
+      "id": 10,
+      "tr": {
+        "q": "İnsan neden yaratıldı?",
+        "a": "İnsan Allah'a kulluk etmek, O'nu tanımak ve dünya hayatındaki imtihanını yerine getirmek için yaratılmıştır."
+      },
+      "en": {
+        "q": "Why was the human being created?",
+        "a": "Human beings were created to worship Allah, know Him, and fulfill their test in this worldly life."
+      },
+      "de": {
+        "q": "Warum wurde der Mensch erschaffen?",
+        "a": "Der Mensch wurde erschaffen, um Allah zu dienen, Ihn zu erkennen und seine Prüfung in diesem Leben zu bestehen."
+      },
+      "ru": {
+        "q": "Для чего был создан человек?",
+        "a": "Человек был создан, чтобы поклоняться Аллаху, познать Его и пройти испытание земной жизни."
+      },
+      "ku": {
+        "q": "Mirov ji bo çi hatiye afirandin?",
+        "a": "Mirov ji bo ku Xwedê îbadet bike, Wî nas bike û ceribandina jiyana dinyayê derbas bike hatiye afirandin."
+      },
+      "tt": {
+        "q": "Кеше ни өчен яратылган?",
+        "a": "Кеше Аллаһка гыйбадәт итү, Аны тану һәм дөнья тормышындагы сынауны үтәү өчен яратылган."
+      },
+      "fr": {
+        "q": "Pourquoi l'être humain a-t-il été créé ?",
+        "a": "L'être humain a été créé pour adorer Allah, Le connaître et réussir l'épreuve de cette vie."
+      },
+      "es": {
+        "q": "¿Por qué fue creado el ser humano?",
+        "a": "El ser humano fue creado para adorar a Allah, conocerlo y superar la prueba de esta vida."
+      },
+      "ar": {
+        "q": "لِمَاذَا خُلِقَ الْإِنْسَانُ؟",
+        "a": "خُلِقَ الْإِنْسَانُ لِعِبَادَةِ اللَّهِ، وَمَعْرِفَتِهِ، وَاجْتِيَازِ ابْتِلَاءِ الْحَيَاةِ الدُّنْيَا."
+      },
+      "sources": [
+        "📖 Kur'an — Zâriyât 51:56",
+        "📖 Kur'an — Mülk 67:2"
+      ]
+    },
+
+    {
+      "id": 11,
+      "tr": {
+        "q": "Allah'a nasıl iman edilir?",
+        "a": "Allah'ın varlığına, birliğine, isim ve sıfatlarına O'na layık şekilde inanılır ve yalnız O'na ibadet edilir."
+      },
+      "en": {
+        "q": "How do we believe in Allah?",
+        "a": "We believe in Allah's existence, oneness, names and attributes as befits Him, and worship Him alone."
+      },
+      "de": {
+        "q": "Wie glaubt man an Allah?",
+        "a": "Man glaubt an Allahs Existenz, Seine Einheit sowie Seine Namen und Eigenschaften, wie es Ihm gebührt, und betet nur Ihn an."
+      },
+      "ru": {
+        "q": "Как верить в Аллаха?",
+        "a": "Мы верим в существование и единство Аллаха, в Его имена и качества подобающим Ему образом и поклоняемся только Ему."
+      },
+      "ku": {
+        "q": "Em çawa bi Xwedê bawer dikin?",
+        "a": "Em bi hebûna Xwedê, yekîtiya Wî, nav û sifetên Wî bawer dikin û tenê ji Wî re îbadet dikin."
+      },
+      "tt": {
+        "q": "Аллаһка ничек иман китерелә?",
+        "a": "Аллаһның барлыгына, берлегенә, исемнәренә һәм сыйфатларына Аңа лаек рәвештә ышанабыз һәм бары Аңа гына гыйбадәт кылабыз."
+      },
+      "fr": {
+        "q": "Comment croire en Allah ?",
+        "a": "Nous croyons en l'existence et l'unicité d'Allah, en Ses noms et attributs comme il convient à Sa majesté, et nous L'adorons Lui seul."
+      },
+      "es": {
+        "q": "¿Cómo se cree en Allah?",
+        "a": "Creemos en la existencia y unicidad de Allah, en Sus nombres y atributos como corresponde a Su majestad, y lo adoramos solo a Él."
+      },
+      "ar": {
+        "q": "كَيْفَ نُؤْمِنُ بِاللَّهِ؟",
+        "a": "نُؤْمِنُ بِوُجُودِ اللَّهِ وَوَحْدَانِيَّتِهِ وَأَسْمَائِهِ وَصِفَاتِهِ عَلَى مَا يَلِيقُ بِهِ، وَنَعْبُدُهُ وَحْدَهُ."
+      },
+      "sources": [
+        "📖 Kur'an — İhlâs 112:1-4",
+        "📖 Kur'an — Şûrâ 42:11"
+      ]
+    },
+
+    {
+      "id": 12,
+      "tr": {
+        "q": "Peygamberlere neden inanırız?",
+        "a": "Çünkü Allah, insanlara doğru yolu bildirmek için peygamberler göndermiştir."
+      },
+      "en": {
+        "q": "Why do we believe in the prophets?",
+        "a": "Because Allah sent prophets to guide people to the right path."
+      },
+      "de": {
+        "q": "Warum glauben wir an die Propheten?",
+        "a": "Weil Allah Propheten gesandt hat, um den Menschen den rechten Weg zu zeigen."
+      },
+      "ru": {
+        "q": "Почему мы верим в пророков?",
+        "a": "Потому что Аллах посылал пророков, чтобы направлять людей на прямой путь."
+      },
+      "ku": {
+        "q": "Çima em bi peyxemberan bawer dikin?",
+        "a": "Ji ber ku Xwedê peyxember şandine da ku rêya rast ji mirovan re nîşan bidin."
+      },
+      "tt": {
+        "q": "Ни өчен без пәйгамбәрләргә ышанабыз?",
+        "a": "Чөнки Аллаһ кешеләргә туры юлны күрсәтү өчен пәйгамбәрләр җибәргән."
+      },
+      "fr": {
+        "q": "Pourquoi croyons-nous aux prophètes ?",
+        "a": "Parce qu'Allah a envoyé des prophètes pour guider les hommes vers le droit chemin."
+      },
+      "es": {
+        "q": "¿Por qué creemos en los profetas?",
+        "a": "Porque Allah envió profetas para guiar a las personas por el camino recto."
+      },
+      "ar": {
+        "q": "لِمَاذَا نُؤْمِنُ بِالْأَنْبِيَاءِ؟",
+        "a": "لِأَنَّ اللَّهَ أَرْسَلَ الْأَنْبِيَاءَ لِهَدَايَةِ النَّاسِ إِلَى الصِّرَاطِ الْمُسْتَقِيمِ."
+      },
+      "sources": [
+        "📖 Kur'an — Nahl 16:36",
+        "📖 Kur'an — Enbiyâ 21:25"
+      ]
+    },
+
+    {
+      "id": 13,
+      "tr": {
+        "q": "Âhiret nedir?",
+        "a": "Âhiret, dünya hayatından sonra başlayacak ve insanların yaptıklarından hesaba çekileceği ebedî hayattır."
+      },
+      "en": {
+        "q": "What is the Hereafter?",
+        "a": "The Hereafter is the eternal life that begins after this worldly life, where people will be accountable for their deeds."
+      },
+      "de": {
+        "q": "Was ist das Jenseits?",
+        "a": "Das Jenseits ist das ewige Leben nach dieser Welt, in dem die Menschen für ihre Taten zur Rechenschaft gezogen werden."
+      },
+      "ru": {
+        "q": "Что такое Ахира?",
+        "a": "Ахира — вечная жизнь после этой земной жизни, когда люди будут отвечать за свои дела."
+      },
+      "ku": {
+        "q": "Axret çi ye?",
+        "a": "Axret jiyana herheyî ye ku piştî jiyana dinyayê dest pê dike û mirovan ji kirinên wan tên hesibandin."
+      },
+      "tt": {
+        "q": "Ахирәт нәрсә ул?",
+        "a": "Ахирәт — дөнья тормышыннан соң башланачак һәм кешеләр үз гамәлләре өчен җавап бирәчәк мәңгелек тормыш."
+      },
+      "fr": {
+        "q": "Qu'est-ce que l'Au-delà ?",
+        "a": "L'Au-delà est la vie éternelle après cette vie terrestre, où les êtres humains rendront compte de leurs actes."
+      },
+      "es": {
+        "q": "¿Qué es el Más Allá?",
+        "a": "El Más Allá es la vida eterna después de esta vida, donde las personas rendirán cuentas por sus obras."
+      },
+      "ar": {
+        "q": "مَا هِيَ الْآخِرَةُ؟",
+        "a": "الْآخِرَةُ هِيَ الْحَيَاةُ الْأَبَدِيَّةُ بَعْدَ الْحَيَاةِ الدُّنْيَا، وَفِيهَا يُحَاسَبُ النَّاسُ عَلَى أَعْمَالِهِمْ."
+      },
+      "sources": [
+        "📖 Kur'an — Bakara 2:4",
+        "📖 Kur'an — Zilzâl 99:7-8"
+      ]
+    },
+
+    {
+      "id": 14,
+      "tr": {
+        "q": "Kader nedir?",
+        "a": "Kader, Allah'ın olmuş ve olacak her şeyi ezelî ilmiyle bilmesi ve takdir etmesidir."
+      },
+      "en": {
+        "q": "What is divine decree?",
+        "a": "Divine decree is Allah's eternal knowledge and determination of everything that has happened and will happen."
+      },
+      "de": {
+        "q": "Was ist die göttliche Vorherbestimmung?",
+        "a": "Sie bedeutet, dass Allah mit Seinem ewigen Wissen alles kennt und bestimmt hat, was geschehen ist und geschehen wird."
+      },
+      "ru": {
+        "q": "Что такое предопределение?",
+        "a": "Предопределение означает, что Аллах Своим вечным знанием знает и определяет всё, что произошло и произойдёт."
+      },
+      "ku": {
+        "q": "Qeder çi ye?",
+        "a": "Qeder ew e ku Xwedê bi zanîna xwe ya ezelî hemû tiştên ku bûne û dê bibin dizane û texmîn dike."
+      },
+      "tt": {
+        "q": "Тәкъдир нәрсә ул?",
+        "a": "Тәкъдир — Аллаһның мәңгелек белеме белән булган һәм булачак барлык нәрсәләрне белүе һәм билгеләве."
+      },
+      "fr": {
+        "q": "Qu'est-ce que le destin ?",
+        "a": "Le destin signifie qu'Allah, par Sa science éternelle, connaît et a décrété tout ce qui a eu lieu et aura lieu."
+      },
+      "es": {
+        "q": "¿Qué es el destino?",
+        "a": "El destino significa que Allah, con Su conocimiento eterno, conoce y ha decretado todo lo que ocurrió y ocurrirá."
+      },
+      "ar": {
+        "q": "مَا هُوَ الْقَدَرُ؟",
+        "a": "الْقَدَرُ هُوَ عِلْمُ اللَّهِ الْأَزَلِيُّ بِكُلِّ مَا كَانَ وَمَا سَيَكُونُ، وَتَقْدِيرُهُ لِذَلِكَ."
+      },
+      "sources": [
+        "📖 Kur'an — Kamer 54:49",
+        "📜 Sahih Müslim — Îman 1"
+      ]
+    },
+
+    {
+      "id": 15,
+      "tr": {
+        "q": "İbadet nedir?",
+        "a": "İbadet, Allah'ın razı olduğu söz, davranış ve kulluk şekillerinin bütünüdür."
+      },
+      "en": {
+        "q": "What is worship?",
+        "a": "Worship includes all words, actions and acts of servitude that Allah is pleased with."
+      },
+      "de": {
+        "q": "Was ist Gottesdienst?",
+        "a": "Gottesdienst umfasst alle Worte, Handlungen und Formen der Dienerschaft, mit denen Allah zufrieden ist."
+      },
+      "ru": {
+        "q": "Что такое поклонение?",
+        "a": "Поклонение — это все слова, действия и формы служения, которыми доволен Аллах."
+      },
+      "ku": {
+        "q": "Îbadet çi ye?",
+        "a": "Îbadet hemû gotin, kirin û awayên bendeyîtiyê ne ku Xwedê ji wan razî ye."
+      },
+      "tt": {
+        "q": "Гыйбадәт нәрсә ул?",
+        "a": "Гыйбадәт — Аллаһ риза булган сүзләр, гамәлләр һәм Аңа коллык кылуның төрле рәвешләре."
+      },
+      "fr": {
+        "q": "Qu'est-ce que l'adoration ?",
+        "a": "L'adoration comprend toutes les paroles, actions et formes de servitude qu'Allah agrée."
+      },
+      "es": {
+        "q": "¿Qué es la adoración?",
+        "a": "La adoración comprende todas las palabras, acciones y formas de servidumbre que agradan a Allah."
+      },
+      "ar": {
+        "q": "مَا هِيَ الْعِبَادَةُ؟",
+        "a": "الْعِبَادَةُ هِيَ كُلُّ قَوْلٍ وَفِعْلٍ وَصُورَةٍ مِنْ صُوَرِ الْعُبُودِيَّةِ يُحِبُّهَا اللَّهُ وَيَرْضَاهَا."
+      },
+      "sources": [
+        "📖 Kur'an — Zâriyât 51:56",
+        "📖 Kur'an — Beyyine 98:5"
+      ]
+    },
+
+    {
+      "id": 16,
+      "tr": {
+        "q": "Müslüman için güzel ahlâk neden önemlidir?",
+        "a": "Çünkü İslâm, insanın Allah'a karşı kulluğunun yanında insanlara karşı güzel davranmasını da emreder."
+      },
+      "en": {
+        "q": "Why is good character important for a Muslim?",
+        "a": "Because Islam commands a person not only to worship Allah but also to treat other people well."
+      },
+      "de": {
+        "q": "Warum ist guter Charakter für einen Muslim wichtig?",
+        "a": "Weil der Islam neben der Anbetung Allahs auch einen guten Umgang mit den Menschen fordert."
+      },
+      "ru": {
+        "q": "Почему для мусульманина важен хороший нрав?",
+        "a": "Потому что Ислам велит не только поклоняться Аллаху, но и хорошо относиться к людям."
+      },
+      "ku": {
+        "q": "Çima exlaqê baş ji bo Mislîman girîng e?",
+        "a": "Ji ber ku Îslam tenê îbadeta Xwedê naferz dike, lê her weha muameleya baş bi mirovan re jî ferman dike."
+      },
+      "tt": {
+        "q": "Мөселман өчен күркәм әхлак ни өчен мөһим?",
+        "a": "Чөнки Ислам Аллаһка гыйбадәт итү белән бергә кешеләр белән яхшы мөгамәлә кылырга да әмер итә."
+      },
+      "fr": {
+        "q": "Pourquoi le bon caractère est-il important pour un musulman ?",
+        "a": "Parce que l'islam commande non seulement d'adorer Allah, mais aussi de bien traiter les autres."
+      },
+      "es": {
+        "q": "¿Por qué es importante el buen carácter para un musulmán?",
+        "a": "Porque el islam ordena no solo adorar a Allah, sino también tratar bien a las personas."
+      },
+      "ar": {
+        "q": "لِمَاذَا حُسْنُ الْخُلُقِ مُهِمٌّ لِلْمُسْلِمِ؟",
+        "a": "لِأَنَّ الْإِسْلَامَ يَأْمُرُ بِعِبَادَةِ اللَّهِ وَبِحُسْنِ مُعَامَلَةِ النَّاسِ."
+      },
+      "sources": [
+        "📖 Kur'an — Kalem 68:4",
+        "📜 Sahih Buhârî — Edeb 38"
+      ]
+    },
+
+    {
+      "id": 17,
+      "tr": {
+        "q": "Müslüman hayatında Kur'an'ın yeri nedir?",
+        "a": "Kur'an, Müslümanın imanını, ibadetini, ahlâkını ve hayatını yönlendiren temel ilahî rehberdir."
+      },
+      "en": {
+        "q": "What is the place of the Qur'an in a Muslim's life?",
+        "a": "The Qur'an is the fundamental divine guide that directs a Muslim's faith, worship, character and life."
+      },
+      "de": {
+        "q": "Welche Bedeutung hat der Qur'an im Leben eines Muslims?",
+        "a": "Der Qur'an ist die grundlegende göttliche Führung für den Glauben, die Anbetung, den Charakter und das Leben eines Muslims."
+      },
+      "ru": {
+        "q": "Каково место Корана в жизни мусульманина?",
+        "a": "Коран — основное Божественное руководство, направляющее веру, поклонение, нрав и жизнь мусульманина."
+      },
+      "ku": {
+        "q": "Cihê Qur'anê di jiyana Mislîman de çi ye?",
+        "a": "Qur'an rêberiya bingehîn a îlahî ye ku bawerî, îbadet, exlaq û jiyana Mislîman rê dike."
+      },
+      "tt": {
+        "q": "Мөселман тормышында Коръәннең урыны нинди?",
+        "a": "Коръән — мөселманның иманын, гыйбадәтен, әхлагын һәм тормышын юнәлтүче төп илаһи җитәкчелек."
+      },
+      "fr": {
+        "q": "Quelle est la place du Coran dans la vie d'un musulman ?",
+        "a": "Le Coran est la principale guidance divine qui oriente la foi, l'adoration, le caractère et la vie du musulman."
+      },
+      "es": {
+        "q": "¿Cuál es el lugar del Corán en la vida de un musulmán?",
+        "a": "El Corán es la guía divina fundamental que orienta la fe, la adoración, el carácter y la vida del musulmán."
+      },
+      "ar": {
+        "q": "مَا مَكَانَةُ الْقُرْآنِ فِي حَيَاةِ الْمُسْلِمِ؟",
+        "a": "الْقُرْآنُ هُوَ الْهُدَى الْإِلَهِيُّ الْأَسَاسِيُّ الَّذِي يُوَجِّهُ إِيمَانَ الْمُسْلِمِ وَعِبَادَتَهُ وَأَخْلَاقَهُ وَحَيَاتَهُ."
+      },
+      "sources": [
+        "📖 Kur'an — Bakara 2:2",
+        "📖 Kur'an — İsrâ 17:9"
+      ]
+    },
+
+    {
+      "id": 18,
+      "tr": {
+        "q": "Peygamberimizin sünneti nedir?",
+        "a": "Sünnet, Peygamberimizin ﷺ sözleri, davranışları, onayları ve örnek yaşayışıdır."
+      },
+      "en": {
+        "q": "What is the Sunnah of our Prophet?",
+        "a": "The Sunnah consists of the Prophet's ﷺ words, actions, approvals and exemplary way of life."
+      },
+      "de": {
+        "q": "Was ist die Sunna unseres Propheten?",
+        "a": "Die Sunna umfasst die Worte, Handlungen, Billigungen und vorbildliche Lebensweise unseres Propheten ﷺ."
+      },
+      "ru": {
+        "q": "Что такое Сунна нашего Пророка?",
+        "a": "Сунна — это слова, действия, одобрения и примерный образ жизни нашего Пророка ﷺ."
+      },
+      "ku": {
+        "q": "Sunneta Peyxemberê me çi ye?",
+        "a": "Sunnet gotin, kirin, pejirandin û jiyana nimûneyî ya Peyxemberê me ﷺ ye."
+      },
+      "tt": {
+        "q": "Пәйгамбәребезнең сөннәте нәрсә ул?",
+        "a": "Сөннәт — Пәйгамбәребезнең ﷺ сүзләре, гамәлләре, хуплаулары һәм үрнәк тормыш рәвеше."
+      },
+      "fr": {
+        "q": "Qu'est-ce que la Sunna de notre Prophète ?",
+        "a": "La Sunna comprend les paroles, les actes, les approbations et la manière de vivre exemplaire du Prophète ﷺ."
+      },
+      "es": {
+        "q": "¿Qué es la Sunna de nuestro Profeta?",
+        "a": "La Sunna comprende las palabras, acciones, aprobaciones y el ejemplo de vida del Profeta ﷺ."
+      },
+      "ar": {
+        "q": "مَا هِيَ سُنَّةُ نَبِيِّنَا؟",
+        "a": "السُّنَّةُ هِيَ أَقْوَالُ نَبِيِّنَا ﷺ وَأَفْعَالُهُ وَتَقْرِيرَاتُهُ وَسِيرَتُهُ الْمُثْلَى."
+      },
+      "sources": [
+        "📖 Kur'an — Ahzâb 33:21",
+        "📖 Kur'an — Haşr 59:7"
+      ]
+    },
+
+    {
+      "id": 19,
+      "tr": {
+        "q": "Müslümanın hayatındaki temel amaç nedir?",
+        "a": "Allah'ı tanımak ve O'na kulluk etmek, O'nun rızasını aramak, güzel ahlâkla yaşamak ve âhiret için hazırlanmaktır."
+      },
+      "en": {
+        "q": "What is the fundamental purpose of a Muslim's life?",
+        "a": "It is to know Allah and worship Him, seek His pleasure, live with good character and prepare for the Hereafter."
+      },
+      "de": {
+        "q": "Was ist der grundlegende Zweck im Leben eines Muslims?",
+        "a": "Allah zu erkennen und Ihm zu dienen, Sein Wohlgefallen zu suchen, mit gutem Charakter zu leben und sich auf das Jenseits vorzubereiten."
+      },
+      "ru": {
+        "q": "Какова главная цель жизни мусульманина?",
+        "a": "Познать Аллаха и поклоняться Ему, искать Его довольства, жить с благим нравом и готовиться к Ахирату."
+      },
+      "ku": {
+        "q": "Armanca bingehîn a jiyana Mislîman çi ye?",
+        "a": "Nasîna Xwedê û îbadeta Wî, lêgerîna razîbûna Wî, jiyana bi exlaqê baş û amadekariya ji bo axretê ye."
+      },
+      "tt": {
+        "q": "Мөселман тормышының төп максаты нинди?",
+        "a": "Аллаһны тану һәм Аңа гыйбадәт кылу, Аның ризалыгын эзләү, күркәм әхлак белән яшәү һәм Ахирәткә әзерләнү."
+      },
+      "fr": {
+        "q": "Quel est le but fondamental de la vie d'un musulman ?",
+        "a": "Connaître Allah et L'adorer, rechercher Son agrément, vivre avec un bon caractère et se préparer à l'Au-delà."
+      },
+      "es": {
+        "q": "¿Cuál es el propósito fundamental de la vida de un musulmán?",
+        "a": "Conocer a Allah y adorarlo, buscar Su complacencia, vivir con buen carácter y prepararse para el Más Allá."
+      },
+      "ar": {
+        "q": "مَا الْهَدَفُ الْأَسَاسِيُّ فِي حَيَاةِ الْمُسْلِمِ؟",
+        "a": "هُوَ مَعْرِفَةُ اللَّهِ وَعِبَادَتُهُ، وَطَلَبُ رِضَاهُ، وَالْعَيْشُ بِحُسْنِ الْخُلُقِ، وَالِاسْتِعْدَادُ لِلْآخِرَةِ."
+      },
+      "sources": [
+        "📖 Kur'an — Zâriyât 51:56",
+        "📖 Kur'an — Beyyine 98:5"
+      ]
+    }
   ]
 }
