@@ -44,7 +44,7 @@
       },
       "ku": {
         "q": "Îslam çi ye?",
-        "a": "Îslam ew e ku yekîtiya Xwedê qebûl bike, xwe bidiyê û li gorî rêberiya Wî bijî."
+        "a": "Îslam ew e ku yekîtiya Xwedê qebûl bike, xwe bide Wî û li gorî rêberiya Wî bijî."
       },
       "tt": {
         "q": "Ислам нәрсә ул?",
@@ -410,11 +410,61 @@
         "q": "¿Cuáles son los pilares del islam?",
         "a": "Son el testimonio de fe, la oración, el zakat, el ayuno de Ramadán y la peregrinación para quien tenga capacidad."
       },
-      "{
-   ]
+      "ar": {
+        "q": "مَا أَرْكَانُ الْإِسْلَامِ؟",
+        "a": "هِيَ الشَّهَادَتَانِ، وَإِقَامُ الصَّلَاةِ، وَإِيتَاءُ الزَّكَاةِ، وَصَوْمُ رَمَضَانَ، وَحَجُّ الْبَيْتِ لِمَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا."
+      },
+      "sources": [
+        "📜 Sahih Buhârî — Îman 1",
+        "📜 Sahih Müslim — Îman 19"
+      ]
     },
     {
-      "id":11,
+      "id": 10,
+      "day": 1,
+      "tr": {
+        "q": "İbadet nedir?",
+        "a": "İbadet, Allah'ın razı olduğu söz, davranış ve kulluk görevlerini yerine getirmektir."
+      },
+      "en": {
+        "q": "What is worship?",
+        "a": "Worship is carrying out words, actions and acts of servitude that Allah is pleased with."
+      },
+      "de": {
+        "q": "Was ist Gottesdienst?",
+        "a": "Gottesdienst bedeutet, Worte, Taten und Pflichten der Dienerschaft zu erfüllen, mit denen Allah zufrieden ist."
+      },
+      "ru": {
+        "q": "Что такое поклонение?",
+        "a": "Поклонение — это выполнение слов, дел и обязанностей служения, которыми доволен Аллах."
+      },
+      "ku": {
+        "q": "Îbadet çi ye?",
+        "a": "Îbadet ew e ku mirov gotin, kirin û erkên bendeyiyê yên ku Xwedê jê razî ye pêk bîne."
+      },
+      "tt": {
+        "q": "Гыйбадәт нәрсә ул?",
+        "a": "Гыйбадәт — Аллаһ риза булган сүзләрне, гамәлләрне һәм коллык бурычларын үтәү."
+      },
+      "fr": {
+        "q": "Qu'est-ce que l'adoration ?",
+        "a": "L'adoration consiste à accomplir les paroles, les actes et les devoirs de servitude agréés par Allah."
+      },
+      "es": {
+        "q": "¿Qué es la adoración?",
+        "a": "La adoración consiste en realizar palabras, acciones y deberes de servidumbre que agradan a Allah."
+      },
+      "ar": {
+        "q": "مَا هِيَ الْعِبَادَةُ؟",
+        "a": "الْعِبَادَةُ هِيَ الْقِيَامُ بِالْأَقْوَالِ وَالْأَعْمَالِ وَوَاجِبَاتِ الْعُبُودِيَّةِ الَّتِي يُرْضِي اللَّهَ بِهَا."
+      },
+      "sources": [
+        "📖 Kur'an — Zâriyât 51:56",
+        "📖 Kur'an — Beyyine 98:5"
+      ]
+    },
+    {
+      "id": 11,
       "day": 1,
       "tr": {
         "q": "Allah'a nasıl iman edilir?",
@@ -566,7 +616,7 @@
       },
       "ku": {
         "q": "Qeder çi ye?",
-        "a": "Qeder ew e ku Xwedê bi zanîna xwe ya ezelî hemû tiştên ku bûne û dê bibin dizane û texmîn dike."
+        "a": "Qeder ew e ku Xwedê bi zanîna xwe ya ezelî hemû tiştên ku bûne û dê bibin dizane û takdîr dike."
       },
       "tt": {
         "q": "Тәкъдир нәрсә ул?",
@@ -582,4 +632,233 @@
       },
       "ar": {
         "q": "مَا هُوَ الْقَدَرُ؟",
-        "a": "الْقَدَرُ هُوَ عِلْمُ اللَّهِ
+        "a": "الْقَدَرُ هُوَ عِلْمُ اللَّهِ الْأَزَلِيُّ بِكُلِّ مَا كَانَ وَمَا سَيَكُونُ، وَتَقْدِيرُهُ لِذَلِكَ."
+      },
+      "sources": [
+        "📖 Kur'an — Kamer 54:49",
+        "📜 Sahih Müslim — Îman 1"
+      ]
+    },
+    {
+      "id": 15,
+      "day": 1,
+      "tr": {
+        "q": "Dua nedir?",
+        "a": "Dua, kulun Allah'a yönelerek O'ndan yardım, rahmet, bağışlanma ve hayır istemesidir."
+      },
+      "en": {
+        "q": "What is supplication (dua)?",
+        "a": "Dua is turning to Allah and asking Him for help, mercy, forgiveness and goodness."
+      },
+      "de": {
+        "q": "Was ist Dua?",
+        "a": "Dua bedeutet, sich Allah zuzuwenden und Ihn um Hilfe, Barmherzigkeit, Vergebung und Gutes zu bitten."
+      },
+      "ru": {
+        "q": "Что такое дуа?",
+        "a": "Дуа — это обращение к Аллаху с просьбой о помощи, милости, прощении и благе."
+      },
+      "ku": {
+        "q": "Dua çi ye?",
+        "a": "Dua ew e ku bende berê xwe bide Xwedê û ji Wî alîkarî, rehmet, lêborîn û xêr bixwaze."
+      },
+      "tt": {
+        "q": "Дога нәрсә ул?",
+        "a": "Дога — Аллаһка мөрәҗәгать итеп, Аннан ярдәм, рәхмәт, гафу һәм хәер сорау."
+      },
+      "fr": {
+        "q": "Qu'est-ce que l'invocation (dua) ?",
+        "a": "La dua consiste à se tourner vers Allah et à Lui demander aide, miséricorde, pardon et bien."
+      },
+      "es": {
+        "q": "¿Qué es la súplica (dua)?",
+        "a": "La dua es dirigirse a Allah y pedirle ayuda, misericordia, perdón y bien."
+      },
+      "ar": {
+        "q": "مَا هِيَ الدُّعَاءُ؟",
+        "a": "الدُّعَاءُ هُوَ تَوَجُّهُ الْعَبْدِ إِلَى اللَّهِ، وَسُؤَالُهُ الْمَعُونَةَ وَالرَّحْمَةَ وَالْمَغْفِرَةَ وَالْخَيْرَ."
+      },
+      "sources": [
+        "📖 Kur'an — Bakara 2:186",
+        "📖 Kur'an — Mü'min 40:60"
+      ]
+    },
+    {
+      "id": 16,
+      "day": 1,
+      "tr": {
+        "q": "Namaz nedir?",
+        "a": "Namaz, Müslümanın Allah'a kulluğunu ifade eden ve belirli vakitlerde yerine getirilen temel ibadetlerden biridir."
+      },
+      "en": {
+        "q": "What is salah?",
+        "a": "Salah is one of the fundamental acts of worship through which a Muslim expresses servitude to Allah at prescribed times."
+      },
+      "de": {
+        "q": "Was ist das Gebet (Salah)?",
+        "a": "Das Gebet ist eine grundlegende gottesdienstliche Handlung, durch die ein Muslim zu festgelegten Zeiten seine Dienerschaft gegenüber Allah ausdrückt."
+      },
+      "ru": {
+        "q": "Что такое намаз?",
+        "a": "Намаз — одно из основных поклонений, посредством которого мусульманин в установленные времена выражает свою покорность Аллаху."
+      },
+      "ku": {
+        "q": "Nimêj çi ye?",
+        "a": "Nimêj yek ji îbadetên bingehîn e ku Misilman di demên diyarkirî de bendeyiya xwe li ber Xwedê nîşan dide."
+      },
+      "tt": {
+        "q": "Намаз нәрсә ул?",
+        "a": "Намаз — мөселманның билгеләнгән вакытларда Аллаһка коллыгын белдерә торган төп гыйбадәтләрнең берсе."
+      },
+      "fr": {
+        "q": "Qu'est-ce que la prière (salah) ?",
+        "a": "La prière est l'un des actes fondamentaux d'adoration par lesquels le musulman exprime sa servitude envers Allah à des moments déterminés."
+      },
+      "es": {
+        "q": "¿Qué es la oración (salah)?",
+        "a": "La oración es uno de los actos fundamentales de adoración mediante los cuales el musulmán expresa su servidumbre a Allah en momentos determinados."
+      },
+      "ar": {
+        "q": "مَا هِيَ الصَّلَاةُ؟",
+        "a": "الصَّلَاةُ مِنْ أَسَاسِيَّاتِ الْعِبَادَةِ، وَفِيهَا يُعَبِّرُ الْمُسْلِمُ عَنْ عُبُودِيَّتِهِ لِلَّهِ فِي أَوْقَاتٍ مُحَدَّدَةٍ."
+      },
+      "sources": [
+        "📖 Kur'an — Ankebût 29:45",
+        "📖 Kur'an — Nisâ 4:103"
+      ]
+    },
+    {
+      "id": 17,
+      "day": 1,
+      "tr": {
+        "q": "Helâl ve haram ne demektir?",
+        "a": "Helâl, dinen izin verilen; haram ise Allah'ın kesin olarak yasakladığı şeydir."
+      },
+      "en": {
+        "q": "What do halal and haram mean?",
+        "a": "Halal means what is permitted by Islamic law, while haram means what Allah has definitively forbidden."
+      },
+      "de": {
+        "q": "Was bedeuten halal und haram?",
+        "a": "Halal ist das, was religiös erlaubt ist; haram ist das, was Allah ausdrücklich verboten hat."
+      },
+      "ru": {
+        "q": "Что означают халяль и харам?",
+        "a": "Халяль — то, что разрешено религией, а харам — то, что Аллах однозначно запретил."
+      },
+      "ku": {
+        "q": "Helal û haram çi ne?",
+        "a": "Helal ew e ku di dîn de destûrdayî ye; haram jî ew e ku Xwedê bi eşkere qedexe kiriye."
+      },
+      "tt": {
+        "q": "Хәләл һәм хәрам нәрсә аңлата?",
+        "a": "Хәләл — дин тарафыннан рөхсәт ителгән нәрсә, ә хәрам — Аллаһ катгый рәвештә тыйган нәрсә."
+      },
+      "fr": {
+        "q": "Que signifient halal et haram ?",
+        "a": "Halal désigne ce qui est permis par la religion, tandis que haram désigne ce qu'Allah a interdit."
+      },
+      "es": {
+        "q": "¿Qué significan halal y haram?",
+        "a": "Halal es lo permitido por la religión, mientras que haram es lo que Allah ha prohibido claramente."
+      },
+      "ar": {
+        "q": "مَاذَا يَعْنِي الْحَلَالُ وَالْحَرَامُ؟",
+        "a": "الْحَلَالُ هُوَ مَا أَذِنَ بِهِ الشَّرْعُ، وَالْحَرَامُ هُوَ مَا نَهَى اللَّهُ عَنْهُ نَهْيًا قَاطِعًا."
+      },
+      "sources": [
+        "📖 Kur'an — A'râf 7:32",
+        "📖 Kur'an — Mâide 5:87"
+      ]
+    },
+    {
+      "id": 18,
+      "day": 1,
+      "tr": {
+        "q": "Müslümanın güzel ahlâkı neden önemlidir?",
+        "a": "Güzel ahlâk, iman ve ibadetlerin hayata yansımasıdır; Müslüman doğruluk, merhamet, adalet ve güzel davranışlarla yaşar."
+      },
+      "en": {
+        "q": "Why is good character important for a Muslim?",
+        "a": "Good character reflects faith and worship in daily life; a Muslim lives with honesty, mercy, justice and good conduct."
+      },
+      "de": {
+        "q": "Warum ist guter Charakter für einen Muslim wichtig?",
+        "a": "Guter Charakter zeigt, wie sich Glaube und Gottesdienst im Leben widerspiegeln; ein Muslim lebt mit Aufrichtigkeit, Barmherzigkeit, Gerechtigkeit und gutem Verhalten."
+      },
+      "ru": {
+        "q": "Почему хорошие нравственные качества важны для мусульманина?",
+        "a": "Хороший нрав отражает веру и поклонение в повседневной жизни; мусульманин стремится жить с правдивостью, милосердием, справедливостью и добрым поведением."
+      },
+      "ku": {
+        "q": "Çima exlaqê xweş ji bo Misilman girîng e?",
+        "a": "Exlaqê xweş rûmeta bawerî û îbadetê di jiyanê de nîşan dide; Misilman bi rastî, dilovanî, edalet û reftara baş dijî."
+      },
+      "tt": {
+        "q": "Мөселман өчен күркәм әхлак ни өчен мөһим?",
+        "a": "Күркәм әхлак иман һәм гыйбадәтнең тормышта чагылышы; мөселман дөреслек, шәфкать, гаделлек һәм яхшы мөгамәлә белән яшәргә омтыла."
+      },
+      "fr": {
+        "q": "Pourquoi le bon caractère est-il important pour un musulman ?",
+        "a": "Le bon caractère reflète la foi et l'adoration dans la vie quotidienne ; le musulman cherche à vivre avec honnêteté, miséricorde, justice et bonne conduite."
+      },
+      "es": {
+        "q": "¿Por qué es importante el buen carácter para un musulmán?",
+        "a": "El buen carácter refleja la fe y la adoración en la vida diaria; el musulmán procura vivir con honestidad, misericordia, justicia y buen comportamiento."
+      },
+      "ar": {
+        "q": "لِمَاذَا حُسْنُ الْخُلُقِ مُهِمٌّ لِلْمُسْلِمِ؟",
+        "a": "حُسْنُ الْخُلُقِ هُوَ انْعِكَاسُ الْإِيمَانِ وَالْعِبَادَةِ فِي الْحَيَاةِ، وَيَعِيشُ الْمُسْلِمُ بِالصِّدْقِ وَالرَّحْمَةِ وَالْعَدْلِ وَحُسْنِ الْمُعَامَلَةِ."
+      },
+      "sources": [
+        "📖 Kur'an — Kalem 68:4",
+        "📜 Sahih Buhârî — Edeb"
+      ]
+    },
+    {
+      "id": 19,
+      "day": 1,
+      "tr": {
+        "q": "İnsan neden yaratıldı?",
+        "a": "İnsan, Allah'ı tanımak, O'na kulluk etmek, imtihan edilmek ve yeryüzünde sorumluluklarını yerine getirmek için yaratılmıştır."
+      },
+      "en": {
+        "q": "Why was the human being created?",
+        "a": "The human being was created to know Allah, worship Him, be tested, and fulfill responsibilities on earth."
+      },
+      "de": {
+        "q": "Warum wurde der Mensch erschaffen?",
+        "a": "Der Mensch wurde erschaffen, um Allah zu erkennen, Ihm zu dienen, geprüft zu werden und seine Verantwortung auf der Erde zu erfüllen."
+      },
+      "ru": {
+        "q": "Для чего создан человек?",
+        "a": "Человек создан, чтобы познать Аллаха, поклоняться Ему, пройти испытание и выполнять свои обязанности на земле."
+      },
+      "ku": {
+        "q": "Ji bo çi mirov hat afirandin?",
+        "a": "Mirov ji bo ku Xwedê nas bike, ji Wî re îbadet bike, were ceribandin û berpirsiyariyên xwe li ser rûyê erdê pêk bîne hatiye afirandin."
+      },
+      "tt": {
+        "q": "Кеше ни өчен яратылган?",
+        "a": "Кеше Аллаһны тану, Аңа гыйбадәт кылу, сынау үтү һәм җир йөзендәге җаваплылыгын үтәү өчен яратылган."
+      },
+      "fr": {
+        "q": "Pourquoi l'être humain a-t-il été créé ?",
+        "a": "L'être humain a été créé pour connaître Allah, L'adorer, être éprouvé et assumer ses responsabilités sur terre."
+      },
+      "es": {
+        "q": "¿Por qué fue creado el ser humano?",
+        "a": "El ser humano fue creado para conocer a Allah, adorarlo, ser probado y cumplir sus responsabilidades en la tierra."
+      },
+      "ar": {
+        "q": "لِمَاذَا خُلِقَ الْإِنْسَانُ؟",
+        "a": "خُلِقَ الْإِنْسَانُ لِيَعْرِفَ اللَّهَ، وَيَعْبُدَهُ، وَيُبْتَلَى، وَيُؤَدِّيَ مَسْؤُولِيَّاتِهِ فِي الْأَرْضِ."
+      },
+      "sources": [
+        "📖 Kur'an — Zâriyât 51:56",
+        "📖 Kur'an — Bakara 2:30",
+        "📚 Akademi — Bir Müslümanın Yol Haritası"
+      ]
+    }
+  ]
+}
