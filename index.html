@@ -11,14 +11,20 @@
 
   <meta
     name="description"
-    content="Bir Müslümanın Yol Haritası — 9 Dilde İslami Bilgi"
+    content="Bir Müslümanın Yol Haritası — 11 Dilde İslami Bilgi"
   >
 
-  <meta name="theme-color" content="#f5f1e8">
+  <meta
+    name="theme-color"
+    content="#f5f1e8"
+  >
 
   <title>Yol Haritası</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
 </head>
 
 <body>
@@ -31,43 +37,58 @@
 
     <header class="home-header">
 
-      <!-- ÜÇGEN KUTSAL MEKÂNLAR TASARIMI -->
+      <!-- =====================================
+           ANA SAYFA DİL SEÇİMİ
+           Sadece bayraklar gösterilecek.
+      ====================================== -->
+
+      <div
+        id="home-language-selector"
+        class="language-selector"
+        aria-label="Dil seçimi"
+      >
+      </div>
+
+
+      <!-- =====================================
+           ÜÇGEN KUTSAL MEKÂNLAR TASARIMI
+      ====================================== -->
 
       <div class="holy-sites">
 
-        <!-- ÜST: KABE -->
+        <!-- ÜST: KÂBE -->
 
         <div class="holy-site holy-site-kaaba">
 
           <img
             src="images/kabe.jpg"
-            alt="Kabe"
+            alt="Kâbe"
             loading="eager"
           >
 
         </div>
 
 
-        <!-- ALT SOL: MESCİD-İ AKSA -->
+        <!-- ALT SOL: MESCİD-İ AKSÂ -->
 
         <div class="holy-site holy-site-aqsa">
 
           <img
             src="images/Aksa.jpg"
-            alt="Mescid-i Aksa"
+            alt="Mescid-i Aksâ"
             loading="eager"
           >
 
         </div>
 
 
-        <!-- ALT SAĞ: MESCİD-İ NEBEVİ-->
+        <!-- ALT SAĞ: MESCİD-İ NEBEVÎ -->
 
         <div class="holy-site holy-site-nabawi">
 
           <img
             src="images/Nebevi.jpg"
-            alt="Mescid-i Nebevi"
+            alt="Mescid-i Nebevî"
             loading="eager"
           >
 
@@ -100,11 +121,15 @@
     </header>
 
 
-    <!-- GÜNLER -->
+    <!-- =====================================
+         GÜNLER
+    ====================================== -->
 
     <section class="days-section">
 
-      <h2>Günler</h2>
+      <h2>
+        Günler
+      </h2>
 
       <div id="days-list"></div>
 
@@ -119,10 +144,12 @@
 
   <main
     id="question-page"
-    style="display:none;"
+    style="display: none;"
   >
 
-    <!-- DİL SEÇİCİ VE ÜST NAVİGASYON -->
+    <!-- =====================================
+         DİL SEÇİCİ VE ÜST NAVİGASYON
+    ====================================== -->
 
     <nav
       id="top-navigation"
@@ -131,7 +158,9 @@
     </nav>
 
 
-    <!-- SORU İÇERİĞİ -->
+    <!-- =====================================
+         SORU İÇERİĞİ
+    ====================================== -->
 
     <section
       id="question-content"
@@ -140,7 +169,9 @@
     </section>
 
 
-    <!-- ALT NAVİGASYON -->
+    <!-- =====================================
+         ALT NAVİGASYON
+    ====================================== -->
 
     <nav
       id="bottom-navigation"
@@ -151,7 +182,9 @@
   </main>
 
 
-  <!-- FOOTER -->
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
 
   <footer>
 
@@ -162,7 +195,14 @@
   </footer>
 
 
-  <script src="app.js"></script>
+  <!-- =========================================
+       JAVASCRIPT
+  ========================================== -->
+
+  <script
+    src="app.js"
+    defer
+  ></script>
 
 </body>
 
