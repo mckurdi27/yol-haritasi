@@ -1,176 +1,529 @@
-:root {
-    --primary-color: #1b4332;
-    --secondary-color: #2d6a4f;
-    --accent-color: #d8f3dc;
-    --bg-color: #f8f9fa;
-    --card-bg: #ffffff;
-    --text-color: #212529;
-    --border-color: #dee2e6;
-    --highlight-border: #2d6a4f;
-    --highlight-bg: #f4faf6;
-}
+/* =====================================================
+   BİR MÜSLÜMANIN YOL HARİTASI
+   Ana site tasarımı
+===================================================== */
+
+
+/* =====================================================
+   GENEL
+===================================================== */
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+    background: #f5f6f8;
+    color: #18212b;
+
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    line-height: 1.65;
 }
 
-.container {
-    max-width: 900px;
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e1e5e9;
+}
+
+.header-inner {
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 22px 18px;
 }
 
-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 5px;
+.logo {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef3f7;
+    border-radius: 14px;
+
+    font-size: 28px;
 }
 
-header p {
-    font-size: 1.1rem;
-    opacity: 0.9;
-    margin-bottom: 20px;
+.site-header h1 {
+    margin: 0;
+
+    font-size: 25px;
+    font-weight: 750;
+
+    color: #17202a;
 }
 
-.language-selector-wrapper {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 10px 15px;
-    border-radius: 8px;
-    display: inline-block;
-    backdrop-filter: blur(5px);
+.site-header p {
+    margin: 3px 0 0;
+
+    color: #68737e;
+    font-size: 14px;
 }
 
-.language-selector-wrapper label {
-    font-size: 0.95rem;
-    margin-right: 10px;
-    font-weight: 500;
+
+/* =====================================================
+   SEARCH / FILTER PANEL
+===================================================== */
+
+.control-panel {
+    background: #ffffff;
+
+    border-bottom: 1px solid #e1e5e9;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
 }
 
-select#languageSelect {
-    padding: 8px 12px;
-    border-radius: 5px;
-    border: none;
-    font-size: 1rem;
-    background: white;
-    color: var(--text-color);
-    cursor: pointer;
-    font-weight: 600;
+.controls {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    padding: 14px 18px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(250px, 1fr)
+        160px
+        220px;
+
+    gap: 10px;
 }
 
-main {
-    padding: 40px 0;
+.control {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
 }
+
+.control label {
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #596570;
+}
+
+.control input,
+.control select {
+    width: 100%;
+
+    min-height: 44px;
+
+    padding: 9px 12px;
+
+    border: 1px solid #cfd5db;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #18212b;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.control input:focus,
+.control select:focus {
+    border-color: #3978b8;
+
+    box-shadow:
+        0 0 0 3px rgba(57, 120, 184, 0.12);
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+#app {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding:
+        24px 18px
+        50px;
+}
+
+
+/* =====================================================
+   DAY
+===================================================== */
 
 .day-section {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .day-title {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    border-bottom: 3px solid var(--secondary-color);
-    padding-bottom: 10px;
-    margin-bottom: 25px;
+    margin: 0 0 16px;
+
+    padding: 14px 16px;
+
+    background: #e9edf1;
+
+    border-radius: 12px;
+
+    font-size: 21px;
+    font-weight: 750;
+
+    color: #202b35;
 }
+
+
+/* =====================================================
+   QUESTION CARD
+===================================================== */
 
 .question-card {
-    background: var(--card-bg);
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    margin-bottom: 25px;
-    padding: 25px;
-    border: 1px solid var(--border-color);
+    background: #ffffff;
+
+    border: 1px solid #dfe4e8;
+
+    border-radius: 14px;
+
+    margin-bottom: 18px;
+
+    padding: 16px;
+
+    box-shadow:
+        0 2px 7px rgba(20, 30, 40, 0.04);
 }
 
-.lang-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+
+/* =====================================================
+   LANGUAGE BLOCK
+===================================================== */
+
+.language-block {
+    margin: 9px 0;
+
+    padding: 12px 14px;
+
+    background: #fafbfc;
+
+    border-left: 3px solid #d2d8de;
+
+    border-radius: 7px;
 }
 
-.lang-item {
-    padding: 12px 15px;
-    border-radius: 6px;
-    background: #fdfdfd;
-    border: 1px solid #eaeaea;
-    transition: all 0.2s ease;
+
+/*
+   Seçilen dil her sorunun en üstüne
+   JavaScript tarafından taşınır.
+*/
+
+.language-block.selected-language {
+    background: #eef6ff;
+
+    border-left:
+        4px solid #3978b8;
 }
 
-.lang-item.active-lang {
-    border: 2px solid var(--highlight-border);
-    background-color: var(--highlight-bg);
-    box-shadow: 0 0 6px rgba(45, 106, 79, 0.15);
+
+/* =====================================================
+   QUESTION TEXT
+===================================================== */
+
+.question-text {
+    margin: 0 0 5px;
+
+    font-weight: 750;
+
+    color: #1b2732;
 }
 
-.lang-label {
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 4px;
-    display: block;
+.answer-text {
+    margin: 0;
+
+    color: #303b45;
 }
 
-.lang-text {
-    font-size: 1.05rem;
+
+/* =====================================================
+   ARABIC
+===================================================== */
+
+.language-ar {
+    direction: rtl;
+
+    text-align: right;
+
+    font-family:
+        "Noto Naskh Arabic",
+        "Amiri",
+        "Traditional Arabic",
+        serif;
 }
 
-.sources-box {
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px dashed var(--border-color);
+.language-ar .question-text,
+.language-ar .answer-text {
+    direction: rtl;
+
+    text-align: right;
+}
+
+
+/* =====================================================
+   SOURCE AREA
+===================================================== */
+
+.sources {
+    margin-top: 16px;
+
+    padding: 14px 16px;
+
+    background: #f1f3f5;
+
+    border-radius: 11px;
+
+    border: 1px solid #e0e4e7;
 }
 
 .sources-title {
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--secondary-color);
-    margin-bottom: 10px;
+    margin: 0 0 8px;
+
+    font-weight: 750;
+
+    color: #26333e;
 }
 
 .source-item {
-    font-size: 0.9rem;
-    margin-bottom: 6px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 6px 0;
+
+    color: #3d4852;
+
+    font-size: 14px;
 }
 
+
+/* =====================================================
+   SOURCE LINK
+===================================================== */
+
 .source-link {
-    color: var(--secondary-color);
+    display: inline-block;
+
+    margin-left: 6px;
+
+    padding: 2px 7px;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    border: 1px solid #ccd3d9;
+
+    color: #27659b;
+
     text-decoration: none;
-    font-weight: 600;
-    padding: 2px 8px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 4px;
-    font-size: 0.8rem;
-    transition: background 0.2s;
+
+    font-size: 12px;
 }
 
 .source-link:hover {
-    background: var(--secondary-color);
-    color: white;
+    background: #eef6ff;
 }
 
-footer {
-    background: #212529;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+
+/* =====================================================
+   SEARCH RESULT
+===================================================== */
+
+.search-info {
+    margin-bottom: 16px;
+
+    padding: 10px 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe4e8;
+
+    border-radius: 10px;
+
+    color: #596570;
+
+    font-size: 14px;
 }
+
+
+/* =====================================================
+   NO RESULT
+===================================================== */
+
+.empty-state {
+    background: #ffffff;
+
+    border: 1px solid #dfe4e8;
+
+    border-radius: 14px;
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+    color: #68737e;
+}
+
+.empty-state-icon {
+    font-size: 35px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.loading {
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+    color: #68737e;
+}
+
+.loading-icon {
+    font-size: 36px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.site-footer {
+    background: #ffffff;
+
+    border-top: 1px solid #e1e5e9;
+
+    padding: 25px 18px;
+
+    text-align: center;
+
+    color: #596570;
+}
+
+.site-footer p {
+    margin: 3px 0;
+}
+
+.footer-small {
+    font-size: 12px;
+
+    color: #8a949d;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 750px) {
+
+    .site-header h1 {
+        font-size: 21px;
+    }
+
+    .controls {
+        grid-template-columns: 1fr;
+
+        padding: 12px 14px;
+    }
+
+    .control-panel {
+        position: relative;
+    }
+
+    #app {
+        padding:
+            18px 12px
+            40px;
+    }
+
+    .question-card {
+        padding: 11px;
+    }
+
+    .language-block {
+        padding: 11px 12px;
+    }
+
+    .day-title {
+        font-size: 19px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .header-inner {
+        padding: 16px 13px;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+
+        font-size: 24px;
+    }
+
+    .site-header h1 {
+        font-size: 18px;
+    }
+
+    .site-header p {
+        font-size: 12px;
+    }
+
+    .question-text,
+    .answer-text {
+        font-size: 14px;
+    }
+
+        }
