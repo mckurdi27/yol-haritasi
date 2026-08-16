@@ -34,30 +34,42 @@ const OPEN_TEXT = {
   ar: "فَتْحُ الْمَصْدَرِ"
 };
 
-let selectedLang = localStorage.getItem("selectedLang") || "tr";
+let selectedLang =
+  localStorage.getItem("selectedLang") || "tr";
+
 let days = [];
+
+let currentDayIndex =
+  Number(localStorage.getItem("currentDayIndex") || 0);
+
+let currentQuestionIndex =
+  Number(localStorage.getItem("currentQuestionIndex") || 0);
 
 
 /* =========================
    BAŞLAT
 ========================= */
 
-document.addEventListener("DOMContentLoaded", init);
+document.addEventListener(
+  "DOMContentLoaded",
+  init
+);
 
 async function init() {
-  document.documentElement.lang = selectedLang;
 
-  buildLanguageSelector();
-  bindSearch();
+  document.documentElement.lang =
+    selectedLang;
 
   await loadDays();
+
+  buildLanguageSelector();
 
   render();
 }
 
 
 /* =========================
-   DİL SEÇİMİ
+   DİLLER
 ========================= */
 
 function buildLanguageSelector() {
@@ -71,33 +83,41 @@ function buildLanguageSelector() {
 
   container.innerHTML = "";
 
-  LANGS.forEach(lang => {
+  LANGS.forEach(language => {
 
-    const button = document.createElement("button");
+    const button =
+      document.createElement("button");
 
     button.type = "button";
-    button.textContent = lang.label;
-    button.dataset.lang = lang.key;
 
-    if (lang.key === selectedLang) {
-      button.classList.add("active");
-    }
+    button.textContent =
+      language.label;
 
-    button.addEventListener("click", () => {
+    button.className =
+      language.key === selectedLang
+        ? "active"
+        : "";
 
-      selectedLang = lang.key;
+    button.addEventListener(
+      "click",
+      () => {
 
-      localStorage.setItem(
-        "selectedLang",
-        selectedLang
-      );
+        selectedLang =
+          language.key;
 
-      document.documentElement.lang = selectedLang;
+        localStorage.setItem(
+          "selectedLang",
+          selectedLang
+        );
 
-      buildLanguageSelector();
+        document.documentElement.lang =
+          selectedLang;
 
-      render();
-    });
+        buildLanguageSelector();
+
+        render();
+      }
+    );
 
     container.appendChild(button);
   });
@@ -105,45 +125,38 @@ function buildLanguageSelector() {
 
 
 /* =========================
-   GÜNLERİ OTOMATİK YÜKLE
+   GÜNLERİ YÜKLE
 ========================= */
 
 async function loadDays() {
 
-  const loadedDays = [];
+  const loaded = [];
 
-  /*
-    Manifest / days.json kullanmıyoruz.
+  for (
+    let day = 1;
+    day <= 365;
+    day++
+  ) {
 
-    Sistem otomatik olarak:
-
-    data/day-01.json
-    data/day-02.json
-    data/day-03.json
-    ...
-
-    dosyalarını kontrol eder.
-  */
-
-  for (let day = 1; day <= 365; day++) {
-
-    const fileName =
+    const file =
       `data/day-${String(day).padStart(2, "0")}.json`;
 
     try {
 
-      const response = await fetch(
-        fileName,
-        {
-          cache: "no-store"
-        }
-      );
+      const response =
+        await fetch(
+          file,
+          {
+            cache: "no-store"
+          }
+        );
 
       if (!response.ok) {
         continue;
       }
 
-      const data = await response.json();
+      const data =
+        await response.json();
 
       let questions = [];
 
@@ -156,117 +169,46 @@ async function loadDays() {
         Array.isArray(data.questions)
       ) {
 
-        questions = data.questions;
+        questions =
+          data.questions;
       }
 
-      if (questions.length > 0) {
+      if (questions.length) {
 
-        loadedDays.push({
-          day: day,
-          questions: questions
+        loaded.push({
+          day,
+          questions
         });
       }
 
     } catch (error) {
 
-      /*
-        Henüz eklenmemiş günler için
-        hata göstermiyoruz.
-      */
-
+      // Henüz eklenmemiş günleri geç.
     }
   }
 
-  days = loadedDays;
-}
-
-
-/* =========================
-   ARAMA
-========================= */
-
-function bindSearch() {
-
-  const input =
-    document.querySelector("#search") ||
-    document.querySelector("#searchInput") ||
-    document.querySelector("input[type='search']");
-
-  if (!input) return;
-
-  input.addEventListener(
-    "input",
-    () => {
-      render();
-    }
-  );
-}
-
-
-function getSearchValue() {
-
-  const input =
-    document.querySelector("#search") ||
-    document.querySelector("#searchInput") ||
-    document.querySelector("input[type='search']");
-
-  if (!input) {
-    return "";
-  }
-
-  return input.value
-    .trim()
-    .toLocaleLowerCase("tr-TR");
-}
-
-
-/*
-  Arama 9 dilin tamamında yapılır.
-*/
-
-function questionMatchesSearch(question, search) {
-
-  if (!search) {
-    return true;
-  }
-
-  /*
-    Soru numarası ile arama
-  */
+  days = loaded;
 
   if (
-    String(question.id)
-      .includes(search)
+    currentDayIndex >= days.length
   ) {
-    return true;
+
+    currentDayIndex = 0;
   }
 
+  if (
+    days.length &&
+    currentQuestionIndex >=
+      days[currentDayIndex].questions.length
+  ) {
 
-  /*
-    Bütün dillerde soru + cevap
-  */
-
-  for (const lang of LANGS) {
-
-    const data = question[lang.key];
-
-    if (!data) continue;
-
-    const text =
-      `${data.q || ""} ${data.a || ""}`
-      .toLocaleLowerCase("tr-TR");
-
-    if (text.includes(search)) {
-      return true;
-    }
+    currentQuestionIndex = 0;
   }
-
-  return false;
 }
 
 
 /* =========================
-   ANA EKRANI OLUŞTUR
+   ANA EKRAN
 ========================= */
 
 function render() {
@@ -277,126 +219,368 @@ function render() {
     document.querySelector("main") ||
     document.querySelector(".content");
 
-  if (!root) {
-    console.warn(
-      "Ana içerik alanı bulunamadı."
-    );
+  if (!root) return;
+
+  root.innerHTML = "";
+
+  if (!days.length) {
+
+    const message =
+      document.createElement("p");
+
+    message.textContent =
+      "Henüz günlük soru dosyası bulunamadı.";
+
+    root.appendChild(message);
 
     return;
   }
 
-  const search = getSearchValue();
+  const dayData =
+    days[currentDayIndex];
 
-  root.innerHTML = "";
+  const question =
+    dayData.questions[
+      currentQuestionIndex
+    ];
 
-  let totalShown = 0;
+  /* =========================
+     GÜN KONTROLÜ
+  ========================= */
+
+  const dayNavigation =
+    createDayNavigation();
+
+  root.appendChild(
+    dayNavigation
+  );
 
 
   /* =========================
-     GÜNLER
+     GÜN BAŞLIĞI
   ========================= */
 
-  days.forEach(dayData => {
+  const dayTitle =
+    document.createElement("h2");
 
-    const matchingQuestions =
-      dayData.questions.filter(
-        question =>
-          questionMatchesSearch(
-            question,
-            search
-          )
-      );
+  dayTitle.className =
+    "day-title";
 
+  dayTitle.textContent =
+    question.dayTitle ||
+    `${dayData.day}. Gün`;
 
-    if (
-      matchingQuestions.length === 0
-    ) {
-      return;
-    }
+  root.appendChild(
+    dayTitle
+  );
 
 
-    /*
-      GÜN BAŞLIĞI
-    */
+  /* =========================
+     SORU NAVİGASYONU
+  ========================= */
 
-    const daySection =
-      document.createElement("section");
+  const questionNavigation =
+    createQuestionNavigation();
 
-    daySection.className =
-      "day-section";
-
-
-    const dayTitle =
-      document.createElement("h2");
-
-    const title =
-      matchingQuestions[0].dayTitle ||
-      `${dayData.day}. Gün`;
-
-    dayTitle.textContent = title;
-
-    daySection.appendChild(
-      dayTitle
-    );
+  root.appendChild(
+    questionNavigation
+  );
 
 
-    /*
-      SORULAR
-    */
+  /* =========================
+     TEK SORU
+  ========================= */
 
-    matchingQuestions.forEach(
-      question => {
+  const questionCard =
+    renderQuestion(question);
 
-        const questionElement =
-          renderQuestion(question);
-
-        daySection.appendChild(
-          questionElement
-        );
-
-        totalShown++;
-      }
-    );
+  root.appendChild(
+    questionCard
+  );
 
 
-    root.appendChild(
-      daySection
-    );
-  });
+  /* =========================
+     ALT NAVİGASYON
+  ========================= */
+
+  const bottomNavigation =
+    createQuestionNavigation();
+
+  root.appendChild(
+    bottomNavigation
+  );
 
 
   /*
-    SONUÇ YOKSA
+    Her soru değiştiğinde
+    sayfanın başına dön.
   */
 
-  if (totalShown === 0) {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
 
-    const empty =
-      document.createElement("p");
 
-    empty.className =
-      "no-results";
+/* =========================
+   GÜN BUTONLARI
+========================= */
 
-    if (search) {
+function createDayNavigation() {
 
-      empty.textContent =
-        "Sonuç bulunamadı.";
+  const container =
+    document.createElement("div");
 
-    } else {
+  container.className =
+    "day-navigation";
 
-      empty.textContent =
-        "Henüz günlük veri eklenmemiş.";
-    }
 
-    root.appendChild(
-      empty
-    );
+  const previous =
+    document.createElement("button");
+
+  previous.type = "button";
+
+  previous.textContent =
+    "← Önceki Gün";
+
+  previous.disabled =
+    currentDayIndex === 0;
+
+  previous.addEventListener(
+    "click",
+    previousDay
+  );
+
+
+  const indicator =
+    document.createElement("span");
+
+  indicator.className =
+    "day-indicator";
+
+  indicator.textContent =
+    `${days[currentDayIndex].day}. Gün`;
+
+
+  const next =
+    document.createElement("button");
+
+  next.type = "button";
+
+  next.textContent =
+    "Sonraki Gün →";
+
+  next.disabled =
+    currentDayIndex ===
+    days.length - 1;
+
+  next.addEventListener(
+    "click",
+    nextDay
+  );
+
+
+  container.appendChild(
+    previous
+  );
+
+  container.appendChild(
+    indicator
+  );
+
+  container.appendChild(
+    next
+  );
+
+  return container;
+}
+
+
+/* =========================
+   SORU BUTONLARI
+========================= */
+
+function createQuestionNavigation() {
+
+  const container =
+    document.createElement("div");
+
+  container.className =
+    "question-navigation";
+
+
+  const previous =
+    document.createElement("button");
+
+  previous.type = "button";
+
+  previous.textContent =
+    "← Önceki Soru";
+
+  previous.disabled =
+    currentQuestionIndex === 0;
+
+  previous.addEventListener(
+    "click",
+    previousQuestion
+  );
+
+
+  const indicator =
+    document.createElement("span");
+
+  indicator.className =
+    "question-indicator";
+
+  const total =
+    days[currentDayIndex]
+      .questions.length;
+
+  indicator.textContent =
+    `${currentQuestionIndex + 1} / ${total}`;
+
+
+  const next =
+    document.createElement("button");
+
+  next.type = "button";
+
+  next.textContent =
+    "Sonraki Soru →";
+
+  next.disabled =
+    currentQuestionIndex >=
+    total - 1;
+
+  next.addEventListener(
+    "click",
+    nextQuestion
+  );
+
+
+  container.appendChild(
+    previous
+  );
+
+  container.appendChild(
+    indicator
+  );
+
+  container.appendChild(
+    next
+  );
+
+  return container;
+}
+
+
+/* =========================
+   ÖNCEKİ SORU
+========================= */
+
+function previousQuestion() {
+
+  if (
+    currentQuestionIndex > 0
+  ) {
+
+    currentQuestionIndex--;
+
+    savePosition();
+
+    render();
   }
 }
 
 
 /* =========================
-   TEK SORU
+   SONRAKİ SORU
+========================= */
+
+function nextQuestion() {
+
+  const total =
+    days[currentDayIndex]
+      .questions.length;
+
+  if (
+    currentQuestionIndex <
+    total - 1
+  ) {
+
+    currentQuestionIndex++;
+
+    savePosition();
+
+    render();
+  }
+}
+
+
+/* =========================
+   ÖNCEKİ GÜN
+========================= */
+
+function previousDay() {
+
+  if (
+    currentDayIndex > 0
+  ) {
+
+    currentDayIndex--;
+
+    currentQuestionIndex = 0;
+
+    savePosition();
+
+    render();
+  }
+}
+
+
+/* =========================
+   SONRAKİ GÜN
+========================= */
+
+function nextDay() {
+
+  if (
+    currentDayIndex <
+    days.length - 1
+  ) {
+
+    currentDayIndex++;
+
+    currentQuestionIndex = 0;
+
+    savePosition();
+
+    render();
+  }
+}
+
+
+/* =========================
+   POZİSYONU KAYDET
+========================= */
+
+function savePosition() {
+
+  localStorage.setItem(
+    "currentDayIndex",
+    currentDayIndex
+  );
+
+  localStorage.setItem(
+    "currentQuestionIndex",
+    currentQuestionIndex
+  );
+}
+
+
+/* =========================
+   TEK SORUYU OLUŞTUR
 ========================= */
 
 function renderQuestion(question) {
@@ -409,9 +593,7 @@ function renderQuestion(question) {
 
 
   /*
-    SEÇİLEN DİL EN ÜSTTE
-
-    Daha sonra diğer 8 dil.
+    Seçilen dil HER ZAMAN İLK.
   */
 
   const orderedLanguages = [
@@ -419,7 +601,10 @@ function renderQuestion(question) {
     selectedLang,
 
     ...LANGS
-      .map(language => language.key)
+      .map(
+        language =>
+          language.key
+      )
       .filter(
         key =>
           key !== selectedLang
@@ -437,15 +622,14 @@ function renderQuestion(question) {
       const language =
         LANGS.find(
           item =>
-            item.key === languageKey
+            item.key ===
+            languageKey
         );
 
       const data =
         question[languageKey];
 
-      if (!data) {
-        return;
-      }
+      if (!data) return;
 
 
       const block =
@@ -455,13 +639,9 @@ function renderQuestion(question) {
         `language-block lang-${languageKey}`;
 
 
-      /*
-        Seçilen dil
-        görsel olarak öne çıkar.
-      */
-
       if (
-        languageKey === selectedLang
+        languageKey ===
+        selectedLang
       ) {
 
         block.classList.add(
@@ -506,7 +686,6 @@ function renderQuestion(question) {
         answerLine
       );
 
-
       article.appendChild(
         block
       );
@@ -514,24 +693,20 @@ function renderQuestion(question) {
   );
 
 
-  /*
-    KAYNAKLAR
-    9 dilin hemen arkasından gelir.
-  */
+  /* =========================
+     KAYNAKLAR
+  ========================= */
 
   if (
     Array.isArray(question.sources) &&
     question.sources.length > 0
   ) {
 
-    const sourceElement =
+    article.appendChild(
       renderSources(
         question.sources,
         selectedLang
-      );
-
-    article.appendChild(
-      sourceElement
+      )
     );
   }
 
@@ -556,10 +731,6 @@ function renderSources(
     "sources";
 
 
-  /*
-    Kaynak başlığı
-  */
-
   const title =
     document.createElement("h4");
 
@@ -572,10 +743,6 @@ function renderSources(
   );
 
 
-  /*
-    Kaynak listesi
-  */
-
   const list =
     document.createElement("ul");
 
@@ -587,7 +754,7 @@ function renderSources(
 
 
     /*
-      YENİ FORMAT:
+      YENİ KAYNAK FORMATI
 
       {
         "title": "...",
@@ -619,37 +786,28 @@ function renderSources(
           document.createTextNode(" ")
         );
 
-        const link =
+        item.appendChild(
           createSourceLink(
             source.url,
             source.linkText ||
             OPEN_TEXT[language] ||
             OPEN_TEXT.tr
-          );
-
-        item.appendChild(
-          link
+          )
         );
       }
-
     }
 
-    /*
-      ESKİ FORMAT:
 
-      "📖 Kur'an — İhlâs 112:1-4"
+    /*
+      ESKİ FORMAT
+
+      "📖 Kur'an — ... https://..."
     */
 
     else {
 
       const text =
         String(source);
-
-
-      /*
-        Eğer kaynak metninin içinde
-        https:// varsa otomatik yakalar.
-      */
 
       const urlMatch =
         text.match(
@@ -686,26 +844,15 @@ function renderSources(
         );
 
 
-        const link =
+        item.appendChild(
           createSourceLink(
             url,
             OPEN_TEXT[language] ||
             OPEN_TEXT.tr
-          );
-
-
-        item.appendChild(
-          link
+          )
         );
 
-      }
-
-      /*
-        URL yoksa düz metin
-        olarak göster.
-      */
-
-      else {
+      } else {
 
         item.appendChild(
           document.createTextNode(
@@ -726,7 +873,6 @@ function renderSources(
     list
   );
 
-
   return container;
 }
 
@@ -743,18 +889,17 @@ function createSourceLink(
   const link =
     document.createElement("a");
 
+  link.href =
+    url;
 
-  link.href = url;
-
-  link.target = "_blank";
+  link.target =
+    "_blank";
 
   link.rel =
     "noopener noreferrer";
 
-
   link.textContent =
     `🔗 ${text}`;
 
-
   return link;
-}
+                }
