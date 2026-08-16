@@ -167,14 +167,14 @@ body {
 
 .holy-sites {
   width: 100%;
-  max-width: 720px;
+  max-width: 1000px;
   margin: 0 auto;
   padding-top: 10px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 22px;
+  gap: 28px;
 }
 
 /* =========================================
@@ -204,36 +204,53 @@ body {
 }
 
 /* =========================================
-   KÂBE – TAM GENİŞ VE BÜYÜK
+   KÂBE – TAM GENİŞ VE GENİŞ AÇI (GÜNCEL)
 ========================================= */
 
 .holy-site-kaaba {
   width: 100%;
-  height: 240px;
+  height: 340px;
+  max-width: 1000px;
+
+  overflow: hidden;
+  border-radius: 18px;
+
+  box-shadow:
+    0 7px 22px rgba(0, 0, 0, 0.10);
+}
+
+.holy-site-kaaba img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
 }
 
 /* =========================================
-   AKSÂ & NEBEVÎ – DAHA UZUN
+   AKSÂ & NEBEVÎ – GENİŞ AÇI (GÜNCEL)
 ========================================= */
 
 .holy-site-aqsa,
 .holy-site-nabawi {
   width: 100%;
-  max-width: 360px;
-  height: 260px;
+  max-width: 480px;
+  height: 300px;
+
+  overflow: hidden;
+  border-radius: 18px;
+
+  box-shadow:
+    0 7px 22px rgba(0, 0, 0, 0.10);
 }
 
-/* =========================================
-   RESİMLER
-========================================= */
-
-.holy-site img {
-  display: block;
-
+.holy-site-aqsa img,
+.holy-site-nabawi img {
   width: 100%;
   height: 100%;
 
   object-fit: cover;
+  object-position: center;
 }
 
 /* =========================================
@@ -308,429 +325,4 @@ body {
 }
 
 .days-section h2 {
-  text-align: center;
-
-  margin:
-    8px 0 18px;
-
-  font-size: 26px;
-}
-
-
-/* =========================================
-   GÜN LİSTESİ
-========================================= */
-
-#days-list {
-  display: grid;
-
-  grid-template-columns:
-    repeat(
-      auto-fit,
-      minmax(250px, 1fr)
-    );
-
-  gap: 15px;
-}
-
-
-/* =========================================
-   GÜN KARTI
-========================================= */
-
-.day-card {
-  width: 100%;
-
-  border: 0;
-
-  border-radius: 18px;
-
-  padding: 20px;
-
-  background:
-    #ffffff;
-
-  box-shadow:
-    0 5px 20px
-    rgba(0, 0, 0, 0.08);
-
-  cursor: pointer;
-
-  text-align: left;
-
-  transition:
-    transform 0.18s ease,
-    box-shadow 0.18s ease;
-
-  font-family: inherit;
-}
-
-.day-card:hover {
-  transform:
-    translateY(-3px);
-
-  box-shadow:
-    0 9px 28px
-    rgba(0, 0, 0, 0.12);
-}
-
-.day-card:active {
-  transform:
-    translateY(0);
-}
-
-.day-card-title {
-  font-size: 18px;
-
-  font-weight: 700;
-
-  margin-bottom: 7px;
-}
-
-.day-card-subtitle {
-  font-size: 14px;
-
-  line-height: 1.5;
-
-  color: #666;
-}
-
-.loading-days {
-  text-align: center;
-
-  color: #777;
-
-  padding: 20px;
-}
-
-
-/* =========================================
-   SORU SAYFASI
-========================================= */
-
-#question-page {
-  width: 100%;
-
-  max-width: 1000px;
-
-  margin: 0 auto;
-
-  padding:
-    12px 15px 30px;
-}
-
-.question-day-title {
-  text-align: center;
-
-  margin:
-    20px 0;
-
-  font-size: 26px;
-}
-
-.question-content {
-  width: 100%;
-}
-
-.question-card {
-  width: 100%;
-
-  background:
-    #ffffff;
-
-  border-radius:
-    20px;
-
-  padding:
-    20px;
-
-  box-shadow:
-    0 6px 25px
-    rgba(0, 0, 0, 0.08);
-}
-
-
-/* =========================================
-   DİL BLOKLARI
-========================================= */
-
-.language-block {
-  padding:
-    17px 10px;
-
-  border-bottom:
-    1px solid #eeeeee;
-
-  line-height:
-    1.6;
-}
-
-.language-block:last-of-type {
-  border-bottom:
-    0;
-}
-
-.selected-language {
-  background:
-    #faf7ed;
-
-  border-radius:
-    14px;
-
-  padding:
-    18px 14px;
-
-  margin-bottom:
-    8px;
-}
-
-.arabic-language {
-  direction: rtl;
-
-  text-align: right;
-}
-
-.question-line {
-  font-weight:
-    700;
-
-  font-size:
-    17px;
-
-  margin-bottom:
-    7px;
-}
-
-.answer-line {
-  font-size:
-    16px;
-
-  color:
-    #444;
-}
-
-
-/* =========================================
-   KAYNAKLAR
-========================================= */
-
-.sources {
-  margin-top:
-    25px;
-
-  padding-top:
-    18px;
-
-  border-top:
-    2px solid #eeeeee;
-}
-
-.sources h3 {
-  margin:
-    0 0 12px;
-
-  font-size:
-    18px;
-}
-
-.sources ul {
-  margin:
-    0;
-
-  padding-left:
-    22px;
-}
-
-.sources li {
-  margin-bottom:
-    8px;
-
-  line-height:
-    1.5;
-}
-
-.sources a {
-  color:
-    #1769aa;
-
-  font-weight:
-    600;
-
-  text-decoration:
-    none;
-}
-
-.sources a:hover {
-  text-decoration:
-    underline;
-}
-
-
-/* =========================================
-   NAVİGASYON
-========================================= */
-
-.navigation {
-  width: 100%;
-
-  margin:
-    10px 0;
-}
-
-.navigation-row {
-  display: flex;
-
-  flex-wrap: wrap;
-
-  justify-content: center;
-
-  gap: 8px;
-}
-
-.navigation button {
-  border:
-    0;
-
-  border-radius:
-    10px;
-
-  padding:
-    10px 14px;
-
-  background:
-    #ffffff;
-
-  box-shadow:
-    0 3px 12px
-    rgba(0, 0, 0, 0.08);
-
-  cursor:
-    pointer;
-
-  font-family:
-    inherit;
-}
-
-.navigation button:hover:not(:disabled) {
-  background:
-    #f4f4f4;
-}
-
-.navigation button:disabled {
-  opacity:
-    0.4;
-
-  cursor:
-    not-allowed;
-}
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-  text-align:
-    center;
-
-  padding:
-    25px 15px;
-
-  color:
-    #777;
-
-  font-size:
-    14px;
-}
-
-
-/* =========================================
-   MOBİL
-========================================= */
-
-@media (max-width: 700px) {
-
-  .home-header {
-    padding:
-      10px 8px 5px;
-  }
-
-  /* 11 BAYRAK */
-
-  #home-language-selector {
-    gap:
-      3px;
-
-    margin-bottom:
-      8px;
-  }
-
-  .language-selector button {
-    min-width:
-      33px;
-
-    min-height:
-      34px;
-
-    padding:
-      5px 5px;
-
-    font-size:
-      18px;
-  }
-
-  /* =====================================
-     KUTSAL MEKÂNLAR – MOBİL
-  ====================================== */
-
-  .holy-sites {
-    width: 100%;
-    max-width: 390px;
-    margin: 0 auto;
-    gap: 18px;
-  }
-
-  .holy-site-kaaba {
-    height: 180px;
-  }
-
-  .roadmap-title div:first-child {
-    font-size: 18px;
-  }
-
-  .roadmap-title div:last-child {
-    font-size: 24px;
-    margin-top: 4px;
-  }
-
-  .holy-site-aqsa,
-  .holy-site-nabawi {
-    height: 220px;
-    max-width: 330px;
-  }
-
-  .home-subtitle {
-    font-size:
-      15px;
-
-    margin-top:
-      0;
-  }
-
-  /* =====================================
-     GÜNLER
-  ====================================== */
-
-  .days-section {
-    padding:
-      5px 12px 35px;
-  }
-
-  #days-list {
-    grid-template-columns:
-      1fr;
-  }
-
-  /* =====================================
-     SORU
-  =================================
+  text-align
