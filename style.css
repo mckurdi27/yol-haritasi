@@ -1,5 +1,5 @@
 /* =========================================
-   GENEL
+   TEMEL
 ========================================= */
 
 * {
@@ -12,15 +12,26 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+
   font-family:
-    Arial,
-    Helvetica,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
     sans-serif;
 
-  background: #f5f7fa;
-  color: #1f2937;
+  background:
+    linear-gradient(
+      180deg,
+      #f8f5ed 0%,
+      #ffffff 45%,
+      #f5f1e8 100%
+    );
 
-  line-height: 1.6;
+  color: #222;
+
+  min-height: 100vh;
 }
 
 
@@ -28,28 +39,228 @@ body {
    ANA SAYFA
 ========================================= */
 
-#home-page,
-#question-page {
+#home-page {
   width: 100%;
+  min-height: 100vh;
 }
+
+
+/* =========================================
+   ÜST BAŞLIK
+========================================= */
 
 .home-header {
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  padding:
+    30px 20px
+    10px;
+
   text-align: center;
-  padding: 32px 16px 24px;
-  background: white;
-  border-bottom: 1px solid #e5e7eb;
 }
 
-.home-header h1 {
-  margin: 0;
-  font-size: 30px;
+
+/* =========================================
+   ÜÇGEN ALANI
+========================================= */
+
+.holy-sites {
+
+  position: relative;
+
+  width: 100%;
+  max-width: 760px;
+
+  height: 430px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   KUTSAL MEKÂN KUTULARI
+========================================= */
+
+.holy-site {
+
+  position: absolute;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    rgba(255, 255, 255, 0.72);
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 8px 25px
+    rgba(0, 0, 0, 0.08);
+
+  backdrop-filter:
+    blur(5px);
+
+  -webkit-backdrop-filter:
+    blur(5px);
+}
+
+
+/* =========================================
+   KÂBE
+   ÜST ORTA
+========================================= */
+
+.holy-site-kaaba {
+
+  width: 190px;
+  height: 145px;
+
+  left: 50%;
+  top: 0;
+
+  transform:
+    translateX(-50%);
+
+  z-index: 3;
+}
+
+
+/* =========================================
+   AKSA
+   ALT SOL
+========================================= */
+
+.holy-site-aqsa {
+
+  width: 260px;
+  height: 165px;
+
+  left: 3%;
+  top: 220px;
+
+  z-index: 2;
+}
+
+
+/* =========================================
+   NEBEVÎ
+   ALT SAĞ
+========================================= */
+
+.holy-site-nabawi {
+
+  width: 260px;
+  height: 165px;
+
+  right: 3%;
+  top: 220px;
+
+  z-index: 2;
+}
+
+
+/* =========================================
+   GÖRSELLER
+========================================= */
+
+.holy-site img {
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/*
+  Kâbe çizim/PNG ise
+  arka planın görünmesi için contain
+*/
+
+.holy-site-kaaba img {
+
+  object-fit: contain;
+
+  padding: 10px;
+}
+
+
+/* =========================================
+   BAŞLIK
+   İKİ KUTSAL MEKÂNIN ARASINDA
+========================================= */
+
+.roadmap-title {
+
+  position: absolute;
+
+  left: 50%;
+  top: 250px;
+
+  transform:
+    translateX(-50%);
+
+  width: 220px;
+
+  z-index: 5;
+
+  text-align: center;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
   font-weight: 700;
+
+  line-height: 1.2;
+
+  text-shadow:
+    0 2px 8px
+    rgba(255, 255, 255, 0.95);
 }
 
-.home-header p {
-  margin: 8px 0 0;
-  color: #6b7280;
-  font-size: 16px;
+
+.roadmap-title div:first-child {
+
+  font-size: 24px;
+
+}
+
+
+.roadmap-title div:last-child {
+
+  font-size: 30px;
+
+  margin-top: 5px;
+
+}
+
+
+/* =========================================
+   ALT AÇIKLAMA
+========================================= */
+
+.home-subtitle {
+
+  margin:
+    8px auto
+    20px;
+
+  font-size: 17px;
+
+  color: #666;
+
+  font-weight: 500;
 }
 
 
@@ -58,71 +269,113 @@ body {
 ========================================= */
 
 .days-section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 24px 16px 40px;
-}
 
-.days-section h2 {
-  margin: 0 0 18px;
-  font-size: 24px;
-}
-
-
-/* Gün kartları */
-
-#days-list {
-  display: grid;
-  grid-template-columns:
-    repeat(auto-fit, minmax(260px, 1fr));
-
-  gap: 14px;
-}
-
-.day-card {
   width: 100%;
 
-  padding: 18px;
+  max-width: 850px;
 
-  border: 1px solid #dbe1e8;
-  border-radius: 14px;
+  margin:
+    0 auto;
+
+  padding:
+    10px 20px
+    40px;
+}
+
+
+.days-section h2 {
+
+  text-align: center;
+
+  margin:
+    10px 0
+    20px;
+
+  font-size: 26px;
+}
+
+
+/* =========================================
+   GÜN KARTLARI
+========================================= */
+
+#days-list {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    );
+
+  gap: 15px;
+}
+
+
+.day-card {
+
+  width: 100%;
+
+  border: 0;
+
+  border-radius: 18px;
+
+  padding: 20px;
 
   background: white;
 
-  text-align: left;
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.08);
 
   cursor: pointer;
 
+  text-align: left;
+
   transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease,
-    border-color 0.15s ease;
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+
+  font-family: inherit;
 }
+
 
 .day-card:hover {
-  transform: translateY(-2px);
 
-  border-color: #9ca3af;
+  transform:
+    translateY(-3px);
 
   box-shadow:
-    0 6px 18px rgba(0, 0, 0, 0.08);
+    0 9px 28px
+    rgba(0, 0, 0, 0.12);
 }
+
 
 .day-card:active {
-  transform: translateY(0);
+
+  transform:
+    translateY(0);
 }
+
 
 .day-card-title {
+
   font-size: 18px;
+
   font-weight: 700;
+
+  margin-bottom: 7px;
 }
 
-.day-card-subtitle {
-  margin-top: 6px;
 
-  color: #6b7280;
+.day-card-subtitle {
 
   font-size: 14px;
+
+  line-height: 1.5;
+
+  color: #666;
 }
 
 
@@ -131,43 +384,46 @@ body {
 ========================================= */
 
 #question-page {
-  min-height: 100vh;
-}
 
-.question-content {
-  max-width: 900px;
+  width: 100%;
+
+  max-width: 1000px;
 
   margin: 0 auto;
 
   padding:
-    20px 16px 40px;
+    15px;
 }
+
 
 .question-day-title {
-  margin:
-    10px 0 18px;
-
-  font-size: 25px;
 
   text-align: center;
+
+  margin:
+    20px 0;
+
+  font-size: 26px;
 }
 
 
-/* =========================================
-   SORU KARTI
-========================================= */
+.question-content {
+
+  width: 100%;
+}
+
 
 .question-card {
+
   background: white;
 
-  border: 1px solid #dbe1e8;
+  border-radius: 20px;
 
-  border-radius: 16px;
-
-  overflow: hidden;
+  padding: 20px;
 
   box-shadow:
-    0 4px 16px rgba(0, 0, 0, 0.05);
+    0 6px 25px
+    rgba(0, 0, 0, 0.08);
 }
 
 
@@ -176,199 +432,52 @@ body {
 ========================================= */
 
 .language-block {
-  padding: 18px;
+
+  padding:
+    17px 10px;
 
   border-bottom:
-    1px solid #e5e7eb;
+    1px solid #eeeeee;
+
+  line-height: 1.6;
 }
+
 
 .language-block:last-of-type {
-  border-bottom: none;
+
+  border-bottom: 0;
 }
 
 
-/* Seçilen dil */
+.selected-language {
 
-.language-block.selected-language {
-  background: #f0f7ff;
-}
+  background:
+    #faf7ed;
 
+  border-radius: 14px;
 
-/* Soru */
-
-.question-line {
-  font-weight: 700;
-
-  font-size: 17px;
+  padding:
+    18px 14px;
 
   margin-bottom: 8px;
 }
 
 
-/* Cevap */
+.question-line {
+
+  font-weight: 700;
+
+  font-size: 17px;
+
+  margin-bottom: 7px;
+}
+
 
 .answer-line {
+
   font-size: 16px;
 
-  color: #374151;
-}
-
-
-/* Arapça */
-
-.language-block[data-language="ar"],
-[dir="rtl"] {
-  direction: rtl;
-}
-
-
-/* =========================================
-   DİL SEÇİCİ
-========================================= */
-
-.language-selector {
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  flex-wrap: wrap;
-
-  gap: 8px;
-
-  padding:
-    14px 12px;
-
-  background: white;
-
-  border-bottom:
-    1px solid #e5e7eb;
-}
-
-
-/*
-  Bayrak butonları
-
-  app.js yeni sistemde sadece
-  emoji bayrağı gösterecek.
-*/
-
-.language-selector button {
-  min-width: 48px;
-
-  height: 42px;
-
-  padding:
-    5px 9px;
-
-  border:
-    1px solid #d1d5db;
-
-  border-radius: 10px;
-
-  background: white;
-
-  font-size: 22px;
-
-  cursor: pointer;
-
-  transition:
-    background 0.15s ease,
-    border-color 0.15s ease,
-    transform 0.15s ease;
-}
-
-.language-selector button:hover {
-  transform: translateY(-1px);
-
-  background: #f3f4f6;
-}
-
-.language-selector button.active {
-  border-color: #2563eb;
-
-  background: #eff6ff;
-
-  box-shadow:
-    0 0 0 2px
-    rgba(37, 99, 235, 0.12);
-}
-
-
-/* =========================================
-   NAVİGASYON
-========================================= */
-
-.navigation {
-  width: 100%;
-
-  background: white;
-
-  border-bottom:
-    1px solid #e5e7eb;
-}
-
-#bottom-navigation {
-  border-top:
-    1px solid #e5e7eb;
-
-  border-bottom: none;
-}
-
-.navigation-row {
-  max-width: 1100px;
-
-  margin: 0 auto;
-
-  padding:
-    12px;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  flex-wrap: wrap;
-
-  gap: 8px;
-}
-
-.navigation-row button {
-  min-height: 40px;
-
-  padding:
-    9px 14px;
-
-  border:
-    1px solid #d1d5db;
-
-  border-radius: 9px;
-
-  background: white;
-
-  color: #1f2937;
-
-  font-size: 14px;
-
-  cursor: pointer;
-
-  transition:
-    background 0.15s ease,
-    border-color 0.15s ease;
-}
-
-.navigation-row button:hover:not(:disabled) {
-  background: #f3f4f6;
-
-  border-color: #9ca3af;
-}
-
-.navigation-row button:disabled {
-  opacity: 0.45;
-
-  cursor: not-allowed;
+  color: #444;
 }
 
 
@@ -377,43 +486,163 @@ body {
 ========================================= */
 
 .sources {
-  padding: 18px;
 
-  background: #fafafa;
+  margin-top: 25px;
+
+  padding-top: 18px;
 
   border-top:
-    1px solid #e5e7eb;
+    2px solid #eeeeee;
 }
+
 
 .sources h3 {
-  margin:
-    0 0 10px;
 
-  font-size: 17px;
+  margin:
+    0 0 12px;
+
+  font-size: 18px;
 }
 
+
 .sources ul {
+
   margin: 0;
 
   padding-left: 22px;
 }
 
+
 .sources li {
+
   margin-bottom: 8px;
 
-  font-size: 14px;
+  line-height: 1.5;
 }
+
 
 .sources a {
-  color: #2563eb;
 
-  text-decoration: none;
+  color: #1769aa;
 
   font-weight: 600;
+
+  text-decoration: none;
 }
 
+
 .sources a:hover {
+
   text-decoration: underline;
+}
+
+
+/* =========================================
+   NAVİGASYON
+========================================= */
+
+.navigation {
+
+  width: 100%;
+
+  margin:
+    10px 0;
+}
+
+
+.navigation-row {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 8px;
+}
+
+
+.navigation button {
+
+  border: 0;
+
+  border-radius: 10px;
+
+  padding:
+    10px 14px;
+
+  background: white;
+
+  box-shadow:
+    0 3px 12px
+    rgba(0, 0, 0, 0.08);
+
+  cursor: pointer;
+
+  font-family: inherit;
+}
+
+
+.navigation button:hover:not(:disabled) {
+
+  background: #f4f4f4;
+}
+
+
+.navigation button:disabled {
+
+  opacity: 0.4;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   DİL SEÇİCİ
+========================================= */
+
+.language-selector {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  margin:
+    10px 0
+    20px;
+}
+
+
+.language-selector button {
+
+  border: 1px solid #ddd;
+
+  background: white;
+
+  border-radius: 10px;
+
+  padding:
+    8px 11px;
+
+  cursor: pointer;
+
+  font-family: inherit;
+}
+
+
+.language-selector button.active {
+
+  background:
+    #eee8d8;
+
+  border-color:
+    #cfc5ae;
+
+  font-weight: 700;
 }
 
 
@@ -422,14 +651,15 @@ body {
 ========================================= */
 
 footer {
+
   text-align: center;
 
   padding:
-    24px 16px;
+    25px 15px;
 
-  color: #6b7280;
+  color: #777;
 
-  font-size: 13px;
+  font-size: 14px;
 }
 
 
@@ -437,128 +667,171 @@ footer {
    MOBİL
 ========================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
   .home-header {
-    padding:
-      24px 14px 20px;
+
+    padding-top: 20px;
+
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .home-header h1 {
-    font-size: 24px;
+
+  .holy-sites {
+
+    height: 365px;
+
+    max-width: 390px;
   }
+
+
+  /*
+    KÂBE
+  */
+
+  .holy-site-kaaba {
+
+    width: 135px;
+    height: 105px;
+
+    top: 0;
+  }
+
+
+  /*
+    AKSA
+  */
+
+  .holy-site-aqsa {
+
+    width: 155px;
+    height: 125px;
+
+    left: 0;
+
+    top: 190px;
+  }
+
+
+  /*
+    NEBEVÎ
+  */
+
+  .holy-site-nabawi {
+
+    width: 155px;
+    height: 125px;
+
+    right: 0;
+
+    top: 190px;
+  }
+
+
+  /*
+    BAŞLIK
+  */
+
+  .roadmap-title {
+
+    top: 218px;
+
+    width: 150px;
+  }
+
+
+  .roadmap-title div:first-child {
+
+    font-size: 17px;
+  }
+
+
+  .roadmap-title div:last-child {
+
+    font-size: 22px;
+
+    margin-top: 3px;
+  }
+
+
+  .home-subtitle {
+
+    font-size: 15px;
+
+    margin-top: 2px;
+  }
+
 
   .days-section {
-    padding:
-      18px 12px 30px;
+
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
+
   #days-list {
+
     grid-template-columns:
       1fr;
   }
 
-  .day-card {
-    padding: 16px;
+
+  .question-card {
+
+    padding: 14px;
   }
 
-  .question-content {
-    padding:
-      14px 10px 30px;
-  }
-
-  .question-day-title {
-    font-size: 21px;
-  }
-
-  .language-block {
-    padding: 15px;
-  }
-
-  .question-line {
-    font-size: 16px;
-  }
-
-  .answer-line {
-    font-size: 15px;
-  }
-
-  .language-selector {
-    gap: 6px;
-  }
-
-  .language-selector button {
-    min-width: 44px;
-
-    height: 40px;
-
-    font-size: 20px;
-  }
 
   .navigation-row {
-    padding: 10px 8px;
+
+    display: grid;
+
+    grid-template-columns:
+      1fr 1fr;
   }
 
+
   .navigation-row button {
+
+    width: 100%;
+  }
+
+
+  .navigation-row button:nth-child(3) {
+
+    grid-column:
+      1 / -1;
+  }
+
+
+  .language-selector button {
+
     font-size: 13px;
 
     padding:
-      8px 10px;
+      7px 9px;
   }
+
 }
 
 
 /* =========================================
-   ARAPÇA / RTL
+   ÇOK KÜÇÜK TELEFONLAR
 ========================================= */
 
-.language-block.arabic,
-.language-block[dir="rtl"] {
-  text-align: right;
-}
+@media (max-width: 360px) {
 
-.language-block[dir="rtl"] .question-line,
-.language-block[dir="rtl"] .answer-line {
-  direction: rtl;
-  text-align: right;
-}
+  .holy-sites {
 
+    transform:
+      scale(0.90);
 
-/* =========================================
-   YÜKLENİYOR
-========================================= */
+    transform-origin:
+      top center;
 
-.loading {
-  text-align: center;
+    margin-bottom:
+      -35px;
+  }
 
-  padding:
-    40px 20px;
-
-  color: #6b7280;
-
-  font-size: 16px;
-}
-
-
-/* =========================================
-   HATA
-========================================= */
-
-.error-message {
-  margin: 20px auto;
-
-  max-width: 700px;
-
-  padding: 18px;
-
-  border:
-    1px solid #fecaca;
-
-  border-radius: 12px;
-
-  background: #fef2f2;
-
-  color: #991b1b;
-
-  text-align: center;
 }
