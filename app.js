@@ -7,24 +7,91 @@
 
 /* =========================================
    DİLLER
+   SABİT SIRA:
+
+   1. Türkçe
+   2. English
+   3. Deutsch
+   4. Русский
+   5. Kurmancî
+   6. العربية
+   7. Tatarca
+   8. Français
+   9. Español
+   10. Nederlands
+   11. Italiano
+
+   BAYRAKLAR DEĞİŞTİRİLMEDİ.
 ========================================= */
 
 const LANGS = [
-  { key: "tr", flag: "🇹🇷", name: "Türkçe" },
-  { key: "en", flag: "🇬🇧", name: "English" },
-  { key: "de", flag: "🇩🇪", name: "Deutsch" },
-  { key: "ru", flag: "🇷🇺", name: "Русский" },
 
-  { key: "ku", flag: "🇬🇭", name: "Kurmancî" },
-  { key: "tt", flag: "🇭🇺", name: "Tatarca" },
+  {
+    key: "tr",
+    flag: "🇹🇷",
+    name: "Türkçe"
+  },
 
-  { key: "fr", flag: "🇫🇷", name: "Français" },
-  { key: "es", flag: "🇪🇸", name: "Español" },
+  {
+    key: "en",
+    flag: "🇬🇧",
+    name: "English"
+  },
 
-  { key: "nl", flag: "🇳🇱", name: "Nederlands" },
-  { key: "it", flag: "🇮🇹", name: "Italiano" },
+  {
+    key: "de",
+    flag: "🇩🇪",
+    name: "Deutsch"
+  },
 
-  { key: "ar", flag: "🇸🇦", name: "العربية" }
+  {
+    key: "ru",
+    flag: "🇷🇺",
+    name: "Русский"
+  },
+
+  {
+    key: "ku",
+    flag: "🇬🇭",
+    name: "Kurmancî"
+  },
+
+  {
+    key: "ar",
+    flag: "🇸🇦",
+    name: "العربية"
+  },
+
+  {
+    key: "tt",
+    flag: "🇭🇺",
+    name: "Tatarca"
+  },
+
+  {
+    key: "fr",
+    flag: "🇫🇷",
+    name: "Français"
+  },
+
+  {
+    key: "es",
+    flag: "🇪🇸",
+    name: "Español"
+  },
+
+  {
+    key: "nl",
+    flag: "🇳🇱",
+    name: "Nederlands"
+  },
+
+  {
+    key: "it",
+    flag: "🇮🇹",
+    name: "Italiano"
+  }
+
 ];
 
 
@@ -48,6 +115,7 @@ const UI = {
     questionCount: "Soru"
   },
 
+
   en: {
     title: "A Muslim's Roadmap",
     subtitle: "Learn Islam step by step",
@@ -61,6 +129,7 @@ const UI = {
     openSource: "Open source",
     questionCount: "Questions"
   },
+
 
   de: {
     title: "Der Wegweiser eines Muslims",
@@ -76,6 +145,7 @@ const UI = {
     questionCount: "Fragen"
   },
 
+
   ru: {
     title: "Путеводитель мусульманина",
     subtitle: "Изучайте ислам шаг за шагом",
@@ -89,6 +159,7 @@ const UI = {
     openSource: "Открыть источник",
     questionCount: "Вопросов"
   },
+
 
   ku: {
     title: "Rêbernameya Misilmanekî",
@@ -104,6 +175,22 @@ const UI = {
     questionCount: "Pirs"
   },
 
+
+  ar: {
+    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
+    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
+    days: "الأَيَّامُ",
+    previousQuestion: "← السُّؤَالُ السَّابِقُ",
+    nextQuestion: "السُّؤَالُ التَّالِي →",
+    home: "🏠 الصَّفْحَةُ الرَّئِيسِيَّةُ",
+    previousDay: "← الْيَوْمُ السَّابِقُ",
+    nextDay: "الْيَوْمُ التَّالِي →",
+    source: "📚 الْمَصَادِرُ",
+    openSource: "فَتْحُ الْمَصْدَرِ",
+    questionCount: "أَسْئِلَة"
+  },
+
+
   tt: {
     title: "Мөселманның юл картасы",
     subtitle: "Исламны адымлап өйрәнегез",
@@ -117,6 +204,7 @@ const UI = {
     openSource: "Чыганакны ачу",
     questionCount: "Сорау"
   },
+
 
   fr: {
     title: "La feuille de route du musulman",
@@ -132,6 +220,7 @@ const UI = {
     questionCount: "Questions"
   },
 
+
   es: {
     title: "La hoja de ruta del musulmán",
     subtitle: "Aprender el Islam paso a paso",
@@ -145,6 +234,7 @@ const UI = {
     openSource: "Abrir fuente",
     questionCount: "Preguntas"
   },
+
 
   nl: {
     title: "De routekaart van een moslim",
@@ -160,6 +250,7 @@ const UI = {
     questionCount: "Vragen"
   },
 
+
   it: {
     title: "La guida del musulmano",
     subtitle: "Imparare l'Islam passo dopo passo",
@@ -172,21 +263,8 @@ const UI = {
     source: "📚 Fonti",
     openSource: "Apri fonte",
     questionCount: "Domande"
-  },
-
-  ar: {
-    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
-    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
-    days: "الأَيَّامُ",
-    previousQuestion: "← السُّؤَالُ السَّابِقُ",
-    nextQuestion: "السُّؤَالُ التَّالِي →",
-    home: "🏠 الصَّفْحَةُ الرَّئِيسِيَّةُ",
-    previousDay: "← الْيَوْمُ السَّابِقُ",
-    nextDay: "الْيَوْمُ التَّالِي →",
-    source: "📚 الْمَصَادِرُ",
-    openSource: "فَتْحُ الْمَصْدَرِ",
-    questionCount: "أَسْئِلَة"
   }
+
 };
 
 
@@ -197,9 +275,11 @@ const UI = {
 let selectedLang =
   localStorage.getItem("selectedLang") || "tr";
 
+
 if (!UI[selectedLang]) {
   selectedLang = "tr";
 }
+
 
 let days = [];
 
@@ -239,14 +319,17 @@ async function loadDays() {
 
   days = [];
 
-  console.log("📚 Günler yükleniyor...");
+  console.log(
+    "📚 Günler yükleniyor..."
+  );
+
 
   const requests = [];
 
 
   /*
     30 günlük proje.
-    Her gün:
+
     data/day-01.json
     data/day-02.json
     ...
@@ -264,9 +347,7 @@ async function loadDays() {
 
 
     /*
-      Cache busting:
-      GitHub Pages eski JSON'u cache'lemişse
-      yeni dosyanın okunmasını sağlar.
+      Cache busting
     */
 
     const url =
@@ -283,104 +364,120 @@ async function loadDays() {
         }
       )
 
-        .then(
-          async response => {
+      .then(
+        async response => {
 
-            if (!response.ok) {
+          if (!response.ok) {
 
-              console.warn(
-                `⚠️ Gün ${number} bulunamadı:`,
-                response.status,
-                file
-              );
-
-              return null;
-            }
-
-
-            const text =
-              await response.text();
-
-
-            let data;
-
-
-            try {
-
-              data =
-                JSON.parse(text);
-
-            } catch (error) {
-
-              console.error(
-                `❌ Gün ${number} JSON hatası:`,
-                file,
-                error
-              );
-
-              console.error(
-                "JSON içeriği:",
-                text
-              );
-
-              return null;
-            }
-
-
-            const questions =
-              Array.isArray(data)
-                ? data
-                : data.questions;
-
-
-            if (
-              !Array.isArray(questions) ||
-              questions.length === 0
-            ) {
-
-              console.warn(
-                `⚠️ Gün ${number} içinde soru bulunamadı:`,
-                file
-              );
-
-              return null;
-            }
-
-
-            console.log(
-              `✅ Gün ${number} yüklendi:`,
-              questions.length,
-              "soru"
-            );
-
-
-            return {
-
-              number,
-
-              questions,
-
-              info:
-                Array.isArray(data)
-                  ? {}
-                  : data
-
-            };
-          }
-        )
-
-        .catch(
-          error => {
-
-            console.error(
-              `❌ Gün ${number} yüklenemedi:`,
-              file,
-              error
+            console.warn(
+              `⚠️ Gün ${number} bulunamadı:`,
+              response.status,
+              file
             );
 
             return null;
           }
-        )
+
+
+          const text =
+            await response.text();
+
+
+          let data;
+
+
+          try {
+
+            data =
+              JSON.parse(text);
+
+          } catch (error) {
+
+            console.error(
+              `❌ Gün ${number} JSON hatası:`,
+              file,
+              error
+            );
+
+            console.error(
+              "JSON içeriği:",
+              text
+            );
+
+            return null;
+          }
+
+
+          /*
+            Hem:
+
+            {
+              day: 1,
+              dayTitle: {...},
+              daySubtitle: {...},
+              questions: [...]
+            }
+
+            hem de doğrudan [...]
+
+            formatını destekler.
+          */
+
+          const questions =
+            Array.isArray(data)
+              ? data
+              : data.questions;
+
+
+          if (
+            !Array.isArray(questions) ||
+            questions.length === 0
+          ) {
+
+            console.warn(
+              `⚠️ Gün ${number} içinde soru bulunamadı:`,
+              file
+            );
+
+            return null;
+          }
+
+
+          console.log(
+            `✅ Gün ${number} yüklendi:`,
+            questions.length,
+            "soru"
+          );
+
+
+          return {
+
+            number,
+
+            questions,
+
+            info:
+              Array.isArray(data)
+                ? {}
+                : data
+
+          };
+
+        }
+      )
+
+      .catch(
+        error => {
+
+          console.error(
+            `❌ Gün ${number} yüklenemedi:`,
+            file,
+            error
+          );
+
+          return null;
+        }
+      )
     );
   }
 
@@ -421,19 +518,24 @@ function renderHome() {
       "#home-page"
     );
 
+
   const questionPage =
     document.querySelector(
       "#question-page"
     );
 
 
-  if (!home || !questionPage) {
+  if (
+    !home ||
+    !questionPage
+  ) {
     return;
   }
 
 
   home.style.display =
     "block";
+
 
   questionPage.style.display =
     "none";
@@ -443,45 +545,18 @@ function renderHome() {
      ANA SAYFA DİL SEÇİCİ
   ===================================== */
 
-  let homeLanguageSelector =
+  const homeLanguageSelector =
     document.querySelector(
       "#home-language-selector"
     );
 
 
-  if (!homeLanguageSelector) {
+  if (homeLanguageSelector) {
 
-    homeLanguageSelector =
-      document.createElement(
-        "div"
-      );
-
-    homeLanguageSelector.id =
-      "home-language-selector";
-
-    homeLanguageSelector.className =
-      "language-selector home-language-selector";
-
-
-    const header =
-      home.querySelector(
-        ".home-header"
-      );
-
-
-    if (header) {
-
-      header.insertBefore(
-        homeLanguageSelector,
-        header.firstChild
-      );
-    }
+    renderLanguageButtons(
+      homeLanguageSelector
+    );
   }
-
-
-  renderLanguageButtons(
-    homeLanguageSelector
-  );
 
 
   /* =====================================
@@ -568,7 +643,7 @@ function renderHome() {
 
 
   /* =====================================
-     GÜNLER
+     GÜNLER BAŞLIĞI
   ===================================== */
 
   const sectionTitle =
@@ -584,6 +659,10 @@ function renderHome() {
   }
 
 
+  /* =====================================
+     GÜNLER LİSTESİ
+  ===================================== */
+
   const list =
     document.querySelector(
       "#days-list"
@@ -597,11 +676,6 @@ function renderHome() {
 
   list.innerHTML = "";
 
-
-  /*
-    JSON'lar henüz yüklenmediyse
-    yükleniyor mesajı.
-  */
 
   if (!days.length) {
 
@@ -629,7 +703,7 @@ function renderHome() {
 
 
   /* =====================================
-     GÜNLERİ OLUŞTUR
+     GÜN KARTLARI
   ===================================== */
 
   days.forEach(
@@ -876,6 +950,23 @@ function renderLanguageButtons(
   container.innerHTML = "";
 
 
+  /*
+    LANGS dizisinin sırası aynen
+    ekranda kullanılacaktır.
+
+    1 🇹🇷
+    2 🇬🇧
+    3 🇩🇪
+    4 🇷🇺
+    5 🇬🇭
+    6 🇸🇦
+    7 🇭🇺
+    8 🇫🇷
+    9 🇪🇸
+    10 🇳🇱
+    11 🇮🇹
+  */
+
   LANGS.forEach(
     language => {
 
@@ -993,13 +1084,17 @@ function renderQuestion() {
   }
 
 
-  if (!home || !page) {
+  if (
+    !home ||
+    !page
+  ) {
     return;
   }
 
 
   home.style.display =
     "none";
+
 
   page.style.display =
     "block";
@@ -1034,6 +1129,10 @@ function renderQuestion() {
   content.innerHTML = "";
 
 
+  /* =====================================
+     GÜN BAŞLIĞI
+  ===================================== */
+
   const dayTitle =
     document.createElement(
       "h2"
@@ -1055,6 +1154,10 @@ function renderQuestion() {
   );
 
 
+  /* =====================================
+     SORU KARTI
+  ===================================== */
+
   const card =
     document.createElement(
       "article"
@@ -1065,7 +1168,16 @@ function renderQuestion() {
     "question-card";
 
 
+  /*
+    Seçilen dil önce gösterilir.
+
+    Ardından diğer 10 dil,
+    LANGS dizisindeki sabit sıraya göre
+    gösterilir.
+  */
+
   const languages = [
+
     selectedLang,
 
     ...LANGS
@@ -1077,6 +1189,7 @@ function renderQuestion() {
         key =>
           key !== selectedLang
       )
+
   ];
 
 
@@ -1112,6 +1225,10 @@ function renderQuestion() {
         "language-block";
 
 
+      /* =================================
+         ARAPÇA RTL
+      ================================= */
+
       if (
         languageKey === "ar"
       ) {
@@ -1120,12 +1237,17 @@ function renderQuestion() {
           "arabic-language"
         );
 
+
         block.setAttribute(
           "dir",
           "rtl"
         );
       }
 
+
+      /* =================================
+         SEÇİLEN DİL
+      ================================= */
 
       if (
         languageKey === selectedLang
@@ -1136,6 +1258,10 @@ function renderQuestion() {
         );
       }
 
+
+      /* =================================
+         SORU
+      ================================= */
 
       const q =
         document.createElement(
@@ -1150,6 +1276,10 @@ function renderQuestion() {
       q.textContent =
         `${language.flag} ${question.id}. ${data.q}`;
 
+
+      /* =================================
+         CEVAP
+      ================================= */
 
       const a =
         document.createElement(
@@ -1240,8 +1370,16 @@ function renderQuestion() {
   }
 
 
+  /* =====================================
+     SORU SAYFASI DİL SEÇİCİ
+  ===================================== */
+
   addQuestionLanguageSelector();
 
+
+  /* =====================================
+     SAYFANIN BAŞINA DÖN
+  ===================================== */
 
   window.scrollTo({
     top: 0,
@@ -1290,7 +1428,10 @@ function addQuestionLanguageSelector() {
       );
 
 
-    if (page && nav) {
+    if (
+      page &&
+      nav
+    ) {
 
       page.insertBefore(
         selector,
@@ -1322,6 +1463,10 @@ function createNavigation() {
     "navigation-row";
 
 
+  /* =====================================
+     ÖNCEKİ SORU
+  ===================================== */
+
   const previousQuestion =
     makeButton(
       UI[selectedLang].previousQuestion
@@ -1345,6 +1490,10 @@ function createNavigation() {
       }
     };
 
+
+  /* =====================================
+     SONRAKİ SORU
+  ===================================== */
 
   const nextQuestion =
     makeButton(
@@ -1374,6 +1523,10 @@ function createNavigation() {
     };
 
 
+  /* =====================================
+     ANA SAYFA
+  ===================================== */
+
   const home =
     makeButton(
       UI[selectedLang].home
@@ -1385,12 +1538,17 @@ function createNavigation() {
 
       renderHome();
 
+
       window.scrollTo({
         top: 0,
         behavior: "smooth"
       });
     };
 
+
+  /* =====================================
+     ÖNCEKİ GÜN
+  ===================================== */
 
   const previousDay =
     makeButton(
@@ -1418,6 +1576,10 @@ function createNavigation() {
       }
     };
 
+
+  /* =====================================
+     SONRAKİ GÜN
+  ===================================== */
 
   const nextDay =
     makeButton(
@@ -1552,6 +1714,7 @@ function renderSources(
 
 
       let text = "";
+
       let url = "";
 
 
@@ -1602,7 +1765,9 @@ function renderSources(
       if (!url) {
 
         url =
-          getSourceUrl(text);
+          getSourceUrl(
+            text
+          );
       }
 
 
@@ -1670,7 +1835,8 @@ function getSourceUrl(
 ) {
 
   const text =
-    String(source).toLowerCase();
+    String(source)
+      .toLowerCase();
 
 
   /* =====================================
@@ -1743,8 +1909,12 @@ function getSourceUrl(
   ===================================== */
 
   if (
-    text.includes("bir müslümanın yol haritası") ||
-    text.includes("akademi")
+    text.includes(
+      "bir müslümanın yol haritası"
+    ) ||
+    text.includes(
+      "akademi"
+    )
   ) {
 
     return "https://mckurdi27.github.io/yol-haritasi/";
@@ -1765,7 +1935,8 @@ window.addEventListener(
 
     console.error(
       "Yol Haritası JavaScript hatası:",
-      event.error || event.message
+      event.error ||
+      event.message
     );
   }
 );
