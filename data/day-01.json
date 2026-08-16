@@ -1,8 +1,31 @@
-[
-  {
-    "id": 1,
-    "day": 1,
-    "dayTitle": "1. Gün — İslâm'a İlk Adım",
+{
+  "day": 1,
+
+  "dayTitle": {
+    "tr": "1. Gün — İslâm'a İlk Adım",
+    "en": "Day 1 — The First Step to Islam",
+    "de": "1. Tag — Der erste Schritt zum Islam",
+    "ru": "1-й день — Первый шаг к исламу",
+    "ku": "Roj 1 — Gava Yekem a Îslamê",
+    "tt": "1 нче көн — Исламга беренче адым",
+    "fr": "Jour 1 — Le premier pas vers l'islam",
+    "es": "Día 1 — El primer paso hacia el Islam",
+    "ar": "اليوم الأول — الخطوة الأولى إلى الإسلام"
+  },
+
+  "daySubtitle": {
+    "tr": "İslâm, iman, Allah, Kur'an ve Peygamberimizi tanımak",
+    "en": "Learning about Islam, faith, Allah, the Qur'an and our Prophet",
+    "de": "Islam, Glaube, Allah, den Koran und unseren Propheten kennenlernen",
+    "ru": "Знакомство с исламом, верой, Аллахом, Кораном и нашим Пророком",
+    "ku": "Nasîna Îslamê, bawerî, Allah, Qur'an û Pêxemberê me",
+    "tt": "Ислам, иман, Аллаһ, Коръән һәм Пәйгамбәребез белән танышу",
+    "fr": "Découvrir l'islam, la foi, Allah, le Coran et notre Prophète",
+    "es": "Conocer el Islam, la fe, Allah, el Corán y nuestro Profeta",
+    "ar": "التعرّف على الإسلام والإيمان والله والقرآن ونبينا"
+  },
+
+  "questions": []
 
     "tr": {
       "q": "İslâm nedir?",
