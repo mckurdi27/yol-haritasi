@@ -3,44 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bir Müslümanın Yol Haritası — 76 Soru</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>Bir Müslümanın Yol Haritası</title>
+
+    <meta
+        name="description"
+        content="Bir Müslümanın Yol Haritası — 9 dilli günlük İslami bilgi rehberi."
+    >
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <header>
-        <div class="container header-content">
-            <h1>Bir Müslümanın Yol Haritası</h1>
-            <p>76 Temel Soru ve Cevap</p>
-            
-            <div class="language-selector-wrapper">
-                <label for="languageSelect">🌍 Görünüm Dili / Display Language:</label>
-                <select id="languageSelect" onchange="changeLanguage()">
-                    <option value="tr" selected>🇹🇷 Türkçe</option>
-                    <option value="en">🇬🇧 English</option>
-                    <option value="de">🇩🇪 Deutsch</option>
-                    <option value="ru">🇷🇺 Русский</option>
-                    <option value="ku">🇹🇯 Kurmancî</option>
-                    <option value="tt">🇹🇹 Tatarca</option>
-                    <option value="fr">🇫🇷 Français</option>
-                    <option value="es">🇪🇸 Español</option>
-                    <option value="ar">🇸🇦 العربية</option>
-                </select>
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <div class="logo-area">
+                <div class="logo">📖</div>
+
+                <div>
+                    <h1>Bir Müslümanın Yol Haritası</h1>
+                    <p>9 Dilli Günlük Dinî Bilgi Rehberi</p>
+                </div>
             </div>
+
         </div>
+
     </header>
 
-    <main class="container" id="contentArea">
-        <!-- İçerik dinamik olarak yüklenecek -->
+
+    <!-- =========================
+         SEARCH & FILTER AREA
+    ========================== -->
+
+    <section class="control-panel">
+
+        <div class="controls">
+
+            <!-- Search -->
+            <div class="control search-control">
+
+                <label for="search">
+                    🔎 Arama
+                </label>
+
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="Kelime, soru numarası veya ifade ara..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <!-- Day -->
+            <div class="control">
+
+                <label for="day">
+                    📅 Gün
+                </label>
+
+                <select id="day">
+
+                    <option value="all">
+                        Tüm Günler
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Language -->
+            <div class="control">
+
+                <label for="language">
+                    🌐 Dil
+                </label>
+
+                <select id="language">
+
+                    <option value="all">
+                        Tüm Diller
+                    </option>
+
+                    <option value="tr">
+                        🇹🇷 Türkçe
+                    </option>
+
+                    <option value="en">
+                        🇬🇧 English
+                    </option>
+
+                    <option value="de">
+                        🇩🇪 Deutsch
+                    </option>
+
+                    <option value="ru">
+                        🇷🇺 Русский
+                    </option>
+
+                    <option value="ku">
+                        🇹🇯 Kurmancî
+                    </option>
+
+                    <option value="tt">
+                        🇹🇹 Tatarca
+                    </option>
+
+                    <option value="fr">
+                        🇫🇷 Français
+                    </option>
+
+                    <option value="es">
+                        🇪🇸 Español
+                    </option>
+
+                    <option value="ar">
+                        🇸🇦 العربية
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main id="app">
+
+        <div class="loading">
+
+            <div class="loading-icon">
+                📖
+            </div>
+
+            <p>
+                Yol Haritası yükleniyor...
+            </p>
+
+        </div>
+
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Bir Müslümanın Yol Haritası. Tüm hakları saklıdır.</p>
-        </div>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <p>
+            📖 Bir Müslümanın Yol Haritası
+        </p>
+
+        <p class="footer-small">
+            Kur’an • Sahih Hadis • Güvenilir İslâmî Kaynaklar
+        </p>
+
     </footer>
 
-    <script src="data.js"></script>
-    <script src="script.js"></script>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="app.js"></script>
+
 </body>
 </html>
