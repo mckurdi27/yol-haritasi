@@ -1,0 +1,15 @@
+data/
+├── day-01.json
+├── day-02.json
+├── day-03.json
+├── day-04.json
+├── day-05.json
+├── day-06.json
+└── ...
+
+day-01.json  → bulundu → yükle
+day-02.json  → bulundu → yükle
+day-03.json  → bulundu → yükle
+...
+day-05.json  → bulundu → yükle
+day-06.json  → yok → geç
