@@ -1,7 +1,42 @@
-# Bir Müslümanın Yol Haritası — 9 Dilli Web
+# 📖 Bir Müslümanın Yol Haritası
 
-Günler ve sorular alt alta gösterilir. Her soru 9 dilde soru + cevap şeklindedir. Arama, gün filtresi ve dil filtresi vardır.
+9 Dilli Günlük Dinî Bilgi Rehberi
 
-`data/questions.json` içerik veri kaynağıdır. Yeni sorular aynı yapıya eklenebilir. Ayet/Hadis kaynakları ilgili sorunun `sources` alanına bağlanır.
+## Sistem
 
-Bu paket mevcut GitHub reposunu değiştirmez; önce ayrı olarak test edilmek üzere hazırlanmıştır.
+- Her gün 19 yeni soru
+- Sorular kesintisiz numaralandırılır
+- 9 dil
+- Seçilen dil en üstte gösterilir
+- Her sorunun altında önemli kaynaklar bulunur
+- Günlük içerikler ayrı JSON dosyalarında tutulur
+
+## Diller
+
+🇹🇷 Türkçe  
+🇬🇧 English  
+🇩🇪 Deutsch  
+🇷🇺 Русский  
+🇹🇯 Kurmancî  
+🇹🇹 Tatarca  
+🇫🇷 Français  
+🇪🇸 Español  
+🇸🇦 العربية
+
+## Günlük Dosyalar
+
+Her günün içeriği:
+
+`data/day-XX.json`
+
+şeklinde eklenir.
+
+Örneğin:
+
+`data/day-01.json` → 1–19. sorular
+
+`data/day-02.json` → 20–38. sorular
+
+`data/day-03.json` → 39–57. sorular
+
+`data/day-04.json` → 58–76. sorular
