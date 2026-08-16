@@ -1,37 +1,150 @@
 const LANGS = [
-  { key: "tr", label: "🇹🇷 Türkçe" },
-  { key: "en", label: "🇬🇧 English" },
-  { key: "de", label: "🇩🇪 Deutsch" },
-  { key: "ru", label: "🇷🇺 Русский" },
-  { key: "ku", label: "🇹🇯 Kurmancî" },
-  { key: "tt", label: "🇹🇹 Tatarca" },
-  { key: "fr", label: "🇫🇷 Français" },
-  { key: "es", label: "🇪🇸 Español" },
-  { key: "ar", label: "🇸🇦 العربية" }
+  { key: "tr", flag: "🇹🇷", name: "Türkçe" },
+  { key: "en", flag: "🇬🇧", name: "English" },
+  { key: "de", flag: "🇩🇪", name: "Deutsch" },
+  { key: "ru", flag: "🇷🇺", name: "Русский" },
+  { key: "ku", flag: "🇹🇯", name: "Kurmancî" },
+  { key: "tt", flag: "🇹🇹", name: "Tatarca" },
+  { key: "fr", flag: "🇫🇷", name: "Français" },
+  { key: "es", flag: "🇪🇸", name: "Español" },
+  { key: "ar", flag: "🇸🇦", name: "العربية" }
 ];
 
-const SOURCE_TITLE = {
-  tr: "📚 Kaynaklar",
-  en: "📚 Sources",
-  de: "📚 Quellen",
-  ru: "📚 Источники",
-  ku: "📚 Çavkanî",
-  tt: "📚 Чыганаклар",
-  fr: "📚 Sources",
-  es: "📚 Fuentes",
-  ar: "📚 الْمَصَادِرُ"
-};
+const UI = {
+  tr: {
+    title: "Bir Müslümanın Yol Haritası",
+    subtitle: "İslâm'ı adım adım öğren",
+    days: "Günler",
+    questions: "Soru",
+    previousQuestion: "← Önceki Soru",
+    nextQuestion: "Sonraki Soru →",
+    home: "🏠 Ana Sayfa",
+    previousDay: "← Önceki Gün",
+    nextDay: "Sonraki Gün →",
+    source: "📚 Kaynaklar",
+    openSource: "Kaynağı aç",
+    questionCount: "Soru"
+  },
 
-const OPEN_TEXT = {
-  tr: "Kaynağı aç",
-  en: "Open source",
-  de: "Quelle öffnen",
-  ru: "Открыть источник",
-  ku: "Çavkaniyê veke",
-  tt: "Чыганакны ач",
-  fr: "Ouvrir la source",
-  es: "Abrir fuente",
-  ar: "فَتْحُ الْمَصْدَرِ"
+  en: {
+    title: "A Muslim's Roadmap",
+    subtitle: "Learn Islam step by step",
+    days: "Days",
+    questions: "Question",
+    previousQuestion: "← Previous Question",
+    nextQuestion: "Next Question →",
+    home: "🏠 Home",
+    previousDay: "← Previous Day",
+    nextDay: "Next Day →",
+    source: "📚 Sources",
+    openSource: "Open source",
+    questionCount: "Questions"
+  },
+
+  de: {
+    title: "Der Wegweiser eines Muslims",
+    subtitle: "Den Islam Schritt für Schritt kennenlernen",
+    days: "Tage",
+    questions: "Frage",
+    previousQuestion: "← Vorherige Frage",
+    nextQuestion: "Nächste Frage →",
+    home: "🏠 Startseite",
+    previousDay: "← Vorheriger Tag",
+    nextDay: "Nächster Tag →",
+    source: "📚 Quellen",
+    openSource: "Quelle öffnen",
+    questionCount: "Fragen"
+  },
+
+  ru: {
+    title: "Путеводитель мусульманина",
+    subtitle: "Изучайте ислам шаг за шагом",
+    days: "Дни",
+    questions: "Вопрос",
+    previousQuestion: "← Предыдущий вопрос",
+    nextQuestion: "Следующий вопрос →",
+    home: "🏠 Главная",
+    previousDay: "← Предыдущий день",
+    nextDay: "Следующий день →",
+    source: "📚 Источники",
+    openSource: "Открыть источник",
+    questionCount: "Вопросов"
+  },
+
+  ku: {
+    title: "Rêbernameya Misilmanekî",
+    subtitle: "Îslamê gav bi gav fêr bibe",
+    days: "Roj",
+    questions: "Pirs",
+    previousQuestion: "← Pirseke berê",
+    nextQuestion: "Pirseke paş",
+    home: "🏠 Malpera sereke",
+    previousDay: "← Roja berê",
+    nextDay: "Roja paş →",
+    source: "📚 Çavkanî",
+    openSource: "Çavkaniyê veke",
+    questionCount: "Pirs"
+  },
+
+  tt: {
+    title: "Мөселманның юл картасы",
+    subtitle: "Исламны адымлап өйрәнегез",
+    days: "Көннәр",
+    questions: "Сорау",
+    previousQuestion: "← Алдагы сорау",
+    nextQuestion: "Киләсе сорау →",
+    home: "🏠 Төп бит",
+    previousDay: "← Алдагы көн",
+    nextDay: "Киләсе көн →",
+    source: "📚 Чыганаклар",
+    openSource: "Чыганакны ачу",
+    questionCount: "Сорау"
+  },
+
+  fr: {
+    title: "La feuille de route du musulman",
+    subtitle: "Apprendre l’islam étape par étape",
+    days: "Jours",
+    questions: "Question",
+    previousQuestion: "← Question précédente",
+    nextQuestion: "Question suivante →",
+    home: "🏠 Accueil",
+    previousDay: "← Jour précédent",
+    nextDay: "Jour suivant →",
+    source: "📚 Sources",
+    openSource: "Ouvrir la source",
+    questionCount: "Questions"
+  },
+
+  es: {
+    title: "La hoja de ruta del musulmán",
+    subtitle: "Aprender el Islam paso a paso",
+    days: "Días",
+    questions: "Pregunta",
+    previousQuestion: "← Pregunta anterior",
+    nextQuestion: "Siguiente pregunta →",
+    home: "🏠 Inicio",
+    previousDay: "← Día anterior",
+    nextDay: "Día siguiente →",
+    source: "📚 Fuentes",
+    openSource: "Abrir fuente",
+    questionCount: "Preguntas"
+  },
+
+  ar: {
+    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
+    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
+    days: "الأَيَّامُ",
+    questions: "سُؤَال",
+    previousQuestion: "← السُّؤَالُ السَّابِقُ",
+    nextQuestion: "السُّؤَالُ التَّالِي →",
+    home: "🏠 الصَّفْحَةُ الرَّئِيسِيَّةُ",
+    previousDay: "← الْيَوْمُ السَّابِقُ",
+    nextDay: "الْيَوْمُ التَّالِي →",
+    source: "📚 الْمَصَادِرُ",
+    openSource: "فَتْحُ الْمَصْدَرِ",
+    questionCount: "أَسْئِلَة"
+  }
 };
 
 
@@ -45,9 +158,9 @@ let currentDayIndex = 0;
 let currentQuestionIndex = 0;
 
 
-/* =====================================
+/* =========================================
    BAŞLAT
-===================================== */
+========================================= */
 
 document.addEventListener(
   "DOMContentLoaded",
@@ -59,36 +172,34 @@ async function init() {
 
   await loadDays();
 
-  showHome();
+  renderHome();
 
 }
 
 
-/* =====================================
-   GÜNLERİ OTOMATİK YÜKLE
-===================================== */
+/* =========================================
+   GÜNLERİ YÜKLE
+========================================= */
 
 async function loadDays() {
 
-  const loadedDays = [];
+  days = [];
 
   for (
-    let day = 1;
-    day <= 365;
-    day++
+    let number = 1;
+    number <= 365;
+    number++
   ) {
 
     const file =
-      `data/day-${String(day).padStart(2, "0")}.json`;
+      `data/day-${String(number).padStart(2, "0")}.json`;
 
     try {
 
       const response =
         await fetch(
           file,
-          {
-            cache: "no-store"
-          }
+          { cache: "no-store" }
         );
 
       if (!response.ok) {
@@ -98,44 +209,40 @@ async function loadDays() {
       const data =
         await response.json();
 
-      let questions = [];
+      const questions =
+        Array.isArray(data)
+          ? data
+          : data.questions;
 
-      if (Array.isArray(data)) {
-
-        questions = data;
-
-      } else if (
-        data &&
-        Array.isArray(data.questions)
+      if (
+        Array.isArray(questions) &&
+        questions.length
       ) {
 
-        questions = data.questions;
-      }
-
-      if (questions.length > 0) {
-
-        loadedDays.push({
-          day: day,
-          questions: questions
+        days.push({
+          number,
+          questions,
+          info: data
         });
 
       }
 
     } catch (error) {
 
-      // Dosya yoksa devam et.
+      console.log(
+        `Day ${number} not found`
+      );
+
     }
   }
-
-  days = loadedDays;
 }
 
 
-/* =====================================
+/* =========================================
    ANA SAYFA
-===================================== */
+========================================= */
 
-function showHome() {
+function renderHome() {
 
   const home =
     document.querySelector(
@@ -147,11 +254,48 @@ function showHome() {
       "#question-page"
     );
 
+
   home.style.display =
     "block";
 
   questionPage.style.display =
     "none";
+
+
+  const header =
+    home.querySelector(
+      ".home-header"
+    );
+
+
+  header.innerHTML = "";
+
+
+  const title =
+    document.createElement("h1");
+
+  title.textContent =
+    `🕌 ${UI[selectedLang].title}`;
+
+
+  const subtitle =
+    document.createElement("p");
+
+  subtitle.textContent =
+    UI[selectedLang].subtitle;
+
+
+  header.appendChild(title);
+  header.appendChild(subtitle);
+
+
+  const sectionTitle =
+    home.querySelector(
+      ".days-section h2"
+    );
+
+  sectionTitle.textContent =
+    UI[selectedLang].days;
 
 
   const list =
@@ -162,116 +306,71 @@ function showHome() {
   list.innerHTML = "";
 
 
-  if (!days.length) {
-
-    list.innerHTML =
-      "<p>Henüz gün eklenmemiş.</p>";
-
-    return;
-  }
-
-
   days.forEach(
     (dayData, index) => {
-
-      const questions =
-        dayData.questions;
-
-
-      const firstQuestion =
-        questions[0] || {};
-
-
-      /*
-        Gün başlığını mümkünse
-        ilk sorudaki dayTitle'dan al.
-      */
-
-      let dayTitle =
-        firstQuestion.dayTitle ||
-        firstQuestion.day ||
-        "";
-
-
-      /*
-        Eğer başlık yoksa
-        sadece gün numarası.
-      */
-
-      if (
-        typeof dayTitle !== "string"
-      ) {
-
-        dayTitle = "";
-      }
-
-
-      /*
-        "1. Gün — İslâm'a İlk Adım · 19 Soru"
-      */
 
       const card =
         document.createElement(
           "button"
         );
 
-      card.type =
-        "button";
-
       card.className =
         "day-card";
 
+      card.type =
+        "button";
+
 
       const title =
-        document.createElement(
-          "span"
+        getDayTitle(
+          dayData,
+          index
         );
 
-      title.className =
+
+      const subtitle =
+        getDaySubtitle(
+          dayData
+        );
+
+
+      const titleLine =
+        document.createElement(
+          "div"
+        );
+
+      titleLine.className =
         "day-card-title";
 
-
-      if (dayTitle) {
-
-        /*
-          Eğer JSON'da zaten
-          "1. Gün — ..." yazıyorsa
-          tekrar gün ekleme.
-        */
-
-        if (
-          dayTitle
-            .toLocaleLowerCase(
-              "tr-TR"
-            )
-            .startsWith(
-              `${dayData.day}. gün`
-            )
-        ) {
-
-          title.textContent =
-            `${dayTitle} · ${questions.length} Soru`;
-
-        } else {
-
-          title.textContent =
-            `${dayData.day}. Gün — ${dayTitle} · ${questions.length} Soru`;
-        }
-
-      } else {
-
-        title.textContent =
-          `${dayData.day}. Gün · ${questions.length} Soru`;
-      }
+      titleLine.textContent =
+        `${title} · ${dayData.questions.length} ${UI[selectedLang].questionCount}`;
 
 
       card.appendChild(
-        title
+        titleLine
       );
 
 
-      card.addEventListener(
-        "click",
+      if (subtitle) {
+
+        const subtitleLine =
+          document.createElement(
+            "div"
+          );
+
+        subtitleLine.className =
+          "day-card-subtitle";
+
+        subtitleLine.textContent =
+          subtitle;
+
+        card.appendChild(
+          subtitleLine
+        );
+      }
+
+
+      card.onclick =
         () => {
 
           currentDayIndex =
@@ -280,38 +379,154 @@ function showHome() {
           currentQuestionIndex =
             0;
 
-          showQuestion();
+          renderQuestion();
 
-        }
-      );
+        };
 
 
       list.appendChild(
         card
       );
+
     }
   );
 }
 
 
-/* =====================================
-   SORU SAYFASI
-===================================== */
+/* =========================================
+   GÜN BAŞLIĞI
+========================================= */
 
-function showQuestion() {
+function getDayTitle(
+  dayData,
+  index
+) {
 
-  if (!days.length) {
-    showHome();
-    return;
+  const first =
+    dayData.questions[0] || {};
+
+
+  /*
+    JSON'da çok dilli dayTitle varsa
+    onu kullan.
+  */
+
+  if (
+    first.dayTitle &&
+    typeof first.dayTitle === "object"
+  ) {
+
+    return (
+      first.dayTitle[selectedLang] ||
+      first.dayTitle.tr ||
+      `${dayData.number}. Gün`
+    );
+
   }
 
+
+  if (
+    dayData.info &&
+    dayData.info.title &&
+    typeof dayData.info.title === "object"
+  ) {
+
+    return (
+      dayData.info.title[selectedLang] ||
+      dayData.info.title.tr ||
+      `${dayData.number}. Gün`
+    );
+
+  }
+
+
+  /*
+    Şimdilik Türkçe eski verilerle
+    de çalışsın.
+  */
+
+  if (
+    typeof first.dayTitle === "string"
+  ) {
+
+    return first.dayTitle;
+
+  }
+
+
+  return `${dayData.number}. Gün`;
+}
+
+
+/* =========================================
+   GÜN ALT BAŞLIĞI
+========================================= */
+
+function getDaySubtitle(
+  dayData
+) {
+
+  const first =
+    dayData.questions[0] || {};
+
+
+  let subtitle =
+    null;
+
+
+  if (
+    first.daySubtitle &&
+    typeof first.daySubtitle === "object"
+  ) {
+
+    subtitle =
+      first.daySubtitle[selectedLang] ||
+      first.daySubtitle.tr;
+
+  }
+
+
+  if (
+    !subtitle &&
+    dayData.info &&
+    dayData.info.subtitle &&
+    typeof dayData.info.subtitle === "object"
+  ) {
+
+    subtitle =
+      dayData.info.subtitle[selectedLang] ||
+      dayData.info.subtitle.tr;
+
+  }
+
+
+  if (
+    !subtitle &&
+    typeof first.daySubtitle === "string"
+  ) {
+
+    subtitle =
+      first.daySubtitle;
+
+  }
+
+
+  return subtitle || "";
+}
+
+
+/* =========================================
+   SORU SAYFASI
+========================================= */
+
+function renderQuestion() {
 
   const home =
     document.querySelector(
       "#home-page"
     );
 
-  const questionPage =
+  const page =
     document.querySelector(
       "#question-page"
     );
@@ -320,33 +535,15 @@ function showQuestion() {
   home.style.display =
     "none";
 
-  questionPage.style.display =
+  page.style.display =
     "block";
 
-
-  renderQuestionPage();
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
-
-
-/* =====================================
-   SORU SAYFASINI OLUŞTUR
-===================================== */
-
-function renderQuestionPage() {
 
   const dayData =
     days[currentDayIndex];
 
-  const questions =
-    dayData.questions;
-
   const question =
-    questions[
+    dayData.questions[
       currentQuestionIndex
     ];
 
@@ -360,10 +557,6 @@ function renderQuestionPage() {
   content.innerHTML = "";
 
 
-  /*
-    GÜN BAŞLIĞI
-  */
-
   const dayTitle =
     document.createElement(
       "h2"
@@ -372,49 +565,17 @@ function renderQuestionPage() {
   dayTitle.className =
     "question-day-title";
 
-
-  const firstQuestion =
-    questions[0] || {};
-
-
-  let dayName =
-    firstQuestion.dayTitle ||
-    "";
-
-
-  if (
-    dayName &&
-    !dayName
-      .toLocaleLowerCase(
-        "tr-TR"
-      )
-      .startsWith(
-        `${dayData.day}. gün`
-      )
-  ) {
-
-    dayName =
-      `${dayData.day}. Gün — ${dayName}`;
-
-  } else if (!dayName) {
-
-    dayName =
-      `${dayData.day}. Gün`;
-  }
-
-
   dayTitle.textContent =
-    dayName;
+    getDayTitle(
+      dayData,
+      currentDayIndex
+    );
 
 
   content.appendChild(
     dayTitle
   );
 
-
-  /*
-    SORU
-  */
 
   const card =
     document.createElement(
@@ -429,14 +590,11 @@ function renderQuestionPage() {
     SEÇİLEN DİL EN ÜSTTE
   */
 
-  const orderedLanguages = [
-
+  const languages = [
     selectedLang,
-
     ...LANGS
       .map(
-        language =>
-          language.key
+        l => l.key
       )
       .filter(
         key =>
@@ -445,15 +603,15 @@ function renderQuestionPage() {
   ];
 
 
-  orderedLanguages.forEach(
+  languages.forEach(
     languageKey => {
 
       const language =
         LANGS.find(
-          item =>
-            item.key ===
-            languageKey
+          l =>
+            l.key === languageKey
         );
+
 
       const data =
         question[languageKey];
@@ -474,60 +632,48 @@ function renderQuestionPage() {
 
 
       if (
-        languageKey ===
-        selectedLang
+        languageKey === selectedLang
       ) {
 
         block.classList.add(
           "selected-language"
         );
+
       }
 
 
-      /*
-        SORU
-      */
-
-      const questionLine =
+      const q =
         document.createElement(
           "div"
         );
 
-      questionLine.className =
+      q.className =
         "question-line";
 
-      questionLine.textContent =
-        `${language.label} ${question.id}. ${data.q}`;
+      q.textContent =
+        `${language.flag} ${question.id}. ${data.q}`;
 
 
-      /*
-        CEVAP
-      */
-
-      const answerLine =
+      const a =
         document.createElement(
           "div"
         );
 
-      answerLine.className =
+      a.className =
         "answer-line";
 
-      answerLine.textContent =
-        `${language.label} ${question.id}. ${data.a}`;
+      a.textContent =
+        `${language.flag} ${question.id}. ${data.a}`;
 
 
-      block.appendChild(
-        questionLine
-      );
-
-      block.appendChild(
-        answerLine
-      );
+      block.appendChild(q);
+      block.appendChild(a);
 
 
       card.appendChild(
         block
       );
+
     }
   );
 
@@ -537,10 +683,8 @@ function renderQuestionPage() {
   */
 
   if (
-    Array.isArray(
-      question.sources
-    ) &&
-    question.sources.length > 0
+    Array.isArray(question.sources) &&
+    question.sources.length
   ) {
 
     card.appendChild(
@@ -548,6 +692,7 @@ function renderQuestionPage() {
         question.sources
       )
     );
+
   }
 
 
@@ -560,63 +705,64 @@ function renderQuestionPage() {
     ÜST VE ALT NAVİGASYON
   */
 
-  const topNavigation =
-    document.querySelector(
-      "#top-navigation"
-    );
-
-  const bottomNavigation =
-    document.querySelector(
-      "#bottom-navigation"
-    );
-
-
-  topNavigation.innerHTML =
+  document.querySelector(
+    "#top-navigation"
+  ).innerHTML =
     "";
 
-  bottomNavigation.innerHTML =
+  document.querySelector(
+    "#bottom-navigation"
+  ).innerHTML =
     "";
 
 
-  topNavigation.appendChild(
+  document.querySelector(
+    "#top-navigation"
+  ).appendChild(
     createNavigation()
   );
 
-  bottomNavigation.appendChild(
+
+  document.querySelector(
+    "#bottom-navigation"
+  ).appendChild(
     createNavigation()
   );
+
+
+  /*
+    Dil seçici
+  */
+
+  addLanguageSelector();
+
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
 
 
-/* =====================================
+/* =========================================
    NAVİGASYON
-===================================== */
+========================================= */
 
 function createNavigation() {
 
-  const nav =
+  const row =
     document.createElement(
       "div"
     );
 
-  nav.className =
+  row.className =
     "navigation-row";
 
 
-  /*
-    ÖNCEKİ SORU
-  */
-
   const previousQuestion =
-    document.createElement(
-      "button"
+    makeButton(
+      UI[selectedLang].previousQuestion
     );
-
-  previousQuestion.type =
-    "button";
-
-  previousQuestion.textContent =
-    "← Önceki Soru";
 
 
   previousQuestion.disabled =
@@ -632,25 +778,16 @@ function createNavigation() {
 
         currentQuestionIndex--;
 
-        showQuestion();
+        renderQuestion();
+
       }
     };
 
 
-  /*
-    SONRAKİ SORU
-  */
-
   const nextQuestion =
-    document.createElement(
-      "button"
+    makeButton(
+      UI[selectedLang].nextQuestion
     );
-
-  nextQuestion.type =
-    "button";
-
-  nextQuestion.textContent =
-    "Sonraki Soru →";
 
 
   nextQuestion.disabled =
@@ -670,48 +807,35 @@ function createNavigation() {
 
         currentQuestionIndex++;
 
-        showQuestion();
+        renderQuestion();
+
       }
     };
 
 
-  /*
-    ANA SAYFA
-  */
-
-  const homeButton =
-    document.createElement(
-      "button"
+  const home =
+    makeButton(
+      UI[selectedLang].home
     );
 
-  homeButton.type =
-    "button";
 
-  homeButton.textContent =
-    "🏠 Ana Sayfa";
-
-
-  homeButton.onclick =
+  home.onclick =
     () => {
 
-      showHome();
+      renderHome();
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
     };
 
 
-  /*
-    ÖNCEKİ GÜN
-  */
-
   const previousDay =
-    document.createElement(
-      "button"
+    makeButton(
+      UI[selectedLang].previousDay
     );
-
-  previousDay.type =
-    "button";
-
-  previousDay.textContent =
-    "← Önceki Gün";
 
 
   previousDay.disabled =
@@ -730,25 +854,16 @@ function createNavigation() {
         currentQuestionIndex =
           0;
 
-        showQuestion();
+        renderQuestion();
+
       }
     };
 
 
-  /*
-    SONRAKİ GÜN
-  */
-
   const nextDay =
-    document.createElement(
-      "button"
+    makeButton(
+      UI[selectedLang].nextDay
     );
-
-  nextDay.type =
-    "button";
-
-  nextDay.textContent =
-    "Sonraki Gün →";
 
 
   nextDay.disabled =
@@ -769,50 +884,178 @@ function createNavigation() {
         currentQuestionIndex =
           0;
 
-        showQuestion();
+        renderQuestion();
+
       }
     };
 
 
-  nav.appendChild(
+  row.appendChild(
     previousQuestion
   );
 
-  nav.appendChild(
+  row.appendChild(
     nextQuestion
   );
 
-  nav.appendChild(
-    homeButton
+  row.appendChild(
+    home
   );
 
-  nav.appendChild(
+  row.appendChild(
     previousDay
   );
 
-  nav.appendChild(
+  row.appendChild(
     nextDay
   );
 
 
-  return nav;
+  return row;
 }
 
 
-/* =====================================
+function makeButton(text) {
+
+  const button =
+    document.createElement(
+      "button"
+    );
+
+  button.type =
+    "button";
+
+  button.textContent =
+    text;
+
+  return button;
+}
+
+
+/* =========================================
+   DİL SEÇİCİ
+========================================= */
+
+function addLanguageSelector() {
+
+  /*
+    Yoksa oluştur.
+  */
+
+  let selector =
+    document.querySelector(
+      "#language-selector"
+    );
+
+
+  if (!selector) {
+
+    selector =
+      document.createElement(
+        "div"
+      );
+
+    selector.id =
+      "language-selector";
+
+    selector.className =
+      "language-selector";
+
+
+    const page =
+      document.querySelector(
+        "#question-page"
+      );
+
+
+    const nav =
+      document.querySelector(
+        "#top-navigation"
+      );
+
+
+    page.insertBefore(
+      selector,
+      nav
+    );
+
+  }
+
+
+  selector.innerHTML = "";
+
+
+  LANGS.forEach(
+    language => {
+
+      const button =
+        document.createElement(
+          "button"
+        );
+
+      button.type =
+        "button";
+
+      button.textContent =
+        `${language.flag} ${language.name}`;
+
+
+      if (
+        language.key === selectedLang
+      ) {
+
+        button.classList.add(
+          "active"
+        );
+
+      }
+
+
+      button.onclick =
+        () => {
+
+          selectedLang =
+            language.key;
+
+
+          localStorage.setItem(
+            "selectedLang",
+            selectedLang
+          );
+
+
+          document.documentElement.lang =
+            selectedLang;
+
+
+          renderQuestion();
+
+        };
+
+
+      selector.appendChild(
+        button
+      );
+
+    }
+  );
+}
+
+
+/* =========================================
    KAYNAKLAR
-===================================== */
+========================================= */
 
 function renderSources(
   sources
 ) {
 
-  const container =
+  const box =
     document.createElement(
       "div"
     );
 
-  container.className =
+  box.className =
     "sources";
 
 
@@ -822,13 +1065,10 @@ function renderSources(
     );
 
   title.textContent =
-    SOURCE_TITLE[
-      selectedLang
-    ] ||
-    "📚 Kaynaklar";
+    UI[selectedLang].source;
 
 
-  container.appendChild(
+  box.appendChild(
     title
   );
 
@@ -842,63 +1082,51 @@ function renderSources(
   sources.forEach(
     source => {
 
-      const item =
+      const li =
         document.createElement(
           "li"
         );
 
 
-      /*
-        Yeni format:
-        {
-          title: "...",
-          url: "..."
-        }
-      */
-
       if (
-        typeof source ===
-        "object" &&
+        typeof source === "object" &&
         source !== null
       ) {
 
-        const title =
+        const name =
           document.createElement(
             "span"
           );
 
-        title.textContent =
+        name.textContent =
           source.title ||
           source.name ||
           "Kaynak";
 
 
-        item.appendChild(
-          title
+        li.appendChild(
+          name
         );
 
 
         if (source.url) {
 
-          item.appendChild(
+          li.appendChild(
             document.createTextNode(
               " "
             )
           );
 
 
-          item.appendChild(
-            createSourceLink(
+          li.appendChild(
+            sourceLink(
               source.url
             )
           );
+
         }
 
       } else {
-
-        /*
-          Eski formatı da destekle.
-        */
 
         const text =
           String(source);
@@ -916,66 +1144,59 @@ function renderSources(
             match[0];
 
 
-          const label =
-            text
-              .replace(
-                url,
-                ""
-              )
-              .trim();
-
-
-          item.appendChild(
+          li.appendChild(
             document.createTextNode(
-              label
+              text
+                .replace(
+                  url,
+                  ""
+                )
+                .trim()
             )
           );
 
 
-          item.appendChild(
+          li.appendChild(
             document.createTextNode(
               " "
             )
           );
 
 
-          item.appendChild(
-            createSourceLink(
+          li.appendChild(
+            sourceLink(
               url
             )
           );
 
         } else {
 
-          item.textContent =
+          li.textContent =
             text;
+
         }
+
       }
 
 
       list.appendChild(
-        item
+        li
       );
+
     }
   );
 
 
-  container.appendChild(
+  box.appendChild(
     list
   );
 
 
-  return container;
+  return box;
 }
 
 
-/* =====================================
-   KAYNAK LİNKİ
-===================================== */
-
-function createSourceLink(
-  url
-) {
+function sourceLink(url) {
 
   const link =
     document.createElement(
@@ -991,90 +1212,9 @@ function createSourceLink(
   link.rel =
     "noopener noreferrer";
 
-
   link.textContent =
-    `🔗 ${
-      OPEN_TEXT[selectedLang] ||
-      "Kaynağı aç"
-    }`;
+    `🔗 ${UI[selectedLang].openSource}`;
 
 
   return link;
-}
-
-
-/* =====================================
-   DİL SEÇİMİ
-===================================== */
-
-/*
-  Soru sayfasında dil seçimi.
-*/
-
-function addLanguageSelector() {
-
-  /*
-    Eski sistemle uyum için
-    mevcut bir language-selector
-    varsa kullanılır.
-  */
-
-  const existing =
-    document.querySelector(
-      "#language-selector"
-    );
-
-
-  if (!existing) {
-    return;
-  }
-
-
-  existing.innerHTML =
-    "";
-
-
-  LANGS.forEach(
-    language => {
-
-      const button =
-        document.createElement(
-          "button"
-        );
-
-      button.textContent =
-        language.label;
-
-
-      if (
-        language.key ===
-        selectedLang
-      ) {
-
-        button.classList.add(
-          "active"
-        );
-      }
-
-
-      button.onclick =
-        () => {
-
-          selectedLang =
-            language.key;
-
-          localStorage.setItem(
-            "selectedLang",
-            selectedLang
-          );
-
-          renderQuestionPage();
-        };
-
-
-      existing.appendChild(
-        button
-      );
     }
-  );
-      }
