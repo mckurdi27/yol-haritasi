@@ -9,9 +9,9 @@
     "tt": "1 нче көн — Исламга беренче адым",
     "fr": "Jour 1 — Le premier pas vers l'islam",
     "es": "Día 1 — El primer paso hacia el Islam",
-    "ar": "اليَوْمُ الْأَوَّلُ — الْخُطْوَةُ الْأُولَى إِلَى الْإِسْلَامِ",
     "nl": "Dag 1 — De eerste stap naar de islam",
-    "it": "Giorno 1 — Il primo passo verso l'Islam"
+    "it": "Giorno 1 — Il primo passo verso l'Islam",
+    "ar": "اليَوْمُ الْأَوَّلُ — الْخُطْوَةُ الْأُولَى إِلَى الْإِسْلَامِ"
   },
   "daySubtitle": {
     "tr": "İslâm, iman, Allah, Kur'an ve Peygamberimizi tanımak",
@@ -22,10 +22,23 @@
     "tt": "Ислам, иман, Аллаһ, Коръән һәм Пәйгамбәребез белән танышу",
     "fr": "Découvrir l'islam, la foi, Allah, le Coran et notre Prophète",
     "es": "Conocer el Islam, la fe, Allah, el Corán y nuestro Profeta",
-    "ar": "التَّعَرُّفُ عَلَى الْإِسْلَامِ وَالْإِيمَانِ وَاللَّهِ وَالْقُرْآنِ وَنَبِيِّنَا",
     "nl": "Kennismaken met de islam, het geloof, Allah, de Koran en onze Profeet",
-    "it": "Conoscere l'Islam, la fede, Allah, il Corano e il nostro Profeta"
+    "it": "Conoscere l'Islam, la fede, Allah, il Corano e il nostro Profeta",
+    "ar": "التَّعَرُّفُ عَلَى الْإِسْلَامِ وَالْإِيمَانِ وَاللَّهِ وَالْقُرْآنِ وَنَبِيِّنَا"
   },
+  "languages": [
+    "tr",
+    "en",
+    "de",
+    "ru",
+    "ku",
+    "tt",
+    "fr",
+    "es",
+    "nl",
+    "it",
+    "ar"
+  ],
   "questions": [
     {
       "id": 1,
@@ -62,10 +75,6 @@
         "q": "¿Qué es el islam?",
         "a": "El islam es creer en la unicidad de Allah, someterse a Él y vivir según Su guía."
       },
-      "ar": {
-        "q": "مَا هُوَ الْإِسْلَامُ؟",
-        "a": "الْإِسْلَامُ هُوَ تَوْحِيدُ اللَّهِ، وَالِاسْتِسْلَامُ لَهُ، وَالْعَيْشُ وَفْقَ هُدَاهُ."
-      },
       "nl": {
         "q": "Wat is de islam?",
         "a": "De islam betekent geloven in de eenheid van Allah, zich aan Hem onderwerpen en leven volgens Zijn leiding."
@@ -73,6 +82,10 @@
       "it": {
         "q": "Che cos'è l'Islam?",
         "a": "L'Islam significa credere nell'unicità di Allah, sottomettersi a Lui e vivere secondo la Sua guida."
+      },
+      "ar": {
+        "q": "مَا هُوَ الْإِسْلَامُ؟",
+        "a": "الْإِسْلَامُ هُوَ تَوْحِيدُ اللَّهِ، وَالِاسْتِسْلَامُ لَهُ، وَالْعَيْشُ وَفْقَ هُدَاهُ."
       },
       "sources": [
         "📖 Kur'an — Âl-i İmrân 3:19",
@@ -114,10 +127,6 @@
         "q": "¿Quién es musulmán?",
         "a": "Un musulmán es quien cree en Allah y en los fundamentos de la fe que Él ha revelado y se somete al islam."
       },
-      "ar": {
-        "q": "مَنْ هُوَ الْمُسْلِمُ؟",
-        "a": "الْمُسْلِمُ هُوَ مَنْ يُؤْمِنُ بِاللَّهِ وَبِأُصُولِ الْإِيمَانِ الَّتِي أَنْزَلَهَا، وَيَسْتَسْلِمُ لِلْإِسْلَامِ."
-      },
       "nl": {
         "q": "Wie is een moslim?",
         "a": "Een moslim is iemand die in Allah en de door Hem geopenbaarde geloofsgrondslagen gelooft en zich aan de islam onderwerpt."
@@ -125,6 +134,10 @@
       "it": {
         "q": "Chi è un musulmano?",
         "a": "Un musulmano è colui che crede in Allah e nei fondamenti della fede da Lui rivelati e si sottomette all'Islam."
+      },
+      "ar": {
+        "q": "مَنْ هُوَ الْمُسْلِمُ؟",
+        "a": "الْمُسْلِمُ هُوَ مَنْ يُؤْمِنُ بِاللَّهِ وَبِأُصُولِ الْإِيمَانِ الَّتِي أَنْزَلَهَا، وَيَسْتَسْلِمُ لِلْإِسْلَامِ."
       },
       "sources": [
         "📖 Kur'an — Hucurât 49:14"
@@ -165,10 +178,6 @@
         "q": "¿Quién es Allah?",
         "a": "Allah es el Creador de todo, el único Dios verdadero y el único digno de adoración."
       },
-      "ar": {
-        "q": "مَنْ هُوَ اللَّهُ؟",
-        "a": "اللَّهُ هُوَ خَالِقُ كُلِّ شَيْءٍ، وَالْإِلَهُ الْحَقُّ الْوَاحِدُ، وَالْمَعْبُودُ بِحَقٍّ."
-      },
       "nl": {
         "q": "Wie is Allah?",
         "a": "Allah is de Schepper van alles, de enige ware God en de Enige Die het waard is om aanbeden te worden."
@@ -176,6 +185,10 @@
       "it": {
         "q": "Chi è Allah?",
         "a": "Allah è il Creatore di tutto, l'unico vero Dio e l'unico degno di essere adorato."
+      },
+      "ar": {
+        "q": "مَنْ هُوَ اللَّهُ؟",
+        "a": "اللَّهُ هُوَ خَالِقُ كُلِّ شَيْءٍ، وَالْإِلَهُ الْحَقُّ الْوَاحِدُ، وَالْمَعْبُودُ بِحَقٍّ."
       },
       "sources": [
         "📖 Kur'an — İhlâs 112:1-4",
@@ -217,10 +230,6 @@
         "q": "¿Tiene Allah algún socio?",
         "a": "No. Allah es Uno; no tiene ningún socio y nada se Le parece."
       },
-      "ar": {
-        "q": "هَلْ لِلَّهِ شَرِيكٌ؟",
-        "a": "لَا. اللَّهُ وَاحِدٌ، لَا شَرِيكَ لَهُ، وَلَيْسَ كَمِثْلِهِ شَيْءٌ."
-      },
       "nl": {
         "q": "Heeft Allah een deelgenoot?",
         "a": "Nee. Allah is Eén; Hij heeft geen deelgenoot en niets is aan Hem gelijk."
@@ -228,6 +237,10 @@
       "it": {
         "q": "Allah ha un socio?",
         "a": "No. Allah è Uno; non ha alcun socio e nulla è simile a Lui."
+      },
+      "ar": {
+        "q": "هَلْ لِلَّهِ شَرِيكٌ؟",
+        "a": "لَا. اللَّهُ وَاحِدٌ، لَا شَرِيكَ لَهُ، وَلَيْسَ كَمِثْلِهِ شَيْءٌ."
       },
       "sources": [
         "📖 Kur'an — İhlâs 112:1-4",
@@ -269,10 +282,6 @@
         "q": "¿Qué es el Corán?",
         "a": "El Corán es el último Libro divino revelado por Allah a nuestro Profeta Muhammad ﷺ."
       },
-      "ar": {
-        "q": "مَا هُوَ الْقُرْآنُ؟",
-        "a": "الْقُرْآنُ هُوَ كِتَابُ اللَّهِ الْخَاتَمُ، أَنْزَلَهُ اللَّهُ عَلَى نَبِيِّنَا مُحَمَّدٍ ﷺ."
-      },
       "nl": {
         "q": "Wat is de Koran?",
         "a": "De Koran is het laatste goddelijke Boek dat door Allah aan onze Profeet Mohammed ﷺ is geopenbaard."
@@ -280,6 +289,10 @@
       "it": {
         "q": "Che cos'è il Corano?",
         "a": "Il Corano è l'ultimo Libro divino rivelato da Allah al nostro Profeta Muhammad ﷺ."
+      },
+      "ar": {
+        "q": "مَا هُوَ الْقُرْآنُ؟",
+        "a": "الْقُرْآنُ هُوَ كِتَابُ اللَّهِ الْخَاتَمُ، أَنْزَلَهُ اللَّهُ عَلَى نَبِيِّنَا مُحَمَّدٍ ﷺ."
       },
       "sources": [
         "📖 Kur'an — Bakara 2:2",
@@ -321,10 +334,6 @@
         "q": "¿Quién es nuestro Profeta?",
         "a": "Nuestro Profeta es Muhammad Mustafa ﷺ. Él es el último Profeta de Allah."
       },
-      "ar": {
-        "q": "مَنْ هُوَ نَبِيُّنَا؟",
-        "a": "نَبِيُّنَا هُوَ مُحَمَّدٌ الْمُصْطَفَى ﷺ، وَهُوَ خَاتَمُ أَنْبِيَاءِ اللَّهِ."
-      },
       "nl": {
         "q": "Wie is onze Profeet?",
         "a": "Onze Profeet is Mohammed Mustafa ﷺ. Hij is de laatste Profeet van Allah."
@@ -332,6 +341,10 @@
       "it": {
         "q": "Chi è il nostro Profeta?",
         "a": "Il nostro Profeta è Muhammad Mustafa ﷺ. Egli è l'ultimo Profeta di Allah."
+      },
+      "ar": {
+        "q": "مَنْ هُوَ نَبِيُّنَا؟",
+        "a": "نَبِيُّنَا هُوَ مُحَمَّدٌ الْمُصْطَفَى ﷺ، وَهُوَ خَاتَمُ أَنْبِيَاءِ اللَّهِ."
       },
       "sources": [
         "📖 Kur'an — Ahzâb 33:40"
@@ -342,11 +355,11 @@
       "day": 1,
       "tr": {
         "q": "İman nedir?",
-        "a": "İman, Allah'a, meleklerine, kitaplarına, peygamberlerine, âhiret gününe ve kadere inanıp tasdik etmektir."
+        "a": "İman, Allah'a, meleklerine, kitaplarına, peygamberlerine, âhiret gününe ve kadere; hayır ve şerrin Allah'ın takdiriyle olduğuna inanmaktır."
       },
       "en": {
         "q": "What is faith?",
-        "a": "Faith is believing in Allah, His angels, His Books, His messengers, the Last Day, and divine decree."
+        "a": "Faith is believing in Allah, His angels, His Books, His messengers, the Last Day, and divine decree, including that good and evil occur by Allah's decree."
       },
       "de": {
         "q": "Was ist der Glaube?",
@@ -372,10 +385,6 @@
         "q": "¿Qué es la fe?",
         "a": "La fe consiste en creer en Allah, Sus ángeles, Sus Libros, Sus mensajeros, el Día del Juicio y el destino."
       },
-      "ar": {
-        "q": "مَا هُوَ الْإِيمَانُ؟",
-        "a": "الْإِيمَانُ هُوَ التَّصْدِيقُ بِاللَّهِ، وَمَلَائِكَتِهِ، وَكُتُبِهِ، وَرُسُلِهِ، وَالْيَوْمِ الْآخِرِ، وَالْقَدَرِ."
-      },
       "nl": {
         "q": "Wat is geloof?",
         "a": "Geloof betekent geloven in Allah, Zijn engelen, Zijn Boeken, Zijn boodschappers, de Laatste Dag en de goddelijke voorbeschikking."
@@ -383,6 +392,10 @@
       "it": {
         "q": "Che cos'è la fede?",
         "a": "La fede consiste nel credere in Allah, nei Suoi angeli, nei Suoi Libri, nei Suoi messaggeri, nel Giorno del Giudizio e nel destino."
+      },
+      "ar": {
+        "q": "مَا هُوَ الْإِيمَانُ؟",
+        "a": "الْإِيمَانُ هُوَ التَّصْدِيقُ بِاللَّهِ، وَمَلَائِكَتِهِ، وَكُتُبِهِ، وَرُسُلِهِ، وَالْيَوْمِ الْآخِرِ، وَالْقَدَرِ."
       },
       "sources": [
         "📖 Kur'an — Bakara 2:177",
@@ -424,10 +437,6 @@
         "q": "¿Cuáles son los pilares de la fe?",
         "a": "Son creer en Allah, Sus ángeles, Sus Libros, Sus mensajeros, el Día del Juicio y el destino."
       },
-      "ar": {
-        "q": "مَا أَرْكَانُ الْإِيمَانِ؟",
-        "a": "هِيَ: الْإِيمَانُ بِاللَّهِ، وَمَلَائِكَتِهِ، وَكُتُبِهِ، وَرُسُلِهِ، وَالْيَوْمِ الْآخِرِ، وَالْقَدَرِ."
-      },
       "nl": {
         "q": "Wat zijn de geloofsartikelen?",
         "a": "Het zijn het geloof in Allah, Zijn engelen, Zijn Boeken, Zijn boodschappers, de Laatste Dag en de goddelijke voorbeschikking."
@@ -435,6 +444,10 @@
       "it": {
         "q": "Quali sono i pilastri della fede?",
         "a": "Sono credere in Allah, nei Suoi angeli, nei Suoi Libri, nei Suoi messaggeri, nel Giorno del Giudizio e nel destino."
+      },
+      "ar": {
+        "q": "مَا أَرْكَانُ الْإِيمَانِ؟",
+        "a": "هِيَ: الْإِيمَانُ بِاللَّهِ، وَمَلَائِكَتِهِ، وَكُتُبِهِ، وَرُسُلِهِ، وَالْيَوْمِ الْآخِرِ، وَالْقَدَرِ."
       },
       "sources": [
         "📜 Sahih Müslim — Îman 1"
@@ -475,10 +488,6 @@
         "q": "¿Cuáles son los pilares del islam?",
         "a": "Son el testimonio de fe, la oración, el zakat, el ayuno de Ramadán y la peregrinación para quien tenga capacidad."
       },
-      "ar": {
-        "q": "مَا أَرْكَانُ الْإِسْلَامِ؟",
-        "a": "هِيَ الشَّهَادَتَانِ، وَإِقَامُ الصَّلَاةِ، وَإِيتَاءُ الزَّكَاةِ، وَصَوْمُ رَمَضَانَ، وَحَجُّ الْبَيْتِ لِمَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا."
-      },
       "nl": {
         "q": "Wat zijn de zuilen van de islam?",
         "a": "Het zijn de geloofsgetuigenis, het gebed, de zakat, het vasten in de Ramadan en de bedevaart voor wie daartoe in staat is."
@@ -486,6 +495,10 @@
       "it": {
         "q": "Quali sono i pilastri dell'Islam?",
         "a": "Sono la testimonianza di fede, la preghiera, la zakat, il digiuno del Ramadan e il pellegrinaggio per chi ne ha la possibilità."
+      },
+      "ar": {
+        "q": "مَا أَرْكَانُ الْإِسْلَامِ؟",
+        "a": "هِيَ الشَّهَادَتَانِ، وَإِقَامُ الصَّلَاةِ، وَإِيتَاءُ الزَّكَاةِ، وَصَوْمُ رَمَضَانَ، وَحَجُّ الْبَيْتِ لِمَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا."
       },
       "sources": [
         "📜 Sahih Buhârî — Îman 1",
@@ -497,47 +510,47 @@
       "day": 1,
       "tr": {
         "q": "İbadet nedir?",
-        "a": "İbadet, Allah'ın razı olduğu söz, davranış ve kulluk görevlerini yerine getirmektir."
+        "a": "İbadet, Allah'ın sevdiği ve razı olduğu söz, davranış ve kulluk görevlerini yerine getirmektir."
       },
       "en": {
         "q": "What is worship?",
-        "a": "Worship is carrying out words, actions and acts of servitude that Allah is pleased with."
+        "a": "Worship includes words and actions that Allah loves and is pleased with, as well as acts of servitude to Him."
       },
       "de": {
         "q": "Was ist Gottesdienst?",
-        "a": "Gottesdienst bedeutet, Worte, Taten und Pflichten der Dienerschaft zu erfüllen, mit denen Allah zufrieden ist."
+        "a": "Gottesdienst umfasst Worte und Taten, die Allah liebt und mit denen Er zufrieden ist, sowie Formen der Dienerschaft Ihm gegenüber."
       },
       "ru": {
         "q": "Что такое поклонение?",
-        "a": "Поклонение — это выполнение слов, дел и обязанностей служения, которыми доволен Аллах."
+        "a": "Поклонение включает слова и дела, которые любит Аллах и которыми Он доволен, а также служение Ему."
       },
       "ku": {
         "q": "Îbadet çi ye?",
-        "a": "Îbadet ew e ku mirov gotin, kirin û erkên bendeyiyê yên ku Xwedê jê razî ye pêk bîne."
+        "a": "Îbadet ew e ku mirov gotin û kirinên ku Xwedê ji wan hez dike û jê razî ye pêk bîne û bendeyiya xwe li ber Wî nîşan bide."
       },
       "tt": {
         "q": "Гыйбадәт нәрсә ул?",
-        "a": "Гыйбадәт — Аллаһ риза булган сүзләрне, гамәлләрне һәм коллык бурычларын үтәү."
+        "a": "Гыйбадәт — Аллаһ яраткан һәм риза булган сүзләрне һәм гамәлләрне кылу һәм Аңа коллык итү."
       },
       "fr": {
         "q": "Qu'est-ce que l'adoration ?",
-        "a": "L'adoration consiste à accomplir les paroles, les actes et les devoirs de servitude agréés par Allah."
+        "a": "L'adoration comprend les paroles et les actes qu'Allah aime et agrée, ainsi que les actes de servitude envers Lui."
       },
       "es": {
         "q": "¿Qué es la adoración?",
-        "a": "La adoración consiste en realizar palabras, acciones y deberes de servidumbre que agradan a Allah."
+        "a": "La adoración comprende las palabras y acciones que Allah ama y acepta, así como los actos de servidumbre hacia Él."
+      },
+      "nl": {
+        "q": "Wat is aanbidding?",
+        "a": "Aanbidding omvat woorden en daden waar Allah van houdt en tevreden mee is, evenals vormen van dienstbaarheid aan Hem."
+      },
+      "it": {
+        "q": "Che cos'è l'adorazione?",
+        "a": "L'adorazione comprende le parole e le azioni che Allah ama e gradisce, così come gli atti di devozione verso di Lui."
       },
       "ar": {
         "q": "مَا هِيَ الْعِبَادَةُ؟",
         "a": "الْعِبَادَةُ هِيَ اسْمٌ جَامِعٌ لِكُلِّ مَا يُحِبُّهُ اللَّهُ وَيَرْضَاهُ مِنَ الْأَقْوَالِ وَالْأَعْمَالِ."
-      },
-      "nl": {
-        "q": "Wat is aanbidding?",
-        "a": "Aanbidding betekent het verrichten van woorden, daden en vormen van dienstbaarheid waar Allah tevreden mee is."
-      },
-      "it": {
-        "q": "Che cos'è l'adorazione?",
-        "a": "L'adorazione consiste nel compiere parole, azioni e atti di devozione di cui Allah è tevreden."
       },
       "sources": [
         "📖 Kur'an — Zâriyât 51:56",
@@ -579,10 +592,6 @@
         "q": "¿Cómo se cree en Allah?",
         "a": "Creemos en la existencia y unicidad de Allah, en Sus nombres y atributos como corresponde a Su majestad, y lo adoramos solo a Él."
       },
-      "ar": {
-        "q": "كَيْفَ نُؤْمِنُ بِاللَّهِ؟",
-        "a": "نُؤْمِنُ بِوُجُودِ اللَّهِ وَوَحْدَانِيَّتِهِ وَأَسْمَائِهِ وَصِفَاتِهِ عَلَى مَا يَلِيقُ بِهِ، وَنَعْبُدُهُ وَحْدَهُ."
-      },
       "nl": {
         "q": "Hoe geloven we in Allah?",
         "a": "Wij geloven in het bestaan en de eenheid van Allah en in Zijn namen en eigenschappen zoals het Hem betaamt, en wij aanbidden alleen Hem."
@@ -590,6 +599,10 @@
       "it": {
         "q": "Come si crede in Allah?",
         "a": "Crediamo nell'esistenza e nell'unicità di Allah, nei Suoi nomi e attributi come si addice alla Sua maestà, e adoriamo solo Lui."
+      },
+      "ar": {
+        "q": "كَيْفَ نُؤْمِنُ بِاللَّهِ؟",
+        "a": "نُؤْمِنُ بِوُجُودِ اللَّهِ وَوَحْدَانِيَّتِهِ وَأَسْمَائِهِ وَصِفَاتِهِ عَلَى مَا يَلِيقُ بِهِ، وَنَعْبُدُهُ وَحْدَهُ."
       },
       "sources": [
         "📖 Kur'an — İhlâs 112:1-4",
@@ -631,10 +644,6 @@
         "q": "¿Por qué creemos en los profetas?",
         "a": "Porque Allah envió profetas para guiar a las personas por el camino recto."
       },
-      "ar": {
-        "q": "لِمَاذَا نُؤْمِنُ بِالْأَنْبِيَاءِ؟",
-        "a": "لِأَنَّ اللَّهَ أَرْسَلَ الْأَنْبِيَاءَ لِهَدَايَةِ النَّاسِ إِلَى الصِّرَاطِ الْمُسْتَقِيمِ."
-      },
       "nl": {
         "q": "Waarom geloven wij in de profeten?",
         "a": "Omdat Allah profeten heeft gezonden om de mensen naar het rechte pad te leiden."
@@ -642,6 +651,10 @@
       "it": {
         "q": "Perché crediamo nei profeti?",
         "a": "Perché Allah ha inviato i profeti per guidare le persone sulla retta via."
+      },
+      "ar": {
+        "q": "لِمَاذَا نُؤْمِنُ بِالْأَنْبِيَاءِ؟",
+        "a": "لِأَنَّ اللَّهَ أَرْسَلَ الْأَنْبِيَاءَ لِهَدَايَةِ النَّاسِ إِلَى الصِّرَاطِ الْمُسْتَقِيمِ."
       },
       "sources": [
         "📖 Kur'an — Nahl 16:36",
@@ -683,10 +696,6 @@
         "q": "¿Qué es el Más Allá?",
         "a": "El Más Allá es la vida eterna después de esta vida, donde las personas rendirán cuentas por sus obras."
       },
-      "ar": {
-        "q": "مَا هِيَ الْآخِرَةُ؟",
-        "a": "الْآخِرَةُ هِيَ الْحَيَاةُ الْأَبَدِيَّةُ بَعْدَ الْحَيَاةِ الدُّنْيَا، وَفِيهَا يُحَاسَبُ النَّاسُ عَلَى أَعْمَالِهِمْ."
-      },
       "nl": {
         "q": "Wat is het Hiernamaals?",
         "a": "Het Hiernamaals is het eeuwige leven na dit wereldse leven, waarin de mensen rekenschap zullen afleggen over hun daden."
@@ -694,6 +703,10 @@
       "it": {
         "q": "Che cos'è l'Aldilà?",
         "a": "L'Aldilà è la vita eterna dopo questa vita terrena, nella quale le persone saranno chiamate a rendere conto delle proprie azioni."
+      },
+      "ar": {
+        "q": "مَا هِيَ الْآخِرَةُ؟",
+        "a": "الْآخِرَةُ هِيَ الْحَيَاةُ الْأَبَدِيَّةُ بَعْدَ الْحَيَاةِ الدُّنْيَا، وَفِيهَا يُحَاسَبُ النَّاسُ عَلَى أَعْمَالِهِمْ."
       },
       "sources": [
         "📖 Kur'an — Bakara 2:4",
@@ -735,10 +748,6 @@
         "q": "¿Qué es el destino?",
         "a": "El destino significa que Allah, con Su conocimiento eterno, conoce y ha decretado todo lo que ocurrió y ocurrirá."
       },
-      "ar": {
-        "q": "مَا هُوَ الْقَدَرُ؟",
-        "a": "الْقَدَرُ هُوَ عِلْمُ اللَّهِ الْأَزَلِيُّ بِكُلِّ مَا كَانَ وَمَا سَيَكُونُ، وَتَقْدِيرُهُ لِذَلِكَ."
-      },
       "nl": {
         "q": "Wat is de goddelijke voorbeschikking?",
         "a": "De goddelijke voorbeschikking betekent dat Allah met Zijn eeuwige kennis alles weet wat is gebeurd en wat zal gebeuren en dit heeft bepaald."
@@ -746,6 +755,10 @@
       "it": {
         "q": "Che cos'è il destino?",
         "a": "Il destino significa che Allah, con la Sua conoscenza eterna, conosce e ha stabilito tutto ciò che è accaduto e accadrà."
+      },
+      "ar": {
+        "q": "مَا هُوَ الْقَدَرُ؟",
+        "a": "الْقَدَرُ هُوَ عِلْمُ اللَّهِ الْأَزَلِيُّ بِكُلِّ مَا كَانَ وَمَا سَيَكُونُ، وَتَقْدِيرُهُ لِذَلِكَ."
       },
       "sources": [
         "📖 Kur'an — Kamer 54:49",
@@ -787,10 +800,6 @@
         "q": "¿Qué es la súplica (dua)?",
         "a": "La dua es dirigirse a Allah y pedirle ayuda, misericordia, perdón y bien."
       },
-      "ar": {
-        "q": "مَا هُوَ الدُّعَاءُ؟",
-        "a": "الدُّعَاءُ هُوَ تَوَجُّهُ الْعَبْدِ إِلَى اللَّهِ، وَسُؤَالُهُ الْمَعُونَةَ وَالرَّحْمَةَ وَالْمَغْفِرَةَ وَالْخَيْرَ."
-      },
       "nl": {
         "q": "Wat is dua?",
         "a": "Dua is je tot Allah wenden en Hem om hulp, barmhartigheid, vergeving en het goede vragen."
@@ -798,6 +807,10 @@
       "it": {
         "q": "Che cos'è la supplica (dua)?",
         "a": "La dua consiste nel rivolgersi ad Allah e chiedere a Lui aiuto, misericordia, perdono e bene."
+      },
+      "ar": {
+        "q": "مَا هُوَ الدُّعَاءُ؟",
+        "a": "الدُّعَاءُ هُوَ تَوَجُّهُ الْعَبْدِ إِلَى اللَّهِ، وَسُؤَالُهُ الْمَعُونَةَ وَالرَّحْمَةَ وَالْمَغْفِرَةَ وَالْخَيْرَ."
       },
       "sources": [
         "📖 Kur'an — Bakara 2:186",
@@ -839,10 +852,6 @@
         "q": "¿Qué es la oración (salah)?",
         "a": "La oración es uno de los actos fundamentales de adoración mediante los cuales el musulmán expresa su servidumbre a Allah en momentos determinados."
       },
-      "ar": {
-        "q": "مَا هِيَ الصَّلَاةُ؟",
-        "a": "الصَّلَاةُ مِنْ أَسَاسِيَّاتِ الْعِبَادَةِ، وَفِيهَا يُعَبِّرُ الْمُسْلِمُ عَنْ عُبُودِيَّتِهِ لِلَّهِ فِي أَوْقَاتٍ مُحَدَّدَةٍ."
-      },
       "nl": {
         "q": "Wat is het gebed (salah)?",
         "a": "Het gebed is een van de belangrijkste vormen van aanbidding waarmee een moslim op vastgestelde tijden zijn dienstbaarheid aan Allah uitdrukt."
@@ -850,6 +859,10 @@
       "it": {
         "q": "Che cos'è la preghiera (salah)?",
         "a": "La preghiera è uno degli atti fondamentali di adorazione attraverso i quali il musulmano esprime la propria devozione ad Allah in momenti stabiliti."
+      },
+      "ar": {
+        "q": "مَا هِيَ الصَّلَاةُ؟",
+        "a": "الصَّلَاةُ مِنْ أَسَاسِيَّاتِ الْعِبَادَةِ، وَفِيهَا يُعَبِّرُ الْمُسْلِمُ عَنْ عُبُودِيَّتِهِ لِلَّهِ فِي أَوْقَاتٍ مُحَدَّدَةٍ."
       },
       "sources": [
         "📖 Kur'an — Ankebût 29:45",
@@ -891,10 +904,6 @@
         "q": "¿Qué significan halal y haram?",
         "a": "Halal es lo permitido por la religión, mientras que haram es lo que Allah ha prohibido claramente."
       },
-      "ar": {
-        "q": "مَاذَا يَعْنِي الْحَلَالُ وَالْحَرَامُ؟",
-        "a": "الْحَلَالُ هُوَ مَا أَذِنَ بِهِ الشَّرْعُ، وَالْحَرَامُ هُوَ مَا نَهَى اللَّهُ عَنْهُ نَهْيًا قَاطِعًا."
-      },
       "nl": {
         "q": "Wat betekenen halal en haram?",
         "a": "Halal betekent wat volgens de islamitische voorschriften is toegestaan, terwijl haram betekent wat Allah duidelijk heeft verboden."
@@ -902,6 +911,10 @@
       "it": {
         "q": "Che cosa significano halal e haram?",
         "a": "Halal indica ciò che è permesso secondo la religione, mentre haram indica ciò che Allah ha chiaramente proibito."
+      },
+      "ar": {
+        "q": "مَاذَا يَعْنِي الْحَلَالُ وَالْحَرَامُ؟",
+        "a": "الْحَلَالُ هُوَ مَا أَذِنَ بِهِ الشَّرْعُ، وَالْحَرَامُ هُوَ مَا نَهَى اللَّهُ عَنْهُ نَهْيًا قَاطِعًا."
       },
       "sources": [
         "📖 Kur'an — A'râf 7:32",
@@ -943,10 +956,6 @@
         "q": "¿Por qué es importante el buen carácter para un musulmán?",
         "a": "El buen carácter refleja la fe y la adoración en la vida diaria; el musulmán procura vivir con honestidad, misericordia, justicia y buen comportamiento."
       },
-      "ar": {
-        "q": "لِمَاذَا حُسْنُ الْخُلُقِ مُهِمٌّ لِلْمُسْلِمِ؟",
-        "a": "حُسْنُ الْخُلُقِ هُوَ انْعِكَاسُ الْإِيمَانِ وَالْعِبَادَةِ فِي الْحَيَاةِ، وَيَعِيشُ الْمُسْلِمُ بِالصِّدْقِ وَالرَّحْمَةِ وَالْعَدْلِ وَحُسْنِ الْمُعَامَلَةِ."
-      },
       "nl": {
         "q": "Waarom is een goed karakter belangrijk voor een moslim?",
         "a": "Een goed karakter weerspiegelt geloof en aanbidding in het dagelijks leven; een moslim leeft met eerlijkheid, barmhartigheid, rechtvaardigheid en goed gedrag."
@@ -954,6 +963,10 @@
       "it": {
         "q": "Perché il buon carattere è importante per un musulmano?",
         "a": "Il buon carattere riflette la fede e l'adorazione nella vita quotidiana; il musulmano vive con sincerità, misericordia, giustizia e buon comportamento."
+      },
+      "ar": {
+        "q": "لِمَاذَا حُسْنُ الْخُلُقِ مُهِمٌّ لِلْمُسْلِمِ؟",
+        "a": "حُسْنُ الْخُلُقِ هُوَ انْعِكَاسُ الْإِيمَانِ وَالْعِبَادَةِ فِي الْحَيَاةِ، وَيَعِيشُ الْمُسْلِمُ بِالصِّدْقِ وَالرَّحْمَةِ وَالْعَدْلِ وَحُسْنِ الْمُعَامَلَةِ."
       },
       "sources": [
         "📖 Kur'an — Kalem 68:4",
@@ -995,10 +1008,6 @@
         "q": "¿Por qué fue creado el ser humano?",
         "a": "El ser humano fue creado para adorar a Allah, ser probado y cumplir las responsabilidades que le han sido confiadas en la tierra."
       },
-      "ar": {
-        "q": "لِمَاذَا خُلِقَ الْإِنْسَانُ؟",
-        "a": "خُلِقَ الْإِنْسَانُ لِيَعْبُدَ اللَّهَ، وَيُبْتَلَى، وَيُؤَدِّيَ الْمَسْؤُولِيَّاتِ الَّتِي أُوكِلَتْ إِلَيْهِ فِي الْأَرْضِ."
-      },
       "nl": {
         "q": "Waarom is de mens geschapen?",
         "a": "De mens is geschapen om Allah te aanbidden, beproefd te worden en de verantwoordelijkheden die hem op aarde zijn toevertrouwd te vervullen."
@@ -1006,6 +1015,10 @@
       "it": {
         "q": "Perché è stato creato l'essere umano?",
         "a": "L'essere umano è stato creato per adorare Allah, essere messo alla prova e adempiere alle responsabilità che gli sono state affidate sulla terra."
+      },
+      "ar": {
+        "q": "لِمَاذَا خُلِقَ الْإِنْسَانُ؟",
+        "a": "خُلِقَ الْإِنْسَانُ لِيَعْبُدَ اللَّهَ، وَيُبْتَلَى، وَيُؤَدِّيَ الْمَسْؤُولِيَّاتِ الَّتِي أُوكِلَتْ إِلَيْهِ فِي الْأَرْضِ."
       },
       "sources": [
         "📖 Kur'an — Zâriyât 51:56",
