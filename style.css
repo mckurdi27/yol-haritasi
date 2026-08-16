@@ -1,167 +1,4 @@
 /* =========================================
-   BİR MÜSLÜMANIN YOL HARİTASI
-   11 DİL
-   STYLE.CSS
-========================================= */
-
-
-/* =========================================
-   GENEL
-========================================= */
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
-
-  background:
-    linear-gradient(
-      180deg,
-      #f8f5ed 0%,
-      #ffffff 45%,
-      #f5f1e8 100%
-    );
-
-  color: #222;
-
-  min-height: 100vh;
-}
-
-
-/* =========================================
-   ANA SAYFA
-========================================= */
-
-#home-page {
-  width: 100%;
-  min-height: 100vh;
-}
-
-
-/* =========================================
-   ÜST BAŞLIK
-========================================= */
-
-.home-header {
-  width: 100%;
-  max-width: 1000px;
-
-  margin: 0 auto;
-
-  padding:
-    14px 15px 5px;
-
-  text-align: center;
-}
-
-
-/* =========================================
-   DİL SEÇİCİ
-   EN ÜSTTE
-========================================= */
-
-#home-language-selector {
-  width: 100%;
-
-  display: flex;
-
-  flex-wrap: wrap;
-
-  justify-content: center;
-
-  align-items: center;
-
-  gap: 5px;
-
-  margin:
-    0 auto 12px;
-
-  min-height: 38px;
-}
-
-
-/* =========================================
-   DİL SEÇİCİ GENEL
-========================================= */
-
-.language-selector {
-  display: flex;
-
-  flex-wrap: wrap;
-
-  justify-content: center;
-
-  align-items: center;
-
-  gap: 5px;
-}
-
-.language-selector button {
-  border:
-    1px solid #ddd;
-
-  background:
-    #ffffff;
-
-  border-radius:
-    10px;
-
-  padding:
-    7px 9px;
-
-  cursor: pointer;
-
-  font-family: inherit;
-
-  font-size: 20px;
-
-  line-height: 1;
-
-  min-width: 42px;
-  min-height: 38px;
-
-  transition:
-    transform 0.15s ease,
-    background 0.15s ease,
-    border-color 0.15s ease;
-}
-
-.language-selector button:hover {
-  transform:
-    translateY(-1px);
-
-  background:
-    #fafafa;
-}
-
-.language-selector button.active {
-  background:
-    #eee8d8;
-
-  border-color:
-    #cfc5ae;
-
-  box-shadow:
-    0 2px 8px
-    rgba(0, 0, 0, 0.08);
-}
-
-
-/* =========================================
    KUTSAL MEKÂNLAR ALANI – YENİ DÜZEN
 ========================================= */
 
@@ -178,78 +15,23 @@ body {
 }
 
 /* =========================================
-   KUTSAL MEKÂN GENEL
-========================================= */
-
-.holy-site {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  overflow: hidden;
-
-  background:
-    rgba(255, 255, 255, 0.9);
-
-  border-radius:
-    18px;
-
-  box-shadow:
-    0 7px 22px
-    rgba(0, 0, 0, 0.10);
-
-  border:
-    1px solid
-    rgba(0, 0, 0, 0.04);
-}
-
-/* =========================================
-   KÂBE – TAM GENİŞ VE GENİŞ AÇI (GÜNCEL)
+   KÂBE – ÜSTTE KARE
 ========================================= */
 
 .holy-site-kaaba {
   width: 100%;
-  height: 340px;
-  max-width: 1000px;
-
+  max-width: 420px;      /* Kare görünüm için sınır */
+  aspect-ratio: 1 / 1;   /* KARE */
   overflow: hidden;
-  border-radius: 18px;
 
-  box-shadow:
-    0 7px 22px rgba(0, 0, 0, 0.10);
+  border-radius: 18px;
+  box-shadow: 0 7px 22px rgba(0,0,0,0.10);
 }
 
 .holy-site-kaaba img {
   width: 100%;
   height: 100%;
-
-  object-fit: cover;
-  object-position: center;
-}
-
-/* =========================================
-   AKSÂ & NEBEVÎ – GENİŞ AÇI (GÜNCEL)
-========================================= */
-
-.holy-site-aqsa,
-.holy-site-nabawi {
-  width: 100%;
-  max-width: 480px;
-  height: 300px;
-
-  overflow: hidden;
-  border-radius: 18px;
-
-  box-shadow:
-    0 7px 22px rgba(0, 0, 0, 0.10);
-}
-
-.holy-site-aqsa img,
-.holy-site-nabawi img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
+  object-fit: cover;      /* Tam kare dolsun */
   object-position: center;
 }
 
@@ -259,27 +41,14 @@ body {
 
 .roadmap-title {
   width: 100%;
-
   text-align: center;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
-
+  font-family: Georgia, "Times New Roman", serif;
   font-weight: 700;
-
   line-height: 1.15;
 
   color: #222;
-
-  text-shadow:
-    0 2px 8px
-    rgba(255, 255, 255, 0.98);
-
-  pointer-events: none;
-
-  margin-top: -5px;
+  margin-top: 5px;
 }
 
 .roadmap-title div:first-child {
@@ -288,41 +57,63 @@ body {
 
 .roadmap-title div:last-child {
   font-size: 28px;
-
   margin-top: 5px;
 }
 
-
 /* =========================================
-   ALT AÇIKLAMA
+   AKSÂ & NEBEVÎ – ALTA YAN YANA KARE
 ========================================= */
 
-.home-subtitle {
-  margin:
-    2px auto 18px;
-
-  font-size: 17px;
-
-  color: #666;
-
-  font-weight: 500;
-}
-
-
-/* =========================================
-   GÜNLER
-========================================= */
-
-.days-section {
+.holy-sites-bottom {
   width: 100%;
-
-  max-width: 850px;
-
-  margin: 0 auto;
-
-  padding:
-    5px 15px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
 }
 
-.days-section h2 {
-  text-align
+.holy-site-aqsa,
+.holy-site-nabawi {
+  width: 100%;
+  max-width: 300px;      /* Kare görünüm */
+  aspect-ratio: 1 / 1;   /* KARE */
+  overflow: hidden;
+
+  border-radius: 18px;
+  box-shadow: 0 7px 22px rgba(0,0,0,0.10);
+}
+
+.holy-site-aqsa img,
+.holy-site-nabawi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* Kare dolsun */
+  object-position: center;
+}
+
+/* =========================================
+   MOBİL – DÜZEN
+========================================= */
+
+@media (max-width: 700px) {
+
+  .holy-sites {
+    max-width: 420px;
+    gap: 22px;
+  }
+
+  .holy-site-kaaba {
+    max-width: 330px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .holy-sites-bottom {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .holy-site-aqsa,
+  .holy-site-nabawi {
+    max-width: 330px;
+    aspect-ratio: 1 / 1;
+  }
+}
