@@ -1,6 +1,15 @@
 /* =====================================================
    BİR MÜSLÜMANIN YOL HARİTASI
-   Ana JavaScript
+   OTOMATİK GÜN SİSTEMİ
+
+   Günlük dosyalar:
+   data/day-01.json
+   data/day-02.json
+   data/day-03.json
+   ...
+   
+   Yeni gün eklemek için yalnızca yeni JSON dosyası eklenir.
+   days.json gerekmez.
 ===================================================== */
 
 
@@ -86,10 +95,15 @@ const LANGUAGES = [
 
 
 /* =====================================================
-   GLOBAL DATA
+   AYARLAR
 ===================================================== */
 
-let DAYS = [];
+const MAX_DAYS = 365;
+
+
+/* =====================================================
+   GLOBAL
+===================================================== */
 
 let QUESTIONS = [];
 
@@ -106,7 +120,10 @@ let searchTerm = "";
 
 function escapeHTML(value) {
 
-    if (value === undefined || value === null) {
+    if (
+        value === undefined ||
+        value === null
+    ) {
         return "";
     }
 
@@ -121,37 +138,128 @@ function escapeHTML(value) {
 
 
 /* =====================================================
-   VERİ YÜKLEME
+   GÜN DOSYASI ADI
 ===================================================== */
 
-async function loadDays() {
+function getDayFile(dayNumber) {
+
+    return `data/day-${String(dayNumber).padStart(2, "0")}.json`;
+
+}
+
+
+/* =====================================================
+   GÜN DOSYASI YÜKLE
+===================================================== */
+
+async function loadDay(dayNumber) {
+
+    const file =
+        getDayFile(dayNumber);
 
     try {
 
-        const response = await fetch("data/days.json");
+        const response =
+            await fetch(file);
+
+        /*
+           Dosya yoksa hata verme.
+           Sadece bu günü atla.
+        */
 
         if (!response.ok) {
-            throw new Error("days.json yüklenemedi.");
+
+            return [];
+
         }
 
-        DAYS = await response.json();
 
-        await loadAllDays();
+        const data =
+            await response.json();
 
-        createDaySelector();
 
-        render();
+        /*
+           JSON şu şekilde olabilir:
+
+           [
+             {...},
+             {...}
+           ]
+
+           veya:
+
+           {
+             "day": 1,
+             "title": "...",
+             "questions": [...]
+           }
+        */
+
+        let questions = [];
+
+        let dayTitle =
+            `${dayNumber}. Gün`;
+
+
+        if (Array.isArray(data)) {
+
+            questions = data;
+
+        }
+
+        else if (
+            data &&
+            Array.isArray(data.questions)
+        ) {
+
+            questions =
+                data.questions;
+
+            if (data.title) {
+
+                dayTitle =
+                    data.title;
+
+            }
+
+        }
+
+
+        /*
+           Sorulara gün bilgisi ekle
+        */
+
+        questions.forEach(question => {
+
+            if (!question.day) {
+
+                question.day =
+                    dayNumber;
+
+            }
+
+            if (!question.dayTitle) {
+
+                question.dayTitle =
+                    dayTitle;
+
+            }
+
+        });
+
+
+        return questions;
 
     }
 
     catch (error) {
 
-        console.error(error);
-
-        showError(
-            "Günlük veri dosyaları yüklenemedi. " +
-            "Lütfen data/days.json dosyasını kontrol edin."
+        console.warn(
+            `Gün ${dayNumber} yüklenemedi:`,
+            error
         );
+
+        return [];
 
     }
 
@@ -159,98 +267,72 @@ async function loadDays() {
 
 
 /* =====================================================
-   TÜM GÜNLERİ YÜKLE
+   TÜM GÜNLERİ OTOMATİK BUL
 ===================================================== */
 
 async function loadAllDays() {
 
     QUESTIONS = [];
 
-    for (const day of DAYS) {
 
-        try {
+    /*
+       Bütün günleri paralel kontrol ediyoruz.
 
-            const response = await fetch(day.file);
+       Örneğin:
 
-            if (!response.ok) {
-                console.warn(
-                    "Dosya yüklenemedi:",
-                    day.file
-                );
+       day-01.json
+       day-02.json
+       day-03.json
+       ...
 
-                continue;
-            }
+       Dosya varsa yüklenir.
+       Yoksa atlanır.
+    */
 
-            const data = await response.json();
-
-            /*
-                Günlük dosya şu iki yapıdan biri olabilir:
-
-                1.
-                [
-                    {...},
-                    {...}
-                ]
-
-                veya
-
-                2.
-                {
-                    "day": 1,
-                    "questions": [...]
-                }
-            */
-
-            let questions = [];
-
-            if (Array.isArray(data)) {
-
-                questions = data;
-
-            }
-
-            else if (
-                data &&
-                Array.isArray(data.questions)
-            ) {
-
-                questions = data.questions;
-
-            }
+    const promises = [];
 
 
-            questions.forEach(question => {
+    for (
+        let day = 1;
+        day <= MAX_DAYS;
+        day++
+    ) {
 
-                question.day =
-                    question.day || day.day;
-
-                question.dayTitle =
-                    day.title ||
-                    `${day.day}. Gün`;
-
-                QUESTIONS.push(question);
-
-            });
-
-        }
-
-        catch (error) {
-
-            console.error(
-                "Gün yüklenirken hata:",
-                day.file,
-                error
-            );
-
-        }
+        promises.push(
+            loadDay(day)
+        );
 
     }
+
+
+    const results =
+        await Promise.all(promises);
+
+
+    results.forEach(dayQuestions => {
+
+        QUESTIONS.push(
+            ...dayQuestions
+        );
+
+    });
+
+
+    /*
+       Soru numarasına göre sırala
+    */
+
+    QUESTIONS.sort(
+        (a, b) =>
+            Number(a.id) -
+            Number(b.id)
+    );
 
 }
 
 
 /* =====================================================
-   GÜN SEÇİMİ
+   GÜN SEÇİM MENÜSÜ
 ===================================================== */
 
 function createDaySelector() {
@@ -258,25 +340,69 @@ function createDaySelector() {
     const select =
         document.getElementById("day");
 
+
     if (!select) {
+
         return;
+
     }
 
+
     select.innerHTML = `
+
         <option value="all">
             📅 Tüm Günler
         </option>
+
     `;
 
-    DAYS.forEach(day => {
+
+    /*
+       Sadece gerçekten yüklenmiş
+       günleri göster.
+    */
+
+    const days =
+        [
+            ...new Set(
+                QUESTIONS.map(
+                    question =>
+                        Number(question.day)
+                )
+            )
+        ]
+        .sort(
+            (a, b) =>
+                a - b
+        );
+
+
+    days.forEach(dayNumber => {
+
+        const question =
+            QUESTIONS.find(
+                q =>
+                    Number(q.day) ===
+                    dayNumber
+            );
+
 
         const option =
-            document.createElement("option");
+            document.createElement(
+                "option"
+            );
 
-        option.value = day.day;
+
+        option.value =
+            dayNumber;
+
 
         option.textContent =
-            `📖 ${day.day}. Gün`;
+            question &&
+            question.dayTitle
+                ? `📖 ${question.dayTitle}`
+                : `📖 ${dayNumber}. Gün`;
+
 
         select.appendChild(option);
 
@@ -290,17 +416,17 @@ function createDaySelector() {
 ===================================================== */
 
 /*
-   Kullanıcı bir dil seçerse:
+   Örneğin kullanıcı Almanca seçerse:
 
-   Seçilen dil
-        ↓
-   1. sıraya gelir
+   🇩🇪 Deutsch
+   🇹🇷 Türkçe
+   🇬🇧 English
+   🇷🇺 Русский
+   ...
 
-   Diğer 8 dil
-        ↓
-   hemen altında kalır.
+   Yani seçilen dil en üstte olur.
 
-   Hiçbir dil gizlenmez.
+   Diğer bütün diller görünmeye devam eder.
 */
 
 function getLanguageOrder() {
@@ -309,7 +435,9 @@ function getLanguageOrder() {
         selectedLanguage === "all"
     ) {
 
-        return [...LANGUAGES];
+        return [
+            ...LANGUAGES
+        ];
 
     }
 
@@ -317,12 +445,16 @@ function getLanguageOrder() {
     const selected =
         LANGUAGES.find(
             language =>
-                language.code === selectedLanguage
+                language.code ===
+                selectedLanguage
         );
+
 
     if (!selected) {
 
-        return [...LANGUAGES];
+        return [
+            ...LANGUAGES
+        ];
 
     }
 
@@ -330,7 +462,8 @@ function getLanguageOrder() {
     const others =
         LANGUAGES.filter(
             language =>
-                language.code !== selectedLanguage
+                language.code !==
+                selectedLanguage
         );
 
 
@@ -351,12 +484,16 @@ function createLanguageBlock(
     language
 ) {
 
-    const code =
-        language.code;
-
     const content =
-        question[code];
+        question[
+            language.code
+        ];
 
+
+    /*
+       O dilin verisi yoksa
+       hiçbir şey gösterme.
+    */
 
     if (!content) {
 
@@ -366,32 +503,39 @@ function createLanguageBlock(
 
 
     const isArabic =
-        code === "ar";
+        language.code === "ar";
+
 
     const isSelected =
-        selectedLanguage === code;
+        selectedLanguage ===
+        language.code;
 
 
     return `
 
-        <div class="
-            language-block
-            ${isSelected
-                ? "selected-language"
-                : ""}
-            ${isArabic
-                ? "language-ar"
-                : ""}
-        ">
+        <div
+            class="
+                language-block
+                ${isSelected
+                    ? "selected-language"
+                    : ""}
+                ${isArabic
+                    ? "language-ar"
+                    : ""}
+            "
+        >
 
             <p class="question-text">
 
                 ${language.flag}
 
                 ${question.id}.
+
                 ${language.question}:
 
-                ${escapeHTML(content.q)}
+                ${escapeHTML(
+                    content.q
+                )}
 
             </p>
 
@@ -401,9 +545,12 @@ function createLanguageBlock(
                 ${language.flag}
 
                 ${question.id}.
+
                 ${language.answer}:
 
-                ${escapeHTML(content.a)}
+                ${escapeHTML(
+                    content.a
+                )}
 
             </p>
 
@@ -422,7 +569,9 @@ function createSources(question) {
 
     if (
         !question.sources ||
-        !Array.isArray(question.sources) ||
+        !Array.isArray(
+            question.sources
+        ) ||
         question.sources.length === 0
     ) {
 
@@ -436,54 +585,72 @@ function createSources(question) {
             .map(source => {
 
                 /*
-                   Kaynak basit metin olabilir:
+                   Basit kaynak:
 
                    "📖 Kur'an — Bakara 2:21"
-
-                   veya obje olabilir:
-
-                   {
-                       "title": "...",
-                       "url": "..."
-                   }
                 */
 
                 if (
-                    typeof source === "string"
+                    typeof source ===
+                    "string"
                 ) {
 
                     return `
+
                         <div class="source-item">
-                            ${escapeHTML(source)}
+
+                            ${escapeHTML(
+                                source
+                            )}
+
                         </div>
+
                     `;
 
                 }
 
 
+                /*
+                   Gelişmiş kaynak:
+
+                   {
+                     "title": "...",
+                     "url": "..."
+                   }
+                */
+
                 if (
-                    typeof source === "object"
+                    typeof source ===
+                    "object"
                 ) {
 
                     const title =
                         escapeHTML(
-                            source.title || ""
+                            source.title ||
+                            ""
                         );
 
+
                     const url =
-                        source.url || "";
+                        source.url ||
+                        "";
 
 
                     if (url) {
 
                         return `
-                            <div class="source-item">
+
+                            <div
+                                class="source-item"
+                            >
 
                                 ${title}
 
                                 <a
                                     class="source-link"
-                                    href="${escapeHTML(url)}"
+                                    href="${escapeHTML(
+                                        url
+                                    )}"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
@@ -491,15 +658,22 @@ function createSources(question) {
                                 </a>
 
                             </div>
+
                         `;
 
                     }
 
 
                     return `
-                        <div class="source-item">
+
+                        <div
+                            class="source-item"
+                        >
+
                             ${title}
+
                         </div>
+
                     `;
 
                 }
@@ -535,35 +709,42 @@ function createSources(question) {
    SORU KARTI
 ===================================================== */
 
-function createQuestionCard(question) {
+function createQuestionCard(
+    question
+) {
 
-    const languageOrder =
+    const languages =
         getLanguageOrder();
 
 
-    const languagesHTML =
-        languageOrder
-            .map(language =>
-                createLanguageBlock(
-                    question,
-                    language
-                )
+    const languageHTML =
+        languages
+            .map(
+                language =>
+                    createLanguageBlock(
+                        question,
+                        language
+                    )
             )
             .join("");
 
 
     const sourcesHTML =
-        createSources(question);
+        createSources(
+            question
+        );
 
 
     return `
 
         <article
             class="question-card"
-            data-question-id="${question.id}"
+            data-question-id="${escapeHTML(
+                question.id
+            )}"
         >
 
-            ${languagesHTML}
+            ${languageHTML}
 
             ${sourcesHTML}
 
@@ -578,7 +759,9 @@ function createQuestionCard(question) {
    ARAMA
 ===================================================== */
 
-function questionMatchesSearch(question) {
+function questionMatchesSearch(
+    question
+) {
 
     if (!searchTerm) {
 
@@ -589,7 +772,9 @@ function questionMatchesSearch(question) {
 
     const search =
         searchTerm
-            .toLocaleLowerCase("tr-TR")
+            .toLocaleLowerCase(
+                "tr-TR"
+            )
             .trim();
 
 
@@ -601,7 +786,7 @@ function questionMatchesSearch(question) {
 
 
     /*
-       Soru numarasıyla arama
+       SORU NUMARASI
     */
 
     if (
@@ -615,7 +800,7 @@ function questionMatchesSearch(question) {
 
 
     /*
-       Gün numarasıyla arama
+       GÜN NUMARASI
     */
 
     if (
@@ -629,24 +814,33 @@ function questionMatchesSearch(question) {
 
 
     /*
-       9 dilde soru + cevap arama
+       9 DİLDE SORU + CEVAP
     */
 
-    for (const language of LANGUAGES) {
+    for (
+        const language
+        of LANGUAGES
+    ) {
 
         const content =
-            question[language.code];
+            question[
+                language.code
+            ];
 
 
         if (!content) {
+
             continue;
+
         }
 
 
         const text =
 
             `${content.q} ${content.a}`
-                .toLocaleLowerCase("tr-TR");
+                .toLocaleLowerCase(
+                    "tr-TR"
+                );
 
 
         if (
@@ -661,12 +855,14 @@ function questionMatchesSearch(question) {
 
 
     /*
-       Kaynaklarda arama
+       KAYNAKLAR
     */
 
     if (
         question.sources &&
-        Array.isArray(question.sources)
+        Array.isArray(
+            question.sources
+        )
     ) {
 
         const sourceText =
@@ -674,22 +870,41 @@ function questionMatchesSearch(question) {
                 .map(source => {
 
                     if (
-                        typeof source === "string"
+                        typeof source ===
+                        "string"
                     ) {
 
                         return source;
 
                     }
 
-                    return source.title || "";
+
+                    if (
+                        typeof source ===
+                        "object"
+                    ) {
+
+                        return (
+                            source.title ||
+                            ""
+                        );
+
+                    }
+
+
+                    return "";
 
                 })
                 .join(" ")
-                .toLocaleLowerCase("tr-TR");
+                .toLocaleLowerCase(
+                    "tr-TR"
+                );
 
 
         if (
-            sourceText.includes(search)
+            sourceText.includes(
+                search
+            )
         ) {
 
             return true;
@@ -710,39 +925,47 @@ function questionMatchesSearch(question) {
 
 function getFilteredQuestions() {
 
-    return QUESTIONS.filter(question => {
+    return QUESTIONS.filter(
+        question => {
 
-        /*
-           Gün filtresi
-        */
+            /*
+               Gün
+            */
 
-        if (
-            selectedDay !== "all" &&
-            String(question.day) !==
-            String(selectedDay)
-        ) {
+            if (
+                selectedDay !==
+                "all" &&
+                String(
+                    question.day
+                ) !== String(
+                    selectedDay
+                )
+            ) {
 
-            return false;
+                return false;
+
+            }
+
+
+            /*
+               Arama
+            */
+
+            if (
+                !questionMatchesSearch(
+                    question
+                )
+            ) {
+
+                return false;
+
+            }
+
+
+            return true;
 
         }
-
-
-        /*
-           Arama filtresi
-        */
-
-        if (
-            !questionMatchesSearch(question)
-        ) {
-
-            return false;
-
-        }
-
-
-        return true;
-
-    });
+    );
 
 }
 
@@ -751,29 +974,37 @@ function getFilteredQuestions() {
    GÜNLERE AYIR
 ===================================================== */
 
-function groupQuestionsByDay(
+function groupByDay(
     questions
 ) {
 
     const groups = {};
 
 
-    questions.forEach(question => {
+    questions.forEach(
+        question => {
 
-        const day =
-            question.day || 1;
+            const day =
+                Number(
+                    question.day
+                ) || 1;
 
 
-        if (!groups[day]) {
+            if (
+                !groups[day]
+            ) {
 
-            groups[day] = [];
+                groups[day] = [];
+
+            }
+
+
+            groups[day].push(
+                question
+            );
 
         }
-
-
-        groups[day].push(question);
-
-    });
+    );
 
 
     return groups;
@@ -782,17 +1013,21 @@ function groupQuestionsByDay(
 
 
 /* =====================================================
-   SAYFA GÖRÜNTÜLE
+   SAYFAYI ÇİZ
 ===================================================== */
 
 function render() {
 
     const app =
-        document.getElementById("app");
+        document.getElementById(
+            "app"
+        );
 
 
     if (!app) {
+
         return;
+
     }
 
 
@@ -800,19 +1035,27 @@ function render() {
         getFilteredQuestions();
 
 
-    if (filtered.length === 0) {
+    /*
+       Hiç soru yok
+    */
+
+    if (
+        filtered.length === 0
+    ) {
 
         app.innerHTML = `
 
             <div class="empty-state">
 
-                <div class="empty-state-icon">
+                <div
+                    class="empty-state-icon"
+                >
                     🔎
                 </div>
 
                 <p>
-                    Aradığınız kriterlere uygun
-                    soru bulunamadı.
+                    Henüz yüklenmiş soru
+                    bulunamadı.
                 </p>
 
             </div>
@@ -824,20 +1067,27 @@ function render() {
     }
 
 
+    /*
+       Günlere ayır
+    */
+
     const groups =
-        groupQuestionsByDay(filtered);
+        groupByDay(
+            filtered
+        );
 
 
-    const sortedDays =
+    const days =
         Object.keys(groups)
             .sort(
                 (a, b) =>
-                    Number(a) - Number(b)
+                    Number(a) -
+                    Number(b)
             );
 
 
     /*
-       Arama sonucu bilgisi
+       Üst bilgi
     */
 
     let html = `
@@ -854,75 +1104,79 @@ function render() {
 
 
     /*
-       Günleri oluştur
+       Her günü oluştur
     */
 
-    sortedDays.forEach(day => {
+    days.forEach(
+        day => {
 
-        const questions =
-            groups[day];
+            const questions =
+                groups[day];
 
 
-        const dayInfo =
-            DAYS.find(
-                item =>
-                    String(item.day) ===
-                    String(day)
+            questions.sort(
+                (a, b) =>
+                    Number(a.id) -
+                    Number(b.id)
             );
 
 
-        const dayTitle =
-            dayInfo &&
-            dayInfo.title
-                ? dayInfo.title
-                : `${day}. Gün`;
+            const firstQuestion =
+                questions[0];
 
 
-        html += `
-
-            <section
-                class="day-section"
-                data-day="${day}"
-            >
-
-                <h2 class="day-title">
-
-                    📖 ${escapeHTML(dayTitle)}
-
-                </h2>
-
-        `;
+            const title =
+                firstQuestion &&
+                firstQuestion.dayTitle
+                    ? firstQuestion.dayTitle
+                    : `${day}. Gün`;
 
 
-        /*
-           Soruların numarasını
-           küçükten büyüğe sırala
-        */
+            html += `
 
-        questions.sort(
-            (a, b) =>
-                Number(a.id) -
-                Number(b.id)
-        );
+                <section
+                    class="day-section"
+                    data-day="${day}"
+                >
+
+                    <h2
+                        class="day-title"
+                    >
+
+                        📖
+                        ${escapeHTML(
+                            title
+                        )}
+
+                    </h2>
+
+            `;
 
 
-        questions.forEach(question => {
+            /*
+               Soruları alt alta göster
+            */
 
-            html +=
-                createQuestionCard(
-                    question
-                );
+            questions.forEach(
+                question => {
 
-        });
+                    html +=
+                        createQuestionCard(
+                            question
+                        );
+
+                }
+            );
 
 
-        html += `
+            html += `
 
-            </section>
+                </section>
 
-        `;
+            `;
 
-    });
+        }
+    );
 
 
     app.innerHTML = html;
@@ -931,17 +1185,23 @@ function render() {
 
 
 /* =====================================================
-   HATA MESAJI
+   HATA
 ===================================================== */
 
-function showError(message) {
+function showError(
+    message
+) {
 
     const app =
-        document.getElementById("app");
+        document.getElementById(
+            "app"
+        );
 
 
     if (!app) {
+
         return;
+
     }
 
 
@@ -949,12 +1209,16 @@ function showError(message) {
 
         <div class="empty-state">
 
-            <div class="empty-state-icon">
+            <div
+                class="empty-state-icon"
+            >
                 ⚠️
             </div>
 
             <p>
-                ${escapeHTML(message)}
+                ${escapeHTML(
+                    message
+                )}
             </p>
 
         </div>
@@ -965,22 +1229,32 @@ function showError(message) {
 
 
 /* =====================================================
-   EVENT LISTENERS
+   EVENTLER
 ===================================================== */
 
 function setupEvents() {
 
     const search =
-        document.getElementById("search");
+        document.getElementById(
+            "search"
+        );
 
 
     const day =
-        document.getElementById("day");
+        document.getElementById(
+            "day"
+        );
 
 
     const language =
-        document.getElementById("language");
+        document.getElementById(
+            "language"
+        );
 
+
+    /*
+       ARAMA
+    */
 
     if (search) {
 
@@ -999,6 +1273,10 @@ function setupEvents() {
     }
 
 
+    /*
+       GÜN
+    */
+
     if (day) {
 
         day.addEventListener(
@@ -1016,6 +1294,10 @@ function setupEvents() {
     }
 
 
+    /*
+       DİL
+    */
+
     if (language) {
 
         language.addEventListener(
@@ -1027,14 +1309,18 @@ function setupEvents() {
 
                 render();
 
+
                 /*
-                   Kullanıcı dil seçince
+                   Dil seçildiğinde
                    sayfanın başına dön.
                 */
 
                 window.scrollTo({
+
                     top: 0,
+
                     behavior: "smooth"
+
                 });
 
             }
@@ -1051,11 +1337,65 @@ function setupEvents() {
 
 document.addEventListener(
     "DOMContentLoaded",
-    () => {
+    async () => {
 
         setupEvents();
 
-        loadDays();
+
+        /*
+           Yükleniyor mesajı
+        */
+
+        const app =
+            document.getElementById(
+                "app"
+            );
+
+
+        if (app) {
+
+            app.innerHTML = `
+
+                <div class="loading">
+
+                    <div
+                        class="loading-icon"
+                    >
+                        📖
+                    </div>
+
+                    <p>
+                        Günlük içerikler
+                        yükleniyor...
+                    </p>
+
+                </div>
+
+            `;
+
+        }
+
+
+        /*
+           Günlük JSON dosyalarını
+           otomatik bul.
+        */
+
+        await loadAllDays();
+
+
+        /*
+           Gün menüsünü oluştur.
+        */
+
+        createDaySelector();
+
+
+        /*
+           Sayfayı göster.
+        */
+
+        render();
 
     }
 );
