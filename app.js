@@ -15,16 +15,12 @@ const LANGS = [
   { key: "de", flag: "🇩🇪", name: "Deutsch" },
   { key: "ru", flag: "🇷🇺", name: "Русский" },
 
-  // Kurmancî → Gana bayrağı
   { key: "ku", flag: "🇬🇭", name: "Kurmancî" },
-
-  // Tatarca → Macaristan bayrağı
   { key: "tt", flag: "🇭🇺", name: "Tatarca" },
 
   { key: "fr", flag: "🇫🇷", name: "Français" },
   { key: "es", flag: "🇪🇸", name: "Español" },
 
-  // Yeni diller
   { key: "nl", flag: "🇳🇱", name: "Nederlands" },
   { key: "it", flag: "🇮🇹", name: "Italiano" },
 
@@ -227,23 +223,9 @@ async function init() {
   document.documentElement.lang =
     selectedLang;
 
-  /*
-    Ana sayfayı hemen göster.
-    JSON dosyalarının yüklenmesini beklemez.
-  */
-
   renderHome();
 
-  /*
-    Günleri arka planda yükle.
-  */
-
   await loadDays();
-
-  /*
-    Günler geldikten sonra
-    listeyi güncelle.
-  */
 
   renderHome();
 }
@@ -257,12 +239,18 @@ async function loadDays() {
 
   days = [];
 
+  console.log("📚 Günler yükleniyor...");
+
   const requests = [];
+
 
   /*
     30 günlük proje.
-    365 dosya aramak yerine
-    sadece mevcut proje günleri kontrol edilir.
+    Her gün:
+    data/day-01.json
+    data/day-02.json
+    ...
+    data/day-30.json
   */
 
   for (
@@ -274,12 +262,24 @@ async function loadDays() {
     const file =
       `data/day-${String(number).padStart(2, "0")}.json`;
 
+
+    /*
+      Cache busting:
+      GitHub Pages eski JSON'u cache'lemişse
+      yeni dosyanın okunmasını sağlar.
+    */
+
+    const url =
+      `${file}?v=${Date.now()}`;
+
+
     requests.push(
 
       fetch(
-        file,
+        url,
         {
-          cache: "default"
+          method: "GET",
+          cache: "no-store"
         }
       )
 
@@ -287,34 +287,99 @@ async function loadDays() {
           async response => {
 
             if (!response.ok) {
+
+              console.warn(
+                `⚠️ Gün ${number} bulunamadı:`,
+                response.status,
+                file
+              );
+
               return null;
             }
 
-            const data =
-              await response.json();
+
+            const text =
+              await response.text();
+
+
+            let data;
+
+
+            try {
+
+              data =
+                JSON.parse(text);
+
+            } catch (error) {
+
+              console.error(
+                `❌ Gün ${number} JSON hatası:`,
+                file,
+                error
+              );
+
+              console.error(
+                "JSON içeriği:",
+                text
+              );
+
+              return null;
+            }
+
 
             const questions =
               Array.isArray(data)
                 ? data
                 : data.questions;
 
+
             if (
               !Array.isArray(questions) ||
               questions.length === 0
             ) {
+
+              console.warn(
+                `⚠️ Gün ${number} içinde soru bulunamadı:`,
+                file
+              );
+
               return null;
             }
 
+
+            console.log(
+              `✅ Gün ${number} yüklendi:`,
+              questions.length,
+              "soru"
+            );
+
+
             return {
+
               number,
+
               questions,
-              info: data
+
+              info:
+                Array.isArray(data)
+                  ? {}
+                  : data
+
             };
           }
         )
 
         .catch(
-          () => null
+          error => {
+
+            console.error(
+              `❌ Gün ${number} yüklenemedi:`,
+              file,
+              error
+            );
+
+            return null;
+          }
         )
     );
   }
@@ -327,12 +392,21 @@ async function loadDays() {
   days =
     results
       .filter(
-        item => item !== null
+        item =>
+          item !== null
       )
       .sort(
         (a, b) =>
           a.number - b.number
       );
+
+
+  console.log(
+    "📚 Yüklenen günler:",
+    days.map(
+      day => day.number
+    )
+  );
 }
 
 
@@ -363,13 +437,6 @@ function renderHome() {
 
   questionPage.style.display =
     "none";
-
-
-  /*
-    INDEX.HTML'deki Kâbe,
-    Aksâ ve Nebevî görsellerine
-    dokunmuyoruz.
-  */
 
 
   /* =====================================
@@ -532,8 +599,8 @@ function renderHome() {
 
 
   /*
-    JSON'lar henüz gelmediyse
-    yükleniyor göster.
+    JSON'lar henüz yüklenmediyse
+    yükleniyor mesajı.
   */
 
   if (!days.length) {
@@ -560,6 +627,10 @@ function renderHome() {
     return;
   }
 
+
+  /* =====================================
+     GÜNLERİ OLUŞTUR
+  ===================================== */
 
   days.forEach(
     (dayData, index) => {
@@ -822,11 +893,6 @@ function renderLanguageButtons(
         "language-button";
 
 
-      /*
-        SADECE BAYRAK GÖSTERİLİR.
-        Dil adı ekranda görünmez.
-      */
-
       button.textContent =
         language.flag;
 
@@ -927,6 +993,11 @@ function renderQuestion() {
   }
 
 
+  if (!home || !page) {
+    return;
+  }
+
+
   home.style.display =
     "none";
 
@@ -994,10 +1065,6 @@ function renderQuestion() {
     "question-card";
 
 
-  /*
-    Seçilen dil ilk sırada.
-  */
-
   const languages = [
     selectedLang,
 
@@ -1044,10 +1111,21 @@ function renderQuestion() {
       block.className =
         "language-block";
 
-      if (languageKey === "ar") {
-      block.classList.add("arabic-language");
-      block.setAttribute("dir", "rtl");
+
+      if (
+        languageKey === "ar"
+      ) {
+
+        block.classList.add(
+          "arabic-language"
+        );
+
+        block.setAttribute(
+          "dir",
+          "rtl"
+        );
       }
+
 
       if (
         languageKey === selectedLang
@@ -1143,7 +1221,9 @@ function renderQuestion() {
 
 
   if (top) {
+
     top.innerHTML = "";
+
     top.appendChild(
       createNavigation()
     );
@@ -1151,16 +1231,14 @@ function renderQuestion() {
 
 
   if (bottom) {
+
     bottom.innerHTML = "";
+
     bottom.appendChild(
       createNavigation()
     );
   }
 
-
-  /* =====================================
-     SORU SAYFASI DİL SEÇİCİ
-  ===================================== */
 
   addQuestionLanguageSelector();
 
@@ -1477,15 +1555,6 @@ function renderSources(
       let url = "";
 
 
-      /*
-        Yeni JSON biçimi:
-
-        {
-          "title": "...",
-          "url": "..."
-        }
-      */
-
       if (
         typeof source === "object" &&
         source !== null
@@ -1529,12 +1598,6 @@ function renderSources(
         }
       }
 
-
-      /*
-        URL JSON'da yoksa
-        bilinen kaynakları otomatik
-        bağlantıya çevirmeyi dene.
-      */
 
       if (!url) {
 
@@ -1703,6 +1766,22 @@ window.addEventListener(
     console.error(
       "Yol Haritası JavaScript hatası:",
       event.error || event.message
+    );
+  }
+);
+
+
+/* =========================================
+   PROMISE HATALARI
+========================================= */
+
+window.addEventListener(
+  "unhandledrejection",
+  event => {
+
+    console.error(
+      "Yol Haritası Promise hatası:",
+      event.reason
     );
   }
 );
