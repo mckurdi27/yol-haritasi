@@ -1044,6 +1044,10 @@ function renderQuestion() {
       block.className =
         "language-block";
 
+      if (languageKey === "ar") {
+      block.classList.add("arabic-language");
+      block.setAttribute("dir", "rtl");
+      }
 
       if (
         languageKey === selectedLang
