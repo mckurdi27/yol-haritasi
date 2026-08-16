@@ -1,1 +1,95 @@
-const L=[['tr','🇹🇷','Soru','Cevap'],['en','🇬🇧','Question','Answer'],['de','🇩🇪','Frage','Antwort'],['ru','🇷🇺','Вопрос','Ответ'],['ku','🇹🇯','Pirs','Bersiv'],['tt','🇹🇹','Сорау','Җавап'],['fr','🇫🇷','Question','Réponse'],['es','🇪🇸','Pregunta','Respuesta'],['ar','🇸🇦','السؤال','الجواب']];let D=[];const e=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));function render(){let t=document.querySelector('#search').value.toLocaleLowerCase(),d=document.querySelector('#day').value,l=document.querySelector('#lang').value;let f=D.filter(x=>(d==='all'||String(x.day)===d)&&(!t||[x.id,...L.map(z=>x[z[0]].q+' '+x[z[0]].a)].join(' ').toLocaleLowerCase().includes(t)));let g={};f.forEach(x=>(g[x.day]??=[]).push(x));document.querySelector('#app').innerHTML=Object.entries(g).map(([day,qs])=>`<section class="day"><h2 class="day-title">📖 ${day}. Gün</h2>${qs.map(x=>`<article class="question" id="soru-${x.id}">${L.filter(z=>l==='all'||l===z[0]).map(z=>`<div class="language ${z[0]==='ar'?'ar':''}"><p class="q">${z[1]} ${x.id}. ${z[2]}: ${e(x[z[0]].q)}</p><p class="a">${z[1]} ${x.id}. ${z[3]}: ${e(x[z[0]].a)}</p></div>`).join('')}${x.sources.length?`<div class="source">📖 Ayet/Hadis — ${x.id}. Soru ile bağlantılı kaynaklar<br>${x.sources.map(e).join('<br>')}</div>`:''}</article>`).join('')}</section>`).join('')||'<p style="text-align:center">Sonuç bulunamadı.</p>'}async function init(){D=await fetch('data/questions.json').then(r=>r.json());[...new Set(D.map(x=>x.day))].forEach(x=>document.querySelector('#day').insertAdjacentHTML('beforeend',`<option value="${x}">${x}. Gün</option>`));['search','day','lang'].forEach(x=>document.querySelector('#'+x).addEventListener('input',render));render()}init();
+const languageNames = {
+    tr: "🇹🇷 Türkçe",
+    en: "🇬🇧 English",
+    de: "🇩🇪 Deutsch",
+    ru: "🇷🇺 Русский",
+    ku: "🇹🇯 Kurmancî",
+    tt: "🇹🇹 Tatarca",
+    fr: "🇫🇷 Français",
+    es: "🇪🇸 Español",
+    ar: "🇸🇦 العربية"
+};
+
+function renderContent() {
+    const selectedLang = document.getElementById('languageSelect').value;
+    const contentArea = document.getElementById('contentArea');
+    contentArea.innerHTML = '';
+
+    const allLangs = Object.keys(languageNames);
+    const sortedLangs = [selectedLang, ...allLangs.filter(l => l !== selectedLang)];
+
+    courseData.forEach(dayGroup => {
+        let daySection = document.createElement('div');
+        daySection.className = 'day-section';
+
+        let dayTitle = document.createElement('h2');
+        dayTitle.className = 'day-title';
+        dayTitle.textContent = dayGroup.day;
+        daySection.appendChild(dayTitle);
+
+        dayGroup.questions.forEach(qItem => {
+            let card = document.createElement('div');
+            card.className = 'question-card';
+
+            let langListDiv = document.createElement('div');
+            langListDiv.className = 'lang-list';
+
+            sortedLangs.forEach(langKey => {
+                let translation = qItem.translations[langKey];
+                if (!translation) return;
+
+                let langItem = document.createElement('div');
+                langItem.className = `lang-item ${langKey === selectedLang ? 'active-lang' : ''}`;
+
+                let langLabel = document.createElement('span');
+                langLabel.className = 'lang-label';
+                langLabel.textContent = languageNames[langKey];
+
+                let langText = document.createElement('div');
+                langText.className = 'lang-text';
+                langText.innerHTML = `<strong>${qItem.id}. Soru:</strong> ${translation.q}<br><strong>Cevap:</strong> ${translation.a}`;
+
+                langItem.appendChild(langLabel);
+                langItem.appendChild(langText);
+                langListDiv.appendChild(langItem);
+            });
+
+            card.appendChild(langListDiv);
+
+            if (qItem.sources && qItem.sources.length > 0) {
+                let sourcesBox = document.createElement('div');
+                sourcesBox.className = 'sources-box';
+
+                let sourcesTitle = document.createElement('div');
+                sourcesTitle.className = 'sources-title';
+                sourcesTitle.textContent = `📚 Önemli Kaynaklar — ${qItem.id}. Soru`;
+                sourcesBox.appendChild(sourcesTitle);
+
+                qItem.sources.forEach(src => {
+                    let sourceItem = document.createElement('div');
+                    sourceItem.className = 'source-item';
+                    sourceItem.innerHTML = `
+                        <span>📖 ${src.name}</span>
+                        <a href="${src.url}" class="source-link" target="_blank">Aç ↗</a>
+                    `;
+                    sourcesBox.appendChild(sourceItem);
+                });
+
+                card.appendChild(sourcesBox);
+            }
+
+            daySection.appendChild(card);
+        });
+
+        contentArea.appendChild(daySection);
+    });
+}
+
+function changeLanguage() {
+    renderContent();
+}
+
+window.onload = function() {
+    renderContent();
+};
+ 
