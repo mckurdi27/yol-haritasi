@@ -13,11 +13,9 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   margin: 0;
@@ -112,7 +110,6 @@ body {
   gap: 5px;
 }
 
-
 .language-selector button {
   border:
     1px solid #ddd;
@@ -143,7 +140,6 @@ body {
     border-color 0.15s ease;
 }
 
-
 .language-selector button:hover {
   transform:
     translateY(-1px);
@@ -151,7 +147,6 @@ body {
   background:
     #fafafa;
 }
-
 
 .language-selector button.active {
   background:
@@ -224,8 +219,8 @@ body {
 ========================================= */
 
 .holy-site-kaaba {
-  width: 340px;
-  height: 145px;
+  width: 380px;
+  height: 165px;
 
   left: 50%;
   top: 0;
@@ -244,8 +239,8 @@ body {
 ========================================= */
 
 .holy-site-aqsa {
-  width: 190px;
-  height: 170px;
+  width: 200px;
+  height: 190px;
 
   left: 2%;
 
@@ -262,8 +257,8 @@ body {
 ========================================= */
 
 .holy-site-nabawi {
-  width: 190px;
-  height: 170px;
+  width: 200px;
+  height: 190px;
 
   right: 2%;
 
@@ -307,12 +302,12 @@ body {
 
   left: 50%;
 
-  top: 240px;
+  top: 250px;
 
   transform:
     translateX(-50%);
 
-  width: 205px;
+  width: 230px;
 
   z-index: 10;
 
@@ -336,11 +331,9 @@ body {
   pointer-events: none;
 }
 
-
 .roadmap-title div:first-child {
   font-size: 21px;
 }
-
 
 .roadmap-title div:last-child {
   font-size: 28px;
@@ -379,7 +372,6 @@ body {
   padding:
     5px 15px 40px;
 }
-
 
 .days-section h2 {
   text-align: center;
@@ -439,7 +431,6 @@ body {
   font-family: inherit;
 }
 
-
 .day-card:hover {
   transform:
     translateY(-3px);
@@ -449,12 +440,10 @@ body {
     rgba(0, 0, 0, 0.12);
 }
 
-
 .day-card:active {
   transform:
     translateY(0);
 }
-
 
 .day-card-title {
   font-size: 18px;
@@ -464,7 +453,6 @@ body {
   margin-bottom: 7px;
 }
 
-
 .day-card-subtitle {
   font-size: 14px;
 
@@ -472,7 +460,6 @@ body {
 
   color: #666;
 }
-
 
 .loading-days {
   text-align: center;
@@ -498,7 +485,6 @@ body {
     12px 15px 30px;
 }
 
-
 .question-day-title {
   text-align: center;
 
@@ -508,11 +494,9 @@ body {
   font-size: 26px;
 }
 
-
 .question-content {
   width: 100%;
 }
-
 
 .question-card {
   width: 100%;
@@ -547,12 +531,10 @@ body {
     1.6;
 }
 
-
 .language-block:last-of-type {
   border-bottom:
     0;
 }
-
 
 .selected-language {
   background:
@@ -568,13 +550,11 @@ body {
     8px;
 }
 
-
 .arabic-language {
   direction: rtl;
 
   text-align: right;
 }
-
 
 .question-line {
   font-weight:
@@ -586,7 +566,6 @@ body {
   margin-bottom:
     7px;
 }
-
 
 .answer-line {
   font-size:
@@ -612,7 +591,6 @@ body {
     2px solid #eeeeee;
 }
 
-
 .sources h3 {
   margin:
     0 0 12px;
@@ -620,7 +598,6 @@ body {
   font-size:
     18px;
 }
-
 
 .sources ul {
   margin:
@@ -630,7 +607,6 @@ body {
     22px;
 }
 
-
 .sources li {
   margin-bottom:
     8px;
@@ -638,7 +614,6 @@ body {
   line-height:
     1.5;
 }
-
 
 .sources a {
   color:
@@ -650,7 +625,6 @@ body {
   text-decoration:
     none;
 }
-
 
 .sources a:hover {
   text-decoration:
@@ -669,7 +643,6 @@ body {
     10px 0;
 }
 
-
 .navigation-row {
   display: flex;
 
@@ -679,7 +652,6 @@ body {
 
   gap: 8px;
 }
-
 
 .navigation button {
   border:
@@ -705,12 +677,10 @@ body {
     inherit;
 }
 
-
 .navigation button:hover:not(:disabled) {
   background:
     #f4f4f4;
 }
-
 
 .navigation button:disabled {
   opacity:
@@ -746,12 +716,10 @@ footer {
 
 @media (max-width: 700px) {
 
-
   .home-header {
     padding:
       10px 8px 5px;
   }
-
 
   /* 11 BAYRAK */
 
@@ -762,7 +730,6 @@ footer {
     margin-bottom:
       8px;
   }
-
 
   .language-selector button {
     min-width:
@@ -777,7 +744,6 @@ footer {
     font-size:
       18px;
   }
-
 
   /* =====================================
      KUTSAL MEKÂNLAR
@@ -797,7 +763,6 @@ footer {
       0 auto;
   }
 
-
   /* =====================================
      KÂBE
      BÜYÜK YATAY
@@ -805,15 +770,14 @@ footer {
 
   .holy-site-kaaba {
     width:
-      230px;
+      260px;
 
     height:
-      100px;
+      120px;
 
     top:
       0;
   }
-
 
   /* =====================================
      AKSÂ
@@ -822,10 +786,10 @@ footer {
 
   .holy-site-aqsa {
     width:
-      145px;
+      150px;
 
     height:
-      125px;
+      140px;
 
     left:
       0;
@@ -834,7 +798,6 @@ footer {
       170px;
   }
 
-
   /* =====================================
      NEBEVÎ
      KÜÇÜK DİKEY
@@ -842,10 +805,10 @@ footer {
 
   .holy-site-nabawi {
     width:
-      145px;
+      150px;
 
     height:
-      125px;
+      140px;
 
     right:
       0;
@@ -854,25 +817,22 @@ footer {
       170px;
   }
 
-
   /* =====================================
      ORTA YAZI
   ====================================== */
 
   .roadmap-title {
     top:
-      192px;
+      200px;
 
     width:
-      145px;
+      160px;
   }
-
 
   .roadmap-title div:first-child {
     font-size:
       16px;
   }
-
 
   .roadmap-title div:last-child {
     font-size:
@@ -882,7 +842,6 @@ footer {
       3px;
   }
 
-
   .home-subtitle {
     font-size:
       15px;
@@ -890,7 +849,6 @@ footer {
     margin-top:
       0;
   }
-
 
   /* =====================================
      GÜNLER
@@ -901,12 +859,10 @@ footer {
       5px 12px 35px;
   }
 
-
   #days-list {
     grid-template-columns:
       1fr;
   }
-
 
   /* =====================================
      SORU
@@ -917,12 +873,10 @@ footer {
       10px 10px 25px;
   }
 
-
   .question-card {
     padding:
       14px;
   }
-
 
   /* =====================================
      NAVİGASYON
@@ -939,18 +893,15 @@ footer {
       7px;
   }
 
-
   .navigation-row button {
     width:
       100%;
   }
 
-
   .navigation-row button:nth-child(3) {
     grid-column:
       1 / -1;
   }
-
 
   /* =====================================
      SORU SAYFASI BAYRAKLARI
@@ -961,7 +912,6 @@ footer {
     gap:
       3px;
   }
-
 
   #question-page
   .language-selector button {
@@ -987,7 +937,6 @@ footer {
 
 @media (max-width: 360px) {
 
-
   #home-language-selector
   .language-selector button,
   .language-selector button {
@@ -1004,7 +953,6 @@ footer {
       4px 4px;
   }
 
-
   .holy-sites {
     transform:
       scale(0.90);
@@ -1015,6 +963,5 @@ footer {
     margin-bottom:
       -30px;
   }
-
 
 }
