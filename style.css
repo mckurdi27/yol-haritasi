@@ -423,7 +423,10 @@ body {
 
   margin-bottom: 8px;
 }
-
+.arabic-language {
+  direction: rtl;
+  text-align: right;
+}
 .question-line {
   font-weight: 700;
 
