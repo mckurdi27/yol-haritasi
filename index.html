@@ -11,43 +11,79 @@
 
   <meta
     name="description"
-    content="Bir Müslümanın Yol Haritası - 9 Dilde İslami Bilgi"
+    content="Bir Müslümanın Yol Haritası — 9 Dilde İslami Bilgi"
   >
 
-  <title>Bir Müslümanın Yol Haritası</title>
+  <title>Yol Haritası</title>
 
-  <link
-    rel="stylesheet"
-    href="style.css"
-  >
-
+  <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
-  <header class="site-header">
+  <!-- ANA SAYFA -->
 
-    <h1>
-      🕌 Bir Müslümanın Yol Haritası
-    </h1>
+  <main id="home-page">
 
-    <p class="subtitle">
-      9 Dilde Günlük İslami Bilgi
-    </p>
+    <header class="home-header">
 
-  </header>
+      <h1>🕌 Yol Haritası</h1>
+
+      <p>
+        Bir Müslümanın Yolculuğu
+      </p>
+
+    </header>
 
 
-  <main id="app">
+    <section class="days-section">
 
-    <!--
-      app.js burayı otomatik doldurur.
-    -->
+      <h2>Günler</h2>
 
-    <div class="loading">
-      Sorular yükleniyor...
-    </div>
+      <!--
+        Günler app.js tarafından
+        otomatik olarak buraya eklenecek.
+      -->
+
+      <div id="days-list"></div>
+
+    </section>
+
+  </main>
+
+
+  <!-- SORU SAYFASI -->
+
+  <main
+    id="question-page"
+    style="display:none;"
+  >
+
+    <!-- ÜST NAVİGASYON -->
+
+    <nav
+      id="top-navigation"
+      class="navigation"
+    >
+    </nav>
+
+
+    <!-- SORU İÇERİĞİ -->
+
+    <section
+      id="question-content"
+      class="question-content"
+    >
+    </section>
+
+
+    <!-- ALT NAVİGASYON -->
+
+    <nav
+      id="bottom-navigation"
+      class="navigation"
+    >
+    </nav>
 
   </main>
 
@@ -61,14 +97,7 @@
   </footer>
 
 
-  <!--
-    ANA JAVASCRIPT
-  -->
-
-  <script
-    src="app.js"
-    defer
-  ></script>
+  <script src="app.js"></script>
 
 </body>
 
