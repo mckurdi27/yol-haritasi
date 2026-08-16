@@ -7,21 +7,7 @@
 
 /* =========================================
    DİLLER
-   SABİT SIRA:
-
-   1. Türkçe
-   2. English
-   3. Deutsch
-   4. Русский
-   5. Kurmancî
-   6. العربية
-   7. Tatarca
-   8. Français
-   9. Español
-   10. Nederlands
-   11. Italiano
-
-   BAYRAKLAR DEĞİŞTİRİLMEDİ.
+   ARAPÇA 6. SIRADA
 ========================================= */
 
 const LANGS = [
@@ -101,168 +87,422 @@ const LANGS = [
 
 const UI = {
 
+
   tr: {
-    title: "Bir Müslümanın Yol Haritası",
-    subtitle: "İslâm'ı adım adım öğren",
-    days: "Günler",
-    previousQuestion: "← Önceki Soru",
-    nextQuestion: "Sonraki Soru →",
-    home: "🏠 Ana Sayfa",
-    previousDay: "← Önceki Gün",
-    nextDay: "Sonraki Gün →",
-    source: "📚 Kaynaklar",
-    openSource: "Kaynağı aç",
-    questionCount: "Soru"
+
+    title:
+      "Bir Müslümanın Yol Haritası",
+
+    subtitle:
+      "İslâm'ı adım adım öğren",
+
+    days:
+      "Günler",
+
+    previousQuestion:
+      "← Önceki Soru",
+
+    nextQuestion:
+      "Sonraki Soru →",
+
+    home:
+      "🏠 Ana Sayfa",
+
+    previousDay:
+      "← Önceki Gün",
+
+    nextDay:
+      "Sonraki Gün →",
+
+    source:
+      "📚 Kaynaklar",
+
+    openSource:
+      "Kaynağı aç",
+
+    questionCount:
+      "Soru"
+
   },
 
 
   en: {
-    title: "A Muslim's Roadmap",
-    subtitle: "Learn Islam step by step",
-    days: "Days",
-    previousQuestion: "← Previous Question",
-    nextQuestion: "Next Question →",
-    home: "🏠 Home",
-    previousDay: "← Previous Day",
-    nextDay: "Next Day →",
-    source: "📚 Sources",
-    openSource: "Open source",
-    questionCount: "Questions"
+
+    title:
+      "A Muslim's Roadmap",
+
+    subtitle:
+      "Learn Islam step by step",
+
+    days:
+      "Days",
+
+    previousQuestion:
+      "← Previous Question",
+
+    nextQuestion:
+      "Next Question →",
+
+    home:
+      "🏠 Home",
+
+    previousDay:
+      "← Previous Day",
+
+    nextDay:
+      "Next Day →",
+
+    source:
+      "📚 Sources",
+
+    openSource:
+      "Open source",
+
+    questionCount:
+      "Questions"
+
   },
 
 
   de: {
-    title: "Der Wegweiser eines Muslims",
-    subtitle: "Den Islam Schritt für Schritt kennenlernen",
-    days: "Tage",
-    previousQuestion: "← Vorherige Frage",
-    nextQuestion: "Nächste Frage →",
-    home: "🏠 Startseite",
-    previousDay: "← Vorheriger Tag",
-    nextDay: "Nächster Tag →",
-    source: "📚 Quellen",
-    openSource: "Quelle öffnen",
-    questionCount: "Fragen"
+
+    title:
+      "Der Wegweiser eines Muslims",
+
+    subtitle:
+      "Den Islam Schritt für Schritt kennenlernen",
+
+    days:
+      "Tage",
+
+    previousQuestion:
+      "← Vorherige Frage",
+
+    nextQuestion:
+      "Nächste Frage →",
+
+    home:
+      "🏠 Startseite",
+
+    previousDay:
+      "← Vorheriger Tag",
+
+    nextDay:
+      "Nächster Tag →",
+
+    source:
+      "📚 Quellen",
+
+    openSource:
+      "Quelle öffnen",
+
+    questionCount:
+      "Fragen"
+
   },
 
 
   ru: {
-    title: "Путеводитель мусульманина",
-    subtitle: "Изучайте ислам шаг за шагом",
-    days: "Дни",
-    previousQuestion: "← Предыдущий вопрос",
-    nextQuestion: "Следующий вопрос →",
-    home: "🏠 Главная",
-    previousDay: "← Предыдущий день",
-    nextDay: "Следующий день →",
-    source: "📚 Источники",
-    openSource: "Открыть источник",
-    questionCount: "Вопросов"
+
+    title:
+      "Путеводитель мусульманина",
+
+    subtitle:
+      "Изучайте ислам шаг за шагом",
+
+    days:
+      "Дни",
+
+    previousQuestion:
+      "← Предыдущий вопрос",
+
+    nextQuestion:
+      "Следующий вопрос →",
+
+    home:
+      "🏠 Главная",
+
+    previousDay:
+      "← Предыдущий день",
+
+    nextDay:
+      "Следующий день →",
+
+    source:
+      "📚 Источники",
+
+    openSource:
+      "Открыть источник",
+
+    questionCount:
+      "Вопросов"
+
   },
 
 
   ku: {
-    title: "Rêbernameya Misilmanekî",
-    subtitle: "Îslamê gav bi gav fêr bibe",
-    days: "Roj",
-    previousQuestion: "← Pirseke berê",
-    nextQuestion: "Pirseke paş",
-    home: "🏠 Malpera sereke",
-    previousDay: "← Roja berê",
-    nextDay: "Roja paş →",
-    source: "📚 Çavkanî",
-    openSource: "Çavkaniyê veke",
-    questionCount: "Pirs"
+
+    title:
+      "Rêbernameya Misilmanekî",
+
+    subtitle:
+      "Îslamê gav bi gav fêr bibe",
+
+    days:
+      "Roj",
+
+    previousQuestion:
+      "← Pirseke berê",
+
+    nextQuestion:
+      "Pirseke paş",
+
+    home:
+      "🏠 Malpera sereke",
+
+    previousDay:
+      "← Roja berê",
+
+    nextDay:
+      "Roja paş →",
+
+    source:
+      "📚 Çavkanî",
+
+    openSource:
+      "Çavkaniyê veke",
+
+    questionCount:
+      "Pirs"
+
   },
 
 
   ar: {
-    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
-    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
-    days: "الأَيَّامُ",
-    previousQuestion: "← السُّؤَالُ السَّابِقُ",
-    nextQuestion: "السُّؤَالُ التَّالِي →",
-    home: "🏠 الصَّفْحَةُ الرَّئِيسِيَّةُ",
-    previousDay: "← الْيَوْمُ السَّابِقُ",
-    nextDay: "الْيَوْمُ التَّالِي →",
-    source: "📚 الْمَصَادِرُ",
-    openSource: "فَتْحُ الْمَصْدَرِ",
-    questionCount: "أَسْئِلَة"
+
+    title:
+      "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
+
+    subtitle:
+      "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
+
+    days:
+      "الأَيَّامُ",
+
+    previousQuestion:
+      "← السُّؤَالُ السَّابِقُ",
+
+    nextQuestion:
+      "السُّؤَالُ التَّالِي →",
+
+    home:
+      "🏠 الصَّفْحَةُ الرَّئِيسِيَّةُ",
+
+    previousDay:
+      "← الْيَوْمُ السَّابِقُ",
+
+    nextDay:
+      "الْيَوْمُ التَّالِي →",
+
+    source:
+      "📚 الْمَصَادِرُ",
+
+    openSource:
+      "فَتْحُ الْمَصْدَرِ",
+
+    questionCount:
+      "أَسْئِلَة"
+
   },
 
 
   tt: {
-    title: "Мөселманның юл картасы",
-    subtitle: "Исламны адымлап өйрәнегез",
-    days: "Көннәр",
-    previousQuestion: "← Алдагы сорау",
-    nextQuestion: "Киләсе сорау →",
-    home: "🏠 Төп бит",
-    previousDay: "← Алдагы көн",
-    nextDay: "Киләсе көн →",
-    source: "📚 Чыганаклар",
-    openSource: "Чыганакны ачу",
-    questionCount: "Сорау"
+
+    title:
+      "Мөселманның юл картасы",
+
+    subtitle:
+      "Исламны адымлап өйрәнегез",
+
+    days:
+      "Көннәр",
+
+    previousQuestion:
+      "← Алдагы сорау",
+
+    nextQuestion:
+      "Киләсе сорау →",
+
+    home:
+      "🏠 Төп бит",
+
+    previousDay:
+      "← Алдагы көн",
+
+    nextDay:
+      "Киләсе көн →",
+
+    source:
+      "📚 Чыганаклар",
+
+    openSource:
+      "Чыганакны ачу",
+
+    questionCount:
+      "Сорау"
+
   },
 
 
   fr: {
-    title: "La feuille de route du musulman",
-    subtitle: "Apprendre l’islam étape par étape",
-    days: "Jours",
-    previousQuestion: "← Question précédente",
-    nextQuestion: "Question suivante →",
-    home: "🏠 Accueil",
-    previousDay: "← Jour précédent",
-    nextDay: "Jour suivant →",
-    source: "📚 Sources",
-    openSource: "Ouvrir la source",
-    questionCount: "Questions"
+
+    title:
+      "La feuille de route du musulman",
+
+    subtitle:
+      "Apprendre l’islam étape par étape",
+
+    days:
+      "Jours",
+
+    previousQuestion:
+      "← Question précédente",
+
+    nextQuestion:
+      "Question suivante →",
+
+    home:
+      "🏠 Accueil",
+
+    previousDay:
+      "← Jour précédent",
+
+    nextDay:
+      "Jour suivant →",
+
+    source:
+      "📚 Sources",
+
+    openSource:
+      "Ouvrir la source",
+
+    questionCount:
+      "Questions"
+
   },
 
 
   es: {
-    title: "La hoja de ruta del musulmán",
-    subtitle: "Aprender el Islam paso a paso",
-    days: "Días",
-    previousQuestion: "← Pregunta anterior",
-    nextQuestion: "Siguiente pregunta →",
-    home: "🏠 Inicio",
-    previousDay: "← Día anterior",
-    nextDay: "Día siguiente →",
-    source: "📚 Fuentes",
-    openSource: "Abrir fuente",
-    questionCount: "Preguntas"
+
+    title:
+      "La hoja de ruta del musulmán",
+
+    subtitle:
+      "Aprender el Islam paso a paso",
+
+    days:
+      "Días",
+
+    previousQuestion:
+      "← Pregunta anterior",
+
+    nextQuestion:
+      "Siguiente pregunta →",
+
+    home:
+      "🏠 Inicio",
+
+    previousDay:
+      "← Día anterior",
+
+    nextDay:
+      "Día siguiente →",
+
+    source:
+      "📚 Fuentes",
+
+    openSource:
+      "Abrir fuente",
+
+    questionCount:
+      "Preguntas"
+
   },
 
 
   nl: {
-    title: "De routekaart van een moslim",
-    subtitle: "Leer de islam stap voor stap",
-    days: "Dagen",
-    previousQuestion: "← Vorige vraag",
-    nextQuestion: "Volgende vraag →",
-    home: "🏠 Home",
-    previousDay: "← Vorige dag",
-    nextDay: "Volgende dag →",
-    source: "📚 Bronnen",
-    openSource: "Bron openen",
-    questionCount: "Vragen"
+
+    title:
+      "De routekaart van een moslim",
+
+    subtitle:
+      "Leer de islam stap voor stap",
+
+    days:
+      "Dagen",
+
+    previousQuestion:
+      "← Vorige vraag",
+
+    nextQuestion:
+      "Volgende vraag →",
+
+    home:
+      "🏠 Home",
+
+    previousDay:
+      "← Vorige dag",
+
+    nextDay:
+      "Volgende dag →",
+
+    source:
+      "📚 Bronnen",
+
+    openSource:
+      "Bron openen",
+
+    questionCount:
+      "Vragen"
+
   },
 
 
   it: {
-    title: "La guida del musulmano",
-    subtitle: "Imparare l'Islam passo dopo passo",
-    days: "Giorni",
-    previousQuestion: "← Domanda precedente",
-    nextQuestion: "Domanda successiva →",
-    home: "🏠 Home",
-    previousDay: "← Giorno precedente",
-    nextDay: "Giorno successivo →",
-    source: "📚 Fonti",
-    openSource: "Apri fonte",
-    questionCount: "Domande"
+
+    title:
+      "La guida del musulmano",
+
+    subtitle:
+      "Imparare l'Islam passo dopo passo",
+
+    days:
+      "Giorni",
+
+    previousQuestion:
+      "← Domanda precedente",
+
+    nextQuestion:
+      "Domanda successiva →",
+
+    home:
+      "🏠 Home",
+
+    previousDay:
+      "← Giorno precedente",
+
+    nextDay:
+      "Giorno successivo →",
+
+    source:
+      "📚 Fonti",
+
+    openSource:
+      "Apri fonte",
+
+    questionCount:
+      "Domande"
+
   }
 
 };
@@ -277,13 +517,17 @@ let selectedLang =
 
 
 if (!UI[selectedLang]) {
+
   selectedLang = "tr";
+
 }
 
 
 let days = [];
 
+
 let currentDayIndex = 0;
+
 
 let currentQuestionIndex = 0;
 
@@ -303,11 +547,15 @@ async function init() {
   document.documentElement.lang =
     selectedLang;
 
+
   renderHome();
+
 
   await loadDays();
 
+
   renderHome();
+
 }
 
 
@@ -319,6 +567,7 @@ async function loadDays() {
 
   days = [];
 
+
   console.log(
     "📚 Günler yükleniyor..."
   );
@@ -327,28 +576,16 @@ async function loadDays() {
   const requests = [];
 
 
-  /*
-    30 günlük proje.
-
-    data/day-01.json
-    data/day-02.json
-    ...
-    data/day-30.json
-  */
-
   for (
     let number = 1;
     number <= 30;
     number++
   ) {
 
+
     const file =
       `data/day-${String(number).padStart(2, "0")}.json`;
 
-
-    /*
-      Cache busting
-    */
 
     const url =
       `${file}?v=${Date.now()}`;
@@ -367,6 +604,7 @@ async function loadDays() {
       .then(
         async response => {
 
+
           if (!response.ok) {
 
             console.warn(
@@ -376,6 +614,7 @@ async function loadDays() {
             );
 
             return null;
+
           }
 
 
@@ -391,7 +630,9 @@ async function loadDays() {
             data =
               JSON.parse(text);
 
-          } catch (error) {
+          }
+
+          catch (error) {
 
             console.error(
               `❌ Gün ${number} JSON hatası:`,
@@ -405,23 +646,9 @@ async function loadDays() {
             );
 
             return null;
+
           }
 
-
-          /*
-            Hem:
-
-            {
-              day: 1,
-              dayTitle: {...},
-              daySubtitle: {...},
-              questions: [...]
-            }
-
-            hem de doğrudan [...]
-
-            formatını destekler.
-          */
 
           const questions =
             Array.isArray(data)
@@ -440,6 +667,7 @@ async function loadDays() {
             );
 
             return null;
+
           }
 
 
@@ -466,6 +694,7 @@ async function loadDays() {
         }
       )
 
+
       .catch(
         error => {
 
@@ -476,9 +705,12 @@ async function loadDays() {
           );
 
           return null;
+
         }
       )
+
     );
+
   }
 
 
@@ -488,10 +720,12 @@ async function loadDays() {
 
   days =
     results
+
       .filter(
         item =>
           item !== null
       )
+
       .sort(
         (a, b) =>
           a.number - b.number
@@ -501,9 +735,11 @@ async function loadDays() {
   console.log(
     "📚 Yüklenen günler:",
     days.map(
-      day => day.number
+      day =>
+        day.number
     )
   );
+
 }
 
 
@@ -512,6 +748,7 @@ async function loadDays() {
 ========================================= */
 
 function renderHome() {
+
 
   const home =
     document.querySelector(
@@ -529,7 +766,9 @@ function renderHome() {
     !home ||
     !questionPage
   ) {
+
     return;
+
   }
 
 
@@ -542,26 +781,27 @@ function renderHome() {
 
 
   /* =====================================
-     ANA SAYFA DİL SEÇİCİ
-  ===================================== */
+     DİL SEÇİCİ
+  ====================================== */
 
-  const homeLanguageSelector =
+  const selector =
     document.querySelector(
       "#home-language-selector"
     );
 
 
-  if (homeLanguageSelector) {
+  if (selector) {
 
     renderLanguageButtons(
-      homeLanguageSelector
+      selector
     );
+
   }
 
 
   /* =====================================
      ANA BAŞLIK
-  ===================================== */
+  ====================================== */
 
   const roadmapTitle =
     home.querySelector(
@@ -571,7 +811,9 @@ function renderHome() {
 
   if (roadmapTitle) {
 
-    roadmapTitle.innerHTML = "";
+
+    roadmapTitle.innerHTML =
+      "";
 
 
     const title =
@@ -596,9 +838,16 @@ function renderHome() {
       );
 
 
+    firstLine.className =
+      "roadmap-title-line";
+
+
     firstLine.textContent =
       words
-        .slice(0, middle)
+        .slice(
+          0,
+          middle
+        )
         .join(" ");
 
 
@@ -608,9 +857,15 @@ function renderHome() {
       );
 
 
+    secondLine.className =
+      "roadmap-title-line";
+
+
     secondLine.textContent =
       words
-        .slice(middle)
+        .slice(
+          middle
+        )
         .join(" ");
 
 
@@ -622,12 +877,13 @@ function renderHome() {
     roadmapTitle.appendChild(
       secondLine
     );
+
   }
 
 
   /* =====================================
-     ALT AÇIKLAMA
-  ===================================== */
+     ALT BAŞLIK
+  ====================================== */
 
   const subtitle =
     home.querySelector(
@@ -639,12 +895,13 @@ function renderHome() {
 
     subtitle.textContent =
       UI[selectedLang].subtitle;
+
   }
 
 
   /* =====================================
      GÜNLER BAŞLIĞI
-  ===================================== */
+  ====================================== */
 
   const sectionTitle =
     home.querySelector(
@@ -656,12 +913,13 @@ function renderHome() {
 
     sectionTitle.textContent =
       UI[selectedLang].days;
+
   }
 
 
   /* =====================================
-     GÜNLER LİSTESİ
-  ===================================== */
+     GÜNLER
+  ====================================== */
 
   const list =
     document.querySelector(
@@ -670,14 +928,18 @@ function renderHome() {
 
 
   if (!list) {
+
     return;
+
   }
 
 
-  list.innerHTML = "";
+  list.innerHTML =
+    "";
 
 
   if (!days.length) {
+
 
     const loading =
       document.createElement(
@@ -699,15 +961,17 @@ function renderHome() {
 
 
     return;
+
   }
 
 
   /* =====================================
      GÜN KARTLARI
-  ===================================== */
+  ====================================== */
 
   days.forEach(
     (dayData, index) => {
+
 
       const card =
         document.createElement(
@@ -756,6 +1020,7 @@ function renderHome() {
 
       if (subtitle) {
 
+
         const subtitleLine =
           document.createElement(
             "div"
@@ -773,6 +1038,7 @@ function renderHome() {
         card.appendChild(
           subtitleLine
         );
+
       }
 
 
@@ -780,13 +1046,17 @@ function renderHome() {
         "click",
         () => {
 
+
           currentDayIndex =
             index;
+
 
           currentQuestionIndex =
             0;
 
+
           renderQuestion();
+
         }
       );
 
@@ -794,8 +1064,10 @@ function renderHome() {
       list.appendChild(
         card
       );
+
     }
   );
+
 }
 
 
@@ -807,6 +1079,7 @@ function getDayTitle(
   dayData
 ) {
 
+
   const info =
     dayData.info || {};
 
@@ -817,10 +1090,15 @@ function getDayTitle(
   ) {
 
     return (
+
       info.dayTitle[selectedLang] ||
+
       info.dayTitle.tr ||
+
       `${dayData.number}. Gün`
+
     );
+
   }
 
 
@@ -830,10 +1108,15 @@ function getDayTitle(
   ) {
 
     return (
+
       info.title[selectedLang] ||
+
       info.title.tr ||
+
       `${dayData.number}. Gün`
+
     );
+
   }
 
 
@@ -847,10 +1130,15 @@ function getDayTitle(
   ) {
 
     return (
+
       first.dayTitle[selectedLang] ||
+
       first.dayTitle.tr ||
+
       `${dayData.number}. Gün`
+
     );
+
   }
 
 
@@ -859,10 +1147,12 @@ function getDayTitle(
   ) {
 
     return first.dayTitle;
+
   }
 
 
   return `${dayData.number}. Gün`;
+
 }
 
 
@@ -874,6 +1164,7 @@ function getDaySubtitle(
   dayData
 ) {
 
+
   const info =
     dayData.info || {};
 
@@ -884,10 +1175,15 @@ function getDaySubtitle(
   ) {
 
     return (
+
       info.daySubtitle[selectedLang] ||
+
       info.daySubtitle.tr ||
+
       ""
+
     );
+
   }
 
 
@@ -897,10 +1193,15 @@ function getDaySubtitle(
   ) {
 
     return (
+
       info.subtitle[selectedLang] ||
+
       info.subtitle.tr ||
+
       ""
+
     );
+
   }
 
 
@@ -914,10 +1215,15 @@ function getDaySubtitle(
   ) {
 
     return (
+
       first.daySubtitle[selectedLang] ||
+
       first.daySubtitle.tr ||
+
       ""
+
     );
+
   }
 
 
@@ -926,10 +1232,12 @@ function getDaySubtitle(
   ) {
 
     return first.daySubtitle;
+
   }
 
 
   return "";
+
 }
 
 
@@ -942,33 +1250,21 @@ function renderLanguageButtons(
   container
 ) {
 
+
   if (!container) {
+
     return;
+
   }
 
 
-  container.innerHTML = "";
+  container.innerHTML =
+    "";
 
-
-  /*
-    LANGS dizisinin sırası aynen
-    ekranda kullanılacaktır.
-
-    1 🇹🇷
-    2 🇬🇧
-    3 🇩🇪
-    4 🇷🇺
-    5 🇬🇭
-    6 🇸🇦
-    7 🇭🇺
-    8 🇫🇷
-    9 🇪🇸
-    10 🇳🇱
-    11 🇮🇹
-  */
 
   LANGS.forEach(
     language => {
+
 
       const button =
         document.createElement(
@@ -1005,12 +1301,14 @@ function renderLanguageButtons(
         button.classList.add(
           "active"
         );
+
       }
 
 
       button.addEventListener(
         "click",
         () => {
+
 
           selectedLang =
             language.key;
@@ -1039,10 +1337,14 @@ function renderLanguageButtons(
 
             renderQuestion();
 
-          } else {
+          }
+
+          else {
 
             renderHome();
+
           }
+
         }
       );
 
@@ -1050,8 +1352,10 @@ function renderLanguageButtons(
       container.appendChild(
         button
       );
+
     }
   );
+
 }
 
 
@@ -1060,6 +1364,7 @@ function renderLanguageButtons(
 ========================================= */
 
 function renderQuestion() {
+
 
   const home =
     document.querySelector(
@@ -1081,6 +1386,7 @@ function renderQuestion() {
     renderHome();
 
     return;
+
   }
 
 
@@ -1088,7 +1394,9 @@ function renderQuestion() {
     !home ||
     !page
   ) {
+
     return;
+
   }
 
 
@@ -1111,7 +1419,9 @@ function renderQuestion() {
 
 
   if (!question) {
+
     return;
+
   }
 
 
@@ -1122,16 +1432,19 @@ function renderQuestion() {
 
 
   if (!content) {
+
     return;
+
   }
 
 
-  content.innerHTML = "";
+  content.innerHTML =
+    "";
 
 
   /* =====================================
      GÜN BAŞLIĞI
-  ===================================== */
+  ====================================== */
 
   const dayTitle =
     document.createElement(
@@ -1156,7 +1469,7 @@ function renderQuestion() {
 
   /* =====================================
      SORU KARTI
-  ===================================== */
+  ====================================== */
 
   const card =
     document.createElement(
@@ -1168,23 +1481,22 @@ function renderQuestion() {
     "question-card";
 
 
-  /*
-    Seçilen dil önce gösterilir.
-
-    Ardından diğer 10 dil,
-    LANGS dizisindeki sabit sıraya göre
-    gösterilir.
-  */
+  /* =====================================
+     SEÇİLİ DİL İLK
+     DİĞERLERİ ARDINDAN
+  ====================================== */
 
   const languages = [
 
     selectedLang,
 
     ...LANGS
+
       .map(
         language =>
           language.key
       )
+
       .filter(
         key =>
           key !== selectedLang
@@ -1195,6 +1507,7 @@ function renderQuestion() {
 
   languages.forEach(
     languageKey => {
+
 
       const language =
         LANGS.find(
@@ -1211,7 +1524,9 @@ function renderQuestion() {
         !data ||
         !language
       ) {
+
         return;
+
       }
 
 
@@ -1224,10 +1539,6 @@ function renderQuestion() {
       block.className =
         "language-block";
 
-
-      /* =================================
-         ARAPÇA RTL
-      ================================= */
 
       if (
         languageKey === "ar"
@@ -1242,12 +1553,9 @@ function renderQuestion() {
           "dir",
           "rtl"
         );
+
       }
 
-
-      /* =================================
-         SEÇİLEN DİL
-      ================================= */
 
       if (
         languageKey === selectedLang
@@ -1256,12 +1564,9 @@ function renderQuestion() {
         block.classList.add(
           "selected-language"
         );
+
       }
 
-
-      /* =================================
-         SORU
-      ================================= */
 
       const q =
         document.createElement(
@@ -1276,10 +1581,6 @@ function renderQuestion() {
       q.textContent =
         `${language.flag} ${question.id}. ${data.q}`;
 
-
-      /* =================================
-         CEVAP
-      ================================= */
 
       const a =
         document.createElement(
@@ -1308,13 +1609,14 @@ function renderQuestion() {
       card.appendChild(
         block
       );
+
     }
   );
 
 
   /* =====================================
      KAYNAKLAR
-  ===================================== */
+  ====================================== */
 
   if (
     Array.isArray(question.sources) &&
@@ -1326,6 +1628,7 @@ function renderQuestion() {
         question.sources
       )
     );
+
   }
 
 
@@ -1336,7 +1639,7 @@ function renderQuestion() {
 
   /* =====================================
      NAVİGASYON
-  ===================================== */
+  ====================================== */
 
   const top =
     document.querySelector(
@@ -1352,39 +1655,41 @@ function renderQuestion() {
 
   if (top) {
 
-    top.innerHTML = "";
+    top.innerHTML =
+      "";
+
 
     top.appendChild(
       createNavigation()
     );
+
   }
 
 
   if (bottom) {
 
-    bottom.innerHTML = "";
+    bottom.innerHTML =
+      "";
+
 
     bottom.appendChild(
       createNavigation()
     );
+
   }
 
-
-  /* =====================================
-     SORU SAYFASI DİL SEÇİCİ
-  ===================================== */
 
   addQuestionLanguageSelector();
 
 
-  /* =====================================
-     SAYFANIN BAŞINA DÖN
-  ===================================== */
-
   window.scrollTo({
+
     top: 0,
+
     behavior: "smooth"
+
   });
+
 }
 
 
@@ -1394,6 +1699,7 @@ function renderQuestion() {
 
 function addQuestionLanguageSelector() {
 
+
   let selector =
     document.querySelector(
       "#language-selector"
@@ -1401,6 +1707,7 @@ function addQuestionLanguageSelector() {
 
 
   if (!selector) {
+
 
     selector =
       document.createElement(
@@ -1437,13 +1744,16 @@ function addQuestionLanguageSelector() {
         selector,
         nav
       );
+
     }
+
   }
 
 
   renderLanguageButtons(
     selector
   );
+
 }
 
 
@@ -1452,6 +1762,7 @@ function addQuestionLanguageSelector() {
 ========================================= */
 
 function createNavigation() {
+
 
   const row =
     document.createElement(
@@ -1465,7 +1776,7 @@ function createNavigation() {
 
   /* =====================================
      ÖNCEKİ SORU
-  ===================================== */
+  ====================================== */
 
   const previousQuestion =
     makeButton(
@@ -1480,6 +1791,7 @@ function createNavigation() {
   previousQuestion.onclick =
     () => {
 
+
       if (
         currentQuestionIndex > 0
       ) {
@@ -1487,13 +1799,15 @@ function createNavigation() {
         currentQuestionIndex--;
 
         renderQuestion();
+
       }
+
     };
 
 
   /* =====================================
      SONRAKİ SORU
-  ===================================== */
+  ====================================== */
 
   const nextQuestion =
     makeButton(
@@ -1510,6 +1824,7 @@ function createNavigation() {
   nextQuestion.onclick =
     () => {
 
+
       if (
         currentQuestionIndex <
         days[currentDayIndex]
@@ -1519,13 +1834,15 @@ function createNavigation() {
         currentQuestionIndex++;
 
         renderQuestion();
+
       }
+
     };
 
 
   /* =====================================
      ANA SAYFA
-  ===================================== */
+  ====================================== */
 
   const home =
     makeButton(
@@ -1536,19 +1853,24 @@ function createNavigation() {
   home.onclick =
     () => {
 
+
       renderHome();
 
 
       window.scrollTo({
+
         top: 0,
+
         behavior: "smooth"
+
       });
+
     };
 
 
   /* =====================================
      ÖNCEKİ GÜN
-  ===================================== */
+  ====================================== */
 
   const previousDay =
     makeButton(
@@ -1563,6 +1885,7 @@ function createNavigation() {
   previousDay.onclick =
     () => {
 
+
       if (
         currentDayIndex > 0
       ) {
@@ -1573,13 +1896,15 @@ function createNavigation() {
           0;
 
         renderQuestion();
+
       }
+
     };
 
 
   /* =====================================
      SONRAKİ GÜN
-  ===================================== */
+  ====================================== */
 
   const nextDay =
     makeButton(
@@ -1595,6 +1920,7 @@ function createNavigation() {
   nextDay.onclick =
     () => {
 
+
       if (
         currentDayIndex <
         days.length - 1
@@ -1606,7 +1932,9 @@ function createNavigation() {
           0;
 
         renderQuestion();
+
       }
+
     };
 
 
@@ -1636,6 +1964,7 @@ function createNavigation() {
 
 
   return row;
+
 }
 
 
@@ -1646,6 +1975,7 @@ function createNavigation() {
 function makeButton(
   text
 ) {
+
 
   const button =
     document.createElement(
@@ -1662,6 +1992,7 @@ function makeButton(
 
 
   return button;
+
 }
 
 
@@ -1672,6 +2003,7 @@ function makeButton(
 function renderSources(
   sources
 ) {
+
 
   const box =
     document.createElement(
@@ -1707,6 +2039,7 @@ function renderSources(
   sources.forEach(
     source => {
 
+
       const li =
         document.createElement(
           "li"
@@ -1723,6 +2056,7 @@ function renderSources(
         source !== null
       ) {
 
+
         text =
           source.title ||
           source.name ||
@@ -1733,7 +2067,10 @@ function renderSources(
           source.url ||
           "";
 
-      } else {
+      }
+
+      else {
+
 
         text =
           String(source);
@@ -1747,6 +2084,7 @@ function renderSources(
 
         if (match) {
 
+
           url =
             match[0];
 
@@ -1758,7 +2096,9 @@ function renderSources(
                 ""
               )
               .trim();
+
         }
+
       }
 
 
@@ -1768,10 +2108,12 @@ function renderSources(
           getSourceUrl(
             text
           );
+
       }
 
 
       if (url) {
+
 
         const link =
           document.createElement(
@@ -1803,16 +2145,21 @@ function renderSources(
           link
         );
 
-      } else {
+      }
+
+      else {
+
 
         li.textContent =
           text;
+
       }
 
 
       list.appendChild(
         li
       );
+
     }
   );
 
@@ -1823,6 +2170,7 @@ function renderSources(
 
 
   return box;
+
 }
 
 
@@ -1834,6 +2182,7 @@ function getSourceUrl(
   source
 ) {
 
+
   const text =
     String(source)
       .toLowerCase();
@@ -1841,7 +2190,7 @@ function getSourceUrl(
 
   /* =====================================
      KUR'AN
-  ===================================== */
+  ====================================== */
 
   const quranMatch =
     text.match(
@@ -1850,6 +2199,7 @@ function getSourceUrl(
 
 
   if (quranMatch) {
+
 
     const surah =
       quranMatch[1];
@@ -1862,25 +2212,29 @@ function getSourceUrl(
     return (
       `https://quran.com/${surah}?startingVerse=${start}`
     );
+
   }
 
 
   /* =====================================
      SAHİH MÜSLİM
-  ===================================== */
+  ====================================== */
 
   if (
     text.includes("sahih müslim") ||
     text.includes("sahih muslim")
   ) {
 
-    return "https://sunnah.com/muslim";
+    return (
+      "https://sunnah.com/muslim"
+    );
+
   }
 
 
   /* =====================================
      SAHİH BUHARİ
-  ===================================== */
+  ====================================== */
 
   if (
     text.includes("sahih buhari") ||
@@ -1888,25 +2242,33 @@ function getSourceUrl(
     text.includes("sahih bukhari")
   ) {
 
-    return "https://sunnah.com/bukhari";
+    return (
+      "https://sunnah.com/bukhari"
+    );
+
   }
 
 
   /* =====================================
      ÖMER NASUHİ BİLMEN
-  ===================================== */
+  ====================================== */
 
   if (
-    text.includes("ömer nasuhi bilmen")
+    text.includes(
+      "ömer nasuhi bilmen"
+    )
   ) {
 
-    return "https://archive.org/search?query=%C3%96mer+Nasuhi+Bilmen+B%C3%BCy%C3%BCk+%C4%B0slam+%C4%B0lmihali";
+    return (
+      "https://archive.org/search?query=%C3%96mer+Nasuhi+Bilmen+B%C3%BCy%C3%BCk+%C4%B0slam+%C4%B0lmihali"
+    );
+
   }
 
 
   /* =====================================
      PROJE SİTESİ
-  ===================================== */
+  ====================================== */
 
   if (
     text.includes(
@@ -1917,11 +2279,15 @@ function getSourceUrl(
     )
   ) {
 
-    return "https://mckurdi27.github.io/yol-haritasi/";
+    return (
+      "https://mckurdi27.github.io/yol-haritasi/"
+    );
+
   }
 
 
   return "";
+
 }
 
 
@@ -1938,6 +2304,7 @@ window.addEventListener(
       event.error ||
       event.message
     );
+
   }
 );
 
@@ -1954,6 +2321,7 @@ window.addEventListener(
       "Yol Haritası Promise hatası:",
       event.reason
     );
+
   }
 );
 
