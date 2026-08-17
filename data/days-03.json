@@ -1,0 +1,65 @@
+{
+  "dayTitle": {
+    "tr": "3. Gün — İman ve İbadet Temelleri",
+    "en": "",
+    "ar": "",
+    "de": "",
+    "fr": "",
+    "ru": "",
+    "ku": "",
+    "fa": "",
+    "id": "",
+    "ms": "",
+    "uz": ""
+  },
+  "questions": [
+    {
+      "tr": {
+        "q": "İmanın şartları nelerdir?",
+        "a": "İmanın şartları: Allah’a, meleklere, kitaplara, peygamberlere, ahiret gününe ve kadere iman etmektir."
+      },
+      "en": { "q": "", "a": "" },
+      "ar": { "q": "", "a": "" },
+      "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" },
+      "ru": { "q": "", "a": "" },
+      "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" },
+      "id": { "q": "", "a": "" },
+      "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+    {
+      "tr": {
+        "q": "İslam’ın şartları nelerdir?",
+        "a": "İslam’ın şartları: Kelime-i şehadet, namaz, oruç, zekât ve hacdır."
+      },
+      "en": { "q": "", "a": "" },
+      "ar": { "q": "", "a": "" },
+      "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" },
+      "ru": { "q": "", "a": "" },
+      "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" },
+      "id": { "q": "", "a": "" },
+      "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+    {
+      "tr": {
+        "q": "Namaz neden önemlidir?",
+        "a": "Namaz, kulun Allah ile doğrudan iletişim kurduğu ibadettir ve imanın en önemli göstergelerinden biridir."
+      },
+      "en": { "q": "", "a": "" },
+      "ar": { "q": "", "a": "" },
+      "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" },
+      "ru": { "q": "", "a": "" },
+      "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" },
+      "id": { "q": "", "a": "" },
+      "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    }
+  ]
+}
