@@ -1,6 +1,5 @@
 /* =========================================
    BİR MÜSLÜMANIN YOL HARİTASI
-   11 DİL
    STYLE.CSS
 ========================================= */
 
@@ -9,21 +8,15 @@
 }
 
 html {
-  margin: 0;
-  padding: 0;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family:
-    Arial,
-    "Segoe UI",
-    sans-serif;
-  background: #f5f7fa;
-  color: #1f2937;
-  line-height: 1.6;
+  background: #f5f1e8;
+  color: #2f2a24;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 button,
@@ -32,178 +25,19 @@ select {
   font: inherit;
 }
 
-button {
-  cursor: pointer;
-}
-
-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.45;
-}
-
-
-/* =========================================
-   ANA KONTEYNER
-========================================= */
-
-#app {
-  width: 100%;
-  min-height: 100vh;
-}
-
-.container {
-  width: min(1100px, calc(100% - 30px));
-  margin: 0 auto;
-}
-
 
 /* =========================================
    ANA SAYFA
 ========================================= */
 
 #home-page {
+  width: 100%;
   min-height: 100vh;
-  padding-bottom: 50px;
 }
 
 .home-header {
   text-align: center;
-  padding: 30px 15px 25px;
-}
-
-
-/* =========================================
-   KUTSAL MEKÂNLAR
-========================================= */
-
-.holy-sites {
-  width: min(900px, calc(100% - 30px));
-  margin: 25px auto 0;
-
-  display: grid;
-
-  grid-template-columns:
-    1fr 1fr;
-
-  grid-template-areas:
-    "kaaba kaaba"
-    "title title"
-    "aqsa nabawi";
-
-  gap: 10px;
-}
-
-
-/* =========================================
-   GÖRSEL KUTULARI
-========================================= */
-
-.holy-site {
-  width: 100%;
-  overflow: hidden;
-}
-
-.holy-site img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-/* =========================================
-   KÂBE
-========================================= */
-
-.holy-site-kaaba {
-  grid-area: kaaba;
-  height: 270px;
-  border-radius: 4px;
-}
-
-.holy-site-kaaba img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-/* =========================================
-   ORTA BAŞLIK
-========================================= */
-
-.roadmap-title {
-  grid-area: title;
-
-  margin: 0;
-  padding: 4px 0 6px;
-
-  font-size: clamp(30px, 5vw, 52px);
-
-  font-weight: 800;
-
-  line-height: 1.15;
-
-  letter-spacing: -0.5px;
-
-  text-align: center;
-}
-
-
-/* =========================================
-   MESCİD-İ AKSÂ
-========================================= */
-
-.holy-site-aqsa {
-  grid-area: aqsa;
-
-  height: 270px;
-
-  margin-right: 4px;
-
-  border-radius: 4px;
-}
-
-.holy-site-aqsa img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-/* =========================================
-   MESCİD-İ NEBEVÎ
-========================================= */
-
-.holy-site-nabawi {
-  grid-area: nabawi;
-
-  height: 300px;
-
-  margin-left: 4px;
-
-  border-radius: 4px;
-}
-
-.holy-site-nabawi img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-/* =========================================
-   ALT AÇIKLAMA
-========================================= */
-
-.home-subtitle {
-  margin: 10px auto 0;
-
-  max-width: 750px;
-
-  font-size: clamp(16px, 2.5vw, 20px);
-
-  opacity: 0.75;
+  padding: 20px 12px 10px;
 }
 
 
@@ -212,51 +46,87 @@ button:disabled {
 ========================================= */
 
 .language-selector {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  margin: 20px auto;
-  padding: 10px;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 auto 14px;
 }
 
 .language-button {
-  width: 44px;
-  height: 38px;
+  width: 38px;
+  height: 34px;
   padding: 0;
-
-  border: 1px solid #d1d5db;
-  border-radius: 10px;
-
-  background: #ffffff;
-
-  font-size: 22px;
-
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
+  border: 1px solid #d8d0c2;
+  border-radius: 8px;
+  background: #fffdf8;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
   transition:
     transform 0.15s ease,
-    box-shadow 0.15s ease,
+    background 0.15s ease,
     border-color 0.15s ease;
 }
 
 .language-button:hover {
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.10);
+  transform: translateY(-1px);
 }
 
 .language-button.active {
-  border-width: 2px;
+  background: #e8dfcf;
+  border-color: #9c8a6d;
+}
 
-  border-color: #111827;
 
-  box-shadow:
-    0 3px 10px rgba(0, 0, 0, 0.12);
+/* =========================================
+   KUTSAL MEKÂNLAR
+========================================= */
+
+.holy-sites {
+  position: relative;
+  width: min(100%, 900px);
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.holy-site {
+  width: 25%;
+  max-width: 220px;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.holy-site img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.roadmap-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(75%, 300px);
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: rgba(245, 241, 232, 0.94);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+  font-size: clamp(22px, 4vw, 38px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home-subtitle {
+  margin: 16px 0 20px;
+  font-size: 18px;
 }
 
 
@@ -265,82 +135,49 @@ button:disabled {
 ========================================= */
 
 .days-section {
-  width: min(950px, calc(100% - 30px));
+  width: min(100% - 24px, 800px);
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .days-section h2 {
-  margin: 15px 0 20px;
-
   text-align: center;
-
-  font-size: 28px;
+  margin: 20px 0;
 }
 
 #days-list {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  grid-template-columns:
-    repeat(auto-fit, minmax(280px, 1fr));
-
-  gap: 16px;
+.loading-days {
+  text-align: center;
 }
 
 .day-card {
   width: 100%;
-
-  padding: 22px;
-
-  border: 1px solid #dbe1e8;
-  border-radius: 16px;
-
-  background: #ffffff;
-
-  text-align: left;
-
+  padding: 15px;
+  border: 1px solid #d9d0c0;
+  border-radius: 12px;
+  background: #fffdf8;
   color: inherit;
-
-  box-shadow:
-    0 3px 12px rgba(0, 0, 0, 0.05);
-
-  transition:
-    transform 0.18s ease,
-    box-shadow 0.18s ease;
+  text-align: left;
+  cursor: pointer;
 }
 
 .day-card:hover {
-  transform: translateY(-3px);
-
-  box-shadow:
-    0 8px 22px rgba(0, 0, 0, 0.10);
+  background: #f0eadf;
 }
 
 .day-card-title {
-  font-size: 18px;
-
-  font-weight: 750;
-
-  line-height: 1.35;
+  font-weight: 700;
+  font-size: 17px;
 }
 
 .day-card-subtitle {
-  margin-top: 9px;
-
-  font-size: 14px;
-
-  line-height: 1.5;
-
-  opacity: 0.70;
-}
-
-.loading-days {
-  grid-column: 1 / -1;
-
-  text-align: center;
-
-  padding: 40px 10px;
-
-  opacity: 0.7;
+  margin-top: 5px;
+  opacity: 0.75;
 }
 
 
@@ -349,27 +186,84 @@ button:disabled {
 ========================================= */
 
 #question-page {
-  display: none;
-
-  min-height: 100vh;
-
-  padding: 10px 0 50px;
+  width: min(100%, 900px);
+  margin: 0 auto;
+  padding: 15px 12px 40px;
 }
 
-#question-content {
-  width: min(950px, calc(100% - 30px));
-
-  margin: 0 auto;
+.question-content {
+  width: 100%;
 }
 
 .question-day-title {
-  margin: 18px auto 20px;
-
   text-align: center;
+  margin: 16px 0;
+}
 
-  font-size: clamp(23px, 4vw, 34px);
 
-  line-height: 1.25;
+/* =========================================
+   NAVİGASYON
+========================================= */
+
+.navigation {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.navigation-wrapper {
+  width: 100%;
+}
+
+.navigation-main-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.navigation-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.question-navigation-group {
+  justify-content: flex-start;
+}
+
+.day-navigation-group {
+  justify-content: flex-end;
+}
+
+.navigation-home-group {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-arrow-button,
+.navigation-home-button {
+  min-width: 42px;
+  height: 38px;
+  border: 1px solid #cfc4b2;
+  border-radius: 9px;
+  background: #fffdf8;
+  cursor: pointer;
+}
+
+.navigation-arrow-button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.navigation-number-input {
+  width: 62px;
+  height: 38px;
+  border: 1px solid #cfc4b2;
+  border-radius: 9px;
+  background: #fffdf8;
+  text-align: center;
 }
 
 
@@ -379,439 +273,58 @@ button:disabled {
 
 .question-card {
   width: 100%;
-
-  background: #ffffff;
-
-  border: 1px solid #dbe1e8;
-
-  border-radius: 18px;
-
-  padding: 22px;
-
-  box-shadow:
-    0 5px 18px rgba(0, 0, 0, 0.06);
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 14px;
+  background: #fffdf8;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
-
-
-/* =========================================
-   DİL BLOKLARI
-========================================= */
 
 .language-block {
-  padding: 18px 0;
-
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.language-block:first-child {
-  padding-top: 5px;
-}
-
-.language-block:last-of-type {
-  border-bottom: none;
+  margin-bottom: 18px;
+  padding: 14px;
+  border: 1px solid #e1d8ca;
+  border-radius: 12px;
 }
 
 .language-block.selected-language {
-  border-radius: 12px;
-
-  padding: 18px;
-
-  margin: 0 -4px;
+  border-width: 2px;
 }
 
-
-/* =========================================
-   SORU VE CEVAP
-========================================= */
-
 .question-line {
-  font-size: 18px;
-
-  font-weight: 750;
-
-  line-height: 1.55;
+  font-weight: 700;
+  line-height: 1.6;
 }
 
 .answer-line {
-  margin-top: 9px;
-
-  font-size: 16px;
-
-  line-height: 1.65;
+  margin-top: 8px;
+  line-height: 1.7;
 }
-
-
-/* =========================================
-   ARAPÇA
-========================================= */
 
 .arabic-language {
+  font-family: "Amiri", "Noto Naskh Arabic", serif;
   text-align: right;
-
-  direction: rtl;
-}
-
-.arabic-language .question-line,
-.arabic-language .answer-line {
-  font-family:
-    "Noto Naskh Arabic",
-    "Amiri",
-    "Traditional Arabic",
-    serif;
-}
-
-.arabic-language .question-line {
-  font-size: 21px;
-}
-
-.arabic-language .answer-line {
-  font-size: 19px;
+  font-size: 1.08em;
 }
 
 
 /* =========================================
-   KAYNAKLAR
+   TTS KONTROL PANELİ
 ========================================= */
 
-.sources {
-  margin-top: 24px;
-
-  padding-top: 18px;
-
-  border-top: 2px solid #e5e7eb;
-}
-
-.sources h3 {
-  margin: 0 0 10px;
-
-  font-size: 18px;
-}
-
-.sources ul {
-  margin: 0;
-
-  padding-left: 22px;
-}
-
-.sources li {
-  margin: 6px 0;
-}
-
-.sources a {
-  color: inherit;
-
-  text-decoration: underline;
-
-  text-underline-offset: 3px;
-}
-
-
-/* =========================================
-   NAVİGASYON
-========================================= */
-
-#top-navigation,
-#bottom-navigation {
-  width: min(1100px, calc(100% - 30px));
-
-  margin: 8px auto;
-}
-
-.navigation-wrapper {
+#tts-controls {
   width: 100%;
-
   display: flex;
-
+  flex-direction: row;
   justify-content: center;
-
   align-items: center;
-}
-
-.navigation-main-row {
-  width: 100%;
-
-  display: grid;
-
-  grid-template-columns:
-    minmax(0, 1fr)
-    auto
-    minmax(0, 1fr);
-
-  align-items: center;
-
-  justify-content: center;
-
-  column-gap: 18px;
-}
-
-.navigation-group {
-  display: grid;
-
-  grid-template-columns:
-    minmax(0, 1fr)
-    65px
-    minmax(0, 1fr);
-
-  align-items: center;
-
-  justify-items: center;
-
-  gap: 8px;
-
-  min-width: 0;
-}
-
-.question-navigation-group {
-  justify-self: stretch;
-}
-
-.day-navigation-group {
-  justify-self: stretch;
-}
-
-
-/* =========================================
-   NAVİGASYON BUTONLARI
-========================================= */
-
-.navigation-arrow-button {
-  width: 100%;
-
-  height: 58px;
-
-  padding: 0 12px;
-
-  border: 1px solid #cfd5dc;
-
-  border-radius: 14px;
-
-  background: #ffffff;
-
-  color: #1f2937;
-
-  font-size: 32px;
-
-  font-weight: 700;
-
-  line-height: 1;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  text-align: center;
-
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease,
-    background 0.15s ease;
-}
-
-.navigation-arrow-button:hover:not(:disabled) {
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 5px 14px rgba(0, 0, 0, 0.10);
-
-  background: #fafafa;
-}
-
-
-/* =========================================
-   SAYI GİRİŞ
-========================================= */
-
-.navigation-number-input {
-  width: 65px;
-
-  height: 58px;
-
-  padding: 6px;
-
-  border: 1px solid #9ca3af;
-
-  border-radius: 14px;
-
-  background: #ffffff;
-
-  color: #111827;
-
-  text-align: center;
-
-  font-weight: 700;
-
-  font-size: 21px;
-
-  outline: none;
-
-  transition:
-    border-color 0.15s ease,
-    box-shadow 0.15s ease;
-}
-
-.navigation-number-input:focus {
-  border-color: #374151;
-
-  box-shadow:
-    0 0 0 3px
-    rgba(55, 65, 81, 0.12);
-}
-
-.navigation-number-input::placeholder {
-  color: #9ca3af;
-}
-
-
-/* =========================================
-   ORTA KÂBE
-========================================= */
-
-.navigation-home-group {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  justify-self: center;
-
-  text-align: center;
-}
-
-.navigation-home-button {
-  width: 68px;
-
-  height: 68px;
-
-  padding: 0;
-
-  border: 1px solid #cfd5dc;
-
-  border-radius: 16px;
-
-  background: #ffffff;
-
-  font-size: 40px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  text-align: center;
-
-  margin: 0 auto;
-
-  box-shadow:
-    0 3px 10px rgba(0, 0, 0, 0.06);
-
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
-}
-
-.navigation-home-button:hover {
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 6px 16px rgba(0, 0, 0, 0.12);
-}
-
-.navigation-row {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 10px;
-
-  flex-wrap: wrap;
-}
-
-.navigation-home-row {
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  width: 100%;
-}
-
-
-/* =========================================
-   RTL
-========================================= */
-
-[dir="rtl"] {
-  direction: rtl;
-}
-
-[dir="rtl"] .sources ul {
-  padding-left: 0;
-
-  padding-right: 22px;
-}
-
-
-/* =========================================
-   FOCUS
-========================================= */
-
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-a:focus-visible {
-  outline:
-    3px solid rgba(59, 130, 246, 0.35);
-
-  outline-offset: 2px;
-}
-
-
-/* =========================================
-   YÜKLEME
-========================================= */
-
-.loading {
-  text-align: center;
-
-  padding: 40px 15px;
-
-  opacity: 0.7;
-}
-
-
-/* =========================================
-   TTS KONTROLLERİ
-========================================= */
-
-.tts-controls {
-  width: min(950px, calc(100% - 30px));
-
-  margin: 14px auto 8px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 8px;
-
   flex-wrap: nowrap;
-
-  direction: ltr;
-
-  text-align: center;
-
-  position: relative;
-
-  z-index: 20;
+  gap: 7px;
+  margin: 10px auto 8px;
+  padding: 8px;
+  border: 1px solid #d8cdbb;
+  border-radius: 12px;
+  background: #fffdf8;
 }
 
 
@@ -820,204 +333,58 @@ a:focus-visible {
 ========================================= */
 
 .tts-button {
-  width: 52px;
-
-  height: 48px;
-
+  width: 42px;
+  height: 40px;
+  min-width: 42px;
   padding: 0;
-
-  margin: 0;
-
-  border: 2px solid #16803c;
-
-  border-radius: 12px;
-
-  background: #eaf7ef;
-
-  color: #16803c;
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  text-align: center;
-
-  font-family:
-    Arial,
-    "Segoe UI",
-    sans-serif;
-
-  font-size: 25px;
-
-  font-weight: 800;
-
-  line-height: 1;
-
+  border: 1px solid #cfc4b2;
+  border-radius: 9px;
+  background: #f8f3e9;
+  color: #302a23;
   cursor: pointer;
-
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  line-height: 1;
   user-select: none;
-
-  -webkit-tap-highlight-color: transparent;
-
-  transition:
-    transform 0.12s ease,
-    background 0.12s ease,
-    box-shadow 0.12s ease,
-    color 0.12s ease;
-
-  flex-shrink: 0;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.tts-button:hover:not(:disabled) {
-  background: #d8f1e1;
-
-  box-shadow:
-    0 4px 10px rgba(22, 128, 60, 0.18);
+.tts-button:hover {
+  background: #eee6d8;
 }
 
-.tts-button:active:not(:disabled) {
-  transform: scale(0.92);
-
-  background: #c7ead3;
+.tts-button:active {
+  transform: scale(0.96);
 }
 
-.tts-button.active {
-  background: #c7ead3;
-
-  color: #166534;
-
-  box-shadow:
-    0 0 0 2px rgba(22, 128, 60, 0.15);
+.tts-button:focus-visible {
+  outline: 2px solid #8d795d;
+  outline-offset: 2px;
 }
-
-.tts-button:disabled {
-  opacity: 0.35;
-
-  cursor: not-allowed;
-
-  transform: none;
-
-  box-shadow: none;
-}
-
-
-/* =========================================
-   SVG İKONLARI
-========================================= */
-
-.tts-button svg {
-  width: 25px;
-
-  height: 25px;
-
-  display: block;
-
-  margin: auto;
-
-  fill: none;
-
-  stroke: currentColor;
-
-  stroke-width: 2.4;
-
-  stroke-linecap: round;
-
-  stroke-linejoin: round;
-
-  pointer-events: none;
-}
-
-
-/* =========================================
-   PLAY
-========================================= */
 
 .tts-play {
-  width: 58px;
-
-  height: 52px;
-
-  font-size: 27px;
+  font-size: 18px;
 }
-
-
-/* =========================================
-   PAUSE
-========================================= */
 
 .tts-pause {
-  width: 52px;
-
-  height: 48px;
-
-  font-size: 24px;
+  font-size: 17px;
 }
-
-
-/* =========================================
-   STOP
-========================================= */
 
 .tts-stop {
-  font-size: 22px;
+  font-size: 17px;
 }
-
-
-/* =========================================
-   HIZ BUTONLARI
-========================================= */
 
 .tts-slow,
 .tts-fast,
 .tts-very-fast {
-  letter-spacing: -4px;
+  font-size: 14px;
 }
 
-.tts-speed-icon {
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 1px;
-
-  min-width: 28px;
-
-  height: 28px;
-
-  color: currentColor;
-
-  font-size: 20px;
-
-  font-weight: 800;
-
-  line-height: 1;
-
-  letter-spacing: -3px;
-
-  pointer-events: none;
-}
-
-.tts-speed-icon span {
-  display: inline-block;
-}
-
-
-/* =========================================
-   TTS AYAR BUTONU
-========================================= */
-
-.tts-settings-button {
-  flex-shrink: 0;
-
-  display: inline-flex !important;
-
-  visibility: visible !important;
-
-  opacity: 1;
+.tts-settings {
+  font-size: 17px;
 }
 
 
@@ -1025,127 +392,94 @@ a:focus-visible {
    TTS AYAR PANELİ
 ========================================= */
 
-.tts-settings {
-  width: min(420px, calc(100% - 30px));
-
-  margin: 8px auto 18px;
-
-  padding: 18px;
-
-  border: 1px solid #dbe1e8;
-
-  border-radius: 16px;
-
-  background: #ffffff;
-
-  box-shadow:
-    0 5px 18px rgba(0, 0, 0, 0.08);
-
-  display: none;
-
-  text-align: left;
-
-  position: relative;
-
-  z-index: 100;
-}
-
-.tts-settings.open {
-  display: block;
-}
-
-.tts-settings[hidden] {
-  display: none !important;
-}
-
-
-/* =========================================
-   AYAR SATIRLARI
-========================================= */
-
-.tts-setting-row {
+#tts-settings-panel {
+  width: 100%;
+  margin: 8px 0 12px;
+  padding: 14px;
   display: flex;
-
   flex-direction: column;
-
-  gap: 7px;
-
-  margin-bottom: 15px;
+  gap: 9px;
+  border: 1px solid #d4c8b6;
+  border-radius: 12px;
+  background: #fffdf8;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 9999;
 }
 
-.tts-setting-row:last-child {
-  margin-bottom: 0;
+.tts-settings-title {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 17px;
 }
 
 .tts-setting-label {
   font-size: 14px;
-
-  font-weight: 700;
-
-  color: #374151;
+  font-weight: 600;
 }
-
-
-/* =========================================
-   SES SEÇİMİ
-========================================= */
 
 .tts-voice-select {
   width: 100%;
-
-  min-height: 42px;
-
-  padding: 8px 10px;
-
-  border: 1px solid #cfd5dc;
-
-  border-radius: 10px;
-
-  background: #ffffff;
-
-  color: #1f2937;
-
-  outline: none;
-
-  cursor: pointer;
+  min-height: 40px;
+  padding: 7px 9px;
+  border: 1px solid #cfc4b2;
+  border-radius: 8px;
+  background: #fff;
 }
 
-.tts-voice-select:focus {
-  border-color: #16A34A;
-
-  box-shadow:
-    0 0 0 3px
-    rgba(22, 163, 74, 0.12);
-}
-
-
-/* =========================================
-   HIZ KAYDIRICISI
-========================================= */
-
-.tts-rate-slider {
+.tts-rate-slider,
+.tts-pitch-slider {
   width: 100%;
-
-  margin: 0;
-
-  accent-color: #16A34A;
-
   cursor: pointer;
+}
+
+.tts-test-button,
+.tts-reset-button {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid #cfc4b2;
+  border-radius: 8px;
+  background: #f3ecdf;
+  cursor: pointer;
+}
+
+.tts-test-button:hover,
+.tts-reset-button:hover {
+  background: #e9dfd0;
 }
 
 
 /* =========================================
-   HIZ DEĞERİ
+   KAYNAKLAR
 ========================================= */
 
-.tts-rate-value {
+.sources {
+  margin-top: 20px;
+  padding: 14px;
+  border-top: 1px solid #ddd3c4;
+}
+
+.sources h3 {
+  margin-top: 0;
+}
+
+.sources li {
+  margin-bottom: 7px;
+}
+
+.sources a {
+  color: inherit;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  padding: 25px 12px;
   text-align: center;
-
-  font-size: 14px;
-
-  font-weight: 700;
-
-  color: #16A34A;
+  opacity: 0.65;
 }
 
 
@@ -1155,606 +489,72 @@ a:focus-visible {
 
 @media (max-width: 600px) {
 
-  .container {
-    width: min(100% - 20px, 1100px);
-  }
-
-  .home-header {
-    padding-top: 20px;
-  }
-
   .holy-sites {
-    width: calc(100% - 20px);
-
-    margin-top: 15px;
-
-    gap: 8px;
-  }
-
-  .holy-site-kaaba {
-    height: 300px;
-  }
-
-  .roadmap-title {
-    padding: 2px 0 4px;
-
-    font-size: 30px;
-
-    line-height: 1.12;
-  }
-
-  .holy-site-aqsa,
-  .holy-site-nabawi {
-    height: 300px;
-  }
-
-  .holy-site-aqsa {
-    margin-right: 3px;
-  }
-
-  .holy-site-nabawi {
-    margin-left: 3px;
-  }
-
-  .home-subtitle {
-    margin-top: 8px;
-
-    font-size: 19px;
-  }
-
-  .language-selector {
     gap: 6px;
-
-    padding: 6px;
-
-    margin: 14px auto;
   }
 
-  .language-button {
-    width: 40px;
+  .holy-site img {
+    height: 115px;
+  }
 
-    height: 36px;
-
+  .roadmap-title {
+    width: 70%;
+    padding: 9px;
     font-size: 20px;
   }
 
-  .days-section {
-    width: calc(100% - 20px);
-  }
-
-  #days-list {
-    grid-template-columns: 1fr;
-  }
-
-  .day-card {
-    padding: 18px;
-  }
-
-  #question-content {
-    width: calc(100% - 20px);
-  }
-
-  .question-card {
-    padding: 16px;
-
-    border-radius: 14px;
-  }
-
-  .question-line {
-    font-size: 16px;
-  }
-
-  .answer-line {
-    font-size: 15px;
-  }
-
-  .arabic-language .question-line {
-    font-size: 19px;
-  }
-
-  .arabic-language .answer-line {
-    font-size: 17px;
-  }
-
-  #top-navigation,
-  #bottom-navigation {
-    width: calc(100% - 16px);
-
-    margin: 6px auto;
-  }
-
   .navigation-main-row {
-    grid-template-columns:
-      minmax(0, 1fr)
-      auto
-      minmax(0, 1fr);
-
-    column-gap: 5px;
-
-    justify-content: center;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 5px;
   }
 
-  .navigation-group {
-    grid-template-columns:
-      minmax(0, 1fr)
-      48px
-      minmax(0, 1fr);
-
-    gap: 4px;
-
-    justify-items: center;
-  }
-
-  .navigation-arrow-button {
-    height: 52px;
-
-    min-width: 0;
-
-    padding: 0 3px;
-
-    border-radius: 11px;
-
-    font-size: 28px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
+  .navigation-arrow-button,
+  .navigation-home-button {
+    min-width: 38px;
+    height: 36px;
   }
 
   .navigation-number-input {
-    width: 48px;
-
-    height: 52px;
-
-    padding: 3px;
-
-    border-radius: 11px;
-
-    font-size: 18px;
-
-    text-align: center;
-  }
-
-  .navigation-home-group {
-    justify-self: center;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-  }
-
-  .navigation-home-button {
     width: 52px;
-
-    height: 52px;
-
-    border-radius: 12px;
-
-    font-size: 30px;
-
-    margin: 0 auto;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
+    height: 36px;
   }
 
-
-  /* =====================================
-     TTS MOBİL
-  ====================================== */
-
-  .tts-controls {
-    width: calc(100% - 20px);
-
+  #tts-controls {
     gap: 5px;
-
-    margin-top: 12px;
-
-    margin-left: auto;
-
-    margin-right: auto;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    flex-wrap: nowrap;
-
-    overflow: visible;
+    padding: 7px 4px;
   }
 
   .tts-button {
-    width: 43px;
-
-    height: 42px;
-
-    border-radius: 9px;
-
-    font-size: 21px;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
-    flex-shrink: 0;
-  }
-
-  .tts-button svg {
-    width: 21px;
-
-    height: 21px;
-
-    margin: auto;
-  }
-
-  .tts-play {
-    width: 47px;
-
-    height: 44px;
-
-    font-size: 23px;
-  }
-
-  .tts-pause {
-    width: 43px;
-
-    height: 42px;
-
-    font-size: 20px;
-  }
-
-  .tts-stop {
-    font-size: 19px;
-  }
-
-  .tts-speed-icon {
-    min-width: 24px;
-
-    height: 24px;
-
-    font-size: 17px;
-  }
-
-  /* Z Fold kapalı ekran için
-     ayar butonu daha küçük */
-
-  .tts-settings-button {
-    width: 40px;
-
-    height: 40px;
-
-    font-size: 19px;
-
-    border-radius: 9px;
-  }
-
-  .tts-settings-button svg {
-    width: 20px;
-
-    height: 20px;
-  }
-
-  .tts-settings {
-    width: calc(100% - 20px);
-
-    max-width: 360px;
-
-    padding: 14px;
-
-    margin-top: 7px;
-  }
-
-}
-
-
-/* =========================================
-   Z FOLD / ORTA BÜYÜKLÜK
-========================================= */
-
-@media (min-width: 601px) and (max-width: 900px) {
-
-  .tts-controls {
-    width: min(700px, calc(100% - 30px));
-
-    gap: 7px;
-
-    display: flex;
-
-    visibility: visible;
-
-    opacity: 1;
-  }
-
-  .tts-settings-button {
-    display: inline-flex !important;
-
-    visibility: visible !important;
-
-    opacity: 1 !important;
-
-    width: 46px;
-
-    height: 44px;
-
-    flex-shrink: 0;
-  }
-
-  .tts-settings {
-    width: min(380px, calc(100% - 30px));
-
-    max-width: 380px;
-
-    margin-left: auto;
-
-    margin-right: auto;
-  }
-
-}
-
-
-/* =========================================
-   Z FOLD AÇIK BÜYÜK EKRAN
-========================================= */
-
-@media (min-width: 901px) {
-
-  .tts-controls {
-    width: min(950px, calc(100% - 30px));
-
-    display: flex;
-
-    visibility: visible;
-
-    opacity: 1;
-  }
-
-  .tts-settings-button {
-    display: inline-flex !important;
-
-    visibility: visible !important;
-
-    opacity: 1 !important;
-
-    flex-shrink: 0;
-  }
-
-}
-
-
-/* =========================================
-   ÇOK KÜÇÜK EKRANLAR
-========================================= */
-
-@media (max-width: 300px) {
-
-  .roadmap-title {
-    font-size: 26px;
-  }
-
-  .holy-sites {
-    width: calc(100% - 16px);
-
-    gap: 7px;
-  }
-
-  .holy-site-kaaba {
-    height: 250px;
-  }
-
-  .roadmap-title {
-    margin: 0;
-
-    padding: 2px 0 3px;
-  }
-
-  .holy-site-aqsa,
-  .holy-site-nabawi {
-    height: 250px;
-  }
-
-  .holy-site-aqsa {
-    margin-right: 3px;
-  }
-
-  .holy-site-nabawi {
-    margin-left: 3px;
-  }
-
-  .language-selector {
-    gap: 5px;
+    width: 38px;
+    min-width: 38px;
+    height: 38px;
   }
 
   .language-button {
-    width: 37px;
-
-    height: 34px;
-
-    font-size: 19px;
+    width: 35px;
+    height: 32px;
+    font-size: 18px;
   }
 
-  #top-navigation,
-  #bottom-navigation {
-    width: calc(100% - 10px);
-  }
+}
 
-  .navigation-main-row {
-    column-gap: 3px;
 
-    justify-content: center;
-  }
+/* =========================================
+   ÇOK DAR EKRAN
+========================================= */
 
-  .navigation-group {
-    grid-template-columns:
-      minmax(0, 1fr)
-      42px
-      minmax(0, 1fr);
+@media (max-width: 380px) {
 
+  #tts-controls {
     gap: 3px;
-
-    justify-items: center;
-  }
-
-  .navigation-arrow-button {
-    height: 48px;
-
-    font-size: 25px;
-
-    border-radius: 9px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-  }
-
-  .navigation-number-input {
-    width: 42px;
-
-    height: 48px;
-
-    font-size: 16px;
-
-    border-radius: 9px;
-
-    text-align: center;
-  }
-
-  .navigation-home-button {
-    width: 48px;
-
-    height: 48px;
-
-    font-size: 27px;
-
-    border-radius: 10px;
-
-    margin: 0 auto;
-  }
-
-
-  /* =====================================
-     TTS ÇOK KÜÇÜK EKRAN
-  ====================================== */
-
-  .tts-controls {
-    gap: 3px;
-
-    width: calc(100% - 8px);
-
-    margin-left: auto;
-
-    margin-right: auto;
-
-    justify-content: center;
-
-    overflow: visible;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 
   .tts-button {
-    width: 38px;
-
-    height: 38px;
-
-    border-radius: 8px;
-
-    font-size: 18px;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-  }
-
-  .tts-button svg {
-    width: 19px;
-
-    height: 19px;
-
-    margin: auto;
-  }
-
-  .tts-play {
-    width: 42px;
-
-    height: 40px;
-
-    font-size: 20px;
-  }
-
-  .tts-pause {
-    width: 38px;
-
-    height: 38px;
-
-    font-size: 17px;
-  }
-
-  .tts-stop {
-    font-size: 17px;
-  }
-
-  .tts-speed-icon {
-    font-size: 15px;
-
-    min-width: 21px;
-  }
-
-  .tts-settings-button {
-    width: 36px;
-
-    height: 36px;
-
-    font-size: 17px;
+    width: 35px;
+    min-width: 35px;
+    height: 35px;
   }
 
 }
-/* =========================================
-   TTS AYAR PANELİ
-========================================= */
-
-#tts-settings-panel {
-  display: flex !important;
-  flex-direction: column;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 10px 0;
-  padding: 15px;
-  position: relative;
-  z-index: 99999;
-  overflow: visible;
-}
-
-#tts-settings-panel select,
-#tts-settings-panel input {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-#tts-settings-panel button {
-  cursor: pointer;
-}
-
-/* =========================================
-   SON
-========================================= */
