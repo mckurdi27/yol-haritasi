@@ -1,119 +1,162 @@
-/* =========================================
-   KUTSAL MEKÂNLAR ALANI – YENİ DÜZEN
-========================================= */
-
-.holy-sites {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-top: 10px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 28px;
-}
-
-/* =========================================
-   KÂBE – ÜSTTE KARE
-========================================= */
-
-.holy-site-kaaba {
-  width: 100%;
-  max-width: 420px;      /* Kare görünüm için sınır */
-  aspect-ratio: 1 / 1;   /* KARE */
-  overflow: hidden;
-
-  border-radius: 18px;
-  box-shadow: 0 7px 22px rgba(0,0,0,0.10);
-}
-
-.holy-site-kaaba img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;      /* Tam kare dolsun */
-  object-position: center;
-}
-
-/* =========================================
-   ORTA BAŞLIK – KÂBE ALTINDA
-========================================= */
-
-.roadmap-title {
-  width: 100%;
-  text-align: center;
-
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 700;
-  line-height: 1.15;
-
+/* FONT */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
   color: #222;
-  margin-top: 5px;
 }
 
-.roadmap-title div:first-child {
-  font-size: 21px;
+/* GENEL */
+h2, h3 {
+  margin: 0;
+  padding: 0;
 }
 
-.roadmap-title div:last-child {
+/* ANA SAYFA BAŞLIK */
+.roadmap-title {
+  text-align: center;
   font-size: 28px;
-  margin-top: 5px;
+  font-weight: 700;
+  margin-top: 25px;
+  line-height: 1.3;
 }
 
-/* =========================================
-   AKSÂ & NEBEVÎ – ALTA YAN YANA KARE
-========================================= */
-
-.holy-sites-bottom {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 22px;
+.home-subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.holy-site-aqsa,
-.holy-site-nabawi {
-  width: 100%;
-  max-width: 300px;      /* Kare görünüm */
-  aspect-ratio: 1 / 1;   /* KARE */
-  overflow: hidden;
-
-  border-radius: 18px;
-  box-shadow: 0 7px 22px rgba(0,0,0,0.10);
-}
-
+/* RESİMLER */
+.holy-site-kaaba img,
 .holy-site-aqsa img,
 .holy-site-nabawi img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;      /* Kare dolsun */
-  object-position: center;
+  max-width: 260px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
 }
 
-/* =========================================
-   MOBİL – DÜZEN
-========================================= */
+/* AKSÂ + NEBEVÎ YAN YANA */
+.holy-sites-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 20px;
+}
 
-@media (max-width: 700px) {
-
-  .holy-sites {
-    max-width: 420px;
-    gap: 22px;
-  }
-
-  .holy-site-kaaba {
-    max-width: 330px;
-    aspect-ratio: 1 / 1;
-  }
-
+/* MOBİL */
+@media (max-width: 600px) {
   .holy-sites-bottom {
     flex-direction: column;
-    gap: 18px;
+    align-items: center;
   }
+}
 
-  .holy-site-aqsa,
-  .holy-site-nabawi {
-    max-width: 330px;
-    aspect-ratio: 1 / 1;
-  }
+/* DİL BUTONLARI */
+.language-selector {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.language-button {
+  font-size: 24px;
+  padding: 6px 10px;
+  border: none;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.language-button.active {
+  background: #222;
+  color: #fff;
+}
+
+/* GÜN KARTLARI */
+.day-card {
+  width: 90%;
+  max-width: 500px;
+  margin: 12px auto;
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  cursor: pointer;
+}
+
+.day-card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.day-card-subtitle {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #555;
+}
+
+/* SORU KARTI */
+.question-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  margin: 20px;
+}
+
+.language-block {
+  margin-bottom: 14px;
+}
+
+.selected-language {
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.arabic-language {
+  font-size: 18px;
+  direction: rtl;
+}
+
+/* KAYNAKLAR */
+.sources {
+  margin-top: 20px;
+}
+
+.sources ul {
+  padding-left: 20px;
+}
+
+.sources a {
+  color: #0066cc;
+}
+
+/* NAVİGASYON */
+.navigation-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.navigation-row button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navigation-row button:disabled {
+  background: #999;
+  cursor: not-allowed;
 }
