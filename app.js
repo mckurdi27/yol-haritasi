@@ -118,3 +118,4 @@ renderHomeTexts();
 renderDays();
 renderLanguageSelector("home-language-selector");
 renderLanguageSelector("question-language-selector");
+
