@@ -1,146 +1,17 @@
 body {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f7f7f7;
-  color: #222;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 20px;
 }
 
-.roadmap-title {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700;
-  margin-top: 25px;
-  line-height: 1.3;
+h2 {
+    text-align: center;
 }
 
-.home-subtitle {
-  text-align: center;
-  font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.holy-site-kaaba img,
-.holy-site-aqsa img,
-.holy-site-nabawi img {
-  width: 100%;
-  max-width: 260px;
-  border-radius: 12px;
-  display: block;
-  margin: 0 auto;
-}
-
-.holy-sites-bottom {
-  display: flex;
-  justify-content: center;
-  gap: 22px;
-  margin-top: 20px;
-}
-
-@media (max-width: 600px) {
-  .holy-sites-bottom {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.language-selector {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin: 20px 0;
-}
-
-.language-button {
-  font-size: 24px;
-  padding: 6px 10px;
-  border: none;
-  background: #fff;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.language-button.active {
-  background: #222;
-  color: #fff;
-}
-
-.day-card {
-  width: 90%;
-  max-width: 500px;
-  margin: 12px auto;
-  padding: 16px;
-  background: #fff;
-  border-radius: 12px;
-  border: 1px solid #ddd;
-  text-align: left;
-  cursor: pointer;
-}
-
-.day-card-title {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.day-card-subtitle {
-  font-size: 14px;
-  margin-top: 4px;
-  color: #555;
-}
-
-.question-card {
-  background: #fff;
-  padding: 18px;
-  border-radius: 12px;
-  border: 1px solid #ddd;
-  margin: 20px;
-}
-
-.language-block {
-  margin-bottom: 14px;
-}
-
-.selected-language {
-  background: #f0f0f0;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.arabic-language {
-  font-size: 18px;
-  direction: rtl;
-}
-
-.sources {
-  margin-top: 20px;
-}
-
-.sources ul {
-  padding-left: 20px;
-}
-
-.sources a {
-  color: #0066cc;
-}
-
-.navigation-row {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px 0;
-}
-
-.navigation-row button {
-  padding: 10px 14px;
-  border-radius: 8px;
-  border: none;
-  background: #222;
-  color: #fff;
-  cursor: pointer;
-}
-
-.navigation-row button:disabled {
-  background: #999;
-  cursor: not-allowed;
+.question {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
 }
