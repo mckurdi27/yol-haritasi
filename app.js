@@ -1526,6 +1526,41 @@ function renderTTSControls() {
 
       event.stopPropagation();
 
+      /*
+       * Eğer konuşma native olarak pause
+       * durumundaysa Play butonu devam ettirir.
+       */
+      if (
+        speechPaused &&
+        "speechSynthesis" in window &&
+        window.speechSynthesis.paused
+      ) {
+
+        try {
+
+          window.speechSynthesis.resume();
+
+          speechPaused =
+            false;
+
+          speechIsSpeaking =
+            true;
+
+          updatePauseButton();
+
+          return;
+
+        } catch (error) {
+
+          console.warn(
+            "TTS resume başarısız:",
+            error
+          );
+
+        }
+
+      }
+
       playSelectedText();
 
     }
@@ -1751,7 +1786,7 @@ function renderTTSControls() {
   /* =====================================
      TTS AYARLARI
      AYNI BUTON GRUBUNUN İÇİNDE
-  ===================================== */
+========================================= */
 
   const settingsButton =
     document.createElement(
@@ -1924,15 +1959,19 @@ function updateFastButtons() {
     );
 
   if (fast) {
+
     updateFastButton(
       fast
     );
+
   }
 
   if (veryFast) {
+
     updateVeryFastButton(
       veryFast
     );
+
   }
 
 }
@@ -2609,6 +2648,13 @@ function speakText(
     return;
   }
 
+  /*
+   * Yeni konuşma başlatırken eski konuşmayı
+   * temizliyoruz.
+   *
+   * Pause durumundan devam ederken bu fonksiyon
+   * kullanılmıyor; native resume() kullanılıyor.
+   */
   window.speechSynthesis.cancel();
 
   speechCurrentText =
@@ -2711,20 +2757,37 @@ function speakText(
     event => {
 
       /*
-       * Pause sırasında cancel() kullanılırsa
-       * bazı tarayıcılar interrupted/canceled
-       * hatası gönderebilir.
-       * Bunları gerçek hata olarak göstermiyoruz.
+       * Pause işlemi artık cancel() kullanmadığı
+       * için interrupted/canceled fallback'ine
+       * gerek yok.
+       *
+       * Native pause sırasında tarayıcı hata
+       * bildirirse pause durumu korunur.
        */
 
       if (
-        !speechPaused
+        event.error !== "canceled" &&
+        event.error !== "interrupted"
       ) {
 
         console.warn(
           "TTS hatası:",
           event.error
         );
+
+      }
+
+      if (
+        speechPaused
+      ) {
+
+        speechIsSpeaking =
+          true;
+
+      } else {
+
+        speechIsSpeaking =
+          false;
 
       }
 
@@ -2778,6 +2841,50 @@ function getSpeechLanguage(
 
 function playSelectedText() {
 
+  if (
+    !("speechSynthesis" in window)
+  ) {
+    return;
+  }
+
+  /*
+   * Önce mevcut native pause durumunu
+   * kontrol ediyoruz.
+   *
+   * Böylece Play butonu yeni konuşma
+   * başlatmak yerine kaldığı yerden devam eder.
+   */
+  if (
+    speechPaused &&
+    window.speechSynthesis.paused
+  ) {
+
+    try {
+
+      window.speechSynthesis.resume();
+
+      speechPaused =
+        false;
+
+      speechIsSpeaking =
+        true;
+
+      updatePauseButton();
+
+      return;
+
+    } catch (error) {
+
+      console.warn(
+        "TTS resume başarısız:",
+        error
+      );
+
+    }
+
+  }
+
+
   const dayData =
     days[currentDayIndex];
 
@@ -2825,69 +2932,41 @@ function toggleSpeechPause() {
 
 
   /* =====================================
-     ZATEN PAUSE DURUMUNDAYSA → DEVAM
+     PAUSE DURUMUNDAYSA → DEVAM ET
   ===================================== */
 
   if (speechPaused) {
 
-    speechPaused =
-      false;
-
-    /*
-     * Önce native resume deniyoruz.
-     */
     try {
 
-      if (
-        window.speechSynthesis.paused
-      ) {
+      /*
+       * Native resume.
+       *
+       * Burada kesinlikle cancel()
+       * kullanılmıyor.
+       */
+      window.speechSynthesis.resume();
 
-        window.speechSynthesis.resume();
+      speechPaused =
+        false;
 
-        speechIsSpeaking =
-          true;
+      speechIsSpeaking =
+        true;
 
-        updatePauseButton();
+      updatePauseButton();
 
-        return;
-
-      }
+      return;
 
     } catch (error) {
 
       console.warn(
-        "Native TTS resume başarısız:",
+        "TTS resume başarısız:",
         error
       );
 
-    }
-
-
-    /*
-     * Android / bazı mobil tarayıcılarda
-     * resume() çalışmazsa konuşmayı
-     * kaldığı karakterden yeniden başlat.
-     */
-
-    const resumeIndex =
-      Math.max(
-        0,
-        speechCurrentCharIndex
-      );
-
-    const text =
-      speechCurrentText;
-
-    if (text) {
-
-      speakText(
-        text,
-        resumeIndex
-      );
+      return;
 
     }
-
-    return;
 
   }
 
@@ -2896,10 +2975,11 @@ function toggleSpeechPause() {
      KONUŞMA YOKSA İŞLEM YOK
   ===================================== */
 
-  if (
-    !speechIsSpeaking &&
-    !window.speechSynthesis.speaking
-  ) {
+  const isSpeaking =
+    window.speechSynthesis.speaking ||
+    speechIsSpeaking;
+
+  if (!isSpeaking) {
 
     return;
 
@@ -2914,6 +2994,14 @@ function toggleSpeechPause() {
 
     window.speechSynthesis.pause();
 
+    speechPaused =
+      true;
+
+    speechIsSpeaking =
+      true;
+
+    updatePauseButton();
+
   } catch (error) {
 
     console.warn(
@@ -2922,66 +3010,6 @@ function toggleSpeechPause() {
     );
 
   }
-
-  speechPaused =
-    true;
-
-  updatePauseButton();
-
-
-  /*
-   * Bazı Android tarayıcılarında
-   * speechSynthesis.pause() çağrısı
-   * paused durumunu düzgün değiştirmiyor.
-   *
-   * Bu nedenle birkaç ms sonra kontrol ediyoruz.
-   */
-
-  setTimeout(
-    () => {
-
-      if (
-        !speechPaused
-      ) {
-        return;
-      }
-
-      if (
-        window.speechSynthesis.paused
-      ) {
-
-        return;
-
-      }
-
-      /*
-       * Native pause çalışmadıysa:
-       * mevcut konuşmayı iptal ediyoruz.
-       * onboundary ile kaydettiğimiz karakter
-       * konumu korunuyor.
-       */
-
-      try {
-
-        window.speechSynthesis.cancel();
-
-      } catch (error) {
-
-        console.warn(
-          "TTS cancel başarısız:",
-          error
-        );
-
-      }
-
-      speechIsSpeaking =
-        false;
-
-      updatePauseButton();
-
-    },
-    150
-  );
 
 }
 
