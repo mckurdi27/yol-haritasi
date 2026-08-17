@@ -519,6 +519,12 @@ button:disabled {
 
 .navigation-wrapper {
   width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
 }
 
 .navigation-main-row {
@@ -533,6 +539,8 @@ button:disabled {
 
   align-items: center;
 
+  justify-content: center;
+
   column-gap: 18px;
 }
 
@@ -545,6 +553,8 @@ button:disabled {
     minmax(0, 1fr);
 
   align-items: center;
+
+  justify-items: center;
 
   gap: 8px;
 
@@ -590,6 +600,8 @@ button:disabled {
   align-items: center;
 
   justify-content: center;
+
+  text-align: center;
 
   transition:
     transform 0.15s ease,
@@ -662,6 +674,10 @@ button:disabled {
   align-items: center;
 
   justify-content: center;
+
+  justify-self: center;
+
+  text-align: center;
 }
 
 .navigation-home-button {
@@ -684,6 +700,10 @@ button:disabled {
   align-items: center;
 
   justify-content: center;
+
+  text-align: center;
+
+  margin: 0 auto;
 
   box-shadow:
     0 3px 10px rgba(0, 0, 0, 0.06);
@@ -718,6 +738,8 @@ button:disabled {
   justify-content: center;
 
   align-items: center;
+
+  width: 100%;
 }
 
 
@@ -784,6 +806,8 @@ a:focus-visible {
   flex-wrap: nowrap;
 
   direction: ltr;
+
+  text-align: center;
 }
 
 
@@ -813,6 +837,8 @@ a:focus-visible {
   align-items: center;
 
   justify-content: center;
+
+  text-align: center;
 
   font-family:
     Arial,
@@ -881,6 +907,8 @@ a:focus-visible {
   height: 25px;
 
   display: block;
+
+  margin: auto;
 
   fill: none;
 
@@ -1226,6 +1254,8 @@ a:focus-visible {
       minmax(0, 1fr);
 
     column-gap: 5px;
+
+    justify-content: center;
   }
 
   .navigation-group {
@@ -1235,6 +1265,8 @@ a:focus-visible {
       minmax(0, 1fr);
 
     gap: 4px;
+
+    justify-items: center;
   }
 
   .navigation-arrow-button {
@@ -1247,6 +1279,14 @@ a:focus-visible {
     border-radius: 11px;
 
     font-size: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
   }
 
   .navigation-number-input {
@@ -1259,6 +1299,18 @@ a:focus-visible {
     border-radius: 11px;
 
     font-size: 18px;
+
+    text-align: center;
+  }
+
+  .navigation-home-group {
+    justify-self: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
   }
 
   .navigation-home-button {
@@ -1269,6 +1321,14 @@ a:focus-visible {
     border-radius: 12px;
 
     font-size: 30px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
   }
 
 
@@ -1282,6 +1342,18 @@ a:focus-visible {
     gap: 5px;
 
     margin-top: 12px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: nowrap;
   }
 
   .tts-button {
@@ -1292,12 +1364,22 @@ a:focus-visible {
     border-radius: 10px;
 
     font-size: 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
   }
 
   .tts-button svg {
     width: 23px;
 
     height: 23px;
+
+    margin: auto;
   }
 
   .tts-play {
@@ -1393,6 +1475,8 @@ a:focus-visible {
 
   .navigation-main-row {
     column-gap: 3px;
+
+    justify-content: center;
   }
 
   .navigation-group {
@@ -1402,6 +1486,8 @@ a:focus-visible {
       minmax(0, 1fr);
 
     gap: 3px;
+
+    justify-items: center;
   }
 
   .navigation-arrow-button {
@@ -1410,6 +1496,14 @@ a:focus-visible {
     font-size: 25px;
 
     border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
   }
 
   .navigation-number-input {
@@ -1420,6 +1514,8 @@ a:focus-visible {
     font-size: 16px;
 
     border-radius: 9px;
+
+    text-align: center;
   }
 
   .navigation-home-button {
@@ -1430,6 +1526,8 @@ a:focus-visible {
     font-size: 27px;
 
     border-radius: 10px;
+
+    margin: 0 auto;
   }
 
 
@@ -1441,6 +1539,12 @@ a:focus-visible {
     gap: 3px;
 
     width: calc(100% - 8px);
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    justify-content: center;
   }
 
   .tts-button {
@@ -1451,12 +1555,22 @@ a:focus-visible {
     border-radius: 8px;
 
     font-size: 19px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
   }
 
   .tts-button svg {
     width: 21px;
 
     height: 21px;
+
+    margin: auto;
   }
 
   .tts-play {
