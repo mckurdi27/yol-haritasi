@@ -1,262 +1,66 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
-
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yol Haritası</title>
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <!-- FONT: Inter (okunaklı görünüm için) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <meta
-    name="description"
-    content="Bir Müslümanın Yol Haritası — 11 Dilde İslami Bilgi"
-  >
-
-  <meta
-    name="theme-color"
-    content="#f5f1e8"
-  >
-
-  <title>Bir Müslümanın Yol Haritası</title>
-
-  <link
-    rel="stylesheet"
-    href="style.css"
-  >
-
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 
+  <!-- ANA SAYFA -->
+  <section id="home-page">
 
-  <!-- =========================================
-       ANA SAYFA
-  ========================================== -->
+    <div class="roadmap-title"></div>
+    <div class="home-subtitle"></div>
 
-  <main id="home-page">
+    <!-- KÂBE -->
+    <div class="holy-site-kaaba">
+      <img src="img/kaaba.jpg" alt="Kâbe">
+    </div>
 
-
-    <!-- =====================================
-         ÜST BÖLÜM
-    ====================================== -->
-
-    <header class="home-header">
-
-
-      <!-- =====================================
-           11 DİL — EN ÜSTTE
-      ====================================== -->
-
-      <div
-        id="home-language-selector"
-        class="language-selector"
-        aria-label="Dil seçimi"
-      ></div>
-
-
-      <!-- =====================================
-           KUTSAL MEKÂNLAR
-           
-           ÜST:
-           KÂBE — BÜYÜK YATAY
-
-           ALT SOL:
-           AKSÂ — KÜÇÜK DİKEY
-
-           ALT SAĞ:
-           NEBEVÎ — KÜÇÜK DİKEY
-
-           ORTA:
-           BAŞLIK
-      ====================================== -->
-
-      <div class="holy-sites">
-
-
-        <!-- ===================================
-             KÂBE
-        ==================================== -->
-
-        <div
-          class="holy-site holy-site-kaaba"
-        >
-
-          <img
-            src="Images/Kabe.jpg"
-            alt="Kâbe"
-            loading="eager"
-          >
-
-        </div>
-
-
-        <!-- ===================================
-             MESCİD-İ AKSÂ
-        ==================================== -->
-
-        <div
-          class="holy-site holy-site-aqsa"
-        >
-
-          <img
-            src="Images/Aksa.jpg"
-            alt="Mescid-i Aksâ"
-            loading="eager"
-          >
-
-        </div>
-
-
-        <!-- ===================================
-             MESCİD-İ NEBEVÎ
-        ==================================== -->
-
-        <div
-          class="holy-site holy-site-nabawi"
-        >
-
-          <img
-            src="Images/Nebevi.jpg"
-            alt="Mescid-i Nebevî"
-            loading="eager"
-          >
-
-        </div>
-
-
-        <!-- ===================================
-             ORTA BAŞLIK
-        ==================================== -->
-
-        <div class="roadmap-title">
-
-          <div>
-            Bir Müslümanın
-          </div>
-
-          <div>
-            Yol Haritası
-          </div>
-
-        </div>
-
-
+    <!-- AKSÂ + NEBEVÎ (DÜZELTİLMİŞ) -->
+    <div class="holy-sites-bottom">
+      <div class="holy-site-aqsa">
+        <img src="img/aqsa.jpg" alt="Mescid-i Aksâ">
       </div>
 
+      <div class="holy-site-nabawi">
+        <img src="img/nabawi.jpg" alt="Mescid-i Nebevî">
+      </div>
+    </div>
 
-      <!-- =====================================
-           ALT AÇIKLAMA
-      ====================================== -->
+    <!-- DİL SEÇİCİ -->
+    <div id="home-language-selector" class="language-selector"></div>
 
-      <p class="home-subtitle">
-        İslâm'ı adım adım öğren
-      </p>
-
-
-    </header>
-
-
-
-    <!-- =====================================
-         GÜNLER
-    ====================================== -->
-
+    <!-- GÜNLER -->
     <section class="days-section">
-
-
-      <h2>
-        Günler
-      </h2>
-
-
-      <div id="days-list">
-
-        <p class="loading-days">
-          Günler yükleniyor...
-        </p>
-
-      </div>
-
-
+      <h2></h2>
+      <div id="days-list"></div>
     </section>
 
+  </section>
 
-  </main>
+  <!-- SORU SAYFASI -->
+  <section id="question-page" style="display:none;">
 
+    <div id="top-navigation"></div>
 
+    <div id="question-content"></div>
 
-  <!-- =========================================
-       SORU SAYFASI
-  ========================================== -->
+    <div id="bottom-navigation"></div>
 
-  <main
-    id="question-page"
-    style="display: none;"
-  >
+    <div id="question-language-selector" class="language-selector"></div>
 
+  </section>
 
-    <!-- =====================================
-         ÜST NAVİGASYON
-    ====================================== -->
-
-    <nav
-      id="top-navigation"
-      class="navigation"
-    ></nav>
-
-
-    <!-- =====================================
-         SORU İÇERİĞİ
-    ====================================== -->
-
-    <section
-      id="question-content"
-      class="question-content"
-    ></section>
-
-
-    <!-- =====================================
-         ALT NAVİGASYON
-    ====================================== -->
-
-    <nav
-      id="bottom-navigation"
-      class="navigation"
-    ></nav>
-
-
-  </main>
-
-
-
-  <!-- =========================================
-       FOOTER
-  ========================================== -->
-
-  <footer>
-
-    <p>
-      Bir Müslümanın Yol Haritası
-    </p>
-
-  </footer>
-
-
-
-  <!-- =========================================
-       JAVASCRIPT
-  ========================================== -->
-
-  <script
-    src="app.js"
-    defer
-  ></script>
-
+  <!-- APP.JS -->
+  <script src="app.js"></script>
 
 </body>
-
 </html>
