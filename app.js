@@ -2,16 +2,36 @@
    BİR MÜSLÜMANIN YOL HARİTASI
    11 DİL
    APP.JS
+
+   ÖNEMLİ SABİT KURALLAR:
+
+   1. ARAPÇA 6. SIRADA
+   2. KURMANCÎ BAYRAĞI 🇬🇭
+   3. TATARCА BAYRAĞI 🇭🇺
+   4. 11 DİLİN SIRASI DEĞİŞMEYECEK
+   5. SORULAR KESİNTİSİZ DEVAM EDECEK
+   6. 19 → 20 OTOMATİK GEÇİŞ YAPACAK
+   7. SORU SAYI KUTUSU DOĞRUDAN SORUYA GÖTÜRECEK
+   8. GÜN SAYI KUTUSU DOĞRUDAN GÜNE GÖTÜRECEK
 ========================================= */
 
 
 /* =========================================
    DİLLER
 
-   ÖNEMLİ:
-   ARAPÇA 6. SIRADA
+   SABİT SIRA:
 
-   Bayrak sıralaması korunmuştur.
+   1  🇹🇷 Türkçe
+   2  🇬🇧 English
+   3  🇩🇪 Deutsch
+   4  🇷🇺 Русский
+   5  🇬🇭 Kurmancî
+   6  🇸🇦 العربية
+   7  🇭🇺 Tatarca
+   8  🇫🇷 Français
+   9  🇪🇸 Español
+   10 🇳🇱 Nederlands
+   11 🇮🇹 Italiano
 ========================================= */
 
 const LANGS = [
@@ -46,7 +66,9 @@ const LANGS = [
     name: "Kurmancî"
   },
 
-  /* ARAPÇA 6. SIRA */
+  /* =====================================
+     ARAPÇA KESİN OLARAK 6. SIRADA
+  ====================================== */
 
   {
     key: "ar",
@@ -97,176 +119,285 @@ const UI = {
     title: "Bir Müslümanın Yol Haritası",
     subtitle: "İslâm'ı adım adım öğren",
     days: "Günler",
+
     previousQuestion: "← Önceki Soru",
     nextQuestion: "Sonraki Soru →",
+
     home: "🏠 Ana Sayfa",
+
     previousDay: "← Önceki Gün",
     nextDay: "Sonraki Gün →",
+
     source: "📚 Kaynaklar",
     openSource: "Kaynağı aç",
+
     questionCount: "Soru",
+
     loading: "Günler yükleniyor...",
-    noDays: "Henüz gün bulunamadı."
+    noDays: "Henüz gün bulunamadı.",
+
+    questionPlaceholder: "Soru",
+    dayPlaceholder: "Gün"
   },
+
 
   en: {
     title: "A Muslim's Roadmap",
     subtitle: "Learn Islam step by step",
     days: "Days",
+
     previousQuestion: "← Previous Question",
     nextQuestion: "Next Question →",
+
     home: "🏠 Home",
+
     previousDay: "← Previous Day",
     nextDay: "Next Day →",
+
     source: "📚 Sources",
     openSource: "Open source",
+
     questionCount: "Questions",
+
     loading: "Loading days...",
-    noDays: "No days found yet."
+    noDays: "No days found yet.",
+
+    questionPlaceholder: "Question",
+    dayPlaceholder: "Day"
   },
+
 
   de: {
     title: "Der Wegweiser eines Muslims",
     subtitle: "Den Islam Schritt für Schritt kennenlernen",
     days: "Tage",
+
     previousQuestion: "← Vorherige Frage",
     nextQuestion: "Nächste Frage →",
+
     home: "🏠 Startseite",
+
     previousDay: "← Vorheriger Tag",
     nextDay: "Nächster Tag →",
+
     source: "📚 Quellen",
     openSource: "Quelle öffnen",
+
     questionCount: "Fragen",
+
     loading: "Tage werden geladen...",
-    noDays: "Noch keine Tage gefunden."
+    noDays: "Noch keine Tage gefunden.",
+
+    questionPlaceholder: "Frage",
+    dayPlaceholder: "Tag"
   },
+
 
   ru: {
     title: "Путеводитель мусульманина",
     subtitle: "Изучайте ислам шаг за шагом",
     days: "Дни",
+
     previousQuestion: "← Предыдущий вопрос",
     nextQuestion: "Следующий вопрос →",
+
     home: "🏠 Главная",
+
     previousDay: "← Предыдущий день",
     nextDay: "Следующий день →",
+
     source: "📚 Источники",
     openSource: "Открыть источник",
+
     questionCount: "Вопросов",
+
     loading: "Загрузка дней...",
-    noDays: "Дни пока не найдены."
+    noDays: "Дни пока не найдены.",
+
+    questionPlaceholder: "Вопрос",
+    dayPlaceholder: "День"
   },
+
 
   ku: {
     title: "Rêbernameya Misilmanekî",
     subtitle: "Îslamê gav bi gav fêr bibe",
     days: "Roj",
+
     previousQuestion: "← Pirsê berê",
-    nextQuestion: "Pirsê paş",
+    nextQuestion: "Pirsê paş →",
+
     home: "🏠 Malpera sereke",
+
     previousDay: "← Roja berê",
-    nextDay: "Roja paş",
+    nextDay: "Roja paş →",
+
     source: "📚 Çavkanî",
     openSource: "Çavkaniyê veke",
+
     questionCount: "Pirs",
+
     loading: "Roj tên barkirin...",
-    noDays: "Hêj roj nehatine dîtin."
+    noDays: "Hêj roj nehatine dîtin.",
+
+    questionPlaceholder: "Pirs",
+    dayPlaceholder: "Roj"
   },
+
 
   tt: {
     title: "Мөселманның юл картасы",
     subtitle: "Исламны адымлап өйрәнегез",
     days: "Көннәр",
+
     previousQuestion: "← Алдагы сорау",
     nextQuestion: "Киләсе сорау →",
+
     home: "🏠 Төп бит",
+
     previousDay: "← Алдагы көн",
     nextDay: "Киләсе көн →",
+
     source: "📚 Чыганаклар",
     openSource: "Чыганакны ачу",
+
     questionCount: "Сорау",
+
     loading: "Көннәр йөкләнә...",
-    noDays: "Әлегә көннәр табылмады."
+    noDays: "Әлегә көннәр табылмады.",
+
+    questionPlaceholder: "Сорау",
+    dayPlaceholder: "Көн"
   },
+
 
   fr: {
     title: "La feuille de route du musulman",
     subtitle: "Apprendre l’islam étape par étape",
     days: "Jours",
+
     previousQuestion: "← Question précédente",
     nextQuestion: "Question suivante →",
+
     home: "🏠 Accueil",
+
     previousDay: "← Jour précédent",
     nextDay: "Jour suivant →",
+
     source: "📚 Sources",
     openSource: "Ouvrir la source",
+
     questionCount: "Questions",
+
     loading: "Chargement des jours...",
-    noDays: "Aucun jour trouvé."
+    noDays: "Aucun jour trouvé.",
+
+    questionPlaceholder: "Question",
+    dayPlaceholder: "Jour"
   },
+
 
   es: {
     title: "La hoja de ruta del musulmán",
     subtitle: "Aprender el Islam paso a paso",
     days: "Días",
+
     previousQuestion: "← Pregunta anterior",
     nextQuestion: "Siguiente pregunta →",
+
     home: "🏠 Inicio",
+
     previousDay: "← Día anterior",
     nextDay: "Día siguiente →",
+
     source: "📚 Fuentes",
     openSource: "Abrir fuente",
+
     questionCount: "Preguntas",
+
     loading: "Cargando días...",
-    noDays: "Todavía no se encontraron días."
+    noDays: "Todavía no se encontraron días.",
+
+    questionPlaceholder: "Pregunta",
+    dayPlaceholder: "Día"
   },
+
 
   nl: {
     title: "De routekaart van een moslim",
     subtitle: "Leer de islam stap voor stap",
     days: "Dagen",
+
     previousQuestion: "← Vorige vraag",
     nextQuestion: "Volgende vraag →",
+
     home: "🏠 Home",
+
     previousDay: "← Vorige dag",
     nextDay: "Volgende dag →",
+
     source: "📚 Bronnen",
     openSource: "Bron openen",
+
     questionCount: "Vragen",
+
     loading: "Dagen worden geladen...",
-    noDays: "Nog geen dagen gevonden."
+    noDays: "Nog geen dagen gevonden.",
+
+    questionPlaceholder: "Vraag",
+    dayPlaceholder: "Dag"
   },
+
 
   it: {
     title: "La guida del musulmano",
     subtitle: "Imparare l'Islam passo dopo passo",
     days: "Giorni",
+
     previousQuestion: "← Domanda precedente",
     nextQuestion: "Domanda successiva →",
+
     home: "🏠 Home",
+
     previousDay: "← Giorno precedente",
     nextDay: "Giorno successivo →",
+
     source: "📚 Fonti",
     openSource: "Apri fonte",
+
     questionCount: "Domande",
+
     loading: "Caricamento dei giorni...",
-    noDays: "Nessun giorno trovato."
+    noDays: "Nessun giorno trovato.",
+
+    questionPlaceholder: "Domanda",
+    dayPlaceholder: "Giorno"
   },
+
 
   ar: {
     title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
     subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
     days: "الأَيَّامُ",
+
     previousQuestion: "← السُّؤَالُ السَّابِقُ",
     nextQuestion: "السُّؤَالُ التَّالِي →",
+
     home: "🏠 الصَّفْحَةُ الرَّئِيسِيَّةُ",
+
     previousDay: "← الْيَوْمُ السَّابِقُ",
     nextDay: "الْيَوْمُ التَّالِي →",
+
     source: "📚 الْمَصَادِرُ",
     openSource: "فَتْحُ الْمَصْدَرِ",
+
     questionCount: "أَسْئِلَة",
+
     loading: "جَارٍ تَحْمِيلُ الأَيَّامِ...",
-    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ."
+    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ.",
+
+    questionPlaceholder: "السؤال",
+    dayPlaceholder: "اليوم"
   }
 
 };
@@ -287,9 +418,7 @@ if (!UI[selectedLang]) {
 
 let days = [];
 
-
 let currentDayIndex = 0;
-
 
 let currentQuestionIndex = 0;
 
@@ -309,12 +438,9 @@ async function init() {
   document.documentElement.lang =
     selectedLang;
 
-
   renderHome();
 
-
   await loadDays();
-
 
   renderHome();
 
@@ -329,7 +455,6 @@ async function loadDays() {
 
   days = [];
 
-
   console.log(
     "📚 Günler yükleniyor..."
   );
@@ -339,15 +464,12 @@ async function loadDays() {
 
 
   /*
-    30 günlük sistem.
+    Günlük dosyalar:
 
-    Mevcut dosya:
     data/day-01.json
-
     data/day-02.json
-
+    data/day-03.json
     ...
-
     data/day-30.json
   */
 
@@ -360,11 +482,6 @@ async function loadDays() {
     const file =
       `data/day-${String(number).padStart(2, "0")}.json`;
 
-
-    /*
-      GitHub Pages cache sorunlarını
-      azaltmak için zaman damgası.
-    */
 
     const url =
       `${file}?v=${Date.now()}`;
@@ -380,142 +497,172 @@ async function loadDays() {
         }
       )
 
-        .then(
-          async response => {
+      .then(
+        async response => {
 
-            if (!response.ok) {
+          if (!response.ok) {
 
-              console.warn(
-                `Gün ${number} mevcut değil:`,
-                response.status
-              );
-
-              return null;
-            }
-
-
-            const text =
-              await response.text();
-
-
-            if (!text.trim()) {
-
-              console.warn(
-                `Gün ${number} boş:`,
-                file
-              );
-
-              return null;
-            }
-
-
-            let data;
-
-
-            try {
-
-              data =
-                JSON.parse(text);
-
-            } catch (error) {
-
-              console.error(
-                `❌ Gün ${number} JSON hatası:`,
-                error
-              );
-
-              console.error(
-                "Dosya:",
-                file
-              );
-
-              return null;
-            }
-
-
-            /*
-              JSON iki şekilde olabilir:
-
-              1)
-              [
-                {...},
-                {...}
-              ]
-
-              2)
-              {
-                day: 1,
-                dayTitle: {...},
-                daySubtitle: {...},
-                questions: [...]
-              }
-            */
-
-            const questions =
-              Array.isArray(data)
-                ? data
-                : data.questions;
-
-
-            if (
-              !Array.isArray(questions)
-            ) {
-
-              console.warn(
-                `⚠️ Gün ${number}: questions dizisi bulunamadı.`,
-                file
-              );
-
-              return null;
-            }
-
-
-            if (
-              questions.length === 0
-            ) {
-
-              console.warn(
-                `⚠️ Gün ${number}: soru bulunamadı.`,
-                file
-              );
-
-              return null;
-            }
-
-
-            console.log(
-              `✅ Gün ${number} yüklendi: ${questions.length} soru`
-            );
-
-
-            return {
-
-              number,
-
-              questions,
-
-              info:
-                Array.isArray(data)
-                  ? {}
-                  : data
-
-            };
-
-          }
-        )
-
-        .catch(
-          error => {
-
-            console.error(
-              `❌ Gün ${number} yüklenemedi:`,
-              error
+            console.warn(
+              `⚠️ Gün ${number} bulunamadı:`,
+              response.status,
+              file
             );
 
             return null;
-
           }
-        )
+
+
+          const text =
+            await response.text();
+
+
+          if (!text.trim()) {
+
+            console.warn(
+              `⚠️ Gün ${number} boş:`,
+              file
+            );
+
+            return null;
+          }
+
+
+          let data;
+
+
+          try {
+
+            data =
+              JSON.parse(text);
+
+          } catch (error) {
+
+            console.error(
+              `❌ Gün ${number} JSON HATASI:`,
+              error
+            );
+
+            console.error(
+              `❌ Kontrol edilmesi gereken dosya: ${file}`
+            );
+
+            return null;
+          }
+
+
+          /*
+            JSON şu iki yapıdan biri olabilir:
+
+            1. Direkt array
+
+            [
+              {...},
+              {...}
+            ]
+
+            2. Gün nesnesi
+
+            {
+              "day": 1,
+              "dayTitle": {...},
+              "daySubtitle": {...},
+              "questions": [...]
+            }
+          */
+
+          const questions =
+            Array.isArray(data)
+              ? data
+              : data.questions;
+
+
+          if (
+            !Array.isArray(questions)
+          ) {
+
+            console.error(
+              `❌ Gün ${number}: questions dizisi bulunamadı.`,
+              file
+            );
+
+            return null;
+          }
+
+
+          if (
+            questions.length === 0
+          ) {
+
+            console.warn(
+              `⚠️ Gün ${number}: hiç soru yok.`,
+              file
+            );
+
+            return null;
+          }
+
+
+          /*
+            Soru ID kontrolü
+          */
+
+          const validQuestions =
+            questions.filter(
+              question =>
+                question &&
+                typeof question === "object" &&
+                Number.isFinite(
+                  Number(question.id)
+                )
+            );
+
+
+          if (
+            validQuestions.length === 0
+          ) {
+
+            console.error(
+              `❌ Gün ${number}: geçerli soru ID'si bulunamadı.`,
+              file
+            );
+
+            return null;
+          }
+
+
+          console.log(
+            `✅ Gün ${number} yüklendi: ${validQuestions.length} soru`
+          );
+
+
+          return {
+
+            number,
+
+            questions: validQuestions,
+
+            info:
+              Array.isArray(data)
+                ? {}
+                : data
+
+          };
+
+        }
+      )
+
+      .catch(
+        error => {
+
+          console.error(
+            `❌ Gün ${number} yüklenirken hata oluştu:`,
+            error
+          );
+
+          return null;
+
+        }
+      )
 
     );
 
@@ -544,9 +691,54 @@ async function loadDays() {
     "📚 Başarıyla yüklenen günler:",
     days.map(
       day =>
-        day.number
+        `Gün ${day.number} (${day.questions.length} soru)`
     )
   );
+
+
+  /*
+    Eksik günleri açıkça göster
+  */
+
+  const loadedNumbers =
+    new Set(
+      days.map(
+        day =>
+          day.number
+      )
+    );
+
+
+  const missingDays = [];
+
+
+  for (
+    let number = 1;
+    number <= 30;
+    number++
+  ) {
+
+    if (
+      !loadedNumbers.has(number)
+    ) {
+
+      missingDays.push(number);
+
+    }
+
+  }
+
+
+  if (
+    missingDays.length
+  ) {
+
+    console.warn(
+      "⚠️ Yüklenmeyen günler:",
+      missingDays
+    );
+
+  }
 
 }
 
@@ -585,10 +777,6 @@ function renderHome() {
     "none";
 
 
-  /* =====================================
-     DİL SEÇİCİ
-  ====================================== */
-
   const selector =
     document.querySelector(
       "#home-language-selector"
@@ -604,10 +792,6 @@ function renderHome() {
   }
 
 
-  /* =====================================
-     ANA BAŞLIK
-  ====================================== */
-
   const roadmapTitle =
     home.querySelector(
       ".roadmap-title"
@@ -616,7 +800,8 @@ function renderHome() {
 
   if (roadmapTitle) {
 
-    roadmapTitle.innerHTML = "";
+    roadmapTitle.innerHTML =
+      "";
 
 
     const title =
@@ -676,10 +861,6 @@ function renderHome() {
   }
 
 
-  /* =====================================
-     ALT BAŞLIK
-  ====================================== */
-
   const subtitle =
     home.querySelector(
       ".home-subtitle"
@@ -693,10 +874,6 @@ function renderHome() {
 
   }
 
-
-  /* =====================================
-     GÜNLER BAŞLIĞI
-  ====================================== */
 
   const sectionTitle =
     home.querySelector(
@@ -712,10 +889,6 @@ function renderHome() {
   }
 
 
-  /* =====================================
-     GÜN LİSTESİ
-  ====================================== */
-
   const list =
     document.querySelector(
       "#days-list"
@@ -727,12 +900,9 @@ function renderHome() {
   }
 
 
-  list.innerHTML = "";
+  list.innerHTML =
+    "";
 
-
-  /* =====================================
-     GÜN YOKSA
-  ====================================== */
 
   if (!days.length) {
 
@@ -758,10 +928,6 @@ function renderHome() {
     return;
   }
 
-
-  /* =====================================
-     GÜNLERİ OLUŞTUR
-  ====================================== */
 
   days.forEach(
     (dayData, index) => {
@@ -792,10 +958,6 @@ function renderHome() {
         );
 
 
-      /* ===================================
-         BAŞLIK
-      =================================== */
-
       const titleLine =
         document.createElement(
           "div"
@@ -814,10 +976,6 @@ function renderHome() {
         titleLine
       );
 
-
-      /* ===================================
-         ALT BAŞLIK
-      =================================== */
 
       if (subtitle) {
 
@@ -841,10 +999,6 @@ function renderHome() {
 
       }
 
-
-      /* ===================================
-         TIKLAMA
-      =================================== */
 
       card.addEventListener(
         "click",
@@ -1184,6 +1338,13 @@ function renderQuestion() {
 
 
   if (!question) {
+
+    console.error(
+      "Soru bulunamadı:",
+      currentDayIndex,
+      currentQuestionIndex
+    );
+
     return;
   }
 
@@ -1244,7 +1405,9 @@ function renderQuestion() {
 
   /*
     Seçilen dil ilk sırada.
-    Sonra diğer diller.
+
+    Diğer 10 dil,
+    sabit LANGS sırasına göre devam eder.
   */
 
   const languageOrder = [
@@ -1298,10 +1461,6 @@ function renderQuestion() {
         "language-block";
 
 
-      /* =================================
-         ARAPÇA
-      ================================== */
-
       if (
         languageKey === "ar"
       ) {
@@ -1319,10 +1478,6 @@ function renderQuestion() {
       }
 
 
-      /* =================================
-         SEÇİLEN DİL
-      ================================== */
-
       if (
         languageKey === selectedLang
       ) {
@@ -1333,10 +1488,6 @@ function renderQuestion() {
 
       }
 
-
-      /* =================================
-         SORU
-      ================================== */
 
       const q =
         document.createElement(
@@ -1351,10 +1502,6 @@ function renderQuestion() {
       q.textContent =
         `${language.flag} ${question.id}. ${data.q}`;
 
-
-      /* =================================
-         CEVAP
-      ================================== */
 
       const a =
         document.createElement(
@@ -1455,10 +1602,6 @@ function renderQuestion() {
   }
 
 
-  /* =====================================
-     SORU SAYFASI DİL SEÇİCİ
-  ====================================== */
-
   addQuestionLanguageSelector();
 
 
@@ -1558,25 +1701,44 @@ function createNavigation() {
     );
 
 
+  /*
+    İlk soruda devre dışı.
+    Gün sınırında devre dışı DEĞİL.
+    Böylece 20 → 19 çalışır.
+  */
+
+  const globalQuestionNumber =
+    Number(
+      days[currentDayIndex]
+        .questions[currentQuestionIndex]
+        .id
+    );
+
+
   previousQuestion.disabled =
-    currentQuestionIndex === 0;
+    globalQuestionNumber <= 1;
 
 
   previousQuestion.onclick =
     () => {
 
-      if (
-        currentQuestionIndex > 0
-      ) {
-
-        currentQuestionIndex--;
-
-
-        renderQuestion();
-
-      }
+      goToQuestionById(
+        globalQuestionNumber - 1
+      );
 
     };
+
+
+  /* =====================================
+     SORU SAYI KUTUSU
+  ====================================== */
+
+  const questionInput =
+    createJumpInput(
+      UI[selectedLang].questionPlaceholder,
+      globalQuestionNumber,
+      "question"
+    );
 
 
   /* =====================================
@@ -1590,26 +1752,17 @@ function createNavigation() {
 
 
   nextQuestion.disabled =
-    currentQuestionIndex >=
-    days[currentDayIndex]
-      .questions.length - 1;
+    !getQuestionByGlobalId(
+      globalQuestionNumber + 1
+    );
 
 
   nextQuestion.onclick =
     () => {
 
-      if (
-        currentQuestionIndex <
-        days[currentDayIndex]
-          .questions.length - 1
-      ) {
-
-        currentQuestionIndex++;
-
-
-        renderQuestion();
-
-      }
+      goToQuestionById(
+        globalQuestionNumber + 1
+      );
 
     };
 
@@ -1674,6 +1827,18 @@ function createNavigation() {
 
 
   /* =====================================
+     GÜN SAYI KUTUSU
+  ====================================== */
+
+  const dayInput =
+    createJumpInput(
+      UI[selectedLang].dayPlaceholder,
+      days[currentDayIndex].number,
+      "day"
+    );
+
+
+  /* =====================================
      SONRAKİ GÜN
   ====================================== */
 
@@ -1711,11 +1876,26 @@ function createNavigation() {
 
 
   /* =====================================
-     BUTONLARI EKLE
+     SORU NAVİGASYONU
+
+     ← Önceki Soru
+     [ 9 ]
+     Sonraki Soru →
+
+     ANA SAYFA
+
+     ← Önceki Gün
+     [ 10 ]
+     Sonraki Gün →
   ====================================== */
 
   row.appendChild(
     previousQuestion
+  );
+
+
+  row.appendChild(
+    questionInput
   );
 
 
@@ -1735,11 +1915,329 @@ function createNavigation() {
 
 
   row.appendChild(
+    dayInput
+  );
+
+
+  row.appendChild(
     nextDay
   );
 
 
   return row;
+
+}
+
+
+/* =========================================
+   SAYI / ATLAMA KUTUSU
+========================================= */
+
+function createJumpInput(
+  placeholder,
+  value,
+  type
+) {
+
+  const input =
+    document.createElement(
+      "input"
+    );
+
+
+  input.type =
+    "number";
+
+
+  input.className =
+    "jump-input";
+
+
+  input.placeholder =
+    placeholder;
+
+
+  input.value =
+    value;
+
+
+  input.min =
+    type === "question"
+      ? "1"
+      : "1";
+
+
+  input.setAttribute(
+    "inputmode",
+    "numeric"
+  );
+
+
+  input.setAttribute(
+    "aria-label",
+    placeholder
+  );
+
+
+  /*
+    Enter'a basınca git
+  */
+
+  input.addEventListener(
+    "keydown",
+    event => {
+
+      if (
+        event.key === "Enter"
+      ) {
+
+        event.preventDefault();
+
+
+        const value =
+          Number(
+            input.value
+          );
+
+
+        if (
+          !Number.isFinite(value)
+        ) {
+
+          return;
+
+        }
+
+
+        if (
+          type === "question"
+        ) {
+
+          goToQuestionById(
+            value
+          );
+
+        } else {
+
+          goToDayByNumber(
+            value
+          );
+
+        }
+
+      }
+
+    }
+  );
+
+
+  /*
+    Kutudan çıkınca da git
+  */
+
+  input.addEventListener(
+    "change",
+    () => {
+
+      const value =
+        Number(
+          input.value
+        );
+
+
+      if (
+        !Number.isFinite(value)
+      ) {
+
+        return;
+
+      }
+
+
+      if (
+        type === "question"
+      ) {
+
+        goToQuestionById(
+          value
+        );
+
+      } else {
+
+        goToDayByNumber(
+          value
+        );
+
+      }
+
+    }
+  );
+
+
+  return input;
+
+}
+
+
+/* =========================================
+   GLOBAL SORU BUL
+========================================= */
+
+function getQuestionByGlobalId(
+  id
+) {
+
+  const wantedId =
+    Number(id);
+
+
+  if (
+    !Number.isFinite(wantedId)
+  ) {
+
+    return null;
+
+  }
+
+
+  for (
+    let dayIndex = 0;
+    dayIndex < days.length;
+    dayIndex++
+  ) {
+
+    const day =
+      days[dayIndex];
+
+
+    for (
+      let questionIndex = 0;
+      questionIndex < day.questions.length;
+      questionIndex++
+    ) {
+
+      const question =
+        day.questions[questionIndex];
+
+
+      if (
+        Number(question.id) ===
+        wantedId
+      ) {
+
+        return {
+
+          dayIndex,
+
+          questionIndex,
+
+          question,
+
+          day
+
+        };
+
+      }
+
+    }
+
+  }
+
+
+  return null;
+
+}
+
+
+/* =========================================
+   SORU NUMARASINA GİT
+========================================= */
+
+function goToQuestionById(
+  id
+) {
+
+  const result =
+    getQuestionByGlobalId(
+      id
+    );
+
+
+  if (!result) {
+
+    console.warn(
+      `❌ ${id}. soru bulunamadı.`
+    );
+
+    return;
+
+  }
+
+
+  currentDayIndex =
+    result.dayIndex;
+
+
+  currentQuestionIndex =
+    result.questionIndex;
+
+
+  renderQuestion();
+
+}
+
+
+/* =========================================
+   GÜN NUMARASINA GİT
+========================================= */
+
+function goToDayByNumber(
+  number
+) {
+
+  const wantedDay =
+    Number(number);
+
+
+  if (
+    !Number.isFinite(wantedDay)
+  ) {
+
+    return;
+
+  }
+
+
+  const index =
+    days.findIndex(
+      day =>
+        Number(day.number) ===
+        wantedDay
+    );
+
+
+  if (
+    index === -1
+  ) {
+
+    console.warn(
+      `❌ ${wantedDay}. gün bulunamadı.`
+    );
+
+    return;
+
+  }
+
+
+  currentDayIndex =
+    index;
+
+
+  currentQuestionIndex =
+    0;
+
+
+  renderQuestion();
 
 }
 
