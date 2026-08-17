@@ -4,10 +4,6 @@
    STYLE.CSS
 ========================================= */
 
-/* =========================================
-   TEMEL AYARLAR
-========================================= */
-
 * {
   box-sizing: border-box;
 }
@@ -44,6 +40,7 @@ button:disabled {
   opacity: 0.45;
 }
 
+
 /* =========================================
    ANA KONTEYNER
 ========================================= */
@@ -57,6 +54,7 @@ button:disabled {
   width: min(1100px, calc(100% - 30px));
   margin: 0 auto;
 }
+
 
 /* =========================================
    ANA SAYFA
@@ -86,6 +84,7 @@ button:disabled {
   font-size: clamp(16px, 2.5vw, 20px);
   opacity: 0.75;
 }
+
 
 /* =========================================
    DİL SEÇİCİ
@@ -120,14 +119,17 @@ button:disabled {
 
 .language-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.10);
 }
 
 .language-button.active {
   border-width: 2px;
   border-color: #111827;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.12);
 }
+
 
 /* =========================================
    GÜNLER BÖLÜMÜ
@@ -143,6 +145,7 @@ button:disabled {
   text-align: center;
   font-size: 28px;
 }
+
 
 /* =========================================
    GÜN LİSTESİ
@@ -163,7 +166,8 @@ button:disabled {
   background: #ffffff;
   text-align: left;
   color: inherit;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.05);
   transition:
     transform 0.18s ease,
     box-shadow 0.18s ease;
@@ -171,7 +175,8 @@ button:disabled {
 
 .day-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.10);
 }
 
 .day-card-title {
@@ -194,6 +199,7 @@ button:disabled {
   opacity: 0.7;
 }
 
+
 /* =========================================
    SORU SAYFASI
 ========================================= */
@@ -201,7 +207,7 @@ button:disabled {
 #question-page {
   display: none;
   min-height: 100vh;
-  padding: 20px 0 50px;
+  padding: 10px 0 50px;
 }
 
 #question-content {
@@ -210,11 +216,12 @@ button:disabled {
 }
 
 .question-day-title {
-  margin: 10px auto 20px;
+  margin: 18px auto 20px;
   text-align: center;
   font-size: clamp(23px, 4vw, 34px);
   line-height: 1.25;
 }
+
 
 /* =========================================
    SORU KARTI
@@ -226,8 +233,10 @@ button:disabled {
   border: 1px solid #dbe1e8;
   border-radius: 18px;
   padding: 22px;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.06);
 }
+
 
 /* =========================================
    DİL BLOKLARI
@@ -252,6 +261,7 @@ button:disabled {
   margin: 0 -4px;
 }
 
+
 /* =========================================
    SORU VE CEVAP
 ========================================= */
@@ -267,6 +277,7 @@ button:disabled {
   font-size: 16px;
   line-height: 1.65;
 }
+
 
 /* =========================================
    ARAPÇA
@@ -293,6 +304,7 @@ button:disabled {
 .arabic-language .answer-line {
   font-size: 19px;
 }
+
 
 /* =========================================
    KAYNAKLAR
@@ -324,15 +336,195 @@ button:disabled {
   text-underline-offset: 3px;
 }
 
+
 /* =========================================
-   NAVİGASYON
+   NAVİGASYON ANA ALANI
 ========================================= */
 
 #top-navigation,
 #bottom-navigation {
   width: min(1100px, calc(100% - 30px));
-  margin: 15px auto;
+  margin: 8px auto;
 }
+
+.navigation-wrapper {
+  width: 100%;
+}
+
+.navigation-main-row {
+  width: 100%;
+  display: grid;
+
+  /*
+     SOL   = SORU
+     ORTA  = KÂBE
+     SAĞ   = GÜN
+  */
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr);
+
+  align-items: center;
+  column-gap: 18px;
+}
+
+
+/* =========================================
+   SOL / SAĞ NAVİGASYON GRUPLARI
+========================================= */
+
+.navigation-group {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    65px
+    minmax(0, 1fr);
+
+  align-items: center;
+  gap: 8px;
+
+  min-width: 0;
+}
+
+.question-navigation-group {
+  justify-self: stretch;
+}
+
+.day-navigation-group {
+  justify-self: stretch;
+}
+
+
+/* =========================================
+   NAVİGASYON BUTONLARI
+========================================= */
+
+.navigation-arrow-button {
+  width: 100%;
+  height: 58px;
+
+  padding: 0 12px;
+
+  border: 1px solid #cfd5dc;
+  border-radius: 14px;
+
+  background: #ffffff;
+  color: #1f2937;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.navigation-arrow-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 14px rgba(0, 0, 0, 0.10);
+
+  background: #fafafa;
+}
+
+
+/* =========================================
+   SAYI GİRİŞ KUTULARI
+========================================= */
+
+.navigation-number-input {
+  width: 65px;
+  height: 58px;
+
+  padding: 6px;
+
+  border: 1px solid #9ca3af;
+  border-radius: 14px;
+
+  background: #ffffff;
+  color: #111827;
+
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 21px;
+
+  outline: none;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.navigation-number-input:focus {
+  border-color: #374151;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(55, 65, 81, 0.12);
+}
+
+.navigation-number-input::placeholder {
+  color: #9ca3af;
+}
+
+
+/* =========================================
+   ORTA KÂBE BUTONU
+========================================= */
+
+.navigation-home-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-home-button {
+  width: 68px;
+  height: 68px;
+
+  padding: 0;
+
+  border: 1px solid #cfd5dc;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  font-size: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.navigation-home-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   ESKİ NAVİGASYON SINIFLARI
+   UYUMLULUK İÇİN
+========================================= */
 
 .navigation-row {
   display: flex;
@@ -342,74 +534,51 @@ button:disabled {
   flex-wrap: wrap;
 }
 
-/* =========================================
-   NAVİGASYON BUTONLARI
-========================================= */
-
-.navigation-row > button {
-  min-height: 44px;
-  padding: 9px 15px;
-  border: 1px solid #d1d5db;
-  border-radius: 10px;
-  background: #ffffff;
-  color: #1f2937;
-  font-weight: 650;
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
+.navigation-home-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navigation-row > button:hover:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
-}
 
 /* =========================================
-   SAYI GİRİŞ KUTULARI
+   RTL
 ========================================= */
 
-.navigation-number-input {
-  width: 75px;
-  min-height: 44px;
-  padding: 8px 6px;
-  border: 1px solid #9ca3af;
-  border-radius: 10px;
-  background: #ffffff;
-  color: #111827;
+[dir="rtl"] {
+  direction: rtl;
+}
+
+[dir="rtl"] .sources ul {
+  padding-left: 0;
+  padding-right: 22px;
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline:
+    3px solid rgba(59, 130, 246, 0.35);
+
+  outline-offset: 2px;
+}
+
+
+/* =========================================
+   YÜKLEME
+========================================= */
+
+.loading {
   text-align: center;
-  font-weight: 700;
-  font-size: 17px;
-  outline: none;
-  transition:
-    border-color 0.15s ease,
-    box-shadow 0.15s ease;
+  padding: 40px 15px;
+  opacity: 0.7;
 }
 
-.navigation-number-input:focus {
-  border-color: #374151;
-  box-shadow:
-    0 0 0 3px rgba(55, 65, 81, 0.12);
-}
-
-.navigation-number-input::placeholder {
-  color: #9ca3af;
-}
-
-/* =========================================
-   GÜN NAVİGASYONU
-========================================= */
-
-.day-navigation {
-  margin-top: 12px;
-}
-
-/* =========================================
-   SORU NAVİGASYONU
-========================================= */
-
-.question-navigation {
-  margin-bottom: 18px;
-}
 
 /* =========================================
    MOBİL
@@ -436,6 +605,7 @@ button:disabled {
   .language-selector {
     gap: 6px;
     padding: 6px;
+    margin: 14px auto;
   }
 
   .language-button {
@@ -481,28 +651,68 @@ button:disabled {
     font-size: 17px;
   }
 
+
+  /* =====================================
+     NAVİGASYON MOBİLDE DE TEK SATIR
+  ====================================== */
+
   #top-navigation,
   #bottom-navigation {
-    width: calc(100% - 20px);
+    width: calc(100% - 16px);
+    margin: 6px auto;
   }
 
-  .navigation-row {
-    gap: 6px;
+  .navigation-main-row {
+    grid-template-columns:
+      minmax(0, 1fr)
+      auto
+      minmax(0, 1fr);
+
+    column-gap: 5px;
   }
 
-  .navigation-row > button {
-    min-height: 42px;
-    padding: 8px 10px;
-    font-size: 13px;
+  .navigation-group {
+    grid-template-columns:
+      minmax(0, 1fr)
+      48px
+      minmax(0, 1fr);
+
+    gap: 4px;
+  }
+
+  .navigation-arrow-button {
+    height: 52px;
+    min-width: 0;
+
+    padding: 0 3px;
+
+    border-radius: 11px;
+
+    font-size: 28px;
   }
 
   .navigation-number-input {
-    width: 62px;
-    min-height: 42px;
-    font-size: 16px;
+    width: 48px;
+    height: 52px;
+
+    padding: 3px;
+
+    border-radius: 11px;
+
+    font-size: 18px;
+  }
+
+  .navigation-home-button {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 12px;
+
+    font-size: 30px;
   }
 
 }
+
 
 /* =========================================
    ÇOK KÜÇÜK EKRANLAR
@@ -514,56 +724,56 @@ button:disabled {
     font-size: 26px;
   }
 
-  .navigation-row {
-    display: grid;
-    grid-template-columns:
-      1fr 70px 1fr;
-    width: 100%;
+  .language-selector {
+    gap: 5px;
   }
 
-  .navigation-row > button {
-    width: 100%;
+  .language-button {
+    width: 37px;
+    height: 34px;
+    font-size: 19px;
+  }
+
+  #top-navigation,
+  #bottom-navigation {
+    width: calc(100% - 10px);
+  }
+
+  .navigation-main-row {
+    column-gap: 3px;
+  }
+
+  .navigation-group {
+    grid-template-columns:
+      minmax(0, 1fr)
+      42px
+      minmax(0, 1fr);
+
+    gap: 3px;
+  }
+
+  .navigation-arrow-button {
+    height: 48px;
+    font-size: 25px;
+    border-radius: 9px;
   }
 
   .navigation-number-input {
-    width: 100%;
+    width: 42px;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 9px;
+  }
+
+  .navigation-home-button {
+    width: 48px;
+    height: 48px;
+    font-size: 27px;
+    border-radius: 10px;
   }
 
 }
 
-/* =========================================
-   RTL GENEL DESTEK
-========================================= */
-
-[dir="rtl"] {
-  direction: rtl;
-}
-
-[dir="rtl"] .sources ul {
-  padding-left: 0;
-  padding-right: 22px;
-}
-
-/* =========================================
-   FOCUS
-========================================= */
-
-button:focus-visible,
-input:focus-visible,
-a:focus-visible {
-  outline: 3px solid rgba(59, 130, 246, 0.35);
-  outline-offset: 2px;
-}
-
-/* =========================================
-   YÜKLEME
-========================================= */
-
-.loading {
-  text-align: center;
-  padding: 40px 15px;
-  opacity: 0.7;
-}
 
 /* =========================================
    SON
