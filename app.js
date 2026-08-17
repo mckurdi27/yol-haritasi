@@ -8,7 +8,7 @@
 /* =========================================
    DİLLER
 
-   SIRALAMA:
+   SABİT SIRALAMA:
 
    1  🇹🇷 Türkçe
    2  🇬🇧 English
@@ -104,11 +104,11 @@ const UI = {
     title: "Bir Müslümanın Yol Haritası",
     subtitle: "İslâm'ı adım adım öğren",
     days: "Günler",
-    previousQuestion: "← Önceki Soru",
-    nextQuestion: "Sonraki Soru →",
+    previousQuestion: "← Soru",
+    nextQuestion: "Soru →",
     home: "🏠 Ana Sayfa",
-    previousDay: "← Önceki Gün",
-    nextDay: "Sonraki Gün →",
+    previousDay: "← Günler",
+    nextDay: "Günler →",
     source: "📚 Kaynaklar",
     openSource: "Kaynağı aç",
     questionCount: "Soru",
@@ -120,11 +120,11 @@ const UI = {
     title: "A Muslim's Roadmap",
     subtitle: "Learn Islam step by step",
     days: "Days",
-    previousQuestion: "← Previous Question",
-    nextQuestion: "Next Question →",
+    previousQuestion: "← Question",
+    nextQuestion: "Question →",
     home: "🏠 Home",
-    previousDay: "← Previous Day",
-    nextDay: "Next Day →",
+    previousDay: "← Days",
+    nextDay: "Days →",
     source: "📚 Sources",
     openSource: "Open source",
     questionCount: "Questions",
@@ -136,11 +136,11 @@ const UI = {
     title: "Der Wegweiser eines Muslims",
     subtitle: "Den Islam Schritt für Schritt kennenlernen",
     days: "Tage",
-    previousQuestion: "← Vorherige Frage",
-    nextQuestion: "Nächste Frage →",
+    previousQuestion: "← Frage",
+    nextQuestion: "Frage →",
     home: "🏠 Startseite",
-    previousDay: "← Vorheriger Tag",
-    nextDay: "Nächster Tag →",
+    previousDay: "← Tage",
+    nextDay: "Tage →",
     source: "📚 Quellen",
     openSource: "Quelle öffnen",
     questionCount: "Fragen",
@@ -152,11 +152,11 @@ const UI = {
     title: "Путеводитель мусульманина",
     subtitle: "Изучайте ислам шаг за шагом",
     days: "Дни",
-    previousQuestion: "← Предыдущий вопрос",
-    nextQuestion: "Следующий вопрос →",
+    previousQuestion: "← Вопрос",
+    nextQuestion: "Вопрос →",
     home: "🏠 Главная",
-    previousDay: "← Предыдущий день",
-    nextDay: "Следующий день →",
+    previousDay: "← Дни",
+    nextDay: "Дни →",
     source: "📚 Источники",
     openSource: "Открыть источник",
     questionCount: "Вопросов",
@@ -168,11 +168,11 @@ const UI = {
     title: "Rêbernameya Misilmanekî",
     subtitle: "Îslamê gav bi gav fêr bibe",
     days: "Roj",
-    previousQuestion: "← Pirsê berê",
-    nextQuestion: "Pirsê paş",
+    previousQuestion: "← Pirs",
+    nextQuestion: "Pirs →",
     home: "🏠 Malpera sereke",
-    previousDay: "← Roja berê",
-    nextDay: "Roja paş",
+    previousDay: "← Roj",
+    nextDay: "Roj →",
     source: "📚 Çavkanî",
     openSource: "Çavkaniyê veke",
     questionCount: "Pirs",
@@ -180,15 +180,31 @@ const UI = {
     noDays: "Hêj roj nehatine dîtin."
   },
 
+  ar: {
+    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
+    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
+    days: "الأَيَّامُ",
+    previousQuestion: "← السُّؤَالُ",
+    nextQuestion: "السُّؤَالُ →",
+    home: "🏠 الصَّفْحَةُ الرَّئِيسِيَّةُ",
+    previousDay: "← الأَيَّامُ",
+    nextDay: "الأَيَّامُ →",
+    source: "📚 الْمَصَادِرُ",
+    openSource: "فَتْحُ الْمَصْدَرِ",
+    questionCount: "أَسْئِلَة",
+    loading: "جَارٍ تَحْمِيلُ الأَيَّامِ...",
+    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ."
+  },
+
   tt: {
     title: "Мөселманның юл картасы",
     subtitle: "Исламны адымлап өйрәнегез",
     days: "Көннәр",
-    previousQuestion: "← Алдагы сорау",
-    nextQuestion: "Киләсе сорау →",
+    previousQuestion: "← Сорау",
+    nextQuestion: "Сорау →",
     home: "🏠 Төп бит",
-    previousDay: "← Алдагы көн",
-    nextDay: "Киләсе көн →",
+    previousDay: "← Көннәр",
+    nextDay: "Көннәр →",
     source: "📚 Чыганаклар",
     openSource: "Чыганакны ачу",
     questionCount: "Сорау",
@@ -200,11 +216,11 @@ const UI = {
     title: "La feuille de route du musulman",
     subtitle: "Apprendre l’islam étape par étape",
     days: "Jours",
-    previousQuestion: "← Question précédente",
-    nextQuestion: "Question suivante →",
+    previousQuestion: "← Question",
+    nextQuestion: "Question →",
     home: "🏠 Accueil",
-    previousDay: "← Jour précédent",
-    nextDay: "Jour suivant →",
+    previousDay: "← Jours",
+    nextDay: "Jours →",
     source: "📚 Sources",
     openSource: "Ouvrir la source",
     questionCount: "Questions",
@@ -216,11 +232,11 @@ const UI = {
     title: "La hoja de ruta del musulmán",
     subtitle: "Aprender el Islam paso a paso",
     days: "Días",
-    previousQuestion: "← Pregunta anterior",
+    previousQuestion: "← Pregunta",
     nextQuestion: "Siguiente pregunta →",
     home: "🏠 Inicio",
-    previousDay: "← Día anterior",
-    nextDay: "Día siguiente →",
+    previousDay: "← Días",
+    nextDay: "Días →",
     source: "📚 Fuentes",
     openSource: "Abrir fuente",
     questionCount: "Preguntas",
@@ -232,11 +248,11 @@ const UI = {
     title: "De routekaart van een moslim",
     subtitle: "Leer de islam stap voor stap",
     days: "Dagen",
-    previousQuestion: "← Vorige vraag",
-    nextQuestion: "Volgende vraag →",
+    previousQuestion: "← Vraag",
+    nextQuestion: "Vraag →",
     home: "🏠 Home",
-    previousDay: "← Vorige dag",
-    nextDay: "Volgende dag →",
+    previousDay: "← Dagen",
+    nextDay: "Dagen →",
     source: "📚 Bronnen",
     openSource: "Bron openen",
     questionCount: "Vragen",
@@ -248,32 +264,16 @@ const UI = {
     title: "La guida del musulmano",
     subtitle: "Imparare l'Islam passo dopo passo",
     days: "Giorni",
-    previousQuestion: "← Domanda precedente",
-    nextQuestion: "Domanda successiva →",
+    previousQuestion: "← Domanda",
+    nextQuestion: "Domanda →",
     home: "🏠 Home",
-    previousDay: "← Giorno precedente",
-    nextDay: "Giorno successivo →",
+    previousDay: "← Giorni",
+    nextDay: "Giorni →",
     source: "📚 Fonti",
     openSource: "Apri fonte",
     questionCount: "Domande",
     loading: "Caricamento dei giorni...",
     noDays: "Nessun giorno trovato."
-  },
-
-  ar: {
-    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
-    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
-    days: "الأَيَّامُ",
-    previousQuestion: "← السُّؤَالُ السَّابِقُ",
-    nextQuestion: "السُّؤَالُ التَّالِي →",
-    home: "🏠 الصَّفْحَةُ الرَّئِيسِيَّةُ",
-    previousDay: "← الْيَوْمُ السَّابِقُ",
-    nextDay: "الْيَوْمُ التَّالِي →",
-    source: "📚 الْمَصَادِرُ",
-    openSource: "فَتْحُ الْمَصْدَرِ",
-    questionCount: "أَسْئِلَة",
-    loading: "جَارٍ تَحْمِيلُ الأَيَّامِ...",
-    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ."
   }
 
 };
@@ -1281,6 +1281,9 @@ function addQuestionLanguageSelector() {
 
 /* =========================================
    NAVİGASYON
+   YENİ SABİT DÜZEN:
+
+   ← SORU      🕋      GÜNLER →
 ========================================= */
 
 function createNavigation(
@@ -1297,26 +1300,37 @@ function createNavigation(
 
 
   /* =====================================
-     SORU NAVİGASYONU
+     TEK SATIR NAVİGASYON
   ====================================== */
 
-  const questionRow =
+  const row =
     document.createElement(
       "div"
     );
 
-  questionRow.className =
+  row.className =
     "navigation-row";
 
 
   /* =====================================
-     ÖNCEKİ SORU
+     SOL — ÖNCEKİ SORU
   ====================================== */
 
   const previousQuestion =
     makeButton(
-      UI[selectedLang].previousQuestion
+      "←"
     );
+
+  previousQuestion.className =
+    "navigation-arrow navigation-question-left";
+
+  previousQuestion.title =
+    UI[selectedLang].previousQuestion;
+
+  previousQuestion.setAttribute(
+    "aria-label",
+    UI[selectedLang].previousQuestion
+  );
 
   previousQuestion.disabled =
     currentDayIndex === 0 &&
@@ -1366,7 +1380,7 @@ function createNavigation(
     "number";
 
   questionInput.className =
-    "navigation-number-input";
+    "navigation-number-input question-number";
 
   questionInput.min =
     "1";
@@ -1419,38 +1433,70 @@ function createNavigation(
 
 
   /* =====================================
-     SONRAKİ SORU
+     ORTA — KÂBE UNICODE
   ====================================== */
 
-  const nextQuestion =
-    makeButton(
-      UI[selectedLang].nextQuestion
+  const kaaba =
+    document.createElement(
+      "button"
     );
 
-  nextQuestion.disabled =
-    currentDayIndex >= days.length - 1 &&
-    currentQuestionIndex >=
-      days[currentDayIndex]
-        .questions.length - 1;
+  kaaba.type =
+    "button";
 
-  nextQuestion.onclick =
+  kaaba.className =
+    "kaaba-unicode-button";
+
+  kaaba.textContent =
+    "🕋";
+
+  kaaba.title =
+    "Kâbe";
+
+  kaaba.setAttribute(
+    "aria-label",
+    "Kâbe"
+  );
+
+  kaaba.onclick =
     () => {
 
-      const currentQuestions =
-        days[currentDayIndex]
-          .questions;
+      renderHome();
 
-      if (
-        currentQuestionIndex <
-        currentQuestions.length - 1
-      ) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
 
-        currentQuestionIndex++;
+    };
 
-        renderQuestion();
 
-        return;
-      }
+  /* =====================================
+     SAĞ — SONRAKİ GÜN
+  ====================================== */
+
+  const nextDay =
+    makeButton(
+      "→"
+    );
+
+  nextDay.className =
+    "navigation-arrow navigation-day-right";
+
+  nextDay.title =
+    UI[selectedLang].nextDay;
+
+  nextDay.setAttribute(
+    "aria-label",
+    UI[selectedLang].nextDay
+  );
+
+  nextDay.disabled =
+    currentDayIndex >=
+    days.length - 1;
+
+  nextDay.onclick =
+    () => {
 
       if (
         currentDayIndex <
@@ -1458,63 +1504,6 @@ function createNavigation(
       ) {
 
         currentDayIndex++;
-
-        currentQuestionIndex =
-          0;
-
-        renderQuestion();
-
-      }
-
-    };
-
-
-  questionRow.appendChild(
-    previousQuestion
-  );
-
-  questionRow.appendChild(
-    questionInput
-  );
-
-  questionRow.appendChild(
-    nextQuestion
-  );
-
-
-  /* =====================================
-     GÜN NAVİGASYONU
-  ====================================== */
-
-  const dayRow =
-    document.createElement(
-      "div"
-    );
-
-  dayRow.className =
-    "navigation-row";
-
-
-  /* =====================================
-     ÖNCEKİ GÜN
-  ====================================== */
-
-  const previousDay =
-    makeButton(
-      UI[selectedLang].previousDay
-    );
-
-  previousDay.disabled =
-    currentDayIndex === 0;
-
-  previousDay.onclick =
-    () => {
-
-      if (
-        currentDayIndex > 0
-      ) {
-
-        currentDayIndex--;
 
         currentQuestionIndex =
           0;
@@ -1539,7 +1528,7 @@ function createNavigation(
     "number";
 
   dayInput.className =
-    "navigation-number-input";
+    "navigation-number-input day-number";
 
   dayInput.min =
     "1";
@@ -1595,100 +1584,34 @@ function createNavigation(
 
 
   /* =====================================
-     SONRAKİ GÜN
+     SATIRA EKLE
   ====================================== */
 
-  const nextDay =
-    makeButton(
-      UI[selectedLang].nextDay
-    );
-
-  nextDay.disabled =
-    currentDayIndex >=
-    days.length - 1;
-
-  nextDay.onclick =
-    () => {
-
-      if (
-        currentDayIndex <
-        days.length - 1
-      ) {
-
-        currentDayIndex++;
-
-        currentQuestionIndex =
-          0;
-
-        renderQuestion();
-
-      }
-
-    };
-
-
-  dayRow.appendChild(
-    previousDay
+  row.appendChild(
+    previousQuestion
   );
 
-  dayRow.appendChild(
+  row.appendChild(
+    questionInput
+  );
+
+  row.appendChild(
+    kaaba
+  );
+
+  row.appendChild(
     dayInput
   );
 
-  dayRow.appendChild(
+  row.appendChild(
     nextDay
   );
 
 
-  /* =====================================
-     ANA SAYFA
-  ====================================== */
-
-  const homeRow =
-    document.createElement(
-      "div"
-    );
-
-  homeRow.className =
-    "navigation-home-row";
-
-  const home =
-    makeButton(
-      UI[selectedLang].home
-    );
-
-  home.onclick =
-    () => {
-
-      renderHome();
-
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-
-    };
-
-  homeRow.appendChild(
-    home
-  );
-
-
-  /* =====================================
-     HEPSİNİ BİRLEŞTİR
-  ====================================== */
-
   wrapper.appendChild(
-    questionRow
+    row
   );
 
-  wrapper.appendChild(
-    dayRow
-  );
-
-  wrapper.appendChild(
-    homeRow
-  );
 
   return wrapper;
 
