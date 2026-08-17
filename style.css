@@ -118,7 +118,7 @@ button:disabled {
 .holy-site-kaaba {
   grid-area: kaaba;
 
-  height: 430px;
+  height: 350px;
 
   border-radius: 4px;
 }
@@ -160,7 +160,7 @@ button:disabled {
 .holy-site-aqsa {
   grid-area: aqsa;
 
-  height: 470px;
+  height: 350px;
 
   margin-right: 4px;
 
@@ -181,7 +181,7 @@ button:disabled {
 .holy-site-nabawi {
   grid-area: nabawi;
 
-  height: 470px;
+  height: 350px;
 
   margin-left: 4px;
 
@@ -787,7 +787,7 @@ a:focus-visible {
    MOBİL
 ========================================= */
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
   .container {
     width: min(100% - 20px, 1100px);
@@ -817,7 +817,7 @@ a:focus-visible {
   ====================================== */
 
   .holy-site-kaaba {
-    height: 380px;
+    height: 300px;
   }
 
 
@@ -840,7 +840,7 @@ a:focus-visible {
 
   .holy-site-aqsa,
   .holy-site-nabawi {
-    height: 430px;
+    height: 300px;
   }
 
 
@@ -860,7 +860,7 @@ a:focus-visible {
   .home-subtitle {
     margin-top: 8px;
 
-    font-size: 15px;
+    font-size: 19px;
   }
 
 
@@ -1004,7 +1004,7 @@ a:focus-visible {
    ÇOK KÜÇÜK EKRANLAR
 ========================================= */
 
-@media (max-width: 420px) {
+@media (max-width: 300px) {
 
   .roadmap-title {
     font-size: 26px;
@@ -1023,7 +1023,7 @@ a:focus-visible {
 
 
   .holy-site-kaaba {
-    height: 340px;
+    height: 250px;
   }
 
 
@@ -1036,7 +1036,7 @@ a:focus-visible {
 
   .holy-site-aqsa,
   .holy-site-nabawi {
-    height: 390px;
+    height: 250px;
   }
 
 
