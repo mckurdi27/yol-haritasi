@@ -1729,7 +1729,31 @@ a:focus-visible {
   }
 
 }
+/* =========================================
+   TTS AYAR PANELİ
+========================================= */
 
+#tts-settings-panel {
+  display: flex !important;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  position: relative;
+  z-index: 99999;
+  overflow: visible;
+}
+
+#tts-settings-panel select,
+#tts-settings-panel input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#tts-settings-panel button {
+  cursor: pointer;
+}
 
 /* =========================================
    SON
