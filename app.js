@@ -2148,3 +2148,147 @@ window.addEventListener(
 /* =========================================
    APP.JS SONU
 ========================================= */
+/* =========================================
+   TEXT TO SPEECH
+========================================= */
+
+let speechRate = 1;
+
+let speechUtterance = null;
+
+
+/* =========================================
+   METNİ SESLENDİR
+========================================= */
+
+function speakText(text) {
+
+  if (!("speechSynthesis" in window)) {
+    return;
+  }
+
+  window.speechSynthesis.cancel();
+
+  speechUtterance =
+    new SpeechSynthesisUtterance(text);
+
+  speechUtterance.rate =
+    speechRate;
+
+  speechUtterance.pitch =
+    1;
+
+  speechUtterance.volume =
+    1;
+
+  speechUtterance.lang =
+    getSpeechLanguage(selectedLang);
+
+  window.speechSynthesis.speak(
+    speechUtterance
+  );
+
+}
+
+
+/* =========================================
+   DİL → SES DİLİ
+========================================= */
+
+function getSpeechLanguage(lang) {
+
+  const languages = {
+
+    tr: "tr-TR",
+    en: "en-US",
+    de: "de-DE",
+    ru: "ru-RU",
+    ku: "ku",
+    ar: "ar-SA",
+    tt: "tt-RU",
+    fr: "fr-FR",
+    es: "es-ES",
+    nl: "nl-NL",
+    it: "it-IT"
+
+  };
+
+  return (
+    languages[lang] ||
+    "tr-TR"
+  );
+
+}
+
+
+/* =========================================
+   OYNAT
+========================================= */
+
+function playSelectedText() {
+
+  const dayData =
+    days[currentDayIndex];
+
+  if (!dayData) {
+    return;
+  }
+
+  const question =
+    dayData.questions[
+      currentQuestionIndex
+    ];
+
+  if (!question) {
+    return;
+  }
+
+  const data =
+    question[selectedLang];
+
+  if (!data) {
+    return;
+  }
+
+  const text =
+    `${data.q}. ${data.a}`;
+
+  speakText(text);
+
+}
+
+
+/* =========================================
+   DURDUR
+========================================= */
+
+function stopSpeech() {
+
+  if (
+    "speechSynthesis" in window
+  ) {
+
+    window.speechSynthesis.cancel();
+
+  }
+
+}
+
+
+/* =========================================
+   HIZ DEĞİŞTİR
+========================================= */
+
+function setSpeechRate(rate) {
+
+  speechRate = rate;
+
+  if (
+    window.speechSynthesis.speaking
+  ) {
+
+    playSelectedText();
+
+  }
+
+}
