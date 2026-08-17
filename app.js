@@ -1,6 +1,6 @@
 // JSON YÜKLEME
 async function loadDays() {
-  const response = await fetch("index.json");
+  const response = await fetch("./days.json"); // ÖNEMLİ: index.json değil days.json
   const data = await response.json();
   return data.days;
 }
@@ -16,13 +16,7 @@ const homeSubtitle = document.querySelector(".home-subtitle");
 const languages = {
   tr: "🇹🇷",
   ar: "🇸🇦",
-  en: "🇬🇧",
-  de: "🇩🇪",
-  fr: "🇫🇷",
-  es: "🇪🇸",
-  ru: "🇷🇺",
-  nl: "🇳🇱",
-  it: "🇮🇹"
+  en: "🇬🇧"
 };
 
 let selectedLanguage = "tr";
@@ -118,4 +112,3 @@ renderHomeTexts();
 renderDays();
 renderLanguageSelector("home-language-selector");
 renderLanguageSelector("question-language-selector");
-
