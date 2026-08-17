@@ -249,6 +249,9 @@ const UI = {
     days: "Giorni",
     previousQuestion: "←",
     nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Fonti",
     openSource: "Apri fonte",
     questionCount: "Domande",
@@ -260,7 +263,7 @@ const UI = {
 
 
 /* =========================================
-   AYARLAR
+   GENEL AYARLAR
 ========================================= */
 
 let selectedLang =
@@ -281,9 +284,22 @@ let currentQuestionIndex = 0;
    TTS AYARLARI
 ========================================= */
 
-let speechRate = 1;
+let speechRate =
+  Number(
+    localStorage.getItem("ttsRate") || "1"
+  );
+
+let speechPitch =
+  Number(
+    localStorage.getItem("ttsPitch") || "1"
+  );
+
+let selectedVoiceName =
+  localStorage.getItem("ttsVoice") || "";
 
 let speechUtterance = null;
+
+let selectedVoice = null;
 
 let slowLevel = 0;
 
@@ -311,7 +327,78 @@ async function init() {
 
   await loadDays();
 
+  loadSavedVoice();
+
   renderHome();
+
+}
+
+
+/* =========================================
+   TTS SESLERİNİ YÜKLE
+========================================= */
+
+function loadSavedVoice() {
+
+  if (
+    !("speechSynthesis" in window)
+  ) {
+    return;
+  }
+
+  const voices =
+    window.speechSynthesis.getVoices();
+
+  if (!voices.length) {
+    return;
+  }
+
+  if (selectedVoiceName) {
+
+    selectedVoice =
+      voices.find(
+        voice =>
+          voice.name === selectedVoiceName
+      ) || null;
+
+  }
+
+  if (!selectedVoice) {
+
+    const speechLang =
+      getSpeechLanguage(
+        selectedLang
+      );
+
+    selectedVoice =
+      voices.find(
+        voice =>
+          voice.lang === speechLang
+      ) ||
+      voices.find(
+        voice =>
+          voice.lang &&
+          voice.lang.startsWith(
+            speechLang.split("-")[0]
+          )
+      ) ||
+      null;
+
+  }
+
+}
+
+
+if (
+  "speechSynthesis" in window
+) {
+
+  window.speechSynthesis.onvoiceschanged =
+    () => {
+
+      loadSavedVoice();
+
+    };
 
 }
 
@@ -918,6 +1005,8 @@ function renderLanguageButtons(
         "click",
         () => {
 
+          stopSpeech();
+
           selectedLang =
             language.key;
 
@@ -928,6 +1017,8 @@ function renderLanguageButtons(
 
           document.documentElement.lang =
             selectedLang;
+
+          loadSavedVoice();
 
           const questionPage =
             document.querySelector(
@@ -965,6 +1056,8 @@ function renderLanguageButtons(
 ========================================= */
 
 function renderQuestion() {
+
+  stopSpeech();
 
   const home =
     document.querySelector(
@@ -1050,8 +1143,7 @@ function renderQuestion() {
 
   /* =====================================
      TTS KONTROLLERİ
-     
-     DİL SEÇİCİNİN HEMEN ALTINDA
+     DİL SEÇİCİSİNİN HEMEN ALTINDA
   ===================================== */
 
   renderTTSControls();
@@ -1235,7 +1327,6 @@ function renderQuestion() {
 
   }
 
-
   window.scrollTo({
     top: 0,
     behavior: "smooth"
@@ -1305,15 +1396,22 @@ function addQuestionLanguageSelector() {
 
 function renderTTSControls() {
 
-  let oldControls =
+  const oldControls =
     document.querySelector(
       "#tts-controls"
     );
 
   if (oldControls) {
-
     oldControls.remove();
+  }
 
+  const oldPanel =
+    document.querySelector(
+      "#tts-settings-panel"
+    );
+
+  if (oldPanel) {
+    oldPanel.remove();
   }
 
   const selector =
@@ -1375,9 +1473,7 @@ function renderTTSControls() {
       if (
         slowLevel > 3
       ) {
-
         slowLevel = 0;
-
       }
 
       const rates = [
@@ -1392,6 +1488,8 @@ function renderTTSControls() {
 
       fastLevel = 0;
       veryFastLevel = 0;
+
+      saveTTSSettings();
 
       updateSlowButton(
         slowButton
@@ -1442,7 +1540,7 @@ function renderTTSControls() {
 
 
   /* =====================================
-     DURAKLAT / DEVAM
+     PAUSE
   ===================================== */
 
   const pauseButton =
@@ -1457,7 +1555,7 @@ function renderTTSControls() {
     "tts-button tts-pause";
 
   pauseButton.textContent =
-    "Ⅱ";
+    "⏸";
 
   pauseButton.setAttribute(
     "aria-label",
@@ -1519,7 +1617,6 @@ function renderTTSControls() {
 
   /* =====================================
      HIZLANDIR 1
-     1.25 → 1.50 → 1.75
   ===================================== */
 
   const fastButton =
@@ -1556,9 +1653,7 @@ function renderTTSControls() {
       if (
         fastLevel > 3
       ) {
-
         fastLevel = 0;
-
       }
 
       const rates = [
@@ -1574,6 +1669,8 @@ function renderTTSControls() {
       slowLevel = 0;
       veryFastLevel = 0;
 
+      saveTTSSettings();
+
       updateFastButton(
         fastButton
       );
@@ -1588,7 +1685,6 @@ function renderTTSControls() {
 
   /* =====================================
      HIZLANDIR 2
-     2 → 2.5 → 3
   ===================================== */
 
   const veryFastButton =
@@ -1625,9 +1721,7 @@ function renderTTSControls() {
       if (
         veryFastLevel > 3
       ) {
-
         veryFastLevel = 0;
-
       }
 
       const rates = [
@@ -1642,6 +1736,8 @@ function renderTTSControls() {
 
       slowLevel = 0;
       fastLevel = 0;
+
+      saveTTSSettings();
 
       updateVeryFastButton(
         veryFastButton
@@ -1731,7 +1827,7 @@ function renderTTSControls() {
 
 
   /* =====================================
-     DİL SEÇİCİNİN HEMEN ALTINA KOY
+     DİL SEÇİCİSİNİN HEMEN ALTINA
   ===================================== */
 
   selector.insertAdjacentElement(
@@ -1768,7 +1864,7 @@ function updateSlowButton(
 
 
 /* =========================================
-   HIZLANDIR 1 BUTONU
+   HIZLANDIR 1
 ========================================= */
 
 function updateFastButton(
@@ -1793,7 +1889,7 @@ function updateFastButton(
 
 
 /* =========================================
-   HIZLANDIR 2 BUTONU
+   HIZLANDIR 2
 ========================================= */
 
 function updateVeryFastButton(
@@ -1834,17 +1930,41 @@ function updateFastButtons() {
     );
 
   if (fast) {
-
     updateFastButton(
       fast
     );
-
   }
 
   if (veryFast) {
-
     updateVeryFastButton(
       veryFast
+    );
+  }
+
+}
+
+
+/* =========================================
+   TTS AYARLARINI KAYDET
+========================================= */
+
+function saveTTSSettings() {
+
+  localStorage.setItem(
+    "ttsRate",
+    String(speechRate)
+  );
+
+  localStorage.setItem(
+    "ttsPitch",
+    String(speechPitch)
+  );
+
+  if (selectedVoice) {
+
+    localStorage.setItem(
+      "ttsVoice",
+      selectedVoice.name
     );
 
   }
@@ -1871,6 +1991,8 @@ function toggleTTSSettings() {
 
   }
 
+  loadSavedVoice();
+
   panel =
     document.createElement(
       "div"
@@ -1881,6 +2003,11 @@ function toggleTTSSettings() {
 
   panel.className =
     "tts-settings-panel";
+
+
+  /* =====================================
+     BAŞLIK
+  ===================================== */
 
   const title =
     document.createElement(
@@ -1894,20 +2021,250 @@ function toggleTTSSettings() {
     title
   );
 
-  const info =
+
+  /* =====================================
+     SES SEÇİMİ
+  ===================================== */
+
+  const voiceLabel =
     document.createElement(
-      "div"
+      "label"
     );
 
-  info.textContent =
-    `Hız: ${speechRate}x`;
+  voiceLabel.textContent =
+    "Ses";
 
-  info.className =
-    "tts-settings-info";
+  voiceLabel.className =
+    "tts-setting-label";
 
   panel.appendChild(
-    info
+    voiceLabel
   );
+
+  const voiceSelect =
+    document.createElement(
+      "select"
+    );
+
+  voiceSelect.className =
+    "tts-voice-select";
+
+  voiceSelect.setAttribute(
+    "aria-label",
+    "TTS sesi seç"
+  );
+
+  populateVoiceSelect(
+    voiceSelect
+  );
+
+  voiceSelect.addEventListener(
+    "change",
+    () => {
+
+      const voices =
+        window.speechSynthesis
+          .getVoices();
+
+      selectedVoice =
+        voices.find(
+          voice =>
+            voice.name ===
+            voiceSelect.value
+        ) || null;
+
+      if (selectedVoice) {
+
+        selectedVoiceName =
+          selectedVoice.name;
+
+      } else {
+
+        selectedVoiceName =
+          "";
+
+      }
+
+      saveTTSSettings();
+
+    }
+  );
+
+  panel.appendChild(
+    voiceSelect
+  );
+
+
+  /* =====================================
+     HIZ
+  ===================================== */
+
+  const rateLabel =
+    document.createElement(
+      "label"
+    );
+
+  rateLabel.className =
+    "tts-setting-label";
+
+  rateLabel.textContent =
+    `Hız: ${speechRate.toFixed(2)}x`;
+
+  panel.appendChild(
+    rateLabel
+  );
+
+  const rateSlider =
+    document.createElement(
+      "input"
+    );
+
+  rateSlider.type =
+    "range";
+
+  rateSlider.min =
+    "0.25";
+
+  rateSlider.max =
+    "3";
+
+  rateSlider.step =
+    "0.05";
+
+  rateSlider.value =
+    String(speechRate);
+
+  rateSlider.className =
+    "tts-rate-slider";
+
+  rateSlider.addEventListener(
+    "input",
+    () => {
+
+      speechRate =
+        Number(
+          rateSlider.value
+        );
+
+      rateLabel.textContent =
+        `Hız: ${speechRate.toFixed(2)}x`;
+
+      updateSpeedLevelsFromRate();
+
+      saveTTSSettings();
+
+    }
+  );
+
+  panel.appendChild(
+    rateSlider
+  );
+
+
+  /* =====================================
+     PERDE
+  ===================================== */
+
+  const pitchLabel =
+    document.createElement(
+      "label"
+    );
+
+  pitchLabel.className =
+    "tts-setting-label";
+
+  pitchLabel.textContent =
+    `Perde: ${speechPitch.toFixed(2)}`;
+
+  panel.appendChild(
+    pitchLabel
+  );
+
+  const pitchSlider =
+    document.createElement(
+      "input"
+    );
+
+  pitchSlider.type =
+    "range";
+
+  pitchSlider.min =
+    "0.5";
+
+  pitchSlider.max =
+    "2";
+
+  pitchSlider.step =
+    "0.05";
+
+  pitchSlider.value =
+    String(speechPitch);
+
+  pitchSlider.className =
+    "tts-pitch-slider";
+
+  pitchSlider.addEventListener(
+    "input",
+    () => {
+
+      speechPitch =
+        Number(
+          pitchSlider.value
+        );
+
+      pitchLabel.textContent =
+        `Perde: ${speechPitch.toFixed(2)}`;
+
+      saveTTSSettings();
+
+    }
+  );
+
+  panel.appendChild(
+    pitchSlider
+  );
+
+
+  /* =====================================
+     TEST SESİ
+  ===================================== */
+
+  const testButton =
+    document.createElement(
+      "button"
+    );
+
+  testButton.type =
+    "button";
+
+  testButton.className =
+    "tts-test-button";
+
+  testButton.textContent =
+    "🔊 Sesi test et";
+
+  testButton.addEventListener(
+    "click",
+    () => {
+
+      const text =
+        getTTSTestText();
+
+      speakText(
+        text
+      );
+
+    }
+  );
+
+  panel.appendChild(
+    testButton
+  );
+
+
+  /* =====================================
+     SIFIRLA
+  ===================================== */
 
   const reset =
     document.createElement(
@@ -1917,8 +2274,11 @@ function toggleTTSSettings() {
   reset.type =
     "button";
 
+  reset.className =
+    "tts-reset-button";
+
   reset.textContent =
-    "Hızı sıfırla";
+    "Ayarları sıfırla";
 
   reset.addEventListener(
     "click",
@@ -1926,15 +2286,37 @@ function toggleTTSSettings() {
 
       speechRate = 1;
 
+      speechPitch = 1;
+
       slowLevel = 0;
 
       fastLevel = 0;
 
       veryFastLevel = 0;
 
+      selectedVoice = null;
+
+      selectedVoiceName = "";
+
+      localStorage.removeItem(
+        "ttsRate"
+      );
+
+      localStorage.removeItem(
+        "ttsPitch"
+      );
+
+      localStorage.removeItem(
+        "ttsVoice"
+      );
+
+      loadSavedVoice();
+
+      stopSpeech();
+
       renderTTSControls();
 
-      panel.remove();
+      toggleTTSSettings();
 
     }
   );
@@ -1942,6 +2324,11 @@ function toggleTTSSettings() {
   panel.appendChild(
     reset
   );
+
+
+  /* =====================================
+     KONTROLLERİN ALTINA EKLE
+  ===================================== */
 
   const controls =
     document.querySelector(
@@ -1964,6 +2351,269 @@ function toggleTTSSettings() {
 
 
 /* =========================================
+   SES SEÇENEKLERİNİ DOLDUR
+========================================= */
+
+function populateVoiceSelect(
+  select
+) {
+
+  if (!select) {
+    return;
+  }
+
+  select.innerHTML =
+    "";
+
+  if (
+    !("speechSynthesis" in window)
+  ) {
+
+    const option =
+      document.createElement(
+        "option"
+      );
+
+    option.textContent =
+      "Ses desteği bulunamadı";
+
+    option.value =
+      "";
+
+    select.appendChild(
+      option
+    );
+
+    return;
+
+  }
+
+  const voices =
+    window.speechSynthesis
+      .getVoices();
+
+  if (!voices.length) {
+
+    const option =
+      document.createElement(
+        "option"
+      );
+
+    option.textContent =
+      "Sesler yükleniyor...";
+
+    option.value =
+      "";
+
+    select.appendChild(
+      option
+    );
+
+    return;
+
+  }
+
+  const speechLang =
+    getSpeechLanguage(
+      selectedLang
+    );
+
+  const languageCode =
+    speechLang
+      .split("-")[0]
+      .toLowerCase();
+
+  const matchingVoices =
+    voices.filter(
+      voice =>
+        voice.lang &&
+        voice.lang
+          .toLowerCase()
+          .startsWith(
+            languageCode
+          )
+    );
+
+  const otherVoices =
+    voices.filter(
+      voice =>
+        !matchingVoices.includes(
+          voice
+        )
+    );
+
+  const orderedVoices = [
+    ...matchingVoices,
+    ...otherVoices
+  ];
+
+  orderedVoices.forEach(
+    voice => {
+
+      const option =
+        document.createElement(
+          "option"
+        );
+
+      option.value =
+        voice.name;
+
+      option.textContent =
+        `${voice.name} (${voice.lang})`;
+
+      if (
+        selectedVoice &&
+        selectedVoice.name ===
+          voice.name
+      ) {
+
+        option.selected =
+          true;
+
+      } else if (
+        !selectedVoice &&
+        selectedVoiceName ===
+          voice.name
+      ) {
+
+        option.selected =
+          true;
+
+      }
+
+      select.appendChild(
+        option
+      );
+
+    }
+  );
+
+}
+
+
+/* =========================================
+   TEST METNİ
+========================================= */
+
+function getTTSTestText() {
+
+  const texts = {
+
+    tr:
+      "Bu, TTS ses ayarlarının testidir.",
+
+    en:
+      "This is a test of the text to speech voice settings.",
+
+    de:
+      "Dies ist ein Test der Text-to-Speech-Einstellungen.",
+
+    ru:
+      "Это проверка настроек синтеза речи.",
+
+    ku:
+      "Ev testekî ji bo mîhengên dengê ye.",
+
+    ar:
+      "هٰذَا اخْتِبَارٌ لِإِعْدَادَاتِ الصَّوْتِ.",
+
+    tt:
+      "Бу тавыш көйләүләрен тикшерү өчен тест.",
+
+    fr:
+      "Ceci est un test des paramètres de synthèse vocale.",
+
+    es:
+      "Esta es una prueba de los ajustes de voz.",
+
+    nl:
+      "Dit is een test van de steminstellingen.",
+
+    it:
+      "Questo è un test delle impostazioni vocali."
+
+  };
+
+  return (
+    texts[selectedLang] ||
+    texts.tr
+  );
+
+}
+
+
+/* =========================================
+   HIZ SEVİYELERİNİ GÜNCELLE
+========================================= */
+
+function updateSpeedLevelsFromRate() {
+
+  slowLevel = 0;
+
+  fastLevel = 0;
+
+  veryFastLevel = 0;
+
+  if (
+    speechRate === 0.75
+  ) {
+
+    slowLevel = 1;
+
+  } else if (
+    speechRate === 0.50
+  ) {
+
+    slowLevel = 2;
+
+  } else if (
+    speechRate === 0.25
+  ) {
+
+    slowLevel = 3;
+
+  } else if (
+    speechRate === 1.25
+  ) {
+
+    fastLevel = 1;
+
+  } else if (
+    speechRate === 1.50
+  ) {
+
+    fastLevel = 2;
+
+  } else if (
+    speechRate === 1.75
+  ) {
+
+    fastLevel = 3;
+
+  } else if (
+    speechRate === 2
+  ) {
+
+    veryFastLevel = 1;
+
+  } else if (
+    speechRate === 2.5
+  ) {
+
+    veryFastLevel = 2;
+
+  } else if (
+    speechRate === 3
+  ) {
+
+    veryFastLevel = 3;
+
+  }
+
+}
+
+
+/* =========================================
    TEXT TO SPEECH
 ========================================= */
 
@@ -1975,11 +2625,17 @@ function speakText(
     !("speechSynthesis" in window)
   ) {
 
+    console.warn(
+      "Tarayıcı TTS desteği bulunmuyor."
+    );
+
     return;
 
   }
 
   window.speechSynthesis.cancel();
+
+  loadSavedVoice();
 
   speechUtterance =
     new SpeechSynthesisUtterance(
@@ -1990,7 +2646,7 @@ function speakText(
     speechRate;
 
   speechUtterance.pitch =
-    1;
+    speechPitch;
 
   speechUtterance.volume =
     1;
@@ -1999,6 +2655,13 @@ function speakText(
     getSpeechLanguage(
       selectedLang
     );
+
+  if (selectedVoice) {
+
+    speechUtterance.voice =
+      selectedVoice;
+
+  }
 
   window.speechSynthesis.speak(
     speechUtterance
@@ -2087,9 +2750,7 @@ function toggleSpeechPause() {
   if (
     !("speechSynthesis" in window)
   ) {
-
     return;
-
   }
 
   if (
@@ -2127,6 +2788,9 @@ function stopSpeech() {
 
   }
 
+  speechUtterance =
+    null;
+
 }
 
 
@@ -2140,6 +2804,8 @@ function setSpeechRate(
 
   speechRate =
     rate;
+
+  saveTTSSettings();
 
   if (
     window.speechSynthesis.speaking
@@ -2212,6 +2878,8 @@ function createNavigation(
 
   previousQuestion.onclick =
     () => {
+
+      stopSpeech();
 
       if (
         currentQuestionIndex > 0
@@ -2328,6 +2996,8 @@ function createNavigation(
 
   nextQuestion.onclick =
     () => {
+
+      stopSpeech();
 
       const currentQuestions =
         days[currentDayIndex]
@@ -2458,6 +3128,8 @@ function createNavigation(
   previousDay.onclick =
     () => {
 
+      stopSpeech();
+
       if (
         currentDayIndex > 0
       ) {
@@ -2561,6 +3233,8 @@ function createNavigation(
   nextDay.onclick =
     () => {
 
+      stopSpeech();
+
       if (
         currentDayIndex <
         days.length - 1
@@ -2653,6 +3327,8 @@ function goToQuestionNumber(
       questionIndex !== -1
     ) {
 
+      stopSpeech();
+
       currentDayIndex =
         dayIndex;
 
@@ -2713,6 +3389,8 @@ function goToDayNumber(
     return;
 
   }
+
+  stopSpeech();
 
   currentDayIndex =
     dayIndex;
