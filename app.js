@@ -6,6 +6,7 @@
 
 "use strict";
 
+
 /* =========================================
    SABİT AYARLAR
 ========================================= */
@@ -14,66 +15,80 @@ const TOTAL_DAYS = 30;
 const QUESTIONS_PER_DAY = 19;
 const TOTAL_QUESTIONS = 570;
 
-/*
-  DİL SIRASI KESİNDİR.
-  BURAYI DEĞİŞTİRME.
-*/
+
+/* =========================================
+   DİLLER
+   SIRALAMA KESİNDİR — DEĞİŞTİRME
+========================================= */
+
 const LANGUAGES = [
+
   {
     code: "tr",
     name: "Türkçe",
     flag: "🇹🇷"
   },
+
   {
     code: "en",
     name: "English",
     flag: "🇬🇧"
   },
+
   {
     code: "de",
     name: "Deutsch",
     flag: "🇩🇪"
   },
+
   {
     code: "ru",
     name: "Русский",
     flag: "🇷🇺"
   },
+
   {
     code: "ku",
     name: "Kurmancî",
     flag: "🇬🇭"
   },
+
   {
     code: "ar",
     name: "العربية",
     flag: "🇸🇦"
   },
+
   {
     code: "tt",
     name: "Tatarca",
     flag: "🇭🇺"
   },
+
   {
     code: "fr",
     name: "Français",
     flag: "🇫🇷"
   },
+
   {
     code: "es",
     name: "Español",
     flag: "🇪🇸"
   },
+
   {
     code: "nl",
     name: "Nederlands / Flemenkçe",
     flag: "🇳🇱"
   },
+
   {
     code: "it",
     name: "Italiano",
     flag: "🇮🇹"
   }
+
 ];
 
 
@@ -101,19 +116,27 @@ const questionPage =
   document.getElementById("question-page");
 
 const homeLanguageSelector =
-  document.getElementById("home-language-selector");
+  document.getElementById(
+    "home-language-selector"
+  );
 
 const daysList =
   document.getElementById("days-list");
 
 const topNavigation =
-  document.getElementById("top-navigation");
+  document.getElementById(
+    "top-navigation"
+  );
 
 const bottomNavigation =
-  document.getElementById("bottom-navigation");
+  document.getElementById(
+    "bottom-navigation"
+  );
 
 const questionContent =
-  document.getElementById("question-content");
+  document.getElementById(
+    "question-content"
+  );
 
 
 /* =========================================
@@ -194,15 +217,10 @@ function createLanguageSelector() {
 
           updateLanguageButtons();
 
-          /*
-            Ana sayfada dil seçimi yapıldığında
-            sayfa yeniden yüklenmez.
-          */
-
           if (
             !questionPage ||
             questionPage.style.display ===
-            "none"
+              "none"
           ) {
 
             renderDays();
@@ -241,15 +259,17 @@ function updateLanguageButtons() {
       ".language-button"
     );
 
-  buttons.forEach(button => {
+  buttons.forEach(
+    button => {
 
-    button.classList.toggle(
-      "active",
-      button.dataset.language ===
-      selectedLanguage
-    );
+      button.classList.toggle(
+        "active",
+        button.dataset.language ===
+          selectedLanguage
+      );
 
-  });
+    }
+  );
 
 }
 
@@ -261,10 +281,6 @@ function updateLanguageButtons() {
 async function loadDays() {
 
   try {
-
-    /*
-      Önce master days.json denenir.
-    */
 
     let response =
       await fetch(
@@ -280,7 +296,9 @@ async function loadDays() {
         await response.json();
 
       if (
-        Array.isArray(masterData.days)
+        Array.isArray(
+          masterData.days
+        )
       ) {
 
         daysData =
@@ -296,11 +314,6 @@ async function loadDays() {
       }
 
     }
-
-    /*
-      Master dosya yoksa
-      30 günlük yapı oluşturulur.
-    */
 
     if (
       daysData.length === 0
@@ -319,11 +332,6 @@ async function loadDays() {
       "Günler yüklenemedi:",
       error
     );
-
-    /*
-      days.json bulunamazsa
-      varsayılan 30 gün oluşturulur.
-    */
 
     daysData =
       createDefaultDays();
@@ -350,8 +358,10 @@ function createDefaultDays() {
   ) {
 
     const start =
-      ((day - 1) *
-        QUESTIONS_PER_DAY) + 1;
+      (
+        (day - 1) *
+        QUESTIONS_PER_DAY
+      ) + 1;
 
     const end =
       day *
@@ -362,7 +372,10 @@ function createDefaultDays() {
       day: day,
 
       file:
-        `data/day-${String(day).padStart(2, "0")}.json`,
+        `data/day-${String(day).padStart(
+          2,
+          "0"
+        )}.json`,
 
       dayTitle:
         `${day}. Gün`,
@@ -462,8 +475,10 @@ function renderDays() {
 function getDayTitle(day) {
 
   if (
+    day &&
     day.dayTitle &&
-    typeof day.dayTitle === "string"
+    typeof day.dayTitle ===
+      "string"
   ) {
 
     return day.dayTitle;
@@ -482,8 +497,10 @@ function getDayTitle(day) {
 function getDaySubtitle(day) {
 
   if (
+    day &&
     day.daySubtitle &&
-    typeof day.daySubtitle === "string"
+    typeof day.daySubtitle ===
+      "string"
   ) {
 
     return day.daySubtitle;
@@ -491,6 +508,7 @@ function getDaySubtitle(day) {
   }
 
   if (
+    day &&
     day.questionRange
   ) {
 
@@ -522,16 +540,28 @@ async function openDay(dayNumber) {
     dayNumber;
 
   const dayInfo =
-    getDayInfo(currentDay);
+    getDayInfo(
+      currentDay
+    );
 
   currentQuestion =
     dayInfo &&
     Number.isFinite(
-      Number(dayInfo.questionStart)
+      Number(
+        dayInfo.questionStart
+      )
     )
-      ? Number(dayInfo.questionStart)
-      : ((currentDay - 1) *
-          QUESTIONS_PER_DAY) + 1;
+
+      ? Number(
+          dayInfo.questionStart
+        )
+
+      : (
+          (
+            currentDay - 1
+          ) *
+          QUESTIONS_PER_DAY
+        ) + 1;
 
   showQuestionPage();
 
@@ -597,7 +627,7 @@ function goHome() {
 
 
 /* =========================================
-   SORU SAYFASINI RENDER
+   SORU SAYFASI
 ========================================= */
 
 async function renderQuestionPage() {
@@ -607,14 +637,18 @@ async function renderQuestionPage() {
   }
 
   const dayInfo =
-    getDayInfo(currentDay);
-
-  renderNavigation();
+    getDayInfo(
+      currentDay
+    );
 
   questionContent.innerHTML =
-    `<div class="loading">
-       Yükleniyor...
-     </div>`;
+    `
+      <div class="loading">
+        Yükleniyor...
+      </div>
+    `;
+
+  renderNavigation();
 
   let data = null;
 
@@ -638,13 +672,13 @@ async function renderQuestionPage() {
 
     questionContent.innerHTML =
       `
-      <div class="question-card">
+        <div class="question-card">
 
-        <div class="loading">
-          Bu günün içerik dosyası yüklenemedi.
+          <div class="loading">
+            Bu günün içerik dosyası yüklenemedi.
+          </div>
+
         </div>
-
-      </div>
       `;
 
     renderNavigation();
@@ -667,7 +701,9 @@ async function renderQuestionPage() {
    GÜN DOSYASI YÜKLE
 ========================================= */
 
-async function loadDayFile(dayInfo) {
+async function loadDayFile(
+  dayInfo
+) {
 
   if (!dayInfo) {
     return null;
@@ -683,9 +719,25 @@ async function loadDayFile(dayInfo) {
 
   }
 
-  possibleFiles.push(
-    `data/day-${String(currentDay).padStart(2, "0")}.json`
-  );
+  const standardFile =
+    `data/day-${String(
+      currentDay
+    ).padStart(
+      2,
+      "0"
+    )}.json`;
+
+  if (
+    !possibleFiles.includes(
+      standardFile
+    )
+  ) {
+
+    possibleFiles.push(
+      standardFile
+    );
+
+  }
 
   for (
     const file of possibleFiles
@@ -751,27 +803,18 @@ function renderQuestion(
 
     questionContent.innerHTML =
       `
-      <div class="question-card">
+        <div class="question-card">
 
-        <div class="loading">
-          Soru bulunamadı.
+          <div class="loading">
+            Soru bulunamadı.
+          </div>
+
         </div>
-
-      </div>
       `;
 
     return;
 
   }
-
-  const dayTitle =
-    getDayTitle(dayInfo);
-
-  const questionCard =
-    document.createElement("article");
-
-  questionCard.className =
-    "question-card";
 
   const title =
     document.createElement("h1");
@@ -780,21 +823,13 @@ function renderQuestion(
     "question-day-title";
 
   title.textContent =
-    `${dayTitle}`;
-
-  questionContent.appendChild(
-    title
-  );
+    getDayTitle(dayInfo);
 
   const card =
     document.createElement("div");
 
   card.className =
     "question-card";
-
-  /*
-    Sabit 11 dil sırası.
-  */
 
   LANGUAGES.forEach(
     language => {
@@ -816,12 +851,15 @@ function renderQuestion(
     }
   );
 
-  /*
-    Kaynaklar
-  */
+
+  /* =====================================
+     KAYNAKLAR
+  ===================================== */
 
   const sources =
-    getSources(question);
+    getSources(
+      question
+    );
 
   if (
     sources.length > 0
@@ -834,6 +872,7 @@ function renderQuestion(
     );
 
   }
+
 
   questionContent.innerHTML = "";
 
@@ -868,7 +907,9 @@ function findQuestion(
 
   } else if (
     data &&
-    Array.isArray(data.questions)
+    Array.isArray(
+      data.questions
+    )
   ) {
 
     questions =
@@ -876,7 +917,9 @@ function findQuestion(
 
   } else if (
     data &&
-    Array.isArray(data.items)
+    Array.isArray(
+      data.items
+    )
   ) {
 
     questions =
@@ -892,42 +935,59 @@ function findQuestion(
 
   }
 
-  /*
-    Önce global soru numarasına göre ara.
-  */
 
-  let question =
+  /* =====================================
+     GLOBAL SORU NUMARASI
+  ===================================== */
+
+  const question =
     questions.find(
-      item =>
-        Number(
+      item => {
+
+        return Number(
           item.questionNumber ??
           item.number ??
           item.id
         ) ===
-        Number(questionNumber)
+          Number(
+            questionNumber
+          );
+
+      }
     );
 
   if (question) {
     return question;
   }
 
-  /*
-    Günlük dosyada 1–19 tutuluyorsa
-    global numaradan günlük index hesaplanır.
-  */
+
+  /* =====================================
+     GÜNLÜK 1–19 YAPISI
+  ===================================== */
 
   const start =
     dayInfo &&
     Number.isFinite(
-      Number(dayInfo.questionStart)
+      Number(
+        dayInfo.questionStart
+      )
     )
-      ? Number(dayInfo.questionStart)
-      : ((currentDay - 1) *
-          QUESTIONS_PER_DAY) + 1;
+
+      ? Number(
+          dayInfo.questionStart
+        )
+
+      : (
+          (
+            currentDay - 1
+          ) *
+          QUESTIONS_PER_DAY
+        ) + 1;
 
   const index =
-    Number(questionNumber) -
-    start;
+    Number(
+      questionNumber
+    ) - start;
 
   if (
     index >= 0 &&
@@ -938,20 +998,25 @@ function findQuestion(
 
   }
 
-  /*
-    Son çare:
-    soru numarasını doğrudan index olarak kullan.
-  */
 
-  return questions[
-    Number(questionNumber) - 1
-  ] || null;
+  /* =====================================
+     SON ÇARE
+  ===================================== */
+
+  return (
+    questions[
+      Number(
+        questionNumber
+      ) - 1
+    ] ||
+    null
+  );
 
 }
 
 
 /* =========================================
-   DİL BLOĞU OLUŞTUR
+   DİL BLOĞU
 ========================================= */
 
 function createLanguageBlock(
@@ -975,9 +1040,10 @@ function createLanguageBlock(
   block.className =
     "language-block";
 
-  /*
-    Seçilen dil vurgulanır.
-  */
+
+  /* =====================================
+     SEÇİLEN DİL
+  ===================================== */
 
   if (
     language.code ===
@@ -990,9 +1056,10 @@ function createLanguageBlock(
 
   }
 
-  /*
-    Arapça RTL.
-  */
+
+  /* =====================================
+     ARAPÇA RTL
+  ===================================== */
 
   if (
     language.code === "ar"
@@ -1009,6 +1076,7 @@ function createLanguageBlock(
 
   }
 
+
   const questionLine =
     document.createElement("div");
 
@@ -1020,27 +1088,35 @@ function createLanguageBlock(
       content
     );
 
-  const answerLine =
-    document.createElement("div");
 
-  answerLine.className =
-    "answer-line";
-
-  answerLine.textContent =
+  const answerText =
     getAnswerText(
       content
     );
 
-  block.appendChild(
-    questionLine
-  );
+  if (answerText) {
 
-  if (
-    getAnswerText(content)
-  ) {
+    const answerLine =
+      document.createElement("div");
+
+    answerLine.className =
+      "answer-line";
+
+    answerLine.textContent =
+      answerText;
+
+    block.appendChild(
+      questionLine
+    );
 
     block.appendChild(
       answerLine
+    );
+
+  } else {
+
+    block.appendChild(
+      questionLine
     );
 
   }
@@ -1051,7 +1127,7 @@ function createLanguageBlock(
 
 
 /* =========================================
-   DİL İÇERİĞİNİ BUL
+   DİL İÇERİĞİ
 ========================================= */
 
 function getLanguageContent(
@@ -1063,18 +1139,10 @@ function getLanguageContent(
     return null;
   }
 
-  /*
-    Örnek yapı:
-    {
-      tr: {
-        question: "...",
-        answer: "..."
-      }
-    }
-  */
-
   if (
-    question[languageCode]
+    question[
+      languageCode
+    ]
   ) {
 
     return question[
@@ -1083,13 +1151,11 @@ function getLanguageContent(
 
   }
 
-  /*
-    languages yapısı.
-  */
-
   if (
     question.languages &&
-    question.languages[languageCode]
+    question.languages[
+      languageCode
+    ]
   ) {
 
     return question.languages[
@@ -1098,13 +1164,11 @@ function getLanguageContent(
 
   }
 
-  /*
-    content yapısı.
-  */
-
   if (
     question.content &&
-    question.content[languageCode]
+    question.content[
+      languageCode
+    ]
   ) {
 
     return question.content[
@@ -1127,7 +1191,8 @@ function getQuestionText(
 ) {
 
   if (
-    typeof content === "string"
+    typeof content ===
+    "string"
   ) {
 
     return content;
@@ -1153,7 +1218,8 @@ function getAnswerText(
 ) {
 
   if (
-    typeof content === "string"
+    typeof content ===
+    "string"
   ) {
 
     return "";
@@ -1183,7 +1249,9 @@ function getSources(
   }
 
   if (
-    Array.isArray(question.sources)
+    Array.isArray(
+      question.sources
+    )
   ) {
 
     return question.sources;
@@ -1191,7 +1259,9 @@ function getSources(
   }
 
   if (
-    Array.isArray(question.source)
+    Array.isArray(
+      question.source
+    )
   ) {
 
     return question.source;
@@ -1237,7 +1307,8 @@ function createSources(
         document.createElement("li");
 
       if (
-        typeof source === "string"
+        typeof source ===
+        "string"
       ) {
 
         li.textContent =
@@ -1333,7 +1404,7 @@ function renderTopNavigation() {
 
 
   /* =====================================
-     SORU ←
+     SOL — ÖNCEKİ SORU
   ===================================== */
 
   const previousQuestion =
@@ -1343,10 +1414,18 @@ function renderTopNavigation() {
     "button";
 
   previousQuestion.textContent =
-    "← Soru";
+    "←";
 
   previousQuestion.title =
     "Önceki soru";
+
+  previousQuestion.setAttribute(
+    "aria-label",
+    "Önceki soru"
+  );
+
+  previousQuestion.className =
+    "navigation-arrow-button";
 
   previousQuestion.disabled =
     currentQuestion <= 1;
@@ -1370,7 +1449,22 @@ function renderTopNavigation() {
 
 
   /* =====================================
+     SOL ETİKET — SORU
+  ===================================== */
+
+  const questionLabel =
+    document.createElement("span");
+
+  questionLabel.className =
+    "navigation-label";
+
+  questionLabel.textContent =
+    "Soru";
+
+
+  /* =====================================
      KÂBE UNICODE
+     ORTADA
   ===================================== */
 
   const kaabaButton =
@@ -1378,11 +1472,6 @@ function renderTopNavigation() {
 
   kaabaButton.type =
     "button";
-
-  /*
-    Kâbe artık RESİM DEĞİL.
-    Unicode olarak sabit:
-  */
 
   kaabaButton.textContent =
     "🕋";
@@ -1396,4 +1485,634 @@ function renderTopNavigation() {
   );
 
   kaabaButton.className =
-    "navigation
+    "kaaba-navigation-button";
+
+  kaabaButton.addEventListener(
+    "click",
+    () => {
+
+      goHome();
+
+    }
+  );
+
+
+  /* =====================================
+     SAĞ ETİKET — GÜNLER
+  ===================================== */
+
+  const dayLabel =
+    document.createElement("span");
+
+  dayLabel.className =
+    "navigation-label";
+
+  dayLabel.textContent =
+    "Günler";
+
+
+  /* =====================================
+     SAĞ — SONRAKİ SORU
+  ===================================== */
+
+  const nextQuestion =
+    document.createElement("button");
+
+  nextQuestion.type =
+    "button";
+
+  nextQuestion.textContent =
+    "→";
+
+  nextQuestion.title =
+    "Sonraki soru";
+
+  nextQuestion.setAttribute(
+    "aria-label",
+    "Sonraki soru"
+  );
+
+  nextQuestion.className =
+    "navigation-arrow-button";
+
+  nextQuestion.disabled =
+    currentQuestion >= TOTAL_QUESTIONS;
+
+  nextQuestion.addEventListener(
+    "click",
+    () => {
+
+      if (
+        currentQuestion <
+        TOTAL_QUESTIONS
+      ) {
+
+        goToQuestion(
+          currentQuestion + 1
+        );
+
+      }
+
+    }
+  );
+
+
+  /*
+    Sıralama:
+
+    ←
+    Soru
+    🕋
+    Günler
+    →
+  */
+
+  row.appendChild(
+    previousQuestion
+  );
+
+  row.appendChild(
+    questionLabel
+  );
+
+  row.appendChild(
+    kaabaButton
+  );
+
+  row.appendChild(
+    dayLabel
+  );
+
+  row.appendChild(
+    nextQuestion
+  );
+
+
+  topNavigation.appendChild(
+    row
+  );
+
+}
+
+
+/* =========================================
+   ALT NAVİGASYON
+========================================= */
+
+function renderBottomNavigation() {
+
+  if (!bottomNavigation) {
+    return;
+  }
+
+  bottomNavigation.innerHTML = "";
+
+  const row =
+    document.createElement("div");
+
+  row.className =
+    "navigation-row";
+
+
+  /* =====================================
+     SORU GERİ
+  ===================================== */
+
+  const previousQuestion =
+    document.createElement("button");
+
+  previousQuestion.type =
+    "button";
+
+  previousQuestion.textContent =
+    "←";
+
+  previousQuestion.title =
+    "Önceki soru";
+
+  previousQuestion.disabled =
+    currentQuestion <= 1;
+
+  previousQuestion.className =
+    "navigation-arrow-button";
+
+  previousQuestion.addEventListener(
+    "click",
+    () => {
+
+      if (
+        currentQuestion > 1
+      ) {
+
+        goToQuestion(
+          currentQuestion - 1
+        );
+
+      }
+
+    }
+  );
+
+
+  /* =====================================
+     SORU NUMARASI
+  ===================================== */
+
+  const questionInput =
+    document.createElement("input");
+
+  questionInput.type =
+    "number";
+
+  questionInput.className =
+    "navigation-number-input";
+
+  questionInput.min =
+    "1";
+
+  questionInput.max =
+    String(
+      TOTAL_QUESTIONS
+    );
+
+  questionInput.value =
+    String(
+      currentQuestion
+    );
+
+  questionInput.placeholder =
+    "Soru";
+
+
+  questionInput.addEventListener(
+    "keydown",
+    event => {
+
+      if (
+        event.key ===
+        "Enter"
+      ) {
+
+        const value =
+          Number(
+            questionInput.value
+          );
+
+        if (
+          Number.isFinite(value) &&
+          value >= 1 &&
+          value <= TOTAL_QUESTIONS
+        ) {
+
+          goToQuestion(
+            value
+          );
+
+        }
+
+      }
+
+    }
+  );
+
+
+  /* =====================================
+     SORU İLERİ
+  ===================================== */
+
+  const nextQuestion =
+    document.createElement("button");
+
+  nextQuestion.type =
+    "button";
+
+  nextQuestion.textContent =
+    "→";
+
+  nextQuestion.title =
+    "Sonraki soru";
+
+  nextQuestion.disabled =
+    currentQuestion >=
+    TOTAL_QUESTIONS;
+
+  nextQuestion.className =
+    "navigation-arrow-button";
+
+  nextQuestion.addEventListener(
+    "click",
+    () => {
+
+      if (
+        currentQuestion <
+        TOTAL_QUESTIONS
+      ) {
+
+        goToQuestion(
+          currentQuestion + 1
+        );
+
+      }
+
+    }
+  );
+
+
+  /* =====================================
+     GÜN GERİ
+  ===================================== */
+
+  const previousDay =
+    document.createElement("button");
+
+  previousDay.type =
+    "button";
+
+  previousDay.textContent =
+    "← Gün";
+
+  previousDay.title =
+    "Önceki gün";
+
+  previousDay.disabled =
+    currentDay <= 1;
+
+  previousDay.addEventListener(
+    "click",
+    () => {
+
+      if (
+        currentDay > 1
+      ) {
+
+        openDay(
+          currentDay - 1
+        );
+
+      }
+
+    }
+  );
+
+
+  /* =====================================
+     GÜN NUMARASI
+  ===================================== */
+
+  const dayInput =
+    document.createElement("input");
+
+  dayInput.type =
+    "number";
+
+  dayInput.className =
+    "navigation-number-input";
+
+  dayInput.min =
+    "1";
+
+  dayInput.max =
+    String(
+      TOTAL_DAYS
+    );
+
+  dayInput.value =
+    String(
+      currentDay
+    );
+
+  dayInput.placeholder =
+    "Gün";
+
+
+  dayInput.addEventListener(
+    "keydown",
+    event => {
+
+      if (
+        event.key ===
+        "Enter"
+      ) {
+
+        const value =
+          Number(
+            dayInput.value
+          );
+
+        if (
+          Number.isFinite(value) &&
+          value >= 1 &&
+          value <= TOTAL_DAYS
+        ) {
+
+          openDay(
+            value
+          );
+
+        }
+
+      }
+
+    }
+  );
+
+
+  /* =====================================
+     GÜN İLERİ
+  ===================================== */
+
+  const nextDay =
+    document.createElement("button");
+
+  nextDay.type =
+    "button";
+
+  nextDay.textContent =
+    "Gün →";
+
+  nextDay.title =
+    "Sonraki gün";
+
+  nextDay.disabled =
+    currentDay >=
+    TOTAL_DAYS;
+
+  nextDay.addEventListener(
+    "click",
+    () => {
+
+      if (
+        currentDay <
+        TOTAL_DAYS
+      ) {
+
+        openDay(
+          currentDay + 1
+        );
+
+      }
+
+    }
+  );
+
+
+  /* =====================================
+     ALT NAVİGASYON SIRASI
+  ===================================== */
+
+  row.appendChild(
+    previousQuestion
+  );
+
+  row.appendChild(
+    questionInput
+  );
+
+  row.appendChild(
+    nextQuestion
+  );
+
+  row.appendChild(
+    previousDay
+  );
+
+  row.appendChild(
+    dayInput
+  );
+
+  row.appendChild(
+    nextDay
+  );
+
+
+  bottomNavigation.appendChild(
+    row
+  );
+
+}
+
+
+/* =========================================
+   SORUYA GİT
+========================================= */
+
+async function goToQuestion(
+  questionNumber
+) {
+
+  const number =
+    Number(
+      questionNumber
+    );
+
+  if (
+    !Number.isFinite(number)
+  ) {
+
+    return;
+
+  }
+
+  if (
+    number < 1 ||
+    number > TOTAL_QUESTIONS
+  ) {
+
+    return;
+
+  }
+
+  currentQuestion =
+    number;
+
+
+  /*
+    Soru numarasından günü hesapla.
+  */
+
+  const calculatedDay =
+    Math.floor(
+      (
+        currentQuestion - 1
+      ) /
+      QUESTIONS_PER_DAY
+    ) + 1;
+
+  if (
+    calculatedDay !==
+    currentDay
+  ) {
+
+    currentDay =
+      calculatedDay;
+
+  }
+
+  showQuestionPage();
+
+  await renderQuestionPage();
+
+}
+
+
+/* =========================================
+   GÜN BİLGİSİ
+========================================= */
+
+function getDayInfo(
+  dayNumber
+) {
+
+  return (
+    daysData.find(
+      day =>
+        Number(day.day) ===
+        Number(dayNumber)
+    ) ||
+    null
+  );
+
+}
+
+
+/* =========================================
+   URL
+========================================= */
+
+function handleInitialUrl() {
+
+  const params =
+    new URLSearchParams(
+      window.location.search
+    );
+
+  const dayParam =
+    Number(
+      params.get("day")
+    );
+
+  const questionParam =
+    Number(
+      params.get("question")
+    );
+
+  if (
+    Number.isFinite(
+      questionParam
+    ) &&
+    questionParam >= 1 &&
+    questionParam <= TOTAL_QUESTIONS
+  ) {
+
+    currentQuestion =
+      questionParam;
+
+    currentDay =
+      Math.floor(
+        (
+          currentQuestion - 1
+        ) /
+        QUESTIONS_PER_DAY
+      ) + 1;
+
+    showQuestionPage();
+
+    renderQuestionPage();
+
+    return;
+
+  }
+
+  if (
+    Number.isFinite(dayParam) &&
+    dayParam >= 1 &&
+    dayParam <= TOTAL_DAYS
+  ) {
+
+    currentDay =
+      dayParam;
+
+    const info =
+      getDayInfo(
+        currentDay
+      );
+
+    currentQuestion =
+      info &&
+      info.questionStart
+        ? Number(
+            info.questionStart
+          )
+        : (
+            (
+              currentDay - 1
+            ) *
+            QUESTIONS_PER_DAY
+          ) + 1;
+
+    showQuestionPage();
+
+    renderQuestionPage();
+
+  }
+
+}
+
+
+/* =========================================
+   TARAYICI GERİ / İLERİ
+========================================= */
+
+window.addEventListener(
+  "popstate",
+  () => {
+
+    handleInitialUrl();
+
+  }
+);
+
+
+/* =========================================
+   SON
+========================================= */
