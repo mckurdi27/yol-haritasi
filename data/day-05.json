@@ -1,0 +1,1036 @@
+{
+  "day": 3,
+  "dayTitle": {
+    "tr": "3. Gün — Allah'ı Tanımak",
+    "en": "Day 3 — Knowing Allah",
+    "de": "3. Tag — Allah kennenlernen",
+    "ru": "3-й день — Познание Аллаха",
+    "ku": "Roj 3 — Nasîna Xwedê",
+    "ar": "الْيَوْمُ الثَّالِثُ — مَعْرِفَةُ اللَّهِ",
+    "tt": "3 нче көн — Аллаһны тану",
+    "fr": "Jour 3 — Connaître Allah",
+    "es": "Día 3 — Conocer a Allah",
+    "nl": "Dag 3 — Allah leren kennen",
+    "it": "Giorno 3 — Conoscere Allah"
+  },
+  "daySubtitle": {
+    "tr": "Allah'ın varlığı, birliği, isimleri, sıfatları ve Allah'a iman",
+    "en": "The existence, oneness, names, attributes of Allah and belief in Him",
+    "de": "Die Existenz, Einheit, Namen und Eigenschaften Allahs und der Glaube an Ihn",
+    "ru": "Существование, единство, имена и качества Аллаха и вера в Него",
+    "ku": "Hebûna Xwedê, yekîtiya Wî, nav û sifetên Wî û baweriya bi Wî",
+    "ar": "وُجُودُ اللَّهِ وَوَحْدَانِيَّتُهُ وَأَسْمَاؤُهُ وَصِفَاتُهُ وَالْإِيمَانُ بِهِ",
+    "tt": "Аллаһның барлыгы, берлеге, исемнәре, сыйфатлары һәм Аңа иман",
+    "fr": "L'existence, l'unicité, les noms et les attributs d'Allah et la foi en Lui",
+    "es": "La existencia, unicidad, nombres y atributos de Allah y la fe en Él",
+    "nl": "Het bestaan, de eenheid, namen en eigenschappen van Allah en het geloof in Hem",
+    "it": "L'esistenza, l'unicità, i nomi e gli attributi di Allah e la fede in Lui"
+  },
+  "questions": [
+    {
+      "id": 39,
+      "day": 3,
+      "tr": {
+        "q": "Allah kimdir?",
+        "a": "Allah, bütün varlıkların yaratıcısı, Rabbi ve tek ilâhıdır. O'ndan başka ibadete layık hiçbir ilâh yoktur."
+      },
+      "en": {
+        "q": "Who is Allah?",
+        "a": "Allah is the Creator and Lord of all things and the only One worthy of worship. There is no deity worthy of worship except Him."
+      },
+      "de": {
+        "q": "Wer ist Allah?",
+        "a": "Allah ist der Schöpfer und Herr aller Dinge und der einzig Anbetungswürdige. Es gibt keinen Gott, der außer Ihm zu Recht angebetet werden darf."
+      },
+      "ru": {
+        "q": "Кто такой Аллах?",
+        "a": "Аллах — Творец и Господь всего сущего, Единственный, кто достоин поклонения. Нет божества, достойного поклонения, кроме Него."
+      },
+      "ku": {
+        "q": "Xwedê kî ye?",
+        "a": "Xwedê Afirîner û Xwedayê hemû tiştan e û tenê Ew hêjayê îbadetê ye. Ji bilî Wî tu îlahê hêjayê îbadetê tune ye."
+      },
+      "ar": {
+        "q": "مَنْ هُوَ اللَّهُ؟",
+        "a": "اللَّهُ هُوَ خَالِقُ كُلِّ شَيْءٍ وَرَبُّهُ، وَهُوَ الْمَعْبُودُ بِحَقٍّ وَحْدَهُ، لَا إِلٰهَ إِلَّا هُوَ."
+      },
+      "tt": {
+        "q": "Аллаһ кем ул?",
+        "a": "Аллаһ — барлык нәрсәләрнең Яратучысы һәм Раббысы. Ул гына гыйбадәт кылырга лаек. Аннан башка гыйбадәт кылырга лаеклы илаһ юк."
+      },
+      "fr": {
+        "q": "Qui est Allah ?",
+        "a": "Allah est le Créateur et le Seigneur de toute chose et le Seul qui mérite d'être adoré. Il n'y a de divinité digne d'adoration que Lui."
+      },
+      "es": {
+        "q": "¿Quién es Allah?",
+        "a": "Allah es el Creador y Señor de todas las cosas y el Único digno de adoración. No hay ninguna divinidad digna de adoración excepto Él."
+      },
+      "nl": {
+        "q": "Wie is Allah?",
+        "a": "Allah is de Schepper en Heer van alles en de Enige Die het waard is om aanbeden te worden. Er is geen god die het recht heeft om aanbeden te worden behalve Hij."
+      },
+      "it": {
+        "q": "Chi è Allah?",
+        "a": "Allah è il Creatore e Signore di tutte le cose ed è l'Unico degno di essere adorato. Non c'è alcuna divinità degna di adorazione all'infuori di Lui."
+      },
+      "sources": [
+        "📖 Kur'an — Fâtiha 1:1-4",
+        "📖 Kur'an — İhlâs 112:1-4"
+      ]
+    },
+    {
+      "id": 40,
+      "day": 3,
+      "tr": {
+        "q": "Allah'ın varlığına nasıl inanırız?",
+        "a": "Allah'ın varlığına kesin olarak inanırız. Yaratılmışlardaki düzen, ölçü ve hikmet O'nun varlığına işaret eder."
+      },
+      "en": {
+        "q": "How do we believe in the existence of Allah?",
+        "a": "We firmly believe in the existence of Allah. The order, measure and wisdom in creation point to His existence."
+      },
+      "de": {
+        "q": "Wie glauben wir an die Existenz Allahs?",
+        "a": "Wir glauben fest an die Existenz Allahs. Die Ordnung, das Maß und die Weisheit in der Schöpfung weisen auf Seine Existenz hin."
+      },
+      "ru": {
+        "q": "Как мы верим в существование Аллаха?",
+        "a": "Мы твердо верим в существование Аллаха. Порядок, мера и мудрость в творении указывают на Его существование."
+      },
+      "ku": {
+        "q": "Em bi hebûna Xwedê çawa bawer dikin?",
+        "a": "Em bi awayekî qetî bi hebûna Xwedê bawer dikin. Rêk û pêk, pîvan û hikmeta di afirandî de hebûna Wî nîşan dide."
+      },
+      "ar": {
+        "q": "كَيْفَ نُؤْمِنُ بِوُجُودِ اللَّهِ؟",
+        "a": "نُؤْمِنُ إِيمَانًا يَقِينِيًّا بِوُجُودِ اللَّهِ، وَيَدُلُّ النِّظَامُ وَالتَّقْدِيرُ وَالْحِكْمَةُ فِي الْخَلْقِ عَلَى وُجُودِهِ."
+      },
+      "tt": {
+        "q": "Без Аллаһның барлыгына ничек ышанабыз?",
+        "a": "Без Аллаһның барлыгына ныклы иман китерәбез. Яратылыштагы тәртип, үлчәү һәм хикмәт Аның барлыгына күрсәтә."
+      },
+      "fr": {
+        "q": "Comment croyons-nous en l'existence d'Allah ?",
+        "a": "Nous croyons fermement en l'existence d'Allah. L'ordre, la mesure et la sagesse dans la création témoignent de Son existence."
+      },
+      "es": {
+        "q": "¿Cómo creemos en la existencia de Allah?",
+        "a": "Creemos firmemente en la existencia de Allah. El orden, la medida y la sabiduría de la creación indican Su existencia."
+      },
+      "nl": {
+        "q": "Hoe geloven wij in het bestaan van Allah?",
+        "a": "Wij geloven vast in het bestaan van Allah. De orde, maat en wijsheid in de schepping wijzen op Zijn bestaan."
+      },
+      "it": {
+        "q": "Come crediamo nell'esistenza di Allah?",
+        "a": "Crediamo fermamente nell'esistenza di Allah. L'ordine, la misura e la saggezza nella creazione indicano la Sua esistenza."
+      },
+      "sources": [
+        "📖 Kur'an — Tûr 52:35-36",
+        "📖 Kur'an — Fussilet 41:53"
+      ]
+    },
+
+    {
+      "id": 41,
+      "day": 3,
+      "tr": {
+        "q": "Allah'ın birliği ne demektir?",
+        "a": "Allah'ın birliği, O'nun zatında, sıfatlarında ve ibadete layık olmasında tek ve eşsiz olduğuna inanmaktır."
+      },
+      "en": {
+        "q": "What does the oneness of Allah mean?",
+        "a": "The oneness of Allah means believing that He is unique and without equal in His essence, attributes and right to be worshipped."
+      },
+      "de": {
+        "q": "Was bedeutet die Einheit Allahs?",
+        "a": "Die Einheit Allahs bedeutet, dass Er in Seinem Wesen, Seinen Eigenschaften und Seinem Recht auf Anbetung einzigartig und ohnegleichen ist."
+      },
+      "ru": {
+        "q": "Что означает единство Аллаха?",
+        "a": "Единство Аллаха означает веру в то, что Он Единственный и не имеет равных в Своей сущности, качествах и праве на поклонение."
+      },
+      "ku": {
+        "q": "Yekîtiya Xwedê çi tê wateyê?",
+        "a": "Yekîtiya Xwedê tê wateya bawerkirina ku Ew di zat, sifet û mafê îbadetê de yek û bêhempa ye."
+      },
+      "ar": {
+        "q": "مَاذَا تَعْنِي وَحْدَانِيَّةُ اللَّهِ؟",
+        "a": "وَحْدَانِيَّةُ اللَّهِ تَعْنِي الْإِيمَانَ بِأَنَّهُ وَاحِدٌ لَا شَرِيكَ لَهُ فِي ذَاتِهِ وَصِفَاتِهِ وَاسْتِحْقَاقِهِ لِلْعِبَادَةِ."
+      },
+      "tt": {
+        "q": "Аллаһның берлеге нәрсәне аңлата?",
+        "a": "Аллаһның берлеге — Аның затында, сыйфатларында һәм гыйбадәткә лаек булуында бердәнбер һәм тиңдәше юк икәненә ышану."
+      },
+      "fr": {
+        "q": "Que signifie l'unicité d'Allah ?",
+        "a": "L'unicité d'Allah signifie croire qu'Il est unique et sans égal dans Son essence, Ses attributs et Son droit à être adoré."
+      },
+      "es": {
+        "q": "¿Qué significa la unicidad de Allah?",
+        "a": "La unicidad de Allah significa creer que Él es único y sin igual en Su esencia, Sus atributos y Su derecho a ser adorado."
+      },
+      "nl": {
+        "q": "Wat betekent de eenheid van Allah?",
+        "a": "De eenheid van Allah betekent geloven dat Hij uniek en zonder gelijke is in Zijn wezen, eigenschappen en recht om aanbeden te worden."
+      },
+      "it": {
+        "q": "Che cosa significa l'unicità di Allah?",
+        "a": "L'unicità di Allah significa credere che Egli è unico e senza pari nella Sua essenza, nei Suoi attributi e nel Suo diritto di essere adorato."
+      },
+      "sources": [
+        "📖 Kur'an — İhlâs 112:1-4",
+        "📖 Kur'an — Bakara 2:163"
+      ]
+    },
+
+    {
+      "id": 42,
+      "day": 3,
+      "tr": {
+        "q": "Allah'ın ortağı var mıdır?",
+        "a": "Hayır. Allah'ın hiçbir ortağı, yardımcısı, benzeri veya dengi yoktur."
+      },
+      "en": {
+        "q": "Does Allah have a partner?",
+        "a": "No. Allah has no partner, helper, equal or likeness."
+      },
+      "de": {
+        "q": "Hat Allah einen Partner?",
+        "a": "Nein. Allah hat keinen Partner, Helfer, Gleichen oder Ebenbild."
+      },
+      "ru": {
+        "q": "Есть ли у Аллаха сотоварищ?",
+        "a": "Нет. У Аллаха нет сотоварища, помощника, равного или подобного Ему."
+      },
+      "ku": {
+        "q": "Ma Xwedê hevpar heye?",
+        "a": "Na. Xwedê ne hevpar, ne alîkar, ne wekhev û ne jî hembêz heye."
+      },
+      "ar": {
+        "q": "هَلْ لِلَّهِ شَرِيكٌ؟",
+        "a": "لَا، لَيْسَ لِلَّهِ شَرِيكٌ وَلَا مُعِينٌ وَلَا نِدٌّ وَلَا مِثْلٌ."
+      },
+      "tt": {
+        "q": "Аллаһның ширкие бармы?",
+        "a": "Юк. Аллаһның һичнинди уртаклыгы, ярдәмчесе, тиңдәше яки Аңа охшаш нәрсәсе юк."
+      },
+      "fr": {
+        "q": "Allah a-t-Il un associé ?",
+        "a": "Non. Allah n'a ni associé, ni auxiliaire, ni égal, ni semblable."
+      },
+      "es": {
+        "q": "¿Tiene Allah un asociado?",
+        "a": "No. Allah no tiene asociado, ayudante, igual ni semejante."
+      },
+      "nl": {
+        "q": "Heeft Allah een deelgenoot?",
+        "a": "Nee. Allah heeft geen deelgenoot, helper, gelijke of gelijkenis."
+      },
+      "it": {
+        "q": "Allah ha un socio?",
+        "a": "No. Allah non ha alcun socio, aiutante, pari o simile."
+      },
+      "sources": [
+        "📖 Kur'an — İhlâs 112:1-4",
+        "📖 Kur'an — Enbiyâ 21:22"
+      ]
+    },
+
+    {
+      "id": 43,
+      "day": 3,
+      "tr": {
+        "q": "Allah'ı kim yaratmıştır?",
+        "a": "Allah yaratılmış değildir. O, ezelîdir; bütün yaratılmışları yaratan O'dur."
+      },
+      "en": {
+        "q": "Who created Allah?",
+        "a": "Allah was not created. He is eternal, and He is the Creator of all created things."
+      },
+      "de": {
+        "q": "Wer hat Allah erschaffen?",
+        "a": "Allah wurde nicht erschaffen. Er ist ewig und der Schöpfer aller erschaffenen Dinge."
+      },
+      "ru": {
+        "q": "Кто создал Аллаха?",
+        "a": "Аллах не был создан. Он вечен и является Творцом всего созданного."
+      },
+      "ku": {
+        "q": "Kî Xwedê afirand?",
+        "a": "Xwedê nehat afirandin. Ew ezelî ye û Afirînerê hemû tiştên hatine afirandin e."
+      },
+      "ar": {
+        "q": "مَنْ خَلَقَ اللَّهَ؟",
+        "a": "اللَّهُ لَمْ يُخْلَقْ، فَهُوَ الْأَزَلِيُّ، وَهُوَ خَالِقُ كُلِّ الْمَخْلُوقَاتِ."
+      },
+      "tt": {
+        "q": "Аллаһны кем яраткан?",
+        "a": "Аллаһ яратылган түгел. Ул мәңгелек һәм барлык яратылган нәрсәләрнең Яратучысы."
+      },
+      "fr": {
+        "q": "Qui a créé Allah ?",
+        "a": "Allah n'a pas été créé. Il est éternel et Il est le Créateur de toute chose créée."
+      },
+      "es": {
+        "q": "¿Quién creó a Allah?",
+        "a": "Allah no fue creado. Él es eterno y es el Creador de todo lo creado."
+      },
+      "nl": {
+        "q": "Wie heeft Allah geschapen?",
+        "a": "Allah is niet geschapen. Hij is eeuwig en Hij is de Schepper van alles wat geschapen is."
+      },
+      "it": {
+        "q": "Chi ha creato Allah?",
+        "a": "Allah non è stato creato. Egli è eterno ed è il Creatore di tutto ciò che è creato."
+      },
+      "sources": [
+        "📖 Kur'an — Hadîd 57:3",
+        "📖 Kur'an — İhlâs 112:1-3"
+      ]
+    },
+
+    {
+      "id": 44,
+      "day": 3,
+      "tr": {
+        "q": "Allah ezelî ve ebedî midir?",
+        "a": "Evet. Allah'ın başlangıcı ve sonu yoktur. O ezelî ve ebedîdir."
+      },
+      "en": {
+        "q": "Is Allah eternal and everlasting?",
+        "a": "Yes. Allah has neither a beginning nor an end. He is eternal and everlasting."
+      },
+      "de": {
+        "q": "Ist Allah ewig und unvergänglich?",
+        "a": "Ja. Allah hat weder einen Anfang noch ein Ende. Er ist ewig und unvergänglich."
+      },
+      "ru": {
+        "q": "Вечен ли Аллах?",
+        "a": "Да. У Аллаха нет ни начала, ни конца. Он вечен и бесконечен."
+      },
+      "ku": {
+        "q": "Ma Xwedê ezelî û ebedî ye?",
+        "a": "Erê. Xwedê ne destpêk û ne dawî heye. Ew ezelî û ebedî ye."
+      },
+      "ar": {
+        "q": "هَلِ اللَّهُ أَزَلِيٌّ وَأَبَدِيٌّ؟",
+        "a": "نَعَمْ، لَيْسَ لِلَّهِ بَدَايَةٌ وَلَا نِهَايَةٌ، فَهُوَ الْأَوَّلُ وَالْآخِرُ."
+      },
+      "tt": {
+        "q": "Аллаһ мәңгелекме?",
+        "a": "Әйе. Аллаһның башы да, ахыры да юк. Ул мәңгелек."
+      },
+      "fr": {
+        "q": "Allah est-Il éternel et perpétuel ?",
+        "a": "Oui. Allah n'a ni commencement ni fin. Il est éternel et perpétuel."
+      },
+      "es": {
+        "q": "¿Es Allah eterno y perdurable?",
+        "a": "Sí. Allah no tiene principio ni fin. Él es eterno y perdurable."
+      },
+      "nl": {
+        "q": "Is Allah eeuwig en blijvend?",
+        "a": "Ja. Allah heeft geen begin en geen einde. Hij is eeuwig en blijvend."
+      },
+      "it": {
+        "q": "Allah è eterno e perpetuo?",
+        "a": "Sì. Allah non ha né inizio né fine. Egli è eterno e perpetuo."
+      },
+      "sources": [
+        "📖 Kur'an — Hadîd 57:3",
+        "📖 Kur'an — Rahmân 55:26-27"
+      ]
+    },
+
+    {
+      "id": 45,
+      "day": 3,
+      "tr": {
+        "q": "Allah nerede ve nasıldır?",
+        "a": "Allah yaratılmışlara benzemez. O'nun zatının nasıl olduğunu insan aklı tam olarak kavrayamaz."
+      },
+      "en": {
+        "q": "Where and what is Allah like?",
+        "a": "Allah is unlike His creation. The human mind cannot fully comprehend the reality of His essence."
+      },
+      "de": {
+        "q": "Wo ist Allah und wie ist Er?",
+        "a": "Allah ist Seiner Schöpfung nicht gleich. Der menschliche Verstand kann die Wirklichkeit Seines Wesens nicht vollständig erfassen."
+      },
+      "ru": {
+        "q": "Где Аллах и каков Он?",
+        "a": "Аллах не подобен Своему творению. Человеческий разум не способен полностью постичь сущность Аллаха."
+      },
+      "ku": {
+        "q": "Xwedê li ku ye û çawa ye?",
+        "a": "Xwedê ne wekî afirandiyên xwe ye. Aqilê mirovan nikare rastiya zata Wî bi tevahî bigihîje."
+      },
+      "ar": {
+        "q": "أَيْنَ اللَّهُ وَكَيْفَ هُوَ؟",
+        "a": "اللَّهُ لَيْسَ كَشَيْءٍ مِنْ خَلْقِهِ، وَلَا يُحِيطُ الْعَقْلُ الْبَشَرِيُّ بِكُنْهِ ذَاتِهِ."
+      },
+      "tt": {
+        "q": "Аллаһ кайда һәм Ул нинди?",
+        "a": "Аллаһ Үзе яраткан нәрсәләргә охшамый. Кеше акылы Аның затын тулысынча аңлап бетерә алмый."
+      },
+      "fr": {
+        "q": "Où est Allah et comment est-Il ?",
+        "a": "Allah ne ressemble pas à Sa création. L'esprit humain ne peut pas pleinement comprendre la réalité de Son essence."
+      },
+      "es": {
+        "q": "¿Dónde está Allah y cómo es?",
+        "a": "Allah no se parece a Su creación. La mente humana no puede comprender plenamente la realidad de Su esencia."
+      },
+      "nl": {
+        "q": "Waar is Allah en hoe is Hij?",
+        "a": "Allah lijkt niet op Zijn schepping. Het menselijk verstand kan de werkelijkheid van Zijn wezen niet volledig bevatten."
+      },
+      "it": {
+        "q": "Dov'è Allah e com'è?",
+        "a": "Allah non assomiglia alla Sua creazione. La mente umana non può comprendere pienamente la realtà della Sua essenza."
+      },
+      "sources": [
+        "📖 Kur'an — Şûrâ 42:11",
+        "📖 Kur'an — İhlâs 112:4"
+      ]
+    },
+
+    {
+      "id": 46,
+      "day": 3,
+      "tr": {
+        "q": "Allah'ın isimleri nelerdir?",
+        "a": "Allah'ın Kur'an ve sahih sünnette bildirilen çok güzel isimleri vardır. Bunlara Esmâü'l-Hüsnâ denir."
+      },
+      "en": {
+        "q": "What are the names of Allah?",
+        "a": "Allah has beautiful names mentioned in the Qur'an and authentic Sunnah. They are called al-Asma al-Husna."
+      },
+      "de": {
+        "q": "Welche Namen hat Allah?",
+        "a": "Allah hat viele schöne Namen, die im Qur'an und in der authentischen Sunnah überliefert sind. Sie werden al-Asma al-Husna genannt."
+      },
+      "ru": {
+        "q": "Каковы имена Аллаха?",
+        "a": "У Аллаха есть прекрасные имена, упомянутые в Коране и достоверной Сунне. Они называются Прекраснейшими именами Аллаха."
+      },
+      "ku": {
+        "q": "Navên Xwedê çi ne?",
+        "a": "Xwedê navên gelekî xweş hene ku di Qur'an û Sunneta sahîh de hatine gotin. Ji wan re Esmâü'l-Husna tê gotin."
+      },
+      "ar": {
+        "q": "مَا هِيَ أَسْمَاءُ اللَّهِ؟",
+        "a": "لِلَّهِ أَسْمَاءٌ حُسْنَى وَجَمِيلَةٌ وَرَدَتْ فِي الْقُرْآنِ وَالسُّنَّةِ الصَّحِيحَةِ، وَتُسَمَّى أَسْمَاءَ اللَّهِ الْحُسْنَى."
+      },
+      "tt": {
+        "q": "Аллаһның исемнәре нинди?",
+        "a": "Аллаһның Коръәндә һәм сәхих Сөннәттә килгән күркәм исемнәре бар. Аларны Әсмәүл-Хөсна дип атыйлар."
+      },
+      "fr": {
+        "q": "Quels sont les noms d'Allah ?",
+        "a": "Allah possède de beaux noms mentionnés dans le Coran et la Sunna authentique. Ils sont appelés les Beaux Noms d'Allah."
+      },
+      "es": {
+        "q": "¿Cuáles son los nombres de Allah?",
+        "a": "Allah tiene hermosos nombres mencionados en el Corán y la Sunna auténtica. Se conocen como los Bellos Nombres de Allah."
+      },
+      "nl": {
+        "q": "Wat zijn de namen van Allah?",
+        "a": "Allah heeft prachtige namen die in de Koran en de authentieke soenna worden genoemd. Ze worden de Schone Namen van Allah genoemd."
+      },
+      "it": {
+        "q": "Quali sono i nomi di Allah?",
+        "a": "Allah ha bellissimi nomi menzionati nel Corano e nella Sunnah autentica. Sono chiamati i Bei Nomi di Allah."
+      },
+      "sources": [
+        "📖 Kur'an — A'râf 7:180",
+        "📖 Kur'an — İsrâ 17:110"
+      ]
+    },
+
+    {
+      "id": 47,
+      "day": 3,
+      "tr": {
+        "q": "Esmâü'l-Hüsnâ ne demektir?",
+        "a": "Esmâü'l-Hüsnâ, Allah'ın en güzel isimleri demektir."
+      },
+      "en": {
+        "q": "What does al-Asma al-Husna mean?",
+        "a": "Al-Asma al-Husna means the Most Beautiful Names of Allah."
+      },
+      "de": {
+        "q": "Was bedeutet al-Asma al-Husna?",
+        "a": "Al-Asma al-Husna bedeutet die schönsten Namen Allahs."
+      },
+      "ru": {
+        "q": "Что означает аль-Асма аль-Хусна?",
+        "a": "Аль-Асма аль-Хусна означает Прекраснейшие имена Аллаха."
+      },
+      "ku": {
+        "q": "Esmâü'l-Husna çi tê wateyê?",
+        "a": "Esmâü'l-Husna tê wateya navên herî xweş ên Xwedê."
+      },
+      "ar": {
+        "q": "مَاذَا تَعْنِي أَسْمَاءُ اللَّهِ الْحُسْنَى؟",
+        "a": "أَسْمَاءُ اللَّهِ الْحُسْنَى تَعْنِي أَجْمَلَ أَسْمَاءِ اللَّهِ."
+      },
+      "tt": {
+        "q": "Әсмәүл-Хөсна нәрсәне аңлата?",
+        "a": "Әсмәүл-Хөсна — Аллаһның иң күркәм исемнәре дигәнне аңлата."
+      },
+      "fr": {
+        "q": "Que signifie al-Asma al-Husna ?",
+        "a": "Al-Asma al-Husna signifie les Plus Beaux Noms d'Allah."
+      },
+      "es": {
+        "q": "¿Qué significa al-Asma al-Husna?",
+        "a": "Al-Asma al-Husna significa los Bellísimos Nombres de Allah."
+      },
+      "nl": {
+        "q": "Wat betekent al-Asma al-Husna?",
+        "a": "Al-Asma al-Husna betekent de Mooiste Namen van Allah."
+      },
+      "it": {
+        "q": "Che cosa significa al-Asma al-Husna?",
+        "a": "Al-Asma al-Husna significa i Nomi più belli di Allah."
+      },
+      "sources": [
+        "📖 Kur'an — A'râf 7:180"
+      ]
+    },
+
+    {
+      "id": 48,
+      "day": 3,
+      "tr": {
+        "q": "Allah'ın Rahmân ve Rahîm olması ne demektir?",
+        "a": "Allah'ın Rahmân olması bütün yaratılmışlara geniş rahmetinin, Rahîm olması ise özellikle müminlere olan özel rahmetinin tecellisini ifade eder."
+      },
+      "en": {
+        "q": "What do Ar-Rahman and Ar-Rahim mean?",
+        "a": "Ar-Rahman refers to Allah's vast mercy toward creation, while Ar-Rahim refers especially to His special mercy toward believers."
+      },
+      "de": {
+        "q": "Was bedeuten Ar-Rahman und Ar-Rahim?",
+        "a": "Ar-Rahman bezeichnet Allahs umfassende Barmherzigkeit gegenüber der Schöpfung, während Ar-Rahim besonders Seine besondere Barmherzigkeit gegenüber den Gläubigen bezeichnet."
+      },
+      "ru": {
+        "q": "Что означают имена Ар-Рахман и Ар-Рахим?",
+        "a": "Ар-Рахман указывает на всеобъемлющую милость Аллаха к творениям, а Ар-Рахим — особенно на Его особую милость к верующим."
+      },
+      "ku": {
+        "q": "Rahman û Rahîm çi ne?",
+        "a": "Rahman rahmeta fireh a Xwedê li hember hemû afirandiyan nîşan dide, Rahîm jî bi taybetî rahmeta Wî li hember bawermendan nîşan dide."
+      },
+      "ar": {
+        "q": "مَاذَا يَعْنِي الرَّحْمَنُ وَالرَّحِيمُ؟",
+        "a": "الرَّحْمَنُ يَدُلُّ عَلَى رَحْمَةِ اللَّهِ الْوَاسِعَةِ بِخَلْقِهِ، وَالرَّحِيمُ يَدُلُّ خَاصَّةً عَلَى رَحْمَتِهِ بِالْمُؤْمِنِينَ."
+      },
+      "tt": {
+        "q": "Рахмән һәм Рәхим нәрсәне аңлата?",
+        "a": "Рахмән — Аллаһның барлык мәхлукларга киң рәхмәтен, Рәхим исә аеруча мөэминнәргә булган махсус рәхмәтен аңлата."
+      },
+      "fr": {
+        "q": "Que signifient Ar-Rahman et Ar-Rahim ?",
+        "a": "Ar-Rahman désigne la vaste miséricorde d'Allah envers Sa création, tandis qu'Ar-Rahim désigne particulièrement Sa miséricorde envers les croyants."
+      },
+      "es": {
+        "q": "¿Qué significan Ar-Rahman y Ar-Rahim?",
+        "a": "Ar-Rahman expresa la amplia misericordia de Allah hacia Su creación, mientras que Ar-Rahim expresa especialmente Su misericordia hacia los creyentes."
+      },
+      "nl": {
+        "q": "Wat betekenen Ar-Rahman en Ar-Rahim?",
+        "a": "Ar-Rahman verwijst naar de uitgebreide barmhartigheid van Allah tegenover Zijn schepping, terwijl Ar-Rahim vooral verwijst naar Zijn bijzondere barmhartigheid tegenover de gelovigen."
+      },
+      "it": {
+        "q": "Che cosa significano Ar-Rahman e Ar-Rahim?",
+        "a": "Ar-Rahman indica l'ampia misericordia di Allah verso la Sua creazione, mentre Ar-Rahim indica in particolare la Sua misericordia verso i credenti."
+      },
+      "sources": [
+        "📖 Kur'an — Fâtiha 1:1",
+        "📖 Kur'an — A'râf 7:156"
+      ]
+    },
+
+    {
+      "id": 49,
+      "day": 3,
+      "tr": {
+        "q": "Allah her şeyi bilir mi?",
+        "a": "Evet. Allah geçmişi, şimdiyi ve geleceği bilir. O'nun ilmi her şeyi kuşatmıştır."
+      },
+      "en": {
+        "q": "Does Allah know everything?",
+        "a": "Yes. Allah knows the past, present and future. His knowledge encompasses everything."
+      },
+      "de": {
+        "q": "Weiß Allah alles?",
+        "a": "Ja. Allah kennt Vergangenheit, Gegenwart und Zukunft. Sein Wissen umfasst alles."
+      },
+      "ru": {
+        "q": "Знает ли Аллах всё?",
+        "a": "Да. Аллах знает прошлое, настоящее и будущее. Его знание объемлет всё."
+      },
+      "ku": {
+        "q": "Ma Xwedê her tiştî dizane?",
+        "a": "Erê. Xwedê rabirdû, niha û siberojê dizane. Zanîna Wî hemû tiştan digire nav xwe."
+      },
+      "ar": {
+        "q": "هَلْ يَعْلَمُ اللَّهُ كُلَّ شَيْءٍ؟",
+        "a": "نَعَمْ، يَعْلَمُ اللَّهُ الْمَاضِيَ وَالْحَاضِرَ وَالْمُسْتَقْبَلَ، وَقَدْ أَحَاطَ عِلْمُهُ بِكُلِّ شَيْءٍ."
+      },
+      "tt": {
+        "q": "Аллаһ бар нәрсәне беләме?",
+        "a": "Әйе. Аллаһ үткәнне, хәзергене һәм киләчәкне белә. Аның гыйлеме һәр нәрсәне камил рәвештә үз эченә ала."
+      },
+      "fr": {
+        "q": "Allah sait-Il toute chose ?",
+        "a": "Oui. Allah connaît le passé, le présent et l'avenir. Sa connaissance englobe toute chose."
+      },
+      "es": {
+        "q": "¿Allah lo sabe todo?",
+        "a": "Sí. Allah conoce el pasado, el presente y el futuro. Su conocimiento abarca todas las cosas."
+      },
+      "nl": {
+        "q": "Weet Allah alles?",
+        "a": "Ja. Allah kent het verleden, het heden en de toekomst. Zijn kennis omvat alles."
+      },
+      "it": {
+        "q": "Allah sa tutto?",
+        "a": "Sì. Allah conosce il passato, il presente e il futuro. La Sua conoscenza comprende ogni cosa."
+      },
+      "sources": [
+        "📖 Kur'an — En'âm 6:59",
+        "📖 Kur'an — Bakara 2:255"
+      ]
+    },
+
+    {
+      "id": 50,
+      "day": 3,
+      "tr": {
+        "q": "Allah her şeyi görür mü?",
+        "a": "Evet. Allah gizli ve açık olan her şeyi görür. O'ndan hiçbir şey gizli kalmaz."
+      },
+      "en": {
+        "q": "Does Allah see everything?",
+        "a": "Yes. Allah sees everything, whether hidden or apparent. Nothing is hidden from Him."
+      },
+      "de": {
+        "q": "Sieht Allah alles?",
+        "a": "Ja. Allah sieht alles, was verborgen und was offen ist. Nichts bleibt Ihm verborgen."
+      },
+      "ru": {
+        "q": "Видит ли Аллах всё?",
+        "a": "Да. Аллах видит всё скрытое и явное. Ничто не скрыто от Него."
+      },
+      "ku": {
+        "q": "Ma Xwedê her tiştî dibîne?",
+        "a": "Erê. Xwedê hemû tiştên veşartî û eşkere dibîne. Tu tişt ji Wî veşartî namîne."
+      },
+      "ar": {
+        "q": "هَلْ يَرَى اللَّهُ كُلَّ شَيْءٍ؟",
+        "a": "نَعَمْ، يَرَى اللَّهُ كُلَّ شَيْءٍ، سِرَّهُ وَعَلَانِيَتَهُ، وَلَا يَخْفَى عَلَيْهِ شَيْءٌ."
+      },
+      "tt": {
+        "q": "Аллаһ бар нәрсәне күрә беләме?",
+        "a": "Әйе. Аллаһ яшерен һәм ачык булган бар нәрсәне күрә. Аннан бернәрсә дә яшерен түгел."
+      },
+      "fr": {
+        "q": "Allah voit-Il toute chose ?",
+        "a": "Oui. Allah voit toute chose, qu'elle soit cachée ou apparente. Rien ne Lui est caché."
+      },
+      "es": {
+        "q": "¿Allah lo ve todo?",
+        "a": "Sí. Allah ve todo, tanto lo oculto como lo manifiesto. Nada se Le oculta."
+      },
+      "nl": {
+        "q": "Ziet Allah alles?",
+        "a": "Ja. Allah ziet alles, zowel het verborgene als het zichtbare. Niets is voor Hem verborgen."
+      },
+      "it": {
+        "q": "Allah vede ogni cosa?",
+        "a": "Sì. Allah vede ogni cosa, sia ciò che è nascosto sia ciò che è manifesto. Nulla Gli è nascosto."
+      },
+      "sources": [
+        "📖 Kur'an — Mücâdele 58:7",
+        "📖 Kur'an — Mülk 67:14"
+      ]
+    },
+
+    {
+      "id": 51,
+      "day": 3,
+      "tr": {
+        "q": "Allah her şeyi işitir mi?",
+        "a": "Evet. Allah bütün sesleri ve duaları işitir. O'nun işitmesi sınırsızdır."
+      },
+      "en": {
+        "q": "Does Allah hear everything?",
+        "a": "Yes. Allah hears all sounds and prayers. His hearing is unlimited."
+      },
+      "de": {
+        "q": "Hört Allah alles?",
+        "a": "Ja. Allah hört alle Stimmen und Gebete. Sein Hören ist unbegrenzt."
+      },
+      "ru": {
+        "q": "Слышит ли Аллах всё?",
+        "a": "Да. Аллах слышит все звуки и молитвы. Его слух не имеет границ."
+      },
+      "ku": {
+        "q": "Ma Xwedê her tiştî dibihîze?",
+        "a": "Erê. Xwedê hemû deng û dualan dibihîze. Bihîstina Wî bê sînor e."
+      },
+      "ar": {
+        "q": "هَلْ يَسْمَعُ اللَّهُ كُلَّ شَيْءٍ؟",
+        "a": "نَعَمْ، يَسْمَعُ اللَّهُ جَمِيعَ الْأَصْوَاتِ وَالدُّعَاءَ، وَسَمْعُهُ لَا حَدَّ لَهُ."
+      },
+      "tt": {
+        "q": "Аллаһ бар нәрсәне ишетәме?",
+        "a": "Әйе. Аллаһ барлык тавышларны һәм догаларны ишетә. Аның ишетүе чиксез."
+      },
+      "fr": {
+        "q": "Allah entend-Il toute chose ?",
+        "a": "Oui. Allah entend tous les sons et toutes les invocations. Son ouïe est sans limite."
+      },
+      "es": {
+        "q": "¿Allah lo escucha todo?",
+        "a": "Sí. Allah escucha todos los sonidos y las súplicas. Su oído no tiene límites."
+      },
+      "nl": {
+        "q": "Hoort Allah alles?",
+        "a": "Ja. Allah hoort alle geluiden en smeekbeden. Zijn gehoor is onbeperkt."
+      },
+      "it": {
+        "q": "Allah ascolta ogni cosa?",
+        "a": "Sì. Allah ascolta tutti i suoni e le suppliche. Il Suo udito è illimitato."
+      },
+      "sources": [
+        "📖 Kur'an — Mücâdele 58:1",
+        "📖 Kur'an — Bakara 2:256"
+      ]
+    },
+
+    {
+      "id": 52,
+      "day": 3,
+      "tr": {
+        "q": "Allah'ın kudreti ne demektir?",
+        "a": "Allah'ın kudreti, O'nun her şeye gücünün yetmesi ve dilediğini hikmetiyle gerçekleştirmesidir."
+      },
+      "en": {
+        "q": "What does the power of Allah mean?",
+        "a": "The power of Allah means that He has power over all things and accomplishes whatever He wills with wisdom."
+      },
+      "de": {
+        "q": "Was bedeutet die Macht Allahs?",
+        "a": "Allahs Macht bedeutet, dass Er über alle Dinge Macht hat und mit Weisheit verwirklicht, was Er will."
+      },
+      "ru": {
+        "q": "Что означает могущество Аллаха?",
+        "a": "Могущество Аллаха означает, что Он способен на всё и осуществляет то, что пожелает, согласно Своей мудрости."
+      },
+      "ku": {
+        "q": "Hêza Xwedê çi tê wateyê?",
+        "a": "Hêza Xwedê tê wateya ku Ew li ser her tiştî hêz e û bi hikmeta xwe her tiştê ku bixwaze pêk tîne."
+      },
+      "ar": {
+        "q": "مَاذَا تَعْنِي قُدْرَةُ اللَّهِ؟",
+        "a": "قُدْرَةُ اللَّهِ تَعْنِي أَنَّهُ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، وَأَنَّهُ يَفْعَلُ مَا يَشَاءُ بِحِكْمَةٍ."
+      },
+      "tt": {
+        "q": "Аллаһның кодрәте нәрсәне аңлата?",
+        "a": "Аллаһның кодрәте — Аның һәр нәрсәгә көче җитүен һәм Үзе теләгәнне хикмәт белән тормышка ашыруын аңлата."
+      },
+      "fr": {
+        "q": "Que signifie la puissance d'Allah ?",
+        "a": "La puissance d'Allah signifie qu'Il est capable de toute chose et qu'Il accomplit ce qu'Il veut avec sagesse."
+      },
+      "es": {
+        "q": "¿Qué significa el poder de Allah?",
+        "a": "El poder de Allah significa que Él tiene poder sobre todas las cosas y realiza lo que quiere con sabiduría."
+      },
+      "nl": {
+        "q": "Wat betekent de macht van Allah?",
+        "a": "De macht van Allah betekent dat Hij macht heeft over alles en met wijsheid uitvoert wat Hij wil."
+      },
+      "it": {
+        "q": "Che cosa significa la potenza di Allah?",
+        "a": "La potenza di Allah significa che Egli ha potere su ogni cosa e realizza ciò che vuole con saggezza."
+      },
+      "sources": [
+        "📖 Kur'an — Bakara 2:20",
+        "📖 Kur'an — Mülk 67:1"
+      ]
+    },
+
+    {
+      "id": 53,
+      "day": 3,
+      "tr": {
+        "q": "Allah kullarına yakın mıdır?",
+        "a": "Evet. Allah kullarının duasını işitir, hâllerini bilir ve onlara rahmetiyle yakındır."
+      },
+      "en": {
+        "q": "Is Allah close to His servants?",
+        "a": "Yes. Allah hears the prayers of His servants, knows their conditions and is near to them through His mercy."
+      },
+      "de": {
+        "q": "Ist Allah Seinen Dienern nahe?",
+        "a": "Ja. Allah hört die Gebete Seiner Diener, kennt ihren Zustand und ist ihnen durch Seine Barmherzigkeit nahe."
+      },
+      "ru": {
+        "q": "Близок ли Аллах к Своим рабам?",
+        "a": "Да. Аллах слышит молитвы Своих рабов, знает их состояние и близок к ним Своей милостью."
+      },
+      "ku": {
+        "q": "Ma Xwedê nêzîkî bendeyên xwe ye?",
+        "a": "Erê. Xwedê dualên bendeyên xwe dibihîze, rewşa wan dizane û bi rahmeta xwe nêzî wan e."
+      },
+      "ar": {
+        "q": "هَلِ اللَّهُ قَرِيبٌ مِنْ عِبَادِهِ؟",
+        "a": "نَعَمْ، اللَّهُ يَسْمَعُ دُعَاءَ عِبَادِهِ، وَيَعْلَمُ أَحْوَالَهُمْ، وَهُوَ قَرِيبٌ مِنْهُمْ بِرَحْمَتِهِ."
+      },
+      "tt": {
+        "q": "Аллаһ Үзенең колларына якынмы?",
+        "a": "Әйе. Аллаһ колларының догаларын ишетә, аларның хәлләрен белә һәм Үзенең рәхмәте белән аларга якын."
+      },
+      "fr": {
+        "q": "Allah est-Il proche de Ses serviteurs ?",
+        "a": "Oui. Allah entend les invocations de Ses serviteurs, connaît leur situation et est proche d'eux par Sa miséricorde."
+      },
+      "es": {
+        "q": "¿Allah está cerca de Sus siervos?",
+        "a": "Sí. Allah escucha las súplicas de Sus siervos, conoce su situación y está cerca de ellos mediante Su misericordia."
+      },
+      "nl": {
+        "q": "Is Allah dicht bij Zijn dienaren?",
+        "a": "Ja. Allah hoort de smeekbeden van Zijn dienaren, kent hun toestand en is door Zijn barmhartigheid dicht bij hen."
+      },
+      "it": {
+        "q": "Allah è vicino ai Suoi servi?",
+        "a": "Sì. Allah ascolta le suppliche dei Suoi servi, conosce la loro situazione ed è vicino a loro con la Sua misericordia."
+      },
+      "sources": [
+        "📖 Kur'an — Bakara 2:186",
+        "📖 Kur'an — Kaf 50:16"
+      ]
+    },
+
+    {
+      "id": 54,
+      "day": 3,
+      "tr": {
+        "q": "Allah neden ibadet edilmeye layıktır?",
+        "a": "Çünkü Allah tek yaratıcı ve Rabbimizdir. Bütün nimetleri veren O'dur ve ibadete yalnızca O layıktır."
+      },
+      "en": {
+        "q": "Why is Allah worthy of worship?",
+        "a": "Because Allah alone is the Creator and our Lord. He is the giver of all blessings and alone deserves worship."
+      },
+      "de": {
+        "q": "Warum ist Allah der Anbetung würdig?",
+        "a": "Weil Allah allein der Schöpfer und unser Herr ist. Er schenkt alle Gaben und allein ist Er der Anbetung würdig."
+      },
+      "ru": {
+        "q": "Почему Аллах достоин поклонения?",
+        "a": "Потому что только Аллах является Творцом и нашим Господом. Он дарует все блага и только Он достоин поклонения."
+      },
+      "ku": {
+        "q": "Çima Xwedê hêjayê îbadetê ye?",
+        "a": "Ji ber ku tenê Xwedê Afirîner û Xwedayê me ye. Ew hemû nîmetan dide û tenê Ew hêjayê îbadetê ye."
+      },
+      "ar": {
+        "q": "لِمَاذَا اللَّهُ وَحْدَهُ يَسْتَحِقُّ الْعِبَادَةَ؟",
+        "a": "لِأَنَّ اللَّهَ وَحْدَهُ هُوَ الْخَالِقُ وَرَبُّنَا، وَهُوَ الْمُنْعِمُ بِجَمِيعِ النِّعَمِ، وَهُوَ وَحْدَهُ الْمُسْتَحِقُّ لِلْعِبَادَةِ."
+      },
+      "tt": {
+        "q": "Ни өчен Аллаһ гыйбадәткә лаек?",
+        "a": "Чөнки Аллаһ бердәнбер Яратучыбыз һәм Раббыбыз. Барлык нигъмәтләрне Ул бирә һәм гыйбадәткә бары Ул гына лаек."
+      },
+      "fr": {
+        "q": "Pourquoi Allah mérite-t-Il d'être adoré ?",
+        "a": "Parce qu'Allah seul est le Créateur et notre Seigneur. Il est Celui qui accorde toutes les bénédictions et Lui seul mérite l'adoration."
+      },
+      "es": {
+        "q": "¿Por qué Allah merece ser adorado?",
+        "a": "Porque Allah es el único Creador y nuestro Señor. Él concede todas las bendiciones y solo Él merece la adoración."
+      },
+      "nl": {
+        "q": "Waarom is Allah het waard om aanbeden te worden?",
+        "a": "Omdat Allah alleen de Schepper en onze Heer is. Hij schenkt alle gunsten en alleen Hij verdient aanbidding."
+      },
+      "it": {
+        "q": "Perché Allah è degno di essere adorato?",
+        "a": "Perché Allah è l'unico Creatore e il nostro Signore. Egli concede tutte le benedizioni e solo Lui merita l'adorazione."
+      },
+      "sources": [
+        "📖 Kur'an — Fâtiha 1:2-5",
+        "📖 Kur'an — Bakara 2:21-22"
+      ]
+    },
+
+    {
+      "id": 55,
+      "day": 3,
+      "tr": {
+        "q": "Allah'ın sıfatları ne demektir?",
+        "a": "Allah'ın sıfatları, O'nun zatına layık olan mükemmel özellikleridir. Allah'ın sıfatları yaratılmışların özelliklerine benzemez."
+      },
+      "en": {
+        "q": "What are the attributes of Allah?",
+        "a": "The attributes of Allah are perfect qualities befitting His essence. They are unlike the qualities of created beings."
+      },
+      "de": {
+        "q": "Was sind die Eigenschaften Allahs?",
+        "a": "Die Eigenschaften Allahs sind vollkommene Eigenschaften, die Seinem Wesen entsprechen. Sie sind nicht wie die Eigenschaften der Geschöpfe."
+      },
+      "ru": {
+        "q": "Что такое качества Аллаха?",
+        "a": "Качества Аллаха — это совершенные качества, соответствующие Его сущности. Они не подобны качествам созданий."
+      },
+      "ku": {
+        "q": "Sifetên Xwedê çi ne?",
+        "a": "Sifetên Xwedê taybetmendiyên kamil ên li gorî zata Wî ne. Ew ne wekî taybetmendiyên afirandiyan in."
+      },
+      "ar": {
+        "q": "مَا هِيَ صِفَاتُ اللَّهِ؟",
+        "a": "صِفَاتُ اللَّهِ هِيَ صِفَاتُ الْكَمَالِ اللَّائِقَةُ بِذَاتِهِ، وَلَا تُشْبِهُ صِفَاتِ الْمَخْلُوقِينَ."
+      },
+      "tt": {
+        "q": "Аллаһның сыйфатлары нәрсә ул?",
+        "a": "Аллаһның сыйфатлары — Аның затына лаек булган камил сыйфатлар. Алар мәхлукларның сыйфатларына охшамый."
+      },
+      "fr": {
+        "q": "Quels sont les attributs d'Allah ?",
+        "a": "Les attributs d'Allah sont des qualités parfaites qui conviennent à Son essence. Ils ne ressemblent pas aux qualités des créatures."
+      },
+      "es": {
+        "q": "¿Cuáles son los atributos de Allah?",
+        "a": "Los atributos de Allah son cualidades perfectas que corresponden a Su esencia. No se parecen a las cualidades de las criaturas."
+      },
+      "nl": {
+        "q": "Wat zijn de eigenschappen van Allah?",
+        "a": "De eigenschappen van Allah zijn volmaakte eigenschappen die bij Zijn wezen passen. Ze lijken niet op de eigenschappen van schepselen."
+      },
+      "it": {
+        "q": "Quali sono gli attributi di Allah?",
+        "a": "Gli attributi di Allah sono qualità perfette che sono proprie della Sua essenza. Non assomigliano alle qualità delle creature."
+      },
+      "sources": [
+        "📖 Kur'an — Şûrâ 42:11",
+        "📖 Kur'an — A'râf 7:180"
+      ]
+    },
+
+    {
+      "id": 56,
+      "day": 3,
+      "tr": {
+        "q": "Allah'ın sevgisi ve gazabı var mıdır?",
+        "a": "Evet. Kur'an ve sünnette Allah'ın sevdiği ve razı olduğu kullardan, ayrıca gazabına uğrayan kimselerden söz edilir. Ancak Allah'ın sıfatları yaratılmışların sıfatlarına benzemez."
+      },
+      "en": {
+        "q": "Does Allah have love and anger?",
+        "a": "Yes. The Qur'an and Sunnah mention those whom Allah loves and is pleased with, as well as those who incur His anger. His attributes are unlike those of creation."
+      },
+      "de": {
+        "q": "Hat Allah Liebe und Zorn?",
+        "a": "Ja. Der Qur'an und die Sunnah sprechen von Menschen, die Allah liebt und mit denen Er zufrieden ist, sowie von denen, die Seinen Zorn verdienen. Seine Eigenschaften sind nicht wie die der Schöpfung."
+      },
+      "ru": {
+        "q": "Есть ли у Аллаха любовь и гнев?",
+        "a": "Да. Коран и Сунна говорят о тех, кого Аллах любит и кем доволен, а также о тех, кто навлекает на себя Его гнев. Его качества не подобны качествам творений."
+      },
+      "ku": {
+        "q": "Ma Xwedê hezkirin û hêrs heye?",
+        "a": "Erê. Di Qur'an û Sunneta de behsa kesên ku Xwedê ji wan hez dike û razî ye, û kesên ku hêrsê Wî dikişînin tê kirin. Sifetên Wî ne wekî yên afirandiyan in."
+      },
+      "ar": {
+        "q": "هَلْ لِلَّهِ مَحَبَّةٌ وَغَضَبٌ؟",
+        "a": "نَعَمْ، وَرَدَ فِي الْقُرْآنِ وَالسُّنَّةِ ذِكْرُ مَنْ يُحِبُّهُمُ اللَّهُ وَيَرْضَى عَنْهُمْ، وَمَنْ يَسْتَحِقُّ غَضَبَهُ، وَصِفَاتُهُ لَا تُشْبِهُ صِفَاتِ الْمَخْلُوقِينَ."
+      },
+      "tt": {
+        "q": "Аллаһның мәхәббәте һәм ачуы бармы?",
+        "a": "Әйе. Коръәндә һәм Сөннәттә Аллаһ яраткан һәм разый булган кешеләр, шулай ук Аның ачуына дучар булган кешеләр турында әйтелә. Аның сыйфатлары мәхлукларның сыйфатларына охшамый."
+      },
+      "fr": {
+        "q": "Allah a-t-Il de l'amour et de la colère ?",
+        "a": "Oui. Le Coran et la Sunna mentionnent ceux qu'Allah aime et dont Il est satisfait, ainsi que ceux qui encourent Sa colère. Ses attributs ne ressemblent pas à ceux des créatures."
+      },
+      "es": {
+        "q": "¿Allah tiene amor y enojo?",
+        "a": "Sí. El Corán y la Sunna mencionan a quienes Allah ama y de quienes está complacido, así como a quienes incurren en Su ira. Sus atributos no se parecen a los de las criaturas."
+      },
+      "nl": {
+        "q": "Heeft Allah liefde en toorn?",
+        "a": "Ja. De Koran en de soenna spreken over degenen van wie Allah houdt en met wie Hij tevreden is, en over degenen die Zijn toorn verdienen. Zijn eigenschappen lijken niet op die van schepselen."
+      },
+      "it": {
+        "q": "Allah ha amore e ira?",
+        "a": "Sì. Il Corano e la Sunnah menzionano coloro che Allah ama e di cui è compiaciuto, così come coloro che incorrono nella Sua ira. I Suoi attributi non assomigliano a quelli delle creature."
+      },
+      "sources": [
+        "📖 Kur'an — Mâide 5:54",
+        "📖 Kur'an — Bakara 2:61"
+      ]
+    },
+
+    {
+      "id": 57,
+      "day": 3,
+      "tr": {
+        "q": "Allah'a iman etmek hayatımızı nasıl etkiler?",
+        "a": "Allah'a iman, insanın O'na güvenmesini, O'nu sevmesini, O'ndan sakınmasını, ibadet etmesini ve hayatını O'nun rızasına göre düzenlemesini sağlar."
+      },
+      "en": {
+        "q": "How does belief in Allah affect our lives?",
+        "a": "Belief in Allah leads a person to trust Him, love Him, fear displeasing Him, worship Him and organize life according to His pleasure."
+      },
+      "de": {
+        "q": "Wie beeinflusst der Glaube an Allah unser Leben?",
+        "a": "Der Glaube an Allah führt dazu, Ihm zu vertrauen, Ihn zu lieben, Ihn zu fürchten, Ihn anzubeten und das Leben nach Seinem Wohlgefallen auszurichten."
+      },
+      "ru": {
+        "q": "Как вера в Аллаха влияет на нашу жизнь?",
+        "a": "Вера в Аллаха побуждает человека доверять Ему, любить Его, бояться Его недовольства, поклоняться Ему и строить жизнь согласно Его довольству."
+      },
+      "ku": {
+        "q": "Baweriya bi Xwedê çawa bandorê li jiyana me dike?",
+        "a": "Baweriya bi Xwedê dibe sedem ku mirov baweriya xwe bi Wî bîne, ji Wî hez bike, ji nerazîbûna Wî bitirse, ji bo Wî îbadet bike û jiyana xwe li gorî rizaya Wî rêk bixe."
+      },
+      "ar": {
+        "q": "كَيْفَ يُؤَثِّرُ الْإِيمَانُ بِاللَّهِ فِي حَيَاتِنَا؟",
+        "a": "يَجْعَلُ الْإِيمَانُ بِاللَّهِ الْعَبْدَ يَثِقُ بِهِ، وَيُحِبُّهُ، وَيَخَافُ مِنْ سَخَطِهِ، وَيَعْبُدُهُ، وَيُنَظِّمُ حَيَاتَهُ وَفْقَ مَرْضَاتِهِ."
+      },
+      "tt": {
+        "q": "Аллаһка иман китерү тормышыбызга ничек тәэсир итә?",
+        "a": "Аллаһка иман китерү кешене Аңа таянырга, Аны яратырга, Аның ачуыннан куркырга, Аңа гыйбадәт кылырга һәм тормышын Аның ризалыгына туры китереп корырга өйрәтә."
+      },
+      "fr": {
+        "q": "Comment la foi en Allah influence-t-elle notre vie ?",
+        "a": "La foi en Allah pousse la personne à Lui faire confiance, à L'aimer, à craindre de Lui déplaire, à L'adorer et à organiser sa vie selon Son agrément."
+      },
+      "es": {
+        "q": "¿Cómo influye la fe en Allah en nuestra vida?",
+        "a": "La fe en Allah lleva a la persona a confiar en Él, amarlo, temer desagradarle, adorarlo y organizar su vida según Su complacencia."
+      },
+      "nl": {
+        "q": "Hoe beïnvloedt het geloof in Allah ons leven?",
+        "a": "Het geloof in Allah brengt iemand ertoe op Hem te vertrouwen, van Hem te houden, Zijn ontevredenheid te vrezen, Hem te aanbidden en het leven in overeenstemming met Zijn welbehagen in te richten."
+      },
+      "it": {
+        "q": "Come influisce la fede in Allah sulla nostra vita?",
+        "a": "La fede in Allah porta la persona a confidare in Lui, amarLo, temere di dispiacerGli, adorarLo e organizzare la propria vita secondo il Suo compiacimento."
+      },
+      "sources": [
+        "📖 Kur'an — Bakara 2:165",
+        "📖 Kur'an — Zümer 39:53",
+        "📖 Kur'an — Ankebût 29:69"
+      ]
+    }
+  ]
+    }
