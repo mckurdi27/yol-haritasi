@@ -1,0 +1,387 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "11 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "ru",
+      "ku",
+      "ar",
+      "tt",
+      "fr",
+      "es",
+      "nl",
+      "it"
+    ],
+
+    "arabicPosition": 6,
+
+    "fixedLanguageOrder": true,
+
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 5,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇬🇭"
+    },
+    {
+      "position": 6,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 7,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇭🇺"
+    },
+    {
+      "position": 8,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 9,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 10,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    }
+  ],
+
+  "days": [
+    {
+      "day": 1,
+      "file": "data/day-01.json",
+      "dayTitle": "1. Gün — İslâm'a İlk Adım",
+      "daySubtitle": "İslâm nedir, Müslüman kimdir, Allah, Kur'an, Peygamberimiz, iman ve İslâm'ın şartları",
+      "questionStart": 1,
+      "questionEnd": 19,
+      "questionRange": "1–19"
+    },
+    {
+      "day": 2,
+      "file": "data/day-02.json",
+      "dayTitle": "2. Gün — Vahiy, Kur'an ve İslâm'ın Temel Kaynakları",
+      "daySubtitle": "Vahiy, Cebrâil, ilk vahiy, Kur'an'ın yapısı ve sünneti tanımak",
+      "questionStart": 20,
+      "questionEnd": 38,
+      "questionRange": "20–38"
+    },
+    {
+      "day": 3,
+      "file": "data/day-03.json",
+      "dayTitle": "3. Gün — Allah'ı Tanımak",
+      "daySubtitle": "Allah'ın varlığı, birliği, isimleri, sıfatları ve Allah'a iman",
+      "questionStart": 39,
+      "questionEnd": 57,
+      "questionRange": "39–57"
+    },
+    {
+      "day": 4,
+      "file": "data/day-04.json",
+      "dayTitle": "4. Gün — Peygamberler ve Peygamberlik",
+      "daySubtitle": "Peygamberlerin görevi, özellikleri, mucizeler ve peygamberlere iman",
+      "questionStart": 58,
+      "questionEnd": 76,
+      "questionRange": "58–76"
+    },
+    {
+      "day": 5,
+      "file": "data/day-05.json",
+      "dayTitle": "5. Gün — Hz. Muhammed ﷺ",
+      "daySubtitle": "Peygamberimizin hayatı, güzel ahlâkı, tebliği ve ümmetine örnekliği",
+      "questionStart": 77,
+      "questionEnd": 95,
+      "questionRange": "77–95"
+    },
+    {
+      "day": 6,
+      "file": "data/day-06.json",
+      "dayTitle": "6. Gün — İman ve İmanın Esasları",
+      "daySubtitle": "Allah'a, meleklere, kitaplara, peygamberlere, âhiret gününe ve kadere iman",
+      "questionStart": 96,
+      "questionEnd": 114,
+      "questionRange": "96–114"
+    },
+    {
+      "day": 7,
+      "file": "data/day-07.json",
+      "dayTitle": "7. Gün — Melekler ve Görünmeyen Âlem",
+      "daySubtitle": "Melekler, görevleri, cinler ve gayb âlemi hakkında temel bilgiler",
+      "questionStart": 115,
+      "questionEnd": 133,
+      "questionRange": "115–133"
+    },
+    {
+      "day": 8,
+      "file": "data/day-08.json",
+      "dayTitle": "8. Gün — İlâhî Kitaplar",
+      "daySubtitle": "Tevrat, Zebur, İncil, Kur'an ve ilâhî kitaplara iman",
+      "questionStart": 134,
+      "questionEnd": 152,
+      "questionRange": "134–152"
+    },
+    {
+      "day": 9,
+      "file": "data/day-09.json",
+      "dayTitle": "9. Gün — Âhiret ve Ölüm",
+      "daySubtitle": "Ölüm, kabir hayatı, kıyamet, diriliş, hesap, cennet ve cehennem",
+      "questionStart": 153,
+      "questionEnd": 171,
+      "questionRange": "153–171"
+    },
+    {
+      "day": 10,
+      "file": "data/day-10.json",
+      "dayTitle": "10. Gün — Kader ve Kaza",
+      "daySubtitle": "Kader, kaza, insan iradesi, sorumluluk ve Allah'ın ilmi",
+      "questionStart": 172,
+      "questionEnd": 190,
+      "questionRange": "172–190"
+    },
+    {
+      "day": 11,
+      "file": "data/day-11.json",
+      "dayTitle": "11. Gün — İslâm'ın Beş Şartı",
+      "daySubtitle": "Kelime-i şehadet, namaz, oruç, zekât ve hac",
+      "questionStart": 191,
+      "questionEnd": 209,
+      "questionRange": "191–209"
+    },
+    {
+      "day": 12,
+      "file": "data/day-12.json",
+      "dayTitle": "12. Gün — Namazı Tanımak",
+      "daySubtitle": "Namazın anlamı, önemi, vakitleri, farzları ve namazın temel hükümleri",
+      "questionStart": 210,
+      "questionEnd": 228,
+      "questionRange": "210–228"
+    },
+    {
+      "day": 13,
+      "file": "data/day-13.json",
+      "dayTitle": "13. Gün — Abdest, Gusül ve Temizlik",
+      "daySubtitle": "Taharet, abdest, gusül, teyemmüm ve maddî-manevî temizlik",
+      "questionStart": 229,
+      "questionEnd": 247,
+      "questionRange": "229–247"
+    },
+    {
+      "day": 14,
+      "file": "data/day-14.json",
+      "dayTitle": "14. Gün — Oruç ve Ramazan",
+      "daySubtitle": "Oruç, Ramazan, sahur, iftar, orucu bozan ve bozmayan durumlar",
+      "questionStart": 248,
+      "questionEnd": 266,
+      "questionRange": "248–266"
+    },
+    {
+      "day": 15,
+      "file": "data/day-15.json",
+      "dayTitle": "15. Gün — Zekât ve Sadaka",
+      "daySubtitle": "Zekâtın anlamı, şartları, kimlere verileceği ve sadakanın önemi",
+      "questionStart": 267,
+      "questionEnd": 285,
+      "questionRange": "267–285"
+    },
+    {
+      "day": 16,
+      "file": "data/day-16.json",
+      "dayTitle": "16. Gün — Hac ve Umre",
+      "daySubtitle": "Hac, umre, ihram, Kâbe, Arafat, tavaf ve hac ibadetinin temel esasları",
+      "questionStart": 286,
+      "questionEnd": 304,
+      "questionRange": "286–304"
+    },
+    {
+      "day": 17,
+      "file": "data/day-17.json",
+      "dayTitle": "17. Gün — Helâl ve Haram",
+      "daySubtitle": "Helâl, haram, şüpheli şeyler, kazanç, yiyecekler ve günlük hayatta İslâmî ölçüler",
+      "questionStart": 305,
+      "questionEnd": 323,
+      "questionRange": "305–323"
+    },
+    {
+      "day": 18,
+      "file": "data/day-18.json",
+      "dayTitle": "18. Gün — Güzel Ahlâk",
+      "daySubtitle": "Doğruluk, sabır, şükür, merhamet, adalet, tevazu ve güzel davranışlar",
+      "questionStart": 324,
+      "questionEnd": 342,
+      "questionRange": "324–342"
+    },
+    {
+      "day": 19,
+      "file": "data/day-19.json",
+      "dayTitle": "19. Gün — Kötü Ahlâktan Sakınmak",
+      "daySubtitle": "Yalan, gıybet, iftira, kibir, haset, öfke ve diğer kötü davranışlardan korunmak",
+      "questionStart": 343,
+      "questionEnd": 361,
+      "questionRange": "343–361"
+    },
+    {
+      "day": 20,
+      "file": "data/day-20.json",
+      "dayTitle": "20. Gün — Dua ve Zikir",
+      "daySubtitle": "Dua, zikir, tesbih, istiğfar, salavat ve Allah'ı anmanın önemi",
+      "questionStart": 362,
+      "questionEnd": 380,
+      "questionRange": "362–380"
+    },
+    {
+      "day": 21,
+      "file": "data/day-21.json",
+      "dayTitle": "21. Gün — Kur'an ile Yaşamak",
+      "daySubtitle": "Kur'an okumak, anlamak, düşünmek, uygulamak ve Kur'an'ın hayatımızdaki yeri",
+      "questionStart": 381,
+      "questionEnd": 399,
+      "questionRange": "381–399"
+    },
+    {
+      "day": 22,
+      "file": "data/day-22.json",
+      "dayTitle": "22. Gün — Sünnet ve Hadis",
+      "daySubtitle": "Hadis, sünnet, sahih hadis, Peygamberimizin örnekliği ve sünnete bağlılık",
+      "questionStart": 400,
+      "questionEnd": 418,
+      "questionRange": "400–418"
+    },
+    {
+      "day": 23,
+      "file": "data/day-23.json",
+      "dayTitle": "23. Gün — Aile ve İslâm",
+      "daySubtitle": "Evlilik, anne-baba, eşler, çocuklar, akrabalık ve aile sorumlulukları",
+      "questionStart": 419,
+      "questionEnd": 437,
+      "questionRange": "419–437"
+    },
+    {
+      "day": 24,
+      "file": "data/day-24.json",
+      "dayTitle": "24. Gün — Komşuluk ve Toplum",
+      "daySubtitle": "Komşu hakları, kardeşlik, yardımlaşma, adalet ve toplumdaki sorumluluklar",
+      "questionStart": 438,
+      "questionEnd": 456,
+      "questionRange": "438–456"
+    },
+    {
+      "day": 25,
+      "file": "data/day-25.json",
+      "dayTitle": "25. Gün — İslâm'da Ticaret ve Kazanç",
+      "daySubtitle": "Helâl kazanç, alışveriş, borç, emanet, faiz ve ticaret ahlâkı",
+      "questionStart": 457,
+      "questionEnd": 475,
+      "questionRange": "457–475"
+    },
+    {
+      "day": 26,
+      "file": "data/day-26.json",
+      "dayTitle": "26. Gün — Günlük Hayatta Müslüman",
+      "daySubtitle": "Yemek, içmek, giyinmek, çalışmak, konuşmak, seyahat etmek ve günlük adab",
+      "questionStart": 476,
+      "questionEnd": 494,
+      "questionRange": "476–494"
+    },
+    {
+      "day": 27,
+      "file": "data/day-27.json",
+      "dayTitle": "27. Gün — Hastalık, Sıkıntı ve Sabır",
+      "daySubtitle": "Bela, imtihan, sabır, tevekkül, şükür ve zorluklar karşısında Müslümanın tavrı",
+      "questionStart": 495,
+      "questionEnd": 513,
+      "questionRange": "495–513"
+    },
+    {
+      "day": 28,
+      "file": "data/day-28.json",
+      "dayTitle": "28. Gün — Tövbe ve Allah'a Dönüş",
+      "daySubtitle": "Günah, tövbe, istiğfar, pişmanlık, Allah'ın rahmeti ve yeniden başlamak",
+      "questionStart": 514,
+      "questionEnd": 532,
+      "questionRange": "514–532"
+    },
+    {
+      "day": 29,
+      "file": "data/day-29.json",
+      "dayTitle": "29. Gün — Müslümanın Hayat Rehberi",
+      "daySubtitle": "İman, ibadet, ahlâk, aile, toplum ve günlük hayatı İslâm'ın rehberliğiyle şekillendirmek",
+      "questionStart": 533,
+      "questionEnd": 551,
+      "questionRange": "533–551"
+    },
+    {
+      "day": 30,
+      "file": "data/day-30.json",
+      "dayTitle": "30. Gün — İslâm'ı Yaşamak",
+      "daySubtitle": "Öğrenilen bilgileri hayata geçirmek, Allah'a kulluk etmek ve İslâm'ı bilinçli bir şekilde yaşamak",
+      "questionStart": 552,
+      "questionEnd": 570,
+      "questionRange": "552–570"
+    }
+  ]
+    }
