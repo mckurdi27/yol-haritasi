@@ -150,9 +150,6 @@ const UI = {
     days: "Roj",
     previousQuestion: "←",
     nextQuestion: "→",
-    home: "🕋",
-    previousDay: "←",
-    nextDay: "→",
     source: "📚 Çavkanî",
     openSource: "Çavkaniyê veke",
     questionCount: "Pirs",
@@ -214,9 +211,6 @@ const UI = {
     days: "Días",
     previousQuestion: "←",
     nextQuestion: "→",
-    home: "🕋",
-    previousDay: "←",
-    nextDay: "→",
     source: "📚 Fuentes",
     openSource: "Abrir fuente",
     questionCount: "Preguntas",
@@ -302,23 +296,6 @@ let veryFastLevel = 0;
 
 /* =========================================
    TTS DURUMU
-
-   ÖNEMLİ:
-
-   Native pause/resume yerine kontrollü
-   manuel pause/resume kullanıyoruz.
-
-   Böylece Android Chrome'daki:
-
-   pause()
-   ↓
-   speaking devam ediyor
-   ↓
-   cancel()
-   ↓
-   onend/onerror
-
-   yarış problemi ortadan kalkıyor.
 ========================================= */
 
 let speechPaused = false;
@@ -1487,8 +1464,6 @@ function renderTTSControls() {
 
       event.stopPropagation();
 
-      stopSpeech();
-
       slowLevel++;
 
       if (
@@ -1504,8 +1479,9 @@ function renderTTSControls() {
         0.25
       ];
 
-      speechRate =
-        rates[slowLevel];
+      changeSpeechRate(
+        rates[slowLevel]
+      );
 
       fastLevel = 0;
       veryFastLevel = 0;
@@ -1661,8 +1637,6 @@ function renderTTSControls() {
 
       event.stopPropagation();
 
-      stopSpeech();
-
       fastLevel++;
 
       if (
@@ -1678,8 +1652,9 @@ function renderTTSControls() {
         1.75
       ];
 
-      speechRate =
-        rates[fastLevel];
+      changeSpeechRate(
+        rates[fastLevel]
+      );
 
       slowLevel = 0;
       veryFastLevel = 0;
@@ -1735,8 +1710,6 @@ function renderTTSControls() {
 
       event.stopPropagation();
 
-      stopSpeech();
-
       veryFastLevel++;
 
       if (
@@ -1752,8 +1725,9 @@ function renderTTSControls() {
         3
       ];
 
-      speechRate =
-        rates[veryFastLevel];
+      changeSpeechRate(
+        rates[veryFastLevel]
+      );
 
       slowLevel = 0;
       fastLevel = 0;
@@ -2595,21 +2569,7 @@ function updateSpeedButtonsFromState() {
 
 /* =========================================
    TEXT TO SPEECH
-   YENİ VE STABİL SİSTEM
-
-   Pause:
-
-   1. Son boundary konumu korunur.
-   2. speechSynthesis.cancel() yapılır.
-   3. Manuel pause aktif edilir.
-
-   Resume:
-
-   1. Aynı text alınır.
-   2. Son bilinen karakter konumundan
-      yeniden SpeechSynthesis başlatılır.
-
-   Native pause/resume kullanılmaz.
+   STABİL MANUEL PAUSE / RESUME SİSTEMİ
 ========================================= */
 
 function speakText(
@@ -2646,6 +2606,7 @@ function speakText(
   speechCurrentText =
     text;
 
+
   speechCurrentCharIndex =
     Math.max(
       0,
@@ -2657,8 +2618,10 @@ function speakText(
       )
     );
 
+
   speechLastBoundaryIndex =
     speechCurrentCharIndex;
+
 
   speechPaused =
     false;
@@ -2676,15 +2639,22 @@ function speakText(
   loadSavedVoice();
 
 
+  const startIndex =
+    speechCurrentCharIndex;
+
+
   const remainingText =
     text.substring(
-      speechCurrentCharIndex
+      startIndex
     );
 
 
   if (!remainingText.trim()) {
 
     speechCurrentCharIndex =
+      text.length;
+
+    speechLastBoundaryIndex =
       text.length;
 
     speechStarting =
@@ -2695,6 +2665,12 @@ function speakText(
 
     speechPaused =
       false;
+
+    speechManualPaused =
+      false;
+
+    speechUtterance =
+      null;
 
     updatePauseButton();
 
@@ -2779,40 +2755,28 @@ function speakText(
 
 
       /*
-       * event.charIndex, utterance'a verilen
+       * charIndex, utterance'a verilen
        * remainingText içindeki konumdur.
-
-       * Global text konumuna çeviriyoruz.
+       *
+       * startIndex eklenerek ana metindeki
+       * gerçek konuma dönüştürülür.
        */
 
       const globalIndex =
-        speechCurrentCharIndex -
-        remainingText.length +
-        event.charIndex +
-        remainingText.length;
-
-      /*
-       * Daha temiz hesap:
-       *
-       * başlangıç = speakText'e verilen
-       * resumeFromIndex
-       */
-
-      const calculated =
-        resumeFromIndex +
+        startIndex +
         event.charIndex;
 
 
       if (
-        calculated >= 0 &&
-        calculated <= text.length
+        globalIndex >= 0 &&
+        globalIndex <= text.length
       ) {
 
         speechCurrentCharIndex =
-          calculated;
+          globalIndex;
 
         speechLastBoundaryIndex =
-          calculated;
+          globalIndex;
 
       }
 
@@ -2830,10 +2794,8 @@ function speakText(
 
 
       /*
-       * Manuel pause sırasında cancel()
-       * onend oluşturabilir.
-       *
-       * Bu durumda gerçek bitiş değildir.
+       * Pause veya hız değişimi için
+       * yapılan cancel() gerçek bitiş değildir.
        */
 
       if (
@@ -2882,9 +2844,11 @@ function speakText(
 
 
       /*
-       * Manuel pause sırasında
-       * Chrome "canceled" veya "interrupted"
-       * gönderebilir.
+       * Android Chrome, cancel() sonrasında
+       * canceled veya interrupted verebilir.
+       *
+       * Manuel pause/hız değişiminde bunu
+       * gerçek hata kabul etmiyoruz.
        */
 
       if (
@@ -2919,6 +2883,7 @@ function speakText(
 
       }
 
+
       speechIsSpeaking =
         false;
 
@@ -2927,6 +2892,9 @@ function speakText(
 
       speechStarting =
         false;
+
+      speechUtterance =
+        null;
 
       updatePauseButton();
 
@@ -2986,7 +2954,10 @@ function playSelectedText() {
 
 
   /*
-   * Manuel pause durumundan devam.
+   * PAUSE DURUMUNDAN DEVAM
+   *
+   * Hız butonuna pause sırasında basılmışsa
+   * güncel speechRate korunur.
    */
 
   if (
@@ -3006,12 +2977,6 @@ function playSelectedText() {
       position < text.length
     ) {
 
-      speechManualPaused =
-        false;
-
-      speechPaused =
-        false;
-
       speakText(
         text,
         position
@@ -3025,13 +2990,13 @@ function playSelectedText() {
 
 
   /*
-   * Aktif konuşma varsa tekrar başlatmak
-   * yerine mevcut konuşmayı bırakıyoruz.
+   * Aktif konuşma varsa tekrar başlatma.
    */
 
   if (
     window.speechSynthesis.speaking ||
-    speechIsSpeaking
+    speechIsSpeaking ||
+    speechStarting
   ) {
 
     return;
@@ -3069,8 +3034,35 @@ function playSelectedText() {
     `${data.q}. ${data.a}`;
 
 
+  /*
+   * Yeni Play başlangıcı:
+   *
+   * Normal hız = 1.0x
+   *
+   * Kullanıcı Play'e yeniden bastığında
+   * yeni konuşma normal hızdan başlar.
+   */
+
+  speechRate =
+    1;
+
+  slowLevel =
+    0;
+
+  fastLevel =
+    0;
+
+  veryFastLevel =
+    0;
+
+  saveTTSSettings();
+
+  updateSpeedButtonsFromState();
+
+
   speakText(
-    text
+    text,
+    0
   );
 
 }
@@ -3078,7 +3070,6 @@ function playSelectedText() {
 
 /* =========================================
    PAUSE / DEVAM
-   YENİ SİSTEM
 ========================================= */
 
 function toggleSpeechPause() {
@@ -3091,7 +3082,7 @@ function toggleSpeechPause() {
 
 
   /*
-   * PAUSE → RESUME
+   * PAUSE DURUMUNDAN DEVAM
    */
 
   if (
@@ -3135,6 +3126,7 @@ function toggleSpeechPause() {
 
   if (
     !speechIsSpeaking &&
+    !speechStarting &&
     !window.speechSynthesis.speaking
   ) {
 
@@ -3144,21 +3136,7 @@ function toggleSpeechPause() {
 
 
   /*
-   * KRİTİK NOKTA:
-   *
-   * native pause() KULLANMIYORUZ.
-   *
-   * Android Chrome'daki en büyük problem
-   * burada oluşuyordu.
-   *
-   * Bunun yerine:
-   *
-   * 1. Konumu kaydet
-   * 2. Manuel pause işaretle
-   * 3. cancel()
-   *
-   * onend/onerror artık bunu gerçek bitiş
-   * olarak kabul etmiyor.
+   * Mevcut konumu koru.
    */
 
   speechManualPaused =
@@ -3168,8 +3146,18 @@ function toggleSpeechPause() {
     true;
 
   speechIsSpeaking =
-    true;
+    false;
 
+  speechStarting =
+    false;
+
+
+  /*
+   * Mevcut session'ı geçersiz yap.
+   *
+   * Böylece eski onend/onerror eventleri
+   * yeni duruma müdahale edemez.
+   */
 
   speechSessionId++;
 
@@ -3244,10 +3232,13 @@ function updatePauseButton() {
 function stopSpeech() {
 
   /*
-   * Session invalidasyonu.
+   * STOP diğer işlemlerden farklıdır.
    *
-   * Eski utterance eventleri artık
-   * yeni konuşmaya dokunamaz.
+   * Stop:
+   * - konuşmayı keser
+   * - metni siler
+   * - konumu sıfırlar
+   * - pause durumunu kaldırır
    */
 
   speechSessionId++;
@@ -3295,42 +3286,158 @@ function stopSpeech() {
 
 /* =========================================
    HIZ DEĞİŞTİR
+   PAUSE / KONUŞMA KONUMU KORUNUR
 ========================================= */
 
-function setSpeechRate(
+function changeSpeechRate(
   rate
 ) {
+
+  const wasSpeaking =
+    speechIsSpeaking ||
+    speechStarting ||
+    window.speechSynthesis.speaking;
+
+  const wasPaused =
+    speechPaused ||
+    speechManualPaused;
+
+  const text =
+    speechCurrentText;
+
+  const position =
+    speechLastBoundaryIndex;
+
+
+  /*
+   * Yeni hız kaydedilir.
+   */
 
   speechRate =
     rate;
 
+
   saveTTSSettings();
 
 
+  /*
+   * Pause durumundaysa:
+   *
+   * Konuşmayı başlatmıyoruz.
+   * Sadece yeni hız saklanıyor.
+   *
+   * Kullanıcı Play/Devam'a bastığında
+   * yeni hız kullanılacak.
+   */
+
+  if (wasPaused) {
+
+    updatePauseButton();
+
+    return;
+
+  }
+
+
+  /*
+   * Konuşma aktif değilse sadece hız değişir.
+   */
+
   if (
-    speechIsSpeaking
+    !wasSpeaking ||
+    !text
   ) {
 
-    const text =
-      speechCurrentText;
+    return;
 
-    const position =
-      speechLastBoundaryIndex;
+  }
 
 
-    stopSpeech();
+  /*
+   * Konuşma aktifse:
+   *
+   * 1. Konum korunur.
+   * 2. Eski utterance cancel edilir.
+   * 3. Yeni hızla aynı konumdan devam edilir.
+   */
+
+  speechSessionId++;
 
 
-    if (text) {
+  if (
+    "speechSynthesis" in window
+  ) {
+
+    window.speechSynthesis.cancel();
+
+  }
+
+
+  speechUtterance =
+    null;
+
+  speechIsSpeaking =
+    false;
+
+  speechStarting =
+    false;
+
+  speechPaused =
+    false;
+
+  speechManualPaused =
+    false;
+
+
+  /*
+   * Çok küçük bir gecikme:
+   *
+   * Android Chrome'da cancel() ile hemen
+   * speak() çağrısının üst üste gelmesi
+   * bazen yeni utterance'ın başlamamasına
+   * neden olabilir.
+   */
+
+  setTimeout(
+    () => {
+
+      if (!text) {
+        return;
+      }
+
+      if (
+        position >= text.length
+      ) {
+        return;
+      }
 
       speakText(
         text,
         position
       );
 
-    }
+    },
+    30
+  );
 
-  }
+}
+
+
+/* =========================================
+   TTS AYARLARINDAN HIZ DEĞİŞTİRME
+========================================= */
+
+function setSpeechRate(
+  rate
+) {
+
+  changeSpeechRate(
+    rate
+  );
+
+  updateSpeedLevelsFromRate();
+
+  updateSpeedButtonsFromState();
 
 }
 
