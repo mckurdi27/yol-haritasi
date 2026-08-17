@@ -1117,7 +1117,360 @@ a:focus-visible {
   }
 
 }
+/* =========================================
+   TEXT TO SPEECH
+   BİR MÜSLÜMANIN YOL HARİTASI
+========================================= */
 
+.tts-controls {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  margin: 18px auto 8px;
+
+  padding: 6px;
+
+  direction: ltr;
+}
+
+
+/* =========================================
+   TTS BUTONLARI
+========================================= */
+
+.tts-button {
+  width: 44px;
+
+  height: 42px;
+
+  padding: 0;
+
+  margin: 0;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: transparent;
+
+  color: #16A34A;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-family:
+    Arial,
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 25px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  -webkit-tap-highlight-color: transparent;
+
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease,
+    color 0.15s ease;
+}
+
+
+/* =========================================
+   SVG İKON
+========================================= */
+
+.tts-button svg {
+  width: 25px;
+
+  height: 25px;
+
+  display: block;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 2.4;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+}
+
+
+/* =========================================
+   HIZ İKONLARI
+========================================= */
+
+.tts-speed-icon {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 1px;
+
+  min-width: 28px;
+
+  height: 28px;
+
+  color: #16A34A;
+
+  font-size: 20px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -3px;
+}
+
+.tts-speed-icon span {
+  display: inline-block;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.tts-button:hover {
+  background: rgba(22, 163, 74, 0.10);
+
+  color: #15803D;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   BASILDIĞINDA
+========================================= */
+
+.tts-button:active {
+  transform: scale(0.92);
+}
+
+
+/* =========================================
+   AKTİF
+========================================= */
+
+.tts-button.active {
+  background: rgba(22, 163, 74, 0.14);
+
+  color: #15803D;
+}
+
+
+/* =========================================
+   DEVRE DIŞI
+========================================= */
+
+.tts-button:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+  background: transparent;
+}
+
+
+/* =========================================
+   TTS AYAR PANELİ
+========================================= */
+
+.tts-settings {
+  width: min(420px, calc(100% - 30px));
+
+  margin: 8px auto 18px;
+
+  padding: 18px;
+
+  border: 1px solid #dbe1e8;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.08);
+
+  display: none;
+
+  text-align: left;
+}
+
+.tts-settings.open {
+  display: block;
+}
+
+
+/* =========================================
+   AYAR SATIRLARI
+========================================= */
+
+.tts-setting-row {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin-bottom: 15px;
+}
+
+.tts-setting-row:last-child {
+  margin-bottom: 0;
+}
+
+.tts-setting-label {
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: #374151;
+}
+
+
+/* =========================================
+   SES SEÇİMİ
+========================================= */
+
+.tts-voice-select {
+  width: 100%;
+
+  min-height: 42px;
+
+  padding: 8px 10px;
+
+  border: 1px solid #cfd5dc;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #1f2937;
+
+  outline: none;
+}
+
+.tts-voice-select:focus {
+  border-color: #16A34A;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(22, 163, 74, 0.12);
+}
+
+
+/* =========================================
+   HIZ BİLGİSİ
+========================================= */
+
+.tts-rate-value {
+  text-align: center;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: #16A34A;
+}
+
+
+/* =========================================
+   MOBİL
+========================================= */
+
+@media (max-width: 600px) {
+
+  .tts-controls {
+    gap: 3px;
+
+    margin-top: 14px;
+
+    padding: 4px;
+  }
+
+  .tts-button {
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 9px;
+  }
+
+  .tts-button svg {
+    width: 23px;
+
+    height: 23px;
+  }
+
+  .tts-speed-icon {
+    min-width: 26px;
+
+    font-size: 18px;
+  }
+
+  .tts-settings {
+    width: calc(100% - 20px);
+
+    padding: 15px;
+  }
+
+}
+
+
+/* =========================================
+   ÇOK KÜÇÜK EKRAN
+========================================= */
+
+@media (max-width: 300px) {
+
+  .tts-controls {
+    gap: 1px;
+  }
+
+  .tts-button {
+    width: 36px;
+
+    height: 38px;
+  }
+
+  .tts-button svg {
+    width: 21px;
+
+    height: 21px;
+  }
+
+  .tts-speed-icon {
+    font-size: 16px;
+
+    min-width: 23px;
+  }
+
+}
 
 /* =========================================
    SON
