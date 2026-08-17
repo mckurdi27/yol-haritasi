@@ -286,17 +286,13 @@ const UI = {
 let selectedLang =
   localStorage.getItem("selectedLang") || "tr";
 
-
 if (!UI[selectedLang]) {
   selectedLang = "tr";
 }
 
-
 let days = [];
 
-
 let currentDayIndex = 0;
-
 
 let currentQuestionIndex = 0;
 
@@ -1367,20 +1363,33 @@ function createNavigation(
     );
 
   questionInput.type =
-    "number";
+    "text";
+
+  questionInput.inputMode =
+    "numeric";
+
+  questionInput.pattern =
+    "[0-9]*";
 
   questionInput.className =
     "navigation-number-input";
 
-  questionInput.min =
-    "1";
+  questionInput.setAttribute(
+    "autocomplete",
+    "off"
+  );
 
-  questionInput.placeholder =
+  questionInput.setAttribute(
+    "enterkeyhint",
+    "go"
+  );
+
+  questionInput.value =
     String(
       question.id
     );
 
-  questionInput.value =
+  questionInput.placeholder =
     String(
       question.id
     );
@@ -1401,9 +1410,13 @@ function createNavigation(
         event.key === "Enter"
       ) {
 
+        event.preventDefault();
+
         goToQuestionNumber(
           questionInput.value
         );
+
+        questionInput.blur();
 
       }
 
@@ -1411,12 +1424,18 @@ function createNavigation(
   );
 
   questionInput.addEventListener(
-    "change",
+    "blur",
     () => {
 
-      goToQuestionNumber(
-        questionInput.value
-      );
+      if (
+        questionInput.value.trim() !== ""
+      ) {
+
+        goToQuestionNumber(
+          questionInput.value
+        );
+
+      }
 
     }
   );
@@ -1540,23 +1559,33 @@ function createNavigation(
     );
 
   dayInput.type =
-    "number";
+    "text";
+
+  dayInput.inputMode =
+    "numeric";
+
+  dayInput.pattern =
+    "[0-9]*";
 
   dayInput.className =
     "navigation-number-input";
 
-  dayInput.min =
-    "1";
+  dayInput.setAttribute(
+    "autocomplete",
+    "off"
+  );
 
-  dayInput.max =
-    "30";
+  dayInput.setAttribute(
+    "enterkeyhint",
+    "go"
+  );
 
-  dayInput.placeholder =
+  dayInput.value =
     String(
       days[currentDayIndex].number
     );
 
-  dayInput.value =
+  dayInput.placeholder =
     String(
       days[currentDayIndex].number
     );
@@ -1577,9 +1606,13 @@ function createNavigation(
         event.key === "Enter"
       ) {
 
+        event.preventDefault();
+
         goToDayNumber(
           dayInput.value
         );
+
+        dayInput.blur();
 
       }
 
@@ -1587,12 +1620,18 @@ function createNavigation(
   );
 
   dayInput.addEventListener(
-    "change",
+    "blur",
     () => {
 
-      goToDayNumber(
-        dayInput.value
-      );
+      if (
+        dayInput.value.trim() !== ""
+      ) {
+
+        goToDayNumber(
+          dayInput.value
+        );
+
+      }
 
     }
   );
@@ -1707,14 +1746,39 @@ function goToQuestionNumber(
   value
 ) {
 
-  const questionNumber =
-    Number(value);
+  const cleanValue =
+    String(value)
+      .trim()
+      .replace(
+        /[^0-9]/g,
+        ""
+      );
 
   if (
-    !Number.isInteger(questionNumber)
+    !cleanValue
   ) {
 
-    return;
+    return false;
+
+  }
+
+  const questionNumber =
+    Number(
+      cleanValue
+    );
+
+  if (
+    !Number.isSafeInteger(
+      questionNumber
+    ) ||
+    questionNumber < 1
+  ) {
+
+    console.warn(
+      `Geçersiz soru numarası: ${value}`
+    );
+
+    return false;
 
   }
 
@@ -1725,13 +1789,28 @@ function goToQuestionNumber(
   ) {
 
     const questions =
-      days[dayIndex].questions;
+      days[dayIndex].questions || [];
 
     const questionIndex =
       questions.findIndex(
-        question =>
-          Number(question.id) ===
-          questionNumber
+        question => {
+
+          if (
+            question === null ||
+            question === undefined
+          ) {
+
+            return false;
+
+          }
+
+          return (
+            Number(
+              question.id
+            ) === questionNumber
+          );
+
+        }
       );
 
     if (
@@ -1746,7 +1825,7 @@ function goToQuestionNumber(
 
       renderQuestion();
 
-      return;
+      return true;
 
     }
 
@@ -1755,6 +1834,8 @@ function goToQuestionNumber(
   console.warn(
     `Soru bulunamadı: ${questionNumber}`
   );
+
+  return false;
 
 }
 
@@ -1767,22 +1848,48 @@ function goToDayNumber(
   value
 ) {
 
-  const dayNumber =
-    Number(value);
+  const cleanValue =
+    String(value)
+      .trim()
+      .replace(
+        /[^0-9]/g,
+        ""
+      );
 
   if (
-    !Number.isInteger(dayNumber)
+    !cleanValue
   ) {
 
-    return;
+    return false;
+
+  }
+
+  const dayNumber =
+    Number(
+      cleanValue
+    );
+
+  if (
+    !Number.isSafeInteger(
+      dayNumber
+    ) ||
+    dayNumber < 1
+  ) {
+
+    console.warn(
+      `Geçersiz gün numarası: ${value}`
+    );
+
+    return false;
 
   }
 
   const dayIndex =
     days.findIndex(
       day =>
-        Number(day.number) ===
-        dayNumber
+        Number(
+          day.number
+        ) === dayNumber
     );
 
   if (
@@ -1793,7 +1900,7 @@ function goToDayNumber(
       `Gün bulunamadı: ${dayNumber}`
     );
 
-    return;
+    return false;
 
   }
 
@@ -1804,6 +1911,8 @@ function goToDayNumber(
     0;
 
   renderQuestion();
+
+  return true;
 
 }
 
