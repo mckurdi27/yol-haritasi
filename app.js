@@ -90,11 +90,11 @@ const UI = {
     title: "Bir Müslümanın Yol Haritası",
     subtitle: "İslâm'ı adım adım öğren",
     days: "Günler",
-    previousQuestion: "← Önceki Soru",
-    nextQuestion: "Sonraki Soru →",
-    home: "🏠 Ana Sayfa",
-    previousDay: "← Önceki Gün",
-    nextDay: "Sonraki Gün →",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Kaynaklar",
     openSource: "Kaynağı aç",
     questionCount: "Soru",
@@ -106,11 +106,11 @@ const UI = {
     title: "A Muslim's Roadmap",
     subtitle: "Learn Islam step by step",
     days: "Days",
-    previousQuestion: "← Previous Question",
-    nextQuestion: "Next Question →",
-    home: "🏠 Home",
-    previousDay: "← Previous Day",
-    nextDay: "Next Day →",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Sources",
     openSource: "Open source",
     questionCount: "Questions",
@@ -122,11 +122,11 @@ const UI = {
     title: "Der Wegweiser eines Muslims",
     subtitle: "Den Islam Schritt für Schritt kennenlernen",
     days: "Tage",
-    previousQuestion: "← Vorherige Frage",
-    nextQuestion: "Nächste Frage →",
-    home: "🏠 Startseite",
-    previousDay: "← Vorheriger Tag",
-    nextDay: "Nächster Tag →",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Quellen",
     openSource: "Quelle öffnen",
     questionCount: "Fragen",
@@ -138,11 +138,11 @@ const UI = {
     title: "Путеводитель мусульманина",
     subtitle: "Изучайте ислам шаг за шагом",
     days: "Дни",
-    previousQuestion: "← Предыдущий вопрос",
-    nextQuestion: "Следующий вопрос →",
-    home: "🏠 Главная",
-    previousDay: "← Предыдущий день",
-    nextDay: "Следующий день →",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Источники",
     openSource: "Открыть источник",
     questionCount: "Вопросов",
@@ -154,11 +154,11 @@ const UI = {
     title: "Rêbernameya Misilmanekî",
     subtitle: "Îslamê gav bi gav fêr bibe",
     days: "Roj",
-    previousQuestion: "← Pirsê berê",
-    nextQuestion: "Pirsê paş",
-    home: "🏠 Malpera sereke",
-    previousDay: "← Roja berê",
-    nextDay: "Roja paş",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Çavkanî",
     openSource: "Çavkaniyê veke",
     questionCount: "Pirs",
@@ -170,11 +170,11 @@ const UI = {
     title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
     subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
     days: "الأَيَّامُ",
-    previousQuestion: "← السُّؤَالُ السَّابِقُ",
-    nextQuestion: "السُّؤَالُ التَّالِي →",
-    home: "🏠 الصَّفْحَةُ الرَّئِيسِيَّةُ",
-    previousDay: "← الْيَوْمُ السَّابِقُ",
-    nextDay: "الْيَوْمُ التَّالِي →",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 الْمَصَادِرُ",
     openSource: "فَتْحُ الْمَصْدَرِ",
     questionCount: "أَسْئِلَة",
@@ -186,11 +186,11 @@ const UI = {
     title: "Мөселманның юл картасы",
     subtitle: "Исламны адымлап өйрәнегез",
     days: "Көннәр",
-    previousQuestion: "← Алдагы сорау",
-    nextQuestion: "Киләсе сорау →",
-    home: "🏠 Төп бит",
-    previousDay: "← Алдагы көн",
-    nextDay: "Киләсе көн →",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Чыганаклар",
     openSource: "Чыганакны ачу",
     questionCount: "Сорау",
@@ -202,11 +202,11 @@ const UI = {
     title: "La feuille de route du musulman",
     subtitle: "Apprendre l’islam étape par étape",
     days: "Jours",
-    previousQuestion: "← Question précédente",
-    nextQuestion: "Question suivante →",
-    home: "🏠 Accueil",
-    previousDay: "← Jour précédent",
-    nextDay: "Jour suivant →",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Sources",
     openSource: "Ouvrir la source",
     questionCount: "Questions",
@@ -218,11 +218,11 @@ const UI = {
     title: "La hoja de ruta del musulmán",
     subtitle: "Aprender el Islam paso a paso",
     days: "Días",
-    previousQuestion: "← Pregunta anterior",
-    nextQuestion: "Siguiente pregunta →",
-    home: "🏠 Inicio",
-    previousDay: "← Día anterior",
-    nextDay: "Día siguiente →",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Fuentes",
     openSource: "Abrir fuente",
     questionCount: "Preguntas",
@@ -234,11 +234,11 @@ const UI = {
     title: "De routekaart van een moslim",
     subtitle: "Leer de islam stap voor stap",
     days: "Dagen",
-    previousQuestion: "← Vorige vraag",
-    nextQuestion: "Volgende vraag →",
-    home: "🏠 Home",
-    previousDay: "← Vorige dag",
-    nextDay: "Volgende dag →",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Bronnen",
     openSource: "Bron openen",
     questionCount: "Vragen",
@@ -250,11 +250,11 @@ const UI = {
     title: "La guida del musulmano",
     subtitle: "Imparare l'Islam passo dopo passo",
     days: "Giorni",
-    previousQuestion: "← Domanda precedente",
-    nextQuestion: "Domanda successiva →",
-    home: "🏠 Home",
-    previousDay: "← Giorno precedente",
-    nextDay: "Giorno successivo →",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Fonti",
     openSource: "Apri fonte",
     questionCount: "Domande",
@@ -1267,6 +1267,9 @@ function addQuestionLanguageSelector() {
 
 /* =========================================
    NAVİGASYON
+   SOL  = SORU
+   ORTA = KÂBE
+   SAĞ  = GÜN
 ========================================= */
 
 function createNavigation(
@@ -1283,26 +1286,48 @@ function createNavigation(
 
 
   /* =====================================
-     SORU NAVİGASYONU
+     TEK SATIR
   ====================================== */
 
-  const questionRow =
+  const mainRow =
     document.createElement(
       "div"
     );
 
-  questionRow.className =
-    "navigation-row";
+  mainRow.className =
+    "navigation-main-row";
 
 
   /* =====================================
-     ÖNCEKİ SORU
+     SOL — SORU NAVİGASYONU
   ====================================== */
+
+  const questionGroup =
+    document.createElement(
+      "div"
+    );
+
+  questionGroup.className =
+    "navigation-group question-navigation-group";
+
+
+  /* ÖNCEKİ SORU */
 
   const previousQuestion =
     makeButton(
       UI[selectedLang].previousQuestion
     );
+
+  previousQuestion.className =
+    "navigation-arrow-button";
+
+  previousQuestion.setAttribute(
+    "aria-label",
+    "Önceki soru"
+  );
+
+  previousQuestion.title =
+    "Önceki soru";
 
   previousQuestion.disabled =
     currentDayIndex === 0 &&
@@ -1311,14 +1336,35 @@ function createNavigation(
   previousQuestion.onclick =
     () => {
 
-      goToPreviousQuestion();
+      if (
+        currentQuestionIndex > 0
+      ) {
+
+        currentQuestionIndex--;
+
+        renderQuestion();
+
+        return;
+      }
+
+      if (
+        currentDayIndex > 0
+      ) {
+
+        currentDayIndex--;
+
+        currentQuestionIndex =
+          days[currentDayIndex]
+            .questions.length - 1;
+
+        renderQuestion();
+
+      }
 
     };
 
 
-  /* =====================================
-     SORU NUMARASI
-  ====================================== */
+  /* SORU NUMARASI */
 
   const questionInput =
     document.createElement(
@@ -1334,12 +1380,12 @@ function createNavigation(
   questionInput.min =
     "1";
 
-  questionInput.value =
+  questionInput.placeholder =
     String(
       question.id
     );
 
-  questionInput.placeholder =
+  questionInput.value =
     String(
       question.id
     );
@@ -1352,11 +1398,6 @@ function createNavigation(
     "Soru numarasına git"
   );
 
-  questionInput.setAttribute(
-    "inputmode",
-    "numeric"
-  );
-
   questionInput.addEventListener(
     "keydown",
     event => {
@@ -1364,8 +1405,6 @@ function createNavigation(
       if (
         event.key === "Enter"
       ) {
-
-        event.preventDefault();
 
         goToQuestionNumber(
           questionInput.value
@@ -1388,60 +1427,154 @@ function createNavigation(
   );
 
 
-  /* =====================================
-     SONRAKİ SORU
-  ====================================== */
+  /* SONRAKİ SORU */
 
   const nextQuestion =
     makeButton(
       UI[selectedLang].nextQuestion
     );
 
+  nextQuestion.className =
+    "navigation-arrow-button";
+
+  nextQuestion.setAttribute(
+    "aria-label",
+    "Sonraki soru"
+  );
+
+  nextQuestion.title =
+    "Sonraki soru";
+
   nextQuestion.disabled =
-    isLastQuestion();
+    currentDayIndex >= days.length - 1 &&
+    currentQuestionIndex >=
+      days[currentDayIndex]
+        .questions.length - 1;
 
   nextQuestion.onclick =
     () => {
 
-      goToNextQuestion();
+      const currentQuestions =
+        days[currentDayIndex]
+          .questions;
+
+      if (
+        currentQuestionIndex <
+        currentQuestions.length - 1
+      ) {
+
+        currentQuestionIndex++;
+
+        renderQuestion();
+
+        return;
+      }
+
+      if (
+        currentDayIndex <
+        days.length - 1
+      ) {
+
+        currentDayIndex++;
+
+        currentQuestionIndex =
+          0;
+
+        renderQuestion();
+
+      }
 
     };
 
 
-  questionRow.appendChild(
+  questionGroup.appendChild(
     previousQuestion
   );
 
-  questionRow.appendChild(
+  questionGroup.appendChild(
     questionInput
   );
 
-  questionRow.appendChild(
+  questionGroup.appendChild(
     nextQuestion
   );
 
 
   /* =====================================
-     GÜN NAVİGASYONU
+     ORTA — KÂBE / ANA SAYFA
   ====================================== */
 
-  const dayRow =
+  const homeGroup =
     document.createElement(
       "div"
     );
 
-  dayRow.className =
-    "navigation-row";
+  homeGroup.className =
+    "navigation-home-group";
+
+  const home =
+    makeButton(
+      "🕋"
+    );
+
+  home.className =
+    "navigation-home-button";
+
+  home.setAttribute(
+    "aria-label",
+    "Ana Sayfa"
+  );
+
+  home.title =
+    "Ana Sayfa";
+
+  home.onclick =
+    () => {
+
+      renderHome();
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    };
+
+  homeGroup.appendChild(
+    home
+  );
 
 
   /* =====================================
-     ÖNCEKİ GÜN
+     SAĞ — GÜN NAVİGASYONU
   ====================================== */
+
+  const dayGroup =
+    document.createElement(
+      "div"
+    );
+
+  dayGroup.className =
+    "navigation-group day-navigation-group";
+
+
+  /* ÖNCEKİ GÜN */
 
   const previousDay =
     makeButton(
       UI[selectedLang].previousDay
     );
+
+  previousDay.className =
+    "navigation-arrow-button";
+
+  previousDay.setAttribute(
+    "aria-label",
+    "Önceki gün"
+  );
+
+  previousDay.title =
+    "Önceki gün";
 
   previousDay.disabled =
     currentDayIndex === 0;
@@ -1465,9 +1598,7 @@ function createNavigation(
     };
 
 
-  /* =====================================
-     GÜN NUMARASI
-  ====================================== */
+  /* GÜN NUMARASI */
 
   const dayInput =
     document.createElement(
@@ -1486,12 +1617,12 @@ function createNavigation(
   dayInput.max =
     "30";
 
-  dayInput.value =
+  dayInput.placeholder =
     String(
       days[currentDayIndex].number
     );
 
-  dayInput.placeholder =
+  dayInput.value =
     String(
       days[currentDayIndex].number
     );
@@ -1504,11 +1635,6 @@ function createNavigation(
     "Gün numarasına git"
   );
 
-  dayInput.setAttribute(
-    "inputmode",
-    "numeric"
-  );
-
   dayInput.addEventListener(
     "keydown",
     event => {
@@ -1516,8 +1642,6 @@ function createNavigation(
       if (
         event.key === "Enter"
       ) {
-
-        event.preventDefault();
 
         goToDayNumber(
           dayInput.value
@@ -1540,14 +1664,23 @@ function createNavigation(
   );
 
 
-  /* =====================================
-     SONRAKİ GÜN
-  ====================================== */
+  /* SONRAKİ GÜN */
 
   const nextDay =
     makeButton(
       UI[selectedLang].nextDay
     );
+
+  nextDay.className =
+    "navigation-arrow-button";
+
+  nextDay.setAttribute(
+    "aria-label",
+    "Sonraki gün"
+  );
+
+  nextDay.title =
+    "Sonraki gün";
 
   nextDay.disabled =
     currentDayIndex >=
@@ -1573,67 +1706,37 @@ function createNavigation(
     };
 
 
-  dayRow.appendChild(
+  dayGroup.appendChild(
     previousDay
   );
 
-  dayRow.appendChild(
+  dayGroup.appendChild(
     dayInput
   );
 
-  dayRow.appendChild(
+  dayGroup.appendChild(
     nextDay
   );
 
 
   /* =====================================
-     ANA SAYFA
+     TEK SATIRA YERLEŞTİR
   ====================================== */
 
-  const homeRow =
-    document.createElement(
-      "div"
-    );
-
-  homeRow.className =
-    "navigation-home-row";
-
-  const home =
-    makeButton(
-      UI[selectedLang].home
-    );
-
-  home.onclick =
-    () => {
-
-      renderHome();
-
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-
-    };
-
-  homeRow.appendChild(
-    home
+  mainRow.appendChild(
+    questionGroup
   );
 
+  mainRow.appendChild(
+    homeGroup
+  );
 
-  /* =====================================
-     HEPSİNİ BİRLEŞTİR
-  ====================================== */
-
-  wrapper.appendChild(
-    questionRow
+  mainRow.appendChild(
+    dayGroup
   );
 
   wrapper.appendChild(
-    dayRow
-  );
-
-  wrapper.appendChild(
-    homeRow
+    mainRow
   );
 
   return wrapper;
@@ -1642,106 +1745,7 @@ function createNavigation(
 
 
 /* =========================================
-   ÖNCEKİ SORU
-========================================= */
-
-function goToPreviousQuestion() {
-
-  if (
-    currentQuestionIndex > 0
-  ) {
-
-    currentQuestionIndex--;
-
-    renderQuestion();
-
-    return;
-  }
-
-  if (
-    currentDayIndex > 0
-  ) {
-
-    currentDayIndex--;
-
-    currentQuestionIndex =
-      days[currentDayIndex]
-        .questions.length - 1;
-
-    renderQuestion();
-
-  }
-
-}
-
-
-/* =========================================
-   SONRAKİ SORU
-========================================= */
-
-function goToNextQuestion() {
-
-  const currentQuestions =
-    days[currentDayIndex]
-      .questions;
-
-  if (
-    currentQuestionIndex <
-    currentQuestions.length - 1
-  ) {
-
-    currentQuestionIndex++;
-
-    renderQuestion();
-
-    return;
-  }
-
-  if (
-    currentDayIndex <
-    days.length - 1
-  ) {
-
-    currentDayIndex++;
-
-    currentQuestionIndex =
-      0;
-
-    renderQuestion();
-
-  }
-
-}
-
-
-/* =========================================
-   SON SORU MU?
-========================================= */
-
-function isLastQuestion() {
-
-  if (
-    !days.length ||
-    !days[currentDayIndex]
-  ) {
-
-    return true;
-
-  }
-
-  return (
-    currentDayIndex >=
-      days.length - 1 &&
-    currentQuestionIndex >=
-      days[currentDayIndex]
-        .questions.length - 1
-  );
-
-}
-
-
-/* =========================================
-   GLOBAL SORU NUMARASINA GİT
+   SORU NUMARASINA GİT
 ========================================= */
 
 function goToQuestionNumber(
@@ -1749,29 +1753,16 @@ function goToQuestionNumber(
 ) {
 
   const questionNumber =
-    Number(
-      String(value).trim()
-    );
+    Number(value);
 
   if (
-    !Number.isInteger(questionNumber) ||
-    questionNumber < 1
+    !Number.isInteger(questionNumber)
   ) {
-
-    console.warn(
-      "Geçersiz soru numarası:",
-      value
-    );
 
     return;
 
   }
 
-
-  /* =====================================
-     1. ÖNCE question.id İLE ARA
-  ====================================== */
-
   for (
     let dayIndex = 0;
     dayIndex < days.length;
@@ -1781,81 +1772,30 @@ function goToQuestionNumber(
     const questions =
       days[dayIndex].questions;
 
-    for (
-      let questionIndex = 0;
-      questionIndex < questions.length;
-      questionIndex++
+    const questionIndex =
+      questions.findIndex(
+        question =>
+          Number(question.id) ===
+          questionNumber
+      );
+
+    if (
+      questionIndex !== -1
     ) {
 
-      const question =
-        questions[questionIndex];
+      currentDayIndex =
+        dayIndex;
 
-      if (
-        Number(question.id) ===
-        questionNumber
-      ) {
+      currentQuestionIndex =
+        questionIndex;
 
-        currentDayIndex =
-          dayIndex;
+      renderQuestion();
 
-        currentQuestionIndex =
-          questionIndex;
-
-        renderQuestion();
-
-        return;
-
-      }
+      return;
 
     }
 
   }
-
-
-  /* =====================================
-     2. ID BULUNAMAZSA GLOBAL SIRA
-  ====================================== */
-
-  let globalIndex = 0;
-
-  for (
-    let dayIndex = 0;
-    dayIndex < days.length;
-    dayIndex++
-  ) {
-
-    const questions =
-      days[dayIndex].questions;
-
-    for (
-      let questionIndex = 0;
-      questionIndex < questions.length;
-      questionIndex++
-    ) {
-
-      globalIndex++;
-
-      if (
-        globalIndex ===
-        questionNumber
-      ) {
-
-        currentDayIndex =
-          dayIndex;
-
-        currentQuestionIndex =
-          questionIndex;
-
-        renderQuestion();
-
-        return;
-
-      }
-
-    }
-
-  }
-
 
   console.warn(
     `Soru bulunamadı: ${questionNumber}`
@@ -1873,19 +1813,11 @@ function goToDayNumber(
 ) {
 
   const dayNumber =
-    Number(
-      String(value).trim()
-    );
+    Number(value);
 
   if (
-    !Number.isInteger(dayNumber) ||
-    dayNumber < 1
+    !Number.isInteger(dayNumber)
   ) {
-
-    console.warn(
-      "Geçersiz gün numarası:",
-      value
-    );
 
     return;
 
@@ -2104,11 +2036,6 @@ function getSourceUrl(
       source
     ).toLowerCase();
 
-
-  /* =====================================
-     KUR'AN
-  ====================================== */
-
   const quranMatch =
     text.match(
       /(?:kur['’]an|qur['’]?an|coran|corán|коран|коръән)[^0-9]*(\d+)[\s:.-]+(\d+)(?:[-–](\d+))?/i
@@ -2128,11 +2055,6 @@ function getSourceUrl(
 
   }
 
-
-  /* =====================================
-     SAHİH MÜSLİM
-  ====================================== */
-
   if (
     text.includes("sahih müslim") ||
     text.includes("sahih muslim")
@@ -2143,11 +2065,6 @@ function getSourceUrl(
     );
 
   }
-
-
-  /* =====================================
-     SAHİH BUHARİ
-  ====================================== */
 
   if (
     text.includes("sahih buhari") ||
@@ -2161,11 +2078,6 @@ function getSourceUrl(
 
   }
 
-
-  /* =====================================
-     ÖMER NASUHİ BİLMEN
-  ====================================== */
-
   if (
     text.includes(
       "ömer nasuhi bilmen"
@@ -2177,11 +2089,6 @@ function getSourceUrl(
     );
 
   }
-
-
-  /* =====================================
-     PROJE SİTESİ
-  ====================================== */
 
   if (
     text.includes(
@@ -2197,7 +2104,6 @@ function getSourceUrl(
     );
 
   }
-
 
   return "";
 
