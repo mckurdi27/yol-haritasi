@@ -1,6 +1,14 @@
 {
   "days": [
-    { "file": "data/day-01.json", "title": "1. Gün - İslâm'a İlk Adım", "range": "1-19" },
-    { "file": "data/day-02.json", "title": "2. Gün - Vahiy, Kur'an ve Temel Kaynaklar", "range": "20-38" }
+    {
+      "file": "data/day-01.json",
+      "title": "1. Gün — İslâm'a İlk Adım",
+      "range": "1–19"
+    },
+    {
+      "file": "data/day-02.json",
+      "title": "2. Gün — Vahiy, Kur'an ve İslâm'ın Temel Kaynakları",
+      "range": "20–38"
+    }
   ]
 }
