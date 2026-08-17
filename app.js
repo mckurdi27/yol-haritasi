@@ -284,6 +284,15 @@ let currentQuestionIndex = 0;
 
 
 /* =========================================
+   TEXT TO SPEECH AYARLARI
+========================================= */
+
+let speechRate = 1;
+
+let speechUtterance = null;
+
+
+/* =========================================
    BAŞLAT
 ========================================= */
 
@@ -678,301 +687,6 @@ function renderHome() {
       card.appendChild(
         titleLine
       );
-         /* =========================================
-     TEXT TO SPEECH KONTROLLERİ
-  ========================================= */
-
-  const ttsControls =
-    document.createElement("div");
-
-  ttsControls.className =
-    "tts-controls";
-
-
-  /* =====================================
-     YAVAŞLAT
-  ===================================== */
-
-  const slowButton =
-    document.createElement("button");
-
-  slowButton.type =
-    "button";
-
-  slowButton.className =
-    "tts-button tts-slow";
-
-  slowButton.textContent =
-    "→";
-
-  slowButton.setAttribute(
-    "aria-label",
-    "Yavaşlat"
-  );
-
-  slowButton.title =
-    "Yavaşlat";
-
-  let slowLevel = 0;
-
-  slowButton.addEventListener(
-    "click",
-    () => {
-
-      slowLevel++;
-
-      if (slowLevel > 3) {
-        slowLevel = 0;
-      }
-
-      const slowRates = [
-        1,
-        0.75,
-        0.50,
-        0.25
-      ];
-
-      const slowIcons = [
-        "→",
-        "→",
-        "→→",
-        "→→→"
-      ];
-
-      speechRate =
-        slowRates[slowLevel];
-
-      slowButton.textContent =
-        slowIcons[slowLevel];
-
-    }
-  );
-
-
-  /* =====================================
-     OYNAT
-  ===================================== */
-
-  const playButton =
-    document.createElement("button");
-
-  playButton.type =
-    "button";
-
-  playButton.className =
-    "tts-button tts-play";
-
-  playButton.textContent =
-    "▶";
-
-  playButton.setAttribute(
-    "aria-label",
-    "Oynat"
-  );
-
-  playButton.title =
-    "Oynat";
-
-  playButton.addEventListener(
-    "click",
-    () => {
-
-      playSelectedText();
-
-    }
-  );
-
-
-  /* =====================================
-     DURDUR
-  ===================================== */
-
-  const stopButton =
-    document.createElement("button");
-
-  stopButton.type =
-    "button";
-
-  stopButton.className =
-    "tts-button tts-stop";
-
-  stopButton.textContent =
-    "■";
-
-  stopButton.setAttribute(
-    "aria-label",
-    "Durdur"
-  );
-
-  stopButton.title =
-    "Durdur";
-
-  stopButton.addEventListener(
-    "click",
-    () => {
-
-      stopSpeech();
-
-    }
-  );
-
-
-  /* =====================================
-     HIZLANDIR 1
-     
-     1.25 → 1.50 → 1.75
-  ===================================== */
-
-  const fastButton =
-    document.createElement("button");
-
-  fastButton.type =
-    "button";
-
-  fastButton.className =
-    "tts-button tts-fast";
-
-  fastButton.textContent =
-    "→";
-
-  fastButton.setAttribute(
-    "aria-label",
-    "Hızlandır"
-  );
-
-  fastButton.title =
-    "Hızlandır";
-
-  let fastLevel = 0;
-
-  fastButton.addEventListener(
-    "click",
-    () => {
-
-      fastLevel++;
-
-      if (fastLevel > 3) {
-        fastLevel = 0;
-      }
-
-      const fastRates = [
-        1,
-        1.25,
-        1.50,
-        1.75
-      ];
-
-      const fastIcons = [
-        "→",
-        "→",
-        "→→",
-        "→→→"
-      ];
-
-      speechRate =
-        fastRates[fastLevel];
-
-      fastButton.textContent =
-        fastIcons[fastLevel];
-
-    }
-  );
-
-
-  /* =====================================
-     HIZLANDIR 2
-     
-     2 → 2.5 → 3
-  ===================================== */
-
-  const veryFastButton =
-    document.createElement("button");
-
-  veryFastButton.type =
-    "button";
-
-  veryFastButton.className =
-    "tts-button tts-very-fast";
-
-  veryFastButton.textContent =
-    "→";
-
-  veryFastButton.setAttribute(
-    "aria-label",
-    "Çok hızlandır"
-  );
-
-  veryFastButton.title =
-    "Çok hızlandır";
-
-  let veryFastLevel = 0;
-
-  veryFastButton.addEventListener(
-    "click",
-    () => {
-
-      veryFastLevel++;
-
-      if (veryFastLevel > 3) {
-        veryFastLevel = 0;
-      }
-
-      const veryFastRates = [
-        1,
-        2,
-        2.5,
-        3
-      ];
-
-      const veryFastIcons = [
-        "→",
-        "→",
-        "→→",
-        "→→→"
-      ];
-
-      speechRate =
-        veryFastRates[veryFastLevel];
-
-      veryFastButton.textContent =
-        veryFastIcons[veryFastLevel];
-
-    }
-  );
-
-
-  /* =====================================
-     TEK SATIRDA SIRALA
-  ===================================== */
-
-  ttsControls.appendChild(
-    slowButton
-  );
-
-  ttsControls.appendChild(
-    playButton
-  );
-
-  ttsControls.appendChild(
-    stopButton
-  );
-
-  ttsControls.appendChild(
-    fastButton
-  );
-
-  ttsControls.appendChild(
-    veryFastButton
-  );
-
-
-  /* =====================================
-     SORU KARTININ ALTINA EKLE
-  ===================================== */
-
-  content.appendChild(
-    ttsControls
-  );
 
       if (subtitle) {
 
@@ -1459,6 +1173,358 @@ function renderQuestion() {
     card
   );
 
+
+  /* =========================================
+     TEXT TO SPEECH KONTROLLERİ
+     BURASI DOĞRU YER
+  ========================================= */
+
+  const ttsControls =
+    document.createElement(
+      "div"
+    );
+
+  ttsControls.className =
+    "tts-controls";
+
+
+  /* =====================================
+     YAVAŞLAT
+     1 → 0.75 → 0.50 → 0.25
+  ===================================== */
+
+  const slowButton =
+    document.createElement(
+      "button"
+    );
+
+  slowButton.type =
+    "button";
+
+  slowButton.className =
+    "tts-button tts-slow";
+
+  slowButton.textContent =
+    "→";
+
+  slowButton.setAttribute(
+    "aria-label",
+    "Yavaşlat"
+  );
+
+  slowButton.title =
+    "Yavaşlat";
+
+  let slowLevel = 0;
+
+  slowButton.addEventListener(
+    "click",
+    event => {
+
+      event.stopPropagation();
+
+      slowLevel++;
+
+      if (
+        slowLevel > 3
+      ) {
+
+        slowLevel =
+          0;
+
+      }
+
+      const slowRates = [
+        1,
+        0.75,
+        0.50,
+        0.25
+      ];
+
+      const slowIcons = [
+        "→",
+        "→",
+        "→→",
+        "→→→"
+      ];
+
+      speechRate =
+        slowRates[
+          slowLevel
+        ];
+
+      slowButton.textContent =
+        slowIcons[
+          slowLevel
+        ];
+
+      stopSpeech();
+
+    }
+  );
+
+
+  /* =====================================
+     OYNAT
+  ===================================== */
+
+  const playButton =
+    document.createElement(
+      "button"
+    );
+
+  playButton.type =
+    "button";
+
+  playButton.className =
+    "tts-button tts-play";
+
+  playButton.textContent =
+    "▶";
+
+  playButton.setAttribute(
+    "aria-label",
+    "Oynat"
+  );
+
+  playButton.title =
+    "Oynat";
+
+  playButton.addEventListener(
+    "click",
+    event => {
+
+      event.stopPropagation();
+
+      playSelectedText();
+
+    }
+  );
+
+
+  /* =====================================
+     DURDUR
+  ===================================== */
+
+  const stopButton =
+    document.createElement(
+      "button"
+    );
+
+  stopButton.type =
+    "button";
+
+  stopButton.className =
+    "tts-button tts-stop";
+
+  stopButton.textContent =
+    "■";
+
+  stopButton.setAttribute(
+    "aria-label",
+    "Durdur"
+  );
+
+  stopButton.title =
+    "Durdur";
+
+  stopButton.addEventListener(
+    "click",
+    event => {
+
+      event.stopPropagation();
+
+      stopSpeech();
+
+    }
+  );
+
+
+  /* =====================================
+     HIZLANDIR 1
+     1 → 1.25 → 1.50 → 1.75
+  ===================================== */
+
+  const fastButton =
+    document.createElement(
+      "button"
+    );
+
+  fastButton.type =
+    "button";
+
+  fastButton.className =
+    "tts-button tts-fast";
+
+  fastButton.textContent =
+    "→";
+
+  fastButton.setAttribute(
+    "aria-label",
+    "Hızlandır"
+  );
+
+  fastButton.title =
+    "Hızlandır";
+
+  let fastLevel = 0;
+
+  fastButton.addEventListener(
+    "click",
+    event => {
+
+      event.stopPropagation();
+
+      fastLevel++;
+
+      if (
+        fastLevel > 3
+      ) {
+
+        fastLevel =
+          0;
+
+      }
+
+      const fastRates = [
+        1,
+        1.25,
+        1.50,
+        1.75
+      ];
+
+      const fastIcons = [
+        "→",
+        "→",
+        "→→",
+        "→→→"
+      ];
+
+      speechRate =
+        fastRates[
+          fastLevel
+        ];
+
+      fastButton.textContent =
+        fastIcons[
+          fastLevel
+        ];
+
+      stopSpeech();
+
+    }
+  );
+
+
+  /* =====================================
+     HIZLANDIR 2
+     1 → 2 → 2.5 → 3
+  ===================================== */
+
+  const veryFastButton =
+    document.createElement(
+      "button"
+    );
+
+  veryFastButton.type =
+    "button";
+
+  veryFastButton.className =
+    "tts-button tts-very-fast";
+
+  veryFastButton.textContent =
+    "→";
+
+  veryFastButton.setAttribute(
+    "aria-label",
+    "Çok hızlandır"
+  );
+
+  veryFastButton.title =
+    "Çok hızlandır";
+
+  let veryFastLevel = 0;
+
+  veryFastButton.addEventListener(
+    "click",
+    event => {
+
+      event.stopPropagation();
+
+      veryFastLevel++;
+
+      if (
+        veryFastLevel > 3
+      ) {
+
+        veryFastLevel =
+          0;
+
+      }
+
+      const veryFastRates = [
+        1,
+        2,
+        2.5,
+        3
+      ];
+
+      const veryFastIcons = [
+        "→",
+        "→",
+        "→→",
+        "→→→"
+      ];
+
+      speechRate =
+        veryFastRates[
+          veryFastLevel
+        ];
+
+      veryFastButton.textContent =
+        veryFastIcons[
+          veryFastLevel
+        ];
+
+      stopSpeech();
+
+    }
+  );
+
+
+  /* =====================================
+     KONTROLLERİ TEK SATIRA KOY
+  ===================================== */
+
+  ttsControls.appendChild(
+    slowButton
+  );
+
+  ttsControls.appendChild(
+    playButton
+  );
+
+  ttsControls.appendChild(
+    stopButton
+  );
+
+  ttsControls.appendChild(
+    fastButton
+  );
+
+  ttsControls.appendChild(
+    veryFastButton
+  );
+
+  content.appendChild(
+    ttsControls
+  );
+
+
+  /* =========================================
+     NAVİGASYON
+  ========================================= */
+
   const top =
     document.querySelector(
       "#top-navigation"
@@ -1580,10 +1646,6 @@ function createNavigation(
     "navigation-wrapper";
 
 
-  /* =====================================
-     TEK SATIR
-  ====================================== */
-
   const mainRow =
     document.createElement(
       "div"
@@ -1595,7 +1657,7 @@ function createNavigation(
 
   /* =====================================
      SOL — SORU NAVİGASYONU
-  ====================================== */
+  ===================================== */
 
   const questionGroup =
     document.createElement(
@@ -1605,8 +1667,6 @@ function createNavigation(
   questionGroup.className =
     "navigation-group question-navigation-group";
 
-
-  /* ÖNCEKİ SORU */
 
   const previousQuestion =
     makeButton(
@@ -1659,7 +1719,9 @@ function createNavigation(
     };
 
 
-  /* SORU NUMARASI */
+  /* =====================================
+     SORU NUMARASI
+  ===================================== */
 
   const questionInput =
     document.createElement(
@@ -1722,7 +1784,9 @@ function createNavigation(
   );
 
 
-  /* SONRAKİ SORU */
+  /* =====================================
+     SONRAKİ SORU
+  ===================================== */
 
   const nextQuestion =
     makeButton(
@@ -1796,8 +1860,8 @@ function createNavigation(
 
 
   /* =====================================
-     ORTA — KÂBE / ANA SAYFA
-  ====================================== */
+     ORTA — ANA SAYFA
+  ===================================== */
 
   const homeGroup =
     document.createElement(
@@ -1826,6 +1890,8 @@ function createNavigation(
   home.onclick =
     () => {
 
+      stopSpeech();
+
       renderHome();
 
       window.scrollTo({
@@ -1842,7 +1908,7 @@ function createNavigation(
 
   /* =====================================
      SAĞ — GÜN NAVİGASYONU
-  ====================================== */
+  ===================================== */
 
   const dayGroup =
     document.createElement(
@@ -1852,8 +1918,6 @@ function createNavigation(
   dayGroup.className =
     "navigation-group day-navigation-group";
 
-
-  /* ÖNCEKİ GÜN */
 
   const previousDay =
     makeButton(
@@ -1881,6 +1945,8 @@ function createNavigation(
         currentDayIndex > 0
       ) {
 
+        stopSpeech();
+
         currentDayIndex--;
 
         currentQuestionIndex =
@@ -1893,7 +1959,9 @@ function createNavigation(
     };
 
 
-  /* GÜN NUMARASI */
+  /* =====================================
+     GÜN NUMARASI
+  ===================================== */
 
   const dayInput =
     document.createElement(
@@ -1959,7 +2027,9 @@ function createNavigation(
   );
 
 
-  /* SONRAKİ GÜN */
+  /* =====================================
+     SONRAKİ GÜN
+  ===================================== */
 
   const nextDay =
     makeButton(
@@ -1989,6 +2059,8 @@ function createNavigation(
         days.length - 1
       ) {
 
+        stopSpeech();
+
         currentDayIndex++;
 
         currentQuestionIndex =
@@ -2015,8 +2087,8 @@ function createNavigation(
 
 
   /* =====================================
-     TEK SATIRA YERLEŞTİR
-  ====================================== */
+     TEK SATIR
+  ===================================== */
 
   mainRow.appendChild(
     questionGroup
@@ -2051,7 +2123,9 @@ function goToQuestionNumber(
     Number(value);
 
   if (
-    !Number.isInteger(questionNumber)
+    !Number.isInteger(
+      questionNumber
+    )
   ) {
 
     return;
@@ -2077,6 +2151,8 @@ function goToQuestionNumber(
     if (
       questionIndex !== -1
     ) {
+
+      stopSpeech();
 
       currentDayIndex =
         dayIndex;
@@ -2111,7 +2187,9 @@ function goToDayNumber(
     Number(value);
 
   if (
-    !Number.isInteger(dayNumber)
+    !Number.isInteger(
+      dayNumber
+    )
   ) {
 
     return;
@@ -2136,6 +2214,8 @@ function goToDayNumber(
     return;
 
   }
+
+  stopSpeech();
 
   currentDayIndex =
     dayIndex;
@@ -2406,66 +2486,36 @@ function getSourceUrl(
 
 
 /* =========================================
-   GENEL HATA YAKALAMA
-========================================= */
-
-window.addEventListener(
-  "error",
-  event => {
-
-    console.error(
-      "Yol Haritası JavaScript hatası:",
-      event.error ||
-      event.message
-    );
-
-  }
-);
-
-
-/* =========================================
-   PROMISE HATALARI
-========================================= */
-
-window.addEventListener(
-  "unhandledrejection",
-  event => {
-
-    console.error(
-      "Yol Haritası Promise hatası:",
-      event.reason
-    );
-
-  }
-);
-
-
-/* =========================================
-   APP.JS SONU
-========================================= */
-/* =========================================
    TEXT TO SPEECH
 ========================================= */
-
-let speechRate = 1;
-
-let speechUtterance = null;
 
 
 /* =========================================
    METNİ SESLENDİR
 ========================================= */
 
-function speakText(text) {
+function speakText(
+  text
+) {
 
-  if (!("speechSynthesis" in window)) {
+  if (
+    !("speechSynthesis" in window)
+  ) {
+
+    console.warn(
+      "Bu tarayıcı Speech Synthesis desteklemiyor."
+    );
+
     return;
+
   }
 
   window.speechSynthesis.cancel();
 
   speechUtterance =
-    new SpeechSynthesisUtterance(text);
+    new SpeechSynthesisUtterance(
+      text
+    );
 
   speechUtterance.rate =
     speechRate;
@@ -2477,7 +2527,9 @@ function speakText(text) {
     1;
 
   speechUtterance.lang =
-    getSpeechLanguage(selectedLang);
+    getSpeechLanguage(
+      selectedLang
+    );
 
   window.speechSynthesis.speak(
     speechUtterance
@@ -2490,20 +2542,32 @@ function speakText(text) {
    DİL → SES DİLİ
 ========================================= */
 
-function getSpeechLanguage(lang) {
+function getSpeechLanguage(
+  lang
+) {
 
   const languages = {
 
     tr: "tr-TR",
+
     en: "en-US",
+
     de: "de-DE",
+
     ru: "ru-RU",
+
     ku: "ku",
+
     ar: "ar-SA",
+
     tt: "tt-RU",
+
     fr: "fr-FR",
+
     es: "es-ES",
+
     nl: "nl-NL",
+
     it: "it-IT"
 
   };
@@ -2548,7 +2612,9 @@ function playSelectedText() {
   const text =
     `${data.q}. ${data.a}`;
 
-  speakText(text);
+  speakText(
+    text
+  );
 
 }
 
@@ -2574,9 +2640,12 @@ function stopSpeech() {
    HIZ DEĞİŞTİR
 ========================================= */
 
-function setSpeechRate(rate) {
+function setSpeechRate(
+  rate
+) {
 
-  speechRate = rate;
+  speechRate =
+    rate;
 
   if (
     window.speechSynthesis.speaking
@@ -2587,3 +2656,43 @@ function setSpeechRate(rate) {
   }
 
 }
+
+
+/* =========================================
+   GENEL HATA YAKALAMA
+========================================= */
+
+window.addEventListener(
+  "error",
+  event => {
+
+    console.error(
+      "Yol Haritası JavaScript hatası:",
+      event.error ||
+      event.message
+    );
+
+  }
+);
+
+
+/* =========================================
+   PROMISE HATALARI
+========================================= */
+
+window.addEventListener(
+  "unhandledrejection",
+  event => {
+
+    console.error(
+      "Yol Haritası Promise hatası:",
+      event.reason
+    );
+
+  }
+);
+
+
+/* =========================================
+   APP.JS SONU
+========================================= */
