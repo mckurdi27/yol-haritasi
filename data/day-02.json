@@ -3,375 +3,334 @@
   "dayTitle": {
     "tr": "2. Gün — Vahiy, Kur'an ve İslâm'ın Temel Kaynakları",
     "en": "Day 2 — Revelation, the Qur'an and the Fundamental Sources of Islam",
-    "de": "2. Tag — Offenbarung, der Qur'an und die grundlegenden Quellen des Islam",
-    "ru": "2-й день — Откровение, Коран и основные источники ислама",
-    "ku": "Roj 2 — Wehy, Qur'an û çavkaniyên bingehîn ên Îslamê",
+    "de": "2. Tag — Offenbarung, der Koran und die grundlegenden Quellen des Islam",
+    "ru": "2-й день — Откровение, Коран и основные источники Ислама",
+    "ku": "Roj 2 — Wahy, Qur'an û Çavkaniyên Bingehîn ên Îslamê",
+    "ar": "الْيَوْمُ الثَّانِي — الْوَحْيُ وَالْقُرْآنُ وَالْمَصَادِرُ الْأَسَاسِيَّةُ لِلْإِسْلَامِ",
     "tt": "2 нче көн — Вәхи, Коръән һәм Исламның төп чыганаклары",
     "fr": "Jour 2 — La révélation, le Coran et les sources fondamentales de l'islam",
-    "es": "Día 2 — La revelación, el Corán y las fuentes fundamentales del islam",
-    "ar": "الْيَوْمُ الثَّانِي — الْوَحْيُ وَالْقُرْآنُ وَالْمَصَادِرُ الْأَسَاسِيَّةُ لِلْإِسْلَامِ",
+    "es": "Día 2 — La revelación, el Corán y las fuentes fundamentales del Islam",
     "nl": "Dag 2 — Openbaring, de Koran en de fundamentele bronnen van de islam",
     "it": "Giorno 2 — La rivelazione, il Corano e le fonti fondamentali dell'Islam"
   },
+
   "daySubtitle": {
     "tr": "Vahiy, Cebrâil, ilk vahiy, Kur'an'ın yapısı ve sünneti tanımak",
-    "en": "Learning about revelation, Jibril, the first revelation, the structure of the Qur'an and the Sunnah",
-    "de": "Offenbarung, Dschibril, die erste Offenbarung, den Aufbau des Qur'an und die Sunna kennenlernen",
+    "en": "Understanding revelation, Jibril, the first revelation, the structure of the Qur'an and the Sunnah",
+    "de": "Offenbarung, Dschibril, die erste Offenbarung, den Aufbau des Korans und die Sunna kennenlernen",
     "ru": "Знакомство с откровением, Джибрилем, первым откровением, строением Корана и Сунной",
-    "ku": "Nasîna wehyê, Cibrîl, wehiya yekem, avahiya Qur'anê û Sunneta",
-    "tt": "Вәхи, Җәбраил, беренче вәхи, Коръән төзелеше һәм сөннәт белән танышу",
+    "ku": "Nasîna wahyê, Cibrîl, wahya yekem, avahiya Qur'anê û Sunneta",
+    "ar": "التَّعَرُّفُ عَلَى الْوَحْيِ وَجِبْرِيلَ وَأَوَّلِ وَحْيٍ وَبِنَاءِ الْقُرْآنِ وَالسُّنَّةِ",
+    "tt": "Вәхи, Җәбраил, беренче вәхи, Коръән төзелеше һәм Сөннәт белән танышу",
     "fr": "Découvrir la révélation, Jibril, la première révélation, la structure du Coran et la Sunna",
-    "es": "Conocer la revelación, Jibril, la primera revelación, la estructura del Corán y la Sunna",
-    "ar": "التَّعَرُّفُ عَلَى الْوَحْيِ وَجِبْرِيلَ وَأَوَّلِ وَحْيٍ وَبِنْيَةِ الْقُرْآنِ وَالسُّنَّةِ",
-    "nl": "Kennismaken met openbaring, Jibril, de eerste openbaring, de structuur van de Koran en de soenna",
+    "es": "Conocer la revelación, Yibril, la primera revelación, la estructura del Corán y la Sunna",
+    "nl": "Kennismaken met de openbaring, Djibril, de eerste openbaring, de structuur van de Koran en de Soenna",
     "it": "Conoscere la rivelazione, Jibril, la prima rivelazione, la struttura del Corano e la Sunna"
   },
+
   "questions": [
     {
       "id": 20,
       "day": 2,
       "tr": {
         "q": "Vahiy nedir?",
-        "a": "Vahiy, Allah'ın peygamberlerine bildirmek istediği ilahî mesajları bildirmesidir."
+        "a": "Vahiy, Allah'ın peygamberlerine dinî hükümleri ve rehberliği bildirmesidir."
       },
       "en": {
         "q": "What is revelation?",
-        "a": "Revelation is Allah conveying the divine messages He wishes to communicate to His prophets."
+        "a": "Revelation is Allah communicating religious guidance and commands to His prophets."
       },
       "de": {
         "q": "Was ist Offenbarung?",
-        "a": "Offenbarung bedeutet, dass Allah Seinen Propheten die göttlichen Botschaften übermittelt, die Er ihnen mitteilen will."
+        "a": "Offenbarung bedeutet, dass Allah Seinen Propheten religiöse Führung und Gebote mitteilt."
       },
       "ru": {
         "q": "Что такое откровение?",
-        "a": "Откровение — это передача Аллахом Своим пророкам божественных посланий, которые Он желает им сообщить."
+        "a": "Откровение — это сообщение Аллахом религиозного руководства и повелений Своим пророкам."
       },
       "ku": {
-        "q": "Wehy çi ye?",
-        "a": "Wehy ew e ku Xwedê peyamên îlahî yên ku dixwaze bigihîne peyxemberên xwe ji wan re digihîne."
-      },
-      "tt": {
-        "q": "Вәхи нәрсә ул?",
-        "a": "Вәхи — Аллаһның пәйгамбәрләренә җиткерергә теләгән илаһи хәбәрләрен җиткерүе."
-      },
-      "fr": {
-        "q": "Qu'est-ce que la révélation ?",
-        "a": "La révélation est la transmission par Allah de Ses messages divins à Ses prophètes."
-      },
-      "es": {
-        "q": "¿Qué es la revelación?",
-        "a": "La revelación es la comunicación de los mensajes divinos de Allah a Sus profetas."
+        "q": "Wahy çi ye?",
+        "a": "Wahy ew e ku Xwedê rêberî û hûkmanên olî ji peyxemberên xwe re radigihîne."
       },
       "ar": {
         "q": "مَا هُوَ الْوَحْيُ؟",
-        "a": "الْوَحْيُ هُوَ إِبْلَاغُ اللَّهِ أَنْبِيَاءَهُ بِالرِّسَالَاتِ الْإِلَهِيَّةِ."
+        "a": "الْوَحْيُ هُوَ إِبْلَاغُ اللَّهِ أَنْبِيَاءَهُ بِالْهُدَى وَالْأَحْكَامِ الدِّينِيَّةِ."
+      },
+      "tt": {
+        "q": "Вәхи нәрсә ул?",
+        "a": "Вәхи — Аллаһның пәйгамбәрләренә дини җитәкчелекне һәм хөкемнәрне җиткерүе."
+      },
+      "fr": {
+        "q": "Qu'est-ce que la révélation ?",
+        "a": "La révélation est la transmission par Allah de Ses orientations et de Ses commandements religieux à Ses prophètes."
+      },
+      "es": {
+        "q": "¿Qué es la revelación?",
+        "a": "La revelación es la comunicación por parte de Allah de Su guía y Sus mandatos religiosos a Sus profetas."
       },
       "nl": {
         "q": "Wat is openbaring?",
-        "a": "Openbaring is het overbrengen door Allah van goddelijke boodschappen aan Zijn profeten."
+        "a": "Openbaring is dat Allah Zijn profeten religieuze leiding en voorschriften meedeelt."
       },
       "it": {
         "q": "Che cos'è la rivelazione?",
-        "a": "La rivelazione è la comunicazione da parte di Allah dei messaggi divini ai Suoi profeti."
+        "a": "La rivelazione è la comunicazione da parte di Allah della guida e dei precetti religiosi ai Suoi profeti."
       },
       "sources": [
         "📖 Kur'an — Şûrâ 42:51"
       ]
     },
+
     {
       "id": 21,
       "day": 2,
       "tr": {
-        "q": "Kur'an vahyini Peygamberimize kim getirirdi?",
-        "a": "Kur'an vahyini Peygamberimiz Hz. Muhammed ﷺ'e getiren melek Cebrâil'dir."
+        "q": "Allah'ın peygamberlerine vahiy göndermesinin amacı nedir?",
+        "a": "İnsanlara doğru yolu göstermek, onları Allah'a kulluğa çağırmak ve dünya ile âhiret hayatında rehberlik etmektir."
       },
       "en": {
-        "q": "Which angel brought the Qur'anic revelation to our Prophet?",
-        "a": "The angel Jibril brought the Qur'anic revelation to our Prophet Muhammad ﷺ."
+        "q": "What is the purpose of Allah sending revelation to His prophets?",
+        "a": "Its purpose is to guide people to the truth, call them to worship Allah, and guide them in this world and the Hereafter."
       },
       "de": {
-        "q": "Welcher Engel überbrachte unserem Propheten die Offenbarung des Qur'an?",
-        "a": "Der Engel Dschibril überbrachte unserem Propheten Muhammad ﷺ die Offenbarung des Qur'an."
+        "q": "Was ist der Zweck der Offenbarung an Allahs Propheten?",
+        "a": "Sie soll den Menschen den richtigen Weg zeigen, sie zur Anbetung Allahs aufrufen und ihnen im Diesseits und Jenseits Orientierung geben."
       },
       "ru": {
-        "q": "Какой ангел приносил нашему Пророку откровение Корана?",
-        "a": "Ангел Джибриль приносил нашему Пророку Мухаммаду ﷺ откровение Корана."
+        "q": "Какова цель откровения, ниспосланного Аллахом пророкам?",
+        "a": "Его цель — указать людям правильный путь, призвать их поклоняться Аллаху и наставить их в этой жизни и в будущей."
       },
       "ku": {
-        "q": "Kîjan milyaket wehiya Qur'anê ji Peyxemberê me re digihand?",
-        "a": "Milyaket Cibrîl wehiya Qur'anê ji Peyxemberê me Muhammed ﷺ re digihand."
-      },
-      "tt": {
-        "q": "Пәйгамбәребезгә Коръән вәхиен кайсы фәрештә китергән?",
-        "a": "Җәбраил фәрештә Коръән вәхиен Пәйгамбәребез Мөхәммәд ﷺ кә китергән."
-      },
-      "fr": {
-        "q": "Quel ange apportait la révélation du Coran à notre Prophète ?",
-        "a": "L'ange Jibril apportait la révélation du Coran à notre Prophète Muhammad ﷺ."
-      },
-      "es": {
-        "q": "¿Qué ángel llevó la revelación del Corán a nuestro Profeta?",
-        "a": "El ángel Jibril llevó la revelación del Corán a nuestro Profeta Muhammad ﷺ."
+        "q": "Armanca şandina wahyê ji aliyê Xwedê ve ji peyxemberan re çi ye?",
+        "a": "Armanc ew e ku mirovan rêya rast nîşan bide, wan bangî îbadeta Xwedê bike û di dinya û axiretê de rêberiya wan bike."
       },
       "ar": {
-        "q": "مَنْ كَانَ يَحْمِلُ وَحْيَ الْقُرْآنِ إِلَى نَبِيِّنَا؟",
-        "a": "كَانَ الْمَلَكُ جِبْرِيلُ عَلَيْهِ السَّلَامُ يَنْقُلُ وَحْيَ الْقُرْآنِ إِلَى نَبِيِّنَا مُحَمَّدٍ ﷺ."
+        "q": "مَا الْهَدَفُ مِنْ إِرْسَالِ الْوَحْيِ إِلَى أَنْبِيَاءِ اللَّهِ؟",
+        "a": "هَدَفُهُ هِدَايَةُ النَّاسِ إِلَى الْحَقِّ، وَدَعْوَتُهُمْ إِلَى عِبَادَةِ اللَّهِ، وَإِرْشَادُهُمْ فِي الدُّنْيَا وَالْآخِرَةِ."
+      },
+      "tt": {
+        "q": "Аллаһның пәйгамбәрләренә вәхи җибәрүенең максаты нинди?",
+        "a": "Аның максаты — кешеләргә туры юлны күрсәтү, аларны Аллаһка гыйбадәт кылырга чакыру һәм дөньяда да, ахирәттә дә җитәкчелек итү."
+      },
+      "fr": {
+        "q": "Quel est le but de la révélation envoyée par Allah à Ses prophètes ?",
+        "a": "Elle a pour but de guider les hommes vers la vérité, de les appeler à adorer Allah et de les guider dans ce monde et dans l'au-delà."
+      },
+      "es": {
+        "q": "¿Cuál es el propósito de la revelación enviada por Allah a Sus profetas?",
+        "a": "Su propósito es guiar a las personas hacia la verdad, llamarlas a adorar a Allah y orientarlas en esta vida y en la otra."
       },
       "nl": {
-        "q": "Welke engel bracht de openbaring van de Koran aan onze Profeet?",
-        "a": "De engel Jibril bracht de openbaring van de Koran aan onze Profeet Mohammed ﷺ."
+        "q": "Wat is het doel van de openbaring die Allah aan Zijn profeten heeft gezonden?",
+        "a": "Het doel is mensen naar de waarheid te leiden, hen op te roepen Allah te aanbidden en hen in dit leven en het Hiernamaals te leiden."
       },
       "it": {
-        "q": "Quale angelo portava la rivelazione del Corano al nostro Profeta?",
-        "a": "L'angelo Jibril portava la rivelazione del Corano al nostro Profeta Muhammad ﷺ."
+        "q": "Qual è lo scopo della rivelazione inviata da Allah ai Suoi profeti?",
+        "a": "Il suo scopo è guidare le persone verso la verità, chiamarle ad adorare Allah e guidarle in questa vita e nell'Aldilà."
       },
       "sources": [
-        "📖 Kur'an — Bakara 2:97",
-        "📖 Kur'an — Şuarâ 26:193-194"
+        "📖 Kur'an — Bakara 2:213",
+        "📖 Kur'an — Nahl 16:36"
       ]
     },
+
     {
       "id": 22,
       "day": 2,
       "tr": {
-        "q": "Kur'an'ın ilk indirilen ayetleri hangileridir?",
-        "a": "İlk indirilen vahiy, Alak sûresinin ilk beş ayetidir: “Yaratan Rabbinin adıyla oku!”"
+        "q": "Cebrâil (a.s.) kimdir?",
+        "a": "Cebrâil (a.s.), Allah'ın vahyini peygamberlere ulaştırmakla görevli büyük meleklerden biridir."
       },
       "en": {
-        "q": "Which verses of the Qur'an were revealed first?",
-        "a": "The first revealed passage was the first five verses of Surah Al-'Alaq: “Read in the name of your Lord who created.”"
+        "q": "Who is Jibril (Gabriel)?",
+        "a": "Jibril is one of the great angels entrusted with conveying Allah's revelation to the prophets."
       },
       "de": {
-        "q": "Welche Verse des Qur'an wurden zuerst offenbart?",
-        "a": "Die zuerst offenbarte Passage waren die ersten fünf Verse der Sure al-'Alaq: „Lies im Namen deines Herrn, Der erschaffen hat.“"
+        "q": "Wer ist Dschibril (Gabriel)?",
+        "a": "Dschibril ist einer der großen Engel, die damit beauftragt sind, Allahs Offenbarung zu den Propheten zu überbringen."
       },
       "ru": {
-        "q": "Какие аяты Корана были ниспосланы первыми?",
-        "a": "Первыми были ниспосланы первые пять аятов суры «Аль-Алак»: «Читай во имя твоего Господа, Который сотворил»."
+        "q": "Кто такой Джибриль (Гавриил)?",
+        "a": "Джибриль — один из великих ангелов, которому поручено передавать откровение Аллаха пророкам."
       },
       "ku": {
-        "q": "Kîjan ayetên Qur'anê yekem hatin daxuyandin?",
-        "a": "Yekem vahî pênc ayetên pêşîn ên Sûreya El-'Eleqê bûn: «Bi navê Xwedayê xwe yê ku afirand bixwîne.»"
-      },
-      "tt": {
-        "q": "Коръәннең беренче иңдерелгән аятьләре кайсылар?",
-        "a": "Беренче иңдерелгән аятьләр Әл-Галәк сүрәсенең беренче биш аяте: «Яраткан Раббың исеме белән укы!»"
-      },
-      "fr": {
-        "q": "Quels sont les premiers versets révélés du Coran ?",
-        "a": "Les premiers versets révélés sont les cinq premiers versets de la sourate Al-'Alaq : « Lis au nom de ton Seigneur qui a créé. »"
-      },
-      "es": {
-        "q": "¿Cuáles fueron los primeros versículos revelados del Corán?",
-        "a": "Los primeros fueron los cinco primeros versículos de la sura Al-'Alaq: «Lee en el nombre de tu Señor que creó»."
+        "q": "Cibrîl (a.s.) kî ye?",
+        "a": "Cibrîl (a.s.) yek ji melekên mezin e ku wezîfeya gihandina wahyê Xwedê ji peyxemberan re li ser milê wî ye."
       },
       "ar": {
-        "q": "مَا أَوَّلُ مَا نَزَلَ مِنَ الْقُرْآنِ؟",
-        "a": "أَوَّلُ مَا نَزَلَ هُوَ أَوَائِلُ سُورَةِ الْعَلَقِ، وَهِيَ الْآيَاتُ الْخَمْسُ الْأُولَى: «اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ»."
+        "q": "مَنْ هُوَ جِبْرِيلُ عَلَيْهِ السَّلَامُ؟",
+        "a": "جِبْرِيلُ عَلَيْهِ السَّلَامُ مَلَكٌ عَظِيمٌ مِنَ الْمَلَائِكَةِ، وَهُوَ مُوَكَّلٌ بِإِبْلَاغِ وَحْيِ اللَّهِ إِلَى الْأَنْبِيَاءِ."
+      },
+      "tt": {
+        "q": "Җәбраил (галәйһиссәлам) кем ул?",
+        "a": "Җәбраил (галәйһиссәлам) — Аллаһның вәхиен пәйгамбәрләргә җиткерү вазифасы йөкләнгән бөек фәрештәләрнең берсе."
+      },
+      "fr": {
+        "q": "Qui est Jibril (Gabriel) ?",
+        "a": "Jibril est l'un des grands anges chargé de transmettre la révélation d'Allah aux prophètes."
+      },
+      "es": {
+        "q": "¿Quién es Yibril (Gabriel)?",
+        "a": "Yibril es uno de los grandes ángeles encargado de transmitir la revelación de Allah a los profetas."
       },
       "nl": {
-        "q": "Welke verzen van de Koran werden als eerste geopenbaard?",
-        "a": "De eerste vijf verzen van soera al-'Alaq werden als eerste geopenbaard: «Lees in de naam van jouw Heer Die heeft geschapen.»"
+        "q": "Wie is Djibril (Gabriël)?",
+        "a": "Djibril is een van de grote engelen die belast is met het overbrengen van Allahs openbaring aan de profeten."
       },
       "it": {
-        "q": "Quali furono i primi versetti rivelati del Corano?",
-        "a": "Furono i primi cinque versetti della sura Al-'Alaq: «Leggi nel nome del tuo Signore che ha creato»."
+        "q": "Chi è Jibril (Gabriele)?",
+        "a": "Jibril è uno dei grandi angeli incaricati di trasmettere la rivelazione di Allah ai profeti."
       },
       "sources": [
-        "📖 Kur'an — Alak 96:1-5"
+        "📖 Kur'an — Bakara 2:97-98",
+        "📖 Kur'an — Şuarâ 26:193-194"
       ]
     },
+
     {
       "id": 23,
       "day": 2,
       "tr": {
-        "q": "İlk vahiy nerede geldi?",
-        "a": "İlk vahiy, Mekke yakınlarındaki Hira Mağarası'nda geldi."
+        "q": "Kur'an-ı Kerîm nedir?",
+        "a": "Kur'an-ı Kerîm, Allah'ın Peygamberimiz Muhammed'e (s.a.v.) vahiy yoluyla gönderdiği son ilâhî kitaptır."
       },
       "en": {
-        "q": "Where did the first revelation come?",
-        "a": "The first revelation came in the Cave of Hira near Makkah."
+        "q": "What is the Noble Qur'an?",
+        "a": "The Noble Qur'an is the final divine Book revealed by Allah to our Prophet Muhammad through revelation."
       },
       "de": {
-        "q": "Wo kam die erste Offenbarung?",
-        "a": "Die erste Offenbarung kam in der Höhle Hira bei Mekka."
+        "q": "Was ist der edle Koran?",
+        "a": "Der edle Koran ist das letzte göttliche Buch, das Allah unserem Propheten Muhammad durch Offenbarung herabgesandt hat."
       },
       "ru": {
-        "q": "Где было ниспослано первое откровение?",
-        "a": "Первое откровение было ниспослано в пещере Хира возле Мекки."
+        "q": "Что такое Благородный Коран?",
+        "a": "Благородный Коран — последнее Божественное Писание, ниспосланное Аллахом нашему пророку Мухаммаду через откровение."
       },
       "ku": {
-        "q": "Wehiya yekem li ku derê hat?",
-        "a": "Wehiya yekem li Şikefta Hira ya li nêzîkî Mekkeyê hat."
-      },
-      "tt": {
-        "q": "Беренче вәхи кайда килгән?",
-        "a": "Беренче вәхи Мәккә янындагы Хира мәгарәсендә килгән."
-      },
-      "fr": {
-        "q": "Où la première révélation a-t-elle été reçue ?",
-        "a": "La première révélation a été reçue dans la grotte de Hira, près de La Mecque."
-      },
-      "es": {
-        "q": "¿Dónde llegó la primera revelación?",
-        "a": "La primera revelación llegó en la cueva de Hira, cerca de La Meca."
+        "q": "Qur'ana Pîroz çi ye?",
+        "a": "Qur'ana Pîroz pirtûka dawî ya îlahî ye ku Xwedê bi rêya wahyê ji Pêxemberê me Muhammed re şandiye."
       },
       "ar": {
-        "q": "أَيْنَ نَزَلَ أَوَّلُ وَحْيٍ؟",
-        "a": "نَزَلَ أَوَّلُ وَحْيٍ فِي غَارِ حِرَاءَ قُرْبَ مَكَّةَ."
+        "q": "مَا هُوَ الْقُرْآنُ الْكَرِيمُ؟",
+        "a": "الْقُرْآنُ الْكَرِيمُ هُوَ آخِرُ كِتَابٍ إِلَهِيٍّ أَنْزَلَهُ اللَّهُ عَلَى نَبِيِّنَا مُحَمَّدٍ عَنْ طَرِيقِ الْوَحْيِ."
+      },
+      "tt": {
+        "q": "Коръән Кәрим нәрсә ул?",
+        "a": "Коръән Кәрим — Аллаһның вәхи аша Пәйгамбәребез Мөхәммәдкә иңдергән соңгы илаһи Китабы."
+      },
+      "fr": {
+        "q": "Qu'est-ce que le Noble Coran ?",
+        "a": "Le Noble Coran est le dernier Livre divin révélé par Allah à notre Prophète Muhammad par l'intermédiaire de la révélation."
+      },
+      "es": {
+        "q": "¿Qué es el Noble Corán?",
+        "a": "El Noble Corán es el último Libro divino revelado por Allah a nuestro Profeta Muhammad mediante la revelación."
       },
       "nl": {
-        "q": "Waar kwam de eerste openbaring?",
-        "a": "De eerste openbaring kwam in de grot Hira bij Mekka."
+        "q": "Wat is de Edele Koran?",
+        "a": "De Edele Koran is het laatste goddelijke Boek dat Allah door openbaring aan onze Profeet Mohammed heeft geopenbaard."
       },
       "it": {
-        "q": "Dove arrivò la prima rivelazione?",
-        "a": "La prima rivelazione arrivò nella grotta di Hira, vicino alla Mecca."
+        "q": "Che cos'è il Nobile Corano?",
+        "a": "Il Nobile Corano è l'ultimo Libro divino rivelato da Allah al nostro Profeta Muhammad attraverso la rivelazione."
       },
       "sources": [
-        "📜 Sahih Buhârî — Bed'ü'l-Vahy, 3"
+        "📖 Kur'an — Bakara 2:2",
+        "📖 Kur'an — Şuarâ 26:192-195"
       ]
     },
+
     {
       "id": 24,
       "day": 2,
       "tr": {
-        "q": "Kur'an kaç sûreden oluşur?",
-        "a": "Kur'an 114 sûreden oluşur."
+        "q": "Kur'an kime indirilmiştir?",
+        "a": "Kur'an, Allah tarafından Peygamberimiz Hz. Muhammed'e (s.a.v.) indirilmiştir."
       },
       "en": {
-        "q": "How many surahs are there in the Qur'an?",
-        "a": "The Qur'an consists of 114 surahs."
+        "q": "To whom was the Qur'an revealed?",
+        "a": "The Qur'an was revealed by Allah to our Prophet Muhammad."
       },
       "de": {
-        "q": "Aus wie vielen Suren besteht der Qur'an?",
-        "a": "Der Qur'an besteht aus 114 Suren."
+        "q": "Wem wurde der Koran offenbart?",
+        "a": "Der Koran wurde von Allah unserem Propheten Muhammad offenbart."
       },
       "ru": {
-        "q": "Сколько сур в Коране?",
-        "a": "В Коране 114 сур."
+        "q": "Кому был ниспослан Коран?",
+        "a": "Коран был ниспослан Аллахом нашему пророку Мухаммаду."
       },
       "ku": {
-        "q": "Qur'an ji çend sûreyan pêk tê?",
-        "a": "Qur'an ji 114 sûreyan pêk tê."
-      },
-      "tt": {
-        "q": "Коръәндә ничә сүрә бар?",
-        "a": "Коръән 114 сүрәдән тора."
-      },
-      "fr": {
-        "q": "Combien de sourates contient le Coran ?",
-        "a": "Le Coran contient 114 sourates."
-      },
-      "es": {
-        "q": "¿Cuántas suras contiene el Corán?",
-        "a": "El Corán consta de 114 suras."
+        "q": "Qur'an ji kê re hatiye daxistin?",
+        "a": "Qur'an ji aliyê Xwedê ve ji Pêxemberê me Muhammed re hatiye daxistin."
       },
       "ar": {
-        "q": "كَمْ سُورَةً فِي الْقُرْآنِ؟",
-        "a": "فِي الْقُرْآنِ ١١٤ سُورَةً."
+        "q": "إِلَى مَنْ أُنْزِلَ الْقُرْآنُ؟",
+        "a": "أُنْزِلَ الْقُرْآنُ مِنَ اللَّهِ عَلَى نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ."
+      },
+      "tt": {
+        "q": "Коръән кемгә иңдерелгән?",
+        "a": "Коръән Аллаһ тарафыннан Пәйгамбәребез Мөхәммәдкә иңдерелгән."
+      },
+      "fr": {
+        "q": "À qui le Coran a-t-il été révélé ?",
+        "a": "Le Coran a été révélé par Allah à notre Prophète Muhammad."
+      },
+      "es": {
+        "q": "¿A quién fue revelado el Corán?",
+        "a": "El Corán fue revelado por Allah a nuestro Profeta Muhammad."
       },
       "nl": {
-        "q": "Uit hoeveel soera's bestaat de Koran?",
-        "a": "De Koran bestaat uit 114 soera's."
+        "q": "Aan wie werd de Koran geopenbaard?",
+        "a": "De Koran werd door Allah aan onze Profeet Mohammed geopenbaard."
       },
       "it": {
-        "q": "Quante sure ci sono nel Corano?",
-        "a": "Il Corano è composto da 114 sure."
+        "q": "A chi è stato rivelato il Corano?",
+        "a": "Il Corano è stato rivelato da Allah al nostro Profeta Muhammad."
       },
       "sources": [
-        "📜 Sahih Buhârî — Kitâbü Fedâili'l-Kur'an"
+        "📖 Kur'an — Bakara 2:97",
+        "📖 Kur'an — Şuarâ 26:192-194"
       ]
     },
+
     {
       "id": 25,
       "day": 2,
       "tr": {
-        "q": "Kur'an'da sûre ve âyet ne demektir?",
-        "a": "Sûre, Kur'an'daki bölümlerin her birine; âyet ise sûrelerin içinde yer alan ilahî vahyin belirli bir bölümüne verilen addır."
-      },
-      "en": {
-        "q": "What do surah and ayah mean in the Qur'an?",
-        "a": "A surah is a chapter of the Qur'an, while an ayah is a verse within a surah."
-      },
-      "de": {
-        "q": "Was bedeuten Sure und Aya im Qur'an?",
-        "a": "Eine Sure ist ein Kapitel des Qur'an, während eine Aya ein Vers innerhalb einer Sure ist."
-      },
-      "ru": {
-        "q": "Что означают слова «сура» и «аят» в Коране?",
-        "a": "Сура — это глава Корана, а аят — отдельный стих внутри суры."
-      },
-      "ku": {
-        "q": "Sûre û ayet di Qur'anê de çi ne?",
-        "a": "Sûre beşek ji Qur'anê ye, û ayet jî beşek ji hundirê sûreyekê ye."
-      },
-      "tt": {
-        "q": "Коръәндә сүрә һәм аять нәрсә аңлата?",
-        "a": "Сүрә — Коръәннең бер бүлеге, ә аять — сүрә эчендәге аерым бер өлеш."
-      },
-      "fr": {
-        "q": "Que signifient sourate et verset dans le Coran ?",
-        "a": "Une sourate est un chapitre du Coran, tandis qu'un verset est une unité du texte à l'intérieur d'une sourate."
-      },
-      "es": {
-        "q": "¿Qué significan sura y aleya en el Corán?",
-        "a": "Una sura es un capítulo del Corán, mientras que una aleya es un versículo dentro de una sura."
-      },
-      "ar": {
-        "q": "مَاذَا تَعْنِي السُّورَةُ وَالْآيَةُ فِي الْقُرْآنِ؟",
-        "a": "السُّورَةُ فَصْلٌ مِنْ فُصُولِ الْقُرْآنِ، وَالْآيَةُ جُزْءٌ مِنَ السُّورَةِ."
-      },
-      "nl": {
-        "q": "Wat betekenen soera en aya in de Koran?",
-        "a": "Een soera is een hoofdstuk van de Koran, terwijl een aya een vers binnen een soera is."
-      },
-      "it": {
-        "q": "Che cosa significano sura e versetto nel Corano?",
-        "a": "Una sura è un capitolo del Corano, mentre un versetto è una parte del testo all'interno di una sura."
-      },
-      "sources": [
-        "📖 Kur'an — Bakara 2:23"
-      ]
-    },
-    {
-      "id": 26,
-      "day": 2,
-      "tr": {
         "q": "Kur'an hangi dilde indirilmiştir?",
-        "a": "Kur'an Arapça olarak indirilmiştir."
+        "a": "Kur'an, Arapça olarak indirilmiştir."
       },
       "en": {
         "q": "In which language was the Qur'an revealed?",
         "a": "The Qur'an was revealed in Arabic."
       },
       "de": {
-        "q": "In welcher Sprache wurde der Qur'an offenbart?",
-        "a": "Der Qur'an wurde auf Arabisch offenbart."
+        "q": "In welcher Sprache wurde der Koran offenbart?",
+        "a": "Der Koran wurde in arabischer Sprache offenbart."
       },
       "ru": {
         "q": "На каком языке был ниспослан Коран?",
         "a": "Коран был ниспослан на арабском языке."
       },
       "ku": {
-        "q": "Qur'an bi kîjan zimanî hatiye daxuyandin?",
-        "a": "Qur'an bi zimanê Erebî hatiye daxuyandin."
+        "q": "Qur'an bi kîjan zimanî hatiye daxistin?",
+        "a": "Qur'an bi zimanê erebî hatiye daxistin."
+      },
+      "ar": {
+        "q": "بِأَيِّ لُغَةٍ أُنْزِلَ الْقُرْآنُ؟",
+        "a": "أُنْزِلَ الْقُرْآنُ بِاللُّغَةِ الْعَرَبِيَّةِ."
       },
       "tt": {
-        "q": "Коръән нинди телдә иңдерелгән?",
+        "q": "Коръән кайсы телдә иңдерелгән?",
         "a": "Коръән гарәп телендә иңдерелгән."
       },
       "fr": {
         "q": "Dans quelle langue le Coran a-t-il été révélé ?",
-        "a": "Le Coran a été révélé en arabe."
+        "a": "Le Coran a été révélé en langue arabe."
       },
       "es": {
         "q": "¿En qué idioma fue revelado el Corán?",
-        "a": "El Corán fue revelado en árabe."
-      },
-      "ar": {
-        "q": "بِأَيِّ لُغَةٍ نَزَلَ الْقُرْآنُ؟",
-        "a": "نَزَلَ الْقُرْآنُ بِاللُّغَةِ الْعَرَبِيَّةِ."
+        "a": "El Corán fue revelado en lengua árabe."
       },
       "nl": {
         "q": "In welke taal werd de Koran geopenbaard?",
@@ -379,631 +338,698 @@
       },
       "it": {
         "q": "In quale lingua è stato rivelato il Corano?",
-        "a": "Il Corano è stato rivelato in arabo."
+        "a": "Il Corano è stato rivelato in lingua araba."
       },
       "sources": [
-        "📖 Kur'an — Yusuf 12:2",
-        "📖 Kur'an — Şuarâ 26:195"
+        "📖 Kur'an — Yûsuf 12:2",
+        "📖 Kur'an — Zuhruf 43:3"
       ]
     },
+
+    {
+      "id": 26,
+      "day": 2,
+      "tr": {
+        "q": "Kur'an'ın ilk indirilen âyetleri hangileridir?",
+        "a": "İlk indirilen âyetler, Alak sûresinin ilk beş âyetidir: 'Yaratan Rabbinin adıyla oku.'"
+      },
+      "en": {
+        "q": "Which verses of the Qur'an were revealed first?",
+        "a": "The first verses revealed were the first five verses of Surah Al-'Alaq: 'Read in the name of your Lord who created.'"
+      },
+      "de": {
+        "q": "Welche Verse des Korans wurden zuerst offenbart?",
+        "a": "Die ersten offenbarten Verse waren die ersten fünf Verse der Sure Al-'Alaq: „Lies im Namen deines Herrn, Der erschaffen hat.“"
+      },
+      "ru": {
+        "q": "Какие аяты Корана были ниспосланы первыми?",
+        "a": "Первыми были ниспосланы первые пять аятов суры «Аль-Алак»: «Читай во имя твоего Господа, Который сотворил»."
+      },
+      "ku": {
+        "q": "Kîjan ayetên Qur'anê yekem hatin daxistin?",
+        "a": "Yekem ayetên daxistî pênc ayetên destpêkê yên Sûreya El-'Eleq in: 'Bi navê Xwedayê xwe yê ku afirandiye bixwîne.'"
+      },
+      "ar": {
+        "q": "مَا أَوَّلُ الْآيَاتِ الَّتِي نَزَلَتْ مِنَ الْقُرْآنِ؟",
+        "a": "أَوَّلُ مَا نَزَلَ هُوَ الْآيَاتُ الْخَمْسُ الْأُولَى مِنْ سُورَةِ الْعَلَقِ: «اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ»."
+      },
+      "tt": {
+        "q": "Коръәннең беренче булып иңдерелгән аятьләре кайсылар?",
+        "a": "Беренче булып Әл-Галәк сүрәсенең беренче биш аяты иңдерелгән: «Яраткан Раббың исеме белән укы»."
+      },
+      "fr": {
+        "q": "Quels sont les premiers versets du Coran révélés ?",
+        "a": "Les premiers versets révélés sont les cinq premiers versets de la sourate Al-'Alaq : « Lis au nom de ton Seigneur qui a créé. »"
+      },
+      "es": {
+        "q": "¿Cuáles fueron los primeros versículos del Corán revelados?",
+        "a": "Los primeros versículos revelados fueron los cinco primeros de la sura Al-'Alaq: «Lee en el nombre de tu Señor, que creó»."
+      },
+      "nl": {
+        "q": "Welke verzen van de Koran werden als eerste geopenbaard?",
+        "a": "De eerste geopenbaarde verzen waren de eerste vijf verzen van soera Al-'Alaq: 'Lees in de naam van jouw Heer, Die heeft geschapen.'"
+      },
+      "it": {
+        "q": "Quali sono stati i primi versetti del Corano rivelati?",
+        "a": "I primi versetti rivelati furono i primi cinque versetti della sura Al-'Alaq: «Leggi nel nome del tuo Signore che ha creato»."
+      },
+      "sources": [
+        "📖 Kur'an — Alak 96:1-5",
+        "📚 Sahih Buhârî — Bed'ü'l-Vahy"
+      ]
+    },
+
     {
       "id": 27,
       "day": 2,
       "tr": {
-        "q": "Kur'an'ın indirilmeye başlandığı ay hangisidir?",
-        "a": "Kur'an'ın indirilmeye başlandığı ay Ramazan ayıdır."
+        "q": "İlk vahiy nerede gelmiştir?",
+        "a": "İlk vahiy, Mekke yakınlarındaki Hira Mağarası'nda gelmiştir."
       },
       "en": {
-        "q": "In which month did the revelation of the Qur'an begin?",
-        "a": "The revelation of the Qur'an began in the month of Ramadan."
+        "q": "Where did the first revelation come?",
+        "a": "The first revelation came in the Cave of Hira near Makkah."
       },
       "de": {
-        "q": "In welchem Monat begann die Offenbarung des Qur'an?",
-        "a": "Die Offenbarung des Qur'an begann im Monat Ramadan."
+        "q": "Wo kam die erste Offenbarung?",
+        "a": "Die erste Offenbarung kam in der Höhle Hira in der Nähe von Mekka."
       },
       "ru": {
-        "q": "В каком месяце началось ниспослание Корана?",
-        "a": "Ниспослание Корана началось в месяц Рамадан."
+        "q": "Где было ниспослано первое откровение?",
+        "a": "Первое откровение было ниспослано в пещере Хира возле Мекки."
       },
       "ku": {
-        "q": "Qur'an di kîjan mehê de dest pê kir ku were daxuyandin?",
-        "a": "Daxuyandina Qur'anê di meha Remezanê de dest pê kir."
-      },
-      "tt": {
-        "q": "Коръән кайсы айда иңдерелә башлаган?",
-        "a": "Коръән Рамазан аенда иңдерелә башлаган."
-      },
-      "fr": {
-        "q": "Pendant quel mois la révélation du Coran a-t-elle commencé ?",
-        "a": "La révélation du Coran a commencé pendant le mois de Ramadan."
-      },
-      "es": {
-        "q": "¿En qué mes comenzó la revelación del Corán?",
-        "a": "La revelación del Corán comenzó en el mes de Ramadán."
+        "q": "Wahya yekem li ku derê hat?",
+        "a": "Wahya yekem li Şikefta Hira ya li nêzîkî Mekkeyê hat."
       },
       "ar": {
-        "q": "فِي أَيِّ شَهْرٍ بَدَأَ نُزُولُ الْقُرْآنِ؟",
-        "a": "بَدَأَ نُزُولُ الْقُرْآنِ فِي شَهْرِ رَمَضَانَ."
+        "q": "أَيْنَ نَزَلَ أَوَّلُ وَحْيٍ؟",
+        "a": "نَزَلَ أَوَّلُ وَحْيٍ فِي غَارِ حِرَاءَ قُرْبَ مَكَّةَ."
+      },
+      "tt": {
+        "q": "Беренче вәхи кайда килгән?",
+        "a": "Беренче вәхи Мәккә янындагы Хира мәгарәсендә килгән."
+      },
+      "fr": {
+        "q": "Où la première révélation est-elle venue ?",
+        "a": "La première révélation est venue dans la grotte de Hira, près de La Mecque."
+      },
+      "es": {
+        "q": "¿Dónde tuvo lugar la primera revelación?",
+        "a": "La primera revelación tuvo lugar en la cueva de Hira, cerca de La Meca."
       },
       "nl": {
-        "q": "In welke maand begon de openbaring van de Koran?",
-        "a": "De openbaring van de Koran begon in de maand Ramadan."
+        "q": "Waar kwam de eerste openbaring?",
+        "a": "De eerste openbaring kwam in de grot van Hira bij Mekka."
       },
       "it": {
-        "q": "In quale mese iniziò la rivelazione del Corano?",
-        "a": "La rivelazione del Corano iniziò nel mese di Ramadan."
+        "q": "Dove avvenne la prima rivelazione?",
+        "a": "La prima rivelazione avvenne nella grotta di Hira, vicino alla Mecca."
       },
       "sources": [
-        "📖 Kur'an — Bakara 2:185",
-        "📖 Kur'an — Kadr 97:1"
+        "📚 Sahih Buhârî — Bed'ü'l-Vahy",
+        "📚 Sahih Müslim — Îman"
       ]
     },
+
     {
       "id": 28,
       "day": 2,
       "tr": {
-        "q": "Kur'an yaklaşık kaç yılda tamamlanmıştır?",
-        "a": "Kur'an yaklaşık 23 yıllık bir süre içinde parça parça indirilerek tamamlanmıştır."
+        "q": "Kur'an neden parça parça indirilmiştir?",
+        "a": "Kur'an, Peygamberimizi ve müminleri güçlendirmek, olaylara göre rehberlik etmek ve mesajın anlaşılmasını kolaylaştırmak için tedricen indirilmiştir."
       },
       "en": {
-        "q": "Over approximately how many years was the Qur'an revealed?",
-        "a": "The Qur'an was revealed gradually over approximately 23 years."
+        "q": "Why was the Qur'an revealed gradually?",
+        "a": "The Qur'an was revealed gradually to strengthen the Prophet and believers, provide guidance according to circumstances, and make its message easier to understand."
       },
       "de": {
-        "q": "Über wie viele Jahre wurde der Qur'an ungefähr offenbart?",
-        "a": "Der Qur'an wurde über einen Zeitraum von ungefähr 23 Jahren schrittweise offenbart."
+        "q": "Warum wurde der Koran schrittweise offenbart?",
+        "a": "Der Koran wurde schrittweise offenbart, um den Propheten und die Gläubigen zu stärken, situationsbezogene Führung zu geben und das Verständnis seiner Botschaft zu erleichtern."
       },
       "ru": {
-        "q": "В течение примерно скольких лет ниспосылался Коран?",
-        "a": "Коран ниспосылался постепенно примерно в течение 23 лет."
+        "q": "Почему Коран ниспосылался постепенно?",
+        "a": "Коран ниспосылался постепенно, чтобы укреплять Пророка и верующих, давать руководство в соответствии с обстоятельствами и облегчать понимание послания."
       },
       "ku": {
-        "q": "Qur'an di nêzîkî çend salan de hatiye daxuyandin?",
-        "a": "Qur'an di nêzîkî 23 salan de hêdî hêdî hatiye daxuyandin."
-      },
-      "tt": {
-        "q": "Коръән якынча ничә ел дәвамында иңдерелгән?",
-        "a": "Коръән якынча 23 ел дәвамында өлешләп иңдерелгән."
-      },
-      "fr": {
-        "q": "Sur combien d'années environ le Coran a-t-il été révélé ?",
-        "a": "Le Coran a été révélé progressivement sur une période d'environ 23 ans."
-      },
-      "es": {
-        "q": "¿Durante aproximadamente cuántos años fue revelado el Corán?",
-        "a": "El Corán fue revelado gradualmente durante aproximadamente 23 años."
+        "q": "Çima Qur'an hêdî hêdî hatiye daxistin?",
+        "a": "Qur'an hêdî hêdî hatiye daxistin da ku Pêxember û bawermendan bihêz bike, li gorî bûyeran rêberî bike û têgihiştina peyamê hêsan bike."
       },
       "ar": {
-        "q": "خِلَالَ كَمْ عَامًا تَقْرِيبًا نَزَلَ الْقُرْآنُ؟",
-        "a": "نَزَلَ الْقُرْآنُ مُنَجَّمًا خِلَالَ نَحْوِ ثَلَاثَةٍ وَعِشْرِينَ عَامًا."
+        "q": "لِمَاذَا نَزَلَ الْقُرْآنُ مُنَجَّمًا؟",
+        "a": "نَزَلَ الْقُرْآنُ مُنَجَّمًا لِتَثْبِيتِ النَّبِيِّ وَالْمُؤْمِنِينَ، وَلِإِرْشَادِهِمْ حَسَبَ الْأَحْوَالِ، وَلِتَيْسِيرِ فَهْمِ رِسَالَتِهِ."
+      },
+      "tt": {
+        "q": "Ни өчен Коръән өлешләп-өлешләп иңдерелгән?",
+        "a": "Коръән Пәйгамбәрне һәм мөэминнәрне ныгыту, вакыйгаларга карап җитәкчелек итү һәм аның хәбәрен аңлауны җиңеләйтү өчен әкренләп иңдерелгән."
+      },
+      "fr": {
+        "q": "Pourquoi le Coran a-t-il été révélé progressivement ?",
+        "a": "Le Coran a été révélé progressivement afin de fortifier le Prophète et les croyants, de les guider selon les circonstances et de faciliter la compréhension de son message."
+      },
+      "es": {
+        "q": "¿Por qué fue revelado el Corán gradualmente?",
+        "a": "El Corán fue revelado gradualmente para fortalecer al Profeta y a los creyentes, guiarlos según las circunstancias y facilitar la comprensión de su mensaje."
       },
       "nl": {
-        "q": "Gedurende ongeveer hoeveel jaar werd de Koran geopenbaard?",
-        "a": "De Koran werd geleidelijk gedurende ongeveer 23 jaar geopenbaard."
+        "q": "Waarom werd de Koran geleidelijk geopenbaard?",
+        "a": "De Koran werd geleidelijk geopenbaard om de Profeet en de gelovigen te versterken, leiding te geven naar gelang de omstandigheden en het begrijpen van de boodschap te vergemakkelijken."
       },
       "it": {
-        "q": "In circa quanti anni fu rivelato il Corano?",
-        "a": "Il Corano fu rivelato gradualmente nell'arco di circa 23 anni."
+        "q": "Perché il Corano è stato rivelato gradualmente?",
+        "a": "Il Corano è stato rivelato gradualmente per rafforzare il Profeta e i credenti, guidarli secondo le circostanze e facilitare la comprensione del suo messaggio."
       },
       "sources": [
-        "📖 Kur'an — İsrâ 17:106",
-        "📖 Kur'an — Furkân 25:32"
+        "📖 Kur'an — Furkân 25:32",
+        "📖 Kur'an — İsrâ 17:106"
       ]
     },
+
     {
       "id": 29,
       "day": 2,
       "tr": {
-        "q": "Mekkî ve Medenî ne demektir?",
-        "a": "Hicretten önce indirilen âyet ve sûreler Mekkî, hicretten sonra indirilen âyet ve sûreler Medenî olarak adlandırılır."
+        "q": "Kur'an kaç sûreden oluşur?",
+        "a": "Kur'an 114 sûreden oluşur."
       },
       "en": {
-        "q": "What do Makki and Madani mean?",
-        "a": "Revelations sent down before the Hijrah are called Makki, while revelations sent down after the Hijrah are called Madani."
+        "q": "How many surahs does the Qur'an contain?",
+        "a": "The Qur'an contains 114 surahs."
       },
       "de": {
-        "q": "Was bedeuten mekkanisch und medinensisch?",
-        "a": "Offenbarungen, die vor der Hidschra herabgesandt wurden, werden mekkanisch genannt; Offenbarungen nach der Hidschra medinensisch."
+        "q": "Aus wie vielen Suren besteht der Koran?",
+        "a": "Der Koran besteht aus 114 Suren."
       },
       "ru": {
-        "q": "Что означают термины «мекканский» и «мединский»?",
-        "a": "Откровения, ниспосланные до Хиджры, называются мекканскими, а ниспосланные после Хиджры — мединскими."
+        "q": "Из скольких сур состоит Коран?",
+        "a": "Коран состоит из 114 сур."
       },
       "ku": {
-        "q": "Mekkî û Medenî çi ne?",
-        "a": "Ayêt û sûreyên ku berî Hicretê hatine daxuyandin Mekkî, û yên piştî Hicretê hatine daxuyandin Medenî tên gotin."
-      },
-      "tt": {
-        "q": "Мәккә һәм Мәдинәдә иңдерелгән дигән төшенчәләр нәрсәне аңлата?",
-        "a": "Һиҗрәттән элек иңдерелгән аятьләр һәм сүрәләр Мәккәдә иңдерелгән, ә Һиҗрәттән соң иңдерелгәннәр Мәдинәдә иңдерелгән дип атала."
-      },
-      "fr": {
-        "q": "Que signifient les termes mecquois et médinois ?",
-        "a": "Les révélations descendues avant l'Hégire sont dites mecquoises et celles descendues après l'Hégire sont dites médinoises."
-      },
-      "es": {
-        "q": "¿Qué significan los términos mecano y medinense?",
-        "a": "Las revelaciones anteriores a la Hégira se llaman mecánicas y las posteriores a la Hégira se llaman medinenses."
+        "q": "Qur'an ji çend sûreyan pêk tê?",
+        "a": "Qur'an ji 114 sûreyan pêk tê."
       },
       "ar": {
-        "q": "مَاذَا يَعْنِي مَكِّيٌّ وَمَدَنِيٌّ؟",
-        "a": "مَا نَزَلَ قَبْلَ الْهِجْرَةِ يُسَمَّى مَكِّيًّا، وَمَا نَزَلَ بَعْدَ الْهِجْرَةِ يُسَمَّى مَدَنِيًّا."
+        "q": "كَمْ سُورَةً فِي الْقُرْآنِ؟",
+        "a": "فِي الْقُرْآنِ ١١٤ سُورَةً."
+      },
+      "tt": {
+        "q": "Коръән ничә сүрәдән тора?",
+        "a": "Коръән 114 сүрәдән тора."
+      },
+      "fr": {
+        "q": "De combien de sourates le Coran est-il composé ?",
+        "a": "Le Coran est composé de 114 sourates."
+      },
+      "es": {
+        "q": "¿De cuántas suras consta el Corán?",
+        "a": "El Corán consta de 114 suras."
       },
       "nl": {
-        "q": "Wat betekenen de termen Mekkaans en Medinaans?",
-        "a": "Openbaringen vóór de Hidjra worden Mekkaans genoemd en openbaringen na de Hidjra Medinaans."
+        "q": "Uit hoeveel soera's bestaat de Koran?",
+        "a": "De Koran bestaat uit 114 soera's."
       },
       "it": {
-        "q": "Che cosa significano i termini meccano e medinese?",
-        "a": "Le rivelazioni avvenute prima dell'Egira sono dette meccane, mentre quelle successive all'Egira sono dette medinesi."
+        "q": "Da quante sure è composto il Corano?",
+        "a": "Il Corano è composto da 114 sure."
       },
       "sources": [
-        "📚 Ulûmü'l-Kur'an — Mekkî ve Medenî ilmi"
+        "📖 Kur'an — Kur'an'ın tamamı"
       ]
     },
+
     {
       "id": 30,
       "day": 2,
       "tr": {
-        "q": "Sünnet nedir?",
-        "a": "Sünnet, Peygamberimiz Hz. Muhammed ﷺ'in sözleri, fiilleri, onayları ve örnek uygulamalarını ifade eder."
+        "q": "Kur'an kaç cüzden oluşur?",
+        "a": "Kur'an, okuma ve takip kolaylığı için 30 cüze ayrılmıştır."
       },
       "en": {
-        "q": "What is the Sunnah?",
-        "a": "The Sunnah refers to the sayings, actions, approvals and exemplary practices of our Prophet Muhammad ﷺ."
+        "q": "How many juz does the Qur'an have?",
+        "a": "The Qur'an is divided into 30 juz for ease of recitation and study."
       },
       "de": {
-        "q": "Was ist die Sunna?",
-        "a": "Die Sunna umfasst die Aussagen, Handlungen, Billigungen und vorbildlichen Praktiken unseres Propheten Muhammad ﷺ."
+        "q": "Aus wie vielen Dschuz besteht der Koran?",
+        "a": "Der Koran ist zum leichteren Lesen und Lernen in 30 Dschuz eingeteilt."
       },
       "ru": {
-        "q": "Что такое Сунна?",
-        "a": "Сунна — это слова, поступки, одобрения и примерные действия нашего Пророка Мухаммада ﷺ."
+        "q": "На сколько джузов разделён Коран?",
+        "a": "Коран разделён на 30 джузов для удобства чтения и изучения."
       },
       "ku": {
-        "q": "Sunnet çi ye?",
-        "a": "Sunnet gotin, kirin, pejirandin û pratîkên nimûneyî yên Peyxemberê me Muhammed ﷺ e."
-      },
-      "tt": {
-        "q": "Сөннәт нәрсә ул?",
-        "a": "Сөннәт — Пәйгамбәребез Мөхәммәд ﷺ нең сүзләре, гамәлләре, хуплаулары һәм үрнәк булган эшләре."
-      },
-      "fr": {
-        "q": "Qu'est-ce que la Sunna ?",
-        "a": "La Sunna comprend les paroles, les actes, les approbations et les pratiques exemplaires de notre Prophète Muhammad ﷺ."
-      },
-      "es": {
-        "q": "¿Qué es la Sunna?",
-        "a": "La Sunna comprende las palabras, los actos, las aprobaciones y las prácticas ejemplares de nuestro Profeta Muhammad ﷺ."
+        "q": "Qur'an ji çend cuzên pêk tê?",
+        "a": "Qur'an ji bo hêsankirina xwendin û şopandinê li 30 cûzan hatiye dabeşkirin."
       },
       "ar": {
-        "q": "مَا هِيَ السُّنَّةُ؟",
-        "a": "السُّنَّةُ هِيَ أَقْوَالُ نَبِيِّنَا مُحَمَّدٍ ﷺ وَأَفْعَالُهُ وَتَقْرِيرَاتُهُ وَهَدْيُهُ."
+        "q": "إِلَى كَمْ جُزْءًا قُسِّمَ الْقُرْآنُ؟",
+        "a": "قُسِّمَ الْقُرْآنُ إِلَى ثَلَاثِينَ جُزْءًا لِتَيْسِيرِ قِرَاءَتِهِ وَمُتَابَعَتِهِ."
+      },
+      "tt": {
+        "q": "Коръән ничә җүздән тора?",
+        "a": "Коръән уку һәм өйрәнүне җиңеләйтү өчен 30 җүзгә бүленгән."
+      },
+      "fr": {
+        "q": "En combien de juz le Coran est-il divisé ?",
+        "a": "Le Coran est divisé en 30 juz afin de faciliter sa lecture et son étude."
+      },
+      "es": {
+        "q": "¿En cuántos yuz está dividido el Corán?",
+        "a": "El Corán está dividido en 30 yuz para facilitar su lectura y estudio."
       },
       "nl": {
-        "q": "Wat is de soenna?",
-        "a": "De soenna omvat de uitspraken, handelingen, goedkeuringen en voorbeeldige praktijken van onze Profeet Mohammed ﷺ."
+        "q": "In hoeveel djuz is de Koran verdeeld?",
+        "a": "De Koran is voor het gemakkelijker lezen en bestuderen verdeeld in 30 djuz."
       },
       "it": {
-        "q": "Che cos'è la Sunna?",
-        "a": "La Sunna comprende le parole, le azioni, le approvazioni e le pratiche esemplari del nostro Profeta Muhammad ﷺ."
+        "q": "In quanti juz è diviso il Corano?",
+        "a": "Il Corano è diviso in 30 juz per facilitare la lettura e lo studio."
       },
       "sources": [
-        "📖 Kur'an — Haşr 59:7",
-        "📜 Sahih Buhârî",
-        "📜 Sahih Müslim"
+        "📖 Kur'an — Hicr 15:9"
       ]
     },
+
     {
       "id": 31,
       "day": 2,
       "tr": {
-        "q": "Hadis nedir?",
-        "a": "Hadis, Peygamberimiz Hz. Muhammed ﷺ'in sözlerini, fiillerini, onaylarını veya özelliklerini aktaran rivayetlerdir."
+        "q": "Kur'an'ın korunması kimin güvencesindedir?",
+        "a": "Kur'an'ın korunacağını Allah bizzat bildirmiştir; Müslümanlar da onu ezberleyerek ve yazarak nesilden nesile aktarmışlardır."
       },
       "en": {
-        "q": "What is a hadith?",
-        "a": "A hadith is a narration reporting the sayings, actions, approvals or characteristics of our Prophet Muhammad ﷺ."
+        "q": "Whose guarantee is the preservation of the Qur'an under?",
+        "a": "Allah Himself has promised to preserve the Qur'an, and Muslims have transmitted it from generation to generation through memorization and writing."
       },
       "de": {
-        "q": "Was ist ein Hadith?",
-        "a": "Ein Hadith ist eine Überlieferung über die Aussagen, Handlungen, Billigungen oder Eigenschaften unseres Propheten Muhammad ﷺ."
+        "q": "Wer garantiert die Bewahrung des Korans?",
+        "a": "Allah selbst hat die Bewahrung des Korans zugesichert; Muslime haben ihn durch Auswendiglernen und Aufschreiben von Generation zu Generation überliefert."
       },
       "ru": {
-        "q": "Что такое хадис?",
-        "a": "Хадис — это предание о словах, поступках, одобрениях или качествах нашего Пророка Мухаммада ﷺ."
+        "q": "Кто гарантирует сохранность Корана?",
+        "a": "Сам Аллах обещал сохранить Коран, а мусульмане передавали его из поколения в поколение посредством заучивания и записи."
       },
       "ku": {
-        "q": "Hedîs çi ye?",
-        "a": "Hedîs rivayetek e ku gotin, kirin, pejirandin an taybetmendiyên Peyxemberê me Muhammed ﷺ digihîne me."
-      },
-      "tt": {
-        "q": "Хәдис нәрсә ул?",
-        "a": "Хәдис — Пәйгамбәребез Мөхәммәд ﷺ нең сүзләре, гамәлләре, хуплаулары яки сыйфатлары турында риваять."
-      },
-      "fr": {
-        "q": "Qu'est-ce qu'un hadith ?",
-        "a": "Un hadith est un récit rapportant les paroles, les actes, les approbations ou les caractéristiques de notre Prophète Muhammad ﷺ."
-      },
-      "es": {
-        "q": "¿Qué es un hadiz?",
-        "a": "Un hadiz es una narración que transmite las palabras, acciones, aprobaciones o características de nuestro Profeta Muhammad ﷺ."
+        "q": "Parastina Qur'anê di bin garantiya kê de ye?",
+        "a": "Xwedê bixwe parastina Qur'anê garantî kiriye; Misilman jî bi ezberkirin û nivîsandinê ew ji nifşekî bo nifşekî veguhastine."
       },
       "ar": {
-        "q": "مَا هُوَ الْحَدِيثُ؟",
-        "a": "الْحَدِيثُ هُوَ رِوَايَةٌ تَنْقُلُ أَقْوَالَ نَبِيِّنَا مُحَمَّدٍ ﷺ وَأَفْعَالَهُ وَتَقْرِيرَاتِهِ أَوْ صِفَاتِهِ."
+        "q": "مَنْ ضَمِنَ حِفْظَ الْقُرْآنِ؟",
+        "a": "اللَّهُ تَعَالَى هُوَ الَّذِي ضَمِنَ حِفْظَ الْقُرْآنِ، وَقَدْ نَقَلَهُ الْمُسْلِمُونَ جِيلًا بَعْدَ جِيلٍ بِالْحِفْظِ وَالْكِتَابَةِ."
+      },
+      "tt": {
+        "q": "Коръәннең саклануы кем гарантиясендә?",
+        "a": "Коръәнне саклауны Аллаһ Үзе вәгъдә иткән, ә мөселманнар аны ятлау һәм язу аша буыннан-буынга җиткергәннәр."
+      },
+      "fr": {
+        "q": "Qui garantit la préservation du Coran ?",
+        "a": "Allah Lui-même a promis de préserver le Coran, et les musulmans l'ont transmis de génération en génération par la mémorisation et l'écriture."
+      },
+      "es": {
+        "q": "¿Quién garantiza la preservación del Corán?",
+        "a": "Allah mismo ha prometido preservar el Corán, y los musulmanes lo han transmitido de generación en generación mediante la memorización y la escritura."
       },
       "nl": {
-        "q": "Wat is een hadith?",
-        "a": "Een hadith is een overlevering over de uitspraken, handelingen, goedkeuringen of eigenschappen van onze Profeet Mohammed ﷺ."
+        "q": "Wie garandeert het behoud van de Koran?",
+        "a": "Allah Zelf heeft beloofd de Koran te bewaren; moslims hebben hem door memorisatie en schrift van generatie op generatie doorgegeven."
       },
       "it": {
-        "q": "Che cos'è un hadith?",
-        "a": "Un hadith is een narrazione che trasmette le parole, le azioni, le approvazioni o le caratteristiche del nostro Profeta Muhammad ﷺ."
+        "q": "Chi garantisce la conservazione del Corano?",
+        "a": "Allah stesso ha promesso di preservare il Corano, e i musulmani lo hanno trasmesso di generazione in generazione attraverso la memorizzazione e la scrittura."
       },
       "sources": [
-        "📜 Sahih Buhârî",
-        "📜 Sahih Müslim"
+        "📖 Kur'an — Hicr 15:9"
       ]
     },
+
     {
       "id": 32,
       "day": 2,
       "tr": {
+        "q": "Kur'an'ı anlamanın temel amacı nedir?",
+        "a": "Kur'an'ı anlamanın amacı, Allah'ın mesajını kavramak ve bu mesajı hayatımıza rehber edinmektir."
+      },
+      "en": {
+        "q": "What is the main purpose of understanding the Qur'an?",
+        "a": "The purpose is to understand Allah's message and take it as guidance for our lives."
+      },
+      "de": {
+        "q": "Was ist das grundlegende Ziel, den Koran zu verstehen?",
+        "a": "Das Ziel ist, Allahs Botschaft zu verstehen und sie als Führung für unser Leben anzunehmen."
+      },
+      "ru": {
+        "q": "Какова главная цель понимания Корана?",
+        "a": "Цель состоит в том, чтобы понять послание Аллаха и сделать его руководством для нашей жизни."
+      },
+      "ku": {
+        "q": "Armanca bingehîn a têgihiştina Qur'anê çi ye?",
+        "a": "Armanc ew e ku mirov peyama Xwedê fam bike û wê bike rêberiya jiyana xwe."
+      },
+      "ar": {
+        "q": "مَا الْهَدَفُ الْأَسَاسِيُّ مِنْ فَهْمِ الْقُرْآنِ؟",
+        "a": "الْهَدَفُ هُوَ فَهْمُ رِسَالَةِ اللَّهِ وَاتِّخَاذُهَا هُدًى لِحَيَاتِنَا."
+      },
+      "tt": {
+        "q": "Коръәнне аңлауның төп максаты нинди?",
+        "a": "Максат — Аллаһның хәбәрен аңлау һәм аны тормышыбыз өчен җитәкчелек итеп кабул итү."
+      },
+      "fr": {
+        "q": "Quel est le but principal de la compréhension du Coran ?",
+        "a": "Le but est de comprendre le message d'Allah et d'en faire une orientation pour notre vie."
+      },
+      "es": {
+        "q": "¿Cuál es el propósito principal de comprender el Corán?",
+        "a": "El propósito es comprender el mensaje de Allah y tomarlo como guía para nuestra vida."
+      },
+      "nl": {
+        "q": "Wat is het belangrijkste doel van het begrijpen van de Koran?",
+        "a": "Het doel is Allahs boodschap te begrijpen en deze als leidraad voor ons leven te nemen."
+      },
+      "it": {
+        "q": "Qual è lo scopo principale di comprendere il Corano?",
+        "a": "Lo scopo è comprendere il messaggio di Allah e prenderlo come guida per la nostra vita."
+      },
+      "sources": [
+        "📖 Kur'an — Sâd 38:29",
+        "📖 Kur'an — Muhammed 47:24"
+      ]
+    },
+
+    {
+      "id": 33,
+      "day": 2,
+      "tr": {
+        "q": "Sünnet nedir?",
+        "a": "Sünnet, Peygamberimiz Hz. Muhammed'in (s.a.v.) sözleri, fiilleri, onayları ve örnek yaşayışıdır."
+      },
+      "en": {
+        "q": "What is the Sunnah?",
+        "a": "The Sunnah consists of the words, actions, approvals and exemplary way of life of our Prophet Muhammad."
+      },
+      "de": {
+        "q": "Was ist die Sunna?",
+        "a": "Die Sunna umfasst die Worte, Handlungen, Billigungen und die vorbildliche Lebensweise unseres Propheten Muhammad."
+      },
+      "ru": {
+        "q": "Что такое Сунна?",
+        "a": "Сунна — это слова, поступки, одобрения и примерный образ жизни нашего пророка Мухаммада."
+      },
+      "ku": {
+        "q": "Sunnet çi ye?",
+        "a": "Sunnet gotin, kirin, pejirandin û şêwaza jiyana nimûneyî ya Pêxemberê me Muhammed e."
+      },
+      "ar": {
+        "q": "مَا هِيَ السُّنَّةُ؟",
+        "a": "السُّنَّةُ هِيَ أَقْوَالُ النَّبِيِّ مُحَمَّدٍ وَأَفْعَالُهُ وَتَقْرِيرَاتُهُ وَسِيرَتُهُ الْقُدْوَةُ."
+      },
+      "tt": {
+        "q": "Сөннәт нәрсә ул?",
+        "a": "Сөннәт — Пәйгамбәребез Мөхәммәднең сүзләре, эшләре, хуплаулары һәм үрнәк тормыш рәвеше."
+      },
+      "fr": {
+        "q": "Qu'est-ce que la Sunna ?",
+        "a": "La Sunna comprend les paroles, les actes, les approbations et la manière de vivre exemplaire de notre Prophète Muhammad."
+      },
+      "es": {
+        "q": "¿Qué es la Sunna?",
+        "a": "La Sunna comprende las palabras, los actos, las aprobaciones y la forma de vida ejemplar de nuestro Profeta Muhammad."
+      },
+      "nl": {
+        "q": "Wat is de Soenna?",
+        "a": "De Soenna omvat de woorden, daden, goedkeuringen en voorbeeldige levenswijze van onze Profeet Mohammed."
+      },
+      "it": {
+        "q": "Che cos'è la Sunna?",
+        "a": "La Sunna comprende le parole, le azioni, le approvazioni e il modo di vivere esemplare del nostro Profeta Muhammad."
+      },
+      "sources": [
+        "📖 Kur'an — Haşr 59:7",
+        "📚 Sahih Buhârî — İ'tisâm"
+      ]
+    },
+
+    {
+      "id": 34,
+      "day": 2,
+      "tr": {
+        "q": "Hadis nedir?",
+        "a": "Hadis, Peygamberimiz Hz. Muhammed'in (s.a.v.) sözlerini, fiillerini, onaylarını veya özelliklerini aktaran rivayetlerdir."
+      },
+      "en": {
+        "q": "What is a hadith?",
+        "a": "A hadith is a narration reporting the words, actions, approvals or characteristics of our Prophet Muhammad."
+      },
+      "de": {
+        "q": "Was ist ein Hadith?",
+        "a": "Ein Hadith ist eine Überlieferung über die Worte, Handlungen, Billigungen oder Eigenschaften unseres Propheten Muhammad."
+      },
+      "ru": {
+        "q": "Что такое хадис?",
+        "a": "Хадис — это предание о словах, поступках, одобрениях или качествах нашего пророка Мухаммада."
+      },
+      "ku": {
+        "q": "Hadîs çi ye?",
+        "a": "Hadîs rivayetên ku gotin, kirin, pejirandin an taybetmendiyên Pêxemberê me Muhammed vedibêjin in."
+      },
+      "ar": {
+        "q": "مَا هُوَ الْحَدِيثُ؟",
+        "a": "الْحَدِيثُ هُوَ مَا رُوِيَ عَنْ أَقْوَالِ النَّبِيِّ مُحَمَّدٍ وَأَفْعَالِهِ وَتَقْرِيرَاتِهِ وَصِفَاتِهِ."
+      },
+      "tt": {
+        "q": "Хәдис нәрсә ул?",
+        "a": "Хәдис — Пәйгамбәребез Мөхәммәднең сүзләре, эшләре, хуплаулары яки сыйфатлары турында риваять."
+      },
+      "fr": {
+        "q": "Qu'est-ce qu'un hadith ?",
+        "a": "Un hadith est un récit rapportant les paroles, les actes, les approbations ou les caractéristiques de notre Prophète Muhammad."
+      },
+      "es": {
+        "q": "¿Qué es un hadiz?",
+        "a": "Un hadiz es una narración que transmite palabras, actos, aprobaciones o características de nuestro Profeta Muhammad."
+      },
+      "nl": {
+        "q": "Wat is een hadith?",
+        "a": "Een hadith is een overlevering over de woorden, daden, goedkeuringen of eigenschappen van onze Profeet Mohammed."
+      },
+      "it": {
+        "q": "Che cos'è un hadith?",
+        "a": "Un hadith è una narrazione che trasmette parole, azioni, approvazioni o caratteristiche del nostro Profeta Muhammad."
+      },
+      "sources": [
+        "📚 Sahih Buhârî — İlim",
+        "📚 Sahih Müslim — Mukaddime"
+      ]
+    },
+
+    {
+      "id": 35,
+      "day": 2,
+      "tr": {
         "q": "Kur'an ile sünnet arasındaki ilişki nedir?",
-        "a": "Kur'an Allah'ın vahyettiği temel kaynaktır; sünnet ise Peygamberimizin ﷺ Kur'an'ı açıklayan ve uygulamada gösteren örnekliğidir."
+        "a": "Kur'an İslâm'ın temel ilâhî kaynağıdır; sünnet ise Kur'an'ın nasıl anlaşılacağını ve hayata nasıl uygulanacağını Peygamberimizin örnekliğiyle açıklar."
       },
       "en": {
         "q": "What is the relationship between the Qur'an and the Sunnah?",
-        "a": "The Qur'an is the fundamental source of divine revelation, while the Sunnah is the Prophetic example that explains and demonstrates its application."
+        "a": "The Qur'an is the fundamental divine source of Islam, while the Sunnah explains through the Prophet's example how the Qur'an is understood and practiced."
       },
       "de": {
-        "q": "Welches Verhältnis besteht zwischen Qur'an und Sunna?",
-        "a": "Der Qur'an ist die grundlegende Quelle der göttlichen Offenbarung, während die Sunna das prophetische Vorbild ist, das seine Bedeutung erklärt und seine Anwendung zeigt."
+        "q": "Welche Beziehung besteht zwischen Koran und Sunna?",
+        "a": "Der Koran ist die grundlegende göttliche Quelle des Islam; die Sunna erklärt durch das Vorbild des Propheten, wie der Koran verstanden und umgesetzt wird."
       },
       "ru": {
         "q": "Какова связь между Кораном и Сунной?",
-        "a": "Коран является основным источником божественного откровения, а Сунна — пророческим примером, объясняющим его понимание и применение."
+        "a": "Коран является основным Божественным источником Ислама, а Сунна через пример Пророка объясняет, как понимать и применять Коран."
       },
       "ku": {
         "q": "Têkiliya di navbera Qur'an û Sunnetê de çi ye?",
-        "a": "Qur'an çavkaniya bingehîn a wehiyê ye; Sunnet jî nimûneya Peyxemberî ye ku Qur'anê rave dike û sepandina wî nîşan dide."
-      },
-      "tt": {
-        "q": "Коръән белән сөннәт арасындагы бәйләнеш нинди?",
-        "a": "Коръән — Аллаһның төп вәхи чыганагы, ә Сөннәт — Коръәнне аңлату һәм гамәлдә күрсәтүче Пәйгамбәр үрнәге."
-      },
-      "fr": {
-        "q": "Quelle est la relation entre le Coran et la Sunna ?",
-        "a": "Le Coran est la source fondamentale de la révélation divine, tandis que la Sunna est l'exemple prophétique qui explique et montre sa mise en pratique."
-      },
-      "es": {
-        "q": "¿Cuál es la relación entre el Corán y la Sunna?",
-        "a": "El Corán es la fuente fundamental de la revelación divina, mientras que la Sunna es el ejemplo profético que explica y muestra su aplicación."
+        "a": "Qur'an çavkaniya bingehîn a îlahî ya Îslamê ye; Sunnet bi nimûneya Pêxemberê me rave dike ku Qur'an çawa bê fêmkirin û di jiyanê de bê sepandin."
       },
       "ar": {
         "q": "مَا الْعَلَاقَةُ بَيْنَ الْقُرْآنِ وَالسُّنَّةِ؟",
-        "a": "الْقُرْآنُ هُوَ الْمَصْدَرُ الْأَسَاسِيُّ لِلْوَحْيِ، وَالسُّنَّةُ هِيَ الْقُدْوَةُ النَّبَوِيَّةُ الَّتِي تُبَيِّنُ الْقُرْآنَ وَتُظْهِرُ تَطْبِيقَهُ."
+        "a": "الْقُرْآنُ هُوَ الْمَصْدَرُ الإِلَهِيُّ الْأَسَاسِيُّ لِلْإِسْلَامِ، وَالسُّنَّةُ تُبَيِّنُ مِنْ خِلَالِ قُدْوَةِ النَّبِيِّ كَيْفَ يُفْهَمُ الْقُرْآنُ وَيُطَبَّقُ."
+      },
+      "tt": {
+        "q": "Коръән белән Сөннәт арасында нинди бәйләнеш бар?",
+        "a": "Коръән — Исламның төп илаһи чыганагы, ә Сөннәт Пәйгамбәрнең үрнәге аша Коръәнне ничек аңларга һәм тормышта кулланырга кирәклеген аңлата."
+      },
+      "fr": {
+        "q": "Quelle est la relation entre le Coran et la Sunna ?",
+        "a": "Le Coran est la source divine fondamentale de l'islam, tandis que la Sunna explique, à travers l'exemple du Prophète, comment comprendre et appliquer le Coran."
+      },
+      "es": {
+        "q": "¿Cuál es la relación entre el Corán y la Sunna?",
+        "a": "El Corán es la fuente divina fundamental del Islam, mientras que la Sunna explica mediante el ejemplo del Profeta cómo comprender y aplicar el Corán."
       },
       "nl": {
-        "q": "Wat is de relatie tussen de Koran en de soenna?",
-        "a": "De Koran is de fundamentele bron van goddelijke openbaring, terwijl de soenna het profetische voorbeeld is dat de betekenis ervan uitlegt en de toepassing ervan laat zien."
+        "q": "Wat is de relatie tussen de Koran en de Soenna?",
+        "a": "De Koran is de fundamentele goddelijke bron van de islam; de Soenna legt door het voorbeeld van de Profeet uit hoe de Koran begrepen en toegepast wordt."
       },
       "it": {
-        "q": "Qual è il rapporto tra Corano e Sunna?",
-        "a": "Il Corano è la fonte fondamentale della rivelazione divina, mentre la Sunna è l'esempio profetico che ne spiega e mostra l'applicazione."
+        "q": "Qual è il rapporto tra il Corano e la Sunna?",
+        "a": "Il Corano è la fonte divina fondamentale dell'Islam, mentre la Sunna spiega attraverso l'esempio del Profeta come comprendere e applicare il Corano."
       },
       "sources": [
         "📖 Kur'an — Nahl 16:44",
         "📖 Kur'an — Haşr 59:7"
       ]
     },
-    {
-      "id": 33,
-      "day": 2,
-      "tr": {
-        "q": "Kur'an'ın korunmuş olması ne demektir?",
-        "a": "Kur'an'ın korunmuş olması, Allah'ın onu değiştirilmekten ve bozulmaktan koruyacağını bildirmesi anlamına gelir."
-      },
-      "en": {
-        "q": "What does it mean that the Qur'an is preserved?",
-        "a": "It means that Allah has promised to preserve the Qur'an from alteration and corruption."
-      },
-      "de": {
-        "q": "Was bedeutet es, dass der Qur'an bewahrt ist?",
-        "a": "Es bedeutet, dass Allah den Qur'an vor Veränderung und Verfälschung bewahrt."
-      },
-      "ru": {
-        "q": "Что означает сохранность Корана?",
-        "a": "Это означает, что Аллах обещал сохранить Коран от изменения и искажения."
-      },
-      "ku": {
-        "q": "Parastina Qur'anê çi tê wate kirin?",
-        "a": "Wateya wê ew e ku Xwedê Qur'anê ji guherandin û xerabkirinê diparêze."
-      },
-      "tt": {
-        "q": "Коръәннең сакланган булуы нәрсәне аңлата?",
-        "a": "Бу Аллаһның Коръәнне үзгәртелүдән һәм бозылудан саклавын аңлата."
-      },
-      "fr": {
-        "q": "Que signifie la préservation du Coran ?",
-        "a": "Cela signifie qu'Allah préserve le Coran contre l'altération et la falsification."
-      },
-      "es": {
-        "q": "¿Qué significa que el Corán está preservado?",
-        "a": "Significa que Allah preserva el Corán de la alteración y la falsificación."
-      },
-      "ar": {
-        "q": "مَاذَا يَعْنِي حِفْظُ الْقُرْآنِ؟",
-        "a": "يَعْنِي أَنَّ اللَّهَ حَفِظَ الْقُرْآنَ مِنَ التَّغْيِيرِ وَالتَّحْرِيفِ."
-      },
-      "nl": {
-        "q": "Wat betekent het dat de Koran bewaard is gebleven?",
-        "a": "Het betekent dat Allah de Koran tegen verandering en vervalsing beschermt."
-      },
-      "it": {
-        "q": "Che cosa significa che il Corano è preservato?",
-        "a": "Significa che Allah preserva il Corano da alterazioni e falsificazioni."
-      },
-      "sources": [
-        "📖 Kur'an — Hicr 15:9"
-      ]
-    },
-    {
-      "id": 34,
-      "day": 2,
-      "tr": {
-        "q": "Kur'an'ın ilk yazılı nüsha hâlinde toplanmasında kimler görev aldı?",
-        "a": "Vahiy kâtipleri arasında Zeyd bin Sâbit gibi birçok sahabe görev aldı. Hz. Ebû Bekir döneminde Kur'an'ın yazılı malzemeleri ve ezberler esas alınarak tek bir nüsha hâlinde toplandı."
-      },
-      "en": {
-        "q": "Who helped collect the Qur'an into a written compilation?",
-        "a": "Many Companions, including Zayd ibn Thabit, served as scribes of revelation. During the caliphate of Abu Bakr, the written materials and memorized recitations were collected into a single compilation."
-      },
-      "de": {
-        "q": "Wer wirkte an der ersten schriftlichen Sammlung des Qur'an mit?",
-        "a": "Viele Gefährten, darunter Zayd ibn Thabit, waren Offenbarungsschreiber. Unter Abu Bakr wurden die schriftlichen Materialien und die auswendig bewahrte Überlieferung zu einer Sammlung zusammengeführt."
-      },
-      "ru": {
-        "q": "Кто участвовал в первом письменном собрании Корана?",
-        "a": "Многие сподвижники, в том числе Зайд ибн Сабит, были писцами откровения. При Абу Бакре письменные материалы и заученная передача были собраны в единую рукопись."
-      },
-      "ku": {
-        "q": "Kî beşdarî civandina yekem a nivîskî ya Qur'anê kir?",
-        "a": "Gelek sahabe, di nav wan de Zeyd ibn Sabit, wek nivîskarên wehiyê kar dikirin. Di dema Ebû Bekir de nivîsar û ezberên Qur'anê li yek nivîsê hatin berhevkirin."
-      },
-      "tt": {
-        "q": "Коръәннең беренче язма җыентыгын төзүдә кемнәр катнашкан?",
-        "a": "Зәйд ибн Сабит кебек күп сәхабәләр вәхи язучылары булган. Әбү Бәкер хәлифәлеге вакытында язма материаллар һәм яттан сакланган риваятьләр бер җыентыкка тупланган."
-      },
-      "fr": {
-        "q": "Qui participa à la première collecte écrite du Coran ?",
-        "a": "De nombreux Compagnons, dont Zayd ibn Thabit, étaient des scribes de la révélation. Sous Abu Bakr, les matériaux écrits et la transmission mémorisée furent rassemblés en une seule compilation."
-      },
-      "es": {
-        "q": "¿Quiénes participaron en la primera recopilación escrita del Corán?",
-        "a": "Muchos compañeros, entre ellos Zayd ibn Thabit, fueron escribas de la revelación. Durante el califato de Abu Bakr, los materiales escritos y la transmisión memorizada se reunieron en una sola recopilación."
-      },
-      "ar": {
-        "q": "مَنْ شَارَكَ فِي أَوَّلِ جَمْعٍ كِتَابِيٍّ لِلْقُرْآنِ؟",
-        "a": "شَارَكَ عَدَدٌ كَبِيرٌ مِنَ الصَّحَابَةِ، مِنْهُمْ زَيْدُ بْنُ ثَابِتٍ، فِي كِتَابَةِ الْوَحْيِ. وَفِي عَهْدِ أَبِي بَكْرٍ جُمِعَتِ الْمَوَادُّ الْمَكْتُوبَةُ مَعَ مَا حُفِظَ فِي صُحُفٍ وَاحِدَةٍ."
-      },
-      "nl": {
-        "q": "Wie hielpen bij de eerste schriftelijke verzameling van de Koran?",
-        "a": "Veel metgezellen, onder wie Zayd ibn Thabit, waren openbaringsschrijvers. Tijdens het kalifaat van Abu Bakr werden het schriftelijke materiaal en de gememoriseerde overlevering in één verzameling samengebracht."
-      },
-      "it": {
-        "q": "Chi partecipò alla prima raccolta scritta del Corano?",
-        "a": "Molti Compagni, tra cui Zayd ibn Thabit, furono scribi della rivelazione. Durante il califfato di Abu Bakr, i materiali scritti e la trasmissione memorizzata furono riuniti in un'unica raccolta."
-      },
-      "sources": [
-        "📜 Sahih Buhârî — Kitâbü Fedâili'l-Kur'an, 4986"
-      ]
-    },
-    {
-      "id": 35,
-      "day": 2,
-      "tr": {
-        "q": "Kur'an'ın standart nüshalarının çoğaltılması hangi halife döneminde gerçekleştirildi?",
-        "a": "Kur'an'ın standart nüshalarının çoğaltılması ve çeşitli bölgelere gönderilmesi Hz. Osman bin Affân'ın halifeliği döneminde gerçekleştirildi."
-      },
-      "en": {
-        "q": "During which caliphate were standardized copies of the Qur'an produced?",
-        "a": "Standardized copies of the Qur'an were produced and sent to different regions during the caliphate of Uthman ibn Affan."
-      },
-      "de": {
-        "q": "Unter welchem Kalifen wurden einheitliche Abschriften des Qur'an angefertigt?",
-        "a": "Einheitliche Abschriften des Qur'an wurden unter dem Kalifen Uthman ibn Affan angefertigt und in verschiedene Regionen gesandt."
-      },
-      "ru": {
-        "q": "При каком халифе были изготовлены стандартизированные экземпляры Корана?",
-        "a": "Стандартизированные экземпляры Корана были изготовлены и отправлены в разные регионы во время халифата Усмана ибн Аффана."
-      },
-      "ku": {
-        "q": "Di serdema kîjan xelîfeyî nusxeyên standard ên Qur'anê hatin pirjêkirin?",
-        "a": "Di serdema xelîfeyê Osman ibn Affan de nusxeyên standard ên Qur'anê hatin pirjêkirin û ji herêmên cuda re hatin şandin."
-      },
-      "tt": {
-        "q": "Коръәннең бертөрле нөсхәләре кайсы хәлифә заманында күчереп таратылган?",
-        "a": "Коръәннең бертөрле нөсхәләре Госман ибн Гаффан хәлифәлеге вакытында күчерелеп, төрле төбәкләргә җибәрелгән."
-      },
-      "fr": {
-        "q": "Sous quel califat des copies standardisées du Coran furent-elles produites ?",
-        "a": "Des copies standardisées du Coran furent produites et envoyées dans différentes régions sous le califat de Uthman ibn Affan."
-      },
-      "es": {
-        "q": "¿Durante qué califato se produjeron copias estandarizadas del Corán?",
-        "a": "Durante el califato de Uthman ibn Affan se produjeron copias estandarizadas del Corán y se enviaron a distintas regiones."
-      },
-      "ar": {
-        "q": "فِي عَهْدِ أَيِّ خَلِيفَةٍ نُسِخَتِ الْمَصَاحِفُ الْمُوَحَّدَةُ؟",
-        "a": "نُسِخَتِ الْمَصَاحِفُ الْمُوَحَّدَةُ وَأُرْسِلَتْ إِلَى الْأَمْصَارِ فِي عَهْدِ عُثْمَانَ بْنِ عَفَّانَ."
-      },
-      "nl": {
-        "q": "Tijdens welk kalifaat werden gestandaardiseerde kopieën van de Koran gemaakt?",
-        "a": "Tijdens het kalifaat van Uthman ibn Affan werden gestandaardiseerde kopieën van de Koran gemaakt en naar verschillende regio's gestuurd."
-      },
-      "it": {
-        "q": "Durante quale califfato furono prodotte copie standardizzate del Corano?",
-        "a": "Durante il califfato di Uthman ibn Affan furono prodotte copie standardizzate del Corano e inviate in diverse regioni."
-      },
-      "sources": [
-        "📜 Sahih Buhârî — Kitâbü Fedâili'l-Kur'an, 4987"
-      ]
-    },
+
     {
       "id": 36,
       "day": 2,
       "tr": {
-        "q": "Kur'an kaç cüze ayrılmıştır?",
-        "a": "Kur'an, okuma ve hatim kolaylığı sağlamak amacıyla 30 cüze ayrılmıştır."
+        "q": "Peygamberimiz Kur'an'ı insanlara nasıl açıklamıştır?",
+        "a": "Peygamberimiz Kur'an'ı sözleriyle açıklamış, yaşayışıyla göstermiş ve hükümlerini uygulayarak insanlara örnek olmuştur."
       },
       "en": {
-        "q": "Into how many juz is the Qur'an divided?",
-        "a": "The Qur'an is divided into 30 juz to facilitate reading and completing the Qur'an."
+        "q": "How did our Prophet explain the Qur'an to people?",
+        "a": "Our Prophet explained the Qur'an through his words, demonstrated it through his life, and showed people its teachings by practicing them."
       },
       "de": {
-        "q": "In wie viele Dschuz ist der Qur'an eingeteilt?",
-        "a": "Der Qur'an ist zur Erleichterung des Lesens und des vollständigen Lesens in 30 Dschuz eingeteilt."
+        "q": "Wie erklärte unser Prophet den Menschen den Koran?",
+        "a": "Unser Prophet erklärte den Koran durch seine Worte, zeigte ihn durch sein Leben und wurde durch die Umsetzung seiner Lehren zum Vorbild."
       },
       "ru": {
-        "q": "На сколько джузов разделён Коран?",
-        "a": "Коран разделён на 30 джузов, чтобы облегчить чтение и завершение полного чтения Корана."
+        "q": "Как наш Пророк разъяснял Коран людям?",
+        "a": "Наш Пророк разъяснял Коран своими словами, показывал его своим образом жизни и являлся примером, применяя его наставления."
       },
       "ku": {
-        "q": "Qur'an ji çend cûzan hatiye dabeşkirin?",
-        "a": "Qur'an ji bo hêsankirina xwendinê û temamkirina hatmê li 30 cûzan hatiye dabeşkirin."
-      },
-      "tt": {
-        "q": "Коръән ничә җүзгә бүленгән?",
-        "a": "Коръән укуны һәм хатемне тәмамлауны җиңеләйтү өчен 30 җүзгә бүленгән."
-      },
-      "fr": {
-        "q": "En combien de juz le Coran est-il divisé ?",
-        "a": "Le Coran est divisé en 30 juz afin de faciliter sa lecture et son achèvement."
-      },
-      "es": {
-        "q": "¿En cuántos yuz está dividido el Corán?",
-        "a": "El Corán está dividido en 30 yuz para facilitar su lectura y la realización de una lectura completa."
+        "q": "Pêxemberê me Qur'an ji mirovan re çawa rave kiriye?",
+        "a": "Pêxemberê me Qur'an bi gotinên xwe rave kiriye, bi jiyana xwe nîşan daye û bi sepandina hûkmanên wê bûye nimûne."
       },
       "ar": {
-        "q": "إِلَى كَمْ جُزْءًا يُقَسَّمُ الْقُرْآنُ؟",
-        "a": "يُقَسَّمُ الْقُرْآنُ إِلَى ثَلَاثِينَ جُزْءًا لِتَيْسِيرِ قِرَاءَتِهِ وَإِتْمَامِ خَتْمِهِ."
+        "q": "كَيْفَ بَيَّنَ نَبِيُّنَا الْقُرْآنَ لِلنَّاسِ؟",
+        "a": "بَيَّنَ نَبِيُّنَا الْقُرْآنَ بِأَقْوَالِهِ، وَأَظْهَرَهُ بِسِيرَتِهِ، وَكَانَ قُدْوَةً لِلنَّاسِ بِتَطْبِيقِ أَحْكَامِهِ."
+      },
+      "tt": {
+        "q": "Пәйгамбәребез Коръәнне кешеләргә ничек аңлаткан?",
+        "a": "Пәйгамбәребез Коръәнне сүзләре белән аңлаткан, тормышы белән күрсәткән һәм аның хөкемнәрен үтәп кешеләргә үрнәк булган."
+      },
+      "fr": {
+        "q": "Comment notre Prophète a-t-il expliqué le Coran aux gens ?",
+        "a": "Notre Prophète a expliqué le Coran par ses paroles, l'a montré par sa vie et a été un exemple en mettant ses enseignements en pratique."
+      },
+      "es": {
+        "q": "¿Cómo explicó nuestro Profeta el Corán a la gente?",
+        "a": "Nuestro Profeta explicó el Corán con sus palabras, lo mostró mediante su vida y fue un ejemplo al poner en práctica sus enseñanzas."
       },
       "nl": {
-        "q": "In hoeveel juz is de Koran verdeeld?",
-        "a": "De Koran is verdeeld in 30 juz om het lezen en het volledig lezen van de Koran te vergemakkelijken."
+        "q": "Hoe legde onze Profeet de Koran aan de mensen uit?",
+        "a": "Onze Profeet legde de Koran uit met zijn woorden, liet hem zien door zijn leven en was een voorbeeld door zijn voorschriften toe te passen."
       },
       "it": {
-        "q": "In quanti juz è diviso il Corano?",
-        "a": "Il Corano è diviso in 30 juz per facilitare la lettura e il completamento della lettura dell'intero Corano."
+        "q": "Come ha spiegato il nostro Profeta il Corano alle persone?",
+        "a": "Il nostro Profeta ha spiegato il Corano con le sue parole, lo ha mostrato attraverso la sua vita ed è stato un esempio mettendone in pratica gli insegnamenti."
       },
       "sources": [
-        "📚 Ulûmü'l-Kur'an — Kur'an'ın cüzlere ve hizblere bölümlenmesi"
+        "📖 Kur'an — Nahl 16:44",
+        "📖 Kur'an — Ahzâb 33:21"
       ]
     },
+
     {
       "id": 37,
       "day": 2,
       "tr": {
-        "q": "Kur'an'ın ana amacı nedir?",
-        "a": "Kur'an'ın ana amacı insanlara doğru yolu göstermek, onları Allah'a kulluğa ve salih bir hayata yönlendirmektir."
+        "q": "Kur'an'ı okumak neden önemlidir?",
+        "a": "Kur'an okumak Allah'ın kelâmını okumaktır; sevap kazandırır, kalbi güçlendirir ve insanı doğru yola yönlendirir."
       },
       "en": {
-        "q": "What is the main purpose of the Qur'an?",
-        "a": "The main purpose of the Qur'an is to guide people to the right path and direct them toward worshipping Allah and living a righteous life."
+        "q": "Why is reading the Qur'an important?",
+        "a": "Reading the Qur'an means reading the word of Allah; it brings reward, strengthens the heart and guides a person to the right path."
       },
       "de": {
-        "q": "Was ist der Hauptzweck des Qur'an?",
-        "a": "Der Hauptzweck des Qur'an ist es, den Menschen den richtigen Weg zu zeigen und sie zur Anbetung Allahs und zu einem rechtschaffenen Leben zu führen."
+        "q": "Warum ist das Lesen des Korans wichtig?",
+        "a": "Den Koran zu lesen bedeutet, Allahs Wort zu lesen; es bringt Lohn, stärkt das Herz und führt den Menschen auf den richtigen Weg."
       },
       "ru": {
-        "q": "Какова главная цель Корана?",
-        "a": "Главная цель Корана — направлять людей на прямой путь, призывать их поклоняться Аллаху и жить праведной жизнью."
+        "q": "Почему важно читать Коран?",
+        "a": "Чтение Корана означает чтение Слова Аллаха; оно приносит награду, укрепляет сердце и ведёт человека прямым путём."
       },
       "ku": {
-        "q": "Armanca sereke ya Qur'anê çi ye?",
-        "a": "Armanca sereke ya Qur'anê ew e ku rêya rast nîşanî mirovan bide û wan ber bi îbadeta Xwedê û jiyaneke salih ve bibe."
-      },
-      "tt": {
-        "q": "Коръәннең төп максаты нәрсә?",
-        "a": "Коръәннең төп максаты — кешеләргә туры юлны күрсәтү, аларны Аллаһка гыйбадәт кылырга һәм изге тормыш алып барырга юнәлтү."
-      },
-      "fr": {
-        "q": "Quel est le but principal du Coran ?",
-        "a": "Le but principal du Coran est de guider les gens vers le droit chemin et de les orienter vers l'adoration d'Allah et une vie vertueuse."
-      },
-      "es": {
-        "q": "¿Cuál es el propósito principal del Corán?",
-        "a": "El propósito principal del Corán es guiar a las personas por el camino recto y orientarlas hacia la adoración de Allah y una vida virtuosa."
+        "q": "Çima xwendina Qur'anê girîng e?",
+        "a": "Xwendina Qur'anê xwendina kelama Xwedê ye; sevab dide, dil bihêz dike û mirovan ber bi rêya rast ve dibe."
       },
       "ar": {
-        "q": "مَا الْهَدَفُ الرَّئِيسِيُّ لِلْقُرْآنِ؟",
-        "a": "الْهَدَفُ الرَّئِيسِيُّ لِلْقُرْآنِ هُوَ هِدَايَةُ النَّاسِ إِلَى الصِّرَاطِ الْمُسْتَقِيمِ وَدَعْوَتُهُمْ إِلَى عِبَادَةِ اللَّهِ وَالْحَيَاةِ الصَّالِحَةِ."
+        "q": "لِمَاذَا تَعَدُّ قِرَاءَةُ الْقُرْآنِ مُهِمَّةً؟",
+        "a": "قِرَاءَةُ الْقُرْآنِ هِيَ قِرَاءَةُ كَلَامِ اللَّهِ، وَهِيَ تَجْلِبُ الثَّوَابَ، وَتُقَوِّي الْقَلْبَ، وَتَهْدِي الْإِنْسَانَ إِلَى الصِّرَاطِ الْمُسْتَقِيمِ."
+      },
+      "tt": {
+        "q": "Коръән уку ни өчен мөһим?",
+        "a": "Коръән уку — Аллаһның сүзен уку; ул савап китерә, йөрәкне ныгыта һәм кешене туры юлга юнәлтә."
+      },
+      "fr": {
+        "q": "Pourquoi est-il important de lire le Coran ?",
+        "a": "Lire le Coran, c'est lire la parole d'Allah ; cela apporte une récompense, fortifie le cœur et guide la personne vers le droit chemin."
+      },
+      "es": {
+        "q": "¿Por qué es importante leer el Corán?",
+        "a": "Leer el Corán significa leer la palabra de Allah; aporta recompensa, fortalece el corazón y guía a la persona por el camino recto."
       },
       "nl": {
-        "q": "Wat is het belangrijkste doel van de Koran?",
-        "a": "Het belangrijkste doel van de Koran is mensen de rechte weg te wijzen en hen te leiden naar aanbidding van Allah en een deugdzaam leven."
+        "q": "Waarom is het belangrijk om de Koran te lezen?",
+        "a": "De Koran lezen betekent het woord van Allah lezen; het brengt beloning, versterkt het hart en leidt iemand naar het rechte pad."
       },
       "it": {
-        "q": "Qual è lo scopo principale del Corano?",
-        "a": "Lo scopo principale del Corano è guidare le persone sulla retta via e indirizzarle verso l'adorazione di Allah e una vita virtuosa."
+        "q": "Perché è importante leggere il Corano?",
+        "a": "Leggere il Corano significa leggere la parola di Allah; porta ricompensa, rafforza il cuore e guida la persona sulla retta via."
       },
       "sources": [
-        "📖 Kur'an — Bakara 2:2",
-        "📖 Kur'an — İsrâ 17:9"
+        "📖 Kur'an — İsrâ 17:9",
+        "📚 Sahih Buhârî — Fedâilü'l-Kur'an"
       ]
     },
+
     {
       "id": 38,
       "day": 2,
       "tr": {
-        "q": "Kur'an'a ve Peygamber'in ﷺ sünnetine uymak neden önemlidir?",
-        "a": "Çünkü Müslüman, Allah'ın mesajını öğrenmek, doğru anlamak ve hayatına uygulamak için Kur'an'a ve Peygamberimizin ﷺ örnekliğine yönelir."
+        "q": "Kur'an ve sünnet Müslümanın hayatında nasıl bir rehberdir?",
+        "a": "Kur'an Allah'ın rehberidir; sünnet ise Peygamberimizin bu rehberliği nasıl yaşadığını gösterir. Müslüman ikisini öğrenerek hayatını şekillendirir."
       },
       "en": {
-        "q": "Why is it important to follow the Qur'an and the Prophet's Sunnah?",
-        "a": "Because a Muslim turns to the Qur'an and the example of the Prophet ﷺ to learn, understand and apply Allah's message in life."
+        "q": "How are the Qur'an and Sunnah a guide in a Muslim's life?",
+        "a": "The Qur'an is Allah's guidance, while the Sunnah shows how our Prophet lived according to that guidance. A Muslim shapes life by learning and following both."
       },
       "de": {
-        "q": "Warum ist es wichtig, dem Qur'an und der Sunna des Propheten zu folgen?",
-        "a": "Weil ein Muslim sich am Qur'an und am Vorbild des Propheten ﷺ orientiert, um Allahs Botschaft zu lernen, richtig zu verstehen und im Leben umzusetzen."
+        "q": "Wie sind Koran und Sunna ein Wegweiser im Leben eines Muslims?",
+        "a": "Der Koran ist Allahs Führung, während die Sunna zeigt, wie unser Prophet nach dieser Führung lebte. Ein Muslim gestaltet sein Leben, indem er beide lernt und befolgt."
       },
       "ru": {
-        "q": "Почему важно следовать Корану и Сунне Пророка?",
-        "a": "Потому что мусульманин обращается к Корану и примеру Пророка ﷺ, чтобы узнать, правильно понять и применять послание Аллаха в жизни."
+        "q": "Как Коран и Сунна являются руководством в жизни мусульманина?",
+        "a": "Коран — руководство Аллаха, а Сунна показывает, как наш Пророк жил в соответствии с этим руководством. Мусульманин строит свою жизнь, изучая и следуя обоим."
       },
       "ku": {
-        "q": "Çima girîng e ku em li gorî Qur'anê û Suneta Peyxember bixebitin?",
-        "a": "Ji ber ku Misilman ji bo fêmkirina rast û sepandina peyama Xwedê di jiyanê de berê xwe dide Qur'anê û nimûneya Peyxember ﷺ."
-      },
-      "tt": {
-        "q": "Ни өчен Коръәнгә һәм Пәйгамбәр сөннәтенә иярү мөһим?",
-        "a": "Чөнки мөселман Аллаһның хәбәрен өйрәнү, дөрес аңлау һәм тормышта гамәлгә ашыру өчен Коръәнгә һәм Пәйгамбәр ﷺ үрнәгенә мөрәҗәгать итә."
-      },
-      "fr": {
-        "q": "Pourquoi est-il important de suivre le Coran et la Sunna du Prophète ?",
-        "a": "Parce que le musulman se réfère au Coran et à l'exemple du Prophète ﷺ pour connaître, comprendre correctement et mettre en pratique le message d'Allah."
-      },
-      "es": {
-        "q": "¿Por qué es importante seguir el Corán y la Sunna del Profeta?",
-        "a": "Porque el musulmán recurre al Corán y al ejemplo del Profeta ﷺ para conocer, comprender correctamente y aplicar el mensaje de Allah en su vida."
+        "q": "Qur'an û Sunnet di jiyana Misilman de çawa rêber in?",
+        "a": "Qur'an rêberiya Xwedê ye; Sunnet nîşan dide ku Pêxemberê me li gorî vê rêberiyê çawa jiyaye. Misilman bi fêrbûna herduyan jiyana xwe ava dike."
       },
       "ar": {
-        "q": "لِمَاذَا مِنَ الْمُهِمِّ اتِّبَاعُ الْقُرْآنِ وَسُنَّةِ النَّبِيِّ ﷺ؟",
-        "a": "لِأَنَّ الْمُسْلِمَ يَرْجِعُ إِلَى الْقُرْآنِ وَقُدْوَةِ النَّبِيِّ ﷺ لِيَتَعَلَّمَ رِسَالَةَ اللَّهِ وَيَفْهَمَهَا فَهْمًا صَحِيحًا وَيُطَبِّقَهَا فِي حَيَاتِهِ."
+        "q": "كَيْفَ يَكُونُ الْقُرْآنُ وَالسُّنَّةُ دَلِيلًا فِي حَيَاةِ الْمُسْلِمِ؟",
+        "a": "الْقُرْآنُ هُوَ هُدَى اللَّهِ، وَالسُّنَّةُ تُبَيِّنُ كَيْفَ عَاشَ نَبِيُّنَا عَلَى هَذَا الْهُدَى. وَيُشَكِّلُ الْمُسْلِمُ حَيَاتَهُ بِتَعَلُّمِهِمَا وَاتِّبَاعِهِمَا."
+      },
+      "tt": {
+        "q": "Коръән һәм Сөннәт мөселман тормышында ничек җитәкче була?",
+        "a": "Коръән — Аллаһның җитәкчелеге, ә Сөннәт Пәйгамбәребезнең шул җитәкчелек буенча ничек яшәгәнен күрсәтә. Мөселман икесен дә өйрәнеп һәм аларга ияреп тормышын төзи."
+      },
+      "fr": {
+        "q": "Comment le Coran et la Sunna sont-ils un guide dans la vie du musulman ?",
+        "a": "Le Coran est la guidance d'Allah, tandis que la Sunna montre comment notre Prophète a vécu selon cette guidance. Le musulman construit sa vie en apprenant et en suivant les deux."
+      },
+      "es": {
+        "q": "¿Cómo son el Corán y la Sunna una guía en la vida del musulmán?",
+        "a": "El Corán es la guía de Allah, mientras que la Sunna muestra cómo nuestro Profeta vivió de acuerdo con esa guía. El musulmán construye su vida aprendiendo y siguiendo ambos."
       },
       "nl": {
-        "q": "Waarom is het belangrijk om de Koran en de soenna van de Profeet te volgen?",
-        "a": "Omdat een moslim zich tot de Koran en het voorbeeld van de Profeet ﷺ wendt om de boodschap van Allah te leren, goed te begrijpen en in het leven toe te passen."
+        "q": "Hoe zijn de Koran en de Soenna een leidraad in het leven van een moslim?",
+        "a": "De Koran is de leiding van Allah, terwijl de Soenna laat zien hoe onze Profeet volgens deze leiding leefde. Een moslim vormt zijn leven door beide te leren en te volgen."
       },
       "it": {
-        "q": "Perché è importante seguire il Corano e la Sunna del Profeta?",
-        "a": "Perché il musulmano si rivolge al Corano e all'esempio del Profeta ﷺ per conoscere, comprendere correttamente e applicare nella vita il messaggio di Allah."
+        "q": "Come sono il Corano e la Sunna una guida nella vita del musulmano?",
+        "a": "Il Corano è la guida di Allah, mentre la Sunna mostra come il nostro Profeta ha vissuto secondo questa guida. Il musulmano costruisce la propria vita imparando e seguendo entrambi."
       },
       "sources": [
-        "📖 Kur'an — Haşr 59:7",
-        "📖 Kur'an — Nahl 16:44"
+        "📖 Kur'an — Nahl 16:44",
+        "📖 Kur'an — Ahzâb 33:21",
+        "📖 Kur'an — Haşr 59:7"
       ]
     }
   ]
