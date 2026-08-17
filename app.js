@@ -298,6 +298,11 @@ let speechUtterance = null;
 
 let selectedVoice = null;
 
+
+/* =========================================
+   TTS HIZ SEVİYELERİ
+========================================= */
+
 let slowLevel = 0;
 
 let fastLevel = 0;
@@ -306,7 +311,7 @@ let veryFastLevel = 0;
 
 
 /* =========================================
-   TTS PAUSE DURUMU
+   TTS DURUMU
 ========================================= */
 
 let speechPaused = false;
@@ -363,6 +368,8 @@ function loadSavedVoice() {
     return;
   }
 
+  selectedVoice = null;
+
   if (selectedVoiceName) {
 
     selectedVoice =
@@ -388,9 +395,13 @@ function loadSavedVoice() {
       voices.find(
         voice =>
           voice.lang &&
-          voice.lang.startsWith(
-            speechLang.split("-")[0]
-          )
+          voice.lang
+            .toLowerCase()
+            .startsWith(
+              speechLang
+                .split("-")[0]
+                .toLowerCase()
+            )
       ) ||
       null;
 
@@ -1017,6 +1028,8 @@ function renderLanguageButtons(
 
           stopSpeech();
 
+          closeTTSSettings();
+
           selectedLang =
             language.key;
 
@@ -1027,6 +1040,11 @@ function renderLanguageButtons(
 
           document.documentElement.lang =
             selectedLang;
+
+          selectedVoiceName =
+            localStorage.getItem(
+              "ttsVoice"
+            ) || "";
 
           loadSavedVoice();
 
@@ -1068,6 +1086,8 @@ function renderLanguageButtons(
 function renderQuestion() {
 
   stopSpeech();
+
+  closeTTSSettings();
 
   const home =
     document.querySelector(
@@ -1142,7 +1162,6 @@ function renderQuestion() {
   content.appendChild(
     dayTitle
   );
-
 
   addQuestionLanguageSelector();
 
@@ -1384,10 +1403,12 @@ function addQuestionLanguageSelector() {
 
 /* =========================================
    TTS KONTROLLERİ
-   7 BUTONUN TAMAMI TEK GRUP
+   7 BUTON TEK GRUP
 ========================================= */
 
 function renderTTSControls() {
+
+  closeTTSSettings();
 
   const oldControls =
     document.querySelector(
@@ -1396,15 +1417,6 @@ function renderTTSControls() {
 
   if (oldControls) {
     oldControls.remove();
-  }
-
-  const oldPanel =
-    document.querySelector(
-      "#tts-settings-panel"
-    );
-
-  if (oldPanel) {
-    oldPanel.remove();
   }
 
   const selector =
@@ -1526,41 +1538,6 @@ function renderTTSControls() {
 
       event.stopPropagation();
 
-      /*
-       * Eğer konuşma native olarak pause
-       * durumundaysa Play butonu devam ettirir.
-       */
-      if (
-        speechPaused &&
-        "speechSynthesis" in window &&
-        window.speechSynthesis.paused
-      ) {
-
-        try {
-
-          window.speechSynthesis.resume();
-
-          speechPaused =
-            false;
-
-          speechIsSpeaking =
-            true;
-
-          updatePauseButton();
-
-          return;
-
-        } catch (error) {
-
-          console.warn(
-            "TTS resume başarısız:",
-            error
-          );
-
-        }
-
-      }
-
       playSelectedText();
 
     }
@@ -1587,11 +1564,11 @@ function renderTTSControls() {
 
   pauseButton.setAttribute(
     "aria-label",
-    "Duraklat / devam et"
+    "Duraklat"
   );
 
   pauseButton.title =
-    "Duraklat / devam et";
+    "Duraklat";
 
   pauseButton.addEventListener(
     "click",
@@ -1644,7 +1621,7 @@ function renderTTSControls() {
 
 
   /* =====================================
-     HIZLANDIR 1
+     HIZLANDIR
   ===================================== */
 
   const fastButton =
@@ -1707,12 +1684,18 @@ function renderTTSControls() {
         slowButton
       );
 
+      updateVeryFastButton(
+        document.querySelector(
+          ".tts-very-fast"
+        )
+      );
+
     }
   );
 
 
   /* =====================================
-     HIZLANDIR 2
+     ÇOK HIZLANDIR
   ===================================== */
 
   const veryFastButton =
@@ -1776,7 +1759,9 @@ function renderTTSControls() {
       );
 
       updateFastButton(
-        fastButton
+        document.querySelector(
+          ".tts-fast"
+        )
       );
 
     }
@@ -1785,8 +1770,7 @@ function renderTTSControls() {
 
   /* =====================================
      TTS AYARLARI
-     AYNI BUTON GRUBUNUN İÇİNDE
-========================================= */
+  ===================================== */
 
   const settingsButton =
     document.createElement(
@@ -1823,7 +1807,7 @@ function renderTTSControls() {
 
 
   /* =====================================
-     7 BUTON TEK GRUP
+     7 BUTON
   ===================================== */
 
   controls.appendChild(
@@ -1855,10 +1839,6 @@ function renderTTSControls() {
   );
 
 
-  /* =====================================
-     DİL SEÇİCİSİNİN HEMEN ALTINA
-  ===================================== */
-
   selector.insertAdjacentElement(
     "afterend",
     controls
@@ -1868,7 +1848,7 @@ function renderTTSControls() {
 
 
 /* =========================================
-   YAVAŞLAT BUTONU
+   YAVAŞLAT
 ========================================= */
 
 function updateSlowButton(
@@ -1893,7 +1873,7 @@ function updateSlowButton(
 
 
 /* =========================================
-   HIZLANDIR 1
+   HIZLANDIR
 ========================================= */
 
 function updateFastButton(
@@ -1918,7 +1898,7 @@ function updateFastButton(
 
 
 /* =========================================
-   HIZLANDIR 2
+   ÇOK HIZLANDIR
 ========================================= */
 
 function updateVeryFastButton(
@@ -1943,7 +1923,7 @@ function updateVeryFastButton(
 
 
 /* =========================================
-   DİĞER HIZ BUTONLARINI GÜNCELLE
+   HIZ BUTONLARINI GÜNCELLE
 ========================================= */
 
 function updateFastButtons() {
@@ -2006,12 +1986,12 @@ function saveTTSSettings() {
 
 
 /* =========================================
-   TTS AYARLARI PANELİ
+   TTS PANELİNİ KAPAT
 ========================================= */
 
-function toggleTTSSettings() {
+function closeTTSSettings() {
 
-  let panel =
+  const panel =
     document.querySelector(
       "#tts-settings-panel"
     );
@@ -2020,13 +2000,42 @@ function toggleTTSSettings() {
 
     panel.remove();
 
+  }
+
+}
+
+
+/* =========================================
+   TTS AYAR PANELİ
+========================================= */
+
+function toggleTTSSettings() {
+
+  const existing =
+    document.querySelector(
+      "#tts-settings-panel"
+    );
+
+  if (existing) {
+
+    existing.remove();
+
     return;
 
   }
 
   loadSavedVoice();
 
-  panel =
+  const controls =
+    document.querySelector(
+      "#tts-controls"
+    );
+
+  if (!controls) {
+    return;
+  }
+
+  const panel =
     document.createElement(
       "div"
     );
@@ -2037,6 +2046,34 @@ function toggleTTSSettings() {
   panel.className =
     "tts-settings-panel";
 
+  /*
+   * Inline görünürlük garantisi.
+   * CSS'den bağımsız olarak panelin
+   * ekranda görünmesini sağlar.
+   */
+
+  panel.style.display =
+    "flex";
+
+  panel.style.flexDirection =
+    "column";
+
+  panel.style.width =
+    "100%";
+
+  panel.style.boxSizing =
+    "border-box";
+
+  panel.style.position =
+    "relative";
+
+  panel.style.zIndex =
+    "9999";
+
+
+  /* =====================================
+     BAŞLIK
+  ===================================== */
 
   const title =
     document.createElement(
@@ -2046,10 +2083,17 @@ function toggleTTSSettings() {
   title.textContent =
     "TTS Ayarları";
 
+  title.className =
+    "tts-settings-title";
+
   panel.appendChild(
     title
   );
 
+
+  /* =====================================
+     SES
+  ===================================== */
 
   const voiceLabel =
     document.createElement(
@@ -2099,17 +2143,10 @@ function toggleTTSSettings() {
             voiceSelect.value
         ) || null;
 
-      if (selectedVoice) {
-
-        selectedVoiceName =
-          selectedVoice.name;
-
-      } else {
-
-        selectedVoiceName =
-          "";
-
-      }
+      selectedVoiceName =
+        selectedVoice
+          ? selectedVoice.name
+          : "";
 
       saveTTSSettings();
 
@@ -2120,6 +2157,10 @@ function toggleTTSSettings() {
     voiceSelect
   );
 
+
+  /* =====================================
+     HIZ
+  ===================================== */
 
   const rateLabel =
     document.createElement(
@@ -2174,6 +2215,8 @@ function toggleTTSSettings() {
 
       updateSpeedLevelsFromRate();
 
+      updateSpeedButtonsFromState();
+
       saveTTSSettings();
 
     }
@@ -2183,6 +2226,10 @@ function toggleTTSSettings() {
     rateSlider
   );
 
+
+  /* =====================================
+     PERDE
+  ===================================== */
 
   const pitchLabel =
     document.createElement(
@@ -2245,6 +2292,10 @@ function toggleTTSSettings() {
   );
 
 
+  /* =====================================
+     SES TESTİ
+  ===================================== */
+
   const testButton =
     document.createElement(
       "button"
@@ -2261,7 +2312,11 @@ function toggleTTSSettings() {
 
   testButton.addEventListener(
     "click",
-    () => {
+    event => {
+
+      event.stopPropagation();
+
+      stopSpeech();
 
       const text =
         getTTSTestText();
@@ -2277,6 +2332,10 @@ function toggleTTSSettings() {
     testButton
   );
 
+
+  /* =====================================
+     SIFIRLA
+  ===================================== */
 
   const reset =
     document.createElement(
@@ -2294,7 +2353,9 @@ function toggleTTSSettings() {
 
   reset.addEventListener(
     "click",
-    () => {
+    event => {
+
+      event.stopPropagation();
 
       speechRate = 1;
 
@@ -2322,9 +2383,11 @@ function toggleTTSSettings() {
         "ttsVoice"
       );
 
+      stopSpeech();
+
       loadSavedVoice();
 
-      stopSpeech();
+      closeTTSSettings();
 
       renderTTSControls();
 
@@ -2337,31 +2400,19 @@ function toggleTTSSettings() {
 
 
   /* =====================================
-     PANEL KONTROL GRUBUNUN ALTINDA
+     PANELİ KONTROLLERİN ALTINA EKLE
   ===================================== */
 
-  const controls =
-    document.querySelector(
-      "#tts-controls"
-    );
-
-  if (
-    controls &&
-    controls.parentNode
-  ) {
-
-    controls.parentNode.insertBefore(
-      panel,
-      controls.nextSibling
-    );
-
-  }
+  controls.insertAdjacentElement(
+    "afterend",
+    panel
+  );
 
 }
 
 
 /* =========================================
-   SES SEÇENEKLERİNİ DOLDUR
+   SES SEÇENEKLERİ
 ========================================= */
 
 function populateVoiceSelect(
@@ -2474,15 +2525,6 @@ function populateVoiceSelect(
       if (
         selectedVoice &&
         selectedVoice.name ===
-          voice.name
-      ) {
-
-        option.selected =
-          true;
-
-      } else if (
-        !selectedVoice &&
-        selectedVoiceName ===
           voice.name
       ) {
 
@@ -2624,6 +2666,42 @@ function updateSpeedLevelsFromRate() {
 
 
 /* =========================================
+   HIZ BUTONLARINI DURUMA GÖRE GÜNCELLE
+========================================= */
+
+function updateSpeedButtonsFromState() {
+
+  const slow =
+    document.querySelector(
+      ".tts-slow"
+    );
+
+  const fast =
+    document.querySelector(
+      ".tts-fast"
+    );
+
+  const veryFast =
+    document.querySelector(
+      ".tts-very-fast"
+    );
+
+  updateSlowButton(
+    slow
+  );
+
+  updateFastButton(
+    fast
+  );
+
+  updateVeryFastButton(
+    veryFast
+  );
+
+}
+
+
+/* =========================================
    TEXT TO SPEECH
 ========================================= */
 
@@ -2648,14 +2726,17 @@ function speakText(
     return;
   }
 
+
   /*
-   * Yeni konuşma başlatırken eski konuşmayı
-   * temizliyoruz.
+   * Yeni konuşma başlatılıyor.
+   * Burada cancel() doğrudur.
    *
-   * Pause durumundan devam ederken bu fonksiyon
-   * kullanılmıyor; native resume() kullanılıyor.
+   * ÖNEMLİ:
+   * Pause işleminde bu fonksiyon çağrılmaz.
    */
+
   window.speechSynthesis.cancel();
+
 
   speechCurrentText =
     text;
@@ -2670,6 +2751,7 @@ function speakText(
     false;
 
   loadSavedVoice();
+
 
   const textToSpeak =
     text.substring(
@@ -2702,6 +2784,7 @@ function speakText(
 
   }
 
+
   speechUtterance.onstart =
     () => {
 
@@ -2716,15 +2799,12 @@ function speakText(
     };
 
 
-  /* =====================================
-     KONUŞMA KONUMUNU TAKİP ET
-  ===================================== */
-
   speechUtterance.onboundary =
     event => {
 
       if (
-        typeof event.charIndex === "number"
+        typeof event.charIndex ===
+        "number"
       ) {
 
         speechCurrentCharIndex =
@@ -2756,15 +2836,6 @@ function speakText(
   speechUtterance.onerror =
     event => {
 
-      /*
-       * Pause işlemi artık cancel() kullanmadığı
-       * için interrupted/canceled fallback'ine
-       * gerek yok.
-       *
-       * Native pause sırasında tarayıcı hata
-       * bildirirse pause durumu korunur.
-       */
-
       if (
         event.error !== "canceled" &&
         event.error !== "interrupted"
@@ -2777,9 +2848,17 @@ function speakText(
 
       }
 
+      /*
+       * Native pause sonrası bazı browserlar
+       * interrupted benzeri event gönderebilir.
+       */
+
       if (
-        speechPaused
+        window.speechSynthesis.paused
       ) {
+
+        speechPaused =
+          true;
 
         speechIsSpeaking =
           true;
@@ -2847,15 +2926,13 @@ function playSelectedText() {
     return;
   }
 
+
   /*
-   * Önce mevcut native pause durumunu
-   * kontrol ediyoruz.
-   *
-   * Böylece Play butonu yeni konuşma
-   * başlatmak yerine kaldığı yerden devam eder.
+   * Gerçek native pause durumundaysa
+   * kaldığı yerden devam et.
    */
+
   if (
-    speechPaused &&
     window.speechSynthesis.paused
   ) {
 
@@ -2932,19 +3009,15 @@ function toggleSpeechPause() {
 
 
   /* =====================================
-     PAUSE DURUMUNDAYSA → DEVAM ET
+     GERÇEK PAUSE DURUMUNDAN DEVAM
   ===================================== */
 
-  if (speechPaused) {
+  if (
+    window.speechSynthesis.paused
+  ) {
 
     try {
 
-      /*
-       * Native resume.
-       *
-       * Burada kesinlikle cancel()
-       * kullanılmıyor.
-       */
       window.speechSynthesis.resume();
 
       speechPaused =
@@ -2972,14 +3045,13 @@ function toggleSpeechPause() {
 
 
   /* =====================================
-     KONUŞMA YOKSA İŞLEM YOK
+     KONUŞMA YOK
   ===================================== */
 
-  const isSpeaking =
-    window.speechSynthesis.speaking ||
-    speechIsSpeaking;
-
-  if (!isSpeaking) {
+  if (
+    !window.speechSynthesis.speaking &&
+    !speechIsSpeaking
+  ) {
 
     return;
 
@@ -3028,7 +3100,13 @@ function updatePauseButton() {
   buttons.forEach(
     button => {
 
-      if (speechPaused) {
+      if (
+        speechPaused ||
+        (
+          "speechSynthesis" in window &&
+          window.speechSynthesis.paused
+        )
+      ) {
 
         button.textContent =
           "▶";
@@ -3048,11 +3126,11 @@ function updatePauseButton() {
 
         button.setAttribute(
           "aria-label",
-          "Duraklat / devam et"
+          "Duraklat"
         );
 
         button.title =
-          "Duraklat / devam et";
+          "Duraklat";
 
       }
 
@@ -3071,6 +3149,11 @@ function stopSpeech() {
   if (
     "speechSynthesis" in window
   ) {
+
+    /*
+     * STOP için cancel() kullanılır.
+     * PAUSE için kesinlikle kullanılmaz.
+     */
 
     window.speechSynthesis.cancel();
 
