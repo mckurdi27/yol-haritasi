@@ -15,17 +15,25 @@ const homeSubtitle = document.querySelector(".home-subtitle");
 // DİLLER
 const languages = {
   tr: "🇹🇷",
-  ar: "🇸🇦",
-  en: "🇬🇧"
+  en: "🇬🇧",
+  de: "🇩🇪",
+  ru: "🇷🇺",
+  ku: "🇬🇭",
+  tt: "🇭🇺",
+  fr: "🇫🇷",
+  es: "🇪🇸",
+  nl: "🇳🇱",
+  it: "🇮🇹",
+  ar: "🇸🇦"
 };
 
 let selectedLanguage = "tr";
 
 // ANA SAYFA METİNLERİ
 const titles = {
-  tr: { title: "İslâm'ı Öğrenme Yol Haritası", subtitle: "30 Günde Temel Bilgiler" },
-  en: { title: "Islam Learning Roadmap", subtitle: "Essential Knowledge in 30 Days" },
-  ar: { title: "خارطة طريق تعلم الإسلام", subtitle: "أساسيات خلال 30 يومًا" }
+  tr: { title: "Bir Müslümanın Yol Haritası", subtitle: "11 Dilli Günlük Dinî Bilgi Rehberi" },
+  en: { title: "Muslim's Roadmap", subtitle: "Daily Islamic Knowledge in 11 Languages" },
+  ar: { title: "خارطة طريق المسلم", subtitle: "دليل المعرفة اليومية بـ 11 لغة" }
 };
 
 // DİL BUTONLARI
@@ -68,7 +76,7 @@ async function renderDays() {
 
     card.innerHTML = `
       <div class="day-card-title">${day.title}</div>
-      <div class="day-card-subtitle">Aralık: ${day.range}</div>
+      <div class="day-card-subtitle">${day.range}. sorular</div>
     `;
 
     card.onclick = () => openDay(day);
@@ -86,16 +94,16 @@ async function openDay(day) {
 
   let html = `
     <div class="question-card">
-      <h2>${data.dayTitle.tr}</h2>
-      <p>${data.daySubtitle.tr}</p>
+      <h2>${data.dayTitle[selectedLanguage]}</h2>
+      <p>${data.daySubtitle[selectedLanguage]}</p>
     </div>
   `;
 
   data.questions.forEach(q => {
     html += `
       <div class="question-card">
-        <h3>${q.tr.q}</h3>
-        <p>${q.tr.a}</p>
+        <h3>${q[selectedLanguage].q}</h3>
+        <p>${q[selectedLanguage].a}</p>
       </div>
     `;
   });
