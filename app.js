@@ -297,9 +297,6 @@ let speechPitch =
 let selectedVoiceName =
   localStorage.getItem("ttsVoice") || "";
 
-let selectedVoiceLang =
-  localStorage.getItem("ttsVoiceLang") || "";
-
 let speechUtterance = null;
 
 let selectedVoice = null;
@@ -309,6 +306,21 @@ let slowLevel = 0;
 let fastLevel = 0;
 
 let veryFastLevel = 0;
+
+
+/* =========================================
+   TTS PAUSE DURUMU
+========================================= */
+
+let speechPaused = false;
+
+let speechText = "";
+
+let speechChunks = [];
+
+let speechChunkIndex = 0;
+
+let speechIsPlaying = false;
 
 
 /* =========================================
@@ -356,48 +368,7 @@ function loadSavedVoice() {
     return;
   }
 
-  const speechLang =
-    getSpeechLanguage(
-      selectedLang
-    );
-
-  const languageCode =
-    speechLang
-      .split("-")[0]
-      .toLowerCase();
-
-
-  /* =====================================
-     ÖNCELİK 1
-     KAYDEDİLEN SES + DİL
-  ===================================== */
-
-  if (
-    selectedVoiceName
-  ) {
-
-    selectedVoice =
-      voices.find(
-        voice =>
-          voice.name === selectedVoiceName &&
-          (
-            !selectedVoiceLang ||
-            voice.lang === selectedVoiceLang
-          )
-      ) || null;
-
-  }
-
-
-  /* =====================================
-     ÖNCELİK 2
-     KAYDEDİLEN SES SADECE İSİMLE
-  ===================================== */
-
-  if (
-    !selectedVoice &&
-    selectedVoiceName
-  ) {
+  if (selectedVoiceName) {
 
     selectedVoice =
       voices.find(
@@ -407,55 +378,26 @@ function loadSavedVoice() {
 
   }
 
-
-  /* =====================================
-     ÖNCELİK 3
-     SEÇİLİ DİLE UYGUN SES
-  ===================================== */
-
   if (!selectedVoice) {
+
+    const speechLang =
+      getSpeechLanguage(
+        selectedLang
+      );
 
     selectedVoice =
       voices.find(
         voice =>
-          voice.lang &&
-          voice.lang.toLowerCase() ===
-            speechLang.toLowerCase()
-      ) || null;
-
-  }
-
-
-  /* =====================================
-     ÖNCELİK 4
-     DİL KODUNA UYGUN SES
-  ===================================== */
-
-  if (!selectedVoice) {
-
-    selectedVoice =
+          voice.lang === speechLang
+      ) ||
       voices.find(
         voice =>
           voice.lang &&
-          voice.lang
-            .toLowerCase()
-            .startsWith(
-              languageCode
-            )
-      ) || null;
-
-  }
-
-
-  /* =====================================
-     ÖNCELİK 5
-     HERHANGİ BİR SES
-  ===================================== */
-
-  if (!selectedVoice) {
-
-    selectedVoice =
-      voices[0] || null;
+          voice.lang.startsWith(
+            speechLang.split("-")[0]
+          )
+      ) ||
+      null;
 
   }
 
@@ -1091,9 +1033,6 @@ function renderLanguageButtons(
           document.documentElement.lang =
             selectedLang;
 
-          selectedVoice =
-            null;
-
           loadSavedVoice();
 
           const questionPage =
@@ -1219,6 +1158,7 @@ function renderQuestion() {
 
   /* =====================================
      TTS KONTROLLERİ
+     DİL SEÇİCİSİNİN HEMEN ALTINDA
   ===================================== */
 
   renderTTSControls();
@@ -1543,8 +1483,6 @@ function renderTTSControls() {
 
       event.stopPropagation();
 
-      stopSpeech();
-
       slowLevel++;
 
       if (
@@ -1648,9 +1586,7 @@ function renderTTSControls() {
 
       event.stopPropagation();
 
-      toggleSpeechPause(
-        pauseButton
-      );
+      toggleSpeechPause();
 
     }
   );
@@ -1690,8 +1626,6 @@ function renderTTSControls() {
 
       stopSpeech();
 
-      updatePauseButtons();
-
     }
   );
 
@@ -1729,8 +1663,6 @@ function renderTTSControls() {
 
       event.stopPropagation();
 
-      stopSpeech();
-
       fastLevel++;
 
       if (
@@ -1760,12 +1692,6 @@ function renderTTSControls() {
 
       updateSlowButton(
         slowButton
-      );
-
-      updateVeryFastButton(
-        document.querySelector(
-          ".tts-very-fast"
-        )
       );
 
     }
@@ -1804,8 +1730,6 @@ function renderTTSControls() {
     event => {
 
       event.stopPropagation();
-
-      stopSpeech();
 
       veryFastLevel++;
 
@@ -1885,7 +1809,7 @@ function renderTTSControls() {
 
 
   /* =====================================
-     TEK SATIR
+     TEK ORTA KONTROL GRUBU
   ===================================== */
 
   controls.appendChild(
@@ -1916,6 +1840,10 @@ function renderTTSControls() {
     settingsButton
   );
 
+
+  /* =====================================
+     DİL SEÇİCİSİNİN HEMEN ALTINA
+  ===================================== */
 
   selector.insertAdjacentElement(
     "afterend",
@@ -2017,67 +1945,20 @@ function updateFastButtons() {
     );
 
   if (fast) {
+
     updateFastButton(
       fast
     );
+
   }
 
   if (veryFast) {
+
     updateVeryFastButton(
       veryFast
     );
+
   }
-
-}
-
-
-/* =========================================
-   PAUSE BUTONLARINI GÜNCELLE
-========================================= */
-
-function updatePauseButtons() {
-
-  const buttons =
-    document.querySelectorAll(
-      ".tts-pause"
-    );
-
-  buttons.forEach(
-    button => {
-
-      if (
-        "speechSynthesis" in window &&
-        window.speechSynthesis.paused
-      ) {
-
-        button.textContent =
-          "▶";
-
-        button.title =
-          "Devam et";
-
-        button.setAttribute(
-          "aria-label",
-          "Devam et"
-        );
-
-      } else {
-
-        button.textContent =
-          "⏸";
-
-        button.title =
-          "Duraklat / devam et";
-
-        button.setAttribute(
-          "aria-label",
-          "Duraklat / devam et"
-        );
-
-      }
-
-    }
-  );
 
 }
 
@@ -2103,11 +1984,6 @@ function saveTTSSettings() {
     localStorage.setItem(
       "ttsVoice",
       selectedVoice.name
-    );
-
-    localStorage.setItem(
-      "ttsVoiceLang",
-      selectedVoice.lang || ""
     );
 
   }
@@ -2147,6 +2023,10 @@ function toggleTTSSettings() {
   panel.className =
     "tts-settings-panel";
 
+
+  /* =====================================
+     BAŞLIK
+  ===================================== */
 
   const title =
     document.createElement(
@@ -2201,12 +2081,6 @@ function toggleTTSSettings() {
     "change",
     () => {
 
-      if (
-        !("speechSynthesis" in window)
-      ) {
-        return;
-      }
-
       const voices =
         window.speechSynthesis
           .getVoices();
@@ -2215,7 +2089,7 @@ function toggleTTSSettings() {
         voices.find(
           voice =>
             voice.name ===
-              voiceSelect.value
+            voiceSelect.value
         ) || null;
 
       if (selectedVoice) {
@@ -2223,15 +2097,9 @@ function toggleTTSSettings() {
         selectedVoiceName =
           selectedVoice.name;
 
-        selectedVoiceLang =
-          selectedVoice.lang || "";
-
       } else {
 
         selectedVoiceName =
-          "";
-
-        selectedVoiceLang =
           "";
 
       }
@@ -2449,8 +2317,6 @@ function toggleTTSSettings() {
 
       selectedVoiceName = "";
 
-      selectedVoiceLang = "";
-
       localStorage.removeItem(
         "ttsRate"
       );
@@ -2461,10 +2327,6 @@ function toggleTTSSettings() {
 
       localStorage.removeItem(
         "ttsVoice"
-      );
-
-      localStorage.removeItem(
-        "ttsVoiceLang"
       );
 
       loadSavedVoice();
@@ -2619,12 +2481,7 @@ function populateVoiceSelect(
       if (
         selectedVoice &&
         selectedVoice.name ===
-          voice.name &&
-        (
-          !selectedVoice.lang ||
-          selectedVoice.lang ===
-            voice.lang
-        )
+          voice.name
       ) {
 
         option.selected =
@@ -2793,79 +2650,112 @@ function speakText(
 
   }
 
+  window.speechSynthesis.cancel();
+
+  speechPaused = false;
+
+  speechText = text;
+
+  speechChunks =
+    splitSpeechText(
+      text
+    );
+
+  speechChunkIndex = 0;
+
+  speechIsPlaying = true;
+
+  loadSavedVoice();
+
+  speakCurrentChunk();
+
+}
+
+
+/* =========================================
+   METNİ TTS PARÇALARINA BÖL
+========================================= */
+
+function splitSpeechText(
+  text
+) {
+
+  if (!text) {
+    return [];
+  }
+
+  const matches =
+    text.match(
+      /[^.!?。！？]+[.!?。！？]+|[^.!?。！？]+$/g
+    );
+
   if (
-    !text ||
-    !String(text).trim()
+    !matches ||
+    !matches.length
   ) {
+
+    return [
+      text
+    ];
+
+  }
+
+  return matches
+    .map(
+      part =>
+        part.trim()
+    )
+    .filter(
+      part =>
+        part.length > 0
+    );
+
+}
+
+
+/* =========================================
+   MEVCUT TTS PARÇASINI OYNAT
+========================================= */
+
+function speakCurrentChunk() {
+
+  if (
+    !("speechSynthesis" in window)
+  ) {
+    return;
+  }
+
+  if (
+    speechPaused
+  ) {
+    return;
+  }
+
+  if (
+    speechChunkIndex >=
+    speechChunks.length
+  ) {
+
+    speechIsPlaying = false;
+
+    speechUtterance = null;
+
+    updatePauseButtonState();
 
     return;
 
   }
 
-
-  /* =====================================
-     MEVCUT KONUŞMAYI TEMİZLE
-  ===================================== */
-
   window.speechSynthesis.cancel();
 
-  speechUtterance =
-    null;
-
-
-  /* =====================================
-     SESLERİ YENİDEN AL
-  ===================================== */
-
-  loadSavedVoice();
-
-
-  /* =====================================
-     SES HALA YOKSA TEKRAR DENETLE
-  ===================================== */
-
-  if (!selectedVoice) {
-
-    const voices =
-      window.speechSynthesis.getVoices();
-
-    if (voices.length) {
-
-      const speechLang =
-        getSpeechLanguage(
-          selectedLang
-        );
-
-      const languageCode =
-        speechLang
-          .split("-")[0]
-          .toLowerCase();
-
-      selectedVoice =
-        voices.find(
-          voice =>
-            voice.lang &&
-            voice.lang
-              .toLowerCase()
-              .startsWith(
-                languageCode
-              )
-        ) ||
-        voices[0] ||
-        null;
-
-    }
-
-  }
-
-
-  /* =====================================
-     UTTERANCE
-  ===================================== */
+  const chunk =
+    speechChunks[
+      speechChunkIndex
+    ];
 
   speechUtterance =
     new SpeechSynthesisUtterance(
-      String(text)
+      chunk
     );
 
   speechUtterance.rate =
@@ -2882,101 +2772,84 @@ function speakText(
       selectedLang
     );
 
-
-  /* =====================================
-     SESİ ATA
-  ===================================== */
-
   if (selectedVoice) {
 
     speechUtterance.voice =
       selectedVoice;
 
-    speechUtterance.lang =
-      selectedVoice.lang ||
-      getSpeechLanguage(
-        selectedLang
-      );
-
   }
-
-
-  /* =====================================
-     OLAYLAR
-  ===================================== */
 
   speechUtterance.onstart =
     () => {
 
-      updatePauseButtons();
+      speechIsPlaying = true;
 
-    };
-
-  speechUtterance.onpause =
-    () => {
-
-      updatePauseButtons();
-
-    };
-
-  speechUtterance.onresume =
-    () => {
-
-      updatePauseButtons();
+      updatePauseButtonState();
 
     };
 
   speechUtterance.onend =
     () => {
 
-      updatePauseButtons();
+      if (
+        speechPaused
+      ) {
+        return;
+      }
+
+      speechChunkIndex++;
+
+      if (
+        speechChunkIndex <
+        speechChunks.length
+      ) {
+
+        setTimeout(
+          () => {
+
+            speakCurrentChunk();
+
+          },
+          30
+        );
+
+      } else {
+
+        speechIsPlaying = false;
+
+        speechUtterance = null;
+
+        updatePauseButtonState();
+
+      }
 
     };
 
   speechUtterance.onerror =
     event => {
 
-      console.warn(
-        "TTS ses hatası:",
-        event.error
-      );
-
-      updatePauseButtons();
-
-    };
-
-
-  /* =====================================
-     KONUŞTUR
-  ===================================== */
-
-  window.speechSynthesis.speak(
-    speechUtterance
-  );
-
-
-  /*
-     Bazı Android / Chrome sürümlerinde
-     speak() çağrısından hemen sonra
-     motor konuşmayı başlatmayabiliyor.
-     Kısa bir resume çağrısı motoru uyandırır.
-  */
-
-  setTimeout(
-    () => {
-
       if (
-        "speechSynthesis" in window &&
-        window.speechSynthesis.speaking &&
-        window.speechSynthesis.paused
+        event.error === "canceled" ||
+        event.error === "interrupted"
       ) {
 
-        window.speechSynthesis.resume();
+        return;
 
       }
 
-    },
-    100
+      console.warn(
+        "TTS hatası:",
+        event.error
+      );
+
+      speechIsPlaying = false;
+
+      updatePauseButtonState();
+
+    };
+
+  window.speechSynthesis.speak(
+    speechUtterance
   );
 
 }
@@ -3054,12 +2927,10 @@ function playSelectedText() {
 
 
 /* =========================================
-   DURAKLAT / DEVAM
+   PAUSE / DEVAM
 ========================================= */
 
-function toggleSpeechPause(
-  button
-) {
+function toggleSpeechPause() {
 
   if (
     !("speechSynthesis" in window)
@@ -3067,65 +2938,105 @@ function toggleSpeechPause(
     return;
   }
 
-
-  /* =====================================
-     DURAKLATILMIŞSA → DEVAM
-  ===================================== */
+  /*
+     Zaten duraklatılmışsa
+     kaldığı parçadan devam et.
+  */
 
   if (
-    window.speechSynthesis.paused
+    speechPaused
   ) {
 
-    window.speechSynthesis.resume();
+    speechPaused = false;
 
-    if (button) {
+    speechIsPlaying = true;
 
-      button.textContent =
-        "⏸";
+    speakCurrentChunk();
 
-      button.title =
-        "Duraklat / devam et";
-
-      button.setAttribute(
-        "aria-label",
-        "Duraklat / devam et"
-      );
-
-    }
+    updatePauseButtonState();
 
     return;
 
   }
 
-
-  /* =====================================
-     KONUŞUYORSA → DURAKLAT
-  ===================================== */
+  /*
+     Şu anda konuşma yoksa
+     hiçbir şey yapma.
+  */
 
   if (
-    window.speechSynthesis.speaking
+    !speechIsPlaying &&
+    !window.speechSynthesis.speaking
   ) {
-
-    window.speechSynthesis.pause();
-
-    if (button) {
-
-      button.textContent =
-        "▶";
-
-      button.title =
-        "Devam et";
-
-      button.setAttribute(
-        "aria-label",
-        "Devam et"
-      );
-
-    }
 
     return;
 
   }
+
+  /*
+     Önce gerçek pause deneniyor.
+     Mobil tarayıcılarda pause bazen
+     güvenilir olmadığı için hemen
+     kendi pause mekanizmamıza geçiyoruz.
+  */
+
+  speechPaused = true;
+
+  speechIsPlaying = false;
+
+  window.speechSynthesis.cancel();
+
+  updatePauseButtonState();
+
+}
+
+
+/* =========================================
+   PAUSE BUTON DURUMU
+========================================= */
+
+function updatePauseButtonState() {
+
+  const buttons =
+    document.querySelectorAll(
+      ".tts-pause"
+    );
+
+  buttons.forEach(
+    button => {
+
+      if (
+        speechPaused
+      ) {
+
+        button.textContent =
+          "▶";
+
+        button.setAttribute(
+          "aria-label",
+          "Devam et"
+        );
+
+        button.title =
+          "Devam et";
+
+      } else {
+
+        button.textContent =
+          "⏸";
+
+        button.setAttribute(
+          "aria-label",
+          "Duraklat / devam et"
+        );
+
+        button.title =
+          "Duraklat / devam et";
+
+      }
+
+    }
+  );
 
 }
 
@@ -3147,7 +3058,22 @@ function stopSpeech() {
   speechUtterance =
     null;
 
-  updatePauseButtons();
+  speechPaused =
+    false;
+
+  speechIsPlaying =
+    false;
+
+  speechText =
+    "";
+
+  speechChunks =
+    [];
+
+  speechChunkIndex =
+    0;
+
+  updatePauseButtonState();
 
 }
 
@@ -3166,7 +3092,7 @@ function setSpeechRate(
   saveTTSSettings();
 
   if (
-    "speechSynthesis" in window &&
+    speechIsPlaying ||
     window.speechSynthesis.speaking
   ) {
 
@@ -3201,6 +3127,10 @@ function createNavigation(
   mainRow.className =
     "navigation-main-row";
 
+
+  /* =====================================
+     SORU NAVİGASYONU
+  ===================================== */
 
   const questionGroup =
     document.createElement(
@@ -3401,6 +3331,10 @@ function createNavigation(
   );
 
 
+  /* =====================================
+     ANA SAYFA
+  ===================================== */
+
   const homeGroup =
     document.createElement(
       "div"
@@ -3443,6 +3377,10 @@ function createNavigation(
     home
   );
 
+
+  /* =====================================
+     GÜN NAVİGASYONU
+  ===================================== */
 
   const dayGroup =
     document.createElement(
