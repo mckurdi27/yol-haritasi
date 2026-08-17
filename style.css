@@ -117,7 +117,7 @@ button:disabled {
 
 .holy-site-kaaba {
   grid-area: kaaba;
-  height: 350px;
+  height: 300px;
   border-radius: 4px;
 }
 
@@ -157,7 +157,7 @@ button:disabled {
 .holy-site-aqsa {
   grid-area: aqsa;
 
-  height: 350px;
+  height: 300px;
 
   margin-right: 4px;
 
@@ -178,7 +178,7 @@ button:disabled {
 .holy-site-nabawi {
   grid-area: nabawi;
 
-  height: 350px;
+  height: 300px;
 
   margin-left: 4px;
 
