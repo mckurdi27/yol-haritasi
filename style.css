@@ -368,18 +368,6 @@ button:disabled {
    SAYI GİRİŞ KUTULARI
 ========================================= */
 
-/*
-  App.js tarafından oluşturulan:
-
-  Önceki Soru
-  [ sayı kutusu ]
-  Sonraki Soru
-
-  Önceki Gün
-  [ sayı kutusu ]
-  Sonraki Gün
-*/
-
 .navigation-number-input {
   width: 75px;
   min-height: 44px;
