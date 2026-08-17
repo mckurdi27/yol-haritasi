@@ -37,7 +37,7 @@ const LANGS = [
 
   {
     key: "ku",
-    flag: "☀️",
+    flag: "🇬🇭",
     name: "Kurmancî"
   },
 
@@ -49,7 +49,7 @@ const LANGS = [
 
   {
     key: "tt",
-    flag: "🌿",
+    flag: "🇭🇺",
     name: "Tatarca"
   },
 
