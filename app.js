@@ -99,7 +99,16 @@ const UI = {
     openSource: "Kaynağı aç",
     questionCount: "Soru",
     loading: "Günler yükleniyor...",
-    noDays: "Henüz gün bulunamadı."
+    noDays: "Henüz gün bulunamadı.",
+    play: "Oynat",
+    stop: "Durdur",
+    slow: "Yavaşlat",
+    fast: "Hızlandır",
+    veryFast: "Çok hızlandır",
+    settings: "⚙️ Ayarlar",
+    speechSpeed: "Konuşma hızı",
+    selectedLanguage: "Seçili dil",
+    close: "Kapat"
   },
 
   en: {
@@ -115,7 +124,16 @@ const UI = {
     openSource: "Open source",
     questionCount: "Questions",
     loading: "Loading days...",
-    noDays: "No days found yet."
+    noDays: "No days found yet.",
+    play: "Play",
+    stop: "Stop",
+    slow: "Slow down",
+    fast: "Speed up",
+    veryFast: "Very fast",
+    settings: "⚙️ Settings",
+    speechSpeed: "Speech speed",
+    selectedLanguage: "Selected language",
+    close: "Close"
   },
 
   de: {
@@ -131,7 +149,16 @@ const UI = {
     openSource: "Quelle öffnen",
     questionCount: "Fragen",
     loading: "Tage werden geladen...",
-    noDays: "Noch keine Tage gefunden."
+    noDays: "Noch keine Tage gefunden.",
+    play: "Abspielen",
+    stop: "Stopp",
+    slow: "Verlangsamen",
+    fast: "Beschleunigen",
+    veryFast: "Sehr schnell",
+    settings: "⚙️ Einstellungen",
+    speechSpeed: "Sprechgeschwindigkeit",
+    selectedLanguage: "Ausgewählte Sprache",
+    close: "Schließen"
   },
 
   ru: {
@@ -147,7 +174,16 @@ const UI = {
     openSource: "Открыть источник",
     questionCount: "Вопросов",
     loading: "Загрузка дней...",
-    noDays: "Дни пока не найдены."
+    noDays: "Дни пока не найдены.",
+    play: "Воспроизвести",
+    stop: "Стоп",
+    slow: "Медленнее",
+    fast: "Быстрее",
+    veryFast: "Очень быстро",
+    settings: "⚙️ Настройки",
+    speechSpeed: "Скорость речи",
+    selectedLanguage: "Выбранный язык",
+    close: "Закрыть"
   },
 
   ku: {
@@ -163,7 +199,16 @@ const UI = {
     openSource: "Çavkaniyê veke",
     questionCount: "Pirs",
     loading: "Roj tên barkirin...",
-    noDays: "Hêj roj nehatine dîtin."
+    noDays: "Hêj roj nehatine dîtin.",
+    play: "Bide lîstin",
+    stop: "Rawestîne",
+    slow: "Hêdî bike",
+    fast: "Bileztir bike",
+    veryFast: "Pir bilez",
+    settings: "⚙️ Mîheng",
+    speechSpeed: "Leza axaftinê",
+    selectedLanguage: "Zimanê hilbijartî",
+    close: "Bigire"
   },
 
   ar: {
@@ -179,7 +224,16 @@ const UI = {
     openSource: "فَتْحُ الْمَصْدَرِ",
     questionCount: "أَسْئِلَة",
     loading: "جَارٍ تَحْمِيلُ الأَيَّامِ...",
-    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ."
+    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ.",
+    play: "تشغيل",
+    stop: "إيقاف",
+    slow: "إبطاء",
+    fast: "تسريع",
+    veryFast: "سريع جداً",
+    settings: "⚙️ الإعدادات",
+    speechSpeed: "سرعة الكلام",
+    selectedLanguage: "اللغة المختارة",
+    close: "إغلاق"
   },
 
   tt: {
@@ -195,7 +249,16 @@ const UI = {
     openSource: "Чыганакны ачу",
     questionCount: "Сорау",
     loading: "Көннәр йөкләнә...",
-    noDays: "Әлегә көннәр табылмады."
+    noDays: "Әлегә көннәр табылмады.",
+    play: "Уйнату",
+    stop: "Тукта",
+    slow: "Акрынлату",
+    fast: "Тизләтү",
+    veryFast: "Бик тиз",
+    settings: "⚙️ Көйләүләр",
+    speechSpeed: "Сөйләм тизлеге",
+    selectedLanguage: "Сайланган тел",
+    close: "Ябу"
   },
 
   fr: {
@@ -211,7 +274,16 @@ const UI = {
     openSource: "Ouvrir la source",
     questionCount: "Questions",
     loading: "Chargement des jours...",
-    noDays: "Aucun jour trouvé."
+    noDays: "Aucun jour trouvé.",
+    play: "Lire",
+    stop: "Arrêter",
+    slow: "Ralentir",
+    fast: "Accélérer",
+    veryFast: "Très rapide",
+    settings: "⚙️ Paramètres",
+    speechSpeed: "Vitesse de parole",
+    selectedLanguage: "Langue sélectionnée",
+    close: "Fermer"
   },
 
   es: {
@@ -227,7 +299,16 @@ const UI = {
     openSource: "Abrir fuente",
     questionCount: "Preguntas",
     loading: "Cargando días...",
-    noDays: "Todavía no se encontraron días."
+    noDays: "Todavía no se encontraron días.",
+    play: "Reproducir",
+    stop: "Detener",
+    slow: "Más lento",
+    fast: "Más rápido",
+    veryFast: "Muy rápido",
+    settings: "⚙️ Ajustes",
+    speechSpeed: "Velocidad de voz",
+    selectedLanguage: "Idioma seleccionado",
+    close: "Cerrar"
   },
 
   nl: {
@@ -243,7 +324,16 @@ const UI = {
     openSource: "Bron openen",
     questionCount: "Vragen",
     loading: "Dagen worden geladen...",
-    noDays: "Nog geen dagen gevonden."
+    noDays: "Nog geen dagen gevonden.",
+    play: "Afspelen",
+    stop: "Stoppen",
+    slow: "Vertragen",
+    fast: "Versnellen",
+    veryFast: "Zeer snel",
+    settings: "⚙️ Instellingen",
+    speechSpeed: "Spreeksnelheid",
+    selectedLanguage: "Geselecteerde taal",
+    close: "Sluiten"
   },
 
   it: {
@@ -259,7 +349,16 @@ const UI = {
     openSource: "Apri fonte",
     questionCount: "Domande",
     loading: "Caricamento dei giorni...",
-    noDays: "Nessun giorno trovato."
+    noDays: "Nessun giorno trovato.",
+    play: "Riproduci",
+    stop: "Ferma",
+    slow: "Rallenta",
+    fast: "Accelera",
+    veryFast: "Molto veloce",
+    settings: "⚙️ Impostazioni",
+    speechSpeed: "Velocità della voce",
+    selectedLanguage: "Lingua selezionata",
+    close: "Chiudi"
   }
 
 };
@@ -282,20 +381,42 @@ let currentDayIndex = 0;
 
 let currentQuestionIndex = 0;
 
-
-/* =========================================
-   TEXT TO SPEECH AYARLARI
-========================================= */
-
-let speechRate = 1;
+let speechRate =
+  Number(
+    localStorage.getItem("speechRate")
+  ) || 1;
 
 let speechUtterance = null;
 
-let slowLevel = 0;
 
-let fastLevel = 0;
+/* =========================================
+   TTS SEVİYELERİ
+========================================= */
 
-let veryFastLevel = 0;
+const TTS_LEVELS = {
+
+  slow: [
+    1,
+    0.75,
+    0.50,
+    0.25
+  ],
+
+  fast: [
+    1,
+    1.25,
+    1.50,
+    1.75
+  ],
+
+  veryFast: [
+    1,
+    2,
+    2.5,
+    3
+  ]
+
+};
 
 
 /* =========================================
@@ -528,8 +649,7 @@ function renderHome() {
   questionPage.style.display =
     "none";
 
-
-  /* DİL SEÇİCİ */
+  stopSpeech();
 
   const selector =
     document.querySelector(
@@ -543,9 +663,6 @@ function renderHome() {
     );
 
   }
-
-
-  /* BAŞLIK */
 
   const roadmapTitle =
     home.querySelector(
@@ -605,9 +722,6 @@ function renderHome() {
 
   }
 
-
-  /* ALT BAŞLIK */
-
   const subtitle =
     home.querySelector(
       ".home-subtitle"
@@ -619,9 +733,6 @@ function renderHome() {
       UI[selectedLang].subtitle;
 
   }
-
-
-  /* GÜNLER BAŞLIĞI */
 
   const sectionTitle =
     home.querySelector(
@@ -635,9 +746,6 @@ function renderHome() {
 
   }
 
-
-  /* GÜNLER LİSTESİ */
-
   const list =
     document.querySelector(
       "#days-list"
@@ -649,7 +757,6 @@ function renderHome() {
 
   list.innerHTML =
     "";
-
 
   if (!days.length) {
 
@@ -671,9 +778,6 @@ function renderHome() {
     return;
   }
 
-
-  /* GÜNLER */
-
   days.forEach(
     (dayData, index) => {
 
@@ -688,7 +792,6 @@ function renderHome() {
       card.className =
         "day-card";
 
-
       const title =
         getDayTitle(
           dayData
@@ -698,7 +801,6 @@ function renderHome() {
         getDaySubtitle(
           dayData
         );
-
 
       const titleLine =
         document.createElement(
@@ -714,7 +816,6 @@ function renderHome() {
       card.appendChild(
         titleLine
       );
-
 
       if (subtitle) {
 
@@ -735,7 +836,6 @@ function renderHome() {
 
       }
 
-
       card.addEventListener(
         "click",
         () => {
@@ -746,13 +846,10 @@ function renderHome() {
           currentQuestionIndex =
             0;
 
-          resetSpeechControls();
-
           renderQuestion();
 
         }
       );
-
 
       list.appendChild(
         card
@@ -775,7 +872,6 @@ function getDayTitle(
   const info =
     dayData.info || {};
 
-
   if (
     info.dayTitle &&
     typeof info.dayTitle === "object"
@@ -788,7 +884,6 @@ function getDayTitle(
     );
 
   }
-
 
   if (
     info.title &&
@@ -803,10 +898,8 @@ function getDayTitle(
 
   }
 
-
   const first =
     dayData.questions[0] || {};
-
 
   if (
     first.dayTitle &&
@@ -821,7 +914,6 @@ function getDayTitle(
 
   }
 
-
   if (
     typeof first.dayTitle === "string"
   ) {
@@ -829,7 +921,6 @@ function getDayTitle(
     return first.dayTitle;
 
   }
-
 
   return `${dayData.number}. Gün`;
 
@@ -847,7 +938,6 @@ function getDaySubtitle(
   const info =
     dayData.info || {};
 
-
   if (
     info.daySubtitle &&
     typeof info.daySubtitle === "object"
@@ -860,7 +950,6 @@ function getDaySubtitle(
     );
 
   }
-
 
   if (
     info.subtitle &&
@@ -875,10 +964,8 @@ function getDaySubtitle(
 
   }
 
-
   const first =
     dayData.questions[0] || {};
-
 
   if (
     first.daySubtitle &&
@@ -893,7 +980,6 @@ function getDaySubtitle(
 
   }
 
-
   if (
     typeof first.daySubtitle === "string"
   ) {
@@ -901,7 +987,6 @@ function getDaySubtitle(
     return first.daySubtitle;
 
   }
-
 
   return "";
 
@@ -948,7 +1033,6 @@ function renderLanguageButtons(
         language.name
       );
 
-
       if (
         language.key === selectedLang
       ) {
@@ -958,7 +1042,6 @@ function renderLanguageButtons(
         );
 
       }
-
 
       button.addEventListener(
         "click",
@@ -975,19 +1058,15 @@ function renderLanguageButtons(
           document.documentElement.lang =
             selectedLang;
 
-
           const questionPage =
             document.querySelector(
               "#question-page"
             );
 
-
           if (
             questionPage &&
             questionPage.style.display !== "none"
           ) {
-
-            resetSpeechControls();
 
             renderQuestion();
 
@@ -999,7 +1078,6 @@ function renderLanguageButtons(
 
         }
       );
-
 
       container.appendChild(
         button
@@ -1017,6 +1095,8 @@ function renderLanguageButtons(
 
 function renderQuestion() {
 
+  stopSpeech();
+
   const home =
     document.querySelector(
       "#home-page"
@@ -1027,14 +1107,12 @@ function renderQuestion() {
       "#question-page"
     );
 
-
   if (
     !home ||
     !page
   ) {
     return;
   }
-
 
   if (
     !days.length ||
@@ -1046,45 +1124,35 @@ function renderQuestion() {
     return;
   }
 
-
   home.style.display =
     "none";
 
   page.style.display =
     "block";
 
-
   const dayData =
     days[currentDayIndex];
-
 
   const question =
     dayData.questions[
       currentQuestionIndex
     ];
 
-
   if (!question) {
     return;
   }
-
 
   const content =
     document.querySelector(
       "#question-content"
     );
 
-
   if (!content) {
     return;
   }
 
-
   content.innerHTML =
     "";
-
-
-  /* GÜN BAŞLIĞI */
 
   const dayTitle =
     document.createElement(
@@ -1103,9 +1171,6 @@ function renderQuestion() {
     dayTitle
   );
 
-
-  /* SORU KARTI */
-
   const card =
     document.createElement(
       "article"
@@ -1113,9 +1178,6 @@ function renderQuestion() {
 
   card.className =
     "question-card";
-
-
-  /* DİL SIRASI */
 
   const languageOrder = [
 
@@ -1133,7 +1195,6 @@ function renderQuestion() {
 
   ];
 
-
   languageOrder.forEach(
     languageKey => {
 
@@ -1143,20 +1204,16 @@ function renderQuestion() {
             item.key === languageKey
         );
 
-
       if (!language) {
         return;
       }
 
-
       const data =
         question[languageKey];
-
 
       if (!data) {
         return;
       }
-
 
       const block =
         document.createElement(
@@ -1165,7 +1222,6 @@ function renderQuestion() {
 
       block.className =
         "language-block";
-
 
       if (
         languageKey === "ar"
@@ -1182,7 +1238,6 @@ function renderQuestion() {
 
       }
 
-
       if (
         languageKey === selectedLang
       ) {
@@ -1192,7 +1247,6 @@ function renderQuestion() {
         );
 
       }
-
 
       const q =
         document.createElement(
@@ -1205,7 +1259,6 @@ function renderQuestion() {
       q.textContent =
         `${language.flag} ${question.id}. ${data.q}`;
 
-
       const a =
         document.createElement(
           "div"
@@ -1217,7 +1270,6 @@ function renderQuestion() {
       a.textContent =
         `${language.flag} ${question.id}. ${data.a}`;
 
-
       block.appendChild(
         q
       );
@@ -1226,16 +1278,12 @@ function renderQuestion() {
         a
       );
 
-
       card.appendChild(
         block
       );
 
     }
   );
-
-
-  /* KAYNAKLAR */
 
   if (
     Array.isArray(
@@ -1252,44 +1300,47 @@ function renderQuestion() {
 
   }
 
-
   content.appendChild(
     card
   );
 
 
-  /* =====================================
+  /* =========================================
+     DİL SEÇİCİ
+  ========================================= */
+
+  addQuestionLanguageSelector();
+
+
+  /* =========================================
      TTS KONTROLLERİ
      
-     BURASI ÖNEMLİ:
-     TTS KONTROLLERİ SADECE
-     SORU SAYFASINDA OLUŞTURULUYOR.
-  ====================================== */
+     DİL SEÇİCİNİN HEMEN ALTINDA
+  ========================================= */
 
-  const ttsControls =
-    createTTSControls();
+  addTTSControls();
 
 
-  content.appendChild(
-    ttsControls
-  );
+  /* =========================================
+     AYARLAR
+  ========================================= */
+
+  addSettingsButton();
 
 
-  /* TOP NAVIGATION */
+  /* =========================================
+     NAVİGASYON
+  ========================================= */
 
   const top =
     document.querySelector(
       "#top-navigation"
     );
 
-
-  /* BOTTOM NAVIGATION */
-
   const bottom =
     document.querySelector(
       "#bottom-navigation"
     );
-
 
   if (top) {
 
@@ -1303,7 +1354,6 @@ function renderQuestion() {
     );
 
   }
-
 
   if (bottom) {
 
@@ -1319,9 +1369,6 @@ function renderQuestion() {
   }
 
 
-  addQuestionLanguageSelector();
-
-
   window.scrollTo({
     top: 0,
     behavior: "smooth"
@@ -1331,15 +1378,99 @@ function renderQuestion() {
 
 
 /* =========================================
+   SORU SAYFASI DİL SEÇİCİ
+========================================= */
+
+function addQuestionLanguageSelector() {
+
+  let selector =
+    document.querySelector(
+      "#language-selector"
+    );
+
+  if (!selector) {
+
+    selector =
+      document.createElement(
+        "div"
+      );
+
+    selector.id =
+      "language-selector";
+
+    selector.className =
+      "language-selector";
+
+    const page =
+      document.querySelector(
+        "#question-page"
+      );
+
+    const nav =
+      document.querySelector(
+        "#top-navigation"
+      );
+
+    if (
+      page &&
+      nav
+    ) {
+
+      page.insertBefore(
+        selector,
+        nav
+      );
+
+    }
+
+  }
+
+  renderLanguageButtons(
+    selector
+  );
+
+}
+
+
+/* =========================================
    TTS KONTROLLERİNİ OLUŞTUR
 ========================================= */
 
-function createTTSControls() {
+function addTTSControls() {
+
+  const page =
+    document.querySelector(
+      "#question-page"
+    );
+
+  const selector =
+    document.querySelector(
+      "#language-selector"
+    );
+
+  if (
+    !page ||
+    !selector
+  ) {
+    return;
+  }
+
+  const old =
+    document.querySelector(
+      "#tts-controls"
+    );
+
+  if (old) {
+    old.remove();
+  }
 
   const controls =
     document.createElement(
       "div"
     );
+
+  controls.id =
+    "tts-controls";
 
   controls.className =
     "tts-controls";
@@ -1347,34 +1478,16 @@ function createTTSControls() {
 
   /* =====================================
      YAVAŞLAT
-     
-     1 BASI  → 0.75
-     2 BASI  → 0.50
-     3 BASI  → 0.25
-  ====================================== */
+  ===================================== */
 
   const slowButton =
-    document.createElement(
-      "button"
+    createSpeedButton(
+      "slow",
+      "▸",
+      UI[selectedLang].slow
     );
 
-  slowButton.type =
-    "button";
-
-  slowButton.className =
-    "tts-button tts-slow";
-
-  slowButton.textContent =
-    getSlowIcon();
-
-  slowButton.setAttribute(
-    "aria-label",
-    "Yavaşlat"
-  );
-
-  slowButton.title =
-    "Yavaşlat";
-
+  let slowLevel = 0;
 
   slowButton.addEventListener(
     "click",
@@ -1384,34 +1497,30 @@ function createTTSControls() {
 
       slowLevel++;
 
-      if (slowLevel > 3) {
-        slowLevel = 0;
-      }
-
-
-      const slowRates = [
-        1,
-        0.75,
-        0.50,
-        0.25
-      ];
-
-
-      speechRate =
-        slowRates[slowLevel];
-
-
-      slowButton.textContent =
-        getSlowIcon();
-
-
       if (
-        window.speechSynthesis.speaking
+        slowLevel > 3
       ) {
 
-        playSelectedText();
+        slowLevel = 0;
 
       }
+
+      speechRate =
+        TTS_LEVELS.slow[
+          slowLevel
+        ];
+
+      saveSpeechRate();
+
+      updateSpeedButton(
+        slowButton,
+        slowLevel,
+        "▸"
+      );
+
+      resetOtherSpeedButtons(
+        "slow"
+      );
 
     }
   );
@@ -1419,7 +1528,7 @@ function createTTSControls() {
 
   /* =====================================
      OYNAT
-  ====================================== */
+  ===================================== */
 
   const playButton =
     document.createElement(
@@ -1437,12 +1546,11 @@ function createTTSControls() {
 
   playButton.setAttribute(
     "aria-label",
-    "Oynat"
+    UI[selectedLang].play
   );
 
   playButton.title =
-    "Oynat";
-
+    UI[selectedLang].play;
 
   playButton.addEventListener(
     "click",
@@ -1458,7 +1566,7 @@ function createTTSControls() {
 
   /* =====================================
      DURDUR
-  ====================================== */
+  ===================================== */
 
   const stopButton =
     document.createElement(
@@ -1476,12 +1584,11 @@ function createTTSControls() {
 
   stopButton.setAttribute(
     "aria-label",
-    "Durdur"
+    UI[selectedLang].stop
   );
 
   stopButton.title =
-    "Durdur";
-
+    UI[selectedLang].stop;
 
   stopButton.addEventListener(
     "click",
@@ -1498,33 +1605,17 @@ function createTTSControls() {
   /* =====================================
      HIZLANDIR 1
      
-     1 BASI  → 1.25
-     2 BASI  → 1.50
-     3 BASI  → 1.75
-  ====================================== */
+     1 → 1.25 → 1.50 → 1.75
+  ===================================== */
 
   const fastButton =
-    document.createElement(
-      "button"
+    createSpeedButton(
+      "fast",
+      "▸",
+      UI[selectedLang].fast
     );
 
-  fastButton.type =
-    "button";
-
-  fastButton.className =
-    "tts-button tts-fast";
-
-  fastButton.textContent =
-    getFastIcon();
-
-  fastButton.setAttribute(
-    "aria-label",
-    "Hızlandır"
-  );
-
-  fastButton.title =
-    "Hızlandır";
-
+  let fastLevel = 0;
 
   fastButton.addEventListener(
     "click",
@@ -1534,34 +1625,30 @@ function createTTSControls() {
 
       fastLevel++;
 
-      if (fastLevel > 3) {
-        fastLevel = 0;
-      }
-
-
-      const fastRates = [
-        1,
-        1.25,
-        1.50,
-        1.75
-      ];
-
-
-      speechRate =
-        fastRates[fastLevel];
-
-
-      fastButton.textContent =
-        getFastIcon();
-
-
       if (
-        window.speechSynthesis.speaking
+        fastLevel > 3
       ) {
 
-        playSelectedText();
+        fastLevel = 0;
 
       }
+
+      speechRate =
+        TTS_LEVELS.fast[
+          fastLevel
+        ];
+
+      saveSpeechRate();
+
+      updateSpeedButton(
+        fastButton,
+        fastLevel,
+        "▸"
+      );
+
+      resetOtherSpeedButtons(
+        "fast"
+      );
 
     }
   );
@@ -1570,33 +1657,17 @@ function createTTSControls() {
   /* =====================================
      HIZLANDIR 2
      
-     1 BASI  → 2
-     2 BASI  → 2.5
-     3 BASI  → 3
-  ====================================== */
+     1 → 2 → 2.5 → 3
+  ===================================== */
 
   const veryFastButton =
-    document.createElement(
-      "button"
+    createSpeedButton(
+      "very-fast",
+      "▸",
+      UI[selectedLang].veryFast
     );
 
-  veryFastButton.type =
-    "button";
-
-  veryFastButton.className =
-    "tts-button tts-very-fast";
-
-  veryFastButton.textContent =
-    getVeryFastIcon();
-
-  veryFastButton.setAttribute(
-    "aria-label",
-    "Çok hızlandır"
-  );
-
-  veryFastButton.title =
-    "Çok hızlandır";
-
+  let veryFastLevel = 0;
 
   veryFastButton.addEventListener(
     "click",
@@ -1606,42 +1677,38 @@ function createTTSControls() {
 
       veryFastLevel++;
 
-      if (veryFastLevel > 3) {
-        veryFastLevel = 0;
-      }
-
-
-      const veryFastRates = [
-        1,
-        2,
-        2.5,
-        3
-      ];
-
-
-      speechRate =
-        veryFastRates[veryFastLevel];
-
-
-      veryFastButton.textContent =
-        getVeryFastIcon();
-
-
       if (
-        window.speechSynthesis.speaking
+        veryFastLevel > 3
       ) {
 
-        playSelectedText();
+        veryFastLevel = 0;
 
       }
+
+      speechRate =
+        TTS_LEVELS.veryFast[
+          veryFastLevel
+        ];
+
+      saveSpeechRate();
+
+      updateSpeedButton(
+        veryFastButton,
+        veryFastLevel,
+        "▸"
+      );
+
+      resetOtherSpeedButtons(
+        "very-fast"
+      );
 
     }
   );
 
 
   /* =====================================
-     TEK SATIR
-  ====================================== */
+     SATIRA EKLE
+  ===================================== */
 
   controls.appendChild(
     slowButton
@@ -1664,146 +1731,318 @@ function createTTSControls() {
   );
 
 
-  return controls;
+  /* =====================================
+     DİL SEÇİCİNİN HEMEN ALTINA EKLE
+  ===================================== */
+
+  selector.insertAdjacentElement(
+    "afterend",
+    controls
+  );
 
 }
 
 
 /* =========================================
-   OK İKONLARI
+   HIZ BUTONU
 ========================================= */
 
-function getSlowIcon() {
+function createSpeedButton(
+  type,
+  icon,
+  label
+) {
 
-  if (slowLevel === 0) {
-    return "→";
-  }
+  const button =
+    document.createElement(
+      "button"
+    );
 
-  if (slowLevel === 1) {
-    return "→";
-  }
+  button.type =
+    "button";
 
-  if (slowLevel === 2) {
-    return "→→";
-  }
+  button.className =
+    `tts-button tts-${type}`;
 
-  return "→→→";
+  button.textContent =
+    icon;
 
-}
+  button.setAttribute(
+    "aria-label",
+    label
+  );
 
+  button.title =
+    label;
 
-function getFastIcon() {
-
-  if (fastLevel === 0) {
-    return "→";
-  }
-
-  if (fastLevel === 1) {
-    return "→";
-  }
-
-  if (fastLevel === 2) {
-    return "→→";
-  }
-
-  return "→→→";
-
-}
-
-
-function getVeryFastIcon() {
-
-  if (veryFastLevel === 0) {
-    return "→";
-  }
-
-  if (veryFastLevel === 1) {
-    return "→";
-  }
-
-  if (veryFastLevel === 2) {
-    return "→→";
-  }
-
-  return "→→→";
+  return button;
 
 }
 
 
 /* =========================================
-   TTS KONTROLLERİNİ SIFIRLA
+   HIZ İKONUNU GÜNCELLE
 ========================================= */
 
-function resetSpeechControls() {
+function updateSpeedButton(
+  button,
+  level,
+  icon
+) {
 
-  slowLevel = 0;
+  if (!button) {
+    return;
+  }
 
-  fastLevel = 0;
+  if (
+    level === 0
+  ) {
 
-  veryFastLevel = 0;
+    button.textContent =
+      icon;
 
-  speechRate = 1;
+    return;
 
-  stopSpeech();
+  }
+
+  button.textContent =
+    icon.repeat(level);
 
 }
 
 
 /* =========================================
-   SORU SAYFASI DİL SEÇİCİ
+   DİĞER HIZ BUTONLARINI SIFIRLA
 ========================================= */
 
-function addQuestionLanguageSelector() {
+function resetOtherSpeedButtons(
+  activeType
+) {
 
-  let selector =
+  const buttons =
+    document.querySelectorAll(
+      "#tts-controls .tts-button"
+    );
+
+  buttons.forEach(
+    button => {
+
+      if (
+        button.classList.contains(
+          `tts-${activeType}`
+        )
+      ) {
+        return;
+      }
+
+      if (
+        button.classList.contains(
+          "tts-play"
+        ) ||
+        button.classList.contains(
+          "tts-stop"
+        )
+      ) {
+        return;
+      }
+
+      button.textContent =
+        "▸";
+
+    }
+  );
+
+}
+
+
+/* =========================================
+   AYARLAR BUTONU
+========================================= */
+
+function addSettingsButton() {
+
+  const page =
+    document.querySelector(
+      "#question-page"
+    );
+
+  const selector =
     document.querySelector(
       "#language-selector"
     );
 
-
-  if (!selector) {
-
-    selector =
-      document.createElement(
-        "div"
-      );
-
-    selector.id =
-      "language-selector";
-
-    selector.className =
-      "language-selector";
-
-
-    const page =
-      document.querySelector(
-        "#question-page"
-      );
-
-
-    const nav =
-      document.querySelector(
-        "#top-navigation"
-      );
-
-
-    if (
-      page &&
-      nav
-    ) {
-
-      page.insertBefore(
-        selector,
-        nav
-      );
-
-    }
-
+  if (
+    !page ||
+    !selector
+  ) {
+    return;
   }
 
+  let settings =
+    document.querySelector(
+      "#tts-settings"
+    );
 
-  renderLanguageButtons(
-    selector
+  if (settings) {
+    settings.remove();
+  }
+
+  settings =
+    document.createElement(
+      "div"
+    );
+
+  settings.id =
+    "tts-settings";
+
+  settings.className =
+    "tts-settings";
+
+
+  const button =
+    document.createElement(
+      "button"
+    );
+
+  button.type =
+    "button";
+
+  button.className =
+    "settings-button";
+
+  button.textContent =
+    UI[selectedLang].settings;
+
+  button.setAttribute(
+    "aria-label",
+    UI[selectedLang].settings
+  );
+
+
+  const panel =
+    document.createElement(
+      "div"
+    );
+
+  panel.className =
+    "settings-panel";
+
+  panel.style.display =
+    "none";
+
+
+  const speedText =
+    document.createElement(
+      "div"
+    );
+
+  speedText.className =
+    "settings-row";
+
+  speedText.innerHTML =
+    `<strong>${UI[selectedLang].speechSpeed}:</strong> ${speechRate}×`;
+
+
+  const languageText =
+    document.createElement(
+      "div"
+    );
+
+  languageText.className =
+    "settings-row";
+
+  const language =
+    LANGS.find(
+      item =>
+        item.key === selectedLang
+    );
+
+  languageText.innerHTML =
+    `<strong>${UI[selectedLang].selectedLanguage}:</strong> ${language ? language.name : selectedLang}`;
+
+
+  const closeButton =
+    document.createElement(
+      "button"
+    );
+
+  closeButton.type =
+    "button";
+
+  closeButton.className =
+    "settings-close";
+
+  closeButton.textContent =
+    UI[selectedLang].close;
+
+
+  panel.appendChild(
+    speedText
+  );
+
+  panel.appendChild(
+    languageText
+  );
+
+  panel.appendChild(
+    closeButton
+  );
+
+
+  button.addEventListener(
+    "click",
+    event => {
+
+      event.stopPropagation();
+
+      panel.style.display =
+        panel.style.display === "none"
+          ? "block"
+          : "none";
+
+    }
+  );
+
+
+  closeButton.addEventListener(
+    "click",
+    event => {
+
+      event.stopPropagation();
+
+      panel.style.display =
+        "none";
+
+    }
+  );
+
+
+  settings.appendChild(
+    button
+  );
+
+  settings.appendChild(
+    panel
+  );
+
+
+  selector.insertAdjacentElement(
+    "afterend",
+    settings
+  );
+
+}
+
+
+/* =========================================
+   KONUŞMA HIZINI KAYDET
+========================================= */
+
+function saveSpeechRate() {
+
+  localStorage.setItem(
+    "speechRate",
+    String(speechRate)
   );
 
 }
@@ -1811,6 +2050,9 @@ function addQuestionLanguageSelector() {
 
 /* =========================================
    NAVİGASYON
+   SOL  = SORU
+   ORTA = KÂBE
+   SAĞ  = GÜN
 ========================================= */
 
 function createNavigation(
@@ -1836,8 +2078,8 @@ function createNavigation(
 
 
   /* =====================================
-     SOL — SORU
-  ====================================== */
+     SOL — SORU NAVİGASYONU
+  ===================================== */
 
   const questionGroup =
     document.createElement(
@@ -1864,11 +2106,9 @@ function createNavigation(
   previousQuestion.title =
     "Önceki soru";
 
-
   previousQuestion.disabled =
     currentDayIndex === 0 &&
     currentQuestionIndex === 0;
-
 
   previousQuestion.onclick =
     () => {
@@ -1879,13 +2119,11 @@ function createNavigation(
 
         currentQuestionIndex--;
 
-        resetSpeechControls();
-
         renderQuestion();
 
         return;
-      }
 
+      }
 
       if (
         currentDayIndex > 0
@@ -1897,16 +2135,12 @@ function createNavigation(
           days[currentDayIndex]
             .questions.length - 1;
 
-        resetSpeechControls();
-
         renderQuestion();
 
       }
 
     };
 
-
-  /* SORU NUMARASI */
 
   const questionInput =
     document.createElement(
@@ -1940,7 +2174,6 @@ function createNavigation(
     "Soru numarasına git"
   );
 
-
   questionInput.addEventListener(
     "keydown",
     event => {
@@ -1958,7 +2191,6 @@ function createNavigation(
     }
   );
 
-
   questionInput.addEventListener(
     "change",
     () => {
@@ -1970,8 +2202,6 @@ function createNavigation(
     }
   );
 
-
-  /* SONRAKİ SORU */
 
   const nextQuestion =
     makeButton(
@@ -1989,13 +2219,11 @@ function createNavigation(
   nextQuestion.title =
     "Sonraki soru";
 
-
   nextQuestion.disabled =
     currentDayIndex >= days.length - 1 &&
     currentQuestionIndex >=
       days[currentDayIndex]
         .questions.length - 1;
-
 
   nextQuestion.onclick =
     () => {
@@ -2004,7 +2232,6 @@ function createNavigation(
         days[currentDayIndex]
           .questions;
 
-
       if (
         currentQuestionIndex <
         currentQuestions.length - 1
@@ -2012,13 +2239,11 @@ function createNavigation(
 
         currentQuestionIndex++;
 
-        resetSpeechControls();
-
         renderQuestion();
 
         return;
-      }
 
+      }
 
       if (
         currentDayIndex <
@@ -2029,8 +2254,6 @@ function createNavigation(
 
         currentQuestionIndex =
           0;
-
-        resetSpeechControls();
 
         renderQuestion();
 
@@ -2054,7 +2277,7 @@ function createNavigation(
 
   /* =====================================
      ORTA — ANA SAYFA
-  ====================================== */
+  ===================================== */
 
   const homeGroup =
     document.createElement(
@@ -2063,7 +2286,6 @@ function createNavigation(
 
   homeGroup.className =
     "navigation-home-group";
-
 
   const home =
     makeButton(
@@ -2081,11 +2303,8 @@ function createNavigation(
   home.title =
     "Ana Sayfa";
 
-
   home.onclick =
     () => {
-
-      stopSpeech();
 
       renderHome();
 
@@ -2096,15 +2315,14 @@ function createNavigation(
 
     };
 
-
   homeGroup.appendChild(
     home
   );
 
 
   /* =====================================
-     SAĞ — GÜN
-  ====================================== */
+     SAĞ — GÜN NAVİGASYONU
+  ===================================== */
 
   const dayGroup =
     document.createElement(
@@ -2114,8 +2332,6 @@ function createNavigation(
   dayGroup.className =
     "navigation-group day-navigation-group";
 
-
-  /* ÖNCEKİ GÜN */
 
   const previousDay =
     makeButton(
@@ -2133,10 +2349,8 @@ function createNavigation(
   previousDay.title =
     "Önceki gün";
 
-
   previousDay.disabled =
     currentDayIndex === 0;
-
 
   previousDay.onclick =
     () => {
@@ -2150,16 +2364,12 @@ function createNavigation(
         currentQuestionIndex =
           0;
 
-        resetSpeechControls();
-
         renderQuestion();
 
       }
 
     };
 
-
-  /* GÜN NUMARASI */
 
   const dayInput =
     document.createElement(
@@ -2196,7 +2406,6 @@ function createNavigation(
     "Gün numarasına git"
   );
 
-
   dayInput.addEventListener(
     "keydown",
     event => {
@@ -2214,7 +2423,6 @@ function createNavigation(
     }
   );
 
-
   dayInput.addEventListener(
     "change",
     () => {
@@ -2226,8 +2434,6 @@ function createNavigation(
     }
   );
 
-
-  /* SONRAKİ GÜN */
 
   const nextDay =
     makeButton(
@@ -2245,11 +2451,9 @@ function createNavigation(
   nextDay.title =
     "Sonraki gün";
 
-
   nextDay.disabled =
     currentDayIndex >=
     days.length - 1;
-
 
   nextDay.onclick =
     () => {
@@ -2263,8 +2467,6 @@ function createNavigation(
 
         currentQuestionIndex =
           0;
-
-        resetSpeechControls();
 
         renderQuestion();
 
@@ -2286,10 +2488,6 @@ function createNavigation(
   );
 
 
-  /* =====================================
-     TEK SATIR
-  ====================================== */
-
   mainRow.appendChild(
     questionGroup
   );
@@ -2302,11 +2500,9 @@ function createNavigation(
     dayGroup
   );
 
-
   wrapper.appendChild(
     mainRow
   );
-
 
   return wrapper;
 
@@ -2324,7 +2520,6 @@ function goToQuestionNumber(
   const questionNumber =
     Number(value);
 
-
   if (
     !Number.isInteger(questionNumber)
   ) {
@@ -2332,7 +2527,6 @@ function goToQuestionNumber(
     return;
 
   }
-
 
   for (
     let dayIndex = 0;
@@ -2343,14 +2537,12 @@ function goToQuestionNumber(
     const questions =
       days[dayIndex].questions;
 
-
     const questionIndex =
       questions.findIndex(
         question =>
           Number(question.id) ===
           questionNumber
       );
-
 
     if (
       questionIndex !== -1
@@ -2362,8 +2554,6 @@ function goToQuestionNumber(
       currentQuestionIndex =
         questionIndex;
 
-      resetSpeechControls();
-
       renderQuestion();
 
       return;
@@ -2371,7 +2561,6 @@ function goToQuestionNumber(
     }
 
   }
-
 
   console.warn(
     `Soru bulunamadı: ${questionNumber}`
@@ -2391,7 +2580,6 @@ function goToDayNumber(
   const dayNumber =
     Number(value);
 
-
   if (
     !Number.isInteger(dayNumber)
   ) {
@@ -2400,14 +2588,12 @@ function goToDayNumber(
 
   }
 
-
   const dayIndex =
     days.findIndex(
       day =>
         Number(day.number) ===
         dayNumber
     );
-
 
   if (
     dayIndex === -1
@@ -2421,14 +2607,11 @@ function goToDayNumber(
 
   }
 
-
   currentDayIndex =
     dayIndex;
 
   currentQuestionIndex =
     0;
-
-  resetSpeechControls();
 
   renderQuestion();
 
@@ -2475,7 +2658,6 @@ function renderSources(
   box.className =
     "sources";
 
-
   const title =
     document.createElement(
       "h3"
@@ -2484,17 +2666,14 @@ function renderSources(
   title.textContent =
     UI[selectedLang].source;
 
-
   box.appendChild(
     title
   );
-
 
   const list =
     document.createElement(
       "ul"
     );
-
 
   sources.forEach(
     source => {
@@ -2504,13 +2683,11 @@ function renderSources(
           "li"
         );
 
-
       let text =
         "";
 
       let url =
         "";
-
 
       if (
         typeof source === "object" &&
@@ -2531,12 +2708,10 @@ function renderSources(
         text =
           String(source);
 
-
         const match =
           text.match(
             /https?:\/\/[^\s|]+/i
           );
-
 
         if (match) {
 
@@ -2555,7 +2730,6 @@ function renderSources(
 
       }
 
-
       if (!url) {
 
         url =
@@ -2564,7 +2738,6 @@ function renderSources(
           );
 
       }
-
 
       if (url) {
 
@@ -2588,7 +2761,6 @@ function renderSources(
         link.title =
           UI[selectedLang].openSource;
 
-
         li.appendChild(
           link
         );
@@ -2600,7 +2772,6 @@ function renderSources(
 
       }
 
-
       list.appendChild(
         li
       );
@@ -2608,11 +2779,9 @@ function renderSources(
     }
   );
 
-
   box.appendChild(
     list
   );
-
 
   return box;
 
@@ -2632,12 +2801,10 @@ function getSourceUrl(
       source
     ).toLowerCase();
 
-
   const quranMatch =
     text.match(
       /(?:kur['’]an|qur['’]?an|coran|corán|коран|коръән)[^0-9]*(\d+)[\s:.-]+(\d+)(?:[-–](\d+))?/i
     );
-
 
   if (quranMatch) {
 
@@ -2647,13 +2814,11 @@ function getSourceUrl(
     const start =
       quranMatch[2];
 
-
     return (
       `https://quran.com/${surah}?startingVerse=${start}`
     );
 
   }
-
 
   if (
     text.includes("sahih müslim") ||
@@ -2665,7 +2830,6 @@ function getSourceUrl(
     );
 
   }
-
 
   if (
     text.includes("sahih buhari") ||
@@ -2679,7 +2843,6 @@ function getSourceUrl(
 
   }
 
-
   if (
     text.includes(
       "ömer nasuhi bilmen"
@@ -2691,7 +2854,6 @@ function getSourceUrl(
     );
 
   }
-
 
   if (
     text.includes(
@@ -2707,7 +2869,6 @@ function getSourceUrl(
     );
 
   }
-
 
   return "";
 
@@ -2727,40 +2888,33 @@ function speakText(
   ) {
 
     console.warn(
-      "Tarayıcı Text-to-Speech desteklemiyor."
+      "Tarayıcı Speech Synthesis desteklemiyor."
     );
 
     return;
 
   }
 
-
   window.speechSynthesis.cancel();
-
 
   speechUtterance =
     new SpeechSynthesisUtterance(
       text
     );
 
-
   speechUtterance.rate =
     speechRate;
-
 
   speechUtterance.pitch =
     1;
 
-
   speechUtterance.volume =
     1;
-
 
   speechUtterance.lang =
     getSpeechLanguage(
       selectedLang
     );
-
 
   window.speechSynthesis.speak(
     speechUtterance
@@ -2780,19 +2934,28 @@ function getSpeechLanguage(
   const languages = {
 
     tr: "tr-TR",
+
     en: "en-US",
+
     de: "de-DE",
+
     ru: "ru-RU",
+
     ku: "ku",
+
     ar: "ar-SA",
+
     tt: "tt-RU",
+
     fr: "fr-FR",
+
     es: "es-ES",
+
     nl: "nl-NL",
+
     it: "it-IT"
 
   };
-
 
   return (
     languages[lang] ||
@@ -2811,35 +2974,28 @@ function playSelectedText() {
   const dayData =
     days[currentDayIndex];
 
-
   if (!dayData) {
     return;
   }
-
 
   const question =
     dayData.questions[
       currentQuestionIndex
     ];
 
-
   if (!question) {
     return;
   }
 
-
   const data =
     question[selectedLang];
-
 
   if (!data) {
     return;
   }
 
-
   const text =
     `${data.q}. ${data.a}`;
-
 
   speakText(
     text
