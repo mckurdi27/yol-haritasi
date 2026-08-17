@@ -124,9 +124,6 @@ const UI = {
     days: "Tage",
     previousQuestion: "←",
     nextQuestion: "→",
-    home: "🕋",
-    previousDay: "←",
-    nextDay: "→",
     source: "📚 Quellen",
     openSource: "Quelle öffnen",
     questionCount: "Fragen",
@@ -140,9 +137,6 @@ const UI = {
     days: "Дни",
     previousQuestion: "←",
     nextQuestion: "→",
-    home: "🕋",
-    previousDay: "←",
-    nextDay: "→",
     source: "📚 Источники",
     openSource: "Открыть источник",
     questionCount: "Вопросов",
@@ -282,14 +276,10 @@ let currentQuestionIndex = 0;
 ========================================= */
 
 let speechRate =
-  Number(
-    localStorage.getItem("ttsRate") || "1"
-  );
+  Number(localStorage.getItem("ttsRate") || "1");
 
 let speechPitch =
-  Number(
-    localStorage.getItem("ttsPitch") || "1"
-  );
+  Number(localStorage.getItem("ttsPitch") || "1");
 
 let selectedVoiceName =
   localStorage.getItem("ttsVoice") || "";
@@ -312,33 +302,40 @@ let veryFastLevel = 0;
 
 /* =========================================
    TTS DURUMU
+
+   ÖNEMLİ:
+
+   Native pause/resume yerine kontrollü
+   manuel pause/resume kullanıyoruz.
+
+   Böylece Android Chrome'daki:
+
+   pause()
+   ↓
+   speaking devam ediyor
+   ↓
+   cancel()
+   ↓
+   onend/onerror
+
+   yarış problemi ortadan kalkıyor.
 ========================================= */
 
 let speechPaused = false;
+
+let speechIsSpeaking = false;
+
+let speechManualPaused = false;
 
 let speechCurrentText = "";
 
 let speechCurrentCharIndex = 0;
 
-let speechIsSpeaking = false;
-
-
-/*
- * Manuel pause/resume sistemi.
- *
- * Android ve bazı Chromium sürümlerinde
- * speechSynthesis.pause()/resume() güvenilir
- * çalışmayabildiği için konuşmanın mevcut
- * konumunu kaydediyoruz.
- */
-
-let speechManualPaused = false;
-
-let speechResumePending = false;
+let speechLastBoundaryIndex = 0;
 
 let speechSessionId = 0;
 
-let speechLastBoundaryTime = 0;
+let speechStarting = false;
 
 
 /* =========================================
@@ -531,11 +528,6 @@ async function loadDays() {
                 error
               );
 
-              console.error(
-                "Dosya:",
-                file
-              );
-
               return null;
             }
 
@@ -620,14 +612,6 @@ async function loadDays() {
         (a, b) =>
           a.number - b.number
       );
-
-  console.log(
-    "📚 Başarıyla yüklenen günler:",
-    days.map(
-      day =>
-        day.number
-    )
-  );
 
 }
 
@@ -1436,7 +1420,6 @@ function addQuestionLanguageSelector() {
 
 /* =========================================
    TTS KONTROLLERİ
-   7 BUTON
 ========================================= */
 
 function renderTTSControls() {
@@ -1831,8 +1814,6 @@ function renderTTSControls() {
   );
 
 
-  /* 7 BUTON */
-
   controls.appendChild(
     slowButton
   );
@@ -1873,7 +1854,7 @@ function renderTTSControls() {
 
 
 /* =========================================
-   YAVAŞLAT
+   HIZ BUTONLARI
 ========================================= */
 
 function updateSlowButton(
@@ -1897,10 +1878,6 @@ function updateSlowButton(
 }
 
 
-/* =========================================
-   HIZLANDIR
-========================================= */
-
 function updateFastButton(
   button
 ) {
@@ -1921,10 +1898,6 @@ function updateFastButton(
 
 }
 
-
-/* =========================================
-   ÇOK HIZLANDIR
-========================================= */
 
 function updateVeryFastButton(
   button
@@ -1947,10 +1920,6 @@ function updateVeryFastButton(
 }
 
 
-/* =========================================
-   HIZ BUTONLARINI GÜNCELLE
-========================================= */
-
 function updateFastButtons() {
 
   const fast =
@@ -1963,21 +1932,13 @@ function updateFastButtons() {
       ".tts-very-fast"
     );
 
-  if (fast) {
+  updateFastButton(
+    fast
+  );
 
-    updateFastButton(
-      fast
-    );
-
-  }
-
-  if (veryFast) {
-
-    updateVeryFastButton(
-      veryFast
-    );
-
-  }
+  updateVeryFastButton(
+    veryFast
+  );
 
 }
 
@@ -2011,7 +1972,7 @@ function saveTTSSettings() {
 
 
 /* =========================================
-   TTS PANELİNİ KAPAT
+   TTS PANELİ
 ========================================= */
 
 function closeTTSSettings() {
@@ -2022,17 +1983,11 @@ function closeTTSSettings() {
     );
 
   if (panel) {
-
     panel.remove();
-
   }
 
 }
 
-
-/* =========================================
-   TTS AYAR PANELİ
-========================================= */
 
 function toggleTTSSettings() {
 
@@ -2072,8 +2027,6 @@ function toggleTTSSettings() {
     "tts-settings-panel";
 
 
-  /* BAŞLIK */
-
   const title =
     document.createElement(
       "strong"
@@ -2089,8 +2042,6 @@ function toggleTTSSettings() {
     title
   );
 
-
-  /* SES */
 
   const voiceLabel =
     document.createElement(
@@ -2154,8 +2105,6 @@ function toggleTTSSettings() {
     voiceSelect
   );
 
-
-  /* HIZ */
 
   const rateLabel =
     document.createElement(
@@ -2222,8 +2171,6 @@ function toggleTTSSettings() {
   );
 
 
-  /* PERDE */
-
   const pitchLabel =
     document.createElement(
       "label"
@@ -2285,8 +2232,6 @@ function toggleTTSSettings() {
   );
 
 
-  /* SES TESTİ */
-
   const testButton =
     document.createElement(
       "button"
@@ -2309,11 +2254,8 @@ function toggleTTSSettings() {
 
       stopSpeech();
 
-      const text =
-        getTTSTestText();
-
       speakText(
-        text
+        getTTSTestText()
       );
 
     }
@@ -2323,8 +2265,6 @@ function toggleTTSSettings() {
     testButton
   );
 
-
-  /* SIFIRLA */
 
   const reset =
     document.createElement(
@@ -2345,6 +2285,8 @@ function toggleTTSSettings() {
     event => {
 
       event.stopPropagation();
+
+      stopSpeech();
 
       speechRate = 1;
 
@@ -2371,8 +2313,6 @@ function toggleTTSSettings() {
       localStorage.removeItem(
         "ttsVoice"
       );
-
-      stopSpeech();
 
       loadSavedVoice();
 
@@ -2488,12 +2428,10 @@ function populateVoiceSelect(
         )
     );
 
-  const orderedVoices = [
+  [
     ...matchingVoices,
     ...otherVoices
-  ];
-
-  orderedVoices.forEach(
+  ].forEach(
     voice => {
 
       const option =
@@ -2529,7 +2467,7 @@ function populateVoiceSelect(
 
 
 /* =========================================
-   TEST METNİ
+   TEST METİNLERİ
 ========================================= */
 
 function getTTSTestText() {
@@ -2580,7 +2518,7 @@ function getTTSTestText() {
 
 
 /* =========================================
-   HIZ SEVİYELERİNİ GÜNCELLE
+   HIZ SEVİYELERİ
 ========================================= */
 
 function updateSpeedLevelsFromRate() {
@@ -2591,57 +2529,39 @@ function updateSpeedLevelsFromRate() {
 
   veryFastLevel = 0;
 
-  if (
-    speechRate === 0.75
-  ) {
+  if (speechRate === 0.75) {
 
     slowLevel = 1;
 
-  } else if (
-    speechRate === 0.50
-  ) {
+  } else if (speechRate === 0.50) {
 
     slowLevel = 2;
 
-  } else if (
-    speechRate === 0.25
-  ) {
+  } else if (speechRate === 0.25) {
 
     slowLevel = 3;
 
-  } else if (
-    speechRate === 1.25
-  ) {
+  } else if (speechRate === 1.25) {
 
     fastLevel = 1;
 
-  } else if (
-    speechRate === 1.50
-  ) {
+  } else if (speechRate === 1.50) {
 
     fastLevel = 2;
 
-  } else if (
-    speechRate === 1.75
-  ) {
+  } else if (speechRate === 1.75) {
 
     fastLevel = 3;
 
-  } else if (
-    speechRate === 2
-  ) {
+  } else if (speechRate === 2) {
 
     veryFastLevel = 1;
 
-  } else if (
-    speechRate === 2.5
-  ) {
+  } else if (speechRate === 2.5) {
 
     veryFastLevel = 2;
 
-  } else if (
-    speechRate === 3
-  ) {
+  } else if (speechRate === 3) {
 
     veryFastLevel = 3;
 
@@ -2650,37 +2570,24 @@ function updateSpeedLevelsFromRate() {
 }
 
 
-/* =========================================
-   HIZ BUTONLARINI DURUMA GÖRE GÜNCELLE
-========================================= */
-
 function updateSpeedButtonsFromState() {
 
-  const slow =
+  updateSlowButton(
     document.querySelector(
       ".tts-slow"
-    );
-
-  const fast =
-    document.querySelector(
-      ".tts-fast"
-    );
-
-  const veryFast =
-    document.querySelector(
-      ".tts-very-fast"
-    );
-
-  updateSlowButton(
-    slow
+    )
   );
 
   updateFastButton(
-    fast
+    document.querySelector(
+      ".tts-fast"
+    )
   );
 
   updateVeryFastButton(
-    veryFast
+    document.querySelector(
+      ".tts-very-fast"
+    )
   );
 
 }
@@ -2688,7 +2595,21 @@ function updateSpeedButtonsFromState() {
 
 /* =========================================
    TEXT TO SPEECH
-   GELİŞTİRİLMİŞ PAUSE/RESUME
+   YENİ VE STABİL SİSTEM
+
+   Pause:
+
+   1. Son boundary konumu korunur.
+   2. speechSynthesis.cancel() yapılır.
+   3. Manuel pause aktif edilir.
+
+   Resume:
+
+   1. Aynı text alınır.
+   2. Son bilinen karakter konumundan
+      yeniden SpeechSynthesis başlatılır.
+
+   Native pause/resume kullanılmaz.
 ========================================= */
 
 function speakText(
@@ -2713,19 +2634,11 @@ function speakText(
   }
 
 
-  /*
-   * Yeni konuşma için yeni session.
-   */
-
   speechSessionId++;
 
   const sessionId =
     speechSessionId;
 
-
-  /*
-   * Önceki konuşmayı kesin olarak bitir.
-   */
 
   window.speechSynthesis.cancel();
 
@@ -2737,10 +2650,15 @@ function speakText(
     Math.max(
       0,
       Math.min(
-        resumeFromIndex,
+        Math.floor(
+          resumeFromIndex
+        ),
         text.length
       )
     );
+
+  speechLastBoundaryIndex =
+    speechCurrentCharIndex;
 
   speechPaused =
     false;
@@ -2748,24 +2666,29 @@ function speakText(
   speechManualPaused =
     false;
 
-  speechResumePending =
-    false;
-
   speechIsSpeaking =
     false;
 
-  speechLastBoundaryTime =
-    Date.now();
+  speechStarting =
+    true;
+
 
   loadSavedVoice();
 
 
-  const textToSpeak =
+  const remainingText =
     text.substring(
       speechCurrentCharIndex
     );
 
-  if (!textToSpeak) {
+
+  if (!remainingText.trim()) {
+
+    speechCurrentCharIndex =
+      text.length;
+
+    speechStarting =
+      false;
 
     speechIsSpeaking =
       false;
@@ -2780,34 +2703,39 @@ function speakText(
   }
 
 
-  speechUtterance =
+  const utterance =
     new SpeechSynthesisUtterance(
-      textToSpeak
+      remainingText
     );
 
-  speechUtterance.rate =
+  speechUtterance =
+    utterance;
+
+
+  utterance.rate =
     speechRate;
 
-  speechUtterance.pitch =
+  utterance.pitch =
     speechPitch;
 
-  speechUtterance.volume =
+  utterance.volume =
     1;
 
-  speechUtterance.lang =
+  utterance.lang =
     getSpeechLanguage(
       selectedLang
     );
 
+
   if (selectedVoice) {
 
-    speechUtterance.voice =
+    utterance.voice =
       selectedVoice;
 
   }
 
 
-  speechUtterance.onstart =
+  utterance.onstart =
     () => {
 
       if (
@@ -2815,6 +2743,9 @@ function speakText(
       ) {
         return;
       }
+
+      speechStarting =
+        false;
 
       speechIsSpeaking =
         true;
@@ -2825,15 +2756,12 @@ function speakText(
       speechManualPaused =
         false;
 
-      speechResumePending =
-        false;
-
       updatePauseButton();
 
     };
 
 
-  speechUtterance.onboundary =
+  utterance.onboundary =
     event => {
 
       if (
@@ -2843,44 +2771,55 @@ function speakText(
       }
 
       if (
-        typeof event.charIndex ===
+        typeof event.charIndex !==
         "number"
+      ) {
+        return;
+      }
+
+
+      /*
+       * event.charIndex, utterance'a verilen
+       * remainingText içindeki konumdur.
+
+       * Global text konumuna çeviriyoruz.
+       */
+
+      const globalIndex =
+        speechCurrentCharIndex -
+        remainingText.length +
+        event.charIndex +
+        remainingText.length;
+
+      /*
+       * Daha temiz hesap:
+       *
+       * başlangıç = speakText'e verilen
+       * resumeFromIndex
+       */
+
+      const calculated =
+        resumeFromIndex +
+        event.charIndex;
+
+
+      if (
+        calculated >= 0 &&
+        calculated <= text.length
       ) {
 
         speechCurrentCharIndex =
-          speechCurrentCharIndex -
-          (textToSpeak.length) +
-          event.charIndex +
-          textToSpeak.length;
+          calculated;
 
-        /*
-         * Yukarıdaki hesap global pozisyonu
-         * korumak için kullanılır.
-         */
-
-        const calculated =
-          resumeFromIndex +
-          event.charIndex;
-
-        if (
-          calculated >= 0 &&
-          calculated <= text.length
-        ) {
-
-          speechCurrentCharIndex =
-            calculated;
-
-        }
-
-        speechLastBoundaryTime =
-          Date.now();
+        speechLastBoundaryIndex =
+          calculated;
 
       }
 
     };
 
 
-  speechUtterance.onend =
+  utterance.onend =
     () => {
 
       if (
@@ -2889,22 +2828,22 @@ function speakText(
         return;
       }
 
+
       /*
        * Manuel pause sırasında cancel()
-       * nedeniyle onend gelebilir.
+       * onend oluşturabilir.
        *
-       * Bu durumda konuşmayı bitmiş
-       * kabul etmiyoruz.
+       * Bu durumda gerçek bitiş değildir.
        */
 
       if (
-        speechManualPaused ||
-        speechResumePending
+        speechManualPaused
       ) {
 
         return;
 
       }
+
 
       speechIsSpeaking =
         false;
@@ -2915,18 +2854,24 @@ function speakText(
       speechManualPaused =
         false;
 
-      speechResumePending =
+      speechStarting =
         false;
 
       speechCurrentCharIndex =
         text.length;
+
+      speechLastBoundaryIndex =
+        text.length;
+
+      speechUtterance =
+        null;
 
       updatePauseButton();
 
     };
 
 
-  speechUtterance.onerror =
+  utterance.onerror =
     event => {
 
       if (
@@ -2935,17 +2880,15 @@ function speakText(
         return;
       }
 
+
       /*
-       * Pause sırasında cancel()
-       * bazı tarayıcılarda canceled veya
-       * interrupted hatası üretir.
-       *
-       * Bunlar burada gerçek hata değildir.
+       * Manuel pause sırasında
+       * Chrome "canceled" veya "interrupted"
+       * gönderebilir.
        */
 
       if (
-        speechManualPaused ||
-        speechResumePending
+        speechManualPaused
       ) {
 
         speechIsSpeaking =
@@ -2954,11 +2897,15 @@ function speakText(
         speechPaused =
           true;
 
+        speechStarting =
+          false;
+
         updatePauseButton();
 
         return;
 
       }
+
 
       if (
         event.error !== "canceled" &&
@@ -2978,13 +2925,16 @@ function speakText(
       speechPaused =
         false;
 
+      speechStarting =
+        false;
+
       updatePauseButton();
 
     };
 
 
   window.speechSynthesis.speak(
-    speechUtterance
+    utterance
   );
 
 }
@@ -3036,9 +2986,7 @@ function playSelectedText() {
 
 
   /*
-   * Manuel pause durumundaysa
-   * cancel edilmiş konuşmayı kaldığı
-   * karakterden yeniden başlat.
+   * Manuel pause durumundan devam.
    */
 
   if (
@@ -3050,14 +2998,18 @@ function playSelectedText() {
       speechCurrentText;
 
     const position =
-      speechCurrentCharIndex;
+      speechLastBoundaryIndex;
+
 
     if (
       text &&
       position < text.length
     ) {
 
-      speechResumePending =
+      speechManualPaused =
+        false;
+
+      speechPaused =
         false;
 
       speakText(
@@ -3073,38 +3025,16 @@ function playSelectedText() {
 
 
   /*
-   * Native pause hâlâ aktifse resume dene.
+   * Aktif konuşma varsa tekrar başlatmak
+   * yerine mevcut konuşmayı bırakıyoruz.
    */
 
   if (
-    window.speechSynthesis.paused
+    window.speechSynthesis.speaking ||
+    speechIsSpeaking
   ) {
 
-    try {
-
-      window.speechSynthesis.resume();
-
-      speechPaused =
-        false;
-
-      speechManualPaused =
-        false;
-
-      speechIsSpeaking =
-        true;
-
-      updatePauseButton();
-
-      return;
-
-    } catch (error) {
-
-      console.warn(
-        "TTS native resume başarısız:",
-        error
-      );
-
-    }
+    return;
 
   }
 
@@ -3116,6 +3046,7 @@ function playSelectedText() {
     return;
   }
 
+
   const question =
     dayData.questions[
       currentQuestionIndex
@@ -3125,6 +3056,7 @@ function playSelectedText() {
     return;
   }
 
+
   const data =
     question[selectedLang];
 
@@ -3132,8 +3064,10 @@ function playSelectedText() {
     return;
   }
 
+
   const text =
     `${data.q}. ${data.a}`;
+
 
   speakText(
     text
@@ -3144,6 +3078,7 @@ function playSelectedText() {
 
 /* =========================================
    PAUSE / DEVAM
+   YENİ SİSTEM
 ========================================= */
 
 function toggleSpeechPause() {
@@ -3156,27 +3091,30 @@ function toggleSpeechPause() {
 
 
   /*
-   * Zaten manuel olarak pause edilmişse
-   * kaldığı yerden yeniden başlat.
+   * PAUSE → RESUME
    */
 
   if (
-    speechManualPaused ||
-    speechPaused
+    speechPaused ||
+    speechManualPaused
   ) {
 
     const text =
       speechCurrentText;
 
     const position =
-      speechCurrentCharIndex;
+      speechLastBoundaryIndex;
+
 
     if (
       text &&
       position < text.length
     ) {
 
-      speechResumePending =
+      speechPaused =
+        false;
+
+      speechManualPaused =
         false;
 
       speakText(
@@ -3192,12 +3130,12 @@ function toggleSpeechPause() {
 
 
   /*
-   * Aktif konuşma yoksa hiçbir şey yapma.
+   * Konuşma yoksa hiçbir şey yapma.
    */
 
   if (
-    !window.speechSynthesis.speaking &&
-    !speechIsSpeaking
+    !speechIsSpeaking &&
+    !window.speechSynthesis.speaking
   ) {
 
     return;
@@ -3206,117 +3144,44 @@ function toggleSpeechPause() {
 
 
   /*
-   * ÖNCE native pause deniyoruz.
+   * KRİTİK NOKTA:
    *
-   * Eğer browser gerçekten pause ederse
-   * native sistemi kullanıyoruz.
+   * native pause() KULLANMIYORUZ.
+   *
+   * Android Chrome'daki en büyük problem
+   * burada oluşuyordu.
+   *
+   * Bunun yerine:
+   *
+   * 1. Konumu kaydet
+   * 2. Manuel pause işaretle
+   * 3. cancel()
+   *
+   * onend/onerror artık bunu gerçek bitiş
+   * olarak kabul etmiyor.
    */
 
-  try {
+  speechManualPaused =
+    true;
 
-    window.speechSynthesis.pause();
+  speechPaused =
+    true;
 
-    speechPaused =
-      true;
-
-    speechIsSpeaking =
-      true;
-
-    updatePauseButton();
+  speechIsSpeaking =
+    true;
 
 
-    /*
-     * Android/Chrome'da pause bazen görünürde
-     * başarılı olsa bile konuşma devam edebilir.
-     *
-     * 120 ms sonra hâlâ konuşuyorsa manuel
-     * pause mekanizmasına geçiyoruz.
-     */
-
-    setTimeout(
-      () => {
-
-        if (
-          !speechPaused
-        ) {
-          return;
-        }
-
-        if (
-          window.speechSynthesis.paused
-        ) {
-          return;
-        }
-
-        if (
-          !window.speechSynthesis.speaking
-        ) {
-          return;
-        }
+  speechSessionId++;
 
 
-        /*
-         * Manuel pause.
-         */
-
-        speechManualPaused =
-          true;
-
-        speechResumePending =
-          true;
-
-        /*
-         * Native cancel, STOP değildir.
-         *
-         * Çünkü speechManualPaused true olduğu
-         * için onend/onerror konuşmayı bitmiş
-         * kabul etmeyecek.
-         */
-
-        window.speechSynthesis.cancel();
-
-        speechPaused =
-          true;
-
-        speechIsSpeaking =
-          true;
-
-        updatePauseButton();
-
-      },
-      120
-    );
-
-  } catch (error) {
-
-    console.warn(
-      "Native TTS pause başarısız, manuel pause kullanılıyor:",
-      error
-    );
+  window.speechSynthesis.cancel();
 
 
-    /*
-     * Native pause desteklenmiyorsa
-     * doğrudan manuel pause.
-     */
+  speechUtterance =
+    null;
 
-    speechManualPaused =
-      true;
 
-    speechResumePending =
-      true;
-
-    window.speechSynthesis.cancel();
-
-    speechPaused =
-      true;
-
-    speechIsSpeaking =
-      true;
-
-    updatePauseButton();
-
-  }
+  updatePauseButton();
 
 }
 
@@ -3337,11 +3202,7 @@ function updatePauseButton() {
 
       if (
         speechPaused ||
-        speechManualPaused ||
-        (
-          "speechSynthesis" in window &&
-          window.speechSynthesis.paused
-        )
+        speechManualPaused
       ) {
 
         button.textContent =
@@ -3383,36 +3244,39 @@ function updatePauseButton() {
 function stopSpeech() {
 
   /*
-   * Yeni session oluştur.
-   * Böylece eski utterance eventleri yeni
-   * konuşmaya müdahale edemez.
+   * Session invalidasyonu.
+   *
+   * Eski utterance eventleri artık
+   * yeni konuşmaya dokunamaz.
    */
 
   speechSessionId++;
 
+
   speechManualPaused =
     false;
 
-  speechResumePending =
+  speechPaused =
     false;
+
+  speechIsSpeaking =
+    false;
+
+  speechStarting =
+    false;
+
 
   if (
     "speechSynthesis" in window
   ) {
 
-    /*
-     * STOP için cancel() kullanılır.
-     */
-
     window.speechSynthesis.cancel();
 
   }
 
+
   speechUtterance =
     null;
-
-  speechPaused =
-    false;
 
   speechCurrentText =
     "";
@@ -3420,11 +3284,9 @@ function stopSpeech() {
   speechCurrentCharIndex =
     0;
 
-  speechIsSpeaking =
-    false;
-
-  speechLastBoundaryTime =
+  speechLastBoundaryIndex =
     0;
+
 
   updatePauseButton();
 
@@ -3444,30 +3306,27 @@ function setSpeechRate(
 
   saveTTSSettings();
 
+
   if (
-    window.speechSynthesis.speaking
+    speechIsSpeaking
   ) {
 
     const text =
       speechCurrentText;
 
     const position =
-      speechCurrentCharIndex;
+      speechLastBoundaryIndex;
+
 
     stopSpeech();
 
-    if (
-      text
-    ) {
+
+    if (text) {
 
       speakText(
         text,
         position
       );
-
-    } else {
-
-      playSelectedText();
 
     }
 
@@ -3491,6 +3350,7 @@ function createNavigation(
 
   wrapper.className =
     "navigation-wrapper";
+
 
   const mainRow =
     document.createElement(
@@ -3529,6 +3389,7 @@ function createNavigation(
   previousQuestion.disabled =
     currentDayIndex === 0 &&
     currentQuestionIndex === 0;
+
 
   previousQuestion.onclick =
     () => {
@@ -3596,6 +3457,7 @@ function createNavigation(
     "Soru numarasına git"
   );
 
+
   questionInput.addEventListener(
     "keydown",
     event => {
@@ -3612,6 +3474,7 @@ function createNavigation(
 
     }
   );
+
 
   questionInput.addEventListener(
     "change",
@@ -3648,6 +3511,7 @@ function createNavigation(
       days[currentDayIndex]
         .questions.length - 1;
 
+
   nextQuestion.onclick =
     () => {
 
@@ -3656,6 +3520,7 @@ function createNavigation(
       const currentQuestions =
         days[currentDayIndex]
           .questions;
+
 
       if (
         currentQuestionIndex <
@@ -3669,6 +3534,7 @@ function createNavigation(
         return;
 
       }
+
 
       if (
         currentDayIndex <
@@ -3708,6 +3574,7 @@ function createNavigation(
   homeGroup.className =
     "navigation-home-group";
 
+
   const home =
     makeButton(
       "🕋"
@@ -3724,6 +3591,7 @@ function createNavigation(
   home.title =
     "Ana Sayfa";
 
+
   home.onclick =
     () => {
 
@@ -3737,6 +3605,7 @@ function createNavigation(
       });
 
     };
+
 
   homeGroup.appendChild(
     home
@@ -3770,6 +3639,7 @@ function createNavigation(
 
   previousDay.disabled =
     currentDayIndex === 0;
+
 
   previousDay.onclick =
     () => {
@@ -3827,6 +3697,7 @@ function createNavigation(
     "Gün numarasına git"
   );
 
+
   dayInput.addEventListener(
     "keydown",
     event => {
@@ -3843,6 +3714,7 @@ function createNavigation(
 
     }
   );
+
 
   dayInput.addEventListener(
     "change",
@@ -3875,6 +3747,7 @@ function createNavigation(
   nextDay.disabled =
     currentDayIndex >=
     days.length - 1;
+
 
   nextDay.onclick =
     () => {
@@ -3923,9 +3796,11 @@ function createNavigation(
     dayGroup
   );
 
+
   wrapper.appendChild(
     mainRow
   );
+
 
   return wrapper;
 
@@ -3943,6 +3818,7 @@ function goToQuestionNumber(
   const questionNumber =
     Number(value);
 
+
   if (
     !Number.isInteger(
       questionNumber
@@ -3953,6 +3829,7 @@ function goToQuestionNumber(
 
   }
 
+
   for (
     let dayIndex = 0;
     dayIndex < days.length;
@@ -3962,12 +3839,14 @@ function goToQuestionNumber(
     const questions =
       days[dayIndex].questions;
 
+
     const questionIndex =
       questions.findIndex(
         question =>
           Number(question.id) ===
           questionNumber
       );
+
 
     if (
       questionIndex !== -1
@@ -3989,6 +3868,7 @@ function goToQuestionNumber(
 
   }
 
+
   console.warn(
     `Soru bulunamadı: ${questionNumber}`
   );
@@ -4007,6 +3887,7 @@ function goToDayNumber(
   const dayNumber =
     Number(value);
 
+
   if (
     !Number.isInteger(
       dayNumber
@@ -4017,12 +3898,14 @@ function goToDayNumber(
 
   }
 
+
   const dayIndex =
     days.findIndex(
       day =>
         Number(day.number) ===
         dayNumber
     );
+
 
   if (
     dayIndex === -1
@@ -4035,6 +3918,7 @@ function goToDayNumber(
     return;
 
   }
+
 
   stopSpeech();
 
@@ -4089,6 +3973,7 @@ function renderSources(
   box.className =
     "sources";
 
+
   const title =
     document.createElement(
       "h3"
@@ -4101,10 +3986,12 @@ function renderSources(
     title
   );
 
+
   const list =
     document.createElement(
       "ul"
     );
+
 
   sources.forEach(
     source => {
@@ -4114,11 +4001,13 @@ function renderSources(
           "li"
         );
 
+
       let text =
         "";
 
       let url =
         "";
+
 
       if (
         typeof source === "object" &&
@@ -4144,6 +4033,7 @@ function renderSources(
             /https?:\/\/[^\s|]+/i
           );
 
+
         if (match) {
 
           url =
@@ -4161,6 +4051,7 @@ function renderSources(
 
       }
 
+
       if (!url) {
 
         url =
@@ -4169,6 +4060,7 @@ function renderSources(
           );
 
       }
+
 
       if (url) {
 
@@ -4203,6 +4095,7 @@ function renderSources(
 
       }
 
+
       list.appendChild(
         li
       );
@@ -4210,9 +4103,11 @@ function renderSources(
     }
   );
 
+
   box.appendChild(
     list
   );
+
 
   return box;
 
@@ -4232,10 +4127,12 @@ function getSourceUrl(
       source
     ).toLowerCase();
 
+
   const quranMatch =
     text.match(
       /(?:kur['’]an|qur['’]?an|coran|corán|коран|коръән)[^0-9]*(\d+)[\s:.-]+(\d+)(?:[-–](\d+))?/i
     );
+
 
   if (quranMatch) {
 
@@ -4245,11 +4142,13 @@ function getSourceUrl(
     const start =
       quranMatch[2];
 
+
     return (
       `https://quran.com/${surah}?startingVerse=${start}`
     );
 
   }
+
 
   if (
     text.includes("sahih müslim") ||
@@ -4261,6 +4160,7 @@ function getSourceUrl(
     );
 
   }
+
 
   if (
     text.includes("sahih buhari") ||
@@ -4274,6 +4174,7 @@ function getSourceUrl(
 
   }
 
+
   if (
     text.includes(
       "ömer nasuhi bilmen"
@@ -4285,6 +4186,7 @@ function getSourceUrl(
     );
 
   }
+
 
   if (
     text.includes(
@@ -4300,6 +4202,7 @@ function getSourceUrl(
     );
 
   }
+
 
   return "";
 
