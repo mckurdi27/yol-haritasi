@@ -7,20 +7,6 @@
 
 /* =========================================
    DİLLER
-
-   SIRALAMA:
-
-   1  🇹🇷 Türkçe
-   2  🇬🇧 English
-   3  🇩🇪 Deutsch
-   4  🇷🇺 Русский
-   5  Kurmancî
-   6  🇸🇦 العربية
-   7  Tatarca
-   8  🇫🇷 Français
-   9  🇪🇸 Español
-   10 🇳🇱 Nederlands
-   11 🇮🇹 Italiano
 ========================================= */
 
 const LANGS = [
@@ -180,6 +166,22 @@ const UI = {
     noDays: "Hêj roj nehatine dîtin."
   },
 
+  ar: {
+    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
+    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
+    days: "الأَيَّامُ",
+    previousQuestion: "← السُّؤَالُ السَّابِقُ",
+    nextQuestion: "السُّؤَالُ التَّالِي →",
+    home: "🏠 الصَّفْحَةُ الرَّئِيسِيَّةُ",
+    previousDay: "← الْيَوْمُ السَّابِقُ",
+    nextDay: "الْيَوْمُ التَّالِي →",
+    source: "📚 الْمَصَادِرُ",
+    openSource: "فَتْحُ الْمَصْدَرِ",
+    questionCount: "أَسْئِلَة",
+    loading: "جَارٍ تَحْمِيلُ الأَيَّامِ...",
+    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ."
+  },
+
   tt: {
     title: "Мөселманның юл картасы",
     subtitle: "Исламны адымлап өйрәнегез",
@@ -258,22 +260,6 @@ const UI = {
     questionCount: "Domande",
     loading: "Caricamento dei giorni...",
     noDays: "Nessun giorno trovato."
-  },
-
-  ar: {
-    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
-    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
-    days: "الأَيَّامُ",
-    previousQuestion: "← السُّؤَالُ السَّابِقُ",
-    nextQuestion: "السُّؤَالُ التَّالِي →",
-    home: "🏠 الصَّفْحَةُ الرَّئِيسِيَّةُ",
-    previousDay: "← الْيَوْمُ السَّابِقُ",
-    nextDay: "الْيَوْمُ التَّالِي →",
-    source: "📚 الْمَصَادِرُ",
-    openSource: "فَتْحُ الْمَصْدَرِ",
-    questionCount: "أَسْئِلَة",
-    loading: "جَارٍ تَحْمِيلُ الأَيَّامِ...",
-    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ."
   }
 
 };
@@ -1325,30 +1311,7 @@ function createNavigation(
   previousQuestion.onclick =
     () => {
 
-      if (
-        currentQuestionIndex > 0
-      ) {
-
-        currentQuestionIndex--;
-
-        renderQuestion();
-
-        return;
-      }
-
-      if (
-        currentDayIndex > 0
-      ) {
-
-        currentDayIndex--;
-
-        currentQuestionIndex =
-          days[currentDayIndex]
-            .questions.length - 1;
-
-        renderQuestion();
-
-      }
+      goToPreviousQuestion();
 
     };
 
@@ -1363,26 +1326,13 @@ function createNavigation(
     );
 
   questionInput.type =
-    "text";
-
-  questionInput.inputMode =
-    "numeric";
-
-  questionInput.pattern =
-    "[0-9]*";
+    "number";
 
   questionInput.className =
     "navigation-number-input";
 
-  questionInput.setAttribute(
-    "autocomplete",
-    "off"
-  );
-
-  questionInput.setAttribute(
-    "enterkeyhint",
-    "go"
-  );
+  questionInput.min =
+    "1";
 
   questionInput.value =
     String(
@@ -1402,6 +1352,11 @@ function createNavigation(
     "Soru numarasına git"
   );
 
+  questionInput.setAttribute(
+    "inputmode",
+    "numeric"
+  );
+
   questionInput.addEventListener(
     "keydown",
     event => {
@@ -1416,26 +1371,18 @@ function createNavigation(
           questionInput.value
         );
 
-        questionInput.blur();
-
       }
 
     }
   );
 
   questionInput.addEventListener(
-    "blur",
+    "change",
     () => {
 
-      if (
-        questionInput.value.trim() !== ""
-      ) {
-
-        goToQuestionNumber(
-          questionInput.value
-        );
-
-      }
+      goToQuestionNumber(
+        questionInput.value
+      );
 
     }
   );
@@ -1451,43 +1398,12 @@ function createNavigation(
     );
 
   nextQuestion.disabled =
-    currentDayIndex >= days.length - 1 &&
-    currentQuestionIndex >=
-      days[currentDayIndex]
-        .questions.length - 1;
+    isLastQuestion();
 
   nextQuestion.onclick =
     () => {
 
-      const currentQuestions =
-        days[currentDayIndex]
-          .questions;
-
-      if (
-        currentQuestionIndex <
-        currentQuestions.length - 1
-      ) {
-
-        currentQuestionIndex++;
-
-        renderQuestion();
-
-        return;
-      }
-
-      if (
-        currentDayIndex <
-        days.length - 1
-      ) {
-
-        currentDayIndex++;
-
-        currentQuestionIndex =
-          0;
-
-        renderQuestion();
-
-      }
+      goToNextQuestion();
 
     };
 
@@ -1559,26 +1475,16 @@ function createNavigation(
     );
 
   dayInput.type =
-    "text";
-
-  dayInput.inputMode =
-    "numeric";
-
-  dayInput.pattern =
-    "[0-9]*";
+    "number";
 
   dayInput.className =
     "navigation-number-input";
 
-  dayInput.setAttribute(
-    "autocomplete",
-    "off"
-  );
+  dayInput.min =
+    "1";
 
-  dayInput.setAttribute(
-    "enterkeyhint",
-    "go"
-  );
+  dayInput.max =
+    "30";
 
   dayInput.value =
     String(
@@ -1598,6 +1504,11 @@ function createNavigation(
     "Gün numarasına git"
   );
 
+  dayInput.setAttribute(
+    "inputmode",
+    "numeric"
+  );
+
   dayInput.addEventListener(
     "keydown",
     event => {
@@ -1612,26 +1523,18 @@ function createNavigation(
           dayInput.value
         );
 
-        dayInput.blur();
-
       }
 
     }
   );
 
   dayInput.addEventListener(
-    "blur",
+    "change",
     () => {
 
-      if (
-        dayInput.value.trim() !== ""
-      ) {
-
-        goToDayNumber(
-          dayInput.value
-        );
-
-      }
+      goToDayNumber(
+        dayInput.value
+      );
 
     }
   );
@@ -1739,48 +1642,135 @@ function createNavigation(
 
 
 /* =========================================
-   SORU NUMARASINA GİT
+   ÖNCEKİ SORU
+========================================= */
+
+function goToPreviousQuestion() {
+
+  if (
+    currentQuestionIndex > 0
+  ) {
+
+    currentQuestionIndex--;
+
+    renderQuestion();
+
+    return;
+  }
+
+  if (
+    currentDayIndex > 0
+  ) {
+
+    currentDayIndex--;
+
+    currentQuestionIndex =
+      days[currentDayIndex]
+        .questions.length - 1;
+
+    renderQuestion();
+
+  }
+
+}
+
+
+/* =========================================
+   SONRAKİ SORU
+========================================= */
+
+function goToNextQuestion() {
+
+  const currentQuestions =
+    days[currentDayIndex]
+      .questions;
+
+  if (
+    currentQuestionIndex <
+    currentQuestions.length - 1
+  ) {
+
+    currentQuestionIndex++;
+
+    renderQuestion();
+
+    return;
+  }
+
+  if (
+    currentDayIndex <
+    days.length - 1
+  ) {
+
+    currentDayIndex++;
+
+    currentQuestionIndex =
+      0;
+
+    renderQuestion();
+
+  }
+
+}
+
+
+/* =========================================
+   SON SORU MU?
+========================================= */
+
+function isLastQuestion() {
+
+  if (
+    !days.length ||
+    !days[currentDayIndex]
+  ) {
+
+    return true;
+
+  }
+
+  return (
+    currentDayIndex >=
+      days.length - 1 &&
+    currentQuestionIndex >=
+      days[currentDayIndex]
+        .questions.length - 1
+  );
+
+}
+
+
+/* =========================================
+   GLOBAL SORU NUMARASINA GİT
 ========================================= */
 
 function goToQuestionNumber(
   value
 ) {
 
-  const cleanValue =
-    String(value)
-      .trim()
-      .replace(
-        /[^0-9]/g,
-        ""
-      );
-
-  if (
-    !cleanValue
-  ) {
-
-    return false;
-
-  }
-
   const questionNumber =
     Number(
-      cleanValue
+      String(value).trim()
     );
 
   if (
-    !Number.isSafeInteger(
-      questionNumber
-    ) ||
+    !Number.isInteger(questionNumber) ||
     questionNumber < 1
   ) {
 
     console.warn(
-      `Geçersiz soru numarası: ${value}`
+      "Geçersiz soru numarası:",
+      value
     );
 
-    return false;
+    return;
 
   }
+
+
+  /* =====================================
+     1. ÖNCE question.id İLE ARA
+  ====================================== */
 
   for (
     let dayIndex = 0;
@@ -1789,53 +1779,87 @@ function goToQuestionNumber(
   ) {
 
     const questions =
-      days[dayIndex].questions || [];
+      days[dayIndex].questions;
 
-    const questionIndex =
-      questions.findIndex(
-        question => {
-
-          if (
-            question === null ||
-            question === undefined
-          ) {
-
-            return false;
-
-          }
-
-          return (
-            Number(
-              question.id
-            ) === questionNumber
-          );
-
-        }
-      );
-
-    if (
-      questionIndex !== -1
+    for (
+      let questionIndex = 0;
+      questionIndex < questions.length;
+      questionIndex++
     ) {
 
-      currentDayIndex =
-        dayIndex;
+      const question =
+        questions[questionIndex];
 
-      currentQuestionIndex =
-        questionIndex;
+      if (
+        Number(question.id) ===
+        questionNumber
+      ) {
 
-      renderQuestion();
+        currentDayIndex =
+          dayIndex;
 
-      return true;
+        currentQuestionIndex =
+          questionIndex;
+
+        renderQuestion();
+
+        return;
+
+      }
 
     }
 
   }
 
+
+  /* =====================================
+     2. ID BULUNAMAZSA GLOBAL SIRA
+  ====================================== */
+
+  let globalIndex = 0;
+
+  for (
+    let dayIndex = 0;
+    dayIndex < days.length;
+    dayIndex++
+  ) {
+
+    const questions =
+      days[dayIndex].questions;
+
+    for (
+      let questionIndex = 0;
+      questionIndex < questions.length;
+      questionIndex++
+    ) {
+
+      globalIndex++;
+
+      if (
+        globalIndex ===
+        questionNumber
+      ) {
+
+        currentDayIndex =
+          dayIndex;
+
+        currentQuestionIndex =
+          questionIndex;
+
+        renderQuestion();
+
+        return;
+
+      }
+
+    }
+
+  }
+
+
   console.warn(
     `Soru bulunamadı: ${questionNumber}`
   );
-
-  return false;
 
 }
 
@@ -1848,48 +1872,30 @@ function goToDayNumber(
   value
 ) {
 
-  const cleanValue =
-    String(value)
-      .trim()
-      .replace(
-        /[^0-9]/g,
-        ""
-      );
-
-  if (
-    !cleanValue
-  ) {
-
-    return false;
-
-  }
-
   const dayNumber =
     Number(
-      cleanValue
+      String(value).trim()
     );
 
   if (
-    !Number.isSafeInteger(
-      dayNumber
-    ) ||
+    !Number.isInteger(dayNumber) ||
     dayNumber < 1
   ) {
 
     console.warn(
-      `Geçersiz gün numarası: ${value}`
+      "Geçersiz gün numarası:",
+      value
     );
 
-    return false;
+    return;
 
   }
 
   const dayIndex =
     days.findIndex(
       day =>
-        Number(
-          day.number
-        ) === dayNumber
+        Number(day.number) ===
+        dayNumber
     );
 
   if (
@@ -1900,7 +1906,7 @@ function goToDayNumber(
       `Gün bulunamadı: ${dayNumber}`
     );
 
-    return false;
+    return;
 
   }
 
@@ -1911,8 +1917,6 @@ function goToDayNumber(
     0;
 
   renderQuestion();
-
-  return true;
 
 }
 
