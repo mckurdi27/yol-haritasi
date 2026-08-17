@@ -1,15 +1,18 @@
+// GÜNLERİ YÜKLE
 async function loadDays() {
-  const response = await fetch("https://mckurdi27.github.io/yol-haritasi/days.json");
+  const response = await fetch("days.json?cache=" + Date.now());
   const data = await response.json();
   return data.days;
 }
 
+// HTML ELEMANLARI
 const homePage = document.getElementById("home-page");
 const questionPage = document.getElementById("question-page");
 const daysList = document.getElementById("days-list");
 const roadmapTitle = document.querySelector(".roadmap-title");
 const homeSubtitle = document.querySelector(".home-subtitle");
 
+// DİLLER
 const languages = {
   tr: "🇹🇷",
   ar: "🇸🇦",
@@ -18,12 +21,14 @@ const languages = {
 
 let selectedLanguage = "tr";
 
+// ANA SAYFA METİNLERİ
 const titles = {
   tr: { title: "İslâm'ı Öğrenme Yol Haritası", subtitle: "30 Günde Temel Bilgiler" },
   en: { title: "Islam Learning Roadmap", subtitle: "Essential Knowledge in 30 Days" },
   ar: { title: "خارطة طريق تعلم الإسلام", subtitle: "أساسيات خلال 30 يومًا" }
 };
 
+// DİL BUTONLARI
 function renderLanguageSelector(targetId) {
   const container = document.getElementById(targetId);
   container.innerHTML = "";
@@ -46,11 +51,13 @@ function renderLanguageSelector(targetId) {
   });
 }
 
+// ANA SAYFA METİNLERİ
 function renderHomeTexts() {
   roadmapTitle.textContent = titles[selectedLanguage].title;
   homeSubtitle.textContent = titles[selectedLanguage].subtitle;
 }
 
+// GÜNLERİ LİSTELE
 async function renderDays() {
   const days = await loadDays();
   daysList.innerHTML = "";
@@ -69,18 +76,34 @@ async function renderDays() {
   });
 }
 
-function openDay(day) {
+// GÜNÜ AÇ
+async function openDay(day) {
   homePage.style.display = "none";
   questionPage.style.display = "block";
 
-  document.getElementById("question-content").innerHTML = `
+  const response = await fetch(day.file + "?cache=" + Date.now());
+  const data = await response.json();
+
+  let html = `
     <div class="question-card">
-      <h2>${day.title}</h2>
-      <p>Bu bölümde ${day.range} arasındaki içerik gösterilecek.</p>
+      <h2>${data.dayTitle.tr}</h2>
+      <p>${data.daySubtitle.tr}</p>
     </div>
   `;
+
+  data.questions.forEach(q => {
+    html += `
+      <div class="question-card">
+        <h3>${q.tr.q}</h3>
+        <p>${q.tr.a}</p>
+      </div>
+    `;
+  });
+
+  document.getElementById("question-content").innerHTML = html;
 }
 
+// BAŞLAT
 renderHomeTexts();
 renderDays();
 renderLanguageSelector("home-language-selector");
