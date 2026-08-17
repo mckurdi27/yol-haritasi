@@ -678,6 +678,301 @@ function renderHome() {
       card.appendChild(
         titleLine
       );
+         /* =========================================
+     TEXT TO SPEECH KONTROLLERİ
+  ========================================= */
+
+  const ttsControls =
+    document.createElement("div");
+
+  ttsControls.className =
+    "tts-controls";
+
+
+  /* =====================================
+     YAVAŞLAT
+  ===================================== */
+
+  const slowButton =
+    document.createElement("button");
+
+  slowButton.type =
+    "button";
+
+  slowButton.className =
+    "tts-button tts-slow";
+
+  slowButton.textContent =
+    "→";
+
+  slowButton.setAttribute(
+    "aria-label",
+    "Yavaşlat"
+  );
+
+  slowButton.title =
+    "Yavaşlat";
+
+  let slowLevel = 0;
+
+  slowButton.addEventListener(
+    "click",
+    () => {
+
+      slowLevel++;
+
+      if (slowLevel > 3) {
+        slowLevel = 0;
+      }
+
+      const slowRates = [
+        1,
+        0.75,
+        0.50,
+        0.25
+      ];
+
+      const slowIcons = [
+        "→",
+        "→",
+        "→→",
+        "→→→"
+      ];
+
+      speechRate =
+        slowRates[slowLevel];
+
+      slowButton.textContent =
+        slowIcons[slowLevel];
+
+    }
+  );
+
+
+  /* =====================================
+     OYNAT
+  ===================================== */
+
+  const playButton =
+    document.createElement("button");
+
+  playButton.type =
+    "button";
+
+  playButton.className =
+    "tts-button tts-play";
+
+  playButton.textContent =
+    "▶";
+
+  playButton.setAttribute(
+    "aria-label",
+    "Oynat"
+  );
+
+  playButton.title =
+    "Oynat";
+
+  playButton.addEventListener(
+    "click",
+    () => {
+
+      playSelectedText();
+
+    }
+  );
+
+
+  /* =====================================
+     DURDUR
+  ===================================== */
+
+  const stopButton =
+    document.createElement("button");
+
+  stopButton.type =
+    "button";
+
+  stopButton.className =
+    "tts-button tts-stop";
+
+  stopButton.textContent =
+    "■";
+
+  stopButton.setAttribute(
+    "aria-label",
+    "Durdur"
+  );
+
+  stopButton.title =
+    "Durdur";
+
+  stopButton.addEventListener(
+    "click",
+    () => {
+
+      stopSpeech();
+
+    }
+  );
+
+
+  /* =====================================
+     HIZLANDIR 1
+     
+     1.25 → 1.50 → 1.75
+  ===================================== */
+
+  const fastButton =
+    document.createElement("button");
+
+  fastButton.type =
+    "button";
+
+  fastButton.className =
+    "tts-button tts-fast";
+
+  fastButton.textContent =
+    "→";
+
+  fastButton.setAttribute(
+    "aria-label",
+    "Hızlandır"
+  );
+
+  fastButton.title =
+    "Hızlandır";
+
+  let fastLevel = 0;
+
+  fastButton.addEventListener(
+    "click",
+    () => {
+
+      fastLevel++;
+
+      if (fastLevel > 3) {
+        fastLevel = 0;
+      }
+
+      const fastRates = [
+        1,
+        1.25,
+        1.50,
+        1.75
+      ];
+
+      const fastIcons = [
+        "→",
+        "→",
+        "→→",
+        "→→→"
+      ];
+
+      speechRate =
+        fastRates[fastLevel];
+
+      fastButton.textContent =
+        fastIcons[fastLevel];
+
+    }
+  );
+
+
+  /* =====================================
+     HIZLANDIR 2
+     
+     2 → 2.5 → 3
+  ===================================== */
+
+  const veryFastButton =
+    document.createElement("button");
+
+  veryFastButton.type =
+    "button";
+
+  veryFastButton.className =
+    "tts-button tts-very-fast";
+
+  veryFastButton.textContent =
+    "→";
+
+  veryFastButton.setAttribute(
+    "aria-label",
+    "Çok hızlandır"
+  );
+
+  veryFastButton.title =
+    "Çok hızlandır";
+
+  let veryFastLevel = 0;
+
+  veryFastButton.addEventListener(
+    "click",
+    () => {
+
+      veryFastLevel++;
+
+      if (veryFastLevel > 3) {
+        veryFastLevel = 0;
+      }
+
+      const veryFastRates = [
+        1,
+        2,
+        2.5,
+        3
+      ];
+
+      const veryFastIcons = [
+        "→",
+        "→",
+        "→→",
+        "→→→"
+      ];
+
+      speechRate =
+        veryFastRates[veryFastLevel];
+
+      veryFastButton.textContent =
+        veryFastIcons[veryFastLevel];
+
+    }
+  );
+
+
+  /* =====================================
+     TEK SATIRDA SIRALA
+  ===================================== */
+
+  ttsControls.appendChild(
+    slowButton
+  );
+
+  ttsControls.appendChild(
+    playButton
+  );
+
+  ttsControls.appendChild(
+    stopButton
+  );
+
+  ttsControls.appendChild(
+    fastButton
+  );
+
+  ttsControls.appendChild(
+    veryFastButton
+  );
+
+
+  /* =====================================
+     SORU KARTININ ALTINA EKLE
+  ===================================== */
+
+  content.appendChild(
+    ttsControls
+  );
 
       if (subtitle) {
 
