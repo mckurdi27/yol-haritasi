@@ -17,17 +17,11 @@
       "id": 39,
       "tr": {
         "q": "İmanın şartları nelerdir?",
-        "a": "İmanın şartları: Allah’a, meleklere, kitaplara, peygamberlere, ahiret gününe ve kadere iman etmektektir."
+        "a": "İmanın şartları: Allah’a, meleklere, kitaplara, peygamberlere, ahiret gününe ve kadere iman etmektir."
       },
-      "en": { "q": "", "a": "" },
-      "ar": { "q": "", "a": "" },
-      "de": { "q": "", "a": "" },
-      "fr": { "q": "", "a": "" },
-      "ru": { "q": "", "a": "" },
-      "ku": { "q": "", "a": "" },
-      "fa": { "q": "", "a": "" },
-      "id": { "q": "", "a": "" },
-      "ms": { "q": "", "a": "" },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
       "uz": { "q": "", "a": "" }
     },
     {
@@ -36,15 +30,9 @@
         "q": "İslam’ın şartları nelerdir?",
         "a": "İslam’ın şartları: Kelime-i şehadet, namaz, oruç, zekât ve hacdır."
       },
-      "en": { "q": "", "a": "" },
-      "ar": { "q": "", "a": "" },
-      "de": { "q": "", "a": "" },
-      "fr": { "q": "", "a": "" },
-      "ru": { "q": "", "a": "" },
-      "ku": { "q": "", "a": "" },
-      "fa": { "q": "", "a": "" },
-      "id": { "q": "", "a": "" },
-      "ms": { "q": "", "a": "" },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
       "uz": { "q": "", "a": "" }
     },
     {
@@ -53,15 +41,153 @@
         "q": "Namaz neden önemlidir?",
         "a": "Namaz, kulun Allah ile doğrudan iletişim kurduğu ibadettir ve imanın en önemli göstergelerinden biridir."
       },
-      "en": { "q": "", "a": "" },
-      "ar": { "q": "", "a": "" },
-      "de": { "q": "", "a": "" },
-      "fr": { "q": "", "a": "" },
-      "ru": { "q": "", "a": "" },
-      "ku": { "q": "", "a": "" },
-      "fa": { "q": "", "a": "" },
-      "id": { "q": "", "a": "" },
-      "ms": { "q": "", "a": "" },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 42,
+      "tr": { "q": "Oruç ibadetinin amacı nedir?", "a": "Oruç, nefsi terbiye eder ve kulun Allah’a yakınlaşmasını sağlar." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 43,
+      "tr": { "q": "Zekâtın hikmeti nedir?", "a": "Zekât, toplumda yardımlaşmayı artırır ve malı bereketlendirir." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 44,
+      "tr": { "q": "Hac ibadetinin anlamı nedir?", "a": "Hac, Müslümanların bir araya geldiği büyük bir ibadet ve teslimiyet sembolüdür." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 45,
+      "tr": { "q": "İman ile amel arasındaki ilişki nedir?", "a": "İman kalpte başlar, amel ile güçlenir ve davranışlara yansır." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 46,
+      "tr": { "q": "Müslüman için ibadet neden gereklidir?", "a": "İbadet, kulun Allah’a bağlılığını gösterir ve ruhu arındırır." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 47,
+      "tr": { "q": "Dua neden önemlidir?", "a": "Dua, kulun Allah’a yönelişidir ve kalbi huzurla doldurur." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 48,
+      "tr": { "q": "Tesettürün amacı nedir?", "a": "Tesettür, kişinin iffetini koruması ve Allah’a itaatinin bir göstergesidir." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 49,
+      "tr": { "q": "Helal ve haram kavramları neden önemlidir?", "a": "Helal ve haram, Müslümanın hayatını düzenleyen temel ölçülerdir." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 50,
+      "tr": { "q": "Müslüman neden ahlâka önem verir?", "a": "Ahlâk, imanın davranışlara yansımasıdır ve Müslümanın karakterini oluşturur." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 51,
+      "tr": { "q": "Sabır neden önemlidir?", "a": "Sabır, imanın bir parçasıdır ve kulun zorluklara karşı direncini artırır." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 52,
+      "tr": { "q": "Şükür neden önemlidir?", "a": "Şükür, nimetin değerini bilmektir ve kalbi huzurla doldurur." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 53,
+      "tr": { "q": "Tevbe neden önemlidir?", "a": "Tevbe, kulun hatalarından dönmesi ve Allah’a yönelmesidir." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 54,
+      "tr": { "q": "Güzel söz söylemek neden önemlidir?", "a": "Güzel söz, kalpleri yumuşatır ve toplumda huzur oluşturur." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 55,
+      "tr": { "q": "Komşuluk ilişkileri neden önemlidir?", "a": "Komşuluk, toplumsal dayanışmanın temelidir ve İslam’da büyük önem taşır." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 56,
+      "tr": { "q": "Selam vermek neden önemlidir?", "a": "Selam, barış ve kardeşlik mesajıdır; Müslümanlar arasında sevgiyi artırır." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
+      "uz": { "q": "", "a": "" }
+    },
+
+    {
+      "id": 57,
+      "tr": { "q": "Müslüman neden doğruluğa önem verir?", "a": "Doğruluk, imanın gereğidir ve Müslümanın güvenilirliğini artırır." },
+      "en": { "q": "", "a": "" }, "ar": { "q": "", "a": "" }, "de": { "q": "", "a": "" },
+      "fr": { "q": "", "a": "" }, "ru": { "q": "", "a": "" }, "ku": { "q": "", "a": "" },
+      "fa": { "q": "", "a": "" }, "id": { "q": "", "a": "" }, "ms": { "q": "", "a": "" },
       "uz": { "q": "", "a": "" }
     }
   ]
