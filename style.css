@@ -27,7 +27,8 @@ body {
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
 }
 
@@ -112,14 +113,11 @@ button:disabled {
 
 /* =========================================
    KÂBE
-   ÜSTTE TEK SATIR
 ========================================= */
 
 .holy-site-kaaba {
   grid-area: kaaba;
-
   height: 350px;
-
   border-radius: 4px;
 }
 
@@ -138,7 +136,6 @@ button:disabled {
   grid-area: title;
 
   margin: 0;
-
   padding: 4px 0 6px;
 
   font-size: clamp(30px, 5vw, 52px);
@@ -264,8 +261,7 @@ button:disabled {
 
 
 /* =========================================
-   GÜNLER BÖLÜMÜ
-   DEĞİŞTİRİLMEDİ
+   GÜNLER
 ========================================= */
 
 .days-section {
@@ -280,12 +276,6 @@ button:disabled {
 
   font-size: 28px;
 }
-
-
-/* =========================================
-   GÜN LİSTESİ
-   DEĞİŞTİRİLMEDİ
-========================================= */
 
 #days-list {
   display: grid;
@@ -517,7 +507,7 @@ button:disabled {
 
 
 /* =========================================
-   NAVİGASYON ANA ALANI
+   NAVİGASYON
 ========================================= */
 
 #top-navigation,
@@ -545,11 +535,6 @@ button:disabled {
 
   column-gap: 18px;
 }
-
-
-/* =========================================
-   SOL / SAĞ NAVİGASYON GRUPLARI
-========================================= */
 
 .navigation-group {
   display: grid;
@@ -623,7 +608,7 @@ button:disabled {
 
 
 /* =========================================
-   SAYI GİRİŞ KUTULARI
+   SAYI GİRİŞ
 ========================================= */
 
 .navigation-number-input {
@@ -668,7 +653,7 @@ button:disabled {
 
 
 /* =========================================
-   ORTA KÂBE BUTONU
+   ORTA KÂBE
 ========================================= */
 
 .navigation-home-group {
@@ -715,11 +700,6 @@ button:disabled {
     0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
-
-/* =========================================
-   ESKİ NAVİGASYON SINIFLARI
-========================================= */
-
 .navigation-row {
   display: flex;
 
@@ -762,6 +742,7 @@ button:disabled {
 
 button:focus-visible,
 input:focus-visible,
+select:focus-visible,
 a:focus-visible {
   outline:
     3px solid rgba(59, 130, 246, 0.35);
@@ -784,6 +765,347 @@ a:focus-visible {
 
 
 /* =========================================
+   TTS KONTROLLERİ
+========================================= */
+
+.tts-controls {
+  width: min(950px, calc(100% - 30px));
+
+  margin: 14px auto 8px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  flex-wrap: nowrap;
+
+  direction: ltr;
+}
+
+
+/* =========================================
+   TTS BUTONLARI
+========================================= */
+
+.tts-button {
+  width: 52px;
+
+  height: 48px;
+
+  padding: 0;
+
+  margin: 0;
+
+  border: 2px solid #16803c;
+
+  border-radius: 12px;
+
+  background: #eaf7ef;
+
+  color: #16803c;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-family:
+    Arial,
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 25px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  -webkit-tap-highlight-color: transparent;
+
+  transition:
+    transform 0.12s ease,
+    background 0.12s ease,
+    box-shadow 0.12s ease,
+    color 0.12s ease;
+}
+
+.tts-button:hover:not(:disabled) {
+  background: #d8f1e1;
+
+  box-shadow:
+    0 4px 10px rgba(22, 128, 60, 0.18);
+}
+
+.tts-button:active:not(:disabled) {
+  transform: scale(0.92);
+
+  background: #c7ead3;
+}
+
+.tts-button.active {
+  background: #c7ead3;
+
+  color: #166534;
+
+  box-shadow:
+    0 0 0 2px rgba(22, 128, 60, 0.15);
+}
+
+.tts-button:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+  box-shadow: none;
+}
+
+
+/* =========================================
+   SVG İKONLARI
+========================================= */
+
+.tts-button svg {
+  width: 25px;
+
+  height: 25px;
+
+  display: block;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 2.4;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+}
+
+
+/* =========================================
+   PLAY
+========================================= */
+
+.tts-play {
+  width: 58px;
+
+  height: 52px;
+
+  font-size: 27px;
+}
+
+
+/* =========================================
+   PAUSE
+========================================= */
+
+.tts-pause {
+  width: 52px;
+
+  height: 48px;
+
+  font-size: 24px;
+}
+
+
+/* =========================================
+   STOP
+========================================= */
+
+.tts-stop {
+  font-size: 22px;
+}
+
+
+/* =========================================
+   HIZ BUTONLARI
+========================================= */
+
+.tts-slow,
+.tts-fast,
+.tts-very-fast {
+  letter-spacing: -4px;
+}
+
+.tts-speed-icon {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 1px;
+
+  min-width: 28px;
+
+  height: 28px;
+
+  color: currentColor;
+
+  font-size: 20px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -3px;
+}
+
+.tts-speed-icon span {
+  display: inline-block;
+}
+
+
+/* =========================================
+   TTS AYAR BUTONU
+========================================= */
+
+.tts-settings-button {
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   TTS AYAR PANELİ
+========================================= */
+
+.tts-settings {
+  width: min(420px, calc(100% - 30px));
+
+  margin: 8px auto 18px;
+
+  padding: 18px;
+
+  border: 1px solid #dbe1e8;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.08);
+
+  display: none;
+
+  text-align: left;
+
+  position: relative;
+
+  z-index: 10;
+}
+
+.tts-settings.open {
+  display: block;
+}
+
+.tts-settings[hidden] {
+  display: none !important;
+}
+
+
+/* =========================================
+   AYAR SATIRLARI
+========================================= */
+
+.tts-setting-row {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin-bottom: 15px;
+}
+
+.tts-setting-row:last-child {
+  margin-bottom: 0;
+}
+
+.tts-setting-label {
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: #374151;
+}
+
+
+/* =========================================
+   SES SEÇİMİ
+========================================= */
+
+.tts-voice-select {
+  width: 100%;
+
+  min-height: 42px;
+
+  padding: 8px 10px;
+
+  border: 1px solid #cfd5dc;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #1f2937;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.tts-voice-select:focus {
+  border-color: #16A34A;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(22, 163, 74, 0.12);
+}
+
+
+/* =========================================
+   HIZ KAYDIRICISI
+========================================= */
+
+.tts-rate-slider {
+  width: 100%;
+
+  margin: 0;
+
+  accent-color: #16A34A;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   HIZ DEĞERİ
+========================================= */
+
+.tts-rate-value {
+  text-align: center;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: #16A34A;
+}
+
+
+/* =========================================
    MOBİL
 ========================================= */
 
@@ -793,15 +1115,9 @@ a:focus-visible {
     width: min(100% - 20px, 1100px);
   }
 
-
   .home-header {
     padding-top: 20px;
   }
-
-
-  /* =====================================
-     MOBİL GÖRSEL ALANI
-  ====================================== */
 
   .holy-sites {
     width: calc(100% - 20px);
@@ -811,19 +1127,9 @@ a:focus-visible {
     gap: 8px;
   }
 
-
-  /* =====================================
-     KÂBE
-  ====================================== */
-
   .holy-site-kaaba {
     height: 300px;
   }
-
-
-  /* =====================================
-     BAŞLIK
-  ====================================== */
 
   .roadmap-title {
     padding: 2px 0 4px;
@@ -833,16 +1139,10 @@ a:focus-visible {
     line-height: 1.12;
   }
 
-
-  /* =====================================
-     AKSÂ + NEBEVÎ
-  ====================================== */
-
   .holy-site-aqsa,
   .holy-site-nabawi {
     height: 300px;
   }
-
 
   .holy-site-aqsa {
     margin-right: 3px;
@@ -852,21 +1152,11 @@ a:focus-visible {
     margin-left: 3px;
   }
 
-
-  /* =====================================
-     ALT AÇIKLAMA
-  ====================================== */
-
   .home-subtitle {
     margin-top: 8px;
 
     font-size: 19px;
   }
-
-
-  /* =====================================
-     DİL SEÇİCİ
-  ====================================== */
 
   .language-selector {
     gap: 6px;
@@ -884,12 +1174,6 @@ a:focus-visible {
     font-size: 20px;
   }
 
-
-  /* =====================================
-     GÜNLER
-     DEĞİŞTİRİLMEDİ
-  ====================================== */
-
   .days-section {
     width: calc(100% - 20px);
   }
@@ -901,11 +1185,6 @@ a:focus-visible {
   .day-card {
     padding: 18px;
   }
-
-
-  /* =====================================
-     SORU SAYFASI
-  ====================================== */
 
   #question-content {
     width: calc(100% - 20px);
@@ -932,11 +1211,6 @@ a:focus-visible {
   .arabic-language .answer-line {
     font-size: 17px;
   }
-
-
-  /* =====================================
-     NAVİGASYON MOBİLDE DE TEK SATIR
-  ====================================== */
 
   #top-navigation,
   #bottom-navigation {
@@ -997,6 +1271,67 @@ a:focus-visible {
     font-size: 30px;
   }
 
+
+  /* =====================================
+     TTS MOBİL
+  ====================================== */
+
+  .tts-controls {
+    width: calc(100% - 20px);
+
+    gap: 5px;
+
+    margin-top: 12px;
+  }
+
+  .tts-button {
+    width: 46px;
+
+    height: 44px;
+
+    border-radius: 10px;
+
+    font-size: 22px;
+  }
+
+  .tts-button svg {
+    width: 23px;
+
+    height: 23px;
+  }
+
+  .tts-play {
+    width: 50px;
+
+    height: 46px;
+
+    font-size: 24px;
+  }
+
+  .tts-pause {
+    width: 46px;
+
+    height: 44px;
+
+    font-size: 21px;
+  }
+
+  .tts-stop {
+    font-size: 20px;
+  }
+
+  .tts-speed-icon {
+    min-width: 26px;
+
+    font-size: 18px;
+  }
+
+  .tts-settings {
+    width: calc(100% - 20px);
+
+    padding: 15px;
+  }
+
 }
 
 
@@ -1010,22 +1345,15 @@ a:focus-visible {
     font-size: 26px;
   }
 
-
-  /* =====================================
-     GÖRSEL ALANI DAHA DA KÜÇÜK
-  ====================================== */
-
   .holy-sites {
     width: calc(100% - 16px);
 
     gap: 7px;
   }
 
-
   .holy-site-kaaba {
     height: 250px;
   }
-
 
   .roadmap-title {
     margin: 0;
@@ -1033,12 +1361,10 @@ a:focus-visible {
     padding: 2px 0 3px;
   }
 
-
   .holy-site-aqsa,
   .holy-site-nabawi {
     height: 250px;
   }
-
 
   .holy-site-aqsa {
     margin-right: 3px;
@@ -1047,11 +1373,6 @@ a:focus-visible {
   .holy-site-nabawi {
     margin-left: 3px;
   }
-
-
-  /* =====================================
-     DİL SEÇİCİ
-  ====================================== */
 
   .language-selector {
     gap: 5px;
@@ -1064,11 +1385,6 @@ a:focus-visible {
 
     font-size: 19px;
   }
-
-
-  /* =====================================
-     NAVİGASYON
-  ====================================== */
 
   #top-navigation,
   #bottom-navigation {
@@ -1116,301 +1432,15 @@ a:focus-visible {
     border-radius: 10px;
   }
 
-}
-/* =========================================
-   TEXT TO SPEECH
-   BİR MÜSLÜMANIN YOL HARİTASI
-========================================= */
 
-.tts-controls {
-  width: 100%;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 6px;
-
-  margin: 18px auto 8px;
-
-  padding: 6px;
-
-  direction: ltr;
-}
-
-
-/* =========================================
-   TTS BUTONLARI
-========================================= */
-
-.tts-button {
-  width: 44px;
-
-  height: 42px;
-
-  padding: 0;
-
-  margin: 0;
-
-  border: none;
-
-  border-radius: 10px;
-
-  background: transparent;
-
-  color: #16A34A;
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  font-family:
-    Arial,
-    "Segoe UI",
-    sans-serif;
-
-  font-size: 25px;
-
-  font-weight: 700;
-
-  line-height: 1;
-
-  cursor: pointer;
-
-  user-select: none;
-
-  -webkit-tap-highlight-color: transparent;
-
-  transition:
-    background 0.15s ease,
-    transform 0.15s ease,
-    color 0.15s ease;
-}
-
-
-/* =========================================
-   SVG İKON
-========================================= */
-
-.tts-button svg {
-  width: 25px;
-
-  height: 25px;
-
-  display: block;
-
-  fill: none;
-
-  stroke: currentColor;
-
-  stroke-width: 2.4;
-
-  stroke-linecap: round;
-
-  stroke-linejoin: round;
-}
-
-
-/* =========================================
-   HIZ İKONLARI
-========================================= */
-
-.tts-speed-icon {
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 1px;
-
-  min-width: 28px;
-
-  height: 28px;
-
-  color: #16A34A;
-
-  font-size: 20px;
-
-  font-weight: 800;
-
-  line-height: 1;
-
-  letter-spacing: -3px;
-}
-
-.tts-speed-icon span {
-  display: inline-block;
-}
-
-
-/* =========================================
-   HOVER
-========================================= */
-
-.tts-button:hover {
-  background: rgba(22, 163, 74, 0.10);
-
-  color: #15803D;
-
-  transform: translateY(-1px);
-}
-
-
-/* =========================================
-   BASILDIĞINDA
-========================================= */
-
-.tts-button:active {
-  transform: scale(0.92);
-}
-
-
-/* =========================================
-   AKTİF
-========================================= */
-
-.tts-button.active {
-  background: rgba(22, 163, 74, 0.14);
-
-  color: #15803D;
-}
-
-
-/* =========================================
-   DEVRE DIŞI
-========================================= */
-
-.tts-button:disabled {
-  opacity: 0.35;
-
-  cursor: not-allowed;
-
-  transform: none;
-
-  background: transparent;
-}
-
-
-/* =========================================
-   TTS AYAR PANELİ
-========================================= */
-
-.tts-settings {
-  width: min(420px, calc(100% - 30px));
-
-  margin: 8px auto 18px;
-
-  padding: 18px;
-
-  border: 1px solid #dbe1e8;
-
-  border-radius: 16px;
-
-  background: #ffffff;
-
-  box-shadow:
-    0 5px 18px rgba(0, 0, 0, 0.08);
-
-  display: none;
-
-  text-align: left;
-}
-
-.tts-settings.open {
-  display: block;
-}
-
-
-/* =========================================
-   AYAR SATIRLARI
-========================================= */
-
-.tts-setting-row {
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 7px;
-
-  margin-bottom: 15px;
-}
-
-.tts-setting-row:last-child {
-  margin-bottom: 0;
-}
-
-.tts-setting-label {
-  font-size: 14px;
-
-  font-weight: 700;
-
-  color: #374151;
-}
-
-
-/* =========================================
-   SES SEÇİMİ
-========================================= */
-
-.tts-voice-select {
-  width: 100%;
-
-  min-height: 42px;
-
-  padding: 8px 10px;
-
-  border: 1px solid #cfd5dc;
-
-  border-radius: 10px;
-
-  background: #ffffff;
-
-  color: #1f2937;
-
-  outline: none;
-}
-
-.tts-voice-select:focus {
-  border-color: #16A34A;
-
-  box-shadow:
-    0 0 0 3px
-    rgba(22, 163, 74, 0.12);
-}
-
-
-/* =========================================
-   HIZ BİLGİSİ
-========================================= */
-
-.tts-rate-value {
-  text-align: center;
-
-  font-size: 14px;
-
-  font-weight: 700;
-
-  color: #16A34A;
-}
-
-
-/* =========================================
-   MOBİL
-========================================= */
-
-@media (max-width: 600px) {
+  /* =====================================
+     TTS ÇOK KÜÇÜK EKRAN
+  ====================================== */
 
   .tts-controls {
     gap: 3px;
 
-    margin-top: 14px;
-
-    padding: 4px;
+    width: calc(100% - 8px);
   }
 
   .tts-button {
@@ -1418,50 +1448,35 @@ a:focus-visible {
 
     height: 40px;
 
-    border-radius: 9px;
-  }
+    border-radius: 8px;
 
-  .tts-button svg {
-    width: 23px;
-
-    height: 23px;
-  }
-
-  .tts-speed-icon {
-    min-width: 26px;
-
-    font-size: 18px;
-  }
-
-  .tts-settings {
-    width: calc(100% - 20px);
-
-    padding: 15px;
-  }
-
-}
-
-
-/* =========================================
-   ÇOK KÜÇÜK EKRAN
-========================================= */
-
-@media (max-width: 300px) {
-
-  .tts-controls {
-    gap: 1px;
-  }
-
-  .tts-button {
-    width: 36px;
-
-    height: 38px;
+    font-size: 19px;
   }
 
   .tts-button svg {
     width: 21px;
 
     height: 21px;
+  }
+
+  .tts-play {
+    width: 44px;
+
+    height: 42px;
+
+    font-size: 21px;
+  }
+
+  .tts-pause {
+    width: 40px;
+
+    height: 40px;
+
+    font-size: 18px;
+  }
+
+  .tts-stop {
+    font-size: 18px;
   }
 
   .tts-speed-icon {
@@ -1472,233 +1487,7 @@ a:focus-visible {
 
 }
 
-/* =========================================
-   TEXT TO SPEECH KONTROLLERİ
-========================================= */
 
-.tts-controls {
-
-  width: min(950px, calc(100% - 30px));
-
-  margin: 14px auto 8px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 8px;
-
-  flex-wrap: nowrap;
-
-}
-
-
-/* =========================================
-   TTS BUTONLARI
-========================================= */
-
-.tts-button {
-
-  width: 52px;
-
-  height: 48px;
-
-  padding: 0;
-
-  border: 2px solid #16803c;
-
-  border-radius: 12px;
-
-  background: #eaf7ef;
-
-  color: #16803c;
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  font-size: 25px;
-
-  font-weight: 800;
-
-  line-height: 1;
-
-  cursor: pointer;
-
-  user-select: none;
-
-  -webkit-tap-highlight-color: transparent;
-
-  transition:
-    transform 0.12s ease,
-    background 0.12s ease,
-    box-shadow 0.12s ease;
-
-}
-
-
-/* =========================================
-   BASMA / HOVER
-========================================= */
-
-.tts-button:hover {
-
-  background: #d8f1e1;
-
-  box-shadow:
-    0 4px 10px rgba(22, 128, 60, 0.18);
-
-}
-
-
-.tts-button:active {
-
-  transform: scale(0.92);
-
-  background: #c7ead3;
-
-}
-
-
-/* =========================================
-   OYNAT
-========================================= */
-
-.tts-play {
-
-  width: 58px;
-
-  height: 52px;
-
-  font-size: 27px;
-
-}
-
-
-/* =========================================
-   DURDUR
-========================================= */
-
-.tts-stop {
-
-  font-size: 22px;
-
-}
-
-
-/* =========================================
-   OK İKONLARI
-========================================= */
-
-.tts-slow,
-.tts-fast,
-.tts-very-fast {
-
-  letter-spacing: -4px;
-
-}
-
-
-/* =========================================
-   MOBİL
-========================================= */
-
-@media (max-width: 600px) {
-
-  .tts-controls {
-
-    width: calc(100% - 20px);
-
-    gap: 5px;
-
-    margin-top: 12px;
-
-  }
-
-
-  .tts-button {
-
-    width: 46px;
-
-    height: 44px;
-
-    border-radius: 10px;
-
-    font-size: 22px;
-
-  }
-
-
-  .tts-play {
-
-    width: 50px;
-
-    height: 46px;
-
-    font-size: 24px;
-
-  }
-
-
-  .tts-stop {
-
-    font-size: 20px;
-
-  }
-
-}
-
-
-/* =========================================
-   ÇOK KÜÇÜK EKRAN
-========================================= */
-
-@media (max-width: 300px) {
-
-  .tts-controls {
-
-    gap: 3px;
-
-    width: calc(100% - 8px);
-
-  }
-
-
-  .tts-button {
-
-    width: 40px;
-
-    height: 40px;
-
-    border-radius: 8px;
-
-    font-size: 19px;
-
-  }
-
-
-  .tts-play {
-
-    width: 44px;
-
-    height: 42px;
-
-    font-size: 21px;
-
-  }
-
-
-  .tts-stop {
-
-    font-size: 18px;
-
-  }
-
-}
 /* =========================================
    SON
 ========================================= */
