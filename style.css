@@ -808,6 +808,10 @@ a:focus-visible {
   direction: ltr;
 
   text-align: center;
+
+  position: relative;
+
+  z-index: 20;
 }
 
 
@@ -862,6 +866,8 @@ a:focus-visible {
     background 0.12s ease,
     box-shadow 0.12s ease,
     color 0.12s ease;
+
+  flex-shrink: 0;
 }
 
 .tts-button:hover:not(:disabled) {
@@ -919,6 +925,8 @@ a:focus-visible {
   stroke-linecap: round;
 
   stroke-linejoin: round;
+
+  pointer-events: none;
 }
 
 
@@ -989,6 +997,8 @@ a:focus-visible {
   line-height: 1;
 
   letter-spacing: -3px;
+
+  pointer-events: none;
 }
 
 .tts-speed-icon span {
@@ -1002,6 +1012,12 @@ a:focus-visible {
 
 .tts-settings-button {
   flex-shrink: 0;
+
+  display: inline-flex !important;
+
+  visibility: visible !important;
+
+  opacity: 1;
 }
 
 
@@ -1031,7 +1047,7 @@ a:focus-visible {
 
   position: relative;
 
-  z-index: 10;
+  z-index: 100;
 }
 
 .tts-settings.open {
@@ -1354,16 +1370,18 @@ a:focus-visible {
     justify-content: center;
 
     flex-wrap: nowrap;
+
+    overflow: visible;
   }
 
   .tts-button {
-    width: 46px;
+    width: 43px;
 
-    height: 44px;
+    height: 42px;
 
-    border-radius: 10px;
+    border-radius: 9px;
 
-    font-size: 22px;
+    font-size: 21px;
 
     display: inline-flex;
 
@@ -1372,46 +1390,147 @@ a:focus-visible {
     justify-content: center;
 
     text-align: center;
+
+    flex-shrink: 0;
   }
 
   .tts-button svg {
-    width: 23px;
+    width: 21px;
 
-    height: 23px;
+    height: 21px;
 
     margin: auto;
   }
 
   .tts-play {
-    width: 50px;
-
-    height: 46px;
-
-    font-size: 24px;
-  }
-
-  .tts-pause {
-    width: 46px;
+    width: 47px;
 
     height: 44px;
 
-    font-size: 21px;
+    font-size: 23px;
   }
 
-  .tts-stop {
+  .tts-pause {
+    width: 43px;
+
+    height: 42px;
+
     font-size: 20px;
   }
 
-  .tts-speed-icon {
-    min-width: 26px;
+  .tts-stop {
+    font-size: 19px;
+  }
 
-    font-size: 18px;
+  .tts-speed-icon {
+    min-width: 24px;
+
+    height: 24px;
+
+    font-size: 17px;
+  }
+
+  /* Z Fold kapalı ekran için
+     ayar butonu daha küçük */
+
+  .tts-settings-button {
+    width: 40px;
+
+    height: 40px;
+
+    font-size: 19px;
+
+    border-radius: 9px;
+  }
+
+  .tts-settings-button svg {
+    width: 20px;
+
+    height: 20px;
   }
 
   .tts-settings {
     width: calc(100% - 20px);
 
-    padding: 15px;
+    max-width: 360px;
+
+    padding: 14px;
+
+    margin-top: 7px;
+  }
+
+}
+
+
+/* =========================================
+   Z FOLD / ORTA BÜYÜKLÜK
+========================================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+  .tts-controls {
+    width: min(700px, calc(100% - 30px));
+
+    gap: 7px;
+
+    display: flex;
+
+    visibility: visible;
+
+    opacity: 1;
+  }
+
+  .tts-settings-button {
+    display: inline-flex !important;
+
+    visibility: visible !important;
+
+    opacity: 1 !important;
+
+    width: 46px;
+
+    height: 44px;
+
+    flex-shrink: 0;
+  }
+
+  .tts-settings {
+    width: min(380px, calc(100% - 30px));
+
+    max-width: 380px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+}
+
+
+/* =========================================
+   Z FOLD AÇIK BÜYÜK EKRAN
+========================================= */
+
+@media (min-width: 901px) {
+
+  .tts-controls {
+    width: min(950px, calc(100% - 30px));
+
+    display: flex;
+
+    visibility: visible;
+
+    opacity: 1;
+  }
+
+  .tts-settings-button {
+    display: inline-flex !important;
+
+    visibility: visible !important;
+
+    opacity: 1 !important;
+
+    flex-shrink: 0;
   }
 
 }
@@ -1545,16 +1664,18 @@ a:focus-visible {
     margin-right: auto;
 
     justify-content: center;
+
+    overflow: visible;
   }
 
   .tts-button {
-    width: 40px;
+    width: 38px;
 
-    height: 40px;
+    height: 38px;
 
     border-radius: 8px;
 
-    font-size: 19px;
+    font-size: 18px;
 
     display: inline-flex;
 
@@ -1566,37 +1687,45 @@ a:focus-visible {
   }
 
   .tts-button svg {
-    width: 21px;
+    width: 19px;
 
-    height: 21px;
+    height: 19px;
 
     margin: auto;
   }
 
   .tts-play {
-    width: 44px;
-
-    height: 42px;
-
-    font-size: 21px;
-  }
-
-  .tts-pause {
-    width: 40px;
+    width: 42px;
 
     height: 40px;
 
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .tts-pause {
+    width: 38px;
+
+    height: 38px;
+
+    font-size: 17px;
   }
 
   .tts-stop {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .tts-speed-icon {
-    font-size: 16px;
+    font-size: 15px;
 
-    min-width: 23px;
+    min-width: 21px;
+  }
+
+  .tts-settings-button {
+    width: 36px;
+
+    height: 36px;
+
+    font-size: 17px;
   }
 
 }
