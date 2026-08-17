@@ -323,6 +323,24 @@ let speechCurrentCharIndex = 0;
 let speechIsSpeaking = false;
 
 
+/*
+ * Manuel pause/resume sistemi.
+ *
+ * Android ve bazı Chromium sürümlerinde
+ * speechSynthesis.pause()/resume() güvenilir
+ * çalışmayabildiği için konuşmanın mevcut
+ * konumunu kaydediyoruz.
+ */
+
+let speechManualPaused = false;
+
+let speechResumePending = false;
+
+let speechSessionId = 0;
+
+let speechLastBoundaryTime = 0;
+
+
 /* =========================================
    BAŞLAT
 ========================================= */
@@ -418,6 +436,19 @@ if (
     () => {
 
       loadSavedVoice();
+
+      const select =
+        document.querySelector(
+          ".tts-voice-select"
+        );
+
+      if (select) {
+
+        populateVoiceSelect(
+          select
+        );
+
+      }
 
     };
 
@@ -818,6 +849,8 @@ function renderHome() {
       card.addEventListener(
         "click",
         () => {
+
+          stopSpeech();
 
           currentDayIndex =
             index;
@@ -1403,7 +1436,7 @@ function addQuestionLanguageSelector() {
 
 /* =========================================
    TTS KONTROLLERİ
-   7 BUTON TEK GRUP
+   7 BUTON
 ========================================= */
 
 function renderTTSControls() {
@@ -1440,9 +1473,7 @@ function renderTTSControls() {
     "tts-controls";
 
 
-  /* =====================================
-     YAVAŞLAT
-  ===================================== */
+  /* YAVAŞLAT */
 
   const slowButton =
     document.createElement(
@@ -1472,6 +1503,8 @@ function renderTTSControls() {
     event => {
 
       event.stopPropagation();
+
+      stopSpeech();
 
       slowLevel++;
 
@@ -1506,9 +1539,7 @@ function renderTTSControls() {
   );
 
 
-  /* =====================================
-     OYNAT
-  ===================================== */
+  /* OYNAT */
 
   const playButton =
     document.createElement(
@@ -1544,9 +1575,7 @@ function renderTTSControls() {
   );
 
 
-  /* =====================================
-     PAUSE
-  ===================================== */
+  /* PAUSE */
 
   const pauseButton =
     document.createElement(
@@ -1582,9 +1611,7 @@ function renderTTSControls() {
   );
 
 
-  /* =====================================
-     DURDUR
-  ===================================== */
+  /* DURDUR */
 
   const stopButton =
     document.createElement(
@@ -1620,9 +1647,7 @@ function renderTTSControls() {
   );
 
 
-  /* =====================================
-     HIZLANDIR
-  ===================================== */
+  /* HIZLANDIR */
 
   const fastButton =
     document.createElement(
@@ -1652,6 +1677,8 @@ function renderTTSControls() {
     event => {
 
       event.stopPropagation();
+
+      stopSpeech();
 
       fastLevel++;
 
@@ -1694,9 +1721,7 @@ function renderTTSControls() {
   );
 
 
-  /* =====================================
-     ÇOK HIZLANDIR
-  ===================================== */
+  /* ÇOK HIZLANDIR */
 
   const veryFastButton =
     document.createElement(
@@ -1726,6 +1751,8 @@ function renderTTSControls() {
     event => {
 
       event.stopPropagation();
+
+      stopSpeech();
 
       veryFastLevel++;
 
@@ -1768,9 +1795,7 @@ function renderTTSControls() {
   );
 
 
-  /* =====================================
-     TTS AYARLARI
-  ===================================== */
+  /* TTS AYARLARI */
 
   const settingsButton =
     document.createElement(
@@ -1806,9 +1831,7 @@ function renderTTSControls() {
   );
 
 
-  /* =====================================
-     7 BUTON
-  ===================================== */
+  /* 7 BUTON */
 
   controls.appendChild(
     slowButton
@@ -1843,6 +1866,8 @@ function renderTTSControls() {
     "afterend",
     controls
   );
+
+  updatePauseButton();
 
 }
 
@@ -2046,34 +2071,8 @@ function toggleTTSSettings() {
   panel.className =
     "tts-settings-panel";
 
-  /*
-   * Inline görünürlük garantisi.
-   * CSS'den bağımsız olarak panelin
-   * ekranda görünmesini sağlar.
-   */
 
-  panel.style.display =
-    "flex";
-
-  panel.style.flexDirection =
-    "column";
-
-  panel.style.width =
-    "100%";
-
-  panel.style.boxSizing =
-    "border-box";
-
-  panel.style.position =
-    "relative";
-
-  panel.style.zIndex =
-    "9999";
-
-
-  /* =====================================
-     BAŞLIK
-  ===================================== */
+  /* BAŞLIK */
 
   const title =
     document.createElement(
@@ -2091,9 +2090,7 @@ function toggleTTSSettings() {
   );
 
 
-  /* =====================================
-     SES
-  ===================================== */
+  /* SES */
 
   const voiceLabel =
     document.createElement(
@@ -2158,9 +2155,7 @@ function toggleTTSSettings() {
   );
 
 
-  /* =====================================
-     HIZ
-  ===================================== */
+  /* HIZ */
 
   const rateLabel =
     document.createElement(
@@ -2227,9 +2222,7 @@ function toggleTTSSettings() {
   );
 
 
-  /* =====================================
-     PERDE
-  ===================================== */
+  /* PERDE */
 
   const pitchLabel =
     document.createElement(
@@ -2292,9 +2285,7 @@ function toggleTTSSettings() {
   );
 
 
-  /* =====================================
-     SES TESTİ
-  ===================================== */
+  /* SES TESTİ */
 
   const testButton =
     document.createElement(
@@ -2333,9 +2324,7 @@ function toggleTTSSettings() {
   );
 
 
-  /* =====================================
-     SIFIRLA
-  ===================================== */
+  /* SIFIRLA */
 
   const reset =
     document.createElement(
@@ -2398,10 +2387,6 @@ function toggleTTSSettings() {
     reset
   );
 
-
-  /* =====================================
-     PANELİ KONTROLLERİN ALTINA EKLE
-  ===================================== */
 
   controls.insertAdjacentElement(
     "afterend",
@@ -2703,6 +2688,7 @@ function updateSpeedButtonsFromState() {
 
 /* =========================================
    TEXT TO SPEECH
+   GELİŞTİRİLMİŞ PAUSE/RESUME
 ========================================= */
 
 function speakText(
@@ -2728,11 +2714,17 @@ function speakText(
 
 
   /*
-   * Yeni konuşma başlatılıyor.
-   * Burada cancel() doğrudur.
-   *
-   * ÖNEMLİ:
-   * Pause işleminde bu fonksiyon çağrılmaz.
+   * Yeni konuşma için yeni session.
+   */
+
+  speechSessionId++;
+
+  const sessionId =
+    speechSessionId;
+
+
+  /*
+   * Önceki konuşmayı kesin olarak bitir.
    */
 
   window.speechSynthesis.cancel();
@@ -2742,21 +2734,51 @@ function speakText(
     text;
 
   speechCurrentCharIndex =
-    resumeFromIndex;
+    Math.max(
+      0,
+      Math.min(
+        resumeFromIndex,
+        text.length
+      )
+    );
 
   speechPaused =
     false;
 
+  speechManualPaused =
+    false;
+
+  speechResumePending =
+    false;
+
   speechIsSpeaking =
     false;
+
+  speechLastBoundaryTime =
+    Date.now();
 
   loadSavedVoice();
 
 
   const textToSpeak =
     text.substring(
-      resumeFromIndex
+      speechCurrentCharIndex
     );
+
+  if (!textToSpeak) {
+
+    speechIsSpeaking =
+      false;
+
+    speechPaused =
+      false;
+
+    updatePauseButton();
+
+    return;
+
+  }
+
 
   speechUtterance =
     new SpeechSynthesisUtterance(
@@ -2788,10 +2810,22 @@ function speakText(
   speechUtterance.onstart =
     () => {
 
+      if (
+        sessionId !== speechSessionId
+      ) {
+        return;
+      }
+
       speechIsSpeaking =
         true;
 
       speechPaused =
+        false;
+
+      speechManualPaused =
+        false;
+
+      speechResumePending =
         false;
 
       updatePauseButton();
@@ -2803,13 +2837,43 @@ function speakText(
     event => {
 
       if (
+        sessionId !== speechSessionId
+      ) {
+        return;
+      }
+
+      if (
         typeof event.charIndex ===
         "number"
       ) {
 
         speechCurrentCharIndex =
+          speechCurrentCharIndex -
+          (textToSpeak.length) +
+          event.charIndex +
+          textToSpeak.length;
+
+        /*
+         * Yukarıdaki hesap global pozisyonu
+         * korumak için kullanılır.
+         */
+
+        const calculated =
           resumeFromIndex +
           event.charIndex;
+
+        if (
+          calculated >= 0 &&
+          calculated <= text.length
+        ) {
+
+          speechCurrentCharIndex =
+            calculated;
+
+        }
+
+        speechLastBoundaryTime =
+          Date.now();
 
       }
 
@@ -2819,14 +2883,43 @@ function speakText(
   speechUtterance.onend =
     () => {
 
+      if (
+        sessionId !== speechSessionId
+      ) {
+        return;
+      }
+
+      /*
+       * Manuel pause sırasında cancel()
+       * nedeniyle onend gelebilir.
+       *
+       * Bu durumda konuşmayı bitmiş
+       * kabul etmiyoruz.
+       */
+
+      if (
+        speechManualPaused ||
+        speechResumePending
+      ) {
+
+        return;
+
+      }
+
       speechIsSpeaking =
         false;
 
       speechPaused =
         false;
 
+      speechManualPaused =
+        false;
+
+      speechResumePending =
+        false;
+
       speechCurrentCharIndex =
-        0;
+        text.length;
 
       updatePauseButton();
 
@@ -2835,6 +2928,37 @@ function speakText(
 
   speechUtterance.onerror =
     event => {
+
+      if (
+        sessionId !== speechSessionId
+      ) {
+        return;
+      }
+
+      /*
+       * Pause sırasında cancel()
+       * bazı tarayıcılarda canceled veya
+       * interrupted hatası üretir.
+       *
+       * Bunlar burada gerçek hata değildir.
+       */
+
+      if (
+        speechManualPaused ||
+        speechResumePending
+      ) {
+
+        speechIsSpeaking =
+          true;
+
+        speechPaused =
+          true;
+
+        updatePauseButton();
+
+        return;
+
+      }
 
       if (
         event.error !== "canceled" &&
@@ -2848,27 +2972,11 @@ function speakText(
 
       }
 
-      /*
-       * Native pause sonrası bazı browserlar
-       * interrupted benzeri event gönderebilir.
-       */
+      speechIsSpeaking =
+        false;
 
-      if (
-        window.speechSynthesis.paused
-      ) {
-
-        speechPaused =
-          true;
-
-        speechIsSpeaking =
-          true;
-
-      } else {
-
-        speechIsSpeaking =
-          false;
-
-      }
+      speechPaused =
+        false;
 
       updatePauseButton();
 
@@ -2928,8 +3036,44 @@ function playSelectedText() {
 
 
   /*
-   * Gerçek native pause durumundaysa
-   * kaldığı yerden devam et.
+   * Manuel pause durumundaysa
+   * cancel edilmiş konuşmayı kaldığı
+   * karakterden yeniden başlat.
+   */
+
+  if (
+    speechManualPaused ||
+    speechPaused
+  ) {
+
+    const text =
+      speechCurrentText;
+
+    const position =
+      speechCurrentCharIndex;
+
+    if (
+      text &&
+      position < text.length
+    ) {
+
+      speechResumePending =
+        false;
+
+      speakText(
+        text,
+        position
+      );
+
+      return;
+
+    }
+
+  }
+
+
+  /*
+   * Native pause hâlâ aktifse resume dene.
    */
 
   if (
@@ -2943,6 +3087,9 @@ function playSelectedText() {
       speechPaused =
         false;
 
+      speechManualPaused =
+        false;
+
       speechIsSpeaking =
         true;
 
@@ -2953,7 +3100,7 @@ function playSelectedText() {
     } catch (error) {
 
       console.warn(
-        "TTS resume başarısız:",
+        "TTS native resume başarısız:",
         error
       );
 
@@ -3008,45 +3155,45 @@ function toggleSpeechPause() {
   }
 
 
-  /* =====================================
-     GERÇEK PAUSE DURUMUNDAN DEVAM
-  ===================================== */
+  /*
+   * Zaten manuel olarak pause edilmişse
+   * kaldığı yerden yeniden başlat.
+   */
 
   if (
-    window.speechSynthesis.paused
+    speechManualPaused ||
+    speechPaused
   ) {
 
-    try {
+    const text =
+      speechCurrentText;
 
-      window.speechSynthesis.resume();
+    const position =
+      speechCurrentCharIndex;
 
-      speechPaused =
+    if (
+      text &&
+      position < text.length
+    ) {
+
+      speechResumePending =
         false;
 
-      speechIsSpeaking =
-        true;
-
-      updatePauseButton();
-
-      return;
-
-    } catch (error) {
-
-      console.warn(
-        "TTS resume başarısız:",
-        error
+      speakText(
+        text,
+        position
       );
 
-      return;
-
     }
+
+    return;
 
   }
 
 
-  /* =====================================
-     KONUŞMA YOK
-  ===================================== */
+  /*
+   * Aktif konuşma yoksa hiçbir şey yapma.
+   */
 
   if (
     !window.speechSynthesis.speaking &&
@@ -3058,9 +3205,12 @@ function toggleSpeechPause() {
   }
 
 
-  /* =====================================
-     NATIVE PAUSE
-  ===================================== */
+  /*
+   * ÖNCE native pause deniyoruz.
+   *
+   * Eğer browser gerçekten pause ederse
+   * native sistemi kullanıyoruz.
+   */
 
   try {
 
@@ -3074,12 +3224,97 @@ function toggleSpeechPause() {
 
     updatePauseButton();
 
+
+    /*
+     * Android/Chrome'da pause bazen görünürde
+     * başarılı olsa bile konuşma devam edebilir.
+     *
+     * 120 ms sonra hâlâ konuşuyorsa manuel
+     * pause mekanizmasına geçiyoruz.
+     */
+
+    setTimeout(
+      () => {
+
+        if (
+          !speechPaused
+        ) {
+          return;
+        }
+
+        if (
+          window.speechSynthesis.paused
+        ) {
+          return;
+        }
+
+        if (
+          !window.speechSynthesis.speaking
+        ) {
+          return;
+        }
+
+
+        /*
+         * Manuel pause.
+         */
+
+        speechManualPaused =
+          true;
+
+        speechResumePending =
+          true;
+
+        /*
+         * Native cancel, STOP değildir.
+         *
+         * Çünkü speechManualPaused true olduğu
+         * için onend/onerror konuşmayı bitmiş
+         * kabul etmeyecek.
+         */
+
+        window.speechSynthesis.cancel();
+
+        speechPaused =
+          true;
+
+        speechIsSpeaking =
+          true;
+
+        updatePauseButton();
+
+      },
+      120
+    );
+
   } catch (error) {
 
     console.warn(
-      "Native TTS pause başarısız:",
+      "Native TTS pause başarısız, manuel pause kullanılıyor:",
       error
     );
+
+
+    /*
+     * Native pause desteklenmiyorsa
+     * doğrudan manuel pause.
+     */
+
+    speechManualPaused =
+      true;
+
+    speechResumePending =
+      true;
+
+    window.speechSynthesis.cancel();
+
+    speechPaused =
+      true;
+
+    speechIsSpeaking =
+      true;
+
+    updatePauseButton();
 
   }
 
@@ -3102,6 +3337,7 @@ function updatePauseButton() {
 
       if (
         speechPaused ||
+        speechManualPaused ||
         (
           "speechSynthesis" in window &&
           window.speechSynthesis.paused
@@ -3146,13 +3382,26 @@ function updatePauseButton() {
 
 function stopSpeech() {
 
+  /*
+   * Yeni session oluştur.
+   * Böylece eski utterance eventleri yeni
+   * konuşmaya müdahale edemez.
+   */
+
+  speechSessionId++;
+
+  speechManualPaused =
+    false;
+
+  speechResumePending =
+    false;
+
   if (
     "speechSynthesis" in window
   ) {
 
     /*
      * STOP için cancel() kullanılır.
-     * PAUSE için kesinlikle kullanılmaz.
      */
 
     window.speechSynthesis.cancel();
@@ -3173,6 +3422,9 @@ function stopSpeech() {
 
   speechIsSpeaking =
     false;
+
+  speechLastBoundaryTime =
+    0;
 
   updatePauseButton();
 
@@ -3196,7 +3448,28 @@ function setSpeechRate(
     window.speechSynthesis.speaking
   ) {
 
-    playSelectedText();
+    const text =
+      speechCurrentText;
+
+    const position =
+      speechCurrentCharIndex;
+
+    stopSpeech();
+
+    if (
+      text
+    ) {
+
+      speakText(
+        text,
+        position
+      );
+
+    } else {
+
+      playSelectedText();
+
+    }
 
   }
 
