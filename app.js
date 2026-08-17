@@ -1,18 +1,15 @@
-async function loadDay(dayFile) {
-    const response = await fetch(dayFile);
+async function loadDay() {
+    const response = await fetch("data/day-01.json");
     const data = await response.json();
-    renderDay(data);
-}
 
-function renderDay(dayData) {
     const content = document.getElementById("content");
     content.innerHTML = "";
 
     const title = document.createElement("h2");
-    title.textContent = dayData.dayTitle.tr;
+    title.textContent = data.dayTitle.tr;
     content.appendChild(title);
 
-    dayData.questions.forEach(q => {
+    data.questions.forEach(q => {
         const div = document.createElement("div");
         div.className = "question";
 
@@ -25,4 +22,4 @@ function renderDay(dayData) {
     });
 }
 
-loadDay("data/day-01.json");
+loadDay();
