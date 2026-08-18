@@ -20,6 +20,7 @@ Kopyala Yapıştır yapacak şekilde ver, ekstra düzenlemem gerekmesin
 # Günlük Dosyalar
 Her günün içeriği:`data/day-XX.json`şeklinde eklenir.
 Örneğin:
+
 `data/day-01.json` → 1–19. sorular  
 `data/day-02.json` → 20–38. sorular  
 `data/day-03.json` → 39–57. sorular  
