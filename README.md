@@ -1,7 +1,7 @@
 # 📖 Bir Müslümanın Yol Haritası
-## 16 Dilli Günlük Dinî Bilgi Rehberi
+# 16 Dilli Günlük Dinî Bilgi Rehberi
 ---
-## Sistem
+# Sistem
 - Her gün 19 yeni soru
 - Sorular kesintisiz numaralandırılır
 - 16 dil ve sıralaması değişmez 
@@ -10,42 +10,60 @@
 - Günlük içerikler ayrı JSON dosyalarında tutulur
 - Her günün başlığı ve alt başlığı günlük JSON dosyasında bulunur
 ---  
-### Sabit Dil Sırası
-Her soruda diller daima aşağıdaki sırayla bulunur:
-1. 🇹🇷 Türkçe
-2. 🇬🇧 English
-3. 🇩🇪 Deutsch
-4. 🇷🇺 Русский
-5. 🇬🇭 Kurmancî
-6. 🇸🇦 العربية
-7. 🇭🇺 Tatarca
-8. 🇫🇷 Français
-9. 🇪🇸 Español
-10. 🇳🇱 Nederlands
-11. 🇮🇹 Italiano
 
 Bu sıra tüm 30 gün boyunca DEĞİŞMEZ.
 ---
-## Günlük Dosyalar
-Her günün içeriği:
-`data/day-XX.json`
-şeklinde eklenir.
-
+# Günlük Dosyalar
+Her günün içeriği:`data/day-XX.json`şeklinde eklenir.
 Örneğin:
-
 `data/day-01.json` → 1–19. sorular  
 `data/day-02.json` → 20–38. sorular  
 `data/day-03.json` → 39–57. sorular  
 `data/day-04.json` → 58–76. sorular  
 
 Her günlük JSON dosyasında:
-
 - `"dayTitle"`
 - `"daySubtitle"`
 - `"questions"`
 - `"sources"`
 
 bilgileri bulunur.
+
+# 📊 Proje Özeti
+
+| Özellik | Değer |
+|---|---|
+| Gün sayısı | 30 |
+| Her gün | 19 soru |
+| Toplam soru | 570 |
+| Dil sayısı | 11 |
+| Günlük JSON | 30 dosya |
+| İlk soru | 1 |
+| Son soru | 570 |
+---
+# 📁 Dosya Yapısı
+
+```text
+yol-haritasi/
+│
+├── index.html
+├── app.js
+├── style.css
+├── README.md
+├── days.json
+│
+└── data/
+    ├── day-01.json
+    ├── day-02.json
+    ├── day-03.json
+    ├── day-04.json
+    ├── ...
+    └── day-30.json
+Bunu  ve days.json dosyasını ana şablon olarak kullan
+İstenen değişiklik  için sadece değiştirelecek bölümle ilgili değişikliği söyle
+değişikliği onayladığım takdirde
+TAM KOD BLOĞU olarak
+Kopyala Yapıştır yapacak şekilde ver, ekstra düzenlemem gerekmesin
 ---
 # 📅 30 Günlük Yol Haritası
 
@@ -169,41 +187,4 @@ bilgileri bulunur.
 **Alt başlık:** Öğrenilen bilgileri hayata geçirmek, Allah'a kulluk etmek ve İslâm'ı bilinçli bir şekilde yaşamak
 **Soru aralığı:** 552–570
 ---
-
-# 📊 Proje Özeti
-
-| Özellik | Değer |
-|---|---|
-| Gün sayısı | 30 |
-| Her gün | 19 soru |
-| Toplam soru | 570 |
-| Dil sayısı | 11 |
-| Günlük JSON | 30 dosya |
-| İlk soru | 1 |
-| Son soru | 570 |
-
----
-
-# 📁 Dosya Yapısı
-
-```text
-yol-haritasi/
-│
-├── index.html
-├── app.js
-├── style.css
-├── README.md
-├── days.json
-│
-└── data/
-    ├── day-01.json
-    ├── day-02.json
-    ├── day-03.json
-    ├── day-04.json
-    ├── ...
-    └── day-30.json
-Bunu ana şablon olarak kullan
-İstenen değişiklik  için
-değiştirelecek bölümünün
-TAM KOD
-kopyala yapıştır yapacak şekilde ver
+ 
