@@ -59,7 +59,8 @@ yol-haritasi/
     ├── day-04.json
     ├── ...
     └── day-30.json
-Bunu  ve days.json dosyasını ana şablon olarak kullan
+
+# 📊 Bunu  ve days.json dosyasını ana şablon olarak kullan
 İstenen değişiklik  için sadece değiştirelecek bölümle ilgili değişikliği söyle
 değişikliği onayladığım takdirde
 TAM KOD BLOĞU olarak
