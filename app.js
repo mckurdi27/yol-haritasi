@@ -42,15 +42,21 @@ const LANGS = [
   },
 
   {
+    key: "nl",
+    flag: "🇳🇱",
+    name: "Nederlands"
+  },
+
+  {
     key: "ru",
     flag: "🇷🇺",
     name: "Русский"
   },
 
   {
-    key: "ku",
-    flag: "🇬🇭",
-    name: "Kurmancî"
+    key: "tt",
+    flag: "🇭🇺",
+    name: "Tatarca"
   },
 
   {
@@ -60,9 +66,9 @@ const LANGS = [
   },
 
   {
-    key: "tt",
-    flag: "🇭🇺",
-    name: "Tatarca"
+    key: "ku",
+    flag: "🇬🇭",
+    name: "Kurmancî"
   },
 
   {
@@ -78,15 +84,39 @@ const LANGS = [
   },
 
   {
-    key: "nl",
-    flag: "🇳🇱",
-    name: "Nederlands"
-  },
-
-  {
     key: "it",
     flag: "🇮🇹",
     name: "Italiano"
+  },
+
+  {
+    key: "pt",
+    flag: "🇵🇹",
+    name: "Português"
+  },
+
+  {
+    key: "ko",
+    flag: "🇰🇷",
+    name: "한국어"
+  },
+
+  {
+    key: "vi",
+    flag: "🇻🇳",
+    name: "Tiếng Việt"
+  },
+
+  {
+    key: "ja",
+    flag: "🇯🇵",
+    name: "日本語"
+  },
+
+  {
+    key: "zh",
+    flag: "🇨🇳",
+    name: "中文"
   }
 
 ];
@@ -263,6 +293,71 @@ const UI = {
     questionCount: "Domande",
     loading: "Caricamento dei giorni...",
     noDays: "Nessun giorno trovato."
+  },
+
+  pt: {
+    title: "O Roteiro de um Muçulmano",
+    subtitle: "Aprenda o Islão passo a passo",
+    days: "Dias",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    source: "📚 Fontes",
+    openSource: "Abrir fonte",
+    questionCount: "Perguntas",
+    loading: "A carregar os dias...",
+    noDays: "Ainda não foram encontrados dias."
+  },
+
+  ko: {
+    title: "무슬림의 길잡이",
+    subtitle: "이슬람을 한 걸음씩 배우다",
+    days: "일차",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    source: "📚 출처",
+    openSource: "출처 열기",
+    questionCount: "질문",
+    loading: "일차를 불러오는 중...",
+    noDays: "아직 일차가 없습니다."
+  },
+
+  vi: {
+    title: "Lộ Trình Của Người Muslim",
+    subtitle: "Học Islam từng bước một",
+    days: "Ngày",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    source: "📚 Nguồn",
+    openSource: "Mở nguồn",
+    questionCount: "Câu hỏi",
+    loading: "Đang tải các ngày...",
+    noDays: "Chưa tìm thấy ngày nào."
+  },
+
+  ja: {
+    title: "ムスリムの道しるべ",
+    subtitle: "イスラームを一歩ずつ学ぶ",
+    days: "日",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    source: "📚 出典",
+    openSource: "出典を開く",
+    questionCount: "質問",
+    loading: "読み込み中...",
+    noDays: "まだ日がありません。"
+  },
+
+  zh: {
+    title: "穆斯林的路线图",
+    subtitle: "循序渐进学习伊斯兰教",
+    days: "天数",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    source: "📚 来源",
+    openSource: "打开来源",
+    questionCount: "问题",
+    loading: "正在加载天数...",
+    noDays: "尚未找到任何天数。"
   }
 
 };
@@ -2545,7 +2640,22 @@ function getTTSTestText() {
       "Dit is een test van de steminstellingen.",
 
     it:
-      "Questo è un test delle impostazioni vocali."
+      "Questo è un test delle impostazioni vocali.",
+
+    pt:
+      "Este é um teste das definições de voz.",
+
+    ko:
+      "이것은 음성 설정 테스트입니다.",
+
+    vi:
+      "Đây là bài kiểm tra cài đặt giọng nói.",
+
+    ja:
+      "これは音声設定のテストです。",
+
+    zh:
+      "这是语音设置的测试。"
 
   };
 
@@ -3228,7 +3338,12 @@ function getSpeechLanguage(
     fr: "fr-FR",
     es: "es-ES",
     nl: "nl-NL",
-    it: "it-IT"
+    it: "it-IT",
+    pt: "pt-PT",
+    ko: "ko-KR",
+    vi: "vi-VN",
+    ja: "ja-JP",
+    zh: "zh-CN"
 
   };
 
