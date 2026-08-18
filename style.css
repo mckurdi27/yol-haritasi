@@ -104,17 +104,14 @@ select {
   border-radius: 14px;
 }
 
-/* Mescid-i Aksâ — 1. */
 .holy-site-aqsa {
   order: 1;
 }
 
-/* Kâbe — 2. */
 .holy-site-kaaba {
   order: 2;
 }
 
-/* Mescid-i Nebevî — 3. */
 .holy-site-nabawi {
   order: 3;
 }
@@ -137,7 +134,7 @@ select {
   order: 4;
 
   width: 100%;
-  margin: 25px auto 0;
+  margin: 35px auto 0;
   padding: 14px 18px;
 
   border-radius: 14px;
@@ -156,7 +153,7 @@ select {
 ========================================= */
 
 .home-subtitle {
-  margin: 28px 0 30px;
+  margin: 34px 0 38px;
   font-size: 18px;
   text-align: center;
 }
@@ -536,14 +533,14 @@ footer {
 
   .roadmap-title {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 25px;
     padding: 9px;
     font-size: 20px;
   }
 
   .home-subtitle {
-    margin-top: 24px;
-    margin-bottom: 30px;
+    margin-top: 28px;
+    margin-bottom: 34px;
   }
 
   .navigation-main-row {
@@ -601,4 +598,3 @@ footer {
   }
 
 }
-
