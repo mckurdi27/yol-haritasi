@@ -1,3 +1,4 @@
+[README.md](https://github.com/user-attachments/files/31196731/README.md)
 # 📖 Bir Müslümanın Yol Haritası
 # 16 Dilli Günlük Dinî Bilgi Rehberi
 ---
@@ -43,7 +44,7 @@ bilgileri bulunur.
 | Gün sayısı | 30 |
 | Her gün | 19 soru |
 | Toplam soru | 570 |
-| Dil sayısı | 11 |
+| Dil sayısı | 16 |
 | Günlük JSON | 30 dosya |
 | İlk soru | 1 |
 | Son soru | 570 |
@@ -190,4 +191,4 @@ yol-haritasi/
 **Alt başlık:** Öğrenilen bilgileri hayata geçirmek, Allah'a kulluk etmek ve İslâm'ı bilinçli bir şekilde yaşamak
 **Soru aralığı:** 552–570
 ---
- 
+  
