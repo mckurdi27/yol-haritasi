@@ -9,13 +9,11 @@
     "websiteUsesMasterFile": false,
     "websiteSource": "data/day-XX.json"
   },
-
   "rules": {
     "questionNumbering": "continuous",
     "questionsPerDay": 19,
     "totalQuestions": 570,
     "totalDays": 30,
-
     "languageOrder": [
       "tr",
       "en",
@@ -34,9 +32,7 @@
       "ja",
       "zh"
     ],
-
     "fixedLanguageOrder": true,
-
     "navigation": {
       "questionInput": true,
       "dayInput": true,
@@ -45,7 +41,6 @@
       "dayNavigation": "previous day / number input / next day"
     }
   },
-
   "languages": [
     {
       "position": 1,
@@ -144,10 +139,9 @@
       "flag": "🇨🇳"
     }
   ],
-
   "day": 4,
   "dayTitle": {
-    "tr": "4. Gün — Vahiy ve Peygamberler",
+    "tr": "4. Gün — Peygamberler ve Peygamberlik",
     "en": "Day 4 — Revelation and Prophets",
     "de": "Tag 4 — Offenbarung und Propheten",
     "nl": "Dag 4 — Openbaring en profeten",
@@ -164,9 +158,8 @@
     "ja": "4日目 — 啓示と預言者たち",
     "zh": "第4天——启示与先知"
   },
-
   "daySubtitle": {
-    "tr": "Vahyin ne olduğunu, peygamberlerin görevini ve Hz. Muhammed ﷺ'in risaletini öğren.",
+    "tr": "Peygamberlerin görevi, özellikleri, mucizeler ve peygamberlere iman",
     "en": "Learn what revelation is, the mission of the prophets, and the message of Prophet Muhammad ﷺ.",
     "de": "Lerne, was Offenbarung ist, welche Aufgabe die Propheten hatten und was die Botschaft Muhammads ﷺ war.",
     "nl": "Leer wat openbaring is, wat de taak van de profeten was en wat de boodschap van de profeet Muhammad ﷺ was.",
@@ -183,7 +176,6 @@
     "ja": "啓示とは何か、預言者たちの使命、そして預言者ムハンマド ﷺ の使信について学びましょう。",
     "zh": "学习什么是启示、先知们的使命，以及先知穆罕默德 ﷺ 所传达的信息。"
   },
-
   "questions": [
     {
       "id": 58,
