@@ -1,396 +1,455 @@
 {
-  "pt": {
-    "39": {
-      "q": "Quem é Allah?",
-      "a": "Allah é o Criador e Senhor de todas as coisas e o Único digno de adoração. Não há divindade digna de adoração além d'Ele."
-    },
-    "40": {
-      "q": "Como acreditamos na existência de Allah?",
-      "a": "Acreditamos firmemente na existência de Allah. A ordem, a medida e a sabedoria na criação indicam a Sua existência."
-    },
-    "41": {
-      "q": "O que significa a unicidade de Allah?",
-      "a": "A unicidade de Allah significa acreditar que Ele é Único e sem igual na Sua essência, nos Seus atributos e no Seu direito de ser adorado."
-    },
-    "42": {
-      "q": "Allah tem algum parceiro?",
-      "a": "Não. Allah não tem parceiro, ajudante, igual ou semelhante."
-    },
-    "43": {
-      "q": "Quem criou Allah?",
-      "a": "Allah não foi criado. Ele é eterno e é o Criador de tudo o que foi criado."
-    },
-    "44": {
-      "q": "Allah é eterno e perpétuo?",
-      "a": "Sim. Allah não tem princípio nem fim. Ele é o Primeiro e o Último."
-    },
-    "45": {
-      "q": "Onde está Allah e como Ele é?",
-      "a": "Allah não é semelhante à Sua criação. A mente humana não pode compreender plenamente a realidade da Sua essência."
-    },
-    "46": {
-      "q": "Quais são os nomes de Allah?",
-      "a": "Allah possui belos nomes mencionados no Alcorão e na Sunnah autêntica. Eles são chamados de Belos Nomes de Allah."
-    },
-    "47": {
-      "q": "O que significa Al-Asma al-Husna?",
-      "a": "Al-Asma al-Husna significa os Mais Belos Nomes de Allah."
-    },
-    "48": {
-      "q": "O que significam Ar-Rahman e Ar-Rahim?",
-      "a": "Ar-Rahman indica a ampla misericórdia de Allah para com a Sua criação, enquanto Ar-Rahim indica especialmente a Sua misericórdia para com os crentes."
-    },
-    "49": {
-      "q": "Allah sabe tudo?",
-      "a": "Sim. Allah conhece o passado, o presente e o futuro. O Seu conhecimento abrange todas as coisas."
-    },
-    "50": {
-      "q": "Allah vê tudo?",
-      "a": "Sim. Allah vê todas as coisas, tanto as ocultas como as aparentes. Nada Lhe está oculto."
-    },
-    "51": {
-      "q": "Allah ouve tudo?",
-      "a": "Sim. Allah ouve todos os sons e súplicas. A Sua audição é ilimitada."
-    },
-    "52": {
-      "q": "O que significa o poder de Allah?",
-      "a": "O poder de Allah significa que Ele tem poder sobre todas as coisas e realiza, com sabedoria, aquilo que Ele quer."
-    },
-    "53": {
-      "q": "Allah está próximo dos Seus servos?",
-      "a": "Sim. Allah ouve as súplicas dos Seus servos, conhece as suas situações e está próximo deles pela Sua misericórdia."
-    },
-    "54": {
-      "q": "Por que Allah é digno de adoração?",
-      "a": "Porque Allah é o único Criador e o nosso Senhor. Ele concede todas as bênçãos e somente Ele é digno de adoração."
-    },
-    "55": {
-      "q": "O que são os atributos de Allah?",
-      "a": "Os atributos de Allah são qualidades perfeitas que são próprias da Sua essência. Eles não se assemelham às qualidades das criaturas."
-    },
-    "56": {
-      "q": "Allah possui amor e ira?",
-      "a": "Sim. O Alcorão e a Sunnah mencionam aqueles que Allah ama e de quem está satisfeito, bem como aqueles que incorrem na Sua ira. Os Seus atributos não se assemelham aos das criaturas."
-    },
-    "57": {
-      "q": "Como a fé em Allah influencia a nossa vida?",
-      "a": "A fé em Allah leva a pessoa a confiar n'Ele, amá-Lo, temer desagradar-Lhe, adorá-Lo e organizar a sua vida de acordo com a Sua satisfação."
-    }
+  "dayTitle": {
+    "pt": "Dia 3 — Conhecer Allah",
+    "ko": "3일차 — 알라 알아가기",
+    "vi": "Ngày 3 — Nhận biết Allah",
+    "ja": "3日目 — アッラーを知る",
+    "zh": "第3天 — 认识真主"
   },
-
-  "ko": {
-    "39": {
-      "q": "알라는 누구이신가?",
-      "a": "알라는 모든 존재의 창조주이시며 주님이시고, 오직 그분만이 예배받을 자격이 있으시다. 그분 외에는 예배받을 자격이 있는 신이 없다."
-    },
-    "40": {
-      "q": "우리는 알라의 존재를 어떻게 믿는가?",
-      "a": "우리는 알라의 존재를 확고하게 믿는다. 창조 세계의 질서와 정확한 척도와 지혜는 그분의 존재를 가리킨다."
-    },
-    "41": {
-      "q": "알라의 유일성은 무엇을 의미하는가?",
-      "a": "알라의 유일성이란 그분의 본질과 속성 그리고 예배받을 권리에 있어서 그분은 유일하시며 어떠한 동등한 존재도 없다고 믿는 것이다."
-    },
-    "42": {
-      "q": "알라에게 동반자가 있는가?",
-      "a": "아니다. 알라에게는 동반자도, 조력자도, 동등한 존재도, 그분과 비슷한 존재도 없다."
-    },
-    "43": {
-      "q": "누가 알라를 창조하였는가?",
-      "a": "알라는 창조된 존재가 아니다. 그분은 영원하시며 모든 피조물을 창조하신 분이시다."
-    },
-    "44": {
-      "q": "알라는 영원하시고 불멸하시는가?",
-      "a": "그렇다. 알라에게는 시작도 끝도 없다. 그분은 처음이시며 마지막이시다."
-    },
-    "45": {
-      "q": "알라는 어디에 계시며 어떤 분이신가?",
-      "a": "알라는 자신의 피조물과 같지 않으시다. 인간의 이성은 그분의 본질의 실재를 완전히 이해할 수 없다."
-    },
-    "46": {
-      "q": "알라의 이름들은 무엇인가?",
-      "a": "알라께는 꾸란과 정통 순나에 언급된 아름다운 이름들이 있다. 이것을 알라의 가장 아름다운 이름들(아스마 알후스나)이라고 한다."
-    },
-    "47": {
-      "q": "알아스마 알후스나는 무엇을 의미하는가?",
-      "a": "알아스마 알후스나는 알라의 가장 아름다운 이름들을 의미한다."
-    },
-    "48": {
-      "q": "아르라흐만과 아르라힘은 무엇을 의미하는가?",
-      "a": "아르라흐만은 알라께서 피조물에게 베푸시는 광대한 자비를 의미하며, 아르라힘은 특히 믿는 자들에게 베푸시는 특별한 자비를 의미한다."
-    },
-    "49": {
-      "q": "알라는 모든 것을 아시는가?",
-      "a": "그렇다. 알라는 과거와 현재와 미래를 아신다. 그분의 지식은 모든 것을 포괄한다."
-    },
-    "50": {
-      "q": "알라는 모든 것을 보시는가?",
-      "a": "그렇다. 알라는 숨겨진 것과 드러난 모든 것을 보신다. 그분에게 숨겨지는 것은 아무것도 없다."
-    },
-    "51": {
-      "q": "알라는 모든 것을 들으시는가?",
-      "a": "그렇다. 알라는 모든 소리와 기도를 들으신다. 그분의 들으심에는 한계가 없다."
-    },
-    "52": {
-      "q": "알라의 권능은 무엇을 의미하는가?",
-      "a": "알라의 권능은 그분이 모든 것에 능하시며 지혜로써 자신이 원하시는 것을 이루신다는 의미이다."
-    },
-    "53": {
-      "q": "알라는 자신의 종들에게 가까우신가?",
-      "a": "그렇다. 알라는 자신의 종들의 기도를 들으시고 그들의 상태를 아시며 자신의 자비로 그들에게 가까우시다."
-    },
-    "54": {
-      "q": "왜 알라만이 예배받을 자격이 있으신가?",
-      "a": "알라만이 창조주이시며 우리의 주님이시기 때문이다. 모든 은혜를 베푸시는 분도 그분이시며 오직 그분만이 예배받을 자격이 있으시다."
-    },
-    "55": {
-      "q": "알라의 속성은 무엇인가?",
-      "a": "알라의 속성은 그분의 본질에 합당한 완전한 특성들이다. 그분의 속성은 피조물의 속성과 같지 않다."
-    },
-    "56": {
-      "q": "알라께 사랑과 분노가 있는가?",
-      "a": "그렇다. 꾸란과 순나에는 알라께서 사랑하시고 기뻐하시는 사람들과 그분의 분노를 받는 사람들에 대한 언급이 있다. 그러나 그분의 속성은 피조물의 속성과 같지 않다."
-    },
-    "57": {
-      "q": "알라에 대한 믿음은 우리의 삶에 어떤 영향을 미치는가?",
-      "a": "알라에 대한 믿음은 사람이 그분을 신뢰하고 사랑하며 그분의 불쾌하심을 두려워하고 그분을 예배하며 자신의 삶을 그분의 기쁨에 맞추어 살아가게 한다."
-    }
+  "daySubtitle": {
+    "pt": "A existência, unicidade, nomes e atributos de Allah e a fé n'Ele",
+    "ko": "알라의 존재와 유일성, 이름과 속성, 그리고 알라에 대한 믿음",
+    "vi": "Sự tồn tại, tính duy nhất, các danh xưng và thuộc tính của Allah, cùng đức tin nơi Ngài",
+    "ja": "アッラーの存在、唯一性、その御名と属性、そしてアッラーへの信仰",
+    "zh": "真主的存在、独一性、尊名与属性，以及对真主的信仰"
   },
-
-  "vi": {
-    "39": {
-      "q": "Allah là ai?",
-      "a": "Allah là Đấng Tạo Hóa và là Chúa Tể của muôn loài, và chỉ một mình Ngài xứng đáng được thờ phượng. Không có thần linh nào xứng đáng được thờ phượng ngoài Ngài."
+  "questions": [
+    {
+      "id": 39,
+      "pt": {
+        "q": "Quem é Allah?",
+        "a": "Allah é o Criador e Senhor de todas as coisas e o Único digno de adoração. Não há nenhuma divindade digna de adoração além d'Ele."
+      },
+      "ko": {
+        "q": "알라는 누구이신가?",
+        "a": "알라는 모든 것의 창조주이자 주님이시며, 오직 홀로 예배받으실 자격이 있는 분이시다. 그분 외에는 예배받을 자격이 있는 신이 없다."
+      },
+      "vi": {
+        "q": "Allah là ai?",
+        "a": "Allah là Đấng Tạo Hóa và là Thượng Đế của tất cả mọi vật, và chỉ mình Ngài xứng đáng được thờ phượng. Không có thần linh nào đáng được thờ phượng ngoài Ngài."
+      },
+      "ja": {
+        "q": "アッラーとは誰ですか？",
+        "a": "アッラーはすべてのものの創造主であり主宰者であり、ただ御一方だけが崇拝されるにふさわしい御方です。御方以外に真に崇拝されるべき神はありません。"
+      },
+      "zh": {
+        "q": "真主是谁？",
+        "a": "真主是万物的创造者和养育者，唯有祂值得崇拜。除祂之外，绝无应受崇拜的主宰。"
+      }
     },
-    "40": {
-      "q": "Chúng ta tin vào sự tồn tại của Allah như thế nào?",
-      "a": "Chúng ta tin chắc chắn vào sự tồn tại của Allah. Trật tự, sự cân bằng và sự khôn ngoan trong tạo vật chỉ ra sự tồn tại của Ngài."
+    {
+      "id": 40,
+      "pt": {
+        "q": "Como acreditamos na existência de Allah?",
+        "a": "Cremos firmemente na existência de Allah. A ordem, a medida e a sabedoria presentes na criação indicam a Sua existência."
+      },
+      "ko": {
+        "q": "우리는 알라의 존재를 어떻게 믿는가?",
+        "a": "우리는 알라의 존재를 확고히 믿는다. 창조된 세계에 나타나는 질서와 균형과 지혜는 그분의 존재를 가리킨다."
+      },
+      "vi": {
+        "q": "Chúng ta tin vào sự tồn tại của Allah như thế nào?",
+        "a": "Chúng ta tin chắc chắn vào sự tồn tại của Allah. Trật tự, sự cân đối và sự khôn ngoan trong tạo vật chỉ rõ sự tồn tại của Ngài."
+      },
+      "ja": {
+        "q": "私たちはどのようにアッラーの存在を信じますか？",
+        "a": "私たちはアッラーの存在を確信して信じます。創造物に見られる秩序、均衡、英知は、御方の存在を示しています。"
+      },
+      "zh": {
+        "q": "我们如何相信真主的存在？",
+        "a": "我们坚定地相信真主的存在。受造物中的秩序、尺度和智慧，都指向祂的存在。"
+      }
     },
-    "41": {
-      "q": "Sự duy nhất của Allah có nghĩa là gì?",
-      "a": "Sự duy nhất của Allah có nghĩa là tin rằng Ngài là Đấng duy nhất, không có ai ngang hàng với Ngài về bản thể, thuộc tính và quyền được thờ phượng."
+    {
+      "id": 41,
+      "pt": {
+        "q": "O que significa a unicidade de Allah?",
+        "a": "A unicidade de Allah significa acreditar que Ele é Único e incomparável em Sua essência, Seus atributos e Seu direito de ser adorado."
+      },
+      "ko": {
+        "q": "알라의 유일성은 무엇을 의미하는가?",
+        "a": "알라의 유일성이란 그분의 본질과 속성, 그리고 예배받으실 권리에서 그분은 유일하시며 그와 동등한 존재가 없음을 믿는 것이다."
+      },
+      "vi": {
+        "q": "Tính duy nhất của Allah có nghĩa là gì?",
+        "a": "Tính duy nhất của Allah có nghĩa là tin rằng Ngài là Đấng duy nhất, không có ai ngang hàng với Ngài về bản thể, thuộc tính và quyền được thờ phượng."
+      },
+      "ja": {
+        "q": "アッラーの唯一性とは何を意味しますか？",
+        "a": "アッラーの唯一性とは、その本質、属性、そして崇拝される権利において、御方が唯一無二であり、いかなる同等者もいないと信じることです。"
+      },
+      "zh": {
+        "q": "真主的独一性是什么意思？",
+        "a": "真主的独一性，是指相信祂在本体、属性以及应受崇拜的权利方面都是独一无二、绝无匹敌的。"
+      }
     },
-    "42": {
-      "q": "Allah có đối tác hay không?",
-      "a": "Không. Allah không có đối tác, người trợ giúp, đối thủ ngang hàng hay bất cứ gì giống Ngài."
+    {
+      "id": 42,
+      "pt": {
+        "q": "Allah tem algum associado?",
+        "a": "Não. Allah não tem associado, ajudante, igual ou semelhante."
+      },
+      "ko": {
+        "q": "알라에게 동반자가 있는가?",
+        "a": "아니다. 알라에게는 어떠한 동반자도, 조력자도, 동등한 존재도, 그분과 같은 존재도 없다."
+      },
+      "vi": {
+        "q": "Allah có một đối tác nào không?",
+        "a": "Không. Allah không có đối tác, người trợ giúp, đối thủ hay bất cứ ai giống Ngài."
+      },
+      "ja": {
+        "q": "アッラーには同位者がありますか？",
+        "a": "いいえ。アッラーにはいかなる同位者も、助力者も、同等者も、類似するものもありません。"
+      },
+      "zh": {
+        "q": "真主有配偶或伙伴吗？",
+        "a": "没有。真主没有任何伙伴、助手、匹敌者或相似者。"
+      }
     },
-    "43": {
-      "q": "Ai đã tạo ra Allah?",
-      "a": "Allah không phải là một tạo vật. Ngài là Đấng Vĩnh Hằng và là Đấng Tạo Hóa của tất cả những gì được tạo ra."
+    {
+      "id": 43,
+      "pt": {
+        "q": "Quem criou Allah?",
+        "a": "Allah não foi criado. Ele é Eterno e é o Criador de todas as criaturas."
+      },
+      "ko": {
+        "q": "누가 알라를 창조하였는가?",
+        "a": "알라는 창조된 분이 아니다. 그분은 영원하시며 모든 피조물을 창조하신 창조주이시다."
+      },
+      "vi": {
+        "q": "Ai đã tạo ra Allah?",
+        "a": "Allah không được tạo ra. Ngài là Đấng Vĩnh Hằng và là Đấng Tạo Hóa của tất cả các tạo vật."
+      },
+      "ja": {
+        "q": "誰がアッラーを創造したのですか？",
+        "a": "アッラーは創造された御方ではありません。御方は永遠であり、すべての被造物の創造主です。"
+      },
+      "zh": {
+        "q": "谁创造了真主？",
+        "a": "真主不是被创造的。祂是永恒的，是一切受造物的创造者。"
+      }
     },
-    "44": {
-      "q": "Allah có vĩnh hằng và bất diệt không?",
-      "a": "Có. Allah không có khởi đầu cũng không có kết thúc. Ngài là Đấng Đầu Tiên và Đấng Cuối Cùng."
+    {
+      "id": 44,
+      "pt": {
+        "q": "Allah é eterno e perpétuo?",
+        "a": "Sim. Allah não tem princípio nem fim. Ele é Eterno e Perpétuo."
+      },
+      "ko": {
+        "q": "알라는 영원하시며 영속하시는가?",
+        "a": "그렇다. 알라에게는 시작도 끝도 없다. 그분은 영원하시며 영속하시는 분이시다."
+      },
+      "vi": {
+        "q": "Allah có vĩnh hằng và trường tồn không?",
+        "a": "Có. Allah không có khởi đầu cũng không có kết thúc. Ngài là Đấng Vĩnh Hằng và Trường Tồn."
+      },
+      "ja": {
+        "q": "アッラーは永遠であり、永久に存続されますか？",
+        "a": "はい。アッラーには始まりも終わりもありません。御方は永遠であり、永久に存続される御方です。"
+      },
+      "zh": {
+        "q": "真主是永恒的吗？",
+        "a": "是的。真主没有开始，也没有终结。祂是最初的，也是最后的，是永恒不灭的。"
+      }
     },
-    "45": {
-      "q": "Allah ở đâu và Ngài như thế nào?",
-      "a": "Allah không giống với tạo vật của Ngài. Trí tuệ con người không thể hoàn toàn nhận thức được thực chất bản thể của Ngài."
+    {
+      "id": 45,
+      "pt": {
+        "q": "Onde está Allah e como Ele é?",
+        "a": "Allah não se assemelha à Sua criação. A mente humana não pode compreender plenamente a realidade da Sua essência."
+      },
+      "ko": {
+        "q": "알라는 어디에 계시며 어떤 분이신가?",
+        "a": "알라는 그분의 피조물과 닮지 않으신다. 인간의 이성은 그분의 본질의 실체를 완전히 이해할 수 없다."
+      },
+      "vi": {
+        "q": "Allah ở đâu và Ngài như thế nào?",
+        "a": "Allah không giống với bất kỳ tạo vật nào của Ngài. Trí óc con người không thể hoàn toàn thấu hiểu thực tại bản thể của Ngài."
+      },
+      "ja": {
+        "q": "アッラーはどこにおられ、どのような御方ですか？",
+        "a": "アッラーは御自身の創造物とは似ておられません。人間の理性は、御方の本質の実相を完全に理解することはできません。"
+      },
+      "zh": {
+        "q": "真主在哪里？祂是怎样的？",
+        "a": "真主不像任何受造物。人的理智无法完全理解祂本体的真实情况。"
+      }
     },
-    "46": {
-      "q": "Các danh xưng của Allah là gì?",
-      "a": "Allah có những danh xưng tốt đẹp được đề cập trong Qur'an và Sunnah đích thực. Chúng được gọi là Những Danh Xưng Tốt Đẹp của Allah."
+    {
+      "id": 46,
+      "pt": {
+        "q": "Quais são os nomes de Allah?",
+        "a": "Allah possui belos nomes mencionados no Alcorão e na Sunnah autêntica. Eles são chamados de Al-Asma al-Husna."
+      },
+      "ko": {
+        "q": "알라의 이름들은 무엇인가?",
+        "a": "알라에게는 꾸란과 확실한 순나에 언급된 아름다운 이름들이 있다. 이를 '아스마 알후스나'라고 한다."
+      },
+      "vi": {
+        "q": "Các danh xưng của Allah là gì?",
+        "a": "Allah có những danh xưng tốt đẹp được nêu trong Kinh Qur'an và Sunnah đích thực. Chúng được gọi là Al-Asma Al-Husna."
+      },
+      "ja": {
+        "q": "アッラーの御名とは何ですか？",
+        "a": "アッラーにはクルアーンと真正なスンナに述べられている美しい御名があります。それらは「アル＝アスマー・アル＝フスナー」と呼ばれます。"
+      },
+      "zh": {
+        "q": "真主有哪些尊名？",
+        "a": "真主有许多美好的尊名，这些尊名见于《古兰经》和可靠的圣行，称为“真主的至美尊名”。"
+      }
     },
-    "47": {
-      "q": "Al-Asma al-Husna có nghĩa là gì?",
-      "a": "Al-Asma al-Husna có nghĩa là Những Danh Xưng Tốt Đẹp Nhất của Allah."
+    {
+      "id": 47,
+      "pt": {
+        "q": "O que significa Al-Asma al-Husna?",
+        "a": "Al-Asma al-Husna significa os Mais Belos Nomes de Allah."
+      },
+      "ko": {
+        "q": "아스마 알후스나는 무엇을 의미하는가?",
+        "a": "아스마 알후스나는 '알라의 가장 아름다운 이름들'이라는 뜻이다."
+      },
+      "vi": {
+        "q": "Al-Asma Al-Husna có nghĩa là gì?",
+        "a": "Al-Asma Al-Husna có nghĩa là Những Danh Xưng Tốt Đẹp Nhất của Allah."
+      },
+      "ja": {
+        "q": "アル＝アスマー・アル＝フスナーとはどういう意味ですか？",
+        "a": "アル＝アスマー・アル＝フスナーとは、アッラーの最も美しい御名という意味です。"
+      },
+      "zh": {
+        "q": "“真主的至美尊名”是什么意思？",
+        "a": "它指的是真主最美好的尊名。"
+      }
     },
-    "48": {
-      "q": "Ar-Rahman và Ar-Rahim có nghĩa là gì?",
-      "a": "Ar-Rahman chỉ lòng thương xót rộng lớn của Allah đối với tạo vật, còn Ar-Rahim đặc biệt chỉ lòng thương xót của Ngài đối với những người có đức tin."
+    {
+      "id": 48,
+      "pt": {
+        "q": "O que significam Ar-Rahman e Ar-Rahim?",
+        "a": "Ar-Rahman indica a vasta misericórdia de Allah para com Sua criação, enquanto Ar-Rahim indica especialmente Sua misericórdia para com os crentes."
+      },
+      "ko": {
+        "q": "아르라흐만과 아르라힘은 무엇을 의미하는가?",
+        "a": "아르라흐만은 모든 피조물에 대한 알라의 광대한 자비를 나타내며, 아르라힘은 특히 믿는 자들에 대한 그분의 특별한 자비를 나타낸다."
+      },
+      "vi": {
+        "q": "Ar-Rahman và Ar-Rahim có nghĩa là gì?",
+        "a": "Ar-Rahman chỉ lòng thương xót bao la của Allah đối với tạo vật của Ngài, còn Ar-Rahim đặc biệt chỉ lòng thương xót của Ngài đối với những người có đức tin."
+      },
+      "ja": {
+        "q": "アッ＝ラフマーンとアッ＝ラヒームはどういう意味ですか？",
+        "a": "アッ＝ラフマーンは創造物に対するアッラーの広大な慈悲を示し、アッ＝ラヒームは特に信仰者たちへの御方の特別な慈悲を示します。"
+      },
+      "zh": {
+        "q": "“至仁的”和“至慈的”是什么意思？",
+        "a": "“至仁的”（Ar-Rahman）表示真主对祂的受造物所施予的广博慈悯；“至慈的”（Ar-Rahim）特别表示祂对信士们的特殊慈悯。"
+      }
     },
-    "49": {
-      "q": "Allah có biết mọi thứ không?",
-      "a": "Có. Allah biết quá khứ, hiện tại và tương lai. Kiến thức của Ngài bao quát tất cả mọi thứ."
+    {
+      "id": 49,
+      "pt": {
+        "q": "Allah sabe tudo?",
+        "a": "Sim. Allah conhece o passado, o presente e o futuro. O Seu conhecimento abrange todas as coisas."
+      },
+      "ko": {
+        "q": "알라는 모든 것을 알고 계시는가?",
+        "a": "그렇다. 알라는 과거와 현재와 미래를 아신다. 그분의 지식은 모든 것을 포괄한다."
+      },
+      "vi": {
+        "q": "Allah có biết tất cả mọi thứ không?",
+        "a": "Có. Allah biết quá khứ, hiện tại và tương lai. Kiến thức của Ngài bao trùm tất cả mọi thứ."
+      },
+      "ja": {
+        "q": "アッラーはすべてを御存じですか？",
+        "a": "はい。アッラーは過去、現在、未来を御存じです。御方の知識はすべてのものを包み込んでいます。"
+      },
+      "zh": {
+        "q": "真主知道一切吗？",
+        "a": "是的。真主知道过去、现在和未来。祂的知识涵盖万物。"
+      }
     },
-    "50": {
-      "q": "Allah có nhìn thấy mọi thứ không?",
-      "a": "Có. Allah nhìn thấy mọi thứ, dù kín đáo hay công khai. Không có gì bị che giấu khỏi Ngài."
+    {
+      "id": 50,
+      "pt": {
+        "q": "Allah vê tudo?",
+        "a": "Sim. Allah vê tudo, tanto o que está oculto como o que é manifesto. Nada está oculto d'Ele."
+      },
+      "ko": {
+        "q": "알라는 모든 것을 보시는가?",
+        "a": "그렇다. 알라는 숨겨진 것이든 드러난 것이든 모든 것을 보신다. 그분에게 숨겨지는 것은 아무것도 없다."
+      },
+      "vi": {
+        "q": "Allah có nhìn thấy tất cả mọi thứ không?",
+        "a": "Có. Allah nhìn thấy mọi thứ, dù kín đáo hay công khai. Không có gì có thể che giấu khỏi Ngài."
+      },
+      "ja": {
+        "q": "アッラーはすべてをご覧になりますか？",
+        "a": "はい。アッラーは隠されたものも明らかなものも、すべてをご覧になります。御方に隠れるものは何もありません。"
+      },
+      "zh": {
+        "q": "真主看见一切吗？",
+        "a": "是的。真主看见一切，无论隐藏的还是显露的。没有任何事情能瞒过祂。"
+      }
     },
-    "51": {
-      "q": "Allah có nghe thấy mọi thứ không?",
-      "a": "Có. Allah nghe tất cả âm thanh và lời cầu nguyện. Sự nghe của Ngài không có giới hạn."
+    {
+      "id": 51,
+      "pt": {
+        "q": "Allah ouve tudo?",
+        "a": "Sim. Allah ouve todos os sons e todas as súplicas. A Sua audição é ilimitada."
+      },
+      "ko": {
+        "q": "알라는 모든 것을 들으시는가?",
+        "a": "그렇다. 알라는 모든 소리와 간구를 들으신다. 그분의 들으심에는 한계가 없다."
+      },
+      "vi": {
+        "q": "Allah có nghe tất cả mọi thứ không?",
+        "a": "Có. Allah nghe mọi âm thanh và mọi lời cầu nguyện. Thính giác của Ngài không có giới hạn."
+      },
+      "ja": {
+        "q": "アッラーはすべてをお聞きになりますか？",
+        "a": "はい。アッラーはすべての音と祈りをお聞きになります。御方の聴覚には限りがありません。"
+      },
+      "zh": {
+        "q": "真主听见一切吗？",
+        "a": "是的。真主听见一切声音和祈求。祂的听闻没有任何限制。"
+      }
     },
-    "52": {
-      "q": "Quyền năng của Allah có nghĩa là gì?",
-      "a": "Quyền năng của Allah có nghĩa là Ngài có quyền năng trên tất cả mọi thứ và Ngài thực hiện điều Ngài muốn bằng sự khôn ngoan."
+    {
+      "id": 52,
+      "pt": {
+        "q": "O que significa o poder de Allah?",
+        "a": "O poder de Allah significa que Ele tem poder sobre todas as coisas e realiza o que quer com sabedoria."
+      },
+      "ko": {
+        "q": "알라의 권능은 무엇을 의미하는가?",
+        "a": "알라의 권능은 그분이 모든 것에 대한 능력을 가지시며, 지혜로써 그분이 원하시는 것을 이루신다는 뜻이다."
+      },
+      "vi": {
+        "q": "Quyền năng của Allah có nghĩa là gì?",
+        "a": "Quyền năng của Allah có nghĩa là Ngài có quyền năng trên tất cả mọi thứ và thực hiện điều Ngài muốn bằng sự khôn ngoan."
+      },
+      "ja": {
+        "q": "アッラーの御力とはどういう意味ですか？",
+        "a": "アッラーの御力とは、御方がすべてのものに対して力を持ち、英知をもって御望みになることを実現されるという意味です。"
+      },
+      "zh": {
+        "q": "真主的权能是什么意思？",
+        "a": "真主的权能是指祂对万物拥有绝对的能力，并以智慧实现祂所意欲的事情。"
+      }
     },
-    "53": {
-      "q": "Allah có gần gũi với những người tôi tớ của Ngài không?",
-      "a": "Có. Allah nghe lời cầu nguyện của những người tôi tớ Ngài, biết hoàn cảnh của họ và gần gũi với họ bằng lòng thương xót của Ngài."
+    {
+      "id": 53,
+      "pt": {
+        "q": "Allah está próximo de Seus servos?",
+        "a": "Sim. Allah ouve as súplicas de Seus servos, conhece a sua situação e está próximo deles por Sua misericórdia."
+      },
+      "ko": {
+        "q": "알라는 그분의 종들에게 가까이 계시는가?",
+        "a": "그렇다. 알라는 그분의 종들의 간구를 들으시고 그들의 상태를 아시며, 그분의 자비로 그들에게 가까이 계신다."
+      },
+      "vi": {
+        "q": "Allah có gần gũi những người bề tôi của Ngài không?",
+        "a": "Có. Allah nghe lời cầu nguyện của những người bề tôi của Ngài, biết rõ hoàn cảnh của họ và gần gũi họ bằng lòng thương xót của Ngài."
+      },
+      "ja": {
+        "q": "アッラーは僕たちに近い御方ですか？",
+        "a": "はい。アッラーは僕たちの祈りをお聞きになり、その状態を御存じであり、御慈悲によって僕たちに近い御方です。"
+      },
+      "zh": {
+        "q": "真主接近祂的仆人吗？",
+        "a": "是的。真主听见祂仆人的祈求，知道他们的处境，并以祂的慈悯接近他们。"
+      }
     },
-    "54": {
-      "q": "Tại sao Allah xứng đáng được thờ phượng?",
-      "a": "Bởi vì chỉ Allah là Đấng Tạo Hóa và là Chúa Tể của chúng ta. Ngài ban mọi ân phước và chỉ một mình Ngài xứng đáng được thờ phượng."
+    {
+      "id": 54,
+      "pt": {
+        "q": "Por que Allah é digno de adoração?",
+        "a": "Porque somente Allah é o Criador e nosso Senhor. Ele concede todas as bênçãos e somente Ele merece ser adorado."
+      },
+      "ko": {
+        "q": "왜 알라만이 예배받으실 자격이 있는가?",
+        "a": "알라만이 유일한 창조주이시며 우리의 주님이시기 때문이다. 모든 은혜를 베푸시는 분은 그분이며, 오직 그분만이 예배받으실 자격이 있다."
+      },
+      "vi": {
+        "q": "Tại sao Allah xứng đáng được thờ phượng?",
+        "a": "Bởi vì chỉ Allah là Đấng Tạo Hóa và là Thượng Đế của chúng ta. Ngài ban mọi ân phúc và chỉ mình Ngài xứng đáng được thờ phượng."
+      },
+      "ja": {
+        "q": "なぜアッラーは崇拝されるにふさわしいのですか？",
+        "a": "なぜならアッラーだけが創造主であり、私たちの主宰者だからです。すべての恩恵を与えるのは御方であり、御方だけが崇拝されるにふさわしいのです。"
+      },
+      "zh": {
+        "q": "为什么真主值得被崇拜？",
+        "a": "因为唯有真主是创造者和我们的养育者。祂赐予一切恩惠，唯有祂值得被崇拜。"
+      }
     },
-    "55": {
-      "q": "Các thuộc tính của Allah là gì?",
-      "a": "Các thuộc tính của Allah là những phẩm chất hoàn hảo phù hợp với bản thể của Ngài. Chúng không giống với thuộc tính của các tạo vật."
+    {
+      "id": 55,
+      "pt": {
+        "q": "Quais são os atributos de Allah?",
+        "a": "Os atributos de Allah são qualidades perfeitas que correspondem à Sua essência. Eles não se assemelham às qualidades das criaturas."
+      },
+      "ko": {
+        "q": "알라의 속성은 무엇인가?",
+        "a": "알라의 속성은 그분의 본질에 합당한 완전한 특성들이다. 그분의 속성은 피조물의 속성과 같지 않다."
+      },
+      "vi": {
+        "q": "Các thuộc tính của Allah là gì?",
+        "a": "Các thuộc tính của Allah là những phẩm chất hoàn hảo phù hợp với bản thể của Ngài. Chúng không giống với các thuộc tính của tạo vật."
+      },
+      "ja": {
+        "q": "アッラーの属性とは何ですか？",
+        "a": "アッラーの属性とは、御方の本質にふさわしい完全な特性です。それらは被造物の特性とは異なります。"
+      },
+      "zh": {
+        "q": "真主的属性是什么？",
+        "a": "真主的属性是与祂的本体相称的完美属性。这些属性不同于受造物的属性。"
+      }
     },
-    "56": {
-      "q": "Allah có tình yêu và sự giận dữ không?",
-      "a": "Có. Qur'an và Sunnah đề cập đến những người được Allah yêu thương và hài lòng, cũng như những người phải chịu cơn giận của Ngài. Các thuộc tính của Ngài không giống với thuộc tính của tạo vật."
+    {
+      "id": 56,
+      "pt": {
+        "q": "Allah tem amor e ira?",
+        "a": "Sim. O Alcorão e a Sunnah mencionam aqueles que Allah ama e de quem está satisfeito, bem como aqueles que incorrem na Sua ira. Os Seus atributos não se assemelham aos das criaturas."
+      },
+      "ko": {
+        "q": "알라에게 사랑과 분노가 있는가?",
+        "a": "그렇다. 꾸란과 순나는 알라께서 사랑하시고 기뻐하시는 사람들과 그분의 분노를 초래하는 사람들에 대해 언급한다. 그분의 속성은 피조물의 속성과 같지 않다."
+      },
+      "vi": {
+        "q": "Allah có tình yêu và sự giận dữ không?",
+        "a": "Có. Kinh Qur'an và Sunnah đề cập đến những người được Allah yêu thương và hài lòng, cũng như những người phải chịu cơn giận của Ngài. Các thuộc tính của Ngài không giống với thuộc tính của tạo vật."
+      },
+      "ja": {
+        "q": "アッラーには愛と怒りがありますか？",
+        "a": "はい。クルアーンとスンナには、アッラーが愛し喜ばれる者たち、また御怒りを受ける者たちについて述べられています。御方の属性は被造物の属性とは異なります。"
+      },
+      "zh": {
+        "q": "真主有爱与恼怒吗？",
+        "a": "是的。《古兰经》和圣行提到真主所喜爱并喜悦的人，也提到招致祂恼怒的人。但祂的属性不同于受造物的属性。"
+      }
     },
-    "57": {
-      "q": "Đức tin vào Allah ảnh hưởng đến cuộc sống của chúng ta như thế nào?",
-      "a": "Đức tin vào Allah khiến con người tin cậy Ngài, yêu Ngài, sợ làm Ngài không hài lòng, thờ phượng Ngài và sắp xếp cuộc sống theo sự hài lòng của Ngài."
+    {
+      "id": 57,
+      "pt": {
+        "q": "Como a fé em Allah afeta nossa vida?",
+        "a": "A fé em Allah leva a pessoa a confiar n'Ele, amá-Lo, temer desagradar-Lhe, adorá-Lo e organizar sua vida de acordo com o Seu agrado."
+      },
+      "ko": {
+        "q": "알라에 대한 믿음은 우리의 삶에 어떤 영향을 미치는가?",
+        "a": "알라에 대한 믿음은 사람이 그분을 신뢰하고, 사랑하며, 그분의 불만을 초래하는 것을 두려워하고, 그분을 예배하며, 그분의 기쁨에 따라 삶을 살아가도록 한다."
+      },
+      "vi": {
+        "q": "Đức tin nơi Allah ảnh hưởng đến cuộc sống của chúng ta như thế nào?",
+        "a": "Đức tin nơi Allah khiến con người tin cậy Ngài, yêu mến Ngài, sợ làm Ngài phật lòng, thờ phượng Ngài và sắp xếp cuộc sống theo sự hài lòng của Ngài."
+      },
+      "ja": {
+        "q": "アッラーへの信仰は私たちの人生にどのような影響を与えますか？",
+        "a": "アッラーへの信仰は、人が御方を信頼し、愛し、御方の不興を恐れ、御方を崇拝し、御方の御満悦に従って人生を整えるように導きます。"
+      },
+      "zh": {
+        "q": "信仰真主如何影响我们的生活？",
+        "a": "信仰真主会使人信赖祂、爱祂、害怕违逆祂、崇拜祂，并按照祂的喜悦来安排自己的生活。"
+      }
     }
-  },
-
-  "ja": {
-    "39": {
-      "q": "アッラーとは誰ですか？",
-      "a": "アッラーはすべての存在の創造主であり主であり、ただ御方だけが崇拝されるに値します。御方以外に正当に崇拝されるべき神はありません。"
-    },
-    "40": {
-      "q": "私たちはどのようにアッラーの存在を信じますか？",
-      "a": "私たちはアッラーの存在を確信して信じます。創造物に見られる秩序、均衡、英知は、御方の存在を示しています。"
-    },
-    "41": {
-      "q": "アッラーの唯一性とは何を意味しますか？",
-      "a": "アッラーの唯一性とは、御方がその本質、属性、そして崇拝される権利において唯一無二であると信じることです。"
-    },
-    "42": {
-      "q": "アッラーには仲間や同位者がありますか？",
-      "a": "いいえ。アッラーには仲間も、助け手も、同位者も、御方に似たものもありません。"
-    },
-    "43": {
-      "q": "誰がアッラーを創造したのですか？",
-      "a": "アッラーは創造された存在ではありません。御方は永遠であり、創造されたすべてのものの創造主です。"
-    },
-    "44": {
-      "q": "アッラーは永遠ですか？",
-      "a": "はい。アッラーには始まりも終わりもありません。御方は最初であり、最後です。"
-    },
-    "45": {
-      "q": "アッラーはどこにいて、どのようなお方ですか？",
-      "a": "アッラーは御自身の創造物とは似ていません。人間の知性は御方の本質の実相を完全に理解することはできません。"
-    },
-    "46": {
-      "q": "アッラーの御名前とは何ですか？",
-      "a": "アッラーにはクルアーンと真正なスンナに記されている美しい御名前があります。それらはアッラーの美名（アル＝アスマー・アル＝フスナー）と呼ばれます。"
-    },
-    "47": {
-      "q": "アル＝アスマー・アル＝フスナーとは何を意味しますか？",
-      "a": "アル＝アスマー・アル＝フスナーとは、アッラーの最も美しい御名前を意味します。"
-    },
-    "48": {
-      "q": "アッ＝ラフマーンとアッ＝ラヒームとは何を意味しますか？",
-      "a": "アッ＝ラフマーンは創造物に対するアッラーの広大な慈悲を示し、アッ＝ラヒームは特に信仰する者たちへの御慈悲を示します。"
-    },
-    "49": {
-      "q": "アッラーはすべてを知っていますか？",
-      "a": "はい。アッラーは過去、現在、未来を知っておられます。御方の知識はすべてのものを包みます。"
-    },
-    "50": {
-      "q": "アッラーはすべてをご覧になりますか？",
-      "a": "はい。アッラーは隠されたものも明らかなものもすべてご覧になります。御方から隠れるものは何もありません。"
-    },
-    "51": {
-      "q": "アッラーはすべてをお聞きになりますか？",
-      "a": "はい。アッラーはすべての声と祈りをお聞きになります。御方の聴覚には限界がありません。"
-    },
-    "52": {
-      "q": "アッラーの御力とは何を意味しますか？",
-      "a": "アッラーの御力とは、御方がすべてのものに対して力を持ち、英知をもって御望みになることを実現されることを意味します。"
-    },
-    "53": {
-      "q": "アッラーは御自身の僕たちに近いお方ですか？",
-      "a": "はい。アッラーは御自身の僕たちの祈りをお聞きになり、彼らの状態を知り、御慈悲によって彼らに近いお方です。"
-    },
-    "54": {
-      "q": "なぜアッラーは崇拝されるに値するのですか？",
-      "a": "なぜならアッラーだけが創造主であり、私たちの主だからです。すべての恩恵を与えるのも御方であり、ただ御方だけが崇拝されるに値します。"
-    },
-    "55": {
-      "q": "アッラーの属性とは何ですか？",
-      "a": "アッラーの属性とは、御方の本質にふさわしい完全な特性です。それらは被造物の属性とは似ていません。"
-    },
-    "56": {
-      "q": "アッラーには愛と怒りがありますか？",
-      "a": "はい。クルアーンとスンナには、アッラーが愛し満足される者たち、また御方の怒りを招く者たちについて述べられています。ただし、御方の属性は被造物の属性とは異なります。"
-    },
-    "57": {
-      "q": "アッラーへの信仰は私たちの人生にどのような影響を与えますか？",
-      "a": "アッラーへの信仰は、人を御方に信頼し、御方を愛し、御方の不興を恐れ、御方を崇拝し、御方の御満足に従って人生を整えるよう導きます。"
-    }
-  },
-
-  "zh": {
-    "39": {
-      "q": "安拉是谁？",
-      "a": "安拉是一切存在的创造者和主宰，唯有祂值得受到崇拜。除祂之外，没有任何应受崇拜的神。"
-    },
-    "40": {
-      "q": "我们如何相信安拉的存在？",
-      "a": "我们坚定地相信安拉的存在。被造物中的秩序、尺度和智慧都指向祂的存在。"
-    },
-    "41": {
-      "q": "安拉的独一性是什么意思？",
-      "a": "安拉的独一性意味着相信祂在本体、属性以及应受崇拜的权利方面都是独一无二的。"
-    },
-    "42": {
-      "q": "安拉有伙伴吗？",
-      "a": "没有。安拉没有伙伴、助手、同等者，也没有任何与祂相似的存在。"
-    },
-    "43": {
-      "q": "谁创造了安拉？",
-      "a": "安拉不是被创造的。祂是永恒的，是一切被造物的创造者。"
-    },
-    "44": {
-      "q": "安拉是永恒的吗？",
-      "a": "是的。安拉没有开始，也没有结束。祂是最初的，也是最后的。"
-    },
-    "45": {
-      "q": "安拉在哪里？祂是什么样的？",
-      "a": "安拉不像祂所创造的任何事物。人的理智无法完全理解祂本体的真实情况。"
-    },
-    "46": {
-      "q": "安拉有哪些尊名？",
-      "a": "安拉有许多美好的尊名，这些尊名记载于《古兰经》和可靠的圣训中，被称为安拉的美名。"
-    },
-    "47": {
-      "q": "“阿斯玛·胡斯纳”是什么意思？",
-      "a": "“阿斯玛·胡斯纳”意为安拉最美好的尊名。"
-    },
-    "48": {
-      "q": "“至仁主”和“至慈主”是什么意思？",
-      "a": "“至仁主”表示安拉对祂的创造物所施予的广大慈悯；“至慈主”特别表示祂对信士的慈悯。"
-    },
-    "49": {
-      "q": "安拉知道一切吗？",
-      "a": "是的。安拉知道过去、现在和未来。祂的知识涵盖一切。"
-    },
-    "50": {
-      "q": "安拉看见一切吗？",
-      "a": "是的。安拉看见一切，无论隐藏的还是显现的。没有任何事情能瞒过祂。"
-    },
-    "51": {
-      "q": "安拉听见一切吗？",
-      "a": "是的。安拉听见所有声音和祈祷。祂的听觉没有任何限制。"
-    },
-    "52": {
-      "q": "安拉的能力是什么意思？",
-      "a": "安拉的能力意味着祂对万事万物都有能力，并以智慧实现祂所意欲的事情。"
-    },
-    "53": {
-      "q": "安拉亲近祂的仆人吗？",
-      "a": "是的。安拉听见祂的仆人的祈祷，知道他们的情况，并以祂的慈悯亲近他们。"
-    },
-    "54": {
-      "q": "为什么安拉值得受到崇拜？",
-      "a": "因为只有安拉是创造者，是我们的主。祂赐予一切恩典，唯有祂值得受到崇拜。"
-    },
-    "55": {
-      "q": "安拉的属性是什么？",
-      "a": "安拉的属性是符合祂本体的完美属性。祂的属性不同于被造物的属性。"
-    },
-    "56": {
-      "q": "安拉有爱和愤怒吗？",
-      "a": "有。《古兰经》和圣训提到安拉所喜爱并满意的人，也提到招致祂愤怒的人。然而，祂的属性不同于被造物的属性。"
-    },
-    "57": {
-      "q": "信仰安拉如何影响我们的生活？",
-      "a": "信仰安拉使人信赖祂、爱祂、害怕使祂不悦、崇拜祂，并按照祂的喜悦来安排自己的生活。"
-    }
-  }
-}
+  ]
+      }
