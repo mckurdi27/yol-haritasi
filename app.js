@@ -587,11 +587,21 @@ async function loadDays() {
   const requests = [];
 
   for (let number = 0; number <= 30; number++) {
-    const file = `data/day-${String(number).padStart(2, "0")}.json`;
-    const url = `${file}?v=${Date.now()}`;
+    const fileName = `day-${String(number).padStart(2, "0")}.json`;
+    const primaryFile = `data/${fileName}`;
+    const fallbackFile = fileName;
+    const primaryUrl = `${primaryFile}?v=${Date.now()}`;
+    const fallbackUrl = `${fallbackFile}?v=${Date.now()}`;
 
     requests.push(
-      fetch(url, { method: "GET", cache: "no-store" })
+      fetch(primaryUrl, { method: "GET", cache: "no-store" })
+        .then(async response => {
+          if (!response.ok) {
+            // Eski/yerel paket yapısı için geri dönüş yolu.
+            return fetch(fallbackUrl, { method: "GET", cache: "no-store" });
+          }
+          return response;
+        })
         .then(async response => {
           if (!response.ok) {
             console.warn(`Gün ${number} mevcut değil:`, response.status);
@@ -600,7 +610,7 @@ async function loadDays() {
 
           const text = await response.text();
           if (!text.trim()) {
-            console.warn(`Gün ${number} boş:`, file);
+            console.warn(`Gün ${number} boş:`, primaryFile);
             return null;
           }
 
@@ -632,7 +642,7 @@ async function loadDays() {
 
           const questions = Array.isArray(data) ? data : data.questions;
           if (!Array.isArray(questions) || !questions.length) {
-            console.warn(`⚠️ Gün ${number}: soru yok.`, file);
+            console.warn(`⚠️ Gün ${number}: soru yok.`, primaryFile);
             return null;
           }
 
