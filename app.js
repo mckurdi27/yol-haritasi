@@ -1,6 +1,19 @@
 /* =========================================
    BİR MÜSLÜMANIN YOL HARİTASI
-   APP.JS — TAM DOSYA
+   11 DİL
+   APP.JS
+
+   TTS:
+   - Parçalı konuşma sistemi
+   - Pause / Devam
+   - Durdur
+   - Yavaşlat
+   - Hızlandır
+   - Çok hızlandır
+   - TTS ayarları
+
+   NOT:
+   Sitenin diğer sistemlerine dokunulmamıştır.
 ========================================= */
 
 
@@ -9,17 +22,73 @@
 ========================================= */
 
 const LANGS = [
-  { key: "tr", flag: "🇹🇷", name: "Türkçe" },
-  { key: "en", flag: "🇬🇧", name: "English" },
-  { key: "de", flag: "🇩🇪", name: "Deutsch" },
-  { key: "ru", flag: "🇷🇺", name: "Русский" },
-  { key: "ku", flag: "🇬🇭", name: "Kurmancî" },
-  { key: "ar", flag: "🇸🇦", name: "العربية" },
-  { key: "tt", flag: "🇭🇺", name: "Tatarca" },
-  { key: "fr", flag: "🇫🇷", name: "Français" },
-  { key: "es", flag: "🇪🇸", name: "Español" },
-  { key: "nl", flag: "🇳🇱", name: "Nederlands" },
-  { key: "it", flag: "🇮🇹", name: "Italiano" }
+
+  {
+    key: "tr",
+    flag: "🇹🇷",
+    name: "Türkçe"
+  },
+
+  {
+    key: "en",
+    flag: "🇬🇧",
+    name: "English"
+  },
+
+  {
+    key: "de",
+    flag: "🇩🇪",
+    name: "Deutsch"
+  },
+
+  {
+    key: "ru",
+    flag: "🇷🇺",
+    name: "Русский"
+  },
+
+  {
+    key: "ku",
+    flag: "🇬🇭",
+    name: "Kurmancî"
+  },
+
+  {
+    key: "ar",
+    flag: "🇸🇦",
+    name: "العربية"
+  },
+
+  {
+    key: "tt",
+    flag: "🇭🇺",
+    name: "Tatarca"
+  },
+
+  {
+    key: "fr",
+    flag: "🇫🇷",
+    name: "Français"
+  },
+
+  {
+    key: "es",
+    flag: "🇪🇸",
+    name: "Español"
+  },
+
+  {
+    key: "nl",
+    flag: "🇳🇱",
+    name: "Nederlands"
+  },
+
+  {
+    key: "it",
+    flag: "🇮🇹",
+    name: "Italiano"
+  }
+
 ];
 
 
@@ -67,6 +136,9 @@ const UI = {
     days: "Tage",
     previousQuestion: "←",
     nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Quellen",
     openSource: "Quelle öffnen",
     questionCount: "Fragen",
@@ -80,6 +152,9 @@ const UI = {
     days: "Дни",
     previousQuestion: "←",
     nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Источники",
     openSource: "Открыть источник",
     questionCount: "Вопросов",
@@ -93,6 +168,9 @@ const UI = {
     days: "Roj",
     previousQuestion: "←",
     nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Çavkanî",
     openSource: "Çavkaniyê veke",
     questionCount: "Pirs",
@@ -202,7 +280,9 @@ if (!UI[selectedLang]) {
 }
 
 let days = [];
+
 let currentDayIndex = 0;
+
 let currentQuestionIndex = 0;
 
 
@@ -219,33 +299,62 @@ let speechPitch =
 let selectedVoiceName =
   localStorage.getItem("ttsVoice") || "";
 
-let selectedVoice = null;
 let speechUtterance = null;
+
+let selectedVoice = null;
+
+
+/* =========================================
+   TTS HIZ SEVİYELERİ
+========================================= */
+
+let slowLevel = 0;
+
+let fastLevel = 0;
+
+let veryFastLevel = 0;
 
 
 /* =========================================
    TTS DURUMU
 ========================================= */
 
-let speechCurrentText = "";
-let speechCurrentCharIndex = 0;
-let speechLastBoundaryIndex = 0;
+let speechPaused = false;
 
 let speechIsSpeaking = false;
-let speechStarting = false;
-let speechPaused = false;
+
 let speechManualPaused = false;
 
-let speechSessionId = 0;
+let speechCurrentText = "";
 
 
-/* =========================================
-   HIZ SEVİYELERİ
-========================================= */
+/*
+ * PARÇALI TTS SİSTEMİ
+ *
+ * Metin küçük parçalara ayrılır.
+ * Android Chrome'un güvenilmez charIndex
+ * sistemine artık güvenilmez.
+ */
 
-let slowLevel = 0;
-let fastLevel = 0;
-let veryFastLevel = 0;
+let speechChunks = [];
+
+let speechChunkIndex = 0;
+
+let speechChunkSession = 0;
+
+
+/*
+ * Pause sırasında mevcut parçanın başından
+ * tekrar başlamak yerine, mevcut küçük parça
+ * tekrar okunur.
+ *
+ * Parçalar kısa tutulduğu için geriye dönüş
+ * çok küçük olur.
+ */
+
+let speechChunkWordCount = 7;
+
+let speechStarting = false;
 
 
 /* =========================================
@@ -270,11 +379,12 @@ async function init() {
   loadSavedVoice();
 
   renderHome();
+
 }
 
 
 /* =========================================
-   SESLERİ YÜKLE
+   TTS SESLERİNİ YÜKLE
 ========================================= */
 
 function loadSavedVoice() {
@@ -301,38 +411,42 @@ function loadSavedVoice() {
         voice =>
           voice.name === selectedVoiceName
       ) || null;
+
   }
 
   if (!selectedVoice) {
 
     const speechLang =
-      getSpeechLanguage(selectedLang);
-
-    const shortLang =
-      speechLang
-        .split("-")[0]
-        .toLowerCase();
+      getSpeechLanguage(
+        selectedLang
+      );
 
     selectedVoice =
       voices.find(
         voice =>
-          voice.lang &&
-          voice.lang.toLowerCase() ===
-            speechLang.toLowerCase()
+          voice.lang === speechLang
       ) ||
       voices.find(
         voice =>
           voice.lang &&
           voice.lang
             .toLowerCase()
-            .startsWith(shortLang)
+            .startsWith(
+              speechLang
+                .split("-")[0]
+                .toLowerCase()
+            )
       ) ||
       null;
+
   }
+
 }
 
 
-if ("speechSynthesis" in window) {
+if (
+  "speechSynthesis" in window
+) {
 
   window.speechSynthesis.onvoiceschanged =
     () => {
@@ -345,9 +459,15 @@ if ("speechSynthesis" in window) {
         );
 
       if (select) {
-        populateVoiceSelect(select);
+
+        populateVoiceSelect(
+          select
+        );
+
       }
+
     };
+
 }
 
 
@@ -358,6 +478,10 @@ if ("speechSynthesis" in window) {
 async function loadDays() {
 
   days = [];
+
+  console.log(
+    "📚 Günler yükleniyor..."
+  );
 
   const requests = [];
 
@@ -370,10 +494,13 @@ async function loadDays() {
     const file =
       `data/day-${String(number).padStart(2, "0")}.json`;
 
+    const url =
+      `${file}?v=${Date.now()}`;
+
     requests.push(
 
       fetch(
-        `${file}?v=${Date.now()}`,
+        url,
         {
           method: "GET",
           cache: "no-store"
@@ -384,6 +511,12 @@ async function loadDays() {
           async response => {
 
             if (!response.ok) {
+
+              console.warn(
+                `Gün ${number} mevcut değil:`,
+                response.status
+              );
+
               return null;
             }
 
@@ -391,18 +524,29 @@ async function loadDays() {
               await response.text();
 
             if (!text.trim()) {
+
+              console.warn(
+                `Gün ${number} boş:`,
+                file
+              );
+
               return null;
             }
 
             let data;
 
             try {
-              data = JSON.parse(text);
+
+              data =
+                JSON.parse(text);
+
             } catch (error) {
+
               console.error(
-                `Gün ${number} JSON hatası:`,
+                `❌ Gün ${number} JSON hatası:`,
                 error
               );
+
               return null;
             }
 
@@ -411,47 +555,83 @@ async function loadDays() {
                 ? data
                 : data.questions;
 
-            if (!Array.isArray(questions)) {
+            if (
+              !Array.isArray(questions)
+            ) {
+
+              console.warn(
+                `⚠️ Gün ${number}: questions dizisi bulunamadı.`,
+                file
+              );
+
               return null;
             }
 
-            if (!questions.length) {
+            if (
+              questions.length === 0
+            ) {
+
+              console.warn(
+                `⚠️ Gün ${number}: soru bulunamadı.`,
+                file
+              );
+
               return null;
             }
+
+            console.log(
+              `✅ Gün ${number} yüklendi: ${questions.length} soru`
+            );
 
             return {
+
               number,
+
               questions,
+
               info:
                 Array.isArray(data)
                   ? {}
                   : data
+
             };
+
           }
         )
 
         .catch(
           error => {
+
             console.error(
-              `Gün ${number} yüklenemedi:`,
+              `❌ Gün ${number} yüklenemedi:`,
               error
             );
+
             return null;
+
           }
         )
+
     );
+
   }
 
   const results =
-    await Promise.all(requests);
+    await Promise.all(
+      requests
+    );
 
   days =
     results
-      .filter(Boolean)
+      .filter(
+        item =>
+          item !== null
+      )
       .sort(
         (a, b) =>
           a.number - b.number
       );
+
 }
 
 
@@ -462,19 +642,27 @@ async function loadDays() {
 function renderHome() {
 
   const home =
-    document.querySelector("#home-page");
+    document.querySelector(
+      "#home-page"
+    );
 
   const questionPage =
-    document.querySelector("#question-page");
+    document.querySelector(
+      "#question-page"
+    );
 
-  if (!home || !questionPage) {
+  if (
+    !home ||
+    !questionPage
+  ) {
     return;
   }
 
-  stopSpeech();
+  home.style.display =
+    "block";
 
-  home.style.display = "block";
-  questionPage.style.display = "none";
+  questionPage.style.display =
+    "none";
 
   const selector =
     document.querySelector(
@@ -482,73 +670,113 @@ function renderHome() {
     );
 
   if (selector) {
-    renderLanguageButtons(selector);
+
+    renderLanguageButtons(
+      selector
+    );
+
   }
 
   const roadmapTitle =
-    home.querySelector(".roadmap-title");
+    home.querySelector(
+      ".roadmap-title"
+    );
 
   if (roadmapTitle) {
 
-    roadmapTitle.innerHTML = "";
+    roadmapTitle.innerHTML =
+      "";
+
+    const title =
+      UI[selectedLang].title;
 
     const words =
-      UI[selectedLang].title
+      title
         .trim()
         .split(/\s+/);
 
     const middle =
-      Math.ceil(words.length / 2);
+      Math.ceil(
+        words.length / 2
+      );
 
     const firstLine =
-      document.createElement("div");
+      document.createElement(
+        "div"
+      );
 
     firstLine.textContent =
       words
-        .slice(0, middle)
+        .slice(
+          0,
+          middle
+        )
         .join(" ");
 
     const secondLine =
-      document.createElement("div");
+      document.createElement(
+        "div"
+      );
 
     secondLine.textContent =
       words
-        .slice(middle)
+        .slice(
+          middle
+        )
         .join(" ");
 
-    roadmapTitle.appendChild(firstLine);
-    roadmapTitle.appendChild(secondLine);
+    roadmapTitle.appendChild(
+      firstLine
+    );
+
+    roadmapTitle.appendChild(
+      secondLine
+    );
+
   }
 
   const subtitle =
-    home.querySelector(".home-subtitle");
+    home.querySelector(
+      ".home-subtitle"
+    );
 
   if (subtitle) {
+
     subtitle.textContent =
       UI[selectedLang].subtitle;
+
   }
 
   const sectionTitle =
-    home.querySelector(".days-section h2");
+    home.querySelector(
+      ".days-section h2"
+    );
 
   if (sectionTitle) {
+
     sectionTitle.textContent =
       UI[selectedLang].days;
+
   }
 
   const list =
-    document.querySelector("#days-list");
+    document.querySelector(
+      "#days-list"
+    );
 
   if (!list) {
     return;
   }
 
-  list.innerHTML = "";
+  list.innerHTML =
+    "";
 
   if (!days.length) {
 
     const message =
-      document.createElement("p");
+      document.createElement(
+        "p"
+      );
 
     message.className =
       "loading-days";
@@ -556,7 +784,9 @@ function renderHome() {
     message.textContent =
       UI[selectedLang].noDays;
 
-    list.appendChild(message);
+    list.appendChild(
+      message
+    );
 
     return;
   }
@@ -565,19 +795,30 @@ function renderHome() {
     (dayData, index) => {
 
       const card =
-        document.createElement("button");
+        document.createElement(
+          "button"
+        );
 
-      card.type = "button";
-      card.className = "day-card";
+      card.type =
+        "button";
+
+      card.className =
+        "day-card";
 
       const title =
-        getDayTitle(dayData);
+        getDayTitle(
+          dayData
+        );
 
       const subtitle =
-        getDaySubtitle(dayData);
+        getDaySubtitle(
+          dayData
+        );
 
       const titleLine =
-        document.createElement("div");
+        document.createElement(
+          "div"
+        );
 
       titleLine.className =
         "day-card-title";
@@ -585,12 +826,16 @@ function renderHome() {
       titleLine.textContent =
         `${title} · ${dayData.questions.length} ${UI[selectedLang].questionCount}`;
 
-      card.appendChild(titleLine);
+      card.appendChild(
+        titleLine
+      );
 
       if (subtitle) {
 
         const subtitleLine =
-          document.createElement("div");
+          document.createElement(
+            "div"
+          );
 
         subtitleLine.className =
           "day-card-subtitle";
@@ -598,7 +843,10 @@ function renderHome() {
         subtitleLine.textContent =
           subtitle;
 
-        card.appendChild(subtitleLine);
+        card.appendChild(
+          subtitleLine
+        );
+
       }
 
       card.addEventListener(
@@ -607,16 +855,24 @@ function renderHome() {
 
           stopSpeech();
 
-          currentDayIndex = index;
-          currentQuestionIndex = 0;
+          currentDayIndex =
+            index;
+
+          currentQuestionIndex =
+            0;
 
           renderQuestion();
+
         }
       );
 
-      list.appendChild(card);
+      list.appendChild(
+        card
+      );
+
     }
   );
+
 }
 
 
@@ -624,7 +880,9 @@ function renderHome() {
    GÜN BAŞLIĞI
 ========================================= */
 
-function getDayTitle(dayData) {
+function getDayTitle(
+  dayData
+) {
 
   const info =
     dayData.info || {};
@@ -639,6 +897,7 @@ function getDayTitle(dayData) {
       info.dayTitle.tr ||
       `${dayData.number}. Gün`
     );
+
   }
 
   if (
@@ -651,6 +910,7 @@ function getDayTitle(dayData) {
       info.title.tr ||
       `${dayData.number}. Gün`
     );
+
   }
 
   const first =
@@ -666,6 +926,7 @@ function getDayTitle(dayData) {
       first.dayTitle.tr ||
       `${dayData.number}. Gün`
     );
+
   }
 
   if (
@@ -673,9 +934,11 @@ function getDayTitle(dayData) {
   ) {
 
     return first.dayTitle;
+
   }
 
   return `${dayData.number}. Gün`;
+
 }
 
 
@@ -683,7 +946,9 @@ function getDayTitle(dayData) {
    GÜN ALT BAŞLIĞI
 ========================================= */
 
-function getDaySubtitle(dayData) {
+function getDaySubtitle(
+  dayData
+) {
 
   const info =
     dayData.info || {};
@@ -698,6 +963,7 @@ function getDaySubtitle(dayData) {
       info.daySubtitle.tr ||
       ""
     );
+
   }
 
   if (
@@ -710,6 +976,7 @@ function getDaySubtitle(dayData) {
       info.subtitle.tr ||
       ""
     );
+
   }
 
   const first =
@@ -725,6 +992,7 @@ function getDaySubtitle(dayData) {
       first.daySubtitle.tr ||
       ""
     );
+
   }
 
   if (
@@ -732,9 +1000,11 @@ function getDaySubtitle(dayData) {
   ) {
 
     return first.daySubtitle;
+
   }
 
   return "";
+
 }
 
 
@@ -742,21 +1012,28 @@ function getDaySubtitle(dayData) {
    DİL BUTONLARI
 ========================================= */
 
-function renderLanguageButtons(container) {
+function renderLanguageButtons(
+  container
+) {
 
   if (!container) {
     return;
   }
 
-  container.innerHTML = "";
+  container.innerHTML =
+    "";
 
   LANGS.forEach(
     language => {
 
       const button =
-        document.createElement("button");
+        document.createElement(
+          "button"
+        );
 
-      button.type = "button";
+      button.type =
+        "button";
+
       button.className =
         "language-button";
 
@@ -775,7 +1052,10 @@ function renderLanguageButtons(container) {
         language.key === selectedLang
       ) {
 
-        button.classList.add("active");
+        button.classList.add(
+          "active"
+        );
+
       }
 
       button.addEventListener(
@@ -783,6 +1063,7 @@ function renderLanguageButtons(container) {
         () => {
 
           stopSpeech();
+
           closeTTSSettings();
 
           selectedLang =
@@ -810,8 +1091,7 @@ function renderLanguageButtons(container) {
 
           if (
             questionPage &&
-            questionPage.style.display !==
-              "none"
+            questionPage.style.display !== "none"
           ) {
 
             renderQuestion();
@@ -819,13 +1099,19 @@ function renderLanguageButtons(container) {
           } else {
 
             renderHome();
+
           }
+
         }
       );
 
-      container.appendChild(button);
+      container.appendChild(
+        button
+      );
+
     }
   );
+
 }
 
 
@@ -836,15 +1122,23 @@ function renderLanguageButtons(container) {
 function renderQuestion() {
 
   stopSpeech();
+
   closeTTSSettings();
 
   const home =
-    document.querySelector("#home-page");
+    document.querySelector(
+      "#home-page"
+    );
 
   const page =
-    document.querySelector("#question-page");
+    document.querySelector(
+      "#question-page"
+    );
 
-  if (!home || !page) {
+  if (
+    !home ||
+    !page
+  ) {
     return;
   }
 
@@ -854,11 +1148,15 @@ function renderQuestion() {
   ) {
 
     renderHome();
+
     return;
   }
 
-  home.style.display = "none";
-  page.style.display = "block";
+  home.style.display =
+    "none";
+
+  page.style.display =
+    "block";
 
   const dayData =
     days[currentDayIndex];
@@ -881,36 +1179,53 @@ function renderQuestion() {
     return;
   }
 
-  content.innerHTML = "";
+  content.innerHTML =
+    "";
 
   const dayTitle =
-    document.createElement("h2");
+    document.createElement(
+      "h2"
+    );
 
   dayTitle.className =
     "question-day-title";
 
   dayTitle.textContent =
-    getDayTitle(dayData);
+    getDayTitle(
+      dayData
+    );
 
-  content.appendChild(dayTitle);
+  content.appendChild(
+    dayTitle
+  );
 
   addQuestionLanguageSelector();
 
   renderTTSControls();
 
+
   const card =
-    document.createElement("article");
+    document.createElement(
+      "article"
+    );
 
   card.className =
     "question-card";
 
   const languageOrder = [
+
     selectedLang,
+
     ...LANGS
-      .map(language => language.key)
-      .filter(
-        key => key !== selectedLang
+      .map(
+        language =>
+          language.key
       )
+      .filter(
+        key =>
+          key !== selectedLang
+      )
+
   ];
 
   languageOrder.forEach(
@@ -934,12 +1249,16 @@ function renderQuestion() {
       }
 
       const block =
-        document.createElement("div");
+        document.createElement(
+          "div"
+        );
 
       block.className =
         "language-block";
 
-      if (languageKey === "ar") {
+      if (
+        languageKey === "ar"
+      ) {
 
         block.classList.add(
           "arabic-language"
@@ -949,6 +1268,7 @@ function renderQuestion() {
           "dir",
           "rtl"
         );
+
       }
 
       if (
@@ -958,10 +1278,13 @@ function renderQuestion() {
         block.classList.add(
           "selected-language"
         );
+
       }
 
       const q =
-        document.createElement("div");
+        document.createElement(
+          "div"
+        );
 
       q.className =
         "question-line";
@@ -970,7 +1293,9 @@ function renderQuestion() {
         `${language.flag} ${question.id}. ${data.q}`;
 
       const a =
-        document.createElement("div");
+        document.createElement(
+          "div"
+        );
 
       a.className =
         "answer-line";
@@ -978,24 +1303,40 @@ function renderQuestion() {
       a.textContent =
         `${language.flag} ${question.id}. ${data.a}`;
 
-      block.appendChild(q);
-      block.appendChild(a);
+      block.appendChild(
+        q
+      );
 
-      card.appendChild(block);
+      block.appendChild(
+        a
+      );
+
+      card.appendChild(
+        block
+      );
+
     }
   );
 
   if (
-    Array.isArray(question.sources) &&
+    Array.isArray(
+      question.sources
+    ) &&
     question.sources.length
   ) {
 
     card.appendChild(
-      renderSources(question.sources)
+      renderSources(
+        question.sources
+      )
     );
+
   }
 
-  content.appendChild(card);
+  content.appendChild(
+    card
+  );
+
 
   const top =
     document.querySelector(
@@ -1009,26 +1350,35 @@ function renderQuestion() {
 
   if (top) {
 
-    top.innerHTML = "";
+    top.innerHTML =
+      "";
 
     top.appendChild(
-      createNavigation(question)
+      createNavigation(
+        question
+      )
     );
+
   }
 
   if (bottom) {
 
-    bottom.innerHTML = "";
+    bottom.innerHTML =
+      "";
 
     bottom.appendChild(
-      createNavigation(question)
+      createNavigation(
+        question
+      )
     );
+
   }
 
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
+
 }
 
 
@@ -1046,7 +1396,9 @@ function addQuestionLanguageSelector() {
   if (!selector) {
 
     selector =
-      document.createElement("div");
+      document.createElement(
+        "div"
+      );
 
     selector.id =
       "language-selector";
@@ -1064,16 +1416,24 @@ function addQuestionLanguageSelector() {
         "#top-navigation"
       );
 
-    if (page && nav) {
+    if (
+      page &&
+      nav
+    ) {
 
       page.insertBefore(
         selector,
         nav
       );
+
     }
+
   }
 
-  renderLanguageButtons(selector);
+  renderLanguageButtons(
+    selector
+  );
+
 }
 
 
@@ -1104,7 +1464,9 @@ function renderTTSControls() {
   }
 
   const controls =
-    document.createElement("div");
+    document.createElement(
+      "div"
+    );
 
   controls.id =
     "tts-controls";
@@ -1116,9 +1478,13 @@ function renderTTSControls() {
   /* YAVAŞLAT */
 
   const slowButton =
-    document.createElement("button");
+    document.createElement(
+      "button"
+    );
 
-  slowButton.type = "button";
+  slowButton.type =
+    "button";
+
   slowButton.className =
     "tts-button tts-slow";
 
@@ -1130,13 +1496,23 @@ function renderTTSControls() {
   slowButton.title =
     "Yavaşlat";
 
-  updateSlowButton(slowButton);
+  updateSlowButton(
+    slowButton
+  );
 
   slowButton.addEventListener(
     "click",
     event => {
 
       event.stopPropagation();
+
+      slowLevel++;
+
+      if (
+        slowLevel > 3
+      ) {
+        slowLevel = 0;
+      }
 
       const rates = [
         1,
@@ -1145,21 +1521,21 @@ function renderTTSControls() {
         0.25
       ];
 
-      slowLevel++;
-
-      if (slowLevel > 3) {
-        slowLevel = 0;
-      }
-
-      speechRate =
-        rates[slowLevel];
+      changeSpeechRate(
+        rates[slowLevel]
+      );
 
       fastLevel = 0;
       veryFastLevel = 0;
 
-      applyNewSpeechRate();
+      saveTTSSettings();
 
-      updateSpeedButtonsFromState();
+      updateSlowButton(
+        slowButton
+      );
+
+      updateFastButtons();
+
     }
   );
 
@@ -1167,9 +1543,13 @@ function renderTTSControls() {
   /* OYNAT */
 
   const playButton =
-    document.createElement("button");
+    document.createElement(
+      "button"
+    );
 
-  playButton.type = "button";
+  playButton.type =
+    "button";
+
   playButton.className =
     "tts-button tts-play";
 
@@ -1191,16 +1571,21 @@ function renderTTSControls() {
       event.stopPropagation();
 
       playSelectedText();
+
     }
   );
 
 
-  /* PAUSE / DEVAM */
+  /* PAUSE */
 
   const pauseButton =
-    document.createElement("button");
+    document.createElement(
+      "button"
+    );
 
-  pauseButton.type = "button";
+  pauseButton.type =
+    "button";
+
   pauseButton.className =
     "tts-button tts-pause";
 
@@ -1222,6 +1607,7 @@ function renderTTSControls() {
       event.stopPropagation();
 
       toggleSpeechPause();
+
     }
   );
 
@@ -1229,9 +1615,13 @@ function renderTTSControls() {
   /* DURDUR */
 
   const stopButton =
-    document.createElement("button");
+    document.createElement(
+      "button"
+    );
 
-  stopButton.type = "button";
+  stopButton.type =
+    "button";
+
   stopButton.className =
     "tts-button tts-stop";
 
@@ -1253,6 +1643,7 @@ function renderTTSControls() {
       event.stopPropagation();
 
       stopSpeech();
+
     }
   );
 
@@ -1260,9 +1651,13 @@ function renderTTSControls() {
   /* HIZLANDIR */
 
   const fastButton =
-    document.createElement("button");
+    document.createElement(
+      "button"
+    );
 
-  fastButton.type = "button";
+  fastButton.type =
+    "button";
+
   fastButton.className =
     "tts-button tts-fast";
 
@@ -1274,13 +1669,23 @@ function renderTTSControls() {
   fastButton.title =
     "Hızlandır";
 
-  updateFastButton(fastButton);
+  updateFastButton(
+    fastButton
+  );
 
   fastButton.addEventListener(
     "click",
     event => {
 
       event.stopPropagation();
+
+      fastLevel++;
+
+      if (
+        fastLevel > 3
+      ) {
+        fastLevel = 0;
+      }
 
       const rates = [
         1,
@@ -1289,21 +1694,29 @@ function renderTTSControls() {
         1.75
       ];
 
-      fastLevel++;
-
-      if (fastLevel > 3) {
-        fastLevel = 0;
-      }
-
-      speechRate =
-        rates[fastLevel];
+      changeSpeechRate(
+        rates[fastLevel]
+      );
 
       slowLevel = 0;
       veryFastLevel = 0;
 
-      applyNewSpeechRate();
+      saveTTSSettings();
 
-      updateSpeedButtonsFromState();
+      updateFastButton(
+        fastButton
+      );
+
+      updateSlowButton(
+        slowButton
+      );
+
+      updateVeryFastButton(
+        document.querySelector(
+          ".tts-very-fast"
+        )
+      );
+
     }
   );
 
@@ -1311,9 +1724,13 @@ function renderTTSControls() {
   /* ÇOK HIZLANDIR */
 
   const veryFastButton =
-    document.createElement("button");
+    document.createElement(
+      "button"
+    );
 
-  veryFastButton.type = "button";
+  veryFastButton.type =
+    "button";
+
   veryFastButton.className =
     "tts-button tts-very-fast";
 
@@ -1335,6 +1752,14 @@ function renderTTSControls() {
 
       event.stopPropagation();
 
+      veryFastLevel++;
+
+      if (
+        veryFastLevel > 3
+      ) {
+        veryFastLevel = 0;
+      }
+
       const rates = [
         1,
         2,
@@ -1342,21 +1767,29 @@ function renderTTSControls() {
         3
       ];
 
-      veryFastLevel++;
-
-      if (veryFastLevel > 3) {
-        veryFastLevel = 0;
-      }
-
-      speechRate =
-        rates[veryFastLevel];
+      changeSpeechRate(
+        rates[veryFastLevel]
+      );
 
       slowLevel = 0;
       fastLevel = 0;
 
-      applyNewSpeechRate();
+      saveTTSSettings();
 
-      updateSpeedButtonsFromState();
+      updateVeryFastButton(
+        veryFastButton
+      );
+
+      updateSlowButton(
+        slowButton
+      );
+
+      updateFastButton(
+        document.querySelector(
+          ".tts-fast"
+        )
+      );
+
     }
   );
 
@@ -1364,9 +1797,13 @@ function renderTTSControls() {
   /* TTS AYARLARI */
 
   const settingsButton =
-    document.createElement("button");
+    document.createElement(
+      "button"
+    );
 
-  settingsButton.type = "button";
+  settingsButton.type =
+    "button";
+
   settingsButton.className =
     "tts-button tts-settings";
 
@@ -1388,17 +1825,39 @@ function renderTTSControls() {
       event.stopPropagation();
 
       toggleTTSSettings();
+
     }
   );
 
 
-  controls.appendChild(slowButton);
-  controls.appendChild(playButton);
-  controls.appendChild(pauseButton);
-  controls.appendChild(stopButton);
-  controls.appendChild(fastButton);
-  controls.appendChild(veryFastButton);
-  controls.appendChild(settingsButton);
+  controls.appendChild(
+    slowButton
+  );
+
+  controls.appendChild(
+    playButton
+  );
+
+  controls.appendChild(
+    pauseButton
+  );
+
+  controls.appendChild(
+    stopButton
+  );
+
+  controls.appendChild(
+    fastButton
+  );
+
+  controls.appendChild(
+    veryFastButton
+  );
+
+  controls.appendChild(
+    settingsButton
+  );
+
 
   selector.insertAdjacentElement(
     "afterend",
@@ -1406,6 +1865,7 @@ function renderTTSControls() {
   );
 
   updatePauseButton();
+
 }
 
 
@@ -1413,69 +1873,89 @@ function renderTTSControls() {
    HIZ BUTONLARI
 ========================================= */
 
-function updateSlowButton(button) {
+function updateSlowButton(
+  button
+) {
 
   if (!button) {
     return;
   }
 
+  const icons = [
+    "◀",
+    "◀",
+    "◀◀",
+    "◀◀◀"
+  ];
+
   button.textContent =
-    [
-      "◀",
-      "◀",
-      "◀◀",
-      "◀◀◀"
-    ][slowLevel];
+    icons[slowLevel];
+
 }
 
 
-function updateFastButton(button) {
+function updateFastButton(
+  button
+) {
 
   if (!button) {
     return;
   }
 
+  const icons = [
+    "▶",
+    "▶",
+    "▶▶",
+    "▶▶▶"
+  ];
+
   button.textContent =
-    [
-      "▶",
-      "▶",
-      "▶▶",
-      "▶▶▶"
-    ][fastLevel];
+    icons[fastLevel];
+
 }
 
 
-function updateVeryFastButton(button) {
+function updateVeryFastButton(
+  button
+) {
 
   if (!button) {
     return;
   }
 
+  const icons = [
+    "▶",
+    "▶",
+    "▶▶",
+    "▶▶▶"
+  ];
+
   button.textContent =
-    [
-      "▶",
-      "▶",
-      "▶▶",
-      "▶▶▶"
-    ][veryFastLevel];
+    icons[veryFastLevel];
+
 }
 
 
-function updateSpeedButtonsFromState() {
+function updateFastButtons() {
 
-  updateSlowButton(
-    document.querySelector(".tts-slow")
-  );
+  const fast =
+    document.querySelector(
+      ".tts-fast"
+    );
+
+  const veryFast =
+    document.querySelector(
+      ".tts-very-fast"
+    );
 
   updateFastButton(
-    document.querySelector(".tts-fast")
+    fast
   );
 
   updateVeryFastButton(
-    document.querySelector(
-      ".tts-very-fast"
-    )
+    veryFast
   );
+
 }
 
 
@@ -1501,7 +1981,9 @@ function saveTTSSettings() {
       "ttsVoice",
       selectedVoice.name
     );
+
   }
+
 }
 
 
@@ -1519,6 +2001,7 @@ function closeTTSSettings() {
   if (panel) {
     panel.remove();
   }
+
 }
 
 
@@ -1534,6 +2017,7 @@ function toggleTTSSettings() {
     existing.remove();
 
     return;
+
   }
 
   loadSavedVoice();
@@ -1548,7 +2032,9 @@ function toggleTTSSettings() {
   }
 
   const panel =
-    document.createElement("div");
+    document.createElement(
+      "div"
+    );
 
   panel.id =
     "tts-settings-panel";
@@ -1558,7 +2044,9 @@ function toggleTTSSettings() {
 
 
   const title =
-    document.createElement("strong");
+    document.createElement(
+      "strong"
+    );
 
   title.textContent =
     "TTS Ayarları";
@@ -1566,11 +2054,15 @@ function toggleTTSSettings() {
   title.className =
     "tts-settings-title";
 
-  panel.appendChild(title);
+  panel.appendChild(
+    title
+  );
 
 
   const voiceLabel =
-    document.createElement("label");
+    document.createElement(
+      "label"
+    );
 
   voiceLabel.textContent =
     "Ses";
@@ -1578,11 +2070,15 @@ function toggleTTSSettings() {
   voiceLabel.className =
     "tts-setting-label";
 
-  panel.appendChild(voiceLabel);
+  panel.appendChild(
+    voiceLabel
+  );
 
 
   const voiceSelect =
-    document.createElement("select");
+    document.createElement(
+      "select"
+    );
 
   voiceSelect.className =
     "tts-voice-select";
@@ -1592,7 +2088,9 @@ function toggleTTSSettings() {
     "TTS sesi seç"
   );
 
-  populateVoiceSelect(voiceSelect);
+  populateVoiceSelect(
+    voiceSelect
+  );
 
   voiceSelect.addEventListener(
     "change",
@@ -1615,14 +2113,19 @@ function toggleTTSSettings() {
           : "";
 
       saveTTSSettings();
+
     }
   );
 
-  panel.appendChild(voiceSelect);
+  panel.appendChild(
+    voiceSelect
+  );
 
 
   const rateLabel =
-    document.createElement("label");
+    document.createElement(
+      "label"
+    );
 
   rateLabel.className =
     "tts-setting-label";
@@ -1630,16 +2133,28 @@ function toggleTTSSettings() {
   rateLabel.textContent =
     `Hız: ${speechRate.toFixed(2)}x`;
 
-  panel.appendChild(rateLabel);
+  panel.appendChild(
+    rateLabel
+  );
 
 
   const rateSlider =
-    document.createElement("input");
+    document.createElement(
+      "input"
+    );
 
-  rateSlider.type = "range";
-  rateSlider.min = "0.25";
-  rateSlider.max = "3";
-  rateSlider.step = "0.05";
+  rateSlider.type =
+    "range";
+
+  rateSlider.min =
+    "0.25";
+
+  rateSlider.max =
+    "3";
+
+  rateSlider.step =
+    "0.05";
+
   rateSlider.value =
     String(speechRate);
 
@@ -1650,11 +2165,10 @@ function toggleTTSSettings() {
     "input",
     () => {
 
-      const newRate =
-        Number(rateSlider.value);
-
       speechRate =
-        newRate;
+        Number(
+          rateSlider.value
+        );
 
       rateLabel.textContent =
         `Hız: ${speechRate.toFixed(2)}x`;
@@ -1663,15 +2177,20 @@ function toggleTTSSettings() {
 
       updateSpeedButtonsFromState();
 
-      applyNewSpeechRate();
+      saveTTSSettings();
+
     }
   );
 
-  panel.appendChild(rateSlider);
+  panel.appendChild(
+    rateSlider
+  );
 
 
   const pitchLabel =
-    document.createElement("label");
+    document.createElement(
+      "label"
+    );
 
   pitchLabel.className =
     "tts-setting-label";
@@ -1679,16 +2198,28 @@ function toggleTTSSettings() {
   pitchLabel.textContent =
     `Perde: ${speechPitch.toFixed(2)}`;
 
-  panel.appendChild(pitchLabel);
+  panel.appendChild(
+    pitchLabel
+  );
 
 
   const pitchSlider =
-    document.createElement("input");
+    document.createElement(
+      "input"
+    );
 
-  pitchSlider.type = "range";
-  pitchSlider.min = "0.5";
-  pitchSlider.max = "2";
-  pitchSlider.step = "0.05";
+  pitchSlider.type =
+    "range";
+
+  pitchSlider.min =
+    "0.5";
+
+  pitchSlider.max =
+    "2";
+
+  pitchSlider.step =
+    "0.05";
+
   pitchSlider.value =
     String(speechPitch);
 
@@ -1700,22 +2231,31 @@ function toggleTTSSettings() {
     () => {
 
       speechPitch =
-        Number(pitchSlider.value);
+        Number(
+          pitchSlider.value
+        );
 
       pitchLabel.textContent =
         `Perde: ${speechPitch.toFixed(2)}`;
 
       saveTTSSettings();
+
     }
   );
 
-  panel.appendChild(pitchSlider);
+  panel.appendChild(
+    pitchSlider
+  );
 
 
   const testButton =
-    document.createElement("button");
+    document.createElement(
+      "button"
+    );
 
-  testButton.type = "button";
+  testButton.type =
+    "button";
+
   testButton.className =
     "tts-test-button";
 
@@ -1731,19 +2271,25 @@ function toggleTTSSettings() {
       stopSpeech();
 
       speakText(
-        getTTSTestText(),
-        0
+        getTTSTestText()
       );
+
     }
   );
 
-  panel.appendChild(testButton);
+  panel.appendChild(
+    testButton
+  );
 
 
   const reset =
-    document.createElement("button");
+    document.createElement(
+      "button"
+    );
 
-  reset.type = "button";
+  reset.type =
+    "button";
+
   reset.className =
     "tts-reset-button";
 
@@ -1759,33 +2305,50 @@ function toggleTTSSettings() {
       stopSpeech();
 
       speechRate = 1;
+
       speechPitch = 1;
 
       slowLevel = 0;
+
       fastLevel = 0;
+
       veryFastLevel = 0;
 
       selectedVoice = null;
+
       selectedVoiceName = "";
 
-      localStorage.removeItem("ttsRate");
-      localStorage.removeItem("ttsPitch");
-      localStorage.removeItem("ttsVoice");
+      localStorage.removeItem(
+        "ttsRate"
+      );
+
+      localStorage.removeItem(
+        "ttsPitch"
+      );
+
+      localStorage.removeItem(
+        "ttsVoice"
+      );
 
       loadSavedVoice();
 
       closeTTSSettings();
 
       renderTTSControls();
+
     }
   );
 
-  panel.appendChild(reset);
+  panel.appendChild(
+    reset
+  );
+
 
   controls.insertAdjacentElement(
     "afterend",
     panel
   );
+
 }
 
 
@@ -1793,29 +2356,38 @@ function toggleTTSSettings() {
    SES SEÇENEKLERİ
 ========================================= */
 
-function populateVoiceSelect(select) {
+function populateVoiceSelect(
+  select
+) {
 
   if (!select) {
     return;
   }
 
-  select.innerHTML = "";
+  select.innerHTML =
+    "";
 
   if (
     !("speechSynthesis" in window)
   ) {
 
     const option =
-      document.createElement("option");
+      document.createElement(
+        "option"
+      );
 
     option.textContent =
       "Ses desteği bulunamadı";
 
-    option.value = "";
+    option.value =
+      "";
 
-    select.appendChild(option);
+    select.appendChild(
+      option
+    );
 
     return;
+
   }
 
   const voices =
@@ -1825,20 +2397,28 @@ function populateVoiceSelect(select) {
   if (!voices.length) {
 
     const option =
-      document.createElement("option");
+      document.createElement(
+        "option"
+      );
 
     option.textContent =
       "Sesler yükleniyor...";
 
-    option.value = "";
+    option.value =
+      "";
 
-    select.appendChild(option);
+    select.appendChild(
+      option
+    );
 
     return;
+
   }
 
   const speechLang =
-    getSpeechLanguage(selectedLang);
+    getSpeechLanguage(
+      selectedLang
+    );
 
   const languageCode =
     speechLang
@@ -1851,13 +2431,17 @@ function populateVoiceSelect(select) {
         voice.lang &&
         voice.lang
           .toLowerCase()
-          .startsWith(languageCode)
+          .startsWith(
+            languageCode
+          )
     );
 
   const otherVoices =
     voices.filter(
       voice =>
-        !matchingVoices.includes(voice)
+        !matchingVoices.includes(
+          voice
+        )
     );
 
   [
@@ -1867,7 +2451,9 @@ function populateVoiceSelect(select) {
     voice => {
 
       const option =
-        document.createElement("option");
+        document.createElement(
+          "option"
+        );
 
       option.value =
         voice.name;
@@ -1877,15 +2463,22 @@ function populateVoiceSelect(select) {
 
       if (
         selectedVoice &&
-        selectedVoice.name === voice.name
+        selectedVoice.name ===
+          voice.name
       ) {
 
-        option.selected = true;
+        option.selected =
+          true;
+
       }
 
-      select.appendChild(option);
+      select.appendChild(
+        option
+      );
+
     }
   );
+
 }
 
 
@@ -1936,17 +2529,20 @@ function getTTSTestText() {
     texts[selectedLang] ||
     texts.tr
   );
+
 }
 
 
 /* =========================================
-   HIZ SEVİYELERİNİ BELİRLE
+   HIZ SEVİYELERİ
 ========================================= */
 
 function updateSpeedLevelsFromRate() {
 
   slowLevel = 0;
+
   fastLevel = 0;
+
   veryFastLevel = 0;
 
   if (speechRate === 0.75) {
@@ -1984,18 +2580,239 @@ function updateSpeedLevelsFromRate() {
   } else if (speechRate === 3) {
 
     veryFastLevel = 3;
+
   }
+
+}
+
+
+function updateSpeedButtonsFromState() {
+
+  updateSlowButton(
+    document.querySelector(
+      ".tts-slow"
+    )
+  );
+
+  updateFastButton(
+    document.querySelector(
+      ".tts-fast"
+    )
+  );
+
+  updateVeryFastButton(
+    document.querySelector(
+      ".tts-very-fast"
+    )
+  );
+
 }
 
 
 /* =========================================
-   TTS
-   STABİL PAUSE / STOP / SPEED
+   TTS METNİ PARÇALAMA
+========================================= */
+
+/*
+ * Metni yaklaşık 7 kelimelik küçük parçalara
+ * böler.
+ *
+ * Böylece Android SpeechSynthesis'in
+ * güvenilmez charIndex değerine ihtiyaç
+ * kalmaz.
+ *
+ * Noktalama işaretleri korunur.
+ */
+
+function splitSpeechText(
+  text
+) {
+
+  if (!text) {
+    return [];
+  }
+
+  const words =
+    text
+      .trim()
+      .split(/\s+/)
+      .filter(
+        word =>
+          word.length > 0
+      );
+
+  const chunks = [];
+
+  let currentChunk = [];
+
+  words.forEach(
+    word => {
+
+      currentChunk.push(
+        word
+      );
+
+      /*
+       * Normal olarak 7 kelimede
+       * bir parça oluştur.
+       */
+
+      if (
+        currentChunk.length >=
+        speechChunkWordCount
+      ) {
+
+        chunks.push(
+          currentChunk.join(" ")
+        );
+
+        currentChunk = [];
+
+      }
+
+    }
+  );
+
+
+  if (
+    currentChunk.length
+  ) {
+
+    chunks.push(
+      currentChunk.join(" ")
+    );
+
+  }
+
+
+  return chunks;
+
+}
+
+
+/* =========================================
+   PARÇALI TTS BAŞLAT
 ========================================= */
 
 function speakText(
   text,
-  resumeFromIndex = 0
+  resumeFromChunk = 0
+) {
+
+  if (
+    !("speechSynthesis" in window)
+  ) {
+
+    console.warn(
+      "Tarayıcı TTS desteği bulunmuyor."
+    );
+
+    return;
+
+  }
+
+  if (!text) {
+    return;
+  }
+
+
+  /*
+   * Yeni TTS oturumu.
+   */
+
+  speechChunkSession++;
+
+  const sessionId =
+    speechChunkSession;
+
+
+  /*
+   * Eski konuşmayı temizle.
+   */
+
+  window.speechSynthesis.cancel();
+
+
+  /*
+   * Metin değiştiyse parçaları yeniden
+   * oluştur.
+   */
+
+  if (
+    speechCurrentText !== text ||
+    !speechChunks.length
+  ) {
+
+    speechCurrentText =
+      text;
+
+    speechChunks =
+      splitSpeechText(
+        text
+      );
+
+  }
+
+
+  if (
+    !speechChunks.length
+  ) {
+    return;
+  }
+
+
+  speechChunkIndex =
+    Math.max(
+      0,
+      Math.min(
+        Math.floor(
+          resumeFromChunk
+        ),
+        speechChunks.length
+      )
+    );
+
+
+  if (
+    speechChunkIndex >=
+    speechChunks.length
+  ) {
+
+    speechChunkIndex =
+      speechChunks.length - 1;
+
+  }
+
+
+  speechPaused =
+    false;
+
+  speechManualPaused =
+    false;
+
+  speechIsSpeaking =
+    false;
+
+  speechStarting =
+    true;
+
+
+  loadSavedVoice();
+
+
+  speakCurrentChunk(
+    sessionId
+  );
+
+}
+
+
+/* =========================================
+   MEVCUT PARÇAYI OKU
+========================================= */
+
+function speakCurrentChunk(
+  sessionId = speechChunkSession
 ) {
 
   if (
@@ -2004,71 +2821,100 @@ function speakText(
     return;
   }
 
-  if (!text) {
+  if (
+    sessionId !== speechChunkSession
+  ) {
     return;
   }
 
-  speechSessionId++;
+  if (
+    speechPaused ||
+    speechManualPaused
+  ) {
 
-  const session =
-    speechSessionId;
+    return;
 
-  window.speechSynthesis.cancel();
+  }
 
-  speechCurrentText =
-    text;
 
-  speechCurrentCharIndex =
-    Math.max(
-      0,
-      Math.min(
-        Math.floor(resumeFromIndex),
-        text.length
-      )
-    );
+  if (
+    !speechChunks.length
+  ) {
 
-  speechLastBoundaryIndex =
-    speechCurrentCharIndex;
+    speechIsSpeaking =
+      false;
 
-  speechPaused = false;
-  speechManualPaused = false;
-  speechIsSpeaking = false;
-  speechStarting = true;
-
-  loadSavedVoice();
-
-  const startIndex =
-    speechCurrentCharIndex;
-
-  const remainingText =
-    text.substring(startIndex);
-
-  if (!remainingText.trim()) {
-
-    speechCurrentCharIndex =
-      text.length;
-
-    speechLastBoundaryIndex =
-      text.length;
-
-    speechStarting = false;
-    speechIsSpeaking = false;
-    speechPaused = false;
-    speechManualPaused = false;
-    speechUtterance = null;
+    speechStarting =
+      false;
 
     updatePauseButton();
 
     return;
+
   }
+
+
+  if (
+    speechChunkIndex >=
+    speechChunks.length
+  ) {
+
+    speechIsSpeaking =
+      false;
+
+    speechStarting =
+      false;
+
+    speechPaused =
+      false;
+
+    speechManualPaused =
+      false;
+
+    speechUtterance =
+      null;
+
+    updatePauseButton();
+
+    return;
+
+  }
+
+
+  const chunk =
+    speechChunks[
+      speechChunkIndex
+    ];
+
+
+  if (!chunk) {
+
+    speechChunkIndex++;
+
+    speakCurrentChunk(
+      sessionId
+    );
+
+    return;
+
+  }
+
+
+  speechStarting =
+    true;
+
+  speechIsSpeaking =
+    false;
+
 
   const utterance =
     new SpeechSynthesisUtterance(
-      remainingText
+      chunk
     );
 
   speechUtterance =
     utterance;
+
 
   utterance.rate =
     speechRate;
@@ -2076,16 +2922,20 @@ function speakText(
   utterance.pitch =
     speechPitch;
 
-  utterance.volume = 1;
+  utterance.volume =
+    1;
 
   utterance.lang =
     getSpeechLanguage(
       selectedLang
     );
 
+
   if (selectedVoice) {
+
     utterance.voice =
       selectedVoice;
+
   }
 
 
@@ -2093,50 +2943,26 @@ function speakText(
     () => {
 
       if (
-        session !== speechSessionId
+        sessionId !==
+        speechChunkSession
       ) {
         return;
       }
 
-      speechStarting = false;
-      speechIsSpeaking = true;
-      speechPaused = false;
+      speechStarting =
+        false;
+
+      speechIsSpeaking =
+        true;
+
+      speechPaused =
+        false;
+
+      speechManualPaused =
+        false;
 
       updatePauseButton();
-    };
 
-
-  utterance.onboundary =
-    event => {
-
-      if (
-        session !== speechSessionId
-      ) {
-        return;
-      }
-
-      if (
-        typeof event.charIndex !==
-        "number"
-      ) {
-        return;
-      }
-
-      const globalIndex =
-        startIndex +
-        event.charIndex;
-
-      if (
-        globalIndex >= 0 &&
-        globalIndex <= text.length
-      ) {
-
-        speechCurrentCharIndex =
-          globalIndex;
-
-        speechLastBoundaryIndex =
-          globalIndex;
-      }
     };
 
 
@@ -2144,29 +2970,94 @@ function speakText(
     () => {
 
       if (
-        session !== speechSessionId
+        sessionId !==
+        speechChunkSession
       ) {
         return;
       }
 
-      if (speechManualPaused) {
+
+      /*
+       * Pause / stop sırasında gelen onend
+       * gerçek bitiş değildir.
+       */
+
+      if (
+        speechManualPaused ||
+        speechPaused
+      ) {
+
         return;
+
       }
 
-      speechIsSpeaking = false;
-      speechStarting = false;
-      speechPaused = false;
-      speechManualPaused = false;
 
-      speechCurrentCharIndex =
-        text.length;
+      speechIsSpeaking =
+        false;
 
-      speechLastBoundaryIndex =
-        text.length;
+      speechStarting =
+        false;
 
-      speechUtterance = null;
 
-      updatePauseButton();
+      /*
+       * Bir sonraki küçük parçaya geç.
+       */
+
+      speechChunkIndex++;
+
+
+      if (
+        speechChunkIndex >=
+        speechChunks.length
+      ) {
+
+        speechPaused =
+          false;
+
+        speechManualPaused =
+          false;
+
+        speechUtterance =
+          null;
+
+        updatePauseButton();
+
+        return;
+
+      }
+
+
+      /*
+       * Android Chrome'da arka arkaya
+       * speak() çağrısında sorun oluşmaması
+       * için küçük gecikme.
+       */
+
+      setTimeout(
+        () => {
+
+          if (
+            sessionId !==
+            speechChunkSession
+          ) {
+            return;
+          }
+
+          if (
+            speechPaused ||
+            speechManualPaused
+          ) {
+            return;
+          }
+
+          speakCurrentChunk(
+            sessionId
+          );
+
+        },
+        20
+      );
+
     };
 
 
@@ -2174,16 +3065,36 @@ function speakText(
     event => {
 
       if (
-        session !== speechSessionId
+        sessionId !==
+        speechChunkSession
       ) {
         return;
       }
 
+
+      /*
+       * Manuel Pause veya Stop sonrasında
+       * Android "canceled" / "interrupted"
+       * hatası gönderebilir.
+       */
+
       if (
-        speechManualPaused
+        speechManualPaused ||
+        speechPaused
       ) {
+
+        speechIsSpeaking =
+          false;
+
+        speechStarting =
+          false;
+
+        updatePauseButton();
+
         return;
+
       }
+
 
       if (
         event.error !== "canceled" &&
@@ -2194,20 +3105,28 @@ function speakText(
           "TTS hatası:",
           event.error
         );
+
       }
 
-      speechIsSpeaking = false;
-      speechStarting = false;
 
-      speechUtterance = null;
+      speechIsSpeaking =
+        false;
+
+      speechStarting =
+        false;
+
+      speechUtterance =
+        null;
 
       updatePauseButton();
+
     };
 
 
   window.speechSynthesis.speak(
     utterance
   );
+
 }
 
 
@@ -2215,7 +3134,9 @@ function speakText(
    DİL → SES DİLİ
 ========================================= */
 
-function getSpeechLanguage(lang) {
+function getSpeechLanguage(
+  lang
+) {
 
   const languages = {
 
@@ -2237,6 +3158,7 @@ function getSpeechLanguage(lang) {
     languages[lang] ||
     "tr-TR"
   );
+
 }
 
 
@@ -2253,45 +3175,65 @@ function playSelectedText() {
   }
 
 
-  /* PAUSE'DAN DEVAM */
+  /*
+   * PAUSE DURUMUNDAN DEVAM
+   */
 
   if (
-    speechPaused ||
-    speechManualPaused
+    speechManualPaused ||
+    speechPaused
   ) {
 
-    const text =
-      speechCurrentText;
-
-    const position =
-      speechLastBoundaryIndex;
-
     if (
-      text &&
-      position < text.length
+      speechCurrentText &&
+      speechChunks.length &&
+      speechChunkIndex <
+        speechChunks.length
     ) {
 
-      speechPaused = false;
-      speechManualPaused = false;
+      speechPaused =
+        false;
 
-      speakText(
-        text,
-        position
+      speechManualPaused =
+        false;
+
+      speechChunkSession++;
+
+      const sessionId =
+        speechChunkSession;
+
+      window.speechSynthesis.cancel();
+
+      setTimeout(
+        () => {
+
+          speakCurrentChunk(
+            sessionId
+          );
+
+        },
+        30
       );
 
       return;
+
     }
+
   }
 
 
-  /* AKTİF KONUŞMA VARSA TEKRAR BAŞLATMA */
+  /*
+   * Aktif konuşma varsa tekrar başlatma.
+   */
 
   if (
+    window.speechSynthesis.speaking ||
     speechIsSpeaking ||
-    speechStarting ||
-    window.speechSynthesis.speaking
+    speechStarting
   ) {
+
     return;
+
   }
 
 
@@ -2302,6 +3244,7 @@ function playSelectedText() {
     return;
   }
 
+
   const question =
     dayData.questions[
       currentQuestionIndex
@@ -2311,6 +3254,7 @@ function playSelectedText() {
     return;
   }
 
+
   const data =
     question[selectedLang];
 
@@ -2318,17 +3262,51 @@ function playSelectedText() {
     return;
   }
 
+
   const text =
     `${data.q}. ${data.a}`;
 
 
   /*
-   * ÖNEMLİ:
-   * Play'e basıldığında hız artık 1'e zorlanmıyor.
-   * Kullanıcının seçtiği hız korunuyor.
+   * Yeni Play başlangıcı:
+   *
+   * Normal hız = 1.0x
    */
 
-  speakText(text, 0);
+  speechRate =
+    1;
+
+  slowLevel =
+    0;
+
+  fastLevel =
+    0;
+
+  veryFastLevel =
+    0;
+
+  saveTTSSettings();
+
+  updateSpeedButtonsFromState();
+
+
+  speechCurrentText =
+    text;
+
+  speechChunks =
+    splitSpeechText(
+      text
+    );
+
+  speechChunkIndex =
+    0;
+
+
+  speakText(
+    text,
+    0
+  );
+
 }
 
 
@@ -2345,77 +3323,136 @@ function toggleSpeechPause() {
   }
 
 
-  /* PAUSE → DEVAM */
+  /*
+   * PAUSE DURUMUNDAN DEVAM
+   */
 
   if (
     speechPaused ||
     speechManualPaused
   ) {
 
-    const text =
-      speechCurrentText;
-
-    const position =
-      speechLastBoundaryIndex;
-
     if (
-      text &&
-      position < text.length
+      !speechCurrentText ||
+      !speechChunks.length ||
+      speechChunkIndex >=
+        speechChunks.length
     ) {
 
-      speechPaused = false;
-      speechManualPaused = false;
+      return;
 
-      speakText(
-        text,
-        position
-      );
     }
 
+
+    speechPaused =
+      false;
+
+    speechManualPaused =
+      false;
+
+
+    /*
+     * Yeni session oluştur.
+     * Eski utterance eventlerinin
+     * müdahale etmesini engelle.
+     */
+
+    speechChunkSession++;
+
+    const sessionId =
+      speechChunkSession;
+
+
+    window.speechSynthesis.cancel();
+
+
+    setTimeout(
+      () => {
+
+        if (
+          sessionId !==
+          speechChunkSession
+        ) {
+          return;
+        }
+
+        speakCurrentChunk(
+          sessionId
+        );
+
+      },
+      30
+    );
+
+
+    updatePauseButton();
+
     return;
+
   }
 
 
-  /* KONUŞMA YOKSA */
+  /*
+   * Konuşma yoksa hiçbir şey yapma.
+   */
 
   if (
     !speechIsSpeaking &&
     !speechStarting &&
     !window.speechSynthesis.speaking
   ) {
+
     return;
+
   }
 
 
   /*
-   * PAUSE:
+   * PAUSE
    *
-   * Önce mevcut konumu koruyoruz.
-   * Sonra cancel ediyoruz.
+   * Burada karakter konumu aranmıyor.
    *
-   * Android'de native speechSynthesis.pause()
-   * bazı cihazlarda güvenilir olmadığı için
-   * kontrollü manuel pause kullanıyoruz.
+   * Mevcut küçük parça kaydediliyor.
    */
 
-  speechManualPaused = true;
-  speechPaused = true;
+  speechManualPaused =
+    true;
 
-  speechIsSpeaking = false;
-  speechStarting = false;
+  speechPaused =
+    true;
 
-  speechSessionId++;
+  speechIsSpeaking =
+    false;
+
+  speechStarting =
+    false;
+
+
+  /*
+   * Mevcut session'ı geçersiz yap.
+   */
+
+  speechChunkSession++;
+
+
+  /*
+   * Konuşmayı fiziksel olarak durdur.
+   */
 
   window.speechSynthesis.cancel();
 
-  speechUtterance = null;
+
+  speechUtterance =
+    null;
+
 
   updatePauseButton();
+
 }
 
 
 /* =========================================
-   PAUSE BUTONU
+   PAUSE BUTONUNU GÜNCELLE
 ========================================= */
 
 function updatePauseButton() {
@@ -2456,9 +3493,12 @@ function updatePauseButton() {
 
         button.title =
           "Duraklat";
+
       }
+
     }
   );
+
 }
 
 
@@ -2469,45 +3509,67 @@ function updatePauseButton() {
 function stopSpeech() {
 
   /*
-   * STOP:
+   * STOP diğer işlemlerden farklıdır.
    *
-   * - tamamen durdurur
-   * - pause durumunu siler
+   * Stop:
+   * - konuşmayı keser
    * - metni siler
+   * - parçaları siler
    * - konumu sıfırlar
+   * - pause durumunu kaldırır
    */
 
-  speechSessionId++;
+  speechChunkSession++;
 
-  speechPaused = false;
-  speechManualPaused = false;
-  speechIsSpeaking = false;
-  speechStarting = false;
+
+  speechManualPaused =
+    false;
+
+  speechPaused =
+    false;
+
+  speechIsSpeaking =
+    false;
+
+  speechStarting =
+    false;
+
 
   if (
     "speechSynthesis" in window
   ) {
 
     window.speechSynthesis.cancel();
+
   }
 
-  speechUtterance = null;
 
-  speechCurrentText = "";
-  speechCurrentCharIndex = 0;
-  speechLastBoundaryIndex = 0;
+  speechUtterance =
+    null;
+
+  speechCurrentText =
+    "";
+
+  speechChunks =
+    [];
+
+  speechChunkIndex =
+    0;
+
 
   updatePauseButton();
+
 }
 
 
 /* =========================================
    HIZ DEĞİŞTİR
+   PARÇALI TTS İLE UYUMLU
 ========================================= */
 
-function applyNewSpeechRate() {
-
-  saveTTSSettings();
+function changeSpeechRate(
+  rate
+) {
 
   const wasSpeaking =
     speechIsSpeaking ||
@@ -2518,18 +3580,22 @@ function applyNewSpeechRate() {
     speechPaused ||
     speechManualPaused;
 
-  const text =
-    speechCurrentText;
 
-  const position =
-    speechLastBoundaryIndex;
+  /*
+   * Yeni hız kaydedilir.
+   */
+
+  speechRate =
+    rate;
+
+  saveTTSSettings();
 
 
   /*
-   * PAUSE durumunda sadece yeni hız kaydedilir.
+   * Pause durumundaysa:
    *
-   * Kullanıcı DEVAM ettiğinde yeni hız
-   * kullanılacaktır.
+   * Konuşmayı başlatmıyoruz.
+   * Yeni hız sadece kaydediliyor.
    */
 
   if (wasPaused) {
@@ -2537,95 +3603,115 @@ function applyNewSpeechRate() {
     updatePauseButton();
 
     return;
+
   }
 
 
   /*
-   * Konuşma yoksa yalnızca hız değişir.
+   * Konuşma aktif değilse sadece hız değişir.
    */
 
   if (
     !wasSpeaking ||
-    !text
+    !speechCurrentText ||
+    !speechChunks.length
   ) {
 
     return;
+
   }
 
 
   /*
-   * AKTİF KONUŞMA:
+   * Aktif konuşmada:
    *
-   * Mevcut konum korunur.
-   * Eski speech iptal edilir.
-   * Yeni hızla aynı noktadan devam edilir.
+   * Mevcut küçük parça tekrar başlatılır.
+   *
+   * Artık charIndex kullanılmıyor.
    */
 
-  speechSessionId++;
+  const currentChunk =
+    speechChunkIndex;
+
+
+  speechChunkSession++;
+
+  const sessionId =
+    speechChunkSession;
+
 
   window.speechSynthesis.cancel();
 
-  speechUtterance = null;
 
-  speechIsSpeaking = false;
-  speechStarting = false;
-  speechPaused = false;
-  speechManualPaused = false;
+  speechUtterance =
+    null;
 
+  speechIsSpeaking =
+    false;
 
-  const safePosition =
-    Math.max(
-      0,
-      Math.min(
-        position,
-        text.length
-      )
-    );
+  speechStarting =
+    false;
 
+  speechPaused =
+    false;
 
-  /*
-   * Android Chrome'da cancel() sonrası
-   * hemen speak() bazen çalışmayabilir.
-   */
+  speechManualPaused =
+    false;
+
 
   setTimeout(
     () => {
 
-      if (!text) {
-        return;
-      }
-
       if (
-        safePosition >= text.length
+        sessionId !==
+        speechChunkSession
       ) {
         return;
       }
 
-      speakText(
-        text,
-        safePosition
+      if (
+        !speechChunks.length
+      ) {
+        return;
+      }
+
+      if (
+        currentChunk >=
+        speechChunks.length
+      ) {
+        return;
+      }
+
+      speechChunkIndex =
+        currentChunk;
+
+      speakCurrentChunk(
+        sessionId
       );
 
     },
-    80
+    30
   );
+
 }
 
 
 /* =========================================
-   HIZ AYARINDAN DEĞİŞİKLİK
+   TTS AYARLARINDAN HIZ DEĞİŞTİRME
 ========================================= */
 
-function setSpeechRate(rate) {
+function setSpeechRate(
+  rate
+) {
 
-  speechRate =
-    Number(rate);
+  changeSpeechRate(
+    rate
+  );
 
   updateSpeedLevelsFromRate();
 
   updateSpeedButtonsFromState();
 
-  applyNewSpeechRate();
 }
 
 
@@ -2633,24 +3719,32 @@ function setSpeechRate(rate) {
    NAVİGASYON
 ========================================= */
 
-function createNavigation(question) {
+function createNavigation(
+  question
+) {
 
   const wrapper =
-    document.createElement("div");
+    document.createElement(
+      "div"
+    );
 
   wrapper.className =
     "navigation-wrapper";
 
 
   const mainRow =
-    document.createElement("div");
+    document.createElement(
+      "div"
+    );
 
   mainRow.className =
     "navigation-main-row";
 
 
   const questionGroup =
-    document.createElement("div");
+    document.createElement(
+      "div"
+    );
 
   questionGroup.className =
     "navigation-group question-navigation-group";
@@ -2676,6 +3770,7 @@ function createNavigation(question) {
     currentDayIndex === 0 &&
     currentQuestionIndex === 0;
 
+
   previousQuestion.onclick =
     () => {
 
@@ -2690,6 +3785,7 @@ function createNavigation(question) {
         renderQuestion();
 
         return;
+
       }
 
       if (
@@ -2703,24 +3799,35 @@ function createNavigation(question) {
             .questions.length - 1;
 
         renderQuestion();
+
       }
+
     };
 
 
   const questionInput =
-    document.createElement("input");
+    document.createElement(
+      "input"
+    );
 
-  questionInput.type = "number";
+  questionInput.type =
+    "number";
+
   questionInput.className =
     "navigation-number-input";
 
-  questionInput.min = "1";
+  questionInput.min =
+    "1";
 
   questionInput.placeholder =
-    String(question.id);
+    String(
+      question.id
+    );
 
   questionInput.value =
-    String(question.id);
+    String(
+      question.id
+    );
 
   questionInput.title =
     "Soru numarasına git";
@@ -2730,18 +3837,24 @@ function createNavigation(question) {
     "Soru numarasına git"
   );
 
+
   questionInput.addEventListener(
     "keydown",
     event => {
 
-      if (event.key === "Enter") {
+      if (
+        event.key === "Enter"
+      ) {
 
         goToQuestionNumber(
           questionInput.value
         );
+
       }
+
     }
   );
+
 
   questionInput.addEventListener(
     "change",
@@ -2750,6 +3863,7 @@ function createNavigation(question) {
       goToQuestionNumber(
         questionInput.value
       );
+
     }
   );
 
@@ -2777,13 +3891,16 @@ function createNavigation(question) {
       days[currentDayIndex]
         .questions.length - 1;
 
+
   nextQuestion.onclick =
     () => {
 
       stopSpeech();
 
       const currentQuestions =
-        days[currentDayIndex].questions;
+        days[currentDayIndex]
+          .questions;
+
 
       if (
         currentQuestionIndex <
@@ -2795,7 +3912,9 @@ function createNavigation(question) {
         renderQuestion();
 
         return;
+
       }
+
 
       if (
         currentDayIndex <
@@ -2803,10 +3922,14 @@ function createNavigation(question) {
       ) {
 
         currentDayIndex++;
-        currentQuestionIndex = 0;
+
+        currentQuestionIndex =
+          0;
 
         renderQuestion();
+
       }
+
     };
 
 
@@ -2824,14 +3947,18 @@ function createNavigation(question) {
 
 
   const homeGroup =
-    document.createElement("div");
+    document.createElement(
+      "div"
+    );
 
   homeGroup.className =
     "navigation-home-group";
 
 
   const home =
-    makeButton("🕋");
+    makeButton(
+      "🕋"
+    );
 
   home.className =
     "navigation-home-button";
@@ -2844,6 +3971,7 @@ function createNavigation(question) {
   home.title =
     "Ana Sayfa";
 
+
   home.onclick =
     () => {
 
@@ -2855,13 +3983,19 @@ function createNavigation(question) {
         top: 0,
         behavior: "smooth"
       });
+
     };
 
-  homeGroup.appendChild(home);
+
+  homeGroup.appendChild(
+    home
+  );
 
 
   const dayGroup =
-    document.createElement("div");
+    document.createElement(
+      "div"
+    );
 
   dayGroup.className =
     "navigation-group day-navigation-group";
@@ -2886,6 +4020,7 @@ function createNavigation(question) {
   previousDay.disabled =
     currentDayIndex === 0;
 
+
   previousDay.onclick =
     () => {
 
@@ -2897,22 +4032,32 @@ function createNavigation(question) {
 
         currentDayIndex--;
 
-        currentQuestionIndex = 0;
+        currentQuestionIndex =
+          0;
 
         renderQuestion();
+
       }
+
     };
 
 
   const dayInput =
-    document.createElement("input");
+    document.createElement(
+      "input"
+    );
 
-  dayInput.type = "number";
+  dayInput.type =
+    "number";
+
   dayInput.className =
     "navigation-number-input";
 
-  dayInput.min = "1";
-  dayInput.max = "30";
+  dayInput.min =
+    "1";
+
+  dayInput.max =
+    "30";
 
   dayInput.placeholder =
     String(
@@ -2932,18 +4077,24 @@ function createNavigation(question) {
     "Gün numarasına git"
   );
 
+
   dayInput.addEventListener(
     "keydown",
     event => {
 
-      if (event.key === "Enter") {
+      if (
+        event.key === "Enter"
+      ) {
 
         goToDayNumber(
           dayInput.value
         );
+
       }
+
     }
   );
+
 
   dayInput.addEventListener(
     "change",
@@ -2952,6 +4103,7 @@ function createNavigation(question) {
       goToDayNumber(
         dayInput.value
       );
+
     }
   );
 
@@ -2976,6 +4128,7 @@ function createNavigation(question) {
     currentDayIndex >=
     days.length - 1;
 
+
   nextDay.onclick =
     () => {
 
@@ -2988,25 +4141,49 @@ function createNavigation(question) {
 
         currentDayIndex++;
 
-        currentQuestionIndex = 0;
+        currentQuestionIndex =
+          0;
 
         renderQuestion();
+
       }
+
     };
 
 
-  dayGroup.appendChild(previousDay);
-  dayGroup.appendChild(dayInput);
-  dayGroup.appendChild(nextDay);
+  dayGroup.appendChild(
+    previousDay
+  );
+
+  dayGroup.appendChild(
+    dayInput
+  );
+
+  dayGroup.appendChild(
+    nextDay
+  );
 
 
-  mainRow.appendChild(questionGroup);
-  mainRow.appendChild(homeGroup);
-  mainRow.appendChild(dayGroup);
+  mainRow.appendChild(
+    questionGroup
+  );
 
-  wrapper.appendChild(mainRow);
+  mainRow.appendChild(
+    homeGroup
+  );
+
+  mainRow.appendChild(
+    dayGroup
+  );
+
+
+  wrapper.appendChild(
+    mainRow
+  );
+
 
   return wrapper;
+
 }
 
 
@@ -3014,16 +4191,24 @@ function createNavigation(question) {
    SORU NUMARASINA GİT
 ========================================= */
 
-function goToQuestionNumber(value) {
+function goToQuestionNumber(
+  value
+) {
 
   const questionNumber =
     Number(value);
 
+
   if (
-    !Number.isInteger(questionNumber)
+    !Number.isInteger(
+      questionNumber
+    )
   ) {
+
     return;
+
   }
+
 
   for (
     let dayIndex = 0;
@@ -3034,6 +4219,7 @@ function goToQuestionNumber(value) {
     const questions =
       days[dayIndex].questions;
 
+
     const questionIndex =
       questions.findIndex(
         question =>
@@ -3041,7 +4227,10 @@ function goToQuestionNumber(value) {
           questionNumber
       );
 
-    if (questionIndex !== -1) {
+
+    if (
+      questionIndex !== -1
+    ) {
 
       stopSpeech();
 
@@ -3054,8 +4243,16 @@ function goToQuestionNumber(value) {
       renderQuestion();
 
       return;
+
     }
+
   }
+
+
+  console.warn(
+    `Soru bulunamadı: ${questionNumber}`
+  );
+
 }
 
 
@@ -3063,16 +4260,24 @@ function goToQuestionNumber(value) {
    GÜN NUMARASINA GİT
 ========================================= */
 
-function goToDayNumber(value) {
+function goToDayNumber(
+  value
+) {
 
   const dayNumber =
     Number(value);
 
+
   if (
-    !Number.isInteger(dayNumber)
+    !Number.isInteger(
+      dayNumber
+    )
   ) {
+
     return;
+
   }
+
 
   const dayIndex =
     days.findIndex(
@@ -3081,18 +4286,30 @@ function goToDayNumber(value) {
         dayNumber
     );
 
-  if (dayIndex === -1) {
+
+  if (
+    dayIndex === -1
+  ) {
+
+    console.warn(
+      `Gün bulunamadı: ${dayNumber}`
+    );
+
     return;
+
   }
+
 
   stopSpeech();
 
   currentDayIndex =
     dayIndex;
 
-  currentQuestionIndex = 0;
+  currentQuestionIndex =
+    0;
 
   renderQuestion();
+
 }
 
 
@@ -3100,15 +4317,23 @@ function goToDayNumber(value) {
    BUTON OLUŞTUR
 ========================================= */
 
-function makeButton(text) {
+function makeButton(
+  text
+) {
 
   const button =
-    document.createElement("button");
+    document.createElement(
+      "button"
+    );
 
-  button.type = "button";
-  button.textContent = text;
+  button.type =
+    "button";
+
+  button.textContent =
+    text;
 
   return button;
+
 }
 
 
@@ -3116,36 +4341,52 @@ function makeButton(text) {
    KAYNAKLAR
 ========================================= */
 
-function renderSources(sources) {
+function renderSources(
+  sources
+) {
 
   const box =
-    document.createElement("div");
+    document.createElement(
+      "div"
+    );
 
   box.className =
     "sources";
 
 
   const title =
-    document.createElement("h3");
+    document.createElement(
+      "h3"
+    );
 
   title.textContent =
     UI[selectedLang].source;
 
-  box.appendChild(title);
+  box.appendChild(
+    title
+  );
 
 
   const list =
-    document.createElement("ul");
+    document.createElement(
+      "ul"
+    );
 
 
   sources.forEach(
     source => {
 
       const li =
-        document.createElement("li");
+        document.createElement(
+          "li"
+        );
 
-      let text = "";
-      let url = "";
+
+      let text =
+        "";
+
+      let url =
+        "";
 
 
       if (
@@ -3172,32 +4413,47 @@ function renderSources(sources) {
             /https?:\/\/[^\s|]+/i
           );
 
+
         if (match) {
 
-          url = match[0];
+          url =
+            match[0];
 
           text =
             text
-              .replace(url, "")
+              .replace(
+                url,
+                ""
+              )
               .trim();
+
         }
+
       }
 
 
       if (!url) {
 
         url =
-          getSourceUrl(text);
+          getSourceUrl(
+            text
+          );
+
       }
 
 
       if (url) {
 
         const link =
-          document.createElement("a");
+          document.createElement(
+            "a"
+          );
 
-        link.href = url;
-        link.target = "_blank";
+        link.href =
+          url;
+
+        link.target =
+          "_blank";
 
         link.rel =
           "noopener noreferrer";
@@ -3208,21 +4464,33 @@ function renderSources(sources) {
         link.title =
           UI[selectedLang].openSource;
 
-        li.appendChild(link);
+        li.appendChild(
+          link
+        );
 
       } else {
 
-        li.textContent = text;
+        li.textContent =
+          text;
+
       }
 
-      list.appendChild(li);
+
+      list.appendChild(
+        li
+      );
+
     }
   );
 
 
-  box.appendChild(list);
+  box.appendChild(
+    list
+  );
+
 
   return box;
+
 }
 
 
@@ -3230,10 +4498,14 @@ function renderSources(sources) {
    KAYNAK URL'LERİ
 ========================================= */
 
-function getSourceUrl(source) {
+function getSourceUrl(
+  source
+) {
 
   const text =
-    String(source).toLowerCase();
+    String(
+      source
+    ).toLowerCase();
 
 
   const quranMatch =
@@ -3250,9 +4522,11 @@ function getSourceUrl(source) {
     const start =
       quranMatch[2];
 
+
     return (
       `https://quran.com/${surah}?startingVerse=${start}`
     );
+
   }
 
 
@@ -3264,6 +4538,7 @@ function getSourceUrl(source) {
     return (
       "https://sunnah.com/muslim"
     );
+
   }
 
 
@@ -3276,16 +4551,20 @@ function getSourceUrl(source) {
     return (
       "https://sunnah.com/bukhari"
     );
+
   }
 
 
   if (
-    text.includes("ömer nasuhi bilmen")
+    text.includes(
+      "ömer nasuhi bilmen"
+    )
   ) {
 
     return (
       "https://archive.org/search?query=%C3%96mer+Nasuhi+Bilmen+B%C3%BCy%C3%BCk+%C4%B0slam+%C4%B0lmihali"
     );
+
   }
 
 
@@ -3293,15 +4572,20 @@ function getSourceUrl(source) {
     text.includes(
       "bir müslümanın yol haritası"
     ) ||
-    text.includes("akademi")
+    text.includes(
+      "akademi"
+    )
   ) {
 
     return (
       "https://mckurdi27.github.io/yol-haritasi/"
     );
+
   }
 
+
   return "";
+
 }
 
 
@@ -3318,6 +4602,7 @@ window.addEventListener(
       event.error ||
       event.message
     );
+
   }
 );
 
@@ -3334,6 +4619,7 @@ window.addEventListener(
       "Yol Haritası Promise hatası:",
       event.reason
     );
+
   }
 );
 
