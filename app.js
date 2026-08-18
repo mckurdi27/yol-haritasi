@@ -4,12 +4,16 @@
    APP.JS
 
    TTS:
-   - Parçalı konuşma sistemi (Kilitlenme korumalı)
-   - Durdur & Kaldığı yerden devam et mantığı
+   - Parçalı konuşma sistemi
+   - Pause / Devam
+   - Durdur
    - Yavaşlat
    - Hızlandır
    - Çok hızlandır
    - TTS ayarları
+
+   NOT:
+   Sitenin diğer sistemlerine dokunulmamıştır.
 ========================================= */
 
 
@@ -295,6 +299,8 @@ let speechPitch =
 let selectedVoiceName =
   localStorage.getItem("ttsVoice") || "";
 
+let speechUtterance = null;
+
 let selectedVoice = null;
 
 
@@ -310,16 +316,38 @@ let veryFastLevel = 0;
 
 
 /* =========================================
-   TTS DURUMU VE PARÇALI SİSTEM
+   TTS DURUMU
 ========================================= */
 
-let speechIsPlaying = false;
-let speechIsPaused = false;
+let speechPaused = false;
+
+let speechIsSpeaking = false;
+
+let speechManualPaused = false;
+
 let speechCurrentText = "";
+
+
+/*
+ * PARÇALI TTS SİSTEMİ
+ */
+
 let speechChunks = [];
+
 let speechChunkIndex = 0;
+
 let speechChunkSession = 0;
-let speechChunkWordCount = 6;
+
+
+/*
+ * Pause sırasında mevcut parçanın
+ * SpeechSynthesis tarafından gerçekten
+ * pause/resume edilmesi hedeflenir.
+ */
+
+let speechChunkWordCount = 7;
+
+let speechStarting = false;
 
 
 /* =========================================
@@ -444,6 +472,10 @@ async function loadDays() {
 
   days = [];
 
+  console.log(
+    "📚 Günler yükleniyor..."
+  );
+
   const requests = [];
 
   for (
@@ -472,6 +504,12 @@ async function loadDays() {
           async response => {
 
             if (!response.ok) {
+
+              console.warn(
+                `Gün ${number} mevcut değil:`,
+                response.status
+              );
+
               return null;
             }
 
@@ -479,6 +517,12 @@ async function loadDays() {
               await response.text();
 
             if (!text.trim()) {
+
+              console.warn(
+                `Gün ${number} boş:`,
+                file
+              );
+
               return null;
             }
 
@@ -490,6 +534,12 @@ async function loadDays() {
                 JSON.parse(text);
 
             } catch (error) {
+
+              console.error(
+                `❌ Gün ${number} JSON hatası:`,
+                error
+              );
+
               return null;
             }
 
@@ -499,11 +549,32 @@ async function loadDays() {
                 : data.questions;
 
             if (
-              !Array.isArray(questions) ||
-              questions.length === 0
+              !Array.isArray(questions)
             ) {
+
+              console.warn(
+                `⚠️ Gün ${number}: questions dizisi bulunamadı.`,
+                file
+              );
+
               return null;
             }
+
+            if (
+              questions.length === 0
+            ) {
+
+              console.warn(
+                `⚠️ Gün ${number}: soru bulunamadı.`,
+                file
+              );
+
+              return null;
+            }
+
+            console.log(
+              `✅ Gün ${number} yüklendi: ${questions.length} soru`
+            );
 
             return {
 
@@ -522,7 +593,16 @@ async function loadDays() {
         )
 
         .catch(
-          () => null
+          error => {
+
+            console.error(
+              `❌ Gün ${number} yüklenemedi:`,
+              error
+            );
+
+            return null;
+
+          }
         )
 
     );
@@ -1449,6 +1529,8 @@ function renderTTSControls() {
 
       updateFastButtons();
 
+      updatePlayRateDisplay();
+
     }
   );
 
@@ -1466,8 +1548,35 @@ function renderTTSControls() {
   playButton.className =
     "tts-button tts-play";
 
-  playButton.textContent =
+  const playIcon =
+    document.createElement(
+      "span"
+    );
+
+  playIcon.className =
+    "tts-play-icon";
+
+  playIcon.textContent =
     "▶";
+
+  const playRate =
+    document.createElement(
+      "span"
+    );
+
+  playRate.className =
+    "tts-play-rate hidden";
+
+  playRate.textContent =
+    "1.00x";
+
+  playButton.appendChild(
+    playIcon
+  );
+
+  playButton.appendChild(
+    playRate
+  );
 
   playButton.setAttribute(
     "aria-label",
@@ -1489,7 +1598,7 @@ function renderTTSControls() {
   );
 
 
-  /* PAUSE (DURAKLAT / DEVAM ET) */
+  /* PAUSE */
 
   const pauseButton =
     document.createElement(
@@ -1630,6 +1739,8 @@ function renderTTSControls() {
         )
       );
 
+      updatePlayRateDisplay();
+
     }
   );
 
@@ -1703,6 +1814,8 @@ function renderTTSControls() {
         )
       );
 
+      updatePlayRateDisplay();
+
     }
   );
 
@@ -1752,19 +1865,15 @@ function renderTTSControls() {
   );
 
   controls.appendChild(
+    fastButton
+  );
+
+  controls.appendChild(
     pauseButton
   );
 
   controls.appendChild(
     stopButton
-  );
-
-  controls.appendChild(
-    fastButton
-  );
-
-  controls.appendChild(
-    veryFastButton
   );
 
   controls.appendChild(
@@ -1777,7 +1886,9 @@ function renderTTSControls() {
     controls
   );
 
-  updatePauseButtonState();
+  updatePauseButton();
+
+  updatePlayRateDisplay();
 
 }
 
@@ -2183,7 +2294,7 @@ function toggleTTSSettings() {
 
       stopSpeech();
 
-      playText(
+      speakText(
         getTTSTestText()
       );
 
@@ -2519,11 +2630,51 @@ function updateSpeedButtonsFromState() {
     )
   );
 
+  updatePlayRateDisplay();
+
 }
 
 
 /* =========================================
-   METİNİ PARÇALARA BÖLME
+   OYNAT BUTONUNDAKİ HIZ ETİKETİ
+========================================= */
+
+function updatePlayRateDisplay() {
+
+  const rateLabel =
+    document.querySelector(
+      ".tts-play-rate"
+    );
+
+  if (!rateLabel) {
+    return;
+  }
+
+  if (speechRate === 1) {
+
+    rateLabel.classList.add(
+      "hidden"
+    );
+
+    rateLabel.textContent =
+      "1.00x";
+
+  } else {
+
+    rateLabel.classList.remove(
+      "hidden"
+    );
+
+    rateLabel.textContent =
+      `${speechRate.toFixed(2)}x`;
+
+  }
+
+}
+
+
+/* =========================================
+   TTS METNİ PARÇALAMA
 ========================================= */
 
 function splitSpeechText(
@@ -2570,6 +2721,7 @@ function splitSpeechText(
     }
   );
 
+
   if (
     currentChunk.length
   ) {
@@ -2580,38 +2732,63 @@ function splitSpeechText(
 
   }
 
+
   return chunks;
 
 }
 
 
 /* =========================================
-   SES OYNATMA SİSTEMİ (KİLİTLENME RİSKİ YOK)
+   PARÇALI TTS BAŞLAT
 ========================================= */
 
-function playText(
+function speakText(
   text,
-  startIndex = 0
+  resumeFromChunk = 0
 ) {
 
   if (
     !("speechSynthesis" in window)
   ) {
+
+    console.warn(
+      "Tarayıcı TTS desteği bulunmuyor."
+    );
+
     return;
+
   }
 
   if (!text) {
     return;
   }
 
+
+  /*
+   * Yeni TTS oturumu.
+   */
+
   speechChunkSession++;
 
   const sessionId =
     speechChunkSession;
 
-  try {
-    window.speechSynthesis.cancel();
-  } catch (e) {}
+
+  /*
+   * Buradaki cancel() sadece yeni bir
+   * konuşma başlatılırken eski konuşmayı
+   * temizlemek içindir.
+   *
+   * PAUSE için kullanılmaz.
+   */
+
+  window.speechSynthesis.cancel();
+
+
+  /*
+   * Metin değiştiyse parçaları yeniden
+   * oluştur.
+   */
 
   if (
     speechCurrentText !== text ||
@@ -2628,40 +2805,66 @@ function playText(
 
   }
 
-  if (!speechChunks.length) {
+
+  if (
+    !speechChunks.length
+  ) {
     return;
   }
+
 
   speechChunkIndex =
     Math.max(
       0,
       Math.min(
         Math.floor(
-          startIndex
+          resumeFromChunk
         ),
-        speechChunks.length - 1
+        speechChunks.length
       )
     );
 
-  speechIsPlaying =
-    true;
 
-  speechIsPaused =
+  if (
+    speechChunkIndex >=
+    speechChunks.length
+  ) {
+
+    speechChunkIndex =
+      speechChunks.length - 1;
+
+  }
+
+
+  speechPaused =
     false;
 
-  updatePauseButtonState();
+  speechManualPaused =
+    false;
+
+  speechIsSpeaking =
+    false;
+
+  speechStarting =
+    true;
+
 
   loadSavedVoice();
 
-  processChunk(
+
+  speakCurrentChunk(
     sessionId
   );
 
 }
 
 
-function processChunk(
-  sessionId
+/* =========================================
+   MEVCUT PARÇAYI OKU
+========================================= */
+
+function speakCurrentChunk(
+  sessionId = speechChunkSession
 ) {
 
   if (
@@ -2676,31 +2879,71 @@ function processChunk(
     return;
   }
 
-  if (speechIsPaused) {
+  if (
+    speechPaused ||
+    speechManualPaused
+  ) {
+
     return;
+
   }
+
+
+  if (
+    !speechChunks.length
+  ) {
+
+    speechIsSpeaking =
+      false;
+
+    speechStarting =
+      false;
+
+    updatePauseButton();
+
+    return;
+
+  }
+
 
   if (
     speechChunkIndex >=
     speechChunks.length
   ) {
 
-    stopSpeech();
+    speechIsSpeaking =
+      false;
+
+    speechStarting =
+      false;
+
+    speechPaused =
+      false;
+
+    speechManualPaused =
+      false;
+
+    speechUtterance =
+      null;
+
+    updatePauseButton();
 
     return;
 
   }
+
 
   const chunk =
     speechChunks[
       speechChunkIndex
     ];
 
+
   if (!chunk) {
 
     speechChunkIndex++;
 
-    processChunk(
+    speakCurrentChunk(
       sessionId
     );
 
@@ -2708,10 +2951,22 @@ function processChunk(
 
   }
 
+
+  speechStarting =
+    true;
+
+  speechIsSpeaking =
+    false;
+
+
   const utterance =
     new SpeechSynthesisUtterance(
       chunk
     );
+
+  speechUtterance =
+    utterance;
+
 
   utterance.rate =
     speechRate;
@@ -2727,12 +2982,52 @@ function processChunk(
       selectedLang
     );
 
+
   if (selectedVoice) {
 
     utterance.voice =
       selectedVoice;
 
   }
+
+
+  utterance.onstart =
+    () => {
+
+      if (
+        sessionId !==
+        speechChunkSession
+      ) {
+        return;
+      }
+
+      speechStarting =
+        false;
+
+      speechIsSpeaking =
+        true;
+
+      /*
+       * Burada browser gerçekten paused
+       * durumda ise durumu bozma.
+       */
+
+      if (
+        !window.speechSynthesis.paused
+      ) {
+
+        speechPaused =
+          false;
+
+        speechManualPaused =
+          false;
+
+      }
+
+      updatePauseButton();
+
+    };
+
 
   utterance.onend =
     () => {
@@ -2744,22 +3039,74 @@ function processChunk(
         return;
       }
 
-      if (speechIsPaused) {
+
+      /*
+       * Pause sırasında onend normalde
+       * çağrılmamalıdır.
+       *
+       * Yine de bazı Android sürümlerinde
+       * event gelebilir.
+       */
+
+      if (
+        speechManualPaused ||
+        speechPaused ||
+        window.speechSynthesis.paused
+      ) {
+
+        speechIsSpeaking =
+          false;
+
+        speechStarting =
+          false;
+
+        updatePauseButton();
+
         return;
+
       }
 
+
+      speechIsSpeaking =
+        false;
+
+      speechStarting =
+        false;
+
+
+      /*
+       * Bir sonraki küçük parçaya geç.
+       */
+
       speechChunkIndex++;
+
 
       if (
         speechChunkIndex >=
         speechChunks.length
       ) {
 
-        stopSpeech();
+        speechPaused =
+          false;
+
+        speechManualPaused =
+          false;
+
+        speechUtterance =
+          null;
+
+        updatePauseButton();
 
         return;
 
       }
+
+
+      /*
+       * Android Chrome'da arka arkaya
+       * speak() çağrısında sorun oluşmaması
+       * için küçük gecikme.
+       */
 
       setTimeout(
         () => {
@@ -2771,19 +3118,23 @@ function processChunk(
             return;
           }
 
-          if (speechIsPaused) {
+          if (
+            speechPaused ||
+            speechManualPaused
+          ) {
             return;
           }
 
-          processChunk(
+          speakCurrentChunk(
             sessionId
           );
 
         },
-        30
+        20
       );
 
     };
+
 
   utterance.onerror =
     event => {
@@ -2795,31 +3146,64 @@ function processChunk(
         return;
       }
 
-      if (speechIsPaused) {
+
+      /*
+       * Pause sırasında Android bazen
+       * canceled/interrupted gönderebilir.
+       *
+       * Bu durumda konuşmayı bitmiş
+       * kabul etmiyoruz.
+       */
+
+      if (
+        speechManualPaused ||
+        speechPaused ||
+        window.speechSynthesis.paused
+      ) {
+
+        speechIsSpeaking =
+          false;
+
+        speechStarting =
+          false;
+
+        updatePauseButton();
+
         return;
+
       }
+
 
       if (
         event.error !== "canceled" &&
         event.error !== "interrupted"
       ) {
+
         console.warn(
           "TTS hatası:",
           event.error
         );
+
       }
 
-      stopSpeech();
+
+      speechIsSpeaking =
+        false;
+
+      speechStarting =
+        false;
+
+      speechUtterance =
+        null;
+
+      updatePauseButton();
 
     };
 
-  try {
-    window.speechSynthesis.speak(
-      utterance
-    );
-  } catch (e) {
-    stopSpeech();
-  }
+
+  window.speechSynthesis.speak(
+    utterance
+  );
 
 }
 
@@ -2857,7 +3241,7 @@ function getSpeechLanguage(
 
 
 /* =========================================
-   OYNAT / DEVAM ET
+   OYNAT
 ========================================= */
 
 function playSelectedText() {
@@ -2868,35 +3252,41 @@ function playSelectedText() {
     return;
   }
 
-  /* Eğer duraklatılmışsa, kaldığı chunk indeksinden devam et */
+
+  /*
+   * Eğer tarayıcı gerçekten pause
+   * durumundaysa PLAY de devam ettirebilir.
+   *
+   * Ancak asıl devam işlemi PAUSE
+   * butonundaki ▶ ile yapılır.
+   */
+
   if (
-    speechIsPaused &&
-    speechChunks.length > 0
+    speechPaused ||
+    speechManualPaused
   ) {
 
-    speechIsPaused =
-      false;
-
-    speechIsPlaying =
-      true;
-
-    updatePauseButtonState();
-
-    processChunk(
-      speechChunkSession
-    );
+    toggleSpeechPause();
 
     return;
 
   }
 
-  /* Zaten çalıyorsa dokunma */
+
+  /*
+   * Aktif konuşma varsa tekrar başlatma.
+   */
+
   if (
-    speechIsPlaying &&
-    !speechIsPaused
+    window.speechSynthesis.speaking ||
+    speechIsSpeaking ||
+    speechStarting
   ) {
+
     return;
+
   }
+
 
   const dayData =
     days[currentDayIndex];
@@ -2904,6 +3294,7 @@ function playSelectedText() {
   if (!dayData) {
     return;
   }
+
 
   const question =
     dayData.questions[
@@ -2914,6 +3305,7 @@ function playSelectedText() {
     return;
   }
 
+
   const data =
     question[selectedLang];
 
@@ -2921,8 +3313,16 @@ function playSelectedText() {
     return;
   }
 
+
   const text =
     `${data.q}. ${data.a}`;
+
+
+  /*
+   * Yeni Play başlangıcı:
+   *
+   * Normal hız = 1.0x
+   */
 
   speechRate =
     1;
@@ -2940,7 +3340,20 @@ function playSelectedText() {
 
   updateSpeedButtonsFromState();
 
-  playText(
+
+  speechCurrentText =
+    text;
+
+  speechChunks =
+    splitSpeechText(
+      text
+    );
+
+  speechChunkIndex =
+    0;
+
+
+  speakText(
     text,
     0
   );
@@ -2949,7 +3362,8 @@ function playSelectedText() {
 
 
 /* =========================================
-   DURAKLAT / DEVAM ET (GÜVENLİ TOGGLE)
+   PAUSE / DEVAM
+   GERÇEK SPEECH SYNTHESIS PAUSE / RESUME
 ========================================= */
 
 function toggleSpeechPause() {
@@ -2960,106 +3374,167 @@ function toggleSpeechPause() {
     return;
   }
 
-  /* Eğer şu an çalıyorsa duraklat */
+
+  /* =========================================
+     DURAKLATILMIŞSA → DEVAM
+  ========================================= */
+
   if (
-    speechIsPlaying &&
-    !speechIsPaused
+    speechPaused ||
+    speechManualPaused
   ) {
 
-    speechIsPaused =
-      true;
+    if (
+      !speechCurrentText ||
+      !speechChunks.length ||
+      speechChunkIndex >=
+        speechChunks.length
+    ) {
 
-    speechIsPlaying =
+      return;
+
+    }
+
+
+    /*
+     * Pause durumunu kaldır.
+     */
+
+    speechPaused =
       false;
 
-    speechChunkSession++; // Aktif ses kuyruğunu iptal etmek için oturum ID'sini artır
+    speechManualPaused =
+      false;
 
-    try {
-      window.speechSynthesis.cancel();
-    } catch (e) {}
+    speechIsSpeaking =
+      true;
 
-    updatePauseButtonState();
+    speechStarting =
+      false;
+
+    updatePauseButton();
+
+
+    /*
+     * ÖNEMLİ - ANDROID CHROME HATASI:
+     *
+     * window.speechSynthesis.resume()
+     * Android Chrome'da güvenilir
+     * değil: bazen hiçbir ses
+     * üretmeden sessizce başarısız
+     * oluyor. Bu yüzden native
+     * resume() KULLANILMIYOR.
+     *
+     * Bunun yerine mevcut parçayı
+     * (speechChunkIndex zaten
+     * korunuyor) temiz bir speak()
+     * çağrısıyla yeniden başlatıyoruz.
+     * Native pause() de aynı sebeple
+     * aşağıda kullanılmıyor, bu
+     * yüzden burada temizlenecek
+     * askıda bir şey yok.
+     */
+
+    speakCurrentChunk(
+      speechChunkSession
+    );
 
     return;
 
   }
 
-  /* Eğer duraklatılmışsa kaldığı yerden devam et */
+
+  /* =========================================
+     KONUŞMA YOKSA
+  ========================================= */
+
   if (
-    speechIsPaused &&
-    speechChunks.length > 0
+    !speechIsSpeaking &&
+    !speechStarting &&
+    !window.speechSynthesis.speaking
   ) {
 
-    speechIsPaused =
-      false;
+    return;
 
-    speechIsPlaying =
-      true;
+  }
 
-    updatePauseButtonState();
 
-    processChunk(
-      speechChunkSession
+  /* =========================================
+     PAUSE
+  ========================================= */
+
+  speechPaused =
+    true;
+
+  speechManualPaused =
+    true;
+
+
+  /*
+   * ÖNEMLİ - ANDROID CHROME HATASI:
+   *
+   * window.speechSynthesis.pause()
+   * Android Chrome'da bir kez
+   * çağrıldığında motoru kalıcı
+   * olarak bozabiliyor: bundan sonra
+   * resume() hatta cancel() + yeni
+   * speak() bile ses üretmiyor,
+   * sayfa yenilenene kadar.
+   *
+   * Bu yüzden native pause()
+   * HİÇ KULLANILMIYOR. Bunun yerine
+   * mevcut konuşma cancel() ile
+   * durduruluyor; hangi parçada
+   * kaldığımız (speechChunkIndex)
+   * zaten korunuyor, devam ederken
+   * o parçadan yeniden başlıyoruz.
+   */
+
+  try {
+
+    window.speechSynthesis.cancel();
+
+  } catch (error) {
+
+    console.warn(
+      "TTS durdurma hatası:",
+      error
     );
 
   }
 
-}
 
-
-/* =========================================
-   DURDUR
-========================================= */
-
-function stopSpeech() {
-
-  speechChunkSession++;
-
-  speechIsPlaying =
+  speechIsSpeaking =
     false;
 
-  speechIsPaused =
+  speechStarting =
     false;
 
-  if (
-    "speechSynthesis" in window
-  ) {
 
-    try {
-      window.speechSynthesis.cancel();
-    } catch (e) {}
-
-  }
-
-  speechCurrentText =
-    "";
-
-  speechChunks =
-    [];
-
-  speechChunkIndex =
-    0;
-
-  updatePauseButtonState();
+  updatePauseButton();
 
 }
 
 
 /* =========================================
-   PAUSE BUTONU GÖRÜNÜMÜNÜ GÜNCELLE
+   PAUSE BUTONUNU GÜNCELLE
 ========================================= */
 
-function updatePauseButtonState() {
+function updatePauseButton() {
 
   const buttons =
     document.querySelectorAll(
       ".tts-pause"
     );
 
+
   buttons.forEach(
     button => {
 
-      if (speechIsPaused) {
+      if (
+        speechPaused ||
+        speechManualPaused
+      ) {
 
         button.textContent =
           "▶";
@@ -3094,37 +3569,210 @@ function updatePauseButtonState() {
 
 
 /* =========================================
+   DURDUR
+========================================= */
+
+function stopSpeech() {
+
+  /*
+   * STOP:
+   * - konuşmayı keser
+   * - metni siler
+   * - parçaları siler
+   * - konumu sıfırlar
+   * - pause durumunu kaldırır
+   */
+
+  speechChunkSession++;
+
+
+  speechManualPaused =
+    false;
+
+  speechPaused =
+    false;
+
+  speechIsSpeaking =
+    false;
+
+  speechStarting =
+    false;
+
+
+  if (
+    "speechSynthesis" in window
+  ) {
+
+    window.speechSynthesis.cancel();
+
+  }
+
+
+  speechUtterance =
+    null;
+
+  speechCurrentText =
+    "";
+
+  speechChunks =
+    [];
+
+  speechChunkIndex =
+    0;
+
+
+  updatePauseButton();
+
+}
+
+
+/* =========================================
    HIZ DEĞİŞTİR
+   PARÇALI TTS İLE UYUMLU
 ========================================= */
 
 function changeSpeechRate(
   rate
 ) {
 
-  const wasPlaying =
-    speechIsPlaying &&
-    !speechIsPaused;
+  const wasSpeaking =
+    speechIsSpeaking ||
+    speechStarting ||
+    window.speechSynthesis.speaking;
 
-  const currentChunk =
-    speechChunkIndex;
+  const wasPaused =
+    speechPaused ||
+    speechManualPaused;
+
+
+  /*
+   * Yeni hız kaydedilir.
+   */
 
   speechRate =
     rate;
 
   saveTTSSettings();
 
+
+  /*
+   * Pause durumundaysa:
+   *
+   * Konuşmayı başlatmıyoruz.
+   * Yeni hız kaydedilir.
+   */
+
+  if (wasPaused) {
+
+    updatePauseButton();
+
+    return;
+
+  }
+
+
+  /*
+   * Konuşma aktif değilse sadece hız değişir.
+   */
+
   if (
-    !wasPlaying ||
+    !wasSpeaking ||
     !speechCurrentText ||
     !speechChunks.length
   ) {
+
     return;
+
   }
 
-  playText(
-    speechCurrentText,
-    currentChunk
+
+  /*
+   * Aktif konuşmada:
+   *
+   * Mevcut küçük parça yeniden başlatılır.
+   */
+
+  const currentChunk =
+    speechChunkIndex;
+
+
+  speechChunkSession++;
+
+  const sessionId =
+    speechChunkSession;
+
+
+  window.speechSynthesis.cancel();
+
+
+  speechUtterance =
+    null;
+
+  speechIsSpeaking =
+    false;
+
+  speechStarting =
+    false;
+
+  speechPaused =
+    false;
+
+  speechManualPaused =
+    false;
+
+
+  setTimeout(
+    () => {
+
+      if (
+        sessionId !==
+        speechChunkSession
+      ) {
+        return;
+      }
+
+      if (
+        !speechChunks.length
+      ) {
+        return;
+      }
+
+      if (
+        currentChunk >=
+        speechChunks.length
+      ) {
+        return;
+      }
+
+      speechChunkIndex =
+        currentChunk;
+
+      speakCurrentChunk(
+        sessionId
+      );
+
+    },
+    30
   );
+
+}
+
+
+/* =========================================
+   TTS AYARLARINDAN HIZ DEĞİŞTİRME
+========================================= */
+
+function setSpeechRate(
+  rate
+) {
+
+  changeSpeechRate(
+    rate
+  );
+
+  updateSpeedLevelsFromRate();
+
+  updateSpeedButtonsFromState();
 
 }
 
@@ -3612,13 +4260,17 @@ function goToQuestionNumber(
   const questionNumber =
     Number(value);
 
+
   if (
     !Number.isInteger(
       questionNumber
     )
   ) {
+
     return;
+
   }
+
 
   for (
     let dayIndex = 0;
@@ -3629,12 +4281,14 @@ function goToQuestionNumber(
     const questions =
       days[dayIndex].questions;
 
+
     const questionIndex =
       questions.findIndex(
         question =>
           Number(question.id) ===
           questionNumber
       );
+
 
     if (
       questionIndex !== -1
@@ -3656,6 +4310,11 @@ function goToQuestionNumber(
 
   }
 
+
+  console.warn(
+    `Soru bulunamadı: ${questionNumber}`
+  );
+
 }
 
 
@@ -3670,13 +4329,17 @@ function goToDayNumber(
   const dayNumber =
     Number(value);
 
+
   if (
     !Number.isInteger(
       dayNumber
     )
   ) {
+
     return;
+
   }
+
 
   const dayIndex =
     days.findIndex(
@@ -3685,9 +4348,19 @@ function goToDayNumber(
         dayNumber
     );
 
-  if (dayIndex === -1) {
+
+  if (
+    dayIndex === -1
+  ) {
+
+    console.warn(
+      `Gün bulunamadı: ${dayNumber}`
+    );
+
     return;
+
   }
+
 
   stopSpeech();
 
@@ -3770,11 +4443,13 @@ function renderSources(
           "li"
         );
 
+
       let text =
         "";
 
       let url =
         "";
+
 
       if (
         typeof source === "object" &&
@@ -3800,6 +4475,7 @@ function renderSources(
             /https?:\/\/[^\s|]+/i
           );
 
+
         if (match) {
 
           url =
@@ -3817,12 +4493,16 @@ function renderSources(
 
       }
 
+
       if (!url) {
+
         url =
           getSourceUrl(
             text
           );
+
       }
+
 
       if (url) {
 
@@ -3857,6 +4537,7 @@ function renderSources(
 
       }
 
+
       list.appendChild(
         li
       );
@@ -3864,9 +4545,11 @@ function renderSources(
     }
   );
 
+
   box.appendChild(
     list
   );
+
 
   return box;
 
@@ -3886,10 +4569,12 @@ function getSourceUrl(
       source
     ).toLowerCase();
 
+
   const quranMatch =
     text.match(
       /(?:kur['’]an|qur['’]?an|coran|corán|коран|коръән)[^0-9]*(\d+)[\s:.-]+(\d+)(?:[-–](\d+))?/i
     );
+
 
   if (quranMatch) {
 
@@ -3899,40 +4584,51 @@ function getSourceUrl(
     const start =
       quranMatch[2];
 
+
     return (
       `https://quran.com/${surah}?startingVerse=${start}`
     );
 
   }
 
+
   if (
     text.includes("sahih müslim") ||
     text.includes("sahih muslim")
   ) {
+
     return (
       "https://sunnah.com/muslim"
     );
+
   }
+
 
   if (
     text.includes("sahih buhari") ||
     text.includes("sahih buhârî") ||
     text.includes("sahih bukhari")
   ) {
+
     return (
       "https://sunnah.com/bukhari"
     );
+
   }
+
 
   if (
     text.includes(
       "ömer nasuhi bilmen"
     )
   ) {
+
     return (
       "https://archive.org/search?query=%C3%96mer+Nasuhi+Bilmen+B%C3%BCy%C3%BCk+%C4%B0slam+%C4%B0lmihali"
     );
+
   }
+
 
   if (
     text.includes(
@@ -3942,10 +4638,13 @@ function getSourceUrl(
       "akademi"
     )
   ) {
+
     return (
       "https://mckurdi27.github.io/yol-haritasi/"
     );
+
   }
+
 
   return "";
 
@@ -3990,4 +4689,3 @@ window.addEventListener(
 /* =========================================
    APP.JS SONU
 ========================================= */
-
