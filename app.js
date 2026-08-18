@@ -4,21 +4,18 @@
    APP.JS
 
    TTS:
-   - Parçalı konuşma sistemi
-   - Pause / Devam
-   - Durdur
-   - Yavaşlat
-   - Hızlandır
-   - Çok hızlandır
+   - Parçalı konuşma
+   - Pause / Devam / Durdur
+   - Yavaşlat / Hızlandır / Çok hızlandır
    - TTS ayarları
 
-   SÖZLÜK (day-00):
-   - 16 dilli arama
+   SÖZLÜK (day-00 + online):
    - Seçili dil üstte
+   - 16 dil çeviri
+   - Yerel day-00.json
+   - İnternet (MyMemory) + önbellek
+   - İsteğe bağlı Wikipedia özeti
    - Sadece sözlükte 🎤 konuşarak yazma
-
-   NOT:
-   Sitenin diğer sistemlerine dokunulmamıştır.
 ========================================= */
 
 
@@ -66,7 +63,14 @@ const UI = {
     loading: "Günler yükleniyor...",
     noDays: "Henüz gün bulunamadı.",
     dictionary: "Sözlük",
-    entriesCount: "madde"
+    entriesCount: "madde",
+    onlineLoading: "🌐 İnternetten çeviriler alınıyor...",
+    onlineReady: "🌐 İnternet çevirisi hazır.",
+    onlineCache: "📦 Önbellekten gösteriliyor.",
+    onlineFail: "İnternetten sonuç alınamadı.",
+    onlineError: "İnternet bağlantısı / çeviri hatası.",
+    localOnly: "Yerel sözlükten gösteriliyor.",
+    loadingShort: "Yükleniyor..."
   },
   en: {
     title: "A Muslim's Roadmap",
@@ -83,7 +87,14 @@ const UI = {
     loading: "Loading days...",
     noDays: "No days found yet.",
     dictionary: "Dictionary",
-    entriesCount: "entries"
+    entriesCount: "entries",
+    onlineLoading: "🌐 Fetching translations online...",
+    onlineReady: "🌐 Online translation ready.",
+    onlineCache: "📦 Showing cached online result.",
+    onlineFail: "No online result.",
+    onlineError: "Online lookup failed.",
+    localOnly: "Showing local dictionary results.",
+    loadingShort: "Loading..."
   },
   de: {
     title: "Der Wegweiser eines Muslims",
@@ -100,109 +111,14 @@ const UI = {
     loading: "Tage werden geladen...",
     noDays: "Noch keine Tage gefunden.",
     dictionary: "Wörterbuch",
-    entriesCount: "Einträge"
-  },
-  ru: {
-    title: "Путеводитель мусульманина",
-    subtitle: "Изучайте ислам шаг за шагом",
-    days: "Дни",
-    previousQuestion: "←",
-    nextQuestion: "→",
-    home: "🕋",
-    previousDay: "←",
-    nextDay: "→",
-    source: "📚 Источники",
-    openSource: "Открыть источник",
-    questionCount: "Вопросов",
-    loading: "Загрузка дней...",
-    noDays: "Дни пока не найдены.",
-    dictionary: "Словарь",
-    entriesCount: "статей"
-  },
-  ku: {
-    title: "Rêbernameya Misilmanekî",
-    subtitle: "Îslamê gav bi gav fêr bibe",
-    days: "Roj",
-    previousQuestion: "←",
-    nextQuestion: "→",
-    home: "🕋",
-    previousDay: "←",
-    nextDay: "→",
-    source: "📚 Çavkanî",
-    openSource: "Çavkaniyê veke",
-    questionCount: "Pirs",
-    loading: "Roj tên barkirin...",
-    noDays: "Hêj roj nehatine dîtin.",
-    dictionary: "Ferheng",
-    entriesCount: "madde"
-  },
-  ar: {
-    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
-    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
-    days: "الأَيَّامُ",
-    previousQuestion: "←",
-    nextQuestion: "→",
-    home: "🕋",
-    previousDay: "←",
-    nextDay: "→",
-    source: "📚 الْمَصَادِرُ",
-    openSource: "فَتْحُ الْمَصْدَرِ",
-    questionCount: "أَسْئِلَة",
-    loading: "جَارٍ تَحْمِيلُ الأَيَّامِ...",
-    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ.",
-    dictionary: "الْقَامُوسُ",
-    entriesCount: "مَادَّة"
-  },
-  tt: {
-    title: "Мөселманның юл картасы",
-    subtitle: "Исламны адымлап өйрәнегез",
-    days: "Көннәр",
-    previousQuestion: "←",
-    nextQuestion: "→",
-    home: "🕋",
-    previousDay: "←",
-    nextDay: "→",
-    source: "📚 Чыганаклар",
-    openSource: "Чыганакны ачу",
-    questionCount: "Сорау",
-    loading: "Көннәр йөкләнә...",
-    noDays: "Әлегә көннәр табылмады.",
-    dictionary: "Сүзлек",
-    entriesCount: "мәкалә"
-  },
-  fr: {
-    title: "La feuille de route du musulman",
-    subtitle: "Apprendre l’islam étape par étape",
-    days: "Jours",
-    previousQuestion: "←",
-    nextQuestion: "→",
-    home: "🕋",
-    previousDay: "←",
-    nextDay: "→",
-    source: "📚 Sources",
-    openSource: "Ouvrir la source",
-    questionCount: "Questions",
-    loading: "Chargement des jours...",
-    noDays: "Aucun jour trouvé.",
-    dictionary: "Dictionnaire",
-    entriesCount: "entrées"
-  },
-  es: {
-    title: "La hoja de ruta del musulmán",
-    subtitle: "Aprender el Islam paso a paso",
-    days: "Días",
-    previousQuestion: "←",
-    nextQuestion: "→",
-    home: "🕋",
-    previousDay: "←",
-    nextDay: "→",
-    source: "📚 Fuentes",
-    openSource: "Abrir fuente",
-    questionCount: "Preguntas",
-    loading: "Cargando días...",
-    noDays: "Todavía no se encontraron días.",
-    dictionary: "Diccionario",
-    entriesCount: "entradas"
+    entriesCount: "Einträge",
+    onlineLoading: "🌐 Übersetzungen werden geladen...",
+    onlineReady: "🌐 Online-Übersetzung bereit.",
+    onlineCache: "📦 Aus dem Cache.",
+    onlineFail: "Kein Online-Ergebnis.",
+    onlineError: "Online-Abfrage fehlgeschlagen.",
+    localOnly: "Lokales Wörterbuch.",
+    loadingShort: "Laden..."
   },
   nl: {
     title: "De routekaart van een moslim",
@@ -219,7 +135,158 @@ const UI = {
     loading: "Dagen worden geladen...",
     noDays: "Nog geen dagen gevonden.",
     dictionary: "Woordenboek",
-    entriesCount: "items"
+    entriesCount: "items",
+    onlineLoading: "🌐 Online vertalingen ophalen...",
+    onlineReady: "🌐 Online vertaling klaar.",
+    onlineCache: "📦 Uit cache.",
+    onlineFail: "Geen online resultaat.",
+    onlineError: "Online opzoeken mislukt.",
+    localOnly: "Lokale woordenboekresultaten.",
+    loadingShort: "Laden..."
+  },
+  fr: {
+    title: "La feuille de route du musulman",
+    subtitle: "Apprendre l’islam étape par étape",
+    days: "Jours",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
+    source: "📚 Sources",
+    openSource: "Ouvrir la source",
+    questionCount: "Questions",
+    loading: "Chargement des jours...",
+    noDays: "Aucun jour trouvé.",
+    dictionary: "Dictionnaire",
+    entriesCount: "entrées",
+    onlineLoading: "🌐 Traductions en ligne...",
+    onlineReady: "🌐 Traduction en ligne prête.",
+    onlineCache: "📦 Depuis le cache.",
+    onlineFail: "Aucun résultat en ligne.",
+    onlineError: "Échec de la recherche en ligne.",
+    localOnly: "Résultats du dictionnaire local.",
+    loadingShort: "Chargement..."
+  },
+  ru: {
+    title: "Путеводитель мусульманина",
+    subtitle: "Изучайте ислам шаг за шагом",
+    days: "Дни",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
+    source: "📚 Источники",
+    openSource: "Открыть источник",
+    questionCount: "Вопросов",
+    loading: "Загрузка дней...",
+    noDays: "Дни пока не найдены.",
+    dictionary: "Словарь",
+    entriesCount: "статей",
+    onlineLoading: "🌐 Загрузка переводов...",
+    onlineReady: "🌐 Онлайн-перевод готов.",
+    onlineCache: "📦 Из кэша.",
+    onlineFail: "Нет онлайн-результата.",
+    onlineError: "Ошибка онлайн-поиска.",
+    localOnly: "Локальный словарь.",
+    loadingShort: "Загрузка..."
+  },
+  ku: {
+    title: "Rêbernameya Misilmanekî",
+    subtitle: "Îslamê gav bi gav fêr bibe",
+    days: "Roj",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
+    source: "📚 Çavkanî",
+    openSource: "Çavkaniyê veke",
+    questionCount: "Pirs",
+    loading: "Roj tên barkirin...",
+    noDays: "Hêj roj nehatine dîtin.",
+    dictionary: "Ferheng",
+    entriesCount: "madde",
+    onlineLoading: "🌐 Wergerên înternetê têne stendin...",
+    onlineReady: "🌐 Wergera online amade ye.",
+    onlineCache: "📦 Ji cacheê.",
+    onlineFail: "Encama online tune.",
+    onlineError: "Lêgerîna online têk çû.",
+    localOnly: "Ferhenga herêmî.",
+    loadingShort: "Tê barkirin..."
+  },
+  tt: {
+    title: "Мөселманның юл картасы",
+    subtitle: "Исламны адымлап өйрәнегез",
+    days: "Көннәр",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
+    source: "📚 Чыганаклар",
+    openSource: "Чыганакны ачу",
+    questionCount: "Сорау",
+    loading: "Көннәр йөкләнә...",
+    noDays: "Әлегә көннәр табылмады.",
+    dictionary: "Сүзлек",
+    entriesCount: "мәкалә",
+    onlineLoading: "🌐 Интернет тәрҗемәләре алына...",
+    onlineReady: "🌐 Онлайн тәрҗемә әзер.",
+    onlineCache: "📦 Кэштан.",
+    onlineFail: "Онлайн нәтиҗә юк.",
+    onlineError: "Онлайн эзләү хатасы.",
+    localOnly: "Җирле сүзлек.",
+    loadingShort: "Йөкләнә..."
+  },
+  ar: {
+    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
+    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
+    days: "الأَيَّامُ",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
+    source: "📚 الْمَصَادِرُ",
+    openSource: "فَتْحُ الْمَصْدَرِ",
+    questionCount: "أَسْئِلَة",
+    loading: "جَارٍ تَحْمِيلُ الأَيَّامِ...",
+    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ.",
+    dictionary: "الْقَامُوسُ",
+    entriesCount: "مَادَّة",
+    onlineLoading: "🌐 جَارٍ جَلْبُ التَّرْجَمَاتِ...",
+    onlineReady: "🌐 التَّرْجَمَةُ جَاهِزَةٌ.",
+    onlineCache: "📦 مِنَ الذَّاكِرَةِ الْمُؤَقَّتَةِ.",
+    onlineFail: "لَا نَتِيجَةَ عَبْرَ الْإِنْتَرْنِتِ.",
+    onlineError: "فَشِلَ الْبَحْثُ عَبْرَ الْإِنْتَرْنِتِ.",
+    localOnly: "مِنَ الْقَامُوسِ الْمَحَلِّيِّ.",
+    loadingShort: "جَارٍ التَّحْمِيلُ..."
+  },
+  es: {
+    title: "La hoja de ruta del musulmán",
+    subtitle: "Aprender el Islam paso a paso",
+    days: "Días",
+    previousQuestion: "←",
+    nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
+    source: "📚 Fuentes",
+    openSource: "Abrir fuente",
+    questionCount: "Preguntas",
+    loading: "Cargando días...",
+    noDays: "Todavía no se encontraron días.",
+    dictionary: "Diccionario",
+    entriesCount: "entradas",
+    onlineLoading: "🌐 Obteniendo traducciones...",
+    onlineReady: "🌐 Traducción en línea lista.",
+    onlineCache: "📦 Desde caché.",
+    onlineFail: "Sin resultado en línea.",
+    onlineError: "Error de búsqueda en línea.",
+    localOnly: "Diccionario local.",
+    loadingShort: "Cargando..."
   },
   it: {
     title: "La guida del musulmano",
@@ -236,7 +303,14 @@ const UI = {
     loading: "Caricamento dei giorni...",
     noDays: "Nessun giorno trovato.",
     dictionary: "Dizionario",
-    entriesCount: "voci"
+    entriesCount: "voci",
+    onlineLoading: "🌐 Scarico traduzioni...",
+    onlineReady: "🌐 Traduzione online pronta.",
+    onlineCache: "📦 Dalla cache.",
+    onlineFail: "Nessun risultato online.",
+    onlineError: "Ricerca online non riuscita.",
+    localOnly: "Dizionario locale.",
+    loadingShort: "Caricamento..."
   },
   pt: {
     title: "O Roteiro de um Muçulmano",
@@ -253,7 +327,14 @@ const UI = {
     loading: "A carregar os dias...",
     noDays: "Ainda não foram encontrados dias.",
     dictionary: "Dicionário",
-    entriesCount: "entradas"
+    entriesCount: "entradas",
+    onlineLoading: "🌐 A obter traduções...",
+    onlineReady: "🌐 Tradução online pronta.",
+    onlineCache: "📦 Da cache.",
+    onlineFail: "Sem resultado online.",
+    onlineError: "Falha na pesquisa online.",
+    localOnly: "Dicionário local.",
+    loadingShort: "A carregar..."
   },
   ko: {
     title: "무슬림의 길잡이",
@@ -270,7 +351,14 @@ const UI = {
     loading: "일차를 불러오는 중...",
     noDays: "아직 일차가 없습니다.",
     dictionary: "사전",
-    entriesCount: "항목"
+    entriesCount: "항목",
+    onlineLoading: "🌐 온라인 번역 가져오는 중...",
+    onlineReady: "🌐 온라인 번역 준비됨.",
+    onlineCache: "📦 캐시에서 표시.",
+    onlineFail: "온라인 결과 없음.",
+    onlineError: "온라인 검색 실패.",
+    localOnly: "로컬 사전 결과.",
+    loadingShort: "로딩 중..."
   },
   vi: {
     title: "Lộ Trình Của Người Muslim",
@@ -287,7 +375,14 @@ const UI = {
     loading: "Đang tải các ngày...",
     noDays: "Chưa tìm thấy ngày nào.",
     dictionary: "Từ điển",
-    entriesCount: "mục"
+    entriesCount: "mục",
+    onlineLoading: "🌐 Đang lấy bản dịch online...",
+    onlineReady: "🌐 Bản dịch online sẵn sàng.",
+    onlineCache: "📦 Từ bộ nhớ đệm.",
+    onlineFail: "Không có kết quả online.",
+    onlineError: "Lỗi tra cứu online.",
+    localOnly: "Từ điển cục bộ.",
+    loadingShort: "Đang tải..."
   },
   ja: {
     title: "ムスリムの道しるべ",
@@ -304,7 +399,14 @@ const UI = {
     loading: "読み込み中...",
     noDays: "まだ日がありません。",
     dictionary: "辞典",
-    entriesCount: "項目"
+    entriesCount: "項目",
+    onlineLoading: "🌐 オンライン翻訳を取得中...",
+    onlineReady: "🌐 オンライン翻訳の準備完了。",
+    onlineCache: "📦 キャッシュから表示。",
+    onlineFail: "オンライン結果なし。",
+    onlineError: "オンライン検索に失敗。",
+    localOnly: "ローカル辞典の結果。",
+    loadingShort: "読み込み中..."
   },
   zh: {
     title: "穆斯林的路线图",
@@ -321,7 +423,14 @@ const UI = {
     loading: "正在加载天数...",
     noDays: "尚未找到任何天数。",
     dictionary: "词典",
-    entriesCount: "词条"
+    entriesCount: "词条",
+    onlineLoading: "🌐 正在获取在线翻译...",
+    onlineReady: "🌐 在线翻译已就绪。",
+    onlineCache: "📦 来自缓存。",
+    onlineFail: "无在线结果。",
+    onlineError: "在线查询失败。",
+    localOnly: "本地词典结果。",
+    loadingShort: "加载中..."
   }
 };
 
@@ -339,8 +448,48 @@ let currentQuestionIndex = 0;
 
 /* Sözlük */
 let dictionaryQuery = "";
+let dictionarySearchTimer = null;
+let onlineLookupToken = 0;
+let lastOnlineEntry = null;
 let speechRecognition = null;
 let isDictListening = false;
+
+
+/* =========================================
+   ONLINE SÖZLÜK AYARLARI
+========================================= */
+
+const ONLINE_DICT = {
+  enabled: true,
+  // true: yerelde bulsa bile internetten de sor
+  alwaysOnline: false,
+  // MyMemory limit artırmak için e-posta (opsiyonel)
+  email: "",
+  timeout: 12000,
+  cachePrefix: "dict_cache_v1_",
+  cacheDays: 7,
+  // Wikipedia kısa özet
+  wikiSummary: true
+};
+
+const API_LANG = {
+  tr: "tr",
+  en: "en",
+  de: "de",
+  nl: "nl",
+  fr: "fr",
+  ru: "ru",
+  ku: "ku",
+  tt: "tt",
+  ar: "ar",
+  es: "es",
+  it: "it",
+  pt: "pt",
+  ko: "ko",
+  vi: "vi",
+  ja: "ja",
+  zh: "zh-CN"
+};
 
 
 /* =========================================
@@ -379,6 +528,7 @@ async function init() {
   document.documentElement.lang = selectedLang;
   renderHome();
   await loadDays();
+  ensureDictionaryDay();
   loadSavedVoice();
   updateSpeedLevelsFromRate();
   renderHome();
@@ -386,7 +536,7 @@ async function init() {
 
 
 /* =========================================
-   TTS SESLERİNİ YÜKLE
+   TTS SESLERİ
 ========================================= */
 
 function loadSavedVoice() {
@@ -399,18 +549,17 @@ function loadSavedVoice() {
 
   if (selectedVoiceName) {
     selectedVoice =
-      voices.find(voice => voice.name === selectedVoiceName) || null;
+      voices.find(v => v.name === selectedVoiceName) || null;
   }
 
   if (!selectedVoice) {
     const speechLang = getSpeechLanguage(selectedLang);
-
     selectedVoice =
-      voices.find(voice => voice.lang === speechLang) ||
+      voices.find(v => v.lang === speechLang) ||
       voices.find(
-        voice =>
-          voice.lang &&
-          voice.lang
+        v =>
+          v.lang &&
+          v.lang
             .toLowerCase()
             .startsWith(speechLang.split("-")[0].toLowerCase())
       ) ||
@@ -428,7 +577,7 @@ if ("speechSynthesis" in window) {
 
 
 /* =========================================
-   GÜNLERİ YÜKLE (0 = sözlük, 1–30 = günler)
+   GÜNLERİ YÜKLE (0 = sözlük)
 ========================================= */
 
 async function loadDays() {
@@ -464,23 +613,16 @@ async function loadDays() {
           }
 
           const type =
-            data.type === "dictionary"
-              ? "dictionary"
-              : number === 0 && Array.isArray(data.entries)
+            data.type === "dictionary" ||
+            (number === 0 && Array.isArray(data.entries))
               ? "dictionary"
               : "day";
 
           if (type === "dictionary") {
             const entries = Array.isArray(data.entries) ? data.entries : [];
-            if (!entries.length) {
-              console.warn(`⚠️ Sözlük: madde yok.`, file);
-              return null;
-            }
-
             console.log(`✅ Sözlük yüklendi: ${entries.length} madde`);
-
             return {
-              number,
+              number: 0,
               type: "dictionary",
               questions: [],
               entries,
@@ -489,19 +631,12 @@ async function loadDays() {
           }
 
           const questions = Array.isArray(data) ? data : data.questions;
-
-          if (!Array.isArray(questions)) {
-            console.warn(`⚠️ Gün ${number}: questions dizisi bulunamadı.`, file);
-            return null;
-          }
-
-          if (!questions.length) {
-            console.warn(`⚠️ Gün ${number}: soru bulunamadı.`, file);
+          if (!Array.isArray(questions) || !questions.length) {
+            console.warn(`⚠️ Gün ${number}: soru yok.`, file);
             return null;
           }
 
           console.log(`✅ Gün ${number} yüklendi: ${questions.length} soru`);
-
           return {
             number,
             type: "day",
@@ -518,15 +653,54 @@ async function loadDays() {
   }
 
   const results = await Promise.all(requests);
-
   days = results
     .filter(item => item !== null)
     .sort((a, b) => a.number - b.number);
 }
 
+/* day-00 yoksa sanal online sözlük günü ekle */
+function ensureDictionaryDay() {
+  const hasDict = days.some(d => d.type === "dictionary");
+  if (hasDict) return;
+
+  days.unshift({
+    number: 0,
+    type: "dictionary",
+    questions: [],
+    entries: [],
+    info: {
+      day: 0,
+      type: "dictionary",
+      dayTitle: Object.fromEntries(
+        LANGS.map(l => [l.key, UI[l.key]?.dictionary || "Dictionary"])
+      ),
+      daySubtitle: {
+        tr: "Seçili dilde yaz — internetten 16 dile çevir",
+        en: "Type in the selected language — translate to 16 languages online",
+        de: "In der gewählten Sprache tippen — online in 16 Sprachen",
+        nl: "Typ in de geselecteerde taal — online naar 16 talen",
+        fr: "Écrivez dans la langue choisie — traduisez en 16 langues",
+        ru: "Пишите на выбранном языке — перевод на 16 языков",
+        ku: "Bi zimanê hilbijartî binivîse — 16 ziman online",
+        tt: "Сайланган телдә яз — 16 телгә онлайн",
+        ar: "اُكْتُبْ بِاللُّغَةِ الْمُخْتَارَةِ — تَرْجَمَةٌ إِلَى ١٦ لُغَةً",
+        es: "Escribe en el idioma seleccionado — 16 idiomas en línea",
+        it: "Scrivi nella lingua selezionata — 16 lingue online",
+        pt: "Escreva no idioma selecionado — 16 idiomas online",
+        ko: "선택한 언어로 입력 — 16개 언어 온라인 번역",
+        vi: "Gõ bằng ngôn ngữ đã chọn — dịch 16 ngôn ngữ online",
+        ja: "選択言語で入力 — 16言語オンライン翻訳",
+        zh: "用所选语言输入 — 在线翻译成16种语言"
+      }
+    }
+  });
+
+  console.log("ℹ️ day-00 yok: sanal online sözlük eklendi.");
+}
+
 
 /* =========================================
-   YARDIMCI: aktif sayfa tipi
+   YARDIMCILAR
 ========================================= */
 
 function getCurrentDayData() {
@@ -534,8 +708,12 @@ function getCurrentDayData() {
 }
 
 function isDictionaryPage() {
-  const dayData = getCurrentDayData();
-  return !!(dayData && dayData.type === "dictionary");
+  const d = getCurrentDayData();
+  return !!(d && d.type === "dictionary");
+}
+
+function t(key, fallback = "") {
+  return (UI[selectedLang] && UI[selectedLang][key]) || fallback;
 }
 
 
@@ -563,13 +741,10 @@ function renderHome() {
     const title = UI[selectedLang].title;
     const words = title.trim().split(/\s+/);
     const middle = Math.ceil(words.length / 2);
-
     const firstLine = document.createElement("div");
     firstLine.textContent = words.slice(0, middle).join(" ");
-
     const secondLine = document.createElement("div");
     secondLine.textContent = words.slice(middle).join(" ");
-
     roadmapTitle.appendChild(firstLine);
     roadmapTitle.appendChild(secondLine);
   }
@@ -582,7 +757,6 @@ function renderHome() {
 
   const list = document.querySelector("#days-list");
   if (!list) return;
-
   list.innerHTML = "";
 
   if (!days.length) {
@@ -597,9 +771,7 @@ function renderHome() {
     const card = document.createElement("button");
     card.type = "button";
     card.className = "day-card";
-    if (dayData.type === "dictionary") {
-      card.classList.add("dictionary-card-home");
-    }
+    if (dayData.type === "dictionary") card.classList.add("dictionary-card-home");
 
     const title = getDayTitle(dayData);
     const subtitleText = getDaySubtitle(dayData);
@@ -608,8 +780,10 @@ function renderHome() {
     titleLine.className = "day-card-title";
 
     if (dayData.type === "dictionary") {
-      titleLine.textContent =
-        `${title} · ${dayData.entries.length} ${UI[selectedLang].entriesCount || "madde"}`;
+      const count = dayData.entries.length;
+      titleLine.textContent = count
+        ? `${title} · ${count} ${t("entriesCount", "madde")} · 🌐`
+        : `${title} · 🌐 online`;
     } else {
       titleLine.textContent =
         `${title} · ${dayData.questions.length} ${UI[selectedLang].questionCount}`;
@@ -630,12 +804,10 @@ function renderHome() {
       currentDayIndex = index;
       currentQuestionIndex = 0;
       dictionaryQuery = "";
+      lastOnlineEntry = null;
 
-      if (dayData.type === "dictionary") {
-        renderDictionary();
-      } else {
-        renderQuestion();
-      }
+      if (dayData.type === "dictionary") renderDictionary();
+      else renderQuestion();
     });
 
     list.appendChild(card);
@@ -644,7 +816,7 @@ function renderHome() {
 
 
 /* =========================================
-   GÜN BAŞLIĞI / ALT BAŞLIK
+   BAŞLIKLAR
 ========================================= */
 
 function getDayTitle(dayData) {
@@ -655,7 +827,7 @@ function getDayTitle(dayData) {
       info.dayTitle[selectedLang] ||
       info.dayTitle.tr ||
       (dayData.type === "dictionary"
-        ? UI[selectedLang].dictionary
+        ? t("dictionary", "Sözlük")
         : `${dayData.number}. Gün`)
     );
   }
@@ -668,12 +840,9 @@ function getDayTitle(dayData) {
     );
   }
 
-  if (dayData.type === "dictionary") {
-    return UI[selectedLang].dictionary || "Sözlük";
-  }
+  if (dayData.type === "dictionary") return t("dictionary", "Sözlük");
 
-  const first = dayData.questions[0] || {};
-
+  const first = (dayData.questions && dayData.questions[0]) || {};
   if (first.dayTitle && typeof first.dayTitle === "object") {
     return (
       first.dayTitle[selectedLang] ||
@@ -681,31 +850,23 @@ function getDayTitle(dayData) {
       `${dayData.number}. Gün`
     );
   }
-
   if (typeof first.dayTitle === "string") return first.dayTitle;
-
   return `${dayData.number}. Gün`;
 }
 
 function getDaySubtitle(dayData) {
   const info = dayData.info || {};
-
   if (info.daySubtitle && typeof info.daySubtitle === "object") {
     return info.daySubtitle[selectedLang] || info.daySubtitle.tr || "";
   }
-
   if (info.subtitle && typeof info.subtitle === "object") {
     return info.subtitle[selectedLang] || info.subtitle.tr || "";
   }
-
   const first = (dayData.questions && dayData.questions[0]) || {};
-
   if (first.daySubtitle && typeof first.daySubtitle === "object") {
     return first.daySubtitle[selectedLang] || first.daySubtitle.tr || "";
   }
-
   if (typeof first.daySubtitle === "string") return first.daySubtitle;
-
   return "";
 }
 
@@ -716,7 +877,6 @@ function getDaySubtitle(dayData) {
 
 function renderLanguageButtons(container) {
   if (!container) return;
-
   container.innerHTML = "";
 
   LANGS.forEach(language => {
@@ -726,10 +886,7 @@ function renderLanguageButtons(container) {
     button.textContent = language.flag;
     button.title = language.name;
     button.setAttribute("aria-label", language.name);
-
-    if (language.key === selectedLang) {
-      button.classList.add("active");
-    }
+    if (language.key === selectedLang) button.classList.add("active");
 
     button.addEventListener("click", () => {
       stopSpeech();
@@ -753,10 +910,7 @@ function renderLanguageButtons(container) {
         dayData.type === "dictionary"
       ) {
         renderDictionary();
-      } else if (
-        questionPage &&
-        questionPage.style.display !== "none"
-      ) {
+      } else if (questionPage && questionPage.style.display !== "none") {
         renderQuestion();
       } else {
         renderHome();
@@ -787,7 +941,6 @@ function renderQuestion() {
   }
 
   const dayData = days[currentDayIndex];
-
   if (dayData.type === "dictionary") {
     renderDictionary();
     return;
@@ -801,7 +954,6 @@ function renderQuestion() {
 
   const content = document.querySelector("#question-content");
   if (!content) return;
-
   content.innerHTML = "";
 
   const dayTitle = document.createElement("h2");
@@ -815,27 +967,21 @@ function renderQuestion() {
   const card = document.createElement("article");
   card.className = "question-card";
 
-  // Sabit dil sırası
-  const languageOrder = LANGS.map(language => language.key);
+  const languageOrder = LANGS.map(l => l.key);
 
   languageOrder.forEach(languageKey => {
     const language = LANGS.find(item => item.key === languageKey);
     if (!language) return;
-
     const data = question[languageKey];
     if (!data) return;
 
     const block = document.createElement("div");
     block.className = "language-block";
-
     if (languageKey === "ar") {
       block.classList.add("arabic-language");
       block.setAttribute("dir", "rtl");
     }
-
-    if (languageKey === selectedLang) {
-      block.classList.add("selected-language");
-    }
+    if (languageKey === selectedLang) block.classList.add("selected-language");
 
     const q = document.createElement("div");
     q.className = "question-line";
@@ -858,12 +1004,10 @@ function renderQuestion() {
 
   const top = document.querySelector("#top-navigation");
   const bottom = document.querySelector("#bottom-navigation");
-
   if (top) {
     top.innerHTML = "";
     top.appendChild(createNavigation(question));
   }
-
   if (bottom) {
     bottom.innerHTML = "";
     bottom.appendChild(createNavigation(question));
@@ -874,35 +1018,34 @@ function renderQuestion() {
 
 
 /* =========================================
-   SÖZLÜK UI METNİ
+   SÖZLÜK UI
 ========================================= */
 
 function getDictUI(key) {
   const info = (getCurrentDayData() && getCurrentDayData().info) || {};
   const fromJson = info.ui && info.ui[key];
-
   if (fromJson && typeof fromJson === "object") {
     return fromJson[selectedLang] || fromJson.tr || "";
   }
 
   const fallback = {
     searchPlaceholder: {
-      tr: "Seçili dilde kelime yaz...",
-      en: "Type a word in the selected language...",
-      de: "Wort in der gewählten Sprache eingeben...",
-      nl: "Typ een woord in de geselecteerde taal...",
-      fr: "Tapez un mot dans la langue sélectionnée...",
-      ru: "Введите слово на выбранном языке...",
-      ku: "Bi zimanê hilbijartî pelekê binivîse...",
-      tt: "Сайланган телдә сүз яз...",
-      ar: "اُكْتُبْ كَلِمَةً بِاللُّغَةِ الْمُخْتَارَةِ...",
-      es: "Escribe una palabra en el idioma seleccionado...",
-      it: "Scrivi una parola nella lingua selezionata...",
-      pt: "Escreva uma palavra no idioma selecionado...",
-      ko: "선택한 언어로 단어를 입력하세요...",
-      vi: "Gõ một từ bằng ngôn ngữ đã chọn...",
-      ja: "選択した言語で単語を入力...",
-      zh: "用所选语言输入词语..."
+      tr: "Seçili dilde kelime yaz (yerel + internet)...",
+      en: "Type a word in the selected language (local + online)...",
+      de: "Wort eingeben (lokal + online)...",
+      nl: "Typ een woord (lokaal + online)...",
+      fr: "Tapez un mot (local + en ligne)...",
+      ru: "Введите слово (локально + онлайн)...",
+      ku: "Pelekê binivîse (herêmî + online)...",
+      tt: "Сүз яз (җирле + онлайн)...",
+      ar: "اُكْتُبْ كَلِمَةً (مَحَلِّيّ + إِنْتَرْنِت)...",
+      es: "Escribe una palabra (local + online)...",
+      it: "Scrivi una parola (locale + online)...",
+      pt: "Escreva uma palavra (local + online)...",
+      ko: "단어 입력 (로컬 + 온라인)...",
+      vi: "Gõ một từ (cục bộ + online)...",
+      ja: "単語を入力（ローカル＋オンライン）...",
+      zh: "输入词语（本地 + 在线）..."
     },
     noResult: {
       tr: "Sonuç bulunamadı.",
@@ -963,7 +1106,6 @@ function getDictUI(key) {
   if (fallback[key]) {
     return fallback[key][selectedLang] || fallback[key].tr || "";
   }
-
   return "";
 }
 
@@ -975,6 +1117,223 @@ function normalizeDictText(text) {
     .replace(/[^\p{L}\p{N}\s'-]/gu, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+
+/* =========================================
+   ONLINE: CACHE / FETCH / TRANSLATE
+========================================= */
+
+function dictCacheKey(sourceLang, text) {
+  return ONLINE_DICT.cachePrefix + sourceLang + "_" + normalizeDictText(text);
+}
+
+function readDictCache(sourceLang, text) {
+  try {
+    const raw = localStorage.getItem(dictCacheKey(sourceLang, text));
+    if (!raw) return null;
+    const data = JSON.parse(raw);
+    if (!data || !data.expire || Date.now() > data.expire) {
+      localStorage.removeItem(dictCacheKey(sourceLang, text));
+      return null;
+    }
+    return data.entry || null;
+  } catch (e) {
+    return null;
+  }
+}
+
+function writeDictCache(sourceLang, text, entry) {
+  try {
+    const expire =
+      Date.now() + ONLINE_DICT.cacheDays * 24 * 60 * 60 * 1000;
+    localStorage.setItem(
+      dictCacheKey(sourceLang, text),
+      JSON.stringify({ expire, entry })
+    );
+  } catch (e) {}
+}
+
+async function fetchWithTimeout(url, ms) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), ms);
+  try {
+    return await fetch(url, { signal: controller.signal });
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function translateMyMemory(text, fromLang, toLang) {
+  if (!text) return "";
+  if (fromLang === toLang) return text;
+
+  const from = API_LANG[fromLang] || fromLang;
+  const to = API_LANG[toLang] || toLang;
+
+  let url =
+    "https://api.mymemory.translated.net/get?q=" +
+    encodeURIComponent(text) +
+    "&langpair=" +
+    encodeURIComponent(from + "|" + to);
+
+  if (ONLINE_DICT.email) {
+    url += "&de=" + encodeURIComponent(ONLINE_DICT.email);
+  }
+
+  const res = await fetchWithTimeout(url, ONLINE_DICT.timeout);
+  if (!res.ok) throw new Error("HTTP " + res.status);
+
+  const data = await res.json();
+  const translated =
+    data && data.responseData && data.responseData.translatedText
+      ? String(data.responseData.translatedText).trim()
+      : "";
+
+  if (
+    !translated ||
+    /INVALID|QUERY LENGTH|MYMEMORY WARNING|PLEASE SELECT/i.test(translated)
+  ) {
+    return "";
+  }
+
+  return translated;
+}
+
+async function fetchWikiSummary(text, lang) {
+  if (!ONLINE_DICT.wikiSummary) return "";
+
+  const wikiLang =
+    {
+      tr: "tr",
+      en: "en",
+      de: "de",
+      nl: "nl",
+      fr: "fr",
+      ru: "ru",
+      ar: "ar",
+      es: "es",
+      it: "it",
+      pt: "pt",
+      ko: "ko",
+      vi: "vi",
+      ja: "ja",
+      zh: "zh",
+      ku: "ckb",
+      tt: "tt"
+    }[lang] || "en";
+
+  const title = encodeURIComponent(String(text).trim().replace(/\s+/g, "_"));
+  const url =
+    `https://${wikiLang}.wikipedia.org/api/rest_v1/page/summary/` + title;
+
+  try {
+    const res = await fetchWithTimeout(url, ONLINE_DICT.timeout);
+    if (!res.ok) return "";
+    const data = await res.json();
+    if (data.type === "disambiguation") return "";
+    return (data.extract || "").trim();
+  } catch (e) {
+    return "";
+  }
+}
+
+async function buildOnlineDictionaryEntry(text, sourceLang) {
+  const q = String(text || "").trim();
+  if (!q) return null;
+
+  const cached = readDictCache(sourceLang, q);
+  if (cached) return { ...cached, _source: "cache" };
+
+  const entry = {
+    id: "online-" + Date.now(),
+    _source: "online",
+    _query: q,
+    _from: sourceLang
+  };
+
+  entry[sourceLang] = q;
+
+  const tasks = LANGS.map(async lang => {
+    if (lang.key === sourceLang) return;
+    try {
+      entry[lang.key] = await translateMyMemory(q, sourceLang, lang.key);
+    } catch (e) {
+      entry[lang.key] = "";
+    }
+  });
+
+  await Promise.all(tasks);
+
+  const hasAny = LANGS.some(l => l.key !== sourceLang && entry[l.key]);
+  if (!hasAny) return null;
+
+  writeDictCache(sourceLang, q, entry);
+  return entry;
+}
+
+async function runOnlineDictionaryLookup(query, force = false) {
+  if (!ONLINE_DICT.enabled) return;
+
+  const q = String(query || "").trim();
+  const status = document.querySelector("#dictionary-status");
+
+  if (q.length < 2) {
+    lastOnlineEntry = null;
+    if (status) status.textContent = "";
+    renderDictionaryResults({ loading: false });
+    return;
+  }
+
+  const dayData = getCurrentDayData();
+  const localEntries = (dayData && dayData.entries) || [];
+  const nq = normalizeDictText(q);
+
+  const strongLocal = localEntries.some(
+    e => normalizeDictText(e[selectedLang]) === nq
+  );
+
+  if (!force && strongLocal && !ONLINE_DICT.alwaysOnline) {
+    lastOnlineEntry = null;
+    if (status) status.textContent = t("localOnly");
+    renderDictionaryResults({ loading: false });
+    return;
+  }
+
+  const token = ++onlineLookupToken;
+  if (status) status.textContent = t("onlineLoading");
+  renderDictionaryResults({ loading: true });
+
+  try {
+    const entry = await buildOnlineDictionaryEntry(q, selectedLang);
+    if (token !== onlineLookupToken) return;
+
+    if (entry && ONLINE_DICT.wikiSummary) {
+      try {
+        const wiki = await fetchWikiSummary(q, selectedLang);
+        if (token !== onlineLookupToken) return;
+        if (wiki) entry._wiki = wiki;
+      } catch (e) {}
+    }
+
+    if (token !== onlineLookupToken) return;
+
+    lastOnlineEntry = entry;
+
+    if (status) {
+      if (entry && entry._source === "cache") status.textContent = t("onlineCache");
+      else if (entry) status.textContent = t("onlineReady");
+      else status.textContent = t("onlineFail");
+    }
+
+    renderDictionaryResults({ loading: false });
+  } catch (error) {
+    if (token !== onlineLookupToken) return;
+    console.warn("Online sözlük hatası:", error);
+    lastOnlineEntry = null;
+    if (status) status.textContent = t("onlineError");
+    renderDictionaryResults({ loading: false });
+  }
 }
 
 
@@ -1002,7 +1361,6 @@ function renderDictionary() {
 
   const content = document.querySelector("#question-content");
   if (!content) return;
-
   content.innerHTML = "";
 
   const dayTitle = document.createElement("h2");
@@ -1019,8 +1377,6 @@ function renderDictionary() {
   }
 
   addQuestionLanguageSelector();
-
-  // 🎤 sadece sözlükte
   renderTTSControls({ showMicrophone: true });
 
   const searchWrap = document.createElement("div");
@@ -1038,11 +1394,28 @@ function renderDictionary() {
 
   input.addEventListener("input", () => {
     dictionaryQuery = input.value;
-    renderDictionaryResults();
+    renderDictionaryResults({ loading: false });
+
+    if (dictionarySearchTimer) clearTimeout(dictionarySearchTimer);
+    dictionarySearchTimer = setTimeout(() => {
+      runOnlineDictionaryLookup(dictionaryQuery);
+    }, 400);
+  });
+
+  input.addEventListener("keydown", event => {
+    if (event.key === "Enter") {
+      if (dictionarySearchTimer) clearTimeout(dictionarySearchTimer);
+      runOnlineDictionaryLookup(dictionaryQuery, true);
+    }
   });
 
   searchWrap.appendChild(input);
   content.appendChild(searchWrap);
+
+  const status = document.createElement("div");
+  status.id = "dictionary-status";
+  status.className = "dictionary-status";
+  content.appendChild(status);
 
   const results = document.createElement("div");
   results.id = "dictionary-results";
@@ -1051,43 +1424,44 @@ function renderDictionary() {
 
   const top = document.querySelector("#top-navigation");
   const bottom = document.querySelector("#bottom-navigation");
-
   if (top) {
     top.innerHTML = "";
     top.appendChild(createDictionaryNavigation());
   }
-
   if (bottom) {
     bottom.innerHTML = "";
     bottom.appendChild(createDictionaryNavigation());
   }
 
-  renderDictionaryResults();
+  renderDictionaryResults({ loading: false });
+
+  if (dictionaryQuery.trim().length >= 2) {
+    runOnlineDictionaryLookup(dictionaryQuery);
+  }
+
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-function renderDictionaryResults() {
+function renderDictionaryResults(options = {}) {
   const box = document.querySelector("#dictionary-results");
   const dayData = getCurrentDayData();
   if (!box || !dayData) return;
 
+  const loading = options.loading === true;
   box.innerHTML = "";
 
   const entries = dayData.entries || [];
   const q = normalizeDictText(dictionaryQuery);
 
-  const filtered = !q
-    ? entries
+  let filtered = !q
+    ? entries.slice(0, 50)
     : entries.filter(entry => {
-        const selectedValue = normalizeDictText(entry[selectedLang]);
-        if (selectedValue.includes(q)) return true;
-
+        if (normalizeDictText(entry[selectedLang]).includes(q)) return true;
         return LANGS.some(lang =>
           normalizeDictText(entry[lang.key]).includes(q)
         );
       });
 
-  // seçili dil eşleşenleri üste al
   filtered.sort((a, b) => {
     if (!q) return (a.id || 0) - (b.id || 0);
     const aSel = normalizeDictText(a[selectedLang]).includes(q) ? 0 : 1;
@@ -1096,7 +1470,18 @@ function renderDictionaryResults() {
     return (a.id || 0) - (b.id || 0);
   });
 
-  if (!filtered.length) {
+  const listToShow = [];
+  if (lastOnlineEntry) listToShow.push(lastOnlineEntry);
+  listToShow.push(...filtered);
+
+  if (loading) {
+    const load = document.createElement("p");
+    load.className = "dictionary-loading";
+    load.textContent = t("loadingShort", "Yükleniyor...");
+    box.appendChild(load);
+  }
+
+  if (!listToShow.length && !loading) {
     const empty = document.createElement("p");
     empty.className = "dictionary-empty";
     empty.textContent = getDictUI("noResult");
@@ -1104,76 +1489,91 @@ function renderDictionaryResults() {
     return;
   }
 
-  filtered.forEach(entry => {
-    const card = document.createElement("article");
-    card.className = "dictionary-card question-card";
+  listToShow.forEach(entry => {
+    box.appendChild(createDictionaryCard(entry));
+  });
+}
 
-    // SEÇİLİ DİL EN ÜSTTE
-    const main = document.createElement("div");
-    main.className = "dictionary-main selected-language";
-    if (selectedLang === "ar") {
-      main.dir = "rtl";
-      main.classList.add("arabic-language");
+function createDictionaryCard(entry) {
+  const card = document.createElement("article");
+  card.className = "dictionary-card question-card";
+
+  if (entry._source === "online" || entry._source === "cache") {
+    card.classList.add("dictionary-online");
+  }
+
+  const main = document.createElement("div");
+  main.className = "dictionary-main selected-language";
+  if (selectedLang === "ar") {
+    main.dir = "rtl";
+    main.classList.add("arabic-language");
+  }
+
+  const mainLang = LANGS.find(l => l.key === selectedLang);
+  const mainWord = document.createElement("div");
+  mainWord.className = "dictionary-main-word";
+  mainWord.textContent =
+    `${mainLang ? mainLang.flag + " " : ""}${entry[selectedLang] || entry._query || ""}`;
+
+  mainWord.addEventListener("click", () => {
+    const text = entry[selectedLang] || entry._query || "";
+    if (text) speakText(text);
+  });
+
+  main.appendChild(mainWord);
+
+  if (entry._source === "online" || entry._source === "cache") {
+    const badge = document.createElement("div");
+    badge.className = "dictionary-badge";
+    badge.textContent = entry._source === "cache" ? "📦 cache" : "🌐 online";
+    main.appendChild(badge);
+  }
+
+  if (entry._wiki) {
+    const wiki = document.createElement("p");
+    wiki.className = "dictionary-wiki";
+    wiki.textContent = entry._wiki;
+    main.appendChild(wiki);
+  }
+
+  card.appendChild(main);
+
+  const list = document.createElement("div");
+  list.className = "dictionary-translations";
+
+  LANGS.forEach(language => {
+    if (language.key === selectedLang) return;
+    const value = entry[language.key];
+    if (!value) return;
+
+    const row = document.createElement("div");
+    row.className = "dictionary-row language-block";
+    if (language.key === "ar") {
+      row.dir = "rtl";
+      row.classList.add("arabic-language");
     }
 
-    const mainLang = LANGS.find(l => l.key === selectedLang);
-    const mainWord = document.createElement("div");
-    mainWord.className = "dictionary-main-word";
-    mainWord.textContent =
-      `${mainLang ? mainLang.flag + " " : ""}${entry[selectedLang] || ""}`;
+    const flag = document.createElement("span");
+    flag.className = "dictionary-flag";
+    flag.textContent = language.flag;
 
-    mainWord.addEventListener("click", () => {
-      const text = entry[selectedLang] || "";
-      if (text) speakText(text);
-    });
+    const langName = document.createElement("span");
+    langName.className = "dictionary-lang";
+    langName.textContent = language.name;
 
-    main.appendChild(mainWord);
-    card.appendChild(main);
+    const val = document.createElement("span");
+    val.className = "dictionary-value";
+    val.textContent = value;
 
-    // DİĞER DİLLER
-    const list = document.createElement("div");
-    list.className = "dictionary-translations";
-
-    LANGS.forEach(language => {
-      if (language.key === selectedLang) return;
-
-      const value = entry[language.key];
-      if (!value) return;
-
-      const row = document.createElement("div");
-      row.className = "dictionary-row language-block";
-
-      if (language.key === "ar") {
-        row.dir = "rtl";
-        row.classList.add("arabic-language");
-      }
-
-      const flag = document.createElement("span");
-      flag.className = "dictionary-flag";
-      flag.textContent = language.flag;
-
-      const langName = document.createElement("span");
-      langName.className = "dictionary-lang";
-      langName.textContent = language.name;
-
-      const val = document.createElement("span");
-      val.className = "dictionary-value";
-      val.textContent = value;
-
-      row.appendChild(flag);
-      row.appendChild(langName);
-      row.appendChild(val);
-
-      row.addEventListener("click", () => {
-        speakText(value);
-      });
-
-      list.appendChild(row);
-    });
-
-    card.appendChild(list);
-    box.appendChild(card);
+    row.appendChild(flag);
+    row.appendChild(langName);
+    row.appendChild(val);
+    row.addEventListener("click", () => speakText(value));
+    list.appendChild(row);
   });
+
+  card.appendChild(list);
+  return card;
 }
 
 function createDictionaryNavigation() {
@@ -1187,11 +1587,11 @@ function createDictionaryNavigation() {
   home.className = "navigation-home-button";
   home.setAttribute("aria-label", "Ana Sayfa");
   home.title = "Ana Sayfa";
-
   home.onclick = () => {
     stopSpeech();
     stopDictionaryMic();
     dictionaryQuery = "";
+    lastOnlineEntry = null;
     renderHome();
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -1203,25 +1603,19 @@ function createDictionaryNavigation() {
 
 
 /* =========================================
-   SORU SAYFASI DİL SEÇİCİ
+   DİL SEÇİCİ (soru/sözlük)
 ========================================= */
 
 function addQuestionLanguageSelector() {
   let selector = document.querySelector("#language-selector");
-
   if (!selector) {
     selector = document.createElement("div");
     selector.id = "language-selector";
     selector.className = "language-selector";
-
     const page = document.querySelector("#question-page");
     const nav = document.querySelector("#top-navigation");
-
-    if (page && nav) {
-      page.insertBefore(selector, nav);
-    }
+    if (page && nav) page.insertBefore(selector, nav);
   }
-
   renderLanguageButtons(selector);
 }
 
@@ -1232,7 +1626,6 @@ function addQuestionLanguageSelector() {
 
 function renderTTSControls(options = {}) {
   const showMicrophone = options.showMicrophone === true;
-
   closeTTSSettings();
 
   const oldControls = document.querySelector("#tts-controls");
@@ -1245,7 +1638,6 @@ function renderTTSControls(options = {}) {
   controls.id = "tts-controls";
   controls.className = "tts-controls";
 
-  /* MİKROFON — sadece sözlük */
   if (showMicrophone) {
     const micButton = document.createElement("button");
     micButton.type = "button";
@@ -1254,149 +1646,118 @@ function renderTTSControls(options = {}) {
     micButton.textContent = "🎤";
     micButton.setAttribute("aria-label", getDictUI("micTitle"));
     micButton.title = getDictUI("micTitle");
-
     micButton.addEventListener("click", event => {
       event.stopPropagation();
       toggleDictionaryMic();
     });
-
     controls.appendChild(micButton);
   }
 
-  /* YAVAŞLAT */
   const slowButton = document.createElement("button");
   slowButton.type = "button";
   slowButton.className = "tts-button tts-slow";
   slowButton.setAttribute("aria-label", "Yavaşlat");
   slowButton.title = "Yavaşlat";
   updateSlowButton(slowButton);
-
   slowButton.addEventListener("click", event => {
     event.stopPropagation();
     slowLevel++;
     if (slowLevel > 3) slowLevel = 0;
-
-    const rates = [1, 0.75, 0.5, 0.25];
-    changeSpeechRate(rates[slowLevel]);
-
+    changeSpeechRate([1, 0.75, 0.5, 0.25][slowLevel]);
     fastLevel = 0;
     veryFastLevel = 0;
     saveTTSSettings();
-
     updateSlowButton(slowButton);
     updateFastButtons();
     updatePlayRateDisplay();
   });
 
-  /* OYNAT */
   const playButton = document.createElement("button");
   playButton.type = "button";
   playButton.className = "tts-button tts-play";
-
   const playIcon = document.createElement("span");
   playIcon.className = "tts-play-icon";
   playIcon.textContent = "▶";
-
   const playRate = document.createElement("span");
   playRate.className = "tts-play-rate hidden";
   playRate.textContent = "1.00x";
-
   playButton.appendChild(playIcon);
   playButton.appendChild(playRate);
   playButton.setAttribute("aria-label", "Oynat");
   playButton.title = "Oynat";
-
   playButton.addEventListener("click", event => {
     event.stopPropagation();
     playSelectedText();
   });
 
-  /* PAUSE */
   const pauseButton = document.createElement("button");
   pauseButton.type = "button";
   pauseButton.className = "tts-button tts-pause";
   pauseButton.textContent = "⏸";
   pauseButton.setAttribute("aria-label", "Duraklat");
   pauseButton.title = "Duraklat";
-
   pauseButton.addEventListener("click", event => {
     event.stopPropagation();
     toggleSpeechPause();
   });
 
-  /* DURDUR */
   const stopButton = document.createElement("button");
   stopButton.type = "button";
   stopButton.className = "tts-button tts-stop";
   stopButton.textContent = "■";
   stopButton.setAttribute("aria-label", "Durdur");
   stopButton.title = "Durdur";
-
   stopButton.addEventListener("click", event => {
     event.stopPropagation();
     stopSpeech();
   });
 
-  /* HIZLANDIR */
   const fastButton = document.createElement("button");
   fastButton.type = "button";
   fastButton.className = "tts-button tts-fast";
   fastButton.setAttribute("aria-label", "Hızlandır");
   fastButton.title = "Hızlandır";
   updateFastButton(fastButton);
-
   fastButton.addEventListener("click", event => {
     event.stopPropagation();
     fastLevel++;
     if (fastLevel > 7) fastLevel = 0;
-
-    const rates = [1, 1.25, 1.5, 1.75, 2, 2.5, 2.75, 3];
-    changeSpeechRate(rates[fastLevel]);
-
+    changeSpeechRate([1, 1.25, 1.5, 1.75, 2, 2.5, 2.75, 3][fastLevel]);
     slowLevel = 0;
     veryFastLevel = 0;
     saveTTSSettings();
-
     updateFastButton(fastButton);
     updateSlowButton(slowButton);
     updateVeryFastButton(document.querySelector(".tts-very-fast"));
     updatePlayRateDisplay();
   });
 
-  /* ÇOK HIZLANDIR */
   const veryFastButton = document.createElement("button");
   veryFastButton.type = "button";
   veryFastButton.className = "tts-button tts-very-fast";
   veryFastButton.setAttribute("aria-label", "Çok hızlandır");
   veryFastButton.title = "Çok hızlandır";
   updateVeryFastButton(veryFastButton);
-
   veryFastButton.addEventListener("click", event => {
     event.stopPropagation();
     veryFastLevel++;
     if (veryFastLevel > 3) veryFastLevel = 0;
-
-    const rates = [1, 2, 2.5, 3];
-    changeSpeechRate(rates[veryFastLevel]);
-
+    changeSpeechRate([1, 2, 2.5, 3][veryFastLevel]);
     slowLevel = 0;
     fastLevel = 0;
     saveTTSSettings();
-
     updateVeryFastButton(veryFastButton);
     updateSlowButton(slowButton);
     updateFastButton(document.querySelector(".tts-fast"));
     updatePlayRateDisplay();
   });
 
-  /* AYARLAR */
   const settingsButton = document.createElement("button");
   settingsButton.type = "button";
   settingsButton.className = "tts-button tts-settings";
   settingsButton.textContent = "⚙️";
   settingsButton.setAttribute("aria-label", "TTS ayarları");
   settingsButton.title = "TTS ayarları";
-
   settingsButton.addEventListener("click", event => {
     event.stopPropagation();
     toggleTTSSettings();
@@ -1411,21 +1772,14 @@ function renderTTSControls(options = {}) {
   controls.appendChild(settingsButton);
 
   selector.insertAdjacentElement("afterend", controls);
-
   updatePauseButton();
   updatePlayRateDisplay();
   updateMicButton();
 }
 
-
-/* =========================================
-   HIZ BUTONLARI
-========================================= */
-
 function updateSlowButton(button) {
   if (!button) return;
-  const icons = ["◀", "◀", "◀◀", "◀◀◀"];
-  button.textContent = icons[slowLevel] || "◀";
+  button.textContent = ["◀", "◀", "◀◀", "◀◀◀"][slowLevel] || "◀";
 }
 
 function updateFastButton(button) {
@@ -1436,8 +1790,7 @@ function updateFastButton(button) {
 
 function updateVeryFastButton(button) {
   if (!button) return;
-  const icons = ["⏩", "⏩", "⏩⏩", "⏩⏩⏩"];
-  button.textContent = icons[veryFastLevel] || "⏩";
+  button.textContent = ["⏩", "⏩", "⏩⏩", "⏩⏩⏩"][veryFastLevel] || "⏩";
 }
 
 function updateFastButtons() {
@@ -1445,23 +1798,11 @@ function updateFastButtons() {
   updateVeryFastButton(document.querySelector(".tts-very-fast"));
 }
 
-
-/* =========================================
-   TTS AYARLARINI KAYDET
-========================================= */
-
 function saveTTSSettings() {
   localStorage.setItem("ttsRate", String(speechRate));
   localStorage.setItem("ttsPitch", String(speechPitch));
-  if (selectedVoice) {
-    localStorage.setItem("ttsVoice", selectedVoice.name);
-  }
+  if (selectedVoice) localStorage.setItem("ttsVoice", selectedVoice.name);
 }
-
-
-/* =========================================
-   TTS PANELİ
-========================================= */
 
 function closeTTSSettings() {
   const panel = document.querySelector("#tts-settings-panel");
@@ -1476,7 +1817,6 @@ function toggleTTSSettings() {
   }
 
   loadSavedVoice();
-
   const controls = document.querySelector("#tts-controls");
   if (!controls) return;
 
@@ -1496,17 +1836,14 @@ function toggleTTSSettings() {
 
   const voiceSelect = document.createElement("select");
   voiceSelect.className = "tts-voice-select";
-  voiceSelect.setAttribute("aria-label", "TTS sesi seç");
   populateVoiceSelect(voiceSelect);
-
   voiceSelect.addEventListener("change", () => {
     const voices = window.speechSynthesis.getVoices();
     selectedVoice =
-      voices.find(voice => voice.name === voiceSelect.value) || null;
+      voices.find(v => v.name === voiceSelect.value) || null;
     selectedVoiceName = selectedVoice ? selectedVoice.name : "";
     saveTTSSettings();
   });
-
   panel.appendChild(voiceSelect);
 
   const rateLabel = document.createElement("label");
@@ -1521,7 +1858,6 @@ function toggleTTSSettings() {
   rateSlider.step = "0.05";
   rateSlider.value = String(speechRate);
   rateSlider.className = "tts-rate-slider";
-
   rateSlider.addEventListener("input", () => {
     speechRate = Number(rateSlider.value);
     rateLabel.textContent = `Hız: ${speechRate.toFixed(2)}x`;
@@ -1529,7 +1865,6 @@ function toggleTTSSettings() {
     updateSpeedButtonsFromState();
     saveTTSSettings();
   });
-
   panel.appendChild(rateSlider);
 
   const pitchLabel = document.createElement("label");
@@ -1544,37 +1879,31 @@ function toggleTTSSettings() {
   pitchSlider.step = "0.05";
   pitchSlider.value = String(speechPitch);
   pitchSlider.className = "tts-pitch-slider";
-
   pitchSlider.addEventListener("input", () => {
     speechPitch = Number(pitchSlider.value);
     pitchLabel.textContent = `Perde: ${speechPitch.toFixed(2)}`;
     saveTTSSettings();
   });
-
   panel.appendChild(pitchSlider);
 
   const testButton = document.createElement("button");
   testButton.type = "button";
   testButton.className = "tts-test-button";
   testButton.textContent = "🔊 Sesi test et";
-
   testButton.addEventListener("click", event => {
     event.stopPropagation();
     stopSpeech();
     speakText(getTTSTestText());
   });
-
   panel.appendChild(testButton);
 
   const reset = document.createElement("button");
   reset.type = "button";
   reset.className = "tts-reset-button";
   reset.textContent = "Ayarları sıfırla";
-
   reset.addEventListener("click", event => {
     event.stopPropagation();
     stopSpeech();
-
     speechRate = 1;
     speechPitch = 1;
     slowLevel = 0;
@@ -1582,24 +1911,17 @@ function toggleTTSSettings() {
     veryFastLevel = 0;
     selectedVoice = null;
     selectedVoiceName = "";
-
     localStorage.removeItem("ttsRate");
     localStorage.removeItem("ttsPitch");
     localStorage.removeItem("ttsVoice");
-
     loadSavedVoice();
     closeTTSSettings();
     renderTTSControls({ showMicrophone: isDictionaryPage() });
   });
-
   panel.appendChild(reset);
+
   controls.insertAdjacentElement("afterend", panel);
 }
-
-
-/* =========================================
-   SES SEÇENEKLERİ
-========================================= */
 
 function populateVoiceSelect(select) {
   if (!select) return;
@@ -1614,7 +1936,6 @@ function populateVoiceSelect(select) {
   }
 
   const voices = window.speechSynthesis.getVoices();
-
   if (!voices.length) {
     const option = document.createElement("option");
     option.textContent = "Sesler yükleniyor...";
@@ -1625,14 +1946,12 @@ function populateVoiceSelect(select) {
 
   const speechLang = getSpeechLanguage(selectedLang);
   const languageCode = speechLang.split("-")[0].toLowerCase();
-
-  const matchingVoices = voices.filter(
-    voice => voice.lang && voice.lang.toLowerCase().startsWith(languageCode)
+  const matching = voices.filter(
+    v => v.lang && v.lang.toLowerCase().startsWith(languageCode)
   );
+  const others = voices.filter(v => !matching.includes(v));
 
-  const otherVoices = voices.filter(voice => !matchingVoices.includes(voice));
-
-  [...matchingVoices, ...otherVoices].forEach(voice => {
+  [...matching, ...others].forEach(voice => {
     const option = document.createElement("option");
     option.value = voice.name;
     option.textContent = `${voice.name} (${voice.lang})`;
@@ -1642,11 +1961,6 @@ function populateVoiceSelect(select) {
     select.appendChild(option);
   });
 }
-
-
-/* =========================================
-   TEST METİNLERİ
-========================================= */
 
 function getTTSTestText() {
   const texts = {
@@ -1667,20 +1981,13 @@ function getTTSTestText() {
     ja: "これは音声設定のテストです。",
     zh: "这是语音设置的测试。"
   };
-
   return texts[selectedLang] || texts.tr;
 }
-
-
-/* =========================================
-   HIZ SEVİYELERİ
-========================================= */
 
 function updateSpeedLevelsFromRate() {
   slowLevel = 0;
   fastLevel = 0;
   veryFastLevel = 0;
-
   if (speechRate === 0.75) slowLevel = 1;
   else if (speechRate === 0.5) slowLevel = 2;
   else if (speechRate === 0.25) slowLevel = 3;
@@ -1703,7 +2010,6 @@ function updateSpeedButtonsFromState() {
 function updatePlayRateDisplay() {
   const rateLabel = document.querySelector(".tts-play-rate");
   if (!rateLabel) return;
-
   if (speechRate === 1) {
     rateLabel.classList.add("hidden");
     rateLabel.textContent = "1.00x";
@@ -1715,29 +2021,22 @@ function updatePlayRateDisplay() {
 
 
 /* =========================================
-   TTS METNİ PARÇALAMA / KONUŞMA
+   TTS KONUŞMA
 ========================================= */
 
 function splitSpeechText(text) {
   if (!text) return [];
-
-  const words = text
-    .trim()
-    .split(/\s+/)
-    .filter(word => word.length > 0);
-
+  const words = text.trim().split(/\s+/).filter(Boolean);
   const chunks = [];
-  let currentChunk = [];
-
+  let cur = [];
   words.forEach(word => {
-    currentChunk.push(word);
-    if (currentChunk.length >= speechChunkWordCount) {
-      chunks.push(currentChunk.join(" "));
-      currentChunk = [];
+    cur.push(word);
+    if (cur.length >= speechChunkWordCount) {
+      chunks.push(cur.join(" "));
+      cur = [];
     }
   });
-
-  if (currentChunk.length) chunks.push(currentChunk.join(" "));
+  if (cur.length) chunks.push(cur.join(" "));
   return chunks;
 }
 
@@ -1746,26 +2045,22 @@ function speakText(text, resumeFromChunk = 0) {
     console.warn("Tarayıcı TTS desteği bulunmuyor.");
     return;
   }
-
   if (!text) return;
 
   speechChunkSession++;
   const sessionId = speechChunkSession;
-
   window.speechSynthesis.cancel();
 
   if (speechCurrentText !== text || !speechChunks.length) {
     speechCurrentText = text;
     speechChunks = splitSpeechText(text);
   }
-
   if (!speechChunks.length) return;
 
   speechChunkIndex = Math.max(
     0,
     Math.min(Math.floor(resumeFromChunk), speechChunks.length)
   );
-
   if (speechChunkIndex >= speechChunks.length) {
     speechChunkIndex = speechChunks.length - 1;
   }
@@ -1774,7 +2069,6 @@ function speakText(text, resumeFromChunk = 0) {
   speechManualPaused = false;
   speechIsSpeaking = false;
   speechStarting = true;
-
   loadSavedVoice();
   speakCurrentChunk(sessionId);
 }
@@ -1802,7 +2096,6 @@ function speakCurrentChunk(sessionId = speechChunkSession) {
   }
 
   const chunk = speechChunks[speechChunkIndex];
-
   if (!chunk) {
     speechChunkIndex++;
     speakCurrentChunk(sessionId);
@@ -1814,45 +2107,34 @@ function speakCurrentChunk(sessionId = speechChunkSession) {
 
   const utterance = new SpeechSynthesisUtterance(chunk);
   speechUtterance = utterance;
-
   utterance.rate = speechRate;
   utterance.pitch = speechPitch;
   utterance.volume = 1;
   utterance.lang = getSpeechLanguage(selectedLang);
-
   if (selectedVoice) utterance.voice = selectedVoice;
 
   utterance.onstart = () => {
     if (sessionId !== speechChunkSession) return;
     speechStarting = false;
     speechIsSpeaking = true;
-
     if (!window.speechSynthesis.paused) {
       speechPaused = false;
       speechManualPaused = false;
     }
-
     updatePauseButton();
   };
 
   utterance.onend = () => {
     if (sessionId !== speechChunkSession) return;
-
-    if (
-      speechManualPaused ||
-      speechPaused ||
-      window.speechSynthesis.paused
-    ) {
+    if (speechManualPaused || speechPaused || window.speechSynthesis.paused) {
       speechIsSpeaking = false;
       speechStarting = false;
       updatePauseButton();
       return;
     }
-
     speechIsSpeaking = false;
     speechStarting = false;
     speechChunkIndex++;
-
     if (speechChunkIndex >= speechChunks.length) {
       speechPaused = false;
       speechManualPaused = false;
@@ -1860,7 +2142,6 @@ function speakCurrentChunk(sessionId = speechChunkSession) {
       updatePauseButton();
       return;
     }
-
     setTimeout(() => {
       if (sessionId !== speechChunkSession) return;
       if (speechPaused || speechManualPaused) return;
@@ -1870,22 +2151,15 @@ function speakCurrentChunk(sessionId = speechChunkSession) {
 
   utterance.onerror = event => {
     if (sessionId !== speechChunkSession) return;
-
-    if (
-      speechManualPaused ||
-      speechPaused ||
-      window.speechSynthesis.paused
-    ) {
+    if (speechManualPaused || speechPaused || window.speechSynthesis.paused) {
       speechIsSpeaking = false;
       speechStarting = false;
       updatePauseButton();
       return;
     }
-
     if (event.error !== "canceled" && event.error !== "interrupted") {
       console.warn("TTS hatası:", event.error);
     }
-
     speechIsSpeaking = false;
     speechStarting = false;
     speechUtterance = null;
@@ -1914,14 +2188,8 @@ function getSpeechLanguage(lang) {
     ja: "ja-JP",
     zh: "zh-CN"
   };
-
   return languages[lang] || "tr-TR";
 }
-
-
-/* =========================================
-   OYNAT
-========================================= */
 
 function playSelectedText() {
   if (!("speechSynthesis" in window)) return;
@@ -1931,40 +2199,31 @@ function playSelectedText() {
     return;
   }
 
-  if (
-    window.speechSynthesis.speaking ||
-    speechIsSpeaking ||
-    speechStarting
-  ) {
+  if (window.speechSynthesis.speaking || speechIsSpeaking || speechStarting) {
     return;
   }
 
   const dayData = getCurrentDayData();
   if (!dayData) return;
 
-  /* SÖZLÜK */
   if (dayData.type === "dictionary") {
     const input = document.querySelector("#dictionary-search-input");
     let text = (input && input.value.trim()) || dictionaryQuery.trim();
 
-    if (!text) {
-      const filteredFirst = (dayData.entries || [])[0];
-      text = filteredFirst ? filteredFirst[selectedLang] || "" : "";
-    }
-
-    // sonuçlarda ilk kartın seçili dili
-    if (!text) return;
-
-    // Eğer arama sonucu varsa ilk eşleşen maddeyi oku
-    const q = normalizeDictText(dictionaryQuery);
-    if (q) {
-      const match = (dayData.entries || []).find(entry =>
-        normalizeDictText(entry[selectedLang]).includes(q)
+    if (lastOnlineEntry && lastOnlineEntry[selectedLang]) {
+      text = lastOnlineEntry[selectedLang];
+    } else if (text) {
+      const nq = normalizeDictText(text);
+      const match = (dayData.entries || []).find(e =>
+        normalizeDictText(e[selectedLang]).includes(nq)
       );
-      if (match && match[selectedLang]) {
-        text = match[selectedLang];
-      }
+      if (match && match[selectedLang]) text = match[selectedLang];
+    } else {
+      const first = (dayData.entries || [])[0];
+      text = first ? first[selectedLang] || "" : "";
     }
+
+    if (!text) return;
 
     speechRate = 1;
     slowLevel = 0;
@@ -1972,7 +2231,6 @@ function playSelectedText() {
     veryFastLevel = 0;
     saveTTSSettings();
     updateSpeedButtonsFromState();
-
     speechCurrentText = text;
     speechChunks = splitSpeechText(text);
     speechChunkIndex = 0;
@@ -1980,13 +2238,10 @@ function playSelectedText() {
     return;
   }
 
-  /* SORU */
   const question = dayData.questions[currentQuestionIndex];
   if (!question) return;
-
   const data = question[selectedLang];
   if (!data) return;
-
   const text = `${data.q}. ${data.a}`;
 
   speechRate = 1;
@@ -1995,17 +2250,11 @@ function playSelectedText() {
   veryFastLevel = 0;
   saveTTSSettings();
   updateSpeedButtonsFromState();
-
   speechCurrentText = text;
   speechChunks = splitSpeechText(text);
   speechChunkIndex = 0;
   speakText(text, 0);
 }
-
-
-/* =========================================
-   PAUSE / DEVAM
-========================================= */
 
 function toggleSpeechPause() {
   if (!("speechSynthesis" in window)) return;
@@ -2018,7 +2267,6 @@ function toggleSpeechPause() {
     ) {
       return;
     }
-
     speechPaused = false;
     speechManualPaused = false;
     speechIsSpeaking = true;
@@ -2028,32 +2276,24 @@ function toggleSpeechPause() {
     return;
   }
 
-  if (
-    !speechIsSpeaking &&
-    !speechStarting &&
-    !window.speechSynthesis.speaking
-  ) {
+  if (!speechIsSpeaking && !speechStarting && !window.speechSynthesis.speaking) {
     return;
   }
 
   speechPaused = true;
   speechManualPaused = true;
-
   try {
     window.speechSynthesis.cancel();
   } catch (error) {
     console.warn("TTS durdurma hatası:", error);
   }
-
   speechIsSpeaking = false;
   speechStarting = false;
   updatePauseButton();
 }
 
 function updatePauseButton() {
-  const buttons = document.querySelectorAll(".tts-pause");
-
-  buttons.forEach(button => {
+  document.querySelectorAll(".tts-pause").forEach(button => {
     if (speechPaused || speechManualPaused) {
       button.textContent = "▶";
       button.setAttribute("aria-label", "Devam et");
@@ -2072,11 +2312,7 @@ function stopSpeech() {
   speechPaused = false;
   speechIsSpeaking = false;
   speechStarting = false;
-
-  if ("speechSynthesis" in window) {
-    window.speechSynthesis.cancel();
-  }
-
+  if ("speechSynthesis" in window) window.speechSynthesis.cancel();
   speechUtterance = null;
   speechCurrentText = "";
   speechChunks = [];
@@ -2086,10 +2322,7 @@ function stopSpeech() {
 
 function changeSpeechRate(rate) {
   const wasSpeaking =
-    speechIsSpeaking ||
-    speechStarting ||
-    window.speechSynthesis.speaking;
-
+    speechIsSpeaking || speechStarting || window.speechSynthesis.speaking;
   const wasPaused = speechPaused || speechManualPaused;
 
   speechRate = rate;
@@ -2099,17 +2332,12 @@ function changeSpeechRate(rate) {
     updatePauseButton();
     return;
   }
-
-  if (!wasSpeaking || !speechCurrentText || !speechChunks.length) {
-    return;
-  }
+  if (!wasSpeaking || !speechCurrentText || !speechChunks.length) return;
 
   const currentChunk = speechChunkIndex;
   speechChunkSession++;
   const sessionId = speechChunkSession;
-
   window.speechSynthesis.cancel();
-
   speechUtterance = null;
   speechIsSpeaking = false;
   speechStarting = false;
@@ -2125,16 +2353,9 @@ function changeSpeechRate(rate) {
   }, 30);
 }
 
-function setSpeechRate(rate) {
-  changeSpeechRate(rate);
-  updateSpeedLevelsFromRate();
-  updateSpeedButtonsFromState();
-}
-
 
 /* =========================================
-   MİKROFON / KONUŞARAK YAZMA
-   (sadece sözlük)
+   MİKROFON (sadece sözlük)
 ========================================= */
 
 function getSpeechRecognition() {
@@ -2143,7 +2364,6 @@ function getSpeechRecognition() {
 
 function stopDictionaryMic() {
   isDictListening = false;
-
   if (speechRecognition) {
     try {
       speechRecognition.onresult = null;
@@ -2153,14 +2373,12 @@ function stopDictionaryMic() {
     } catch (e) {}
     speechRecognition = null;
   }
-
   updateMicButton();
 }
 
 function updateMicButton() {
   const btn = document.querySelector("#tts-mic-button");
   if (!btn) return;
-
   if (isDictListening) {
     btn.classList.add("listening");
     btn.textContent = "🎙️";
@@ -2189,7 +2407,6 @@ function toggleDictionaryMic() {
   }
 
   stopSpeech();
-
   speechRecognition = new Recognition();
   speechRecognition.lang = getSpeechLanguage(selectedLang);
   speechRecognition.interimResults = true;
@@ -2205,17 +2422,14 @@ function toggleDictionaryMic() {
 
   speechRecognition.onresult = event => {
     let transcript = "";
-
     for (let i = event.resultIndex; i < event.results.length; i++) {
       transcript += event.results[i][0].transcript;
     }
-
     const text = transcript.trim();
     if (!input) return;
-
     input.value = text;
     dictionaryQuery = text;
-    renderDictionaryResults();
+    renderDictionaryResults({ loading: false });
   };
 
   speechRecognition.onerror = event => {
@@ -2227,6 +2441,9 @@ function toggleDictionaryMic() {
     isDictListening = false;
     updateMicButton();
     speechRecognition = null;
+    if (dictionaryQuery.trim().length >= 2) {
+      runOnlineDictionaryLookup(dictionaryQuery, true);
+    }
   };
 
   try {
@@ -2258,21 +2475,19 @@ function createNavigation(question) {
   previousQuestion.title = "Önceki soru";
   previousQuestion.disabled =
     currentDayIndex === 0 && currentQuestionIndex === 0;
-
   previousQuestion.onclick = () => {
     stopSpeech();
-
     if (currentQuestionIndex > 0) {
       currentQuestionIndex--;
       renderQuestion();
       return;
     }
-
     if (currentDayIndex > 0) {
       currentDayIndex--;
       const prev = days[currentDayIndex];
       if (prev.type === "dictionary") {
         dictionaryQuery = "";
+        lastOnlineEntry = null;
         renderDictionary();
         return;
       }
@@ -2288,12 +2503,9 @@ function createNavigation(question) {
   questionInput.placeholder = String(question.id);
   questionInput.value = String(question.id);
   questionInput.title = "Soru numarasına git";
-  questionInput.setAttribute("aria-label", "Soru numarasına git");
-
-  questionInput.addEventListener("keydown", event => {
-    if (event.key === "Enter") goToQuestionNumber(questionInput.value);
+  questionInput.addEventListener("keydown", e => {
+    if (e.key === "Enter") goToQuestionNumber(questionInput.value);
   });
-
   questionInput.addEventListener("change", () => {
     goToQuestionNumber(questionInput.value);
   });
@@ -2305,24 +2517,21 @@ function createNavigation(question) {
   nextQuestion.disabled =
     currentDayIndex >= days.length - 1 &&
     currentQuestionIndex >= days[currentDayIndex].questions.length - 1;
-
   nextQuestion.onclick = () => {
     stopSpeech();
-
     const currentQuestions = days[currentDayIndex].questions;
-
     if (currentQuestionIndex < currentQuestions.length - 1) {
       currentQuestionIndex++;
       renderQuestion();
       return;
     }
-
     if (currentDayIndex < days.length - 1) {
       currentDayIndex++;
       currentQuestionIndex = 0;
       const next = days[currentDayIndex];
       if (next.type === "dictionary") {
         dictionaryQuery = "";
+        lastOnlineEntry = null;
         renderDictionary();
         return;
       }
@@ -2336,19 +2545,16 @@ function createNavigation(question) {
 
   const homeGroup = document.createElement("div");
   homeGroup.className = "navigation-home-group";
-
   const home = makeButton(UI[selectedLang].home || "🕋");
   home.className = "navigation-home-button";
   home.setAttribute("aria-label", "Ana Sayfa");
   home.title = "Ana Sayfa";
-
   home.onclick = () => {
     stopSpeech();
     stopDictionaryMic();
     renderHome();
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
   homeGroup.appendChild(home);
 
   const dayGroup = document.createElement("div");
@@ -2359,13 +2565,13 @@ function createNavigation(question) {
   previousDay.setAttribute("aria-label", "Önceki gün");
   previousDay.title = "Önceki gün";
   previousDay.disabled = currentDayIndex === 0;
-
   previousDay.onclick = () => {
     stopSpeech();
     if (currentDayIndex > 0) {
       currentDayIndex--;
       currentQuestionIndex = 0;
       dictionaryQuery = "";
+      lastOnlineEntry = null;
       const prev = days[currentDayIndex];
       if (prev.type === "dictionary") renderDictionary();
       else renderQuestion();
@@ -2380,28 +2586,23 @@ function createNavigation(question) {
   dayInput.placeholder = String(days[currentDayIndex].number);
   dayInput.value = String(days[currentDayIndex].number);
   dayInput.title = "Gün numarasına git";
-  dayInput.setAttribute("aria-label", "Gün numarasına git");
-
-  dayInput.addEventListener("keydown", event => {
-    if (event.key === "Enter") goToDayNumber(dayInput.value);
+  dayInput.addEventListener("keydown", e => {
+    if (e.key === "Enter") goToDayNumber(dayInput.value);
   });
-
-  dayInput.addEventListener("change", () => {
-    goToDayNumber(dayInput.value);
-  });
+  dayInput.addEventListener("change", () => goToDayNumber(dayInput.value));
 
   const nextDay = makeButton(UI[selectedLang].nextDay);
   nextDay.className = "navigation-arrow-button";
   nextDay.setAttribute("aria-label", "Sonraki gün");
   nextDay.title = "Sonraki gün";
   nextDay.disabled = currentDayIndex >= days.length - 1;
-
   nextDay.onclick = () => {
     stopSpeech();
     if (currentDayIndex < days.length - 1) {
       currentDayIndex++;
       currentQuestionIndex = 0;
       dictionaryQuery = "";
+      lastOnlineEntry = null;
       const next = days[currentDayIndex];
       if (next.type === "dictionary") renderDictionary();
       else renderQuestion();
@@ -2416,7 +2617,6 @@ function createNavigation(question) {
   mainRow.appendChild(homeGroup);
   mainRow.appendChild(dayGroup);
   wrapper.appendChild(mainRow);
-
   return wrapper;
 }
 
@@ -2427,11 +2627,9 @@ function goToQuestionNumber(value) {
   for (let dayIndex = 0; dayIndex < days.length; dayIndex++) {
     const day = days[dayIndex];
     if (day.type === "dictionary") continue;
-
     const questionIndex = day.questions.findIndex(
-      question => Number(question.id) === questionNumber
+      q => Number(q.id) === questionNumber
     );
-
     if (questionIndex !== -1) {
       stopSpeech();
       stopDictionaryMic();
@@ -2441,27 +2639,23 @@ function goToQuestionNumber(value) {
       return;
     }
   }
-
   console.warn(`Soru bulunamadı: ${questionNumber}`);
 }
 
 function goToDayNumber(value) {
   const dayNumber = Number(value);
   if (!Number.isInteger(dayNumber)) return;
-
-  const dayIndex = days.findIndex(day => Number(day.number) === dayNumber);
-
+  const dayIndex = days.findIndex(d => Number(d.number) === dayNumber);
   if (dayIndex === -1) {
     console.warn(`Gün bulunamadı: ${dayNumber}`);
     return;
   }
-
   stopSpeech();
   stopDictionaryMic();
   currentDayIndex = dayIndex;
   currentQuestionIndex = 0;
   dictionaryQuery = "";
-
+  lastOnlineEntry = null;
   if (days[dayIndex].type === "dictionary") renderDictionary();
   else renderQuestion();
 }
@@ -2481,11 +2675,9 @@ function makeButton(text) {
 function renderSources(sources) {
   const box = document.createElement("div");
   box.className = "sources";
-
   const title = document.createElement("h3");
   title.textContent = UI[selectedLang].source;
   box.appendChild(title);
-
   const list = document.createElement("ul");
 
   sources.forEach(source => {
@@ -2518,7 +2710,6 @@ function renderSources(sources) {
     } else {
       li.textContent = text;
     }
-
     list.appendChild(li);
   });
 
@@ -2528,21 +2719,15 @@ function renderSources(sources) {
 
 function getSourceUrl(source) {
   const text = String(source).toLowerCase();
-
   const quranMatch = text.match(
     /(?:kur['’]an|qur['’]?an|coran|corán|коран|коръән)[^0-9]*(\d+)[\s:.-]+(\d+)(?:[-–](\d+))?/i
   );
-
   if (quranMatch) {
-    const surah = quranMatch[1];
-    const start = quranMatch[2];
-    return `https://quran.com/${surah}?startingVerse=${start}`;
+    return `https://quran.com/${quranMatch[1]}?startingVerse=${quranMatch[2]}`;
   }
-
   if (text.includes("sahih müslim") || text.includes("sahih muslim")) {
     return "https://sunnah.com/muslim";
   }
-
   if (
     text.includes("sahih buhari") ||
     text.includes("sahih buhârî") ||
@@ -2550,18 +2735,15 @@ function getSourceUrl(source) {
   ) {
     return "https://sunnah.com/bukhari";
   }
-
   if (text.includes("ömer nasuhi bilmen")) {
     return "https://archive.org/search?query=%C3%96mer+Nasuhi+Bilmen+B%C3%BCy%C3%BCk+%C4%B0slam+%C4%B0lmihali";
   }
-
   if (
     text.includes("bir müslümanın yol haritası") ||
     text.includes("akademi")
   ) {
     return "https://mckurdi27.github.io/yol-haritasi/";
   }
-
   return "";
 }
 
@@ -2571,10 +2753,7 @@ function getSourceUrl(source) {
 ========================================= */
 
 window.addEventListener("error", event => {
-  console.error(
-    "Yol Haritası JavaScript hatası:",
-    event.error || event.message
-  );
+  console.error("Yol Haritası JavaScript hatası:", event.error || event.message);
 });
 
 window.addEventListener("unhandledrejection", event => {
