@@ -632,3 +632,35 @@ footer {
   }
 
 }
+.dictionary-search-wrap { margin: 12px 0 16px; }
+.dictionary-search-input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.dictionary-subtitle { opacity: .85; margin: 0 0 10px; }
+.dictionary-status { min-height: 1.2em; margin: 0 0 10px; opacity: .8; font-size: .92rem; }
+.dictionary-main-word { font-size: 1.45rem; font-weight: 700; margin-bottom: 8px; cursor: pointer; }
+.dictionary-row {
+  display: grid;
+  grid-template-columns: auto minmax(90px, 140px) 1fr;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  cursor: pointer;
+}
+.dictionary-online { border: 1px solid rgba(20,140,90,.35); }
+.dictionary-badge {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: .75rem;
+  background: rgba(20,140,90,.12);
+}
+.dictionary-wiki { margin: 10px 0 0; line-height: 1.45; opacity: .9; font-size: .95rem; }
+.dictionary-card-home { border-left: 4px solid #0a7; }
+.tts-button.tts-mic.listening { outline: 2px solid #e11; border-radius: 999px; }
