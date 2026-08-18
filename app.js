@@ -50,9 +50,9 @@ const LANGS = [
   {
     key: "fr",
     flag: "🇫🇷",
-    name: "Françeais"
+    name: "Français"
   },
-   
+
   {
     key: "ru",
     flag: "🇷🇺",
@@ -65,12 +65,12 @@ const LANGS = [
     name: "Tatarca"
   },
 
-   {
+  {
     key: "ku",
     flag: "🇬🇭",
     name: "Kurmancî"
   },
-   
+
   {
     key: "ar",
     flag: "🇸🇦",
@@ -209,9 +209,9 @@ const UI = {
   },
 
   ar: {
-    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
-    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
-    days: "الأَيَّامُ",
+    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
+    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
+    days: "الأَيَّامُ",
     previousQuestion: "←",
     nextQuestion: "→",
     home: "🕋",
@@ -220,8 +220,8 @@ const UI = {
     source: "📚 الْمَصَادِرُ",
     openSource: "فَتْحُ الْمَصْدَرِ",
     questionCount: "أَسْئِلَة",
-    loading: "جَارٍ تَحْمِيلُ الأَيَّامِ...",
-    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ."
+    loading: "جَارٍ تَحْمِيلُ الأَيَّامِ...",
+    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ."
   },
 
   tt: {
@@ -242,7 +242,7 @@ const UI = {
 
   fr: {
     title: "La feuille de route du musulman",
-    subtitle: "Apprendre l’islam étape par étape",
+    subtitle: "Apprendre l'islam étape par étape",
     days: "Jours",
     previousQuestion: "←",
     nextQuestion: "→",
@@ -262,6 +262,9 @@ const UI = {
     days: "Días",
     previousQuestion: "←",
     nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Fuentes",
     openSource: "Abrir fuente",
     questionCount: "Preguntas",
@@ -275,6 +278,9 @@ const UI = {
     days: "Dagen",
     previousQuestion: "←",
     nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Bronnen",
     openSource: "Bron openen",
     questionCount: "Vragen",
@@ -288,6 +294,9 @@ const UI = {
     days: "Giorni",
     previousQuestion: "←",
     nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Fonti",
     openSource: "Apri fonte",
     questionCount: "Domande",
@@ -301,6 +310,9 @@ const UI = {
     days: "Dias",
     previousQuestion: "←",
     nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Fontes",
     openSource: "Abrir fonte",
     questionCount: "Perguntas",
@@ -314,6 +326,9 @@ const UI = {
     days: "일차",
     previousQuestion: "←",
     nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 출처",
     openSource: "출처 열기",
     questionCount: "질문",
@@ -327,6 +342,9 @@ const UI = {
     days: "Ngày",
     previousQuestion: "←",
     nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 Nguồn",
     openSource: "Mở nguồn",
     questionCount: "Câu hỏi",
@@ -340,6 +358,9 @@ const UI = {
     days: "日",
     previousQuestion: "←",
     nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 出典",
     openSource: "出典を開く",
     questionCount: "質問",
@@ -353,6 +374,9 @@ const UI = {
     days: "天数",
     previousQuestion: "←",
     nextQuestion: "→",
+    home: "🕋",
+    previousDay: "←",
+    nextDay: "→",
     source: "📚 来源",
     openSource: "打开来源",
     questionCount: "问题",
@@ -2629,7 +2653,7 @@ function getTTSTestText() {
       "Ev testekî ji bo mîhengên dengê ye.",
 
     ar:
-      "هٰذَا اخْتِبَارٌ لِإِعْدَادَاتِ الصَّوْتِ.",
+      "هٰذَا اخْتِبَارٌ لِإِعْدَادَاتِ الصَّوْتِ.",
 
     tt:
       "Бу тавыш көйләүләрен тикшерү өчен тест.",
@@ -2707,17 +2731,21 @@ function updateSpeedLevelsFromRate() {
 
     fastLevel = 3;
 
-  } else if (speechRate === 2) {
+  } else if (speechRate === 2.00) {
 
-    FastLevel = 4;
+    fastLevel = 4;
 
-  } else if (speechRate === 2.5) {
+  } else if (speechRate === 2.50) {
 
-    FastLevel = 5;
+    fastLevel = 5;
 
-  } else if (speechRate === 3) {
+  } else if (speechRate === 2.75) {
 
-    FastLevel = 6;
+    fastLevel = 6;
+
+  } else if (speechRate === 3.00) {
+
+    fastLevel = 7;
 
   }
 
@@ -4691,7 +4719,7 @@ function getSourceUrl(
 
   const quranMatch =
     text.match(
-      /(?:kur['’]an|qur['’]?an|coran|corán|коран|коръән)[^0-9]*(\d+)[\s:.-]+(\d+)(?:[-–](\d+))?/i
+      /(?:kur['']an|qur['']?an|coran|corán|коран|коръән)[^0-9]*(\d+)[\s:.-]+(\d+)(?:[-–](\d+))?/i
     );
 
 
