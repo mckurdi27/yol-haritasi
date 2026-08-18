@@ -1,4 +1,150 @@
 {
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+
+    "fixedLanguageOrder": true,
+
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+
   "day": 1,
   "dayTitle": {
     "tr": "1. Gün — İslâm'a İlk Adım",
@@ -30,96 +176,13 @@
     "tt": "Ислам нәрсә ул, мөселман кем ул, Аллаһ, Коръән, Пәйгамбәребез, иман һәм Ислам нигезләре",
     "ar": "مَا هُوَ الْإِسْلَامُ، وَمَنْ هُوَ الْمُسْلِمُ، وَاللَّهُ، وَالْقُرْآنُ، وَنَبِيُّنَا، وَالْإِيمَانُ وَأَرْكَانُ الْإِسْلَامِ",
     "es": "Qué es el Islam, quién es musulmán, Allah, el Corán, nuestro Profeta, la fe y los pilares del Islam",
-    "it": "Che cos'è l'Islam, chi è musulmano, Allah, il Corano, il nostro Profeta, la fede e i pilastri dell'Islam",
+    "it": "Che cos'è l'Islam, chi è musulmano, Allah, il Corano, nostro Profeta, la fede e i pilastri dell'Islam",
     "pt": "O que é o Islão, quem é muçulmano, Allah, o Alcorão, o nosso Profeta, a fé e os pilares do Islão",
     "ko": "이슬람이 무엇인지, 무슬림이 누구인지, 알라, 꾸란, 우리의 예언자, 신앙과 이슬람의 다섯 기둥",
     "vi": "Islam là gì, người Muslim là ai, Allah, Kinh Qur'an, vị Tiên tri của chúng ta, đức tin và các trụ cột của Islam",
     "ja": "イスラームとは何か、ムスリムとは誰か、アッラー、クルアーン、私たちの預言者、信仰とイスラームの五柱",
     "zh": "什么是伊斯兰、谁是穆斯林、安拉、《古兰经》、我们的先知、信仰以及伊斯兰的五大支柱"
   },
-
-  "languages": [
-    {
-      "code": "tr",
-      "name": "Türkçe",
-      "flag": "🇹🇷"
-    },
-    {
-      "code": "en",
-      "name": "English",
-      "flag": "🇬🇧"
-    },
-    {
-      "code": "de",
-      "name": "Deutsch",
-      "flag": "🇩🇪"
-    },
-    {
-      "code": "nl",
-      "name": "Nederlands",
-      "flag": "🇳🇱"
-    },
-    {
-      "code": "fr",
-      "name": "Français",
-      "flag": "🇫🇷"
-    },
-    {
-      "code": "ru",
-      "name": "Русский",
-      "flag": "🇷🇺"
-    },
-    {
-      "code": "ku",
-      "name": "Kurmancî",
-      "flag": "🇬🇭"
-    },
-    {
-      "code": "tt",
-      "name": "Tatarca",
-      "flag": "🇭🇺"
-    },
-    {
-      "code": "ar",
-      "name": "العربية",
-      "flag": "🇸🇦"
-    },
-    {
-      "code": "es",
-      "name": "Español",
-      "flag": "🇪🇸"
-    },
-    {
-      "code": "it",
-      "name": "Italiano",
-      "flag": "🇮🇹"
-    },
-    {
-      "code": "pt",
-      "name": "Português",
-      "flag": "🇵🇹"
-    },
-    {
-      "code": "ko",
-      "name": "한국어",
-      "flag": "🇰🇷"
-    },
-    {
-      "code": "vi",
-      "name": "Tiếng Việt",
-      "flag": "🇻🇳"
-    },
-    {
-      "code": "ja",
-      "name": "日本語",
-      "flag": "🇯🇵"
-    },
-    {
-      "code": "zh",
-      "name": "中文",
-      "flag": "🇨🇳"
-    }
-  ],
 
   "questions": [
     {
@@ -572,7 +635,7 @@
       },
       "de": {
         "q": "Was ist der Glaube (Iman)?",
-        "a": "Iman bedeutet, an Allah und die von Ihm gelehrten Glaubensgrundsätze zu glauben und sie aufrichtig anzunehmen."
+        "a": "Iman bedeutet, an Allah und die von Ihm gelehrt Glaubensgrundsätze zu glauben und sie aufrichtig anzunehmen."
       },
       "nl": {
         "q": "Wat is geloof (iman)?",
@@ -1506,4 +1569,4 @@
       ]
     }
   ]
-      }
+}
