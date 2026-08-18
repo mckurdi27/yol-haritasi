@@ -26,7 +26,9 @@ Her günün içeriği:`data/day-XX.json`şeklinde eklenir.
 `data/day-03.json` → 39–57. sorular  
 `data/day-04.json` → 58–76. sorular  
 
-Her günlük JSON dosyasında:
+Her günlük JSON dosyası days.json dosyası esas alınarak 
+oradaki dil sırasına göre 
+
 - `"dayTitle"`
 - `"daySubtitle"`
 - `"questions"`
