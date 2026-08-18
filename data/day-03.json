@@ -1,4 +1,46 @@
 {
+  "day": 3,
+  "dayTitle": {
+    "tr": "3. Gün — Allah'ı Tanımak",
+    "en": "Day 3 — Knowing Allah",
+    "de": "3. Tag — Allah kennenlernen",
+    "ru": "3-й день — Познание Аллаха",
+    "ku": "Roj 3 — Nasîna Xwedê",
+    "ar": "الْيَوْمُ الثَّالِثُ — مَعْرِفَةُ اللَّهِ",
+    "tt": "3 нче көн — Аллаһны тану",
+    "fr": "Jour 3 — Connaître Allah",
+    "es": "Día 3 — Conocer a Allah",
+    "nl": "Dag 3 — Allah leren kennen",
+    "it": "Giorno 3 — Conoscere Allah"
+  },
+  "daySubtitle": {
+    "tr": "Allah'ın varlığı, birliği, isimleri, sıfatları ve Allah'a iman",
+    "en": "The existence, oneness, names, attributes of Allah and belief in Him",
+    "de": "Die Existenz, Einheit, Namen und Eigenschaften Allahs und der Glaube an Ihn",
+    "ru": "Существование, единство, имена и качества Аллаха и вера в Него",
+    "ku": "Hebûna Xwedê, yekîtiya Wî, nav û sifetên Wî û baweriya bi Wî",
+    "ar": "وُجُودُ اللَّهِ وَوَحْدَانِيَّتُهُ وَأَسْمَاؤُهُ وَصِفَاتُهُ وَالْإِيمَانُ بِهِ",
+    "tt": "Аллаһның барлыгы, берлеге, исемнәре, сыйфатлары һәм Аңа иман",
+    "fr": "L'existence, l'unicité, les noms et les attributs d'Allah et la foi en Lui",
+    "es": "La existencia, unicidad, nombres y atributos de Allah y la fe en Él",
+    "nl": "Het bestaan, de eenheid, namen en eigenschappen van Allah en het geloof in Hem",
+    "it": "L'esistenza, l'unicità, i nomi e gli attributi di Allah e la fede in Lui"
+  },
+  "questions": [
+    {
+      "id": 39,
+      "day": 3,
+      "tr": {
+        "q": "Allah kimdir?",
+        "a": "Allah, bütün varlıkların yaratıcısı, Rabbi ve tek ilâhıdır. O'ndan başka ibadete layık hiçbir ilâh yoktur."
+      },
+      "en": {
+        "q": "Who is Allah?",
+        "a": "Allah is the Creator and Lord of all things and the only One worthy of worship. There is no deity worthy of worship except Him."
+      },
+      "de": {
+        "q": "Wer ist Allah?",
+{
   "dayTitle": {
     "pt": "Dia 3 — Conhecer Allah",
     "ko": "3일차 — 알라 알아가기",
