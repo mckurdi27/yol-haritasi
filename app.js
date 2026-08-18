@@ -1665,7 +1665,7 @@ function renderTTSControls(options = {}) {
     if (slowLevel > 3) slowLevel = 0;
     changeSpeechRate([1, 0.75, 0.5, 0.25][slowLevel]);
     fastLevel = 0;
-    veryFastLevel = 0;
+    
     saveTTSSettings();
     updateSlowButton(slowButton);
     updateFastButtons();
@@ -1728,29 +1728,10 @@ function renderTTSControls(options = {}) {
     saveTTSSettings();
     updateFastButton(fastButton);
     updateSlowButton(slowButton);
-    updateVeryFastButton(document.querySelector(".tts-very-fast"));
+    
     updatePlayRateDisplay();
   });
 
-  const veryFastButton = document.createElement("button");
-  veryFastButton.type = "button";
-  veryFastButton.className = "tts-button tts-very-fast";
-  veryFastButton.setAttribute("aria-label", "Çok hızlandır");
-  veryFastButton.title = "Çok hızlandır";
-  updateVeryFastButton(veryFastButton);
-  veryFastButton.addEventListener("click", event => {
-    event.stopPropagation();
-    veryFastLevel++;
-    if (veryFastLevel > 3) veryFastLevel = 0;
-    changeSpeechRate([1, 2, 2.5, 3][veryFastLevel]);
-    slowLevel = 0;
-    fastLevel = 0;
-    saveTTSSettings();
-    updateVeryFastButton(veryFastButton);
-    updateSlowButton(slowButton);
-    updateFastButton(document.querySelector(".tts-fast"));
-    updatePlayRateDisplay();
-  });
 
   const settingsButton = document.createElement("button");
   settingsButton.type = "button";
@@ -1768,7 +1749,6 @@ function renderTTSControls(options = {}) {
   controls.appendChild(fastButton);
   controls.appendChild(pauseButton);
   controls.appendChild(stopButton);
-  controls.appendChild(veryFastButton);
   controls.appendChild(settingsButton);
 
   selector.insertAdjacentElement("afterend", controls);
@@ -1787,12 +1767,6 @@ function updateFastButton(button) {
   const icons = ["▶", "▶", "▶▶", "▶▶▶", "▶▶▶", "▶▶▶", "▶▶▶", "▶▶▶"];
   button.textContent = icons[Math.min(fastLevel, icons.length - 1)] || "▶";
 }
-
-function updateVeryFastButton(button) {
-  if (!button) return;
-  button.textContent = ["⏩", "⏩", "⏩⏩", "⏩⏩⏩"][veryFastLevel] || "⏩";
-}
-
 function updateFastButtons() {
   updateFastButton(document.querySelector(".tts-fast"));
   updateVeryFastButton(document.querySelector(".tts-very-fast"));
@@ -1908,7 +1882,6 @@ function toggleTTSSettings() {
     speechPitch = 1;
     slowLevel = 0;
     fastLevel = 0;
-    veryFastLevel = 0;
     selectedVoice = null;
     selectedVoiceName = "";
     localStorage.removeItem("ttsRate");
@@ -1987,7 +1960,6 @@ function getTTSTestText() {
 function updateSpeedLevelsFromRate() {
   slowLevel = 0;
   fastLevel = 0;
-  veryFastLevel = 0;
   if (speechRate === 0.75) slowLevel = 1;
   else if (speechRate === 0.5) slowLevel = 2;
   else if (speechRate === 0.25) slowLevel = 3;
@@ -2003,7 +1975,6 @@ function updateSpeedLevelsFromRate() {
 function updateSpeedButtonsFromState() {
   updateSlowButton(document.querySelector(".tts-slow"));
   updateFastButton(document.querySelector(".tts-fast"));
-  updateVeryFastButton(document.querySelector(".tts-very-fast"));
   updatePlayRateDisplay();
 }
 
@@ -2228,7 +2199,6 @@ function playSelectedText() {
     speechRate = 1;
     slowLevel = 0;
     fastLevel = 0;
-    veryFastLevel = 0;
     saveTTSSettings();
     updateSpeedButtonsFromState();
     speechCurrentText = text;
@@ -2247,7 +2217,6 @@ function playSelectedText() {
   speechRate = 1;
   slowLevel = 0;
   fastLevel = 0;
-  veryFastLevel = 0;
   saveTTSSettings();
   updateSpeedButtonsFromState();
   speechCurrentText = text;
