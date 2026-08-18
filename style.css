@@ -431,8 +431,7 @@ select {
 }
 
 .tts-slow,
-.tts-fast,
-.tts-very-fast {
+.tts-fast {
   font-size: 14px;
 }
 
@@ -589,9 +588,9 @@ footer {
   }
 
   .tts-button {
-    width: 38px;
-    min-width: 38px;
-    height: 38px;
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
   }
 
   .tts-play {
