@@ -338,13 +338,6 @@ let speechChunkIndex = 0;
 
 let speechChunkSession = 0;
 
-
-/*
- * Pause sırasında mevcut parçanın
- * SpeechSynthesis tarafından gerçekten
- * pause/resume edilmesi hedeflenir.
- */
-
 let speechChunkWordCount = 7;
 
 let speechStarting = false;
@@ -472,10 +465,6 @@ async function loadDays() {
 
   days = [];
 
-  console.log(
-    "📚 Günler yükleniyor..."
-  );
-
   const requests = [];
 
   for (
@@ -504,12 +493,6 @@ async function loadDays() {
           async response => {
 
             if (!response.ok) {
-
-              console.warn(
-                `Gün ${number} mevcut değil:`,
-                response.status
-              );
-
               return null;
             }
 
@@ -517,12 +500,6 @@ async function loadDays() {
               await response.text();
 
             if (!text.trim()) {
-
-              console.warn(
-                `Gün ${number} boş:`,
-                file
-              );
-
               return null;
             }
 
@@ -534,12 +511,6 @@ async function loadDays() {
                 JSON.parse(text);
 
             } catch (error) {
-
-              console.error(
-                `❌ Gün ${number} JSON hatası:`,
-                error
-              );
-
               return null;
             }
 
@@ -549,32 +520,11 @@ async function loadDays() {
                 : data.questions;
 
             if (
-              !Array.isArray(questions)
-            ) {
-
-              console.warn(
-                `⚠️ Gün ${number}: questions dizisi bulunamadı.`,
-                file
-              );
-
-              return null;
-            }
-
-            if (
+              !Array.isArray(questions) ||
               questions.length === 0
             ) {
-
-              console.warn(
-                `⚠️ Gün ${number}: soru bulunamadı.`,
-                file
-              );
-
               return null;
             }
-
-            console.log(
-              `✅ Gün ${number} yüklendi: ${questions.length} soru`
-            );
 
             return {
 
@@ -593,16 +543,7 @@ async function loadDays() {
         )
 
         .catch(
-          error => {
-
-            console.error(
-              `❌ Gün ${number} yüklenemedi:`,
-              error
-            );
-
-            return null;
-
-          }
+          () => null
         )
 
     );
@@ -2679,43 +2620,22 @@ function speakText(
   if (
     !("speechSynthesis" in window)
   ) {
-
-    console.warn(
-      "Tarayıcı TTS desteği bulunmuyor."
-    );
-
     return;
-
   }
 
   if (!text) {
     return;
   }
 
-
-  /*
-   * Yeni TTS oturumu.
-   */
-
   speechChunkSession++;
 
   const sessionId =
     speechChunkSession;
 
+  try {
+    window.speechSynthesis.cancel();
+  } catch (e) {}
 
-  /*
-   * Buradaki cancel() sadece yeni bir
-   * konuşma başlatılırken eski konuşmayı
-   * temizlemek içindir.
-   */
-
-  window.speechSynthesis.cancel();
-
-
-  /*
-   * Metin değiştiyse parçaları yeniden
-   * oluştur.
-   */
 
   if (
     speechCurrentText !== text ||
@@ -2985,11 +2905,6 @@ function speakCurrentChunk(
       speechStarting =
         false;
 
-
-      /*
-       * Bir sonraki küçük parçaya geç.
-       */
-
       speechChunkIndex++;
 
 
@@ -3013,12 +2928,6 @@ function speakCurrentChunk(
 
       }
 
-
-      /*
-       * Android Chrome'da arka arkaya
-       * speak() çağrısında sorun oluşmaması
-       * için küçük gecikme.
-       */
 
       setTimeout(
         () => {
@@ -3248,7 +3157,7 @@ function playSelectedText() {
 
 /* =========================================
    PAUSE / DEVAM
-   GÜNCELLENMİŞ KARARLI SİSTEM
+   GÜNCELLENMİŞ STABİL YERLEŞİK SİSTEM
 ========================================= */
 
 function toggleSpeechPause() {
@@ -3261,23 +3170,13 @@ function toggleSpeechPause() {
 
 
   /* =========================================
-     1. DURAKLATILMIŞSA → DEVAM ET
+     1. DURAKLATILMIŞSA → DEVAM ET (RESUME)
   ========================================= */
 
   if (
     speechPaused ||
     speechManualPaused
   ) {
-
-    if (
-      !speechCurrentText ||
-      !speechChunks.length ||
-      speechChunkIndex >=
-        speechChunks.length
-    ) {
-      return;
-    }
-
 
     speechPaused =
       false;
@@ -3291,19 +3190,21 @@ function toggleSpeechPause() {
     speechStarting =
       false;
 
-
     updatePauseButton();
 
+    if (
+      window.speechSynthesis.paused
+    ) {
 
-    /*
-     * Takılan tarayıcı komutları yerine,
-     * kaldığı parçayı doğrudan tetikleyerek
-     * kesintisiz devam sağlar.
-     */
+      window.speechSynthesis.resume();
 
-    speakCurrentChunk(
-      speechChunkSession
-    );
+    } else {
+
+      speakCurrentChunk(
+        speechChunkSession
+      );
+
+    }
 
     return;
 
@@ -3333,15 +3234,14 @@ function toggleSpeechPause() {
   speechManualPaused =
     true;
 
-
   try {
 
-    window.speechSynthesis.cancel();
+    window.speechSynthesis.pause();
 
   } catch (error) {
 
     console.warn(
-      "TTS pause iptal hatası:",
+      "TTS pause hatası:",
       error
     );
 
@@ -3353,7 +3253,6 @@ function toggleSpeechPause() {
 
   speechStarting =
     false;
-
 
   updatePauseButton();
 
@@ -3438,7 +3337,11 @@ function stopSpeech() {
     "speechSynthesis" in window
   ) {
 
-    window.speechSynthesis.cancel();
+    try {
+
+      window.speechSynthesis.cancel();
+
+    } catch (e) {}
 
   }
 
@@ -3463,7 +3366,6 @@ function stopSpeech() {
 
 /* =========================================
    HIZ DEĞİŞTİR
-   PARÇALI TTS İLE UYUMLU
 ========================================= */
 
 function changeSpeechRate(
@@ -3516,7 +3418,11 @@ function changeSpeechRate(
     speechChunkSession;
 
 
-  window.speechSynthesis.cancel();
+  try {
+
+    window.speechSynthesis.cancel();
+
+  } catch (e) {}
 
 
   speechUtterance =
@@ -4080,9 +3986,7 @@ function goToQuestionNumber(
       questionNumber
     )
   ) {
-
     return;
-
   }
 
 
@@ -4095,14 +3999,12 @@ function goToQuestionNumber(
     const questions =
       days[dayIndex].questions;
 
-
     const questionIndex =
       questions.findIndex(
         question =>
           Number(question.id) ===
           questionNumber
       );
-
 
     if (
       questionIndex !== -1
@@ -4124,11 +4026,6 @@ function goToQuestionNumber(
 
   }
 
-
-  console.warn(
-    `Soru bulunamadı: ${questionNumber}`
-  );
-
 }
 
 
@@ -4143,17 +4040,13 @@ function goToDayNumber(
   const dayNumber =
     Number(value);
 
-
   if (
     !Number.isInteger(
       dayNumber
     )
   ) {
-
     return;
-
   }
-
 
   const dayIndex =
     days.findIndex(
@@ -4162,19 +4055,9 @@ function goToDayNumber(
         dayNumber
     );
 
-
-  if (
-    dayIndex === -1
-  ) {
-
-    console.warn(
-      `Gün bulunamadı: ${dayNumber}`
-    );
-
+  if (dayIndex === -1) {
     return;
-
   }
-
 
   stopSpeech();
 
@@ -4257,13 +4140,11 @@ function renderSources(
           "li"
         );
 
-
       let text =
         "";
 
       let url =
         "";
-
 
       if (
         typeof source === "object" &&
@@ -4289,7 +4170,6 @@ function renderSources(
             /https?:\/\/[^\s|]+/i
           );
 
-
         if (match) {
 
           url =
@@ -4307,16 +4187,12 @@ function renderSources(
 
       }
 
-
       if (!url) {
-
         url =
           getSourceUrl(
             text
           );
-
       }
-
 
       if (url) {
 
@@ -4351,7 +4227,6 @@ function renderSources(
 
       }
 
-
       list.appendChild(
         li
       );
@@ -4359,11 +4234,9 @@ function renderSources(
     }
   );
 
-
   box.appendChild(
     list
   );
-
 
   return box;
 
@@ -4383,12 +4256,10 @@ function getSourceUrl(
       source
     ).toLowerCase();
 
-
   const quranMatch =
     text.match(
       /(?:kur['’]an|qur['’]?an|coran|corán|коран|коръән)[^0-9]*(\d+)[\s:.-]+(\d+)(?:[-–](\d+))?/i
     );
-
 
   if (quranMatch) {
 
@@ -4398,51 +4269,40 @@ function getSourceUrl(
     const start =
       quranMatch[2];
 
-
     return (
       `https://quran.com/${surah}?startingVerse=${start}`
     );
 
   }
 
-
   if (
     text.includes("sahih müslim") ||
     text.includes("sahih muslim")
   ) {
-
     return (
       "https://sunnah.com/muslim"
     );
-
   }
-
 
   if (
     text.includes("sahih buhari") ||
     text.includes("sahih buhârî") ||
     text.includes("sahih bukhari")
   ) {
-
     return (
       "https://sunnah.com/bukhari"
     );
-
   }
-
 
   if (
     text.includes(
       "ömer nasuhi bilmen"
     )
   ) {
-
     return (
       "https://archive.org/search?query=%C3%96mer+Nasuhi+Bilmen+B%C3%BCy%C3%BCk+%C4%B0slam+%C4%B0lmihali"
     );
-
   }
-
 
   if (
     text.includes(
@@ -4452,13 +4312,10 @@ function getSourceUrl(
       "akademi"
     )
   ) {
-
     return (
       "https://mckurdi27.github.io/yol-haritasi/"
     );
-
   }
-
 
   return "";
 
