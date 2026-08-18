@@ -4,7 +4,7 @@
 ## Sistem
 - Her gün 19 yeni soru
 - Sorular kesintisiz numaralandırılır
-- 11 dil ve sıralaması değişmez 
+- 16 dil ve sıralaması değişmez 
 - Seçilen dil en üstte gösterilir
 - Her sorunun altında önemli kaynaklar bulunur
 - Günlük içerikler ayrı JSON dosyalarında tutulur
