@@ -4,28 +4,38 @@
     "tr": "4. Gün — Vahiy ve Peygamberler",
     "en": "Day 4 — Revelation and Prophets",
     "de": "Tag 4 — Offenbarung und Propheten",
+    "nl": "Dag 4 — Openbaring en profeten",
+    "fr": "Jour 4 — La révélation et les prophètes",
     "ru": "День 4 — Откровение и пророки",
     "ku": "Roj 4 — Wahî û Pêxember",
     "tt": "4 нче көн — Вәхи һәм пәйгамбәрләр",
-    "fr": "Jour 4 — La révélation et les prophètes",
-    "es": "Día 4 — La revelación y los profetas",
     "ar": "الْيَوْمُ الرَّابِعُ — الْوَحْيُ وَالْأَنْبِيَاءُ",
-    "nl": "Dag 4 — Openbaring en profeten",
-    "it": "Giorno 4 — La rivelazione e i profeti"
+    "es": "Día 4 — La revelación y los profetas",
+    "it": "Giorno 4 — La rivelazione e i profeti",
+    "pt": "Dia 4 — A Revelação e os Profetas",
+    "ko": "4일차 — 계시와 예언자들",
+    "vi": "Ngày 4 — Mặc khải và các vị tiên tri",
+    "ja": "4日目 — 啓示と預言者たち",
+    "zh": "第4天——启示与先知"
   },
 
   "daySubtitle": {
     "tr": "Vahyin ne olduğunu, peygamberlerin görevini ve Hz. Muhammed ﷺ'in risaletini öğren.",
     "en": "Learn what revelation is, the mission of the prophets, and the message of Prophet Muhammad ﷺ.",
     "de": "Lerne, was Offenbarung ist, welche Aufgabe die Propheten hatten und was die Botschaft Muhammads ﷺ war.",
+    "nl": "Leer wat openbaring is, wat de taak van de profeten was en wat de boodschap van de profeet Muhammad ﷺ was.",
+    "fr": "Découvrez ce qu’est la révélation, la mission des prophètes et le message du prophète Muhammad ﷺ.",
     "ru": "Узнайте, что такое откровение, какова миссия пророков и в чём заключалось послание пророка Мухаммада ﷺ.",
     "ku": "Fêr bibe ka wahî çi ye, wezîfeya pêxemberan çi ye û risaleta Hz. Muhammed ﷺ çi ye.",
     "tt": "Вәхинең нәрсә икәнен, пәйгамбәрләрнең вазифасын һәм Мөхәммәд ﷺ пәйгамбәрнең рисаләтен өйрәнегез.",
-    "fr": "Découvrez ce qu’est la révélation, la mission des prophètes et le message du prophète Muhammad ﷺ.",
-    "es": "Aprende qué es la revelación, cuál fue la misión de los profetas y cuál fue el mensaje del profeta Muhammad ﷺ.",
     "ar": "تَعَلَّمْ مَا هُوَ الْوَحْيُ، وَمَا وَظِيفَةُ الْأَنْبِيَاءِ، وَمَا رِسَالَةُ النَّبِيِّ مُحَمَّدٍ ﷺ.",
-    "nl": "Leer wat openbaring is, wat de taak van de profeten was en wat de boodschap van de profeet Muhammad ﷺ was.",
-    "it": "Scopri che cos’è la rivelazione, quale fosse la missione dei profeti e quale fosse il messaggio del profeta Muhammad ﷺ."
+    "es": "Aprende qué es la revelación, cuál fue la misión de los profetas y cuál fue el mensaje del profeta Muhammad ﷺ.",
+    "it": "Scopri che cos’è la rivelazione, quale fosse la missione dei profeti e quale fosse il messaggio del profeta Muhammad ﷺ.",
+    "pt": "Aprenda o que é a revelação, qual foi a missão dos profetas e qual foi a mensagem do profeta Muhammad ﷺ.",
+    "ko": "계시가 무엇인지, 예언자들의 사명이 무엇이었는지, 그리고 무함마드 ﷺ 선지자의 메시지가 무엇이었는지 배워 보세요.",
+    "vi": "Hãy tìm hiểu mặc khải là gì, sứ mệnh của các vị tiên tri và thông điệp của Nhà tiên tri Muhammad ﷺ.",
+    "ja": "啓示とは何か、預言者たちの使命、そして預言者ムハンマド ﷺ の使信について学びましょう。",
+    "zh": "学习什么是启示、先知们的使命，以及先知穆罕默德 ﷺ 所传达的信息。"
   },
 
   "questions": [
@@ -45,6 +55,14 @@
         "q": "Was ist Offenbarung?",
         "a": "Sie ist die göttliche Botschaft und das Wissen, das Allah Seinen Propheten übermittelte."
       },
+      "nl": {
+        "q": "Wat is openbaring?",
+        "a": "Het is de goddelijke boodschap en kennis die Allah aan Zijn profeten heeft geopenbaard."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la révélation ?",
+        "a": "C’est le message et la connaissance divins qu’Allah a transmis à Ses prophètes."
+      },
       "ru": {
         "q": "Что такое откровение?",
         "a": "Это божественное послание и знание, которое Аллах передавал Своим пророкам."
@@ -57,25 +75,37 @@
         "q": "Вәхи нәрсә ул?",
         "a": "Ул — Аллаһның пәйгамбәрләренә җиткергән илаһи хәбәре һәм белеме."
       },
-      "fr": {
-        "q": "Qu’est-ce que la révélation ?",
-        "a": "C’est le message et la connaissance divins qu’Allah a transmis à Ses prophètes."
+      "ar": {
+        "q": "مَا هُوَ الْوَحْيُ؟",
+        "a": "هُوَ الرِّسَالَةُ وَالْمَعْرِفَةُ الْإِلَهِيَّةُ الَّتِي أَوْحَاهَا اللَّهُ إِلَى أَنْبِيَائِهِ."
       },
       "es": {
         "q": "¿Qué es la revelación?",
         "a": "Es el mensaje y conocimiento divinos que Allah comunicó a Sus profetas."
       },
-      "ar": {
-        "q": "مَا هُوَ الْوَحْيُ؟",
-        "a": "هُوَ الرِّسَالَةُ وَالْمَعْرِفَةُ الْإِلَهِيَّةُ الَّتِي أَوْحَاهَا اللَّهُ إِلَى أَنْبِيَائِهِ."
-      },
-      "nl": {
-        "q": "Wat is openbaring?",
-        "a": "Het is de goddelijke boodschap en kennis die Allah aan Zijn profeten heeft geopenbaard."
-      },
       "it": {
         "q": "Che cos’è la rivelazione?",
         "a": "È il messaggio e la conoscenza divina che Allah ha comunicato ai Suoi profeti."
+      },
+      "pt": {
+        "q": "O que é a revelação?",
+        "a": "É a mensagem e o conhecimento divinos que Allah transmitiu aos Seus profetas."
+      },
+      "ko": {
+        "q": "계시란 무엇입니까?",
+        "a": "계시는 알라께서 자신의 예언자들에게 전달하신 신성한 메시지와 지식입니다."
+      },
+      "vi": {
+        "q": "Mặc khải là gì?",
+        "a": "Đó là thông điệp và tri thức thiêng liêng mà Allah truyền đạt cho các vị tiên tri của Ngài."
+      },
+      "ja": {
+        "q": "啓示とは何ですか？",
+        "a": "それは、アッラーが預言者たちに伝えられた神聖なメッセージと知識です。"
+      },
+      "zh": {
+        "q": "什么是启示？",
+        "a": "启示是安拉传达给众先知的神圣信息和知识。"
       },
       "sources": [
         "Kur'an 42:51"
@@ -97,6 +127,14 @@
         "q": "Wer ist ein Prophet?",
         "a": "Ein Prophet ist ein von Allah auserwählter Mensch, der den Menschen den richtigen Weg verkündet."
       },
+      "nl": {
+        "q": "Wie is een profeet?",
+        "a": "Een profeet is iemand die door Allah is uitgekozen om mensen naar de waarheid te leiden."
+      },
+      "fr": {
+        "q": "Qu’est-ce qu’un prophète ?",
+        "a": "C’est une personne choisie par Allah pour guider les hommes vers la vérité."
+      },
       "ru": {
         "q": "Кто такой пророк?",
         "a": "Пророк — это человек, избранный Аллахом, чтобы наставлять людей на правильный путь."
@@ -109,25 +147,37 @@
         "q": "Пәйгамбәр кем ул?",
         "a": "Пәйгамбәр — кешеләрне туры юлга өндәү өчен Аллаһ тарафыннан сайланган кеше."
       },
-      "fr": {
-        "q": "Qu’est-ce qu’un prophète ?",
-        "a": "C’est une personne choisie par Allah pour guider les hommes vers la vérité."
+      "ar": {
+        "q": "مَنْ هُوَ النَّبِيُّ؟",
+        "a": "هُوَ الْإِنْسَانُ الَّذِي اصْطَفَاهُ اللَّهُ لِهَدَايَةِ النَّاسِ إِلَى الْحَقِّ."
       },
       "es": {
         "q": "¿Quién es un profeta?",
         "a": "Es una persona elegida por Allah para guiar a la humanidad hacia la verdad."
       },
-      "ar": {
-        "q": "مَنْ هُوَ النَّبِيُّ؟",
-        "a": "هُوَ الْإِنْسَانُ الَّذِي اصْطَفَاهُ اللَّهُ لِهَدَايَةِ النَّاسِ إِلَى الْحَقِّ."
-      },
-      "nl": {
-        "q": "Wie is een profeet?",
-        "a": "Een profeet is iemand die door Allah is uitgekozen om mensen naar de waarheid te leiden."
-      },
       "it": {
         "q": "Chi è un profeta?",
         "a": "È una persona scelta da Allah per guidare gli esseri umani verso la verità."
+      },
+      "pt": {
+        "q": "Quem é um profeta?",
+        "a": "É uma pessoa escolhida por Allah para guiar as pessoas para a verdade."
+      },
+      "ko": {
+        "q": "예언자란 누구입니까?",
+        "a": "예언자는 사람들을 진리로 인도하도록 알라께서 선택하신 사람입니다."
+      },
+      "vi": {
+        "q": "Nhà tiên tri là ai?",
+        "a": "Đó là người được Allah lựa chọn để hướng dẫn con người đến với chân lý."
+      },
+      "ja": {
+        "q": "預言者とは誰ですか？",
+        "a": "預言者とは、人々を真理へ導くためにアッラーによって選ばれた人です。"
+      },
+      "zh": {
+        "q": "先知是谁？",
+        "a": "先知是安拉选派来引导人们走向真理的人。"
       },
       "sources": [
         "Kur'an 2:213"
@@ -149,6 +199,14 @@
         "q": "Was ist die grundlegende Aufgabe der Propheten?",
         "a": "Die Menschen dazu aufzurufen, Allah zu dienen, die Wahrheit zu verkünden und den richtigen Weg zu zeigen."
       },
+      "nl": {
+        "q": "Wat is de belangrijkste taak van de profeten?",
+        "a": "Mensen oproepen Allah te aanbidden, de waarheid overbrengen en de juiste weg tonen."
+      },
+      "fr": {
+        "q": "Quelle est la mission principale des prophètes ?",
+        "a": "Appeler les gens à adorer Allah, transmettre la vérité et montrer le droit chemin."
+      },
       "ru": {
         "q": "Какова основная миссия пророков?",
         "a": "Призывать людей поклоняться Аллаху, сообщать истину и показывать правильный путь."
@@ -161,25 +219,37 @@
         "q": "Пәйгамбәрләрнең төп вазифасы нинди?",
         "a": "Кешеләрне Аллаһка гыйбадәт кылырга чакыру, хакыйкатьне җиткерү һәм туры юлны күрсәтү."
       },
-      "fr": {
-        "q": "Quelle est la mission principale des prophètes ?",
-        "a": "Appeler les gens à adorer Allah, transmettre la vérité et montrer le droit chemin."
+      "ar": {
+        "q": "مَا هِيَ الْمَهَمَّةُ الْأَسَاسِيَّةُ لِلْأَنْبِيَاءِ؟",
+        "a": "دَعْوَةُ النَّاسِ إِلَى عِبَادَةِ اللَّهِ، وَتَبْلِيغُ الْحَقِّ، وَإِرْشَادُهُمْ إِلَى الصِّرَاطِ الْمُسْتَقِيمِ."
       },
       "es": {
         "q": "¿Cuál es la misión principal de los profetas?",
         "a": "Llamar a las personas a adorar a Allah, transmitir la verdad y mostrar el camino correcto."
       },
-      "ar": {
-        "q": "مَا هِيَ الْمَهَمَّةُ الْأَسَاسِيَّةُ لِلْأَنْبِيَاءِ؟",
-        "a": "دَعْوَةُ النَّاسِ إِلَى عِبَادَةِ اللَّهِ، وَتَبْلِيغُ الْحَقِّ، وَإِرْشَادُهُمْ إِلَى الصِّرَاطِ الْمُسْتَقِيمِ."
-      },
-      "nl": {
-        "q": "Wat is de belangrijkste taak van de profeten?",
-        "a": "Mensen oproepen Allah te aanbidden, de waarheid overbrengen en de juiste weg tonen."
-      },
       "it": {
         "q": "Qual è il compito principale dei profeti?",
         "a": "Chiamare le persone ad adorare Allah, trasmettere la verità e indicare la retta via."
+      },
+      "pt": {
+        "q": "Qual é a missão principal dos profetas?",
+        "a": "Chamar as pessoas a adorar Allah, transmitir a verdade e mostrar o caminho correto."
+      },
+      "ko": {
+        "q": "예언자들의 기본적인 사명은 무엇입니까?",
+        "a": "사람들에게 알라를 경배하도록 부르고, 진리를 전하며, 올바른 길을 보여 주는 것입니다."
+      },
+      "vi": {
+        "q": "Sứ mệnh cơ bản của các vị tiên tri là gì?",
+        "a": "Kêu gọi con người thờ phượng Allah, truyền đạt chân lý và chỉ dẫn con đường đúng đắn."
+      },
+      "ja": {
+        "q": "預言者たちの基本的な使命は何ですか？",
+        "a": "人々にアッラーのみを崇拝するよう呼びかけ、真理を伝え、正しい道を示すことです。"
+      },
+      "zh": {
+        "q": "众先知的基本使命是什么？",
+        "a": "号召人们崇拜安拉、传达真理并指引正道。"
       },
       "sources": [
         "Kur'an 16:36"
@@ -201,6 +271,14 @@
         "q": "War die Botschaft aller Propheten gleich?",
         "a": "Ihre grundlegende Botschaft war gleich: Allah allein anzubeten und Ihm keine Partner beizugesellen."
       },
+      "nl": {
+        "q": "Was de boodschap van alle profeten hetzelfde?",
+        "a": "Hun fundamentele boodschap was hetzelfde: alleen Allah aanbidden en Hem geen deelgenoten toekennen."
+      },
+      "fr": {
+        "q": "Le message de tous les prophètes était-il le même ?",
+        "a": "Leur message fondamental était le même : adorer Allah seul et ne Lui associer aucun partenaire."
+      },
       "ru": {
         "q": "Было ли послание всех пророков одинаковым?",
         "a": "Их основное послание было одинаковым: поклоняться одному Аллаху и не приобщать к Нему сотоварищей."
@@ -213,25 +291,37 @@
         "q": "Барлык пәйгамбәрләрнең дә чакыруы бер үк булганмы?",
         "a": "Аларның төп чакыруы бер үк булган: бары тик Аллаһка гыйбадәт кылу һәм Аңа тиңдәшләр кылмау."
       },
-      "fr": {
-        "q": "Le message de tous les prophètes était-il le même ?",
-        "a": "Leur message fondamental était le même : adorer Allah seul et ne Lui associer aucun partenaire."
+      "ar": {
+        "q": "هَلْ كَانَتْ دَعْوَةُ جَمِيعِ الْأَنْبِيَاءِ وَاحِدَةً؟",
+        "a": "كَانَ أَسَاسُ دَعْوَتِهِمْ وَاحِدًا: عِبَادَةُ اللَّهِ وَحْدَهُ وَعَدَمُ إِشْرَاكِ شَيْءٍ بِهِ."
       },
       "es": {
         "q": "¿Era el mensaje de todos los profetas el mismo?",
         "a": "Su mensaje fundamental era el mismo: adorar únicamente a Allah y no asociarle ningún compañero."
       },
-      "ar": {
-        "q": "هَلْ كَانَتْ دَعْوَةُ جَمِيعِ الْأَنْبِيَاءِ وَاحِدَةً؟",
-        "a": "كَانَ أَسَاسُ دَعْوَتِهِمْ وَاحِدًا: عِبَادَةُ اللَّهِ وَحْدَهُ وَعَدَمُ إِشْرَاكِ شَيْءٍ بِهِ."
-      },
-      "nl": {
-        "q": "Was de boodschap van alle profeten hetzelfde?",
-        "a": "Hun fundamentele boodschap was hetzelfde: alleen Allah aanbidden en Hem geen deelgenoten toekennen."
-      },
       "it": {
         "q": "Il messaggio di tutti i profeti era lo stesso?",
         "a": "Il loro messaggio fondamentale era lo stesso: adorare solo Allah e non associare a Lui alcun partner."
+      },
+      "pt": {
+        "q": "A mensagem de todos os profetas era a mesma?",
+        "a": "A mensagem fundamental deles era a mesma: adorar somente a Allah e não associar parceiros a Ele."
+      },
+      "ko": {
+        "q": "모든 예언자들의 메시지는 같았습니까?",
+        "a": "그들의 기본적인 메시지는 같았습니다. 오직 알라만을 경배하고 그분께 어떤 동반자도 두지 않는 것입니다."
+      },
+      "vi": {
+        "q": "Thông điệp của tất cả các vị tiên tri có giống nhau không?",
+        "a": "Thông điệp nền tảng của họ giống nhau: chỉ thờ phượng Allah và không thờ phụng bất cứ ai cùng với Ngài."
+      },
+      "ja": {
+        "q": "すべての預言者の呼びかけは同じでしたか？",
+        "a": "基本的な呼びかけは同じでした。アッラーのみを崇拝し、アッラーに何ものも同位者として結び付けないことです。"
+      },
+      "zh": {
+        "q": "所有先知的号召都是一样的吗？",
+        "a": "他们的基本号召是相同的：只崇拜安拉，不以任何物与安拉配对。"
       },
       "sources": [
         "Kur'an 16:36",
@@ -254,6 +344,14 @@
         "q": "Welche Propheten werden im Qur’an erwähnt?",
         "a": "Unter anderem Adam, Noah, Abraham, Mose, Jesus und Muhammad ﷺ werden im Qur’an erwähnt."
       },
+      "nl": {
+        "q": "Welke profeten worden in de Koran genoemd?",
+        "a": "Onder anderen Adam, Noach, Ibrahim, Mozes, Jezus en Muhammad ﷺ worden genoemd."
+      },
+      "fr": {
+        "q": "Quels prophètes sont mentionnés dans le Coran ?",
+        "a": "De nombreux prophètes y sont mentionnés, notamment Adam, Noé, Abraham, Moïse, Jésus et Muhammad ﷺ."
+      },
       "ru": {
         "q": "Какие пророки упоминаются в Коране?",
         "a": "В Коране упоминаются многие пророки, в том числе Адам, Нух, Ибрахим, Муса, Иса и Мухаммад ﷺ."
@@ -266,25 +364,37 @@
         "q": "Коръәндә нинди пәйгамбәрләр искә алына?",
         "a": "Коръәндә Адәм, Нух, Ибраһим, Муса, Гайсә һәм Мөхәммәд ﷺ кебек күп пәйгамбәрләр искә алына."
       },
-      "fr": {
-        "q": "Quels prophètes sont mentionnés dans le Coran ?",
-        "a": "De nombreux prophètes y sont mentionnés, notamment Adam, Noé, Abraham, Moïse, Jésus et Muhammad ﷺ."
+      "ar": {
+        "q": "مَنْ بَعْضُ الْأَنْبِيَاءِ الْمَذْكُورِينَ فِي الْقُرْآنِ؟",
+        "a": "مِنْهُمْ آدَمُ وَنُوحٌ وَإِبْرَاهِيمُ وَمُوسَى وَعِيسَى وَمُحَمَّدٌ ﷺ."
       },
       "es": {
         "q": "¿Qué profetas se mencionan en el Corán?",
         "a": "Se mencionan muchos profetas, entre ellos Adán, Noé, Abraham, Moisés, Jesús y Muhammad ﷺ."
       },
-      "ar": {
-        "q": "مَنْ بَعْضُ الْأَنْبِيَاءِ الْمَذْكُورِينَ فِي الْقُرْآنِ؟",
-        "a": "مِنْهُمْ آدَمُ وَنُوحٌ وَإِبْرَاهِيمُ وَمُوسَى وَعِيسَى وَمُحَمَّدٌ ﷺ."
-      },
-      "nl": {
-        "q": "Welke profeten worden in de Koran genoemd?",
-        "a": "Onder anderen Adam, Noach, Ibrahim, Mozes, Jezus en Muhammad ﷺ worden genoemd."
-      },
       "it": {
         "q": "Quali profeti sono menzionati nel Corano?",
         "a": "Tra gli altri sono menzionati Adamo, Noè, Abramo, Mosè, Gesù e Muhammad ﷺ."
+      },
+      "pt": {
+        "q": "Quais profetas são mencionados no Alcorão?",
+        "a": "Muitos profetas são mencionados, entre eles Adão, Noé, Abraão, Moisés, Jesus e Muhammad ﷺ."
+      },
+      "ko": {
+        "q": "꾸란에는 어떤 예언자들이 언급되어 있습니까?",
+        "a": "아담, 노아, 아브라함, 모세, 예수, 무함마드 ﷺ를 비롯한 많은 예언자들이 언급되어 있습니다."
+      },
+      "vi": {
+        "q": "Những vị tiên tri nào được nhắc đến trong Kinh Qur'an?",
+        "a": "Có nhiều vị tiên tri được nhắc đến, trong đó có Adam, Nuh, Ibrahim, Musa, Isa và Muhammad ﷺ."
+      },
+      "ja": {
+        "q": "クルアーンにはどの預言者たちが言及されていますか？",
+        "a": "アーダム、ヌーフ、イブラーヒーム、ムーサー、イーサー、ムハンマド ﷺ をはじめ、多くの預言者が言及されています。"
+      },
+      "zh": {
+        "q": "《古兰经》中提到了哪些先知？",
+        "a": "《古兰经》中提到了许多先知，包括阿丹、努哈、易卜拉欣、穆萨、尔萨和穆罕默德 ﷺ。"
       },
       "sources": [
         "Kur'an 4:163"
@@ -306,6 +416,14 @@
         "q": "Wer ist der Prophet Muhammad ﷺ?",
         "a": "Er ist Allahs letzter Prophet und Sein Gesandter für die gesamte Menschheit."
       },
+      "nl": {
+        "q": "Wie is de profeet Muhammad ﷺ?",
+        "a": "Hij is de laatste profeet van Allah en Zijn boodschapper voor de hele mensheid."
+      },
+      "fr": {
+        "q": "Qui est le prophète Muhammad ﷺ ?",
+        "a": "Il est le dernier prophète d’Allah et Son messager envoyé à toute l’humanité."
+      },
       "ru": {
         "q": "Кто такой пророк Мухаммад ﷺ?",
         "a": "Он последний пророк Аллаха и Его посланник, отправленный ко всему человечеству."
@@ -318,25 +436,37 @@
         "q": "Мөхәммәд ﷺ кем ул?",
         "a": "Ул — Аллаһның соңгы пәйгамбәре һәм бөтен кешелеккә җибәрелгән илчесе."
       },
-      "fr": {
-        "q": "Qui est le prophète Muhammad ﷺ ?",
-        "a": "Il est le dernier prophète d’Allah et Son messager envoyé à toute l’humanité."
+      "ar": {
+        "q": "مَنْ هُوَ مُحَمَّدٌ ﷺ؟",
+        "a": "هُوَ خَاتَمُ أَنْبِيَاءِ اللَّهِ وَرَسُولُهُ الْمُرْسَلُ إِلَى النَّاسِ جَمِيعًا."
       },
       "es": {
         "q": "¿Quién es el profeta Muhammad ﷺ?",
         "a": "Es el último profeta de Allah y Su mensajero enviado a toda la humanidad."
       },
-      "ar": {
-        "q": "مَنْ هُوَ مُحَمَّدٌ ﷺ؟",
-        "a": "هُوَ خَاتَمُ أَنْبِيَاءِ اللَّهِ وَرَسُولُهُ الْمُرْسَلُ إِلَى النَّاسِ جَمِيعًا."
-      },
-      "nl": {
-        "q": "Wie is de profeet Muhammad ﷺ?",
-        "a": "Hij is de laatste profeet van Allah en Zijn boodschapper voor de hele mensheid."
-      },
       "it": {
         "q": "Chi è il profeta Muhammad ﷺ?",
         "a": "È l’ultimo profeta di Allah e il Suo messaggero inviato a tutta l’umanità."
+      },
+      "pt": {
+        "q": "Quem é o profeta Muhammad ﷺ?",
+        "a": "Ele é o último profeta de Allah e Seu mensageiro enviado a toda a humanidade."
+      },
+      "ko": {
+        "q": "무함마드 ﷺ 예언자는 누구입니까?",
+        "a": "그는 알라의 마지막 예언자이며 온 인류에게 보내진 그분의 사도입니다."
+      },
+      "vi": {
+        "q": "Nhà tiên tri Muhammad ﷺ là ai?",
+        "a": "Ngài là vị tiên tri cuối cùng của Allah và là vị sứ giả của Ngài được gửi đến toàn thể nhân loại."
+      },
+      "ja": {
+        "q": "預言者ムハンマド ﷺ とは誰ですか？",
+        "a": "彼はアッラーの最後の預言者であり、全人類に遣わされた使徒です。"
+      },
+      "zh": {
+        "q": "先知穆罕默德 ﷺ 是谁？",
+        "a": "他是安拉的最后一位先知，也是被派遣给全人类的使者。"
       },
       "sources": [
         "Kur'an 33:40",
@@ -359,6 +489,14 @@
         "q": "In welcher Stadt wurde der Prophet Muhammad ﷺ geboren?",
         "a": "Er wurde in Mekka geboren."
       },
+      "nl": {
+        "q": "In welke stad werd de profeet Muhammad ﷺ geboren?",
+        "a": "Hij werd geboren in Mekka."
+      },
+      "fr": {
+        "q": "Dans quelle ville le prophète Muhammad ﷺ est-il né ?",
+        "a": "Il est né à La Mecque."
+      },
       "ru": {
         "q": "В каком городе родился пророк Мухаммад ﷺ?",
         "a": "Он родился в Мекке."
@@ -371,25 +509,37 @@
         "q": "Мөхәммәд ﷺ кайсы шәһәрдә туган?",
         "a": "Ул Мәккә шәһәрендә туган."
       },
-      "fr": {
-        "q": "Dans quelle ville le prophète Muhammad ﷺ est-il né ?",
-        "a": "Il est né à La Mecque."
+      "ar": {
+        "q": "فِي أَيِّ مَدِينَةٍ وُلِدَ النَّبِيُّ مُحَمَّدٌ ﷺ؟",
+        "a": "وُلِدَ فِي مَكَّةَ."
       },
       "es": {
         "q": "¿En qué ciudad nació el profeta Muhammad ﷺ?",
         "a": "Nació en La Meca."
       },
-      "ar": {
-        "q": "فِي أَيِّ مَدِينَةٍ وُلِدَ النَّبِيُّ مُحَمَّدٌ ﷺ؟",
-        "a": "وُلِدَ فِي مَكَّةَ."
-      },
-      "nl": {
-        "q": "In welke stad werd de profeet Muhammad ﷺ geboren?",
-        "a": "Hij werd geboren in Mekka."
-      },
       "it": {
         "q": "In quale città nacque il profeta Muhammad ﷺ?",
         "a": "Nacque alla Mecca."
+      },
+      "pt": {
+        "q": "Em que cidade nasceu o profeta Muhammad ﷺ?",
+        "a": "Ele nasceu em Meca."
+      },
+      "ko": {
+        "q": "무함마드 ﷺ 예언자는 어느 도시에서 태어났습니까?",
+        "a": "그는 메카에서 태어났습니다."
+      },
+      "vi": {
+        "q": "Nhà tiên tri Muhammad ﷺ sinh ra ở thành phố nào?",
+        "a": "Ngài sinh ra tại Makkah."
+      },
+      "ja": {
+        "q": "預言者ムハンマド ﷺ はどの都市で生まれましたか？",
+        "a": "メッカで生まれました。"
+      },
+      "zh": {
+        "q": "先知穆罕默德 ﷺ 出生于哪个城市？",
+        "a": "他出生于麦加。"
       },
       "sources": [
         "Siyer kaynakları"
@@ -411,6 +561,14 @@
         "q": "Wo kam die erste Offenbarung?",
         "a": "Sie kam in der Höhle Hira."
       },
+      "nl": {
+        "q": "Waar kwam de eerste openbaring?",
+        "a": "In de grot van Hira."
+      },
+      "fr": {
+        "q": "Où la première révélation a-t-elle été reçue ?",
+        "a": "Elle a été reçue dans la grotte de Hira."
+      },
       "ru": {
         "q": "Где пророку Мухаммаду ﷺ было ниспослано первое откровение?",
         "a": "В пещере Хира."
@@ -423,25 +581,37 @@
         "q": "Беренче вәхи кайда иңгән?",
         "a": "Ул Хира мәгарәсендә иңгән."
       },
-      "fr": {
-        "q": "Où la première révélation a-t-elle été reçue ?",
-        "a": "Elle a été reçue dans la grotte de Hira."
+      "ar": {
+        "q": "أَيْنَ نَزَلَ الْوَحْيُ الْأَوَّلُ؟",
+        "a": "نَزَلَ فِي غَارِ حِرَاءَ."
       },
       "es": {
         "q": "¿Dónde recibió el profeta la primera revelación?",
         "a": "La recibió en la cueva de Hira."
       },
-      "ar": {
-        "q": "أَيْنَ نَزَلَ الْوَحْيُ الْأَوَّلُ؟",
-        "a": "نَزَلَ فِي غَارِ حِرَاءَ."
-      },
-      "nl": {
-        "q": "Waar kwam de eerste openbaring?",
-        "a": "In de grot van Hira."
-      },
       "it": {
         "q": "Dove avvenne la prima rivelazione?",
         "a": "Avvenne nella grotta di Hira."
+      },
+      "pt": {
+        "q": "Onde ocorreu a primeira revelação?",
+        "a": "Ela ocorreu na Caverna de Hira."
+      },
+      "ko": {
+        "q": "첫 번째 계시는 어디에서 내려왔습니까?",
+        "a": "히라 동굴에서 내려왔습니다."
+      },
+      "vi": {
+        "q": "Mặc khải đầu tiên được ban xuống ở đâu?",
+        "a": "Mặc khải đầu tiên được ban xuống trong hang Hira."
+      },
+      "ja": {
+        "q": "最初の啓示はどこで下されましたか？",
+        "a": "ヒラー洞窟で下されました。"
+      },
+      "zh": {
+        "q": "第一次启示在哪里降示？",
+        "a": "第一次启示是在希拉山洞降示的。"
       },
       "sources": [
         "Sahih Buhari, Bed'ü'l-Vahy"
@@ -463,6 +633,14 @@
         "q": "Welche Verse wurden mit der ersten Offenbarung offenbart?",
         "a": "Die ersten fünf Verse der Sure al-Alaq wurden offenbart."
       },
+      "nl": {
+        "q": "Welke verzen kwamen met de eerste openbaring?",
+        "a": "De eerste vijf verzen van soera Al-Alaq werden geopenbaard."
+      },
+      "fr": {
+        "q": "Quels versets ont été révélés lors de la première révélation ?",
+        "a": "Les cinq premiers versets de la sourate Al-Alaq."
+      },
       "ru": {
         "q": "Какие аяты были ниспосланы при первом откровении?",
         "a": "Первые пять аятов суры «Аль-Алак»."
@@ -475,25 +653,37 @@
         "q": "Беренче вәхи белән нинди аятьләр иңгән?",
         "a": "«Әл-Галәк» сүрәсенең беренче биш аяте иңгән."
       },
-      "fr": {
-        "q": "Quels versets ont été révélés lors de la première révélation ?",
-        "a": "Les cinq premiers versets de la sourate Al-Alaq."
+      "ar": {
+        "q": "مَا الْآيَاتُ الَّتِي نَزَلَتْ فِي أَوَّلِ الْوَحْيِ؟",
+        "a": "نَزَلَتِ الْآيَاتُ الْخَمْسُ الْأُولَى مِنْ سُورَةِ الْعَلَقِ."
       },
       "es": {
         "q": "¿Qué versículos fueron revelados con la primera revelación?",
         "a": "Los primeros cinco versículos de la sura Al-Alaq."
       },
-      "ar": {
-        "q": "مَا الْآيَاتُ الَّتِي نَزَلَتْ فِي أَوَّلِ الْوَحْيِ؟",
-        "a": "نَزَلَتِ الْآيَاتُ الْخَمْسُ الْأُولَى مِنْ سُورَةِ الْعَلَقِ."
-      },
-      "nl": {
-        "q": "Welke verzen kwamen met de eerste openbaring?",
-        "a": "De eerste vijf verzen van soera Al-Alaq werden geopenbaard."
-      },
       "it": {
         "q": "Quali versetti furono rivelati per primi?",
         "a": "Furono rivelati i primi cinque versetti della sura Al-Alaq."
+      },
+      "pt": {
+        "q": "Quais versículos foram revelados na primeira revelação?",
+        "a": "Foram revelados os cinco primeiros versículos da Surata Al-Alaq."
+      },
+      "ko": {
+        "q": "첫 번째 계시에서 어떤 구절들이 내려왔습니까?",
+        "a": "알알라크 수라의 첫 다섯 구절이 내려왔습니다."
+      },
+      "vi": {
+        "q": "Những câu nào được ban xuống trong mặc khải đầu tiên?",
+        "a": "Năm câu đầu tiên của Surah Al-Alaq đã được ban xuống."
+      },
+      "ja": {
+        "q": "最初の啓示ではどの節が下されましたか？",
+        "a": "スーラ・アル＝アラクの最初の5節が下されました。"
+      },
+      "zh": {
+        "q": "第一次启示降示了哪些经文？",
+        "a": "降示的是《血块章》的前五节。"
       },
       "sources": [
         "Kur'an 96:1-5"
@@ -515,6 +705,14 @@
         "q": "Wem wurde der Qur’an offenbart?",
         "a": "Der Qur’an wurde dem Propheten Muhammad ﷺ offenbart."
       },
+      "nl": {
+        "q": "Aan wie werd de Koran geopenbaard?",
+        "a": "De Koran werd geopenbaard aan de profeet Muhammad ﷺ."
+      },
+      "fr": {
+        "q": "À qui le Coran a-t-il été révélé ?",
+        "a": "Le Coran a été révélé au prophète Muhammad ﷺ."
+      },
       "ru": {
         "q": "Кому был ниспослан Коран?",
         "a": "Коран был ниспослан пророку Мухаммаду ﷺ."
@@ -527,25 +725,37 @@
         "q": "Коръән кемгә иңдерелгән?",
         "a": "Коръән Мөхәммәд ﷺ пәйгамбәргә иңдерелгән."
       },
-      "fr": {
-        "q": "À qui le Coran a-t-il été révélé ?",
-        "a": "Le Coran a été révélé au prophète Muhammad ﷺ."
+      "ar": {
+        "q": "إِلَى مَنْ أُنْزِلَ الْقُرْآنُ؟",
+        "a": "أُنْزِلَ الْقُرْآنُ عَلَى النَّبِيِّ مُحَمَّدٍ ﷺ."
       },
       "es": {
         "q": "¿A quién fue revelado el Corán?",
         "a": "El Corán fue revelado al profeta Muhammad ﷺ."
       },
-      "ar": {
-        "q": "إِلَى مَنْ أُنْزِلَ الْقُرْآنُ؟",
-        "a": "أُنْزِلَ الْقُرْآنُ عَلَى النَّبِيِّ مُحَمَّدٍ ﷺ."
-      },
-      "nl": {
-        "q": "Aan wie werd de Koran geopenbaard?",
-        "a": "De Koran werd geopenbaard aan de profeet Muhammad ﷺ."
-      },
       "it": {
         "q": "A chi fu rivelato il Corano?",
         "a": "Il Corano fu rivelato al profeta Muhammad ﷺ."
+      },
+      "pt": {
+        "q": "A quem foi revelado o Alcorão?",
+        "a": "O Alcorão foi revelado ao profeta Muhammad ﷺ."
+      },
+      "ko": {
+        "q": "꾸란은 누구에게 계시되었습니까?",
+        "a": "꾸란은 예언자 무함마드 ﷺ에게 계시되었습니다."
+      },
+      "vi": {
+        "q": "Kinh Qur'an được mặc khải cho ai?",
+        "a": "Kinh Qur'an được mặc khải cho Nhà tiên tri Muhammad ﷺ."
+      },
+      "ja": {
+        "q": "クルアーンは誰に啓示されましたか？",
+        "a": "クルアーンは預言者ムハンマド ﷺ に啓示されました。"
+      },
+      "zh": {
+        "q": "《古兰经》降示给谁？",
+        "a": "《古兰经》降示给先知穆罕默德 ﷺ。"
       },
       "sources": [
         "Kur'an 26:192-195"
@@ -567,6 +777,14 @@
         "q": "Über welchen Zeitraum wurde der Qur’an offenbart?",
         "a": "Der Qur’an wurde während einer etwa 23 Jahre dauernden Prophetenschaft schrittweise offenbart."
       },
+      "nl": {
+        "q": "Over welke periode werd de Koran geopenbaard?",
+        "a": "De Koran werd geleidelijk geopenbaard gedurende ongeveer 23 jaar van het profeetschap."
+      },
+      "fr": {
+        "q": "Sur quelle durée le Coran a-t-il été révélé ?",
+        "a": "Le Coran a été révélé progressivement pendant environ 23 années de prophétie."
+      },
       "ru": {
         "q": "В течение какого времени ниспосылался Коран?",
         "a": "Коран ниспосылался постепенно примерно в течение 23 лет пророчества."
@@ -579,25 +797,37 @@
         "q": "Коръән күпме вакыт дәвамында иңдерелгән?",
         "a": "Коръән пәйгамбәрлекнең якынча 23 елы дәвамында өлешләп иңдерелгән."
       },
-      "fr": {
-        "q": "Sur quelle durée le Coran a-t-il été révélé ?",
-        "a": "Le Coran a été révélé progressivement pendant environ 23 années de prophétie."
+      "ar": {
+        "q": "كَمْ سَنَةً اسْتَمَرَّ نُزُولُ الْقُرْآنِ؟",
+        "a": "نَزَلَ الْقُرْآنُ مُنَجَّمًا خِلَالَ نَحْوِ ثَلَاثَةٍ وَعِشْرِينَ عَامًا."
       },
       "es": {
         "q": "¿Durante cuánto tiempo fue revelado el Corán?",
         "a": "El Corán fue revelado gradualmente durante aproximadamente 23 años de profecía."
       },
-      "ar": {
-        "q": "كَمْ سَنَةً اسْتَمَرَّ نُزُولُ الْقُرْآنِ؟",
-        "a": "نَزَلَ الْقُرْآنُ مُنَجَّمًا خِلَالَ نَحْوِ ثَلَاثَةٍ وَعِشْرِينَ عَامًا."
-      },
-      "nl": {
-        "q": "Over welke periode werd de Koran geopenbaard?",
-        "a": "De Koran werd geleidelijk geopenbaard gedurende ongeveer 23 jaar van het profeetschap."
-      },
       "it": {
         "q": "In quanto tempo fu rivelato il Corano?",
         "a": "Il Corano fu rivelato gradualmente durante circa 23 anni di profezia."
+      },
+      "pt": {
+        "q": "Durante quanto tempo o Alcorão foi revelado?",
+        "a": "O Alcorão foi revelado gradualmente ao longo de aproximadamente 23 anos de profecia."
+      },
+      "ko": {
+        "q": "꾸란은 얼마나 오랜 기간 동안 계시되었습니까?",
+        "a": "꾸란은 약 23년에 걸친 예언자 직분의 기간 동안 점진적으로 계시되었습니다."
+      },
+      "vi": {
+        "q": "Kinh Qur'an được mặc khải trong bao lâu?",
+        "a": "Kinh Qur'an được mặc khải dần dần trong khoảng 23 năm của thời kỳ tiên tri."
+      },
+      "ja": {
+        "q": "クルアーンはどのくらいの期間にわたって啓示されましたか？",
+        "a": "クルアーンは預言者としての約23年間にわたって、段階的に啓示されました。"
+      },
+      "zh": {
+        "q": "《古兰经》用了多长时间降示完毕？",
+        "a": "《古兰经》在先知使命约23年的时间里逐步降示。"
       },
       "sources": [
         "Kur'an 17:106",
@@ -620,6 +850,14 @@
         "q": "Welcher Engel brachte den Qur’an zum Propheten Muhammad ﷺ?",
         "a": "Der Engel Dschibril (Gabriel) überbrachte ihn."
       },
+      "nl": {
+        "q": "Welke engel bracht de Koran naar de profeet Muhammad ﷺ?",
+        "a": "De engel Jibril (Gabriël), vrede zij met hem, bracht hem."
+      },
+      "fr": {
+        "q": "Quel ange a apporté le Coran au prophète Muhammad ﷺ ?",
+        "a": "L’ange Jibril (Gabriel), paix sur lui, l’a apporté."
+      },
       "ru": {
         "q": "Какой ангел приносил Коран пророку Мухаммаду ﷺ?",
         "a": "Его приносил Джибриль, мир ему."
@@ -632,25 +870,37 @@
         "q": "Коръәнне Мөхәммәд ﷺ пәйгамбәргә кайсы фәрештә китергән?",
         "a": "Аны Җәбраил (г.с.) китергән."
       },
-      "fr": {
-        "q": "Quel ange a apporté le Coran au prophète Muhammad ﷺ ?",
-        "a": "L’ange Jibril (Gabriel), paix sur lui, l’a apporté."
+      "ar": {
+        "q": "أَيُّ مَلَكٍ نَزَّلَ الْقُرْآنَ عَلَى مُحَمَّدٍ ﷺ؟",
+        "a": "نَزَّلَهُ جِبْرِيلُ عَلَيْهِ السَّلَامُ."
       },
       "es": {
         "q": "¿Qué ángel llevó el Corán al profeta Muhammad ﷺ?",
         "a": "Lo llevó el ángel Yibril (Gabriel), la paz sea con él."
       },
-      "ar": {
-        "q": "أَيُّ مَلَكٍ نَزَّلَ الْقُرْآنَ عَلَى مُحَمَّدٍ ﷺ؟",
-        "a": "نَزَّلَهُ جِبْرِيلُ عَلَيْهِ السَّلَامُ."
-      },
-      "nl": {
-        "q": "Welke engel bracht de Koran naar de profeet Muhammad ﷺ?",
-        "a": "De engel Jibril (Gabriël), vrede zij met hem, bracht hem."
-      },
       "it": {
         "q": "Quale angelo portò il Corano al profeta Muhammad ﷺ?",
         "a": "Fu l’angelo Jibril (Gabriele), pace su di lui."
+      },
+      "pt": {
+        "q": "Qual anjo trouxe o Alcorão ao profeta Muhammad ﷺ?",
+        "a": "Foi trazido pelo anjo Jibril (Gabriel), que a paz esteja com ele."
+      },
+      "ko": {
+        "q": "어떤 천사가 꾸란을 무함마드 ﷺ 예언자에게 가져왔습니까?",
+        "a": "지브릴(가브리엘) 천사가 가져왔습니다. 그에게 평화가 있기를 바랍니다."
+      },
+      "vi": {
+        "q": "Vị thiên thần nào đã mang Kinh Qur'an đến cho Nhà tiên tri Muhammad ﷺ?",
+        "a": "Thiên thần Jibril (Gabriel), cầu bình an cho người, đã mang Kinh Qur'an đến."
+      },
+      "ja": {
+        "q": "どの天使がクルアーンを預言者ムハンマド ﷺ にもたらしましたか？",
+        "a": "天使ジブリール（ガブリエル）がもたらしました。彼に平安あれ。"
+      },
+      "zh": {
+        "q": "哪位天使把《古兰经》带给先知穆罕默德 ﷺ？",
+        "a": "天使哲布拉仪来传达了它，愿他平安。"
       },
       "sources": [
         "Kur'an 26:193"
@@ -672,6 +922,14 @@
         "q": "Was war die zentrale Botschaft des Propheten Muhammad ﷺ?",
         "a": "An die Einheit Allahs zu glauben und nur Ihn anzubeten."
       },
+      "nl": {
+        "q": "Wat was de kernboodschap van de profeet Muhammad ﷺ?",
+        "a": "Geloven in de eenheid van Allah en alleen Hem aanbidden."
+      },
+      "fr": {
+        "q": "Quel était le message central du prophète Muhammad ﷺ ?",
+        "a": "Croire en l’unicité d’Allah et n’adorer que Lui."
+      },
       "ru": {
         "q": "Каково было основное послание пророка Мухаммада ﷺ?",
         "a": "Верить в единство Аллаха и поклоняться только Ему."
@@ -684,25 +942,37 @@
         "q": "Мөхәммәд ﷺ пәйгамбәрнең төп чакыруы нинди булган?",
         "a": "Аллаһның берлегенә иман китерү һәм бары тик Аңа гыйбадәт кылу."
       },
-      "fr": {
-        "q": "Quel était le message central du prophète Muhammad ﷺ ?",
-        "a": "Croire en l’unicité d’Allah et n’adorer que Lui."
+      "ar": {
+        "q": "مَا الرِّسَالَةُ الْأَسَاسِيَّةُ لِلنَّبِيِّ مُحَمَّدٍ ﷺ؟",
+        "a": "الْإِيمَانُ بِوَحْدَانِيَّةِ اللَّهِ وَعِبَادَتُهُ وَحْدَهُ."
       },
       "es": {
         "q": "¿Cuál era el mensaje central del profeta Muhammad ﷺ?",
         "a": "Creer en la unicidad de Allah y adorarlo únicamente a Él."
       },
-      "ar": {
-        "q": "مَا الرِّسَالَةُ الْأَسَاسِيَّةُ لِلنَّبِيِّ مُحَمَّدٍ ﷺ؟",
-        "a": "الْإِيمَانُ بِوَحْدَانِيَّةِ اللَّهِ وَعِبَادَتُهُ وَحْدَهُ."
-      },
-      "nl": {
-        "q": "Wat was de kernboodschap van de profeet Muhammad ﷺ?",
-        "a": "Geloven in de eenheid van Allah en alleen Hem aanbidden."
-      },
       "it": {
         "q": "Qual era il messaggio centrale del profeta Muhammad ﷺ?",
         "a": "Credere nell’unicità di Allah e adorare soltanto Lui."
+      },
+      "pt": {
+        "q": "Qual era a mensagem central do profeta Muhammad ﷺ?",
+        "a": "Crer na unicidade de Allah e adorá-Lo somente a Ele."
+      },
+      "ko": {
+        "q": "무함마드 ﷺ 예언자의 핵심 메시지는 무엇이었습니까?",
+        "a": "알라의 유일성을 믿고 오직 그분만을 경배하는 것입니다."
+      },
+      "vi": {
+        "q": "Thông điệp cốt lõi của Nhà tiên tri Muhammad ﷺ là gì?",
+        "a": "Tin vào sự duy nhất của Allah và chỉ thờ phượng một mình Ngài."
+      },
+      "ja": {
+        "q": "預言者ムハンマド ﷺ の中心的なメッセージは何でしたか？",
+        "a": "アッラーの唯一性を信じ、アッラーのみを崇拝することです。"
+      },
+      "zh": {
+        "q": "先知穆罕默德 ﷺ 的核心使命是什么？",
+        "a": "信仰安拉的独一性，只崇拜安拉。"
       },
       "sources": [
         "Kur'an 21:25",
@@ -725,6 +995,14 @@
         "q": "Wo wird erwähnt, dass Muhammad ﷺ der letzte der Propheten ist?",
         "a": "Dies wird im 40. Vers der Sure al-Ahzab erwähnt."
       },
+      "nl": {
+        "q": "Waar staat dat Muhammad ﷺ de laatste van de profeten is?",
+        "a": "Dit staat in vers 40 van soera Al-Ahzab."
+      },
+      "fr": {
+        "q": "Où est-il indiqué que Muhammad ﷺ est le dernier des prophètes ?",
+        "a": "C’est indiqué dans le verset 40 de la sourate Al-Ahzab."
+      },
       "ru": {
         "q": "Где говорится, что Мухаммад ﷺ является последним из пророков?",
         "a": "Это говорится в 40-м аяте суры «Аль-Ахзаб»."
@@ -737,25 +1015,37 @@
         "q": "Мөхәммәд ﷺ пәйгамбәрләрнең соңгысы икәнлеге кайда әйтелә?",
         "a": "Әхзаб сүрәсенең 40 нчы аятендә әйтелә."
       },
-      "fr": {
-        "q": "Où est-il indiqué que Muhammad ﷺ est le dernier des prophètes ?",
-        "a": "C’est indiqué dans le verset 40 de la sourate Al-Ahzab."
+      "ar": {
+        "q": "أَيْنَ ذُكِرَ أَنَّ مُحَمَّدًا ﷺ خَاتَمُ النَّبِيِّينَ؟",
+        "a": "ذُكِرَ ذَلِكَ فِي الْآيَةِ الْأَرْبَعِينَ مِنْ سُورَةِ الْأَحْزَابِ."
       },
       "es": {
         "q": "¿Dónde se indica que Muhammad ﷺ es el último de los profetas?",
         "a": "Se indica en la aleya 40 de la sura Al-Ahzab."
       },
-      "ar": {
-        "q": "أَيْنَ ذُكِرَ أَنَّ مُحَمَّدًا ﷺ خَاتَمُ النَّبِيِّينَ؟",
-        "a": "ذُكِرَ ذَلِكَ فِي الْآيَةِ الْأَرْبَعِينَ مِنْ سُورَةِ الْأَحْزَابِ."
-      },
-      "nl": {
-        "q": "Waar staat dat Muhammad ﷺ de laatste van de profeten is?",
-        "a": "Dit staat in vers 40 van soera Al-Ahzab."
-      },
       "it": {
         "q": "Dove è detto che Muhammad ﷺ è l’ultimo dei profeti?",
         "a": "È detto nel versetto 40 della sura Al-Ahzab."
+      },
+      "pt": {
+        "q": "Onde é declarado que Muhammad ﷺ é o último dos profetas?",
+        "a": "Isso é declarado no versículo 40 da Surata Al-Ahzab."
+      },
+      "ko": {
+        "q": "무함마드 ﷺ가 예언자들의 마지막이라는 것은 어디에 명시되어 있습니까?",
+        "a": "아흐زاب 수라 40절에 명시되어 있습니다."
+      },
+      "vi": {
+        "q": "Ở đâu có nói rằng Muhammad ﷺ là vị tiên tri cuối cùng?",
+        "a": "Điều này được nêu trong câu 40 của Surah Al-Ahzab."
+      },
+      "ja": {
+        "q": "ムハンマド ﷺ が預言者たちの最後であることはどこに記されていますか？",
+        "a": "スーラ・アル＝アハザーブ第40節に記されています。"
+      },
+      "zh": {
+        "q": "哪里说明穆罕默德 ﷺ 是众先知的最后一位？",
+        "a": "《艾哈萨卜章》第40节说明了这一点。"
       },
       "sources": [
         "Kur'an 33:40"
@@ -777,6 +1067,14 @@
         "q": "Was bedeutet der Glaube an die Propheten?",
         "a": "Er bedeutet, daran zu glauben, dass alle von Allah gesandten Propheten wahrhaftig waren."
       },
+      "nl": {
+        "q": "Wat betekent geloven in de profeten?",
+        "a": "Het betekent geloven dat alle profeten die door Allah zijn gezonden waarachtig waren."
+      },
+      "fr": {
+        "q": "Que signifie croire aux prophètes ?",
+        "a": "Cela signifie croire en la véracité de tous les prophètes envoyés par Allah."
+      },
       "ru": {
         "q": "Что означает вера в пророков?",
         "a": "Это означает верить в истинность всех пророков, посланных Аллахом."
@@ -789,25 +1087,37 @@
         "q": "Пәйгамбәрләргә иман китерү нәрсәне аңлата?",
         "a": "Ул Аллаһ җибәргән барлык пәйгамбәрләрнең хак булуына ышануны аңлата."
       },
-      "fr": {
-        "q": "Que signifie croire aux prophètes ?",
-        "a": "Cela signifie croire en la véracité de tous les prophètes envoyés par Allah."
+      "ar": {
+        "q": "مَاذَا يَعْنِي الْإِيمَانُ بِالْأَنْبِيَاءِ؟",
+        "a": "يَعْنِي الْإِيمَانَ بِصِدْقِ جَمِيعِ الْأَنْبِيَاءِ الَّذِينَ أَرْسَلَهُمُ اللَّهُ."
       },
       "es": {
         "q": "¿Qué significa creer en los profetas?",
         "a": "Significa creer que todos los profetas enviados por Allah fueron verdaderos."
       },
-      "ar": {
-        "q": "مَاذَا يَعْنِي الْإِيمَانُ بِالْأَنْبِيَاءِ؟",
-        "a": "يَعْنِي الْإِيمَانَ بِصِدْقِ جَمِيعِ الْأَنْبِيَاءِ الَّذِينَ أَرْسَلَهُمُ اللَّهُ."
-      },
-      "nl": {
-        "q": "Wat betekent geloven in de profeten?",
-        "a": "Het betekent geloven dat alle profeten die door Allah zijn gezonden waarachtig waren."
-      },
       "it": {
         "q": "Che cosa significa credere nei profeti?",
         "a": "Significa credere nella veridicità di tutti i profeti inviati da Allah."
+      },
+      "pt": {
+        "q": "O que significa crer nos profetas?",
+        "a": "Significa crer na veracidade de todos os profetas enviados por Allah."
+      },
+      "ko": {
+        "q": "예언자들을 믿는다는 것은 무엇을 의미합니까?",
+        "a": "알라께서 보내신 모든 예언자들이 참된 분들이었다고 믿는 것을 의미합니다."
+      },
+      "vi": {
+        "q": "Tin vào các vị tiên tri có nghĩa là gì?",
+        "a": "Có nghĩa là tin vào sự chân thật của tất cả các vị tiên tri được Allah phái đến."
+      },
+      "ja": {
+        "q": "預言者を信じるとはどういう意味ですか？",
+        "a": "アッラーが遣わされたすべての預言者が真実であると信じることです。"
+      },
+      "zh": {
+        "q": "信仰众先知是什么意思？",
+        "a": "就是相信安拉派遣的所有先知都是真实的。"
       },
       "sources": [
         "Kur'an 2:285"
@@ -829,6 +1139,14 @@
         "q": "Darf ein Muslim einen der Propheten ablehnen?",
         "a": "Nein. Ein Muslim lehnt keinen der Propheten Allahs ab."
       },
+      "nl": {
+        "q": "Kan een moslim een van de profeten verwerpen?",
+        "a": "Nee. Een moslim verwerpt geen enkele profeet van Allah."
+      },
+      "fr": {
+        "q": "Un musulman peut-il rejeter l’un des prophètes ?",
+        "a": "Non. Le musulman ne rejette aucun des prophètes d’Allah."
+      },
       "ru": {
         "q": "Может ли мусульманин отрицать какого-либо пророка?",
         "a": "Нет. Мусульманин не отвергает ни одного из пророков Аллаха."
@@ -841,25 +1159,37 @@
         "q": "Мөселман пәйгамбәрләрнең берәрсен инкарь итә аламы?",
         "a": "Юк. Мөселман Аллаһның пәйгамбәрләренең берсен дә инкарь итми."
       },
-      "fr": {
-        "q": "Un musulman peut-il rejeter l’un des prophètes ?",
-        "a": "Non. Le musulman ne rejette aucun des prophètes d’Allah."
+      "ar": {
+        "q": "هَلْ يَجُوزُ لِلْمُسْلِمِ أَنْ يُنْكِرَ أَحَدًا مِنَ الْأَنْبِيَاءِ؟",
+        "a": "لَا. الْمُسْلِمُ لَا يُنْكِرُ أَحَدًا مِنْ أَنْبِيَاءِ اللَّهِ."
       },
       "es": {
         "q": "¿Puede un musulmán rechazar a alguno de los profetas?",
         "a": "No. El musulmán no rechaza a ninguno de los profetas de Allah."
       },
-      "ar": {
-        "q": "هَلْ يَجُوزُ لِلْمُسْلِمِ أَنْ يُنْكِرَ أَحَدًا مِنَ الْأَنْبِيَاءِ؟",
-        "a": "لَا. الْمُسْلِمُ لَا يُنْكِرُ أَحَدًا مِنْ أَنْبِيَاءِ اللَّهِ."
-      },
-      "nl": {
-        "q": "Kan een moslim een van de profeten verwerpen?",
-        "a": "Nee. Een moslim verwerpt geen enkele profeet van Allah."
-      },
       "it": {
         "q": "Un musulmano può rifiutare uno dei profeti?",
         "a": "No. Il musulmano non rifiuta nessuno dei profeti di Allah."
+      },
+      "pt": {
+        "q": "Um muçulmano pode rejeitar algum dos profetas?",
+        "a": "Não. O muçulmano não rejeita nenhum dos profetas de Allah."
+      },
+      "ko": {
+        "q": "무슬림은 예언자 중 한 분이라도 부정할 수 있습니까?",
+        "a": "아니요. 무슬림은 알라의 어떤 예언자도 부정하지 않습니다."
+      },
+      "vi": {
+        "q": "Một người Muslim có thể phủ nhận bất kỳ vị tiên tri nào không?",
+        "a": "Không. Người Muslim không phủ nhận bất kỳ vị tiên tri nào của Allah."
+      },
+      "ja": {
+        "q": "ムスリムは預言者の誰か一人でも否定できますか？",
+        "a": "いいえ。ムスリムはアッラーの預言者の誰一人も否定しません。"
+      },
+      "zh": {
+        "q": "穆斯林可以否认任何一位先知吗？",
+        "a": "不可以。穆斯林不否认安拉的任何一位先知。"
       },
       "sources": [
         "Kur'an 2:136"
@@ -881,6 +1211,14 @@
         "q": "Wer ist Jesus (Isa) nach islamischem Glauben?",
         "a": "Er ist einer der Propheten Allahs und ein Diener Allahs."
       },
+      "nl": {
+        "q": "Wie is Jezus (Isa) volgens de islam?",
+        "a": "Hij is een van de profeten van Allah en een dienaar van Allah."
+      },
+      "fr": {
+        "q": "Qui est Jésus (Issa) selon l’islam ?",
+        "a": "Il est l’un des prophètes d’Allah et un serviteur d’Allah."
+      },
       "ru": {
         "q": "Кем является Иса согласно исламу?",
         "a": "Он один из пророков Аллаха и раб Аллаха."
@@ -893,25 +1231,37 @@
         "q": "Ислам буенча Гайсә (г.с.) кем ул?",
         "a": "Ул Аллаһның пәйгамбәрләреннән берсе һәм Аллаһның колы."
       },
-      "fr": {
-        "q": "Qui est Jésus (Issa) selon l’islam ?",
-        "a": "Il est l’un des prophètes d’Allah et un serviteur d’Allah."
+      "ar": {
+        "q": "مَنْ هُوَ عِيسَى عَلَيْهِ السَّلَامُ فِي الْإِسْلَامِ؟",
+        "a": "هُوَ أَحَدُ أَنْبِيَاءِ اللَّهِ وَعَبْدٌ مِنْ عِبَادِ اللَّهِ."
       },
       "es": {
         "q": "¿Quién es Jesús (Isa) según el islam?",
         "a": "Es uno de los profetas de Allah y un siervo de Allah."
       },
-      "ar": {
-        "q": "مَنْ هُوَ عِيسَى عَلَيْهِ السَّلَامُ فِي الْإِسْلَامِ؟",
-        "a": "هُوَ أَحَدُ أَنْبِيَاءِ اللَّهِ وَعَبْدٌ مِنْ عِبَادِ اللَّهِ."
-      },
-      "nl": {
-        "q": "Wie is Jezus (Isa) volgens de islam?",
-        "a": "Hij is een van de profeten van Allah en een dienaar van Allah."
-      },
       "it": {
         "q": "Chi è Gesù (Isa) secondo l’Islam?",
         "a": "È uno dei profeti di Allah e un servo di Allah."
+      },
+      "pt": {
+        "q": "Quem é Jesus (Isa) segundo o Islã?",
+        "a": "Ele é um dos profetas de Allah e um servo de Allah."
+      },
+      "ko": {
+        "q": "이슬람에서 예수(이사)는 누구입니까?",
+        "a": "그는 알라의 예언자 중 한 분이며 알라의 종입니다."
+      },
+      "vi": {
+        "q": "Theo Islam, Isa (Jesus) là ai?",
+        "a": "Ngài là một trong các vị tiên tri của Allah và là một người tôi tớ của Allah."
+      },
+      "ja": {
+        "q": "イスラームにおいてイーサー（イエス）は誰ですか？",
+        "a": "彼はアッラーの預言者の一人であり、アッラーの僕です。"
+      },
+      "zh": {
+        "q": "根据伊斯兰教，尔萨（耶稣）是谁？",
+        "a": "他是安拉的众先知之一，也是安拉的仆人。"
       },
       "sources": [
         "Kur'an 19:30",
@@ -934,6 +1284,14 @@
         "q": "Wie war der Charakter des Propheten Muhammad ﷺ?",
         "a": "Er hatte einen vorzüglichen und edlen Charakter, den der Qur’an lobt."
       },
+      "nl": {
+        "q": "Hoe was het karakter van de profeet Muhammad ﷺ?",
+        "a": "Hij had een uitstekend en edel karakter, dat in de Koran wordt geprezen."
+      },
+      "fr": {
+        "q": "Comment était le caractère du prophète Muhammad ﷺ ?",
+        "a": "Il avait un caractère excellent et noble, que le Coran a loué."
+      },
       "ru": {
         "q": "Каким был нрав пророка Мухаммада ﷺ?",
         "a": "Он обладал прекрасным и благородным нравом, который восхваляется в Коране."
@@ -946,25 +1304,37 @@
         "q": "Мөхәммәд ﷺ пәйгамбәрнең холкы нинди булган?",
         "a": "Аның әхлагы бик күркәм һәм бөек булган; Коръән аның әхлагын мактый."
       },
-      "fr": {
-        "q": "Comment était le caractère du prophète Muhammad ﷺ ?",
-        "a": "Il avait un caractère excellent et noble, que le Coran a loué."
+      "ar": {
+        "q": "كَيْفَ كَانَ خُلُقُ النَّبِيِّ مُحَمَّدٍ ﷺ؟",
+        "a": "كَانَ عَلَى خُلُقٍ عَظِيمٍ، وَقَدْ أَثْنَى الْقُرْآنُ عَلَى خُلُقِهِ."
       },
       "es": {
         "q": "¿Cómo era el carácter del profeta Muhammad ﷺ?",
         "a": "Tenía un carácter excelente y noble, el cual el Corán elogió."
       },
-      "ar": {
-        "q": "كَيْفَ كَانَ خُلُقُ النَّبِيِّ مُحَمَّدٍ ﷺ؟",
-        "a": "كَانَ عَلَى خُلُقٍ عَظِيمٍ، وَقَدْ أَثْنَى الْقُرْآنُ عَلَى خُلُقِهِ."
-      },
-      "nl": {
-        "q": "Hoe was het karakter van de profeet Muhammad ﷺ?",
-        "a": "Hij had een uitstekend en edel karakter, dat in de Koran wordt geprezen."
-      },
       "it": {
         "q": "Com’era il carattere del profeta Muhammad ﷺ?",
         "a": "Aveva un carattere eccellente e nobile, lodato dal Corano."
+      },
+      "pt": {
+        "q": "Como era o caráter do profeta Muhammad ﷺ?",
+        "a": "Ele tinha um caráter excelente e nobre, elogiado pelo Alcorão."
+      },
+      "ko": {
+        "q": "무함마드 ﷺ 예언자의 품성은 어떠했습니까?",
+        "a": "그는 매우 훌륭하고 고귀한 품성을 지녔으며, 꾸란은 그의 품성을 칭찬했습니다."
+      },
+      "vi": {
+        "q": "Đạo đức của Nhà tiên tri Muhammad ﷺ như thế nào?",
+        "a": "Ngài có phẩm hạnh cao đẹp và cao quý; Kinh Qur'an đã ca ngợi phẩm hạnh của Ngài."
+      },
+      "ja": {
+        "q": "預言者ムハンマド ﷺ の人格はどのようなものでしたか？",
+        "a": "非常に優れた高潔な人格を持ち、クルアーンはその人格を称賛しています。"
+      },
+      "zh": {
+        "q": "先知穆罕默德 ﷺ 的品德如何？",
+        "a": "他具有极其优秀和高尚的品德，《古兰经》赞美了他的品德。"
       },
       "sources": [
         "Kur'an 68:4"
@@ -986,6 +1356,14 @@
         "q": "Wie soll ein Muslim mit dem Propheten Muhammad ﷺ umgehen?",
         "a": "Er soll an ihn glauben, ihn lieben, seiner Sunna folgen und an der von ihm überbrachten Offenbarung festhalten."
       },
+      "nl": {
+        "q": "Hoe moet een moslim tegenover de profeet Muhammad ﷺ staan?",
+        "a": "Hij moet in hem geloven, van hem houden, zijn soenna volgen en vasthouden aan de openbaring die hij heeft gebracht."
+      },
+      "fr": {
+        "q": "Comment un musulman doit-il se comporter envers le prophète Muhammad ﷺ ?",
+        "a": "Il doit croire en lui, l’aimer, suivre sa Sunna et rester attaché à la révélation qu’il a apportée."
+      },
       "ru": {
         "q": "Как мусульманин должен относиться к пророку Мухаммаду ﷺ?",
         "a": "Он должен верить в него, любить его, следовать его Сунне и придерживаться принесённого им откровения."
@@ -998,32 +1376,42 @@
         "q": "Мөселман Мөхәммәд ﷺ пәйгамбәргә карата ничек булырга тиеш?",
         "a": "Аңа иман китерергә, аны яратырга, аның сөннәтенә иярергә һәм ул китергән вәхигә бәйле булырга тиеш."
       },
-      "fr": {
-        "q": "Comment un musulman doit-il se comporter envers le prophète Muhammad ﷺ ?",
-        "a": "Il doit croire en lui, l’aimer, suivre sa Sunna et rester attaché à la révélation qu’il a apportée."
+      "ar": {
+        "q": "كَيْفَ يَجِبُ عَلَى الْمُسْلِمِ أَنْ يَتَعَامَلَ مَعَ النَّبِيِّ مُحَمَّدٍ ﷺ؟",
+        "a": "يَجِبُ عَلَيْهِ أَنْ يُؤْمِنَ بِهِ، وَيُحِبَّهُ، وَيَتَّبِعَ سُنَّتَهُ، وَيَلْتَزِمَ بِالْوَحْيِ الَّذِي جَاءَ بِهِ."
       },
       "es": {
         "q": "¿Cómo debe relacionarse un musulmán con el profeta Muhammad ﷺ?",
         "a": "Debe creer en él, amarlo, seguir su Sunna y aferrarse a la revelación que transmitió."
       },
-      "ar": {
-        "q": "كَيْفَ يَجِبُ عَلَى الْمُسْلِمِ أَنْ يَتَعَامَلَ مَعَ النَّبِيِّ مُحَمَّدٍ ﷺ؟",
-        "a": "يَجِبُ عَلَيْهِ أَنْ يُؤْمِنَ بِهِ، وَيُحِبَّهُ، وَيَتَّبِعَ سُنَّتَهُ، وَيَلْتَزِمَ بِالْوَحْيِ الَّذِي جَاءَ بِهِ."
-      },
-      "nl": {
-        "q": "Hoe moet een moslim tegenover de profeet Muhammad ﷺ staan?",
-        "a": "Hij moet in hem geloven, van hem houden, zijn soenna volgen en vasthouden aan de openbaring die hij heeft gebracht."
-      },
       "it": {
         "q": "Come deve comportarsi un musulmano nei confronti del profeta Muhammad ﷺ?",
         "a": "Deve credere in lui, amarlo, seguire la sua Sunna e attenersi alla rivelazione che ha trasmesso."
+      },
+      "pt": {
+        "q": "Como um muçulmano deve se comportar em relação ao profeta Muhammad ﷺ?",
+        "a": "Deve crer nele, amá-lo, seguir sua Sunnah e manter-se firme na revelação que ele transmitiu."
+      },
+      "ko": {
+        "q": "무슬림은 무함마드 ﷺ 예언자를 어떻게 대해야 합니까?",
+        "a": "그를 믿고 사랑하며 그의 순나를 따르고, 그가 전한 계시를 굳게 따라야 합니다."
+      },
+      "vi": {
+        "q": "Một người Muslim nên đối xử với Nhà tiên tri Muhammad ﷺ như thế nào?",
+        "a": "Người Muslim phải tin nơi Ngài, yêu mến Ngài, noi theo Sunnah của Ngài và tuân theo mặc khải mà Ngài truyền đạt."
+      },
+      "ja": {
+        "q": "ムスリムは預言者ムハンマド ﷺ に対してどのように接すべきですか？",
+        "a": "彼を信じ、愛し、彼のスンナに従い、彼が伝えた啓示を守るべきです。"
+      },
+      "zh": {
+        "q": "穆斯林应当如何对待先知穆罕默德 ﷺ？",
+        "a": "应当信仰他、爱护他、遵循他的圣行，并坚守他所传达的启示。"
       },
       "sources": [
         "Kur'an 33:21",
         "Kur'an 59:7"
       ]
     }
-
   ]
-}
-
+      }
