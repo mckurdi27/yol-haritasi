@@ -9,13 +9,11 @@
     "websiteUsesMasterFile": false,
     "websiteSource": "data/day-XX.json"
   },
-
   "rules": {
     "questionNumbering": "continuous",
     "questionsPerDay": 19,
     "totalQuestions": 570,
     "totalDays": 30,
-
     "languageOrder": [
       "tr",
       "en",
@@ -34,9 +32,7 @@
       "ja",
       "zh"
     ],
-
     "fixedLanguageOrder": true,
-
     "navigation": {
       "questionInput": true,
       "dayInput": true,
@@ -45,7 +41,6 @@
       "dayNavigation": "previous day / number input / next day"
     }
   },
-
   "languages": [
     {
       "position": 1,
@@ -144,7 +139,6 @@
       "flag": "🇨🇳"
     }
   ],
-
   "day": 1,
   "dayTitle": {
     "tr": "1. Gün — İslâm'a İlk Adım",
@@ -164,7 +158,6 @@
     "ja": "第1日 — イスラームへの第一歩",
     "zh": "第1天——迈向伊斯兰的第一步"
   },
-
   "daySubtitle": {
     "tr": "İslâm nedir, Müslüman kimdir, Allah, Kur'an, Peygamberimiz, iman ve İslâm'ın şartları",
     "en": "What Islam is, who a Muslim is, Allah, the Qur'an, our Prophet, faith and the pillars of Islam",
@@ -183,7 +176,6 @@
     "ja": "イスラームとは何か、ムスリムとは誰か、アッラー、クルアーン、私たちの預言者、信仰とイスラームの五柱",
     "zh": "什么是伊斯兰、谁是穆斯林、安拉、《古兰经》、我们的先知、信仰以及伊斯兰的五大支柱"
   },
-
   "questions": [
     {
       "id": 1,
@@ -257,7 +249,6 @@
         "📖 Kur'an — Zâriyât 51:56"
       ]
     },
-
     {
       "id": 2,
       "day": 1,
@@ -329,7 +320,6 @@
         "📖 Kur'an — Hucurât 49:14"
       ]
     },
-
     {
       "id": 3,
       "day": 1,
@@ -402,7 +392,6 @@
         "📖 Kur'an — Fâtiha 1:2-5"
       ]
     },
-
     {
       "id": 4,
       "day": 1,
@@ -475,7 +464,6 @@
         "📖 Kur'an — Bakara 2:163"
       ]
     },
-
     {
       "id": 5,
       "day": 1,
@@ -548,7 +536,6 @@
         "📖 Kur'an — Şuarâ 26:192-195"
       ]
     },
-
     {
       "id": 6,
       "day": 1,
@@ -621,7 +608,6 @@
         "📖 Kur'an — Sebe' 34:28"
       ]
     },
-
     {
       "id": 7,
       "day": 1,
@@ -694,7 +680,6 @@
         "📖 Hadis — Sahîh-i Buhârî, Îmân 37"
       ]
     },
-
     {
       "id": 8,
       "day": 1,
@@ -767,7 +752,6 @@
         "📖 Hadis — Sahîh-i Müslim, Îmân 1"
       ]
     },
-
     {
       "id": 9,
       "day": 1,
@@ -840,7 +824,6 @@
         "📖 Hadis — Sahîh-i Müslim, Îmân 19"
       ]
     },
-
     {
       "id": 10,
       "day": 1,
@@ -912,7 +895,6 @@
         "📖 Kur'an — Zâriyât 51:56"
       ]
     },
-
     {
       "id": 11,
       "day": 1,
@@ -985,7 +967,6 @@
         "📖 Kur'an — Bakara 2:21"
       ]
     },
-
     {
       "id": 12,
       "day": 1,
@@ -1058,7 +1039,6 @@
         "📖 Kur'an — Bakara 2:163"
       ]
     },
-
     {
       "id": 13,
       "day": 1,
@@ -1131,7 +1111,6 @@
         "📖 Kur'an — Muhammed 47:19"
       ]
     },
-
     {
       "id": 14,
       "day": 1,
@@ -1204,7 +1183,6 @@
         "📖 Kur'an — Bakara 2:285"
       ]
     },
-
     {
       "id": 15,
       "day": 1,
@@ -1276,7 +1254,6 @@
         "📖 Hadis — Sahîh-i Müslim, Îmân 1"
       ]
     },
-
     {
       "id": 16,
       "day": 1,
@@ -1349,7 +1326,6 @@
         "📖 Kur'an — Enbiyâ 21:107"
       ]
     },
-
     {
       "id": 17,
       "day": 1,
@@ -1422,7 +1398,6 @@
         "📖 Kur'an — İsrâ 17:9"
       ]
     },
-
     {
       "id": 18,
       "day": 1,
@@ -1495,7 +1470,6 @@
         "📖 Kur'an — En'âm 6:162"
       ]
     },
-
     {
       "id": 19,
       "day": 1,
