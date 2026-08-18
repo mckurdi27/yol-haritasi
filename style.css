@@ -1,4 +1,4 @@
-/* =======================================
+/* ========================================
    BİR MÜSLÜMANIN YOL HARİTASI
    STYLE.CSS
 ========================================= */
@@ -403,7 +403,8 @@ select {
   align-items: center;
   justify-content: center;
   line-height: 1;
-  width: 50px;
+  width: 54px;
+  height: 44px;
 }
 
 .tts-play-icon {
@@ -411,10 +412,10 @@ select {
 }
 
 .tts-play-rate {
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   color: #c62828;
-  margin-top: 1px;
+  margin-top: 2px;
 }
 
 .tts-play-rate.hidden {
@@ -593,6 +594,11 @@ footer {
     height: 38px;
   }
 
+  .tts-play {
+    width: 44px;
+    height: 44px;
+  }
+
   .language-button {
     width: 35px;
     height: 32px;
@@ -618,6 +624,11 @@ footer {
     width: 35px;
     min-width: 35px;
     height: 35px;
+  }
+
+  .tts-play {
+    width: 40px;
+    height: 40px;
   }
 
 }
