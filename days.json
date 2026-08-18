@@ -17,22 +17,23 @@
     "totalDays": 30,
 
     "languageOrder": [
-      "tr",
-      "en",
-      "de",
-      "nl",
-      "fr",
-      "ru",
-      "ku",
-      "tt",
-      "ar",
-      "es",
-      "it",
-      "pt",
-      "ko",
-      "vi",
-      "ja",
-      "zh"
+      { key: "tr", flag: "🇹🇷", name: "Türkçe" },
+      { key: "en", flag: "🇬🇧", name: "English" },
+      { key: "de", flag: "🇩🇪", name: "Deutsch" },
+      { key: "nl", flag: "🇳🇱", name: "Nederlands" },
+      { key: "fr", flag: "🇫🇷", name: "Français" },
+      { key: "ru", flag: "🇷🇺", name: "Русский" },
+      { key: "ku", flag: "🇹🇯", name: "Kurmancî" },
+      { key: "tt", flag: "🇧🇬", name: "Tatarca" },
+      { key: "ar", flag: "🇸🇦", name: "العربية" },
+      { key: "es", flag: "🇪🇸", name: "Español" },
+      { key: "it", flag: "🇮🇹", name: "Italiano" },
+      { key: "pt", flag: "🇵🇹", name: "Português" },
+      { key: "ko", flag: "🇰🇷", name: "한국어" },
+      { key: "vi", flag: "🇻🇳", name: "Tiếng Việt" },
+      { key: "ja", flag: "🇯🇵", name: "日本語" },
+      { key: "zh", flag: "🇨🇳", name: "中文" }
+    
     ],
 
     "arabicPosition": 9,
@@ -89,13 +90,13 @@
       "position": 7,
       "code": "ku",
       "name": "Kurmancî",
-      "flag": "🇬🇭"
+      "flag": "🇹🇯"
     },
     {
       "position": 8,
       "code": "tt",
       "name": "Tatarca",
-      "flag": "🇭🇺"
+      "flag": "🇧🇬"
     },
     {
       "position": 9,
