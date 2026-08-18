@@ -1,4 +1,4 @@
-/* ========================================
+/* =========================================
    BİR MÜSLÜMANIN YOL HARİTASI
    STYLE.CSS
 ========================================= */
@@ -134,7 +134,7 @@ select {
   order: 4;
 
   width: 100%;
-  margin: 35px auto 0;
+  margin: 38px auto 0;
   padding: 14px 18px;
 
   border-radius: 14px;
@@ -150,11 +150,13 @@ select {
 
 /* =========================================
    ALT AÇIKLAMA
+   BAŞLIĞIN ALTINDA
 ========================================= */
 
 .home-subtitle {
-  margin: 50px 0 40px;
+  margin: 42px 0 40px;
   font-size: 18px;
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -533,14 +535,14 @@ footer {
 
   .roadmap-title {
     width: 100%;
-    margin-top: 25px;
-    padding: 9px;
+    margin-top: 34px;
+    padding: 10px 9px;
     font-size: 20px;
   }
 
   .home-subtitle {
-    margin-top: 42px;
-    margin-bottom: 40px;
+    margin-top: 38px;
+    margin-bottom: 38px;
   }
 
   .navigation-main-row {
@@ -597,4 +599,4 @@ footer {
     height: 35px;
   }
 
-}
+   }
