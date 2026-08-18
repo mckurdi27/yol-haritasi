@@ -330,10 +330,6 @@ let speechCurrentText = "";
 
 /*
  * PARÇALI TTS SİSTEMİ
- *
- * Metin küçük parçalara ayrılır.
- * Android Chrome'un güvenilmez charIndex
- * sistemine artık güvenilmez.
  */
 
 let speechChunks = [];
@@ -344,12 +340,9 @@ let speechChunkSession = 0;
 
 
 /*
- * Pause sırasında mevcut parçanın başından
- * tekrar başlamak yerine, mevcut küçük parça
- * tekrar okunur.
- *
- * Parçalar kısa tutulduğu için geriye dönüş
- * çok küçük olur.
+ * Pause sırasında mevcut parçanın
+ * SpeechSynthesis tarafından gerçekten
+ * pause/resume edilmesi hedeflenir.
  */
 
 let speechChunkWordCount = 7;
@@ -2613,17 +2606,6 @@ function updateSpeedButtonsFromState() {
    TTS METNİ PARÇALAMA
 ========================================= */
 
-/*
- * Metni yaklaşık 7 kelimelik küçük parçalara
- * böler.
- *
- * Böylece Android SpeechSynthesis'in
- * güvenilmez charIndex değerine ihtiyaç
- * kalmaz.
- *
- * Noktalama işaretleri korunur.
- */
-
 function splitSpeechText(
   text
 ) {
@@ -2651,11 +2633,6 @@ function splitSpeechText(
       currentChunk.push(
         word
       );
-
-      /*
-       * Normal olarak 7 kelimede
-       * bir parça oluştur.
-       */
 
       if (
         currentChunk.length >=
@@ -2727,7 +2704,11 @@ function speakText(
 
 
   /*
-   * Eski konuşmayı temizle.
+   * Buradaki cancel() sadece yeni bir
+   * konuşma başlatılırken eski konuşmayı
+   * temizlemek içindir.
+   *
+   * PAUSE için kullanılmaz.
    */
 
   window.speechSynthesis.cancel();
@@ -2955,11 +2936,22 @@ function speakCurrentChunk(
       speechIsSpeaking =
         true;
 
-      speechPaused =
-        false;
+      /*
+       * Burada browser gerçekten paused
+       * durumda ise durumu bozma.
+       */
 
-      speechManualPaused =
-        false;
+      if (
+        !window.speechSynthesis.paused
+      ) {
+
+        speechPaused =
+          false;
+
+        speechManualPaused =
+          false;
+
+      }
 
       updatePauseButton();
 
@@ -2978,14 +2970,26 @@ function speakCurrentChunk(
 
 
       /*
-       * Pause / stop sırasında gelen onend
-       * gerçek bitiş değildir.
+       * Pause sırasında onend normalde
+       * çağrılmamalıdır.
+       *
+       * Yine de bazı Android sürümlerinde
+       * event gelebilir.
        */
 
       if (
         speechManualPaused ||
-        speechPaused
+        speechPaused ||
+        window.speechSynthesis.paused
       ) {
+
+        speechIsSpeaking =
+          false;
+
+        speechStarting =
+          false;
+
+        updatePauseButton();
 
         return;
 
@@ -3073,14 +3077,17 @@ function speakCurrentChunk(
 
 
       /*
-       * Manuel Pause veya Stop sonrasında
-       * Android "canceled" / "interrupted"
-       * hatası gönderebilir.
+       * Pause sırasında Android bazen
+       * canceled/interrupted gönderebilir.
+       *
+       * Bu durumda konuşmayı bitmiş
+       * kabul etmiyoruz.
        */
 
       if (
         speechManualPaused ||
-        speechPaused
+        speechPaused ||
+        window.speechSynthesis.paused
       ) {
 
         speechIsSpeaking =
@@ -3176,48 +3183,21 @@ function playSelectedText() {
 
 
   /*
-   * PAUSE DURUMUNDAN DEVAM
+   * Eğer tarayıcı gerçekten pause
+   * durumundaysa PLAY de devam ettirebilir.
+   *
+   * Ancak asıl devam işlemi PAUSE
+   * butonundaki ▶ ile yapılır.
    */
 
   if (
-    speechManualPaused ||
-    speechPaused
+    speechPaused ||
+    speechManualPaused
   ) {
 
-    if (
-      speechCurrentText &&
-      speechChunks.length &&
-      speechChunkIndex <
-        speechChunks.length
-    ) {
+    toggleSpeechPause();
 
-      speechPaused =
-        false;
-
-      speechManualPaused =
-        false;
-
-      speechChunkSession++;
-
-      const sessionId =
-        speechChunkSession;
-
-      window.speechSynthesis.cancel();
-
-      setTimeout(
-        () => {
-
-          speakCurrentChunk(
-            sessionId
-          );
-
-        },
-        30
-      );
-
-      return;
-
-    }
+    return;
 
   }
 
@@ -3312,6 +3292,7 @@ function playSelectedText() {
 
 /* =========================================
    PAUSE / DEVAM
+   GERÇEK SPEECH SYNTHESIS PAUSE / RESUME
 ========================================= */
 
 function toggleSpeechPause() {
@@ -3323,9 +3304,9 @@ function toggleSpeechPause() {
   }
 
 
-  /*
-   * PAUSE DURUMUNDAN DEVAM
-   */
+  /* =========================================
+     DURAKLATILMIŞSA → DEVAM
+  ========================================= */
 
   if (
     speechPaused ||
@@ -3344,6 +3325,10 @@ function toggleSpeechPause() {
     }
 
 
+    /*
+     * Pause durumunu kaldır.
+     */
+
     speechPaused =
       false;
 
@@ -3352,37 +3337,34 @@ function toggleSpeechPause() {
 
 
     /*
-     * Yeni session oluştur.
-     * Eski utterance eventlerinin
-     * müdahale etmesini engelle.
+     * Gerçek resume.
+     *
+     * Burada CANCEL YOK.
      */
 
-    speechChunkSession++;
+    try {
 
-    const sessionId =
-      speechChunkSession;
+      window.speechSynthesis.resume();
+
+    } catch (error) {
+
+      console.warn(
+        "TTS resume hatası:",
+        error
+      );
+
+    }
 
 
-    window.speechSynthesis.cancel();
+    /*
+     * Browser konuşmayı sürdürecektir.
+     */
 
+    speechIsSpeaking =
+      true;
 
-    setTimeout(
-      () => {
-
-        if (
-          sessionId !==
-          speechChunkSession
-        ) {
-          return;
-        }
-
-        speakCurrentChunk(
-          sessionId
-        );
-
-      },
-      30
-    );
+    speechStarting =
+      false;
 
 
     updatePauseButton();
@@ -3392,9 +3374,9 @@ function toggleSpeechPause() {
   }
 
 
-  /*
-   * Konuşma yoksa hiçbir şey yapma.
-   */
+  /* =========================================
+     KONUŞMA YOKSA
+  ========================================= */
 
   if (
     !speechIsSpeaking &&
@@ -3407,43 +3389,45 @@ function toggleSpeechPause() {
   }
 
 
-  /*
-   * PAUSE
-   *
-   * Burada karakter konumu aranmıyor.
-   *
-   * Mevcut küçük parça kaydediliyor.
-   */
+  /* =========================================
+     PAUSE
+  ========================================= */
+
+  speechPaused =
+    true;
 
   speechManualPaused =
     true;
 
-  speechPaused =
-    true;
+
+  /*
+   * ÖNEMLİ:
+   *
+   * Burada cancel() KULLANILMIYOR.
+   *
+   * pause() mevcut konuşmanın konumunu
+   * korur.
+   */
+
+  try {
+
+    window.speechSynthesis.pause();
+
+  } catch (error) {
+
+    console.warn(
+      "TTS pause hatası:",
+      error
+    );
+
+  }
+
 
   speechIsSpeaking =
     false;
 
   speechStarting =
     false;
-
-
-  /*
-   * Mevcut session'ı geçersiz yap.
-   */
-
-  speechChunkSession++;
-
-
-  /*
-   * Konuşmayı fiziksel olarak durdur.
-   */
-
-  window.speechSynthesis.cancel();
-
-
-  speechUtterance =
-    null;
 
 
   updatePauseButton();
@@ -3461,6 +3445,7 @@ function updatePauseButton() {
     document.querySelectorAll(
       ".tts-pause"
     );
+
 
   buttons.forEach(
     button => {
@@ -3509,9 +3494,7 @@ function updatePauseButton() {
 function stopSpeech() {
 
   /*
-   * STOP diğer işlemlerden farklıdır.
-   *
-   * Stop:
+   * STOP:
    * - konuşmayı keser
    * - metni siler
    * - parçaları siler
@@ -3595,7 +3578,7 @@ function changeSpeechRate(
    * Pause durumundaysa:
    *
    * Konuşmayı başlatmıyoruz.
-   * Yeni hız sadece kaydediliyor.
+   * Yeni hız kaydedilir.
    */
 
   if (wasPaused) {
@@ -3625,9 +3608,7 @@ function changeSpeechRate(
   /*
    * Aktif konuşmada:
    *
-   * Mevcut küçük parça tekrar başlatılır.
-   *
-   * Artık charIndex kullanılmıyor.
+   * Mevcut küçük parça yeniden başlatılır.
    */
 
   const currentChunk =
