@@ -10,8 +10,12 @@
 - Günlük içerikler ayrı JSON dosyalarında tutulur
 - Her günün başlığı ve alt başlığı günlük JSON dosyasında bulunur
 ---  
-
-Bu sıra tüm 30 gün boyunca DEĞİŞMEZ.
+Bu sıra tüm 30 gün boyunca DEĞİŞMEZ. 
+Bunu  ve days.json dosyasını ana şablon olarak kullan
+İstenen değişiklik için sadece değiştirelecek bölümle ilgili değişikliği söyle
+değişikliği onayladığım takdirde
+TAM KOD BLOĞU olarak
+Kopyala Yapıştır yapacak şekilde ver, ekstra düzenlemem gerekmesin
 ---
 # Günlük Dosyalar
 Her günün içeriği:`data/day-XX.json`şeklinde eklenir.
@@ -60,11 +64,6 @@ yol-haritasi/
     ├── ...
     └── day-30.json
 
-# 📊 Bunu  ve days.json dosyasını ana şablon olarak kullan
-İstenen değişiklik  için sadece değiştirelecek bölümle ilgili değişikliği söyle
-değişikliği onayladığım takdirde
-TAM KOD BLOĞU olarak
-Kopyala Yapıştır yapacak şekilde ver, ekstra düzenlemem gerekmesin
 ---
 # 📅 30 Günlük Yol Haritası
 
