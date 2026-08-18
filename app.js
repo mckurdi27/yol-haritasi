@@ -179,9 +179,9 @@ const UI = {
   },
 
   ar: {
-    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
-    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
-    days: "الأَيَّامُ",
+    title: "خُطَّةُ طَرِيقِ الْمُسْلِمِ",
+    subtitle: "تَعَلَّمِ الْإِسْلَامَ خُطْوَةً خُطْوَةً",
+    days: "الأَيَّامُ",
     previousQuestion: "←",
     nextQuestion: "→",
     home: "🕋",
@@ -190,8 +190,8 @@ const UI = {
     source: "📚 الْمَصَادِرُ",
     openSource: "فَتْحُ الْمَصْدَرِ",
     questionCount: "أَسْئِلَة",
-    loading: "جَارٍ تَحْمِيلُ الأَيَّامِ...",
-    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ."
+    loading: "جَارٍ تَحْمِيلُ الأَيَّامِ...",
+    noDays: "لَمْ يَتِمَّ الْعُثُورُ عَلَى أَيَّامٍ بَعْدُ."
   },
 
   tt: {
@@ -212,7 +212,7 @@ const UI = {
 
   fr: {
     title: "La feuille de route du musulman",
-    subtitle: "Apprendre l’islam étape par étape",
+    subtitle: "Apprendre l'islam étape par étape",
     days: "Jours",
     previousQuestion: "←",
     nextQuestion: "→",
@@ -2440,7 +2440,7 @@ function getTTSTestText() {
       "Ev testekî ji bo mîhengên dengê ye.",
 
     ar:
-      "هٰذَا اخْتِبَارٌ لِإِعْدَادَاتِ الصَّوْتِ.",
+      "هٰذَا اخْتِبَارٌ لِإِعْدَادَاتِ الصَّوْتِ.",
 
     tt:
       "Бу тавыш көйләүләрен тикшерү өчен тест.",
@@ -3158,6 +3158,7 @@ function playSelectedText() {
 /* =========================================
    PAUSE / DEVAM
    GÜNCELLENMİŞ STABİL YERLEŞİK SİSTEM
+   (RESUME DOĞRULAMALI)
 ========================================= */
 
 function toggleSpeechPause() {
@@ -3192,11 +3193,93 @@ function toggleSpeechPause() {
 
     updatePauseButton();
 
+    const resumeCheckSession =
+      speechChunkSession;
+
     if (
       window.speechSynthesis.paused
     ) {
 
-      window.speechSynthesis.resume();
+      try {
+
+        window.speechSynthesis.resume();
+
+      } catch (error) {
+
+        console.warn(
+          "TTS resume hatası:",
+          error
+        );
+
+      }
+
+
+      /*
+       * BİLİNEN CHROME HATASI:
+       *
+       * Bazı Chrome sürümlerinde
+       * (özellikle Android'de veya
+       * sekme uzun süre arka planda
+       * kaldıysa) resume() motoru
+       * "paused" durumdan çıkarmaz,
+       * hiçbir hata da fırlatmaz.
+       *
+       * Kısa bir süre sonra gerçekten
+       * devam edip etmediğini kontrol
+       * ediyoruz. Etmediyse mevcut
+       * parçayı baştan başlatarak
+       * kurtarıyoruz.
+       */
+
+      setTimeout(
+        () => {
+
+          if (
+            resumeCheckSession !==
+            speechChunkSession
+          ) {
+            return;
+          }
+
+          if (
+            speechPaused ||
+            speechManualPaused
+          ) {
+            return;
+          }
+
+          const stuckPaused =
+            window.speechSynthesis.paused ||
+            !window.speechSynthesis.speaking;
+
+          if (stuckPaused) {
+
+            console.warn(
+              "TTS resume() etkisiz kaldı, parça yeniden başlatılıyor."
+            );
+
+            try {
+
+              window.speechSynthesis.cancel();
+
+            } catch (error) {
+
+              console.warn(
+                "TTS cancel hatası:",
+                error
+              );
+
+            }
+
+            speakCurrentChunk(
+              resumeCheckSession
+            );
+
+          }
+
+        },
+        350
+      );
 
     } else {
 
