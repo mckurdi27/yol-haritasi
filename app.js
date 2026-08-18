@@ -1799,7 +1799,7 @@ function renderTTSControls() {
       fastLevel++;
 
       if (
-        fastLevel > 3
+        fastLevel > 7
       ) {
         fastLevel = 0;
       }
@@ -1808,7 +1808,11 @@ function renderTTSControls() {
         1,
         1.25,
         1.50,
-        1.75
+        1.75,
+        2.00,
+        2.50,
+        2.75,
+        3.00
       ];
 
       changeSpeechRate(
