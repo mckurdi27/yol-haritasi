@@ -83,23 +83,40 @@ select {
 
 /* =========================================
    KUTSAL MEKÂNLAR
+   SIRA:
+   MESCİD-İ AKSÂ → KÂBE → MESCİD-İ NEBEVÎ
 ========================================= */
 
 .holy-sites {
-  position: relative;
   width: min(100%, 900px);
-  margin: 30px auto;
+  margin: 30px auto 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
 }
 
 .holy-site {
-  width: 50%;
+  width: calc((100% - 30px) / 3);
   max-width: 270px;
   overflow: hidden;
   border-radius: 14px;
+}
+
+/* Mescid-i Aksâ — 1. */
+.holy-site-aqsa {
+  order: 1;
+}
+
+/* Kâbe — 2. */
+.holy-site-kaaba {
+  order: 2;
+}
+
+/* Mescid-i Nebevî — 3. */
+.holy-site-nabawi {
+  order: 3;
 }
 
 .holy-site img {
@@ -109,24 +126,39 @@ select {
   object-fit: cover;
 }
 
+
+/* =========================================
+   ANA BAŞLIK
+   RESİMLERİN ALTINDA
+========================================= */
+
 .roadmap-title {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: min(75%, 300px);
+  position: static;
+  order: 4;
+
+  width: 100%;
+  margin: 25px auto 0;
   padding: 14px 18px;
+
   border-radius: 14px;
   background: rgba(245, 241, 232, 0.94);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
   font-size: clamp(22px, 4vw, 38px);
   font-weight: 700;
   line-height: 1.2;
+  text-align: center;
 }
 
+
+/* =========================================
+   ALT AÇIKLAMA
+========================================= */
+
 .home-subtitle {
-  margin: 16px 0 20px;
+  margin: 28px 0 30px;
   font-size: 18px;
+  text-align: center;
 }
 
 
@@ -491,6 +523,11 @@ footer {
 
   .holy-sites {
     gap: 6px;
+    margin-top: 25px;
+  }
+
+  .holy-site {
+    width: calc((100% - 12px) / 3);
   }
 
   .holy-site img {
@@ -498,9 +535,15 @@ footer {
   }
 
   .roadmap-title {
-    width: 70%;
+    width: 100%;
+    margin-top: 20px;
     padding: 9px;
     font-size: 20px;
+  }
+
+  .home-subtitle {
+    margin-top: 24px;
+    margin-bottom: 30px;
   }
 
   .navigation-main-row {
@@ -558,4 +601,3 @@ footer {
   }
 
 }
-
