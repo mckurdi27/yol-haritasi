@@ -1,4 +1,154 @@
+/* ===================================
+   BİR MÜSLÜMANIN YOL HARİTASI
+   day-03.json
+======================================== */
 {
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+
+    "fixedLanguageOrder": true,
+
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+
   "day": 3,
   "dayTitle": {
     "tr": "3. Gün — Allah'ı Tanımak",
@@ -873,7 +1023,7 @@
         "a": "Да. Аллах слышит все звуки и все мольбы. Его слух не имеет границ."
       },
       "ku": {
-        "q": "Ma Xwedê hemû tiştan dibihîze?",
+        "q": "Ma Xwedê hemû deng û duayan dibihîze?",
         "a": "Erê. Xwedê hemû deng û hemû duayan dibihîze. Bihîstina Wî bê sînor e."
       },
       "tt": {
@@ -1330,4 +1480,4 @@
       }
     }
   ]
-    }
+}
