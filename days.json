@@ -1,7 +1,7 @@
- {
- "project": {
+{
+  "project": {
     "title": "📖 Bir Müslümanın Yol Haritası",
-    "subtitle": "11 Dilli Günlük Dinî Bilgi Rehberi",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
     "totalDays": 30,
     "questionsPerDay": 19,
     "totalQuestions": 570,
@@ -20,17 +20,22 @@
       "tr",
       "en",
       "de",
+      "nl",     
+      "fr",
       "ru",
       "ku",
-      "ar",
       "tt",
-      "fr",
+      "ar",
       "es",
-      "nl",
-      "it"
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
     ],
 
-    "arabicPosition": 6,
+    "arabicPosition": 9,
 
     "fixedLanguageOrder": true,
 
@@ -63,31 +68,31 @@
       "flag": "🇩🇪"
     },
     {
-      "position": 4,
+      "position": 6,
       "code": "ru",
       "name": "Русский",
       "flag": "🇷🇺"
     },
     {
-      "position": 5,
+      "position": 7,
       "code": "ku",
       "name": "Kurmancî",
       "flag": "🇬🇭"
     },
     {
-      "position": 6,
+      "position": 9,
       "code": "ar",
       "name": "العربية",
       "flag": "🇸🇦"
     },
     {
-      "position": 7,
+      "position": 8,
       "code": "tt",
       "name": "Tatarca",
       "flag": "🇭🇺"
     },
     {
-      "position": 8,
+      "position": 5,
       "code": "fr",
       "name": "Français",
       "flag": "🇫🇷"
@@ -99,7 +104,7 @@
       "flag": "🇪🇸"
     },
     {
-      "position": 10,
+      "position": 4,
       "code": "nl",
       "name": "Nederlands / Flemenkçe",
       "flag": "🇳🇱"
@@ -109,6 +114,36 @@
       "code": "it",
       "name": "Italiano",
       "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
     }
   ],
 
@@ -384,6 +419,4 @@
       "questionRange": "552–570"
     }
   ]
-    }
-{
-
+}
