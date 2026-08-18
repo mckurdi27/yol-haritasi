@@ -1,5 +1,5 @@
 # 📖 Bir Müslümanın Yol Haritası
-## 11 Dilli Günlük Dinî Bilgi Rehberi
+## 16 Dilli Günlük Dinî Bilgi Rehberi
 ---
 ## Sistem
 - Her gün 19 yeni soru
@@ -9,20 +9,7 @@
 - Her sorunun altında önemli kaynaklar bulunur
 - Günlük içerikler ayrı JSON dosyalarında tutulur
 - Her günün başlığı ve alt başlığı günlük JSON dosyasında bulunur
----
-## Diller
-🇹🇷 Türkçe  
-🇬🇧 English  
-🇩🇪 Deutsch  
-🇷🇺 Русский  
-🇬🇭 Kurmancî  
-🇸🇦 العربية  
-🇭🇺 Tatarca  
-🇫🇷 Français  
-🇪🇸 Español  
-🇳🇱 Nederlands / Flemenkçe  
-🇮🇹 Italiano  
-
+---  
 ### Sabit Dil Sırası
 Her soruda diller daima aşağıdaki sırayla bulunur:
 1. 🇹🇷 Türkçe
