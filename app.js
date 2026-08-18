@@ -48,6 +48,12 @@ const LANGS = [
   },
 
   {
+    key: "fr",
+    flag: "🇫🇷",
+    name: "Françeais"
+  },
+   
+  {
     key: "ru",
     flag: "🇷🇺",
     name: "Русский"
@@ -59,22 +65,16 @@ const LANGS = [
     name: "Tatarca"
   },
 
-  {
-    key: "ar",
-    flag: "🇸🇦",
-    name: "العربية"
-  },
-
-  {
+   {
     key: "ku",
     flag: "🇬🇭",
     name: "Kurmancî"
   },
-
+   
   {
-    key: "fr",
-    flag: "🇫🇷",
-    name: "Français"
+    key: "ar",
+    flag: "🇸🇦",
+    name: "العربية"
   },
 
   {
