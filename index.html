@@ -232,3 +232,167 @@
 </body>
 
 </html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Hız Göstergesi Örneği 2 - Play Buton İçinde</title>
+<style>
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #f5f1e8;
+    padding: 24px;
+    margin: 0;
+  }
+
+  .note {
+    max-width: 640px;
+    margin: 0 auto 20px auto;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  .tts-controls {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fffdf8;
+    border: 1px solid #e5ddc8;
+    border-radius: 12px;
+    padding: 14px 16px;
+    flex-wrap: wrap;
+  }
+
+  .tts-button {
+    border: 1px solid #d8d0ba;
+    background: #fffdf8;
+    border-radius: 8px;
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .tts-button:hover {
+    background: #f0ead9;
+  }
+
+  .tts-pause.active {
+    background: #f4b942;
+    border-color: #d99a1f;
+  }
+
+  /* OYNAT BUTONU - hız 1.00 iken sade ▶ ikon */
+  #playBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    width: 54px;
+    height: 44px;
+    padding: 0;
+  }
+
+  #playBtn .icon {
+    font-size: 15px;
+  }
+
+  #playBtn .rate {
+    font-size: 10px;
+    font-weight: 700;
+    color: #c62828;
+    margin-top: 1px;
+  }
+
+  /* hız 1.00x iken rate satırını gizle, buton normal ▶ gibi görünsün */
+  #playBtn .rate.hidden {
+    display: none;
+  }
+
+  .settings {
+    margin-left: auto;
+  }
+</style>
+</head>
+<body>
+
+  <div class="note">
+    Örnek 2: Sayı artık ayrı bir etiket değil, <b>Oynat/Devam</b> butonunun
+    içinde küçük punto ile duruyor. Hız 1.00x (normal) iken sayı gizleniyor,
+    sade ▶ görünüyor — sadece hız değiştiğinde sayı beliriyor.
+  </div>
+
+  <div class="tts-controls">
+
+    <button class="tts-button" id="slowBtn" title="Yavaşlat">◀</button>
+
+    <button class="tts-button" id="playBtn" title="Oynat">
+      <span class="icon" id="playIcon">▶</span>
+      <span class="rate hidden" id="playRate">1.00x</span>
+    </button>
+
+    <button class="tts-button tts-pause" id="pauseBtn" title="Duraklat">⏸</button>
+    <button class="tts-button" id="stopBtn" title="Durdur">■</button>
+    <button class="tts-button" id="fastBtn" title="Hızlandır">▶</button>
+    <button class="tts-button settings" title="TTS ayarları">⚙️</button>
+  </div>
+
+<script>
+  const playIcon = document.getElementById('playIcon');
+  const playRate = document.getElementById('playRate');
+  const pauseBtn = document.getElementById('pauseBtn');
+
+  const slowRates = [1, 0.75, 0.50, 0.25];
+  const fastRates = [1, 1.25, 1.50, 1.75];
+
+  let slowLevel = 0;
+  let fastLevel = 0;
+  let paused = false;
+
+  function updateRate(rate) {
+
+    if (rate === 1) {
+      playRate.classList.add('hidden');
+      playRate.textContent = '1.00x';
+    } else {
+      playRate.classList.remove('hidden');
+      playRate.textContent = rate.toFixed(2) + 'x';
+    }
+
+  }
+
+  document.getElementById('slowBtn').addEventListener('click', () => {
+    slowLevel = (slowLevel + 1) % slowRates.length;
+    fastLevel = 0;
+    updateRate(slowRates[slowLevel]);
+  });
+
+  document.getElementById('fastBtn').addEventListener('click', () => {
+    fastLevel = (fastLevel + 1) % fastRates.length;
+    slowLevel = 0;
+    updateRate(fastRates[fastLevel]);
+  });
+
+  pauseBtn.addEventListener('click', () => {
+    paused = !paused;
+    pauseBtn.textContent = paused ? '▶' : '⏸';
+    pauseBtn.classList.toggle('active', paused);
+    // Oynat/Devam butonundaki hız etiketi olduğu gibi kalır.
+  });
+
+  document.getElementById('stopBtn').addEventListener('click', () => {
+    slowLevel = 0;
+    fastLevel = 0;
+    paused = false;
+    pauseBtn.textContent = '⏸';
+    pauseBtn.classList.remove('active');
+    updateRate(1);
+  });
+</script>
+
+</body>
+</html>
