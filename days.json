@@ -20,7 +20,7 @@
       "tr",
       "en",
       "de",
-      "nl",     
+      "nl",
       "fr",
       "ru",
       "ku",
@@ -68,6 +68,18 @@
       "flag": "🇩🇪"
     },
     {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
       "position": 6,
       "code": "ru",
       "name": "Русский",
@@ -80,34 +92,22 @@
       "flag": "🇬🇭"
     },
     {
-      "position": 9,
-      "code": "ar",
-      "name": "العربية",
-      "flag": "🇸🇦"
-    },
-    {
       "position": 8,
       "code": "tt",
       "name": "Tatarca",
       "flag": "🇭🇺"
     },
     {
-      "position": 5,
-      "code": "fr",
-      "name": "Français",
-      "flag": "🇫🇷"
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
     },
     {
-      "position": 9,
+      "position": 10,
       "code": "es",
       "name": "Español",
       "flag": "🇪🇸"
-    },
-    {
-      "position": 4,
-      "code": "nl",
-      "name": "Nederlands / Flemenkçe",
-      "flag": "🇳🇱"
     },
     {
       "position": 11,
