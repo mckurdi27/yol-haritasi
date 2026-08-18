@@ -16,27 +16,24 @@
     "totalQuestions": 570,
     "totalDays": 30,
 
-    "languageOrder": [
-      { key: "tr", flag: "🇹🇷", name: "Türkçe" },
-      { key: "en", flag: "🇬🇧", name: "English" },
-      { key: "de", flag: "🇩🇪", name: "Deutsch" },
-      { key: "nl", flag: "🇳🇱", name: "Nederlands" },
-      { key: "fr", flag: "🇫🇷", name: "Français" },
-      { key: "ru", flag: "🇷🇺", name: "Русский" },
-      { key: "ku", flag: "🇹🇯", name: "Kurmancî" },
-      { key: "tt", flag: "🇧🇬", name: "Tatarca" },
-      { key: "ar", flag: "🇸🇦", name: "العربية" },
-      { key: "es", flag: "🇪🇸", name: "Español" },
-      { key: "it", flag: "🇮🇹", name: "Italiano" },
-      { key: "pt", flag: "🇵🇹", name: "Português" },
-      { key: "ko", flag: "🇰🇷", name: "한국어" },
-      { key: "vi", flag: "🇻🇳", name: "Tiếng Việt" },
-      { key: "ja", flag: "🇯🇵", name: "日本語" },
-      { key: "zh", flag: "🇨🇳", name: "中文" }
-    
-    ],
-
-    "arabicPosition": 9,
+   "languageOrder": [
+     { "key": "tr", "flag": "🇹🇷", "name": "Türkçe" },
+     { "key": "en", "flag": "🇬🇧", "name": "English" },
+     { "key": "de", "flag": "🇩🇪", "name": "Deutsch" },
+     { "key": "nl", "flag": "🇳🇱", "name": "Nederlands" },
+     { "key": "fr", "flag": "🇫🇷", "name": "Français" },
+     { "key": "ru", "flag": "🇷🇺", "name": "Русский" },
+     { "key": "ku", "flag": "🇹🇯", "name": "Kurmancî" },
+     { "key": "tt", "flag": "🇧🇬", "name": "Tatarca" },
+     { "key": "ar", "flag": "🇸🇦", "name": "العربية" },
+     { "key": "es", "flag": "🇪🇸", "name": "Español" },
+     { "key": "it", "flag": "🇮🇹", "name": "Italiano" },
+     { "key": "pt", "flag": "🇵🇹", "name": "Português" },
+     { "key": "ko", "flag": "🇰🇷", "name": "한국어" },
+     { "key": "vi", "flag": "🇻🇳", "name": "Tiếng Việt" },
+     { "key": "ja", "flag": "🇯🇵", "name": "日本語" },
+     { "key": "zh", "flag": "🇨🇳", "name": "中文" }
+   ],
 
     "fixedLanguageOrder": true,
 
