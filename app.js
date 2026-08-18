@@ -1764,12 +1764,11 @@ function updateSlowButton(button) {
 
 function updateFastButton(button) {
   if (!button) return;
-  const icons = ["▶", "▶", "▶▶", "▶▶▶", "▶▶▶", "▶▶▶", "▶▶▶", "▶▶▶"];
+  const icons = ["▶", "▶▶", "▶▶", "▶▶", "▶▶▶", "▶▶▶", "▶▶▶", "▶▶▶"];
   button.textContent = icons[Math.min(fastLevel, icons.length - 1)] || "▶";
 }
 function updateFastButtons() {
   updateFastButton(document.querySelector(".tts-fast"));
-  updateVeryFastButton(document.querySelector(".tts-very-fast"));
 }
 
 function saveTTSSettings() {
@@ -1989,7 +1988,6 @@ function updatePlayRateDisplay() {
     rateLabel.textContent = `${speechRate.toFixed(2)}x`;
   }
 }
-
 
 /* =========================================
    TTS KONUŞMA
