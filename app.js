@@ -2709,15 +2709,15 @@ function updateSpeedLevelsFromRate() {
 
   } else if (speechRate === 2) {
 
-    veryFastLevel = 1;
+    FastLevel = 4;
 
   } else if (speechRate === 2.5) {
 
-    veryFastLevel = 2;
+    FastLevel = 5;
 
   } else if (speechRate === 3) {
 
-    veryFastLevel = 3;
+    FastLevel = 6;
 
   }
 
