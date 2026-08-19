@@ -141,7 +141,24 @@
   ],
   "day": 8,
   "dayTitle": "8. Gün — İlâhî Kitaplar",
-  "daySubtitle": "Tevrat, Zebur, İncil, Kur’an ve ilâhî kitaplara iman",
+  "daySubtitle": {
+    "tr": "Tevrat, Zebur, İncil, Kur’an ve ilâhî kitaplara iman",
+    "en": "The Torah, Psalms, Gospel, Qur’an and belief in the revealed books",
+    "de": "Tora, Psalmen, Evangelium, Koran und der Glaube an die Offenbarungsschriften",
+    "nl": "De Thora, de Psalmen, het Evangelie, de Koran en het geloof in de geopenbaarde boeken",
+    "fr": "La Torah, les Psaumes, l’Évangile, le Coran et la foi aux Livres révélés",
+    "ru": "Тора, Псалтирь, Евангелие, Коран и вера в ниспосланные Писания",
+    "ku": "Tevrat, Zebûr, Încîl, Qur’an û baweriya bi pirtûkên îlahî",
+    "tt": "Тәүрат, Зәбур, Инҗил, Коръән һәм илаһи китапларга иман",
+    "ar": "التَّوْرَاةُ وَالزَّبُورُ وَالْإِنْجِيلُ وَالْقُرْآنُ وَالْإِيمَانُ بِالْكُتُبِ الْإِلَهِيَّةِ",
+    "es": "La Torá, los Salmos, el Evangelio, el Corán y la fe en los Libros revelados",
+    "it": "La Torah, i Salmi, il Vangelo, il Corano e la fede nei Libri rivelati",
+    "pt": "A Torá, os Salmos, o Evangelho, o Alcorão e a fé nos Livros revelados",
+    "ko": "토라, 시편, 복음서, 꾸란과 계시된 경전에 대한 믿음",
+    "vi": "Kinh Torah, Zabur, Injil, Qur’an và đức tin nơi các Kinh Sách được mặc khải",
+    "ja": "トーラー、詩篇、福音書、クルアーン、そして啓示された諸啓典への信仰",
+    "zh": "《讨拉特》、诗篇、《引支勒》、《古兰经》以及对天启经典的信仰"
+  },
   "questions": [
     {
       "id": 134,
