@@ -1,7 +1,17 @@
 [README.md](https://github.com/user-attachments/files/31196731/README.md)
 # 📖 Bir Müslümanın Yol Haritası
-# 16 Dilli Günlük Dinî Bilgi Rehberi
+
+# 16 Dilli Günlük Dinî Bilgi Rehberi 
+
+# Bu sıra tüm 30 gün boyunca DEĞİŞMEZ. 
+16 dil ve sıralaması değişmez ama herzaman seçili dil en üstte gösterilir 
+Bunu  ve days.json dosyasını ana şablon olarak kullan
+İstenen değişiklik için sadece değiştirelecek bölümle ilgili değişikliği söyle
+değişikliği onayladığım takdirde
+TAM KOD BLOĞU olarak
+Kopyala Yapıştır yapacak şekilde ver, ekstra düzenlemem gerekmesin
 ---
+
 # Sistem
 - Her gün 19 yeni soru
 - Sorular kesintisiz numaralandırılır
@@ -10,14 +20,7 @@
 - Her sorunun altında önemli kaynaklar bulunur
 - Günlük içerikler ayrı JSON dosyalarında tutulur
 - Her günün başlığı ve alt başlığı günlük JSON dosyasında bulunur
----  
-Bu sıra tüm 30 gün boyunca DEĞİŞMEZ. 
-Bunu  ve days.json dosyasını ana şablon olarak kullan
-İstenen değişiklik için sadece değiştirelecek bölümle ilgili değişikliği söyle
-değişikliği onayladığım takdirde
-TAM KOD BLOĞU olarak
-Kopyala Yapıştır yapacak şekilde ver, ekstra düzenlemem gerekmesin
----
+
 # Günlük Dosyalar
 Her günün içeriği:`data/day-XX.json`şeklinde eklenir.
 Örneğin:
@@ -59,7 +62,10 @@ yol-haritasi/
 ├── style.css
 ├── README.md
 ├── days.json
-│
+└── Images/
+    ├── Aksa.jpg
+    ├── Kabe.jpg
+    ├── Nebevi.jpg
 └── data/
     ├── day-01.json
     ├── day-02.json
