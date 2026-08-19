@@ -1,0 +1,1539 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 11,
+  "dayTitle": {
+    "tr": "11. Gün — İslâm’ın Beş Şartı",
+    "en": "Day 11 — The Five Pillars of Islam",
+    "de": "11. Tag — Die fünf Säulen des Islam",
+    "nl": "Dag 11 — De vijf zuilen van de islam",
+    "fr": "Jour 11 — Les cinq piliers de l’islam",
+    "ru": "11-й день — Пять столпов Ислама",
+    "ku": "Roj 11 — Pênc Şertên Îslamê",
+    "tt": "11 нче көн — Исламның биш баганасы",
+    "ar": "الْيَوْمُ الْحَادِيَ عَشَرُ — أَرْكَانُ الْإِسْلَامِ الْخَمْسَةُ",
+    "es": "Día 11 — Los cinco pilares del Islam",
+    "it": "Giorno 11 — I cinque pilastri dell’Islam",
+    "pt": "Dia 11 — Os cinco pilares do Islão",
+    "ko": "11일차 — 이슬람의 다섯 기둥",
+    "vi": "Ngày 11 — Năm trụ cột của Islam",
+    "ja": "11日目 — イスラームの五柱",
+    "zh": "第11天——伊斯兰的五大支柱"
+  },
+  "daySubtitle": {
+    "tr": "Şehadet, namaz, zekât, oruç ve hac: İslâm’ın beş temel şartını tanımak",
+    "en": "Learning the five pillars of Islam: testimony of faith, prayer, zakat, fasting and pilgrimage",
+    "de": "Die fünf Säulen des Islam: Glaubenszeugnis, Gebet, Zakat, Fasten und Pilgerfahrt",
+    "nl": "De vijf zuilen van de islam: geloofsgetuigenis, gebed, zakat, vasten en bedevaart",
+    "fr": "Les cinq piliers de l’islam : profession de foi, prière, zakat, jeûne et pèlerinage",
+    "ru": "Пять столпов Ислама: свидетельство веры, молитва, закят, пост и паломничество",
+    "ku": "Pênc şertên Îslamê: şehadet, nimêj, zekat, rojî û hec",
+    "tt": "Исламның биш баганасы: шәһадәт, намаз, зәкят, ураза һәм хаҗ",
+    "ar": "الشَّهَادَةُ وَالصَّلَاةُ وَالزَّكَاةُ وَالصِّيَامُ وَالْحَجُّ: أَرْكَانُ الْإِسْلَامِ الْخَمْسَةُ",
+    "es": "Los cinco pilares del Islam: profesión de fe, oración, zakat, ayuno y peregrinación",
+    "it": "I cinque pilastri dell’Islam: testimonianza di fede, preghiera, zakat, digiuno e pellegrinaggio",
+    "pt": "Os cinco pilares do Islão: testemunho de fé, oração, zakat, jejum e peregrinação",
+    "ko": "이슬람의 다섯 기둥: 신앙고백, 예배, 자카트, 금식과 성지순례",
+    "vi": "Năm trụ cột của Islam: lời tuyên tín, lễ nguyện, zakat, nhịn chay và hành hương",
+    "ja": "イスラームの五柱：信仰告白、礼拝、ザカート、断食、巡礼",
+    "zh": "伊斯兰的五大支柱：信仰作证、礼拜、天课、斋戒和朝觐"
+  },
+  "questions": [
+    {
+      "id": 191,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "İslâm’ın beş şartı nelerdir?",
+        "a": "İslâm’ın beş temel şartı şehadet, namaz, zekât, Ramazan orucu ve hacdır."
+      },
+      "en": {
+        "q": "What are the five pillars of Islam?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "de": {
+        "q": "Was sind die fünf Säulen des Islam?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "nl": {
+        "q": "Wat zijn de vijf zuilen van de islam?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "fr": {
+        "q": "Quels sont les cinq piliers de l’islam ?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "ru": {
+        "q": "Каковы пять столпов Ислама?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "ku": {
+        "q": "What are the five pillars of Islam?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "tt": {
+        "q": "What are the five pillars of Islam?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "ar": {
+        "q": "مَا أَرْكَانُ الْإِسْلَامِ الْخَمْسَةُ؟",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "es": {
+        "q": "What are the five pillars of Islam?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "it": {
+        "q": "What are the five pillars of Islam?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "pt": {
+        "q": "What are the five pillars of Islam?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "ko": {
+        "q": "What are the five pillars of Islam?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "vi": {
+        "q": "What are the five pillars of Islam?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "ja": {
+        "q": "What are the five pillars of Islam?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      },
+      "zh": {
+        "q": "What are the five pillars of Islam?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting and pilgrimage."
+      }
+    },
+    {
+      "id": 192,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c",
+        "📖 Kur’an — Muhammed 47:19 — https://quran.com/47/19"
+      ],
+      "tr": {
+        "q": "Kelime-i şehadet ne anlama gelir?",
+        "a": "Allah’tan başka ilah olmadığına ve Muhammed’in Allah’ın kulu ve elçisi olduğuna şahitlik etmektir."
+      },
+      "en": {
+        "q": "What does the testimony of faith mean?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "de": {
+        "q": "Was bedeutet das Glaubenszeugnis?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "nl": {
+        "q": "Wat betekent de geloofsgetuigenis?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "fr": {
+        "q": "Que signifie la profession de foi ?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "ru": {
+        "q": "Что означает свидетельство веры?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "ku": {
+        "q": "What does the testimony of faith mean?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "tt": {
+        "q": "What does the testimony of faith mean?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "ar": {
+        "q": "مَاذَا تَعْنِي الشَّهَادَةُ؟",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "es": {
+        "q": "What does the testimony of faith mean?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "it": {
+        "q": "What does the testimony of faith mean?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "pt": {
+        "q": "What does the testimony of faith mean?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "ko": {
+        "q": "What does the testimony of faith mean?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "vi": {
+        "q": "What does the testimony of faith mean?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "ja": {
+        "q": "What does the testimony of faith mean?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "zh": {
+        "q": "What does the testimony of faith mean?",
+        "a": "It means testifying that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      }
+    },
+    {
+      "id": 193,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16a — https://sunnah.com/muslim:16a",
+        "📖 Kur’an — Tâhâ 20:14 — https://quran.com/20/14"
+      ],
+      "tr": {
+        "q": "Namaz neden İslâm’ın şartlarından biridir?",
+        "a": "Namaz, Allah’a kulluğun temel günlük ibadetlerinden ve İslâm’ın beş şartından biridir."
+      },
+      "en": {
+        "q": "Why is prayer one of the pillars of Islam?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "de": {
+        "q": "Warum gehört das Gebet zu den Säulen des Islam?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "nl": {
+        "q": "Waarom is het gebed een zuil van de islam?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "fr": {
+        "q": "Pourquoi la prière est-elle un pilier de l’islam ?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "ru": {
+        "q": "Почему молитва является столпом Ислама?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "ku": {
+        "q": "Why is prayer one of the pillars of Islam?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "tt": {
+        "q": "Why is prayer one of the pillars of Islam?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "ar": {
+        "q": "لِمَاذَا الصَّلَاةُ رُكْنٌ مِنْ أَرْكَانِ الْإِسْلَامِ؟",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "es": {
+        "q": "Why is prayer one of the pillars of Islam?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "it": {
+        "q": "Why is prayer one of the pillars of Islam?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "pt": {
+        "q": "Why is prayer one of the pillars of Islam?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "ko": {
+        "q": "Why is prayer one of the pillars of Islam?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "vi": {
+        "q": "Why is prayer one of the pillars of Islam?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "ja": {
+        "q": "Why is prayer one of the pillars of Islam?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "zh": {
+        "q": "Why is prayer one of the pillars of Islam?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      }
+    },
+    {
+      "id": 194,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16a — https://sunnah.com/muslim:16a"
+      ],
+      "tr": {
+        "q": "Günde kaç vakit farz namaz vardır?",
+        "a": "Her gün beş vakit farz namaz vardır: sabah, öğle, ikindi, akşam ve yatsı."
+      },
+      "en": {
+        "q": "How many obligatory prayers are there each day?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "de": {
+        "q": "Wie viele Pflichtgebete gibt es täglich?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "nl": {
+        "q": "Hoeveel verplichte gebeden zijn er per dag?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "fr": {
+        "q": "Combien de prières obligatoires y a-t-il chaque jour ?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "ru": {
+        "q": "Сколько обязательных молитв совершается каждый день?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "ku": {
+        "q": "How many obligatory prayers are there each day?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "tt": {
+        "q": "How many obligatory prayers are there each day?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "ar": {
+        "q": "كَمْ صَلَاةً فَرْضًا فِي الْيَوْمِ؟",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "es": {
+        "q": "How many obligatory prayers are there each day?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "it": {
+        "q": "How many obligatory prayers are there each day?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "pt": {
+        "q": "How many obligatory prayers are there each day?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "ko": {
+        "q": "How many obligatory prayers are there each day?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "vi": {
+        "q": "How many obligatory prayers are there each day?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "ja": {
+        "q": "How many obligatory prayers are there each day?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      },
+      "zh": {
+        "q": "How many obligatory prayers are there each day?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib and Isha."
+      }
+    },
+    {
+      "id": 195,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:60 — https://quran.com/9/60",
+        "📖 Kur’an — Tevbe 9:103 — https://quran.com/9/103"
+      ],
+      "tr": {
+        "q": "Zekât nedir?",
+        "a": "Zekât, şartlarını taşıyan Müslümanın malından belirli bir kısmı hak sahiplerine vermesidir."
+      },
+      "en": {
+        "q": "What is zakat?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "de": {
+        "q": "Was ist Zakat?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "nl": {
+        "q": "Wat is zakat?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la zakat ?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "ru": {
+        "q": "Что такое закят?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "ku": {
+        "q": "What is zakat?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "tt": {
+        "q": "What is zakat?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "ar": {
+        "q": "مَا هِيَ الزَّكَاةُ؟",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "es": {
+        "q": "What is zakat?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "it": {
+        "q": "What is zakat?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "pt": {
+        "q": "What is zakat?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "ko": {
+        "q": "What is zakat?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "vi": {
+        "q": "What is zakat?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "ja": {
+        "q": "What is zakat?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "zh": {
+        "q": "What is zakat?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      }
+    },
+    {
+      "id": 196,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:103 — https://quran.com/9/103"
+      ],
+      "tr": {
+        "q": "Zekâtın amacı nedir?",
+        "a": "Zekât malı temizlemeye, ihtiyaç sahiplerini desteklemeye ve toplumsal dayanışmayı güçlendirmeye vesile olur."
+      },
+      "en": {
+        "q": "What is the purpose of zakat?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "de": {
+        "q": "Was ist der Zweck der Zakat?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "nl": {
+        "q": "Wat is het doel van zakat?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "fr": {
+        "q": "Quel est le but de la zakat ?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "ru": {
+        "q": "Какова цель закята?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "ku": {
+        "q": "What is the purpose of zakat?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "tt": {
+        "q": "What is the purpose of zakat?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "ar": {
+        "q": "مَا هَدَفُ الزَّكَاةِ؟",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "es": {
+        "q": "What is the purpose of zakat?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "it": {
+        "q": "What is the purpose of zakat?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "pt": {
+        "q": "What is the purpose of zakat?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "ko": {
+        "q": "What is the purpose of zakat?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "vi": {
+        "q": "What is the purpose of zakat?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "ja": {
+        "q": "What is the purpose of zakat?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      },
+      "zh": {
+        "q": "What is the purpose of zakat?",
+        "a": "Zakat purifies wealth, supports those in need and strengthens social solidarity."
+      }
+    },
+    {
+      "id": 197,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:60 — https://quran.com/9/60"
+      ],
+      "tr": {
+        "q": "Kimlere zekât verilebilir?",
+        "a": "Kur’an’da zekâtın verilebileceği sekiz sınıf Tevbe 9:60’ta açıklanmıştır."
+      },
+      "en": {
+        "q": "Who may receive zakat?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "de": {
+        "q": "Wem darf Zakat gegeben werden?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "nl": {
+        "q": "Wie mag zakat ontvangen?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "fr": {
+        "q": "À qui peut-on donner la zakat ?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "ru": {
+        "q": "Кому можно давать закят?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "ku": {
+        "q": "Who may receive zakat?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "tt": {
+        "q": "Who may receive zakat?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "ar": {
+        "q": "لِمَنْ تُعْطَى الزَّكَاةُ؟",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "es": {
+        "q": "Who may receive zakat?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "it": {
+        "q": "Who may receive zakat?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "pt": {
+        "q": "Who may receive zakat?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "ko": {
+        "q": "Who may receive zakat?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "vi": {
+        "q": "Who may receive zakat?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "ja": {
+        "q": "Who may receive zakat?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      },
+      "zh": {
+        "q": "Who may receive zakat?",
+        "a": "The Qur’an identifies eight categories in At-Tawbah 9:60."
+      }
+    },
+    {
+      "id": 198,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Bakara 2:183 — https://quran.com/2/183",
+        "📖 Kur’an — Bakara 2:187 — https://quran.com/2/187"
+      ],
+      "tr": {
+        "q": "Ramazan orucu nedir?",
+        "a": "Ramazanda imsak vaktinden güneş batıncaya kadar orucu bozan şeylerden Allah için uzak durmaktır."
+      },
+      "en": {
+        "q": "What is the Ramadan fast?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "de": {
+        "q": "Was ist das Fasten im Ramadan?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "nl": {
+        "q": "Wat is het vasten in Ramadan?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le jeûne du Ramadan ?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "ru": {
+        "q": "Что такое пост в Рамадан?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "ku": {
+        "q": "What is the Ramadan fast?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "tt": {
+        "q": "What is the Ramadan fast?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "ar": {
+        "q": "مَا هُوَ صِيَامُ رَمَضَانَ؟",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "es": {
+        "q": "What is the Ramadan fast?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "it": {
+        "q": "What is the Ramadan fast?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "pt": {
+        "q": "What is the Ramadan fast?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "ko": {
+        "q": "What is the Ramadan fast?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "vi": {
+        "q": "What is the Ramadan fast?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "ja": {
+        "q": "What is the Ramadan fast?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      },
+      "zh": {
+        "q": "What is the Ramadan fast?",
+        "a": "It is abstaining from things that break the fast from dawn until sunset for Allah."
+      }
+    },
+    {
+      "id": 199,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Bakara 2:183 — https://quran.com/2/183"
+      ],
+      "tr": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Oruç, takvayı ve Allah’a karşı sorumluluk bilincini geliştirmek için farz kılınmıştır."
+      },
+      "en": {
+        "q": "What is the purpose of fasting?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "de": {
+        "q": "Was ist das Ziel des Fastens?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "nl": {
+        "q": "Wat is het doel van het vasten?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "fr": {
+        "q": "Quel est le but du jeûne ?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "ru": {
+        "q": "Какова цель поста?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "ku": {
+        "q": "What is the purpose of fasting?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "tt": {
+        "q": "What is the purpose of fasting?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "ar": {
+        "q": "مَا هَدَفُ الصِّيَامِ؟",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "es": {
+        "q": "What is the purpose of fasting?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "it": {
+        "q": "What is the purpose of fasting?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "pt": {
+        "q": "What is the purpose of fasting?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "ko": {
+        "q": "What is the purpose of fasting?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "vi": {
+        "q": "What is the purpose of fasting?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "ja": {
+        "q": "What is the purpose of fasting?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      },
+      "zh": {
+        "q": "What is the purpose of fasting?",
+        "a": "Fasting was prescribed to develop taqwa and responsibility before Allah."
+      }
+    },
+    {
+      "id": 200,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Bakara 2:185 — https://quran.com/2/185"
+      ],
+      "tr": {
+        "q": "Ramazan orucu hangi ayda tutulur?",
+        "a": "Ramazan ayında tutulur; Kur’an bu ayı Kur’an’ın indirildiği ay olarak bildirir."
+      },
+      "en": {
+        "q": "In which month is the obligatory fast observed?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "de": {
+        "q": "In welchem Monat wird das Pflichtfasten gehalten?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "nl": {
+        "q": "In welke maand wordt het verplichte vasten gehouden?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "fr": {
+        "q": "Pendant quel mois le jeûne obligatoire est-il observé ?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "ru": {
+        "q": "В каком месяце соблюдается обязательный пост?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "ku": {
+        "q": "In which month is the obligatory fast observed?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "tt": {
+        "q": "In which month is the obligatory fast observed?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "ar": {
+        "q": "فِي أَيِّ شَهْرٍ يُؤَدَّى الصِّيَامُ الْفَرْضُ؟",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "es": {
+        "q": "In which month is the obligatory fast observed?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "it": {
+        "q": "In which month is the obligatory fast observed?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "pt": {
+        "q": "In which month is the obligatory fast observed?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "ko": {
+        "q": "In which month is the obligatory fast observed?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "vi": {
+        "q": "In which month is the obligatory fast observed?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "ja": {
+        "q": "In which month is the obligatory fast observed?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      },
+      "zh": {
+        "q": "In which month is the obligatory fast observed?",
+        "a": "It is observed in Ramadan, the month in which the Qur’an was revealed."
+      }
+    },
+    {
+      "id": 201,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:97 — https://quran.com/3/97",
+        "📖 Kur’an — Hac 22:27 — https://quran.com/22/27"
+      ],
+      "tr": {
+        "q": "Hac nedir?",
+        "a": "Hac, gücü yeten Müslümanın belirli zamanda Kâbe’yi ve hac ibadetlerini yerine getirmesidir."
+      },
+      "en": {
+        "q": "What is Hajj?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "de": {
+        "q": "Was ist der Hajj?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "nl": {
+        "q": "Wat is de hadj?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le Hajj ?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "ru": {
+        "q": "Что такое хадж?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "ku": {
+        "q": "What is Hajj?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "tt": {
+        "q": "What is Hajj?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "ar": {
+        "q": "مَا هُوَ الْحَجُّ؟",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "es": {
+        "q": "What is Hajj?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "it": {
+        "q": "What is Hajj?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "pt": {
+        "q": "What is Hajj?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "ko": {
+        "q": "What is Hajj?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "vi": {
+        "q": "What is Hajj?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "ja": {
+        "q": "What is Hajj?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      },
+      "zh": {
+        "q": "What is Hajj?",
+        "a": "Hajj is worshipping Allah by visiting the Kaaba and performing the prescribed rites at the appointed time."
+      }
+    },
+    {
+      "id": 202,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:97 — https://quran.com/3/97"
+      ],
+      "tr": {
+        "q": "Hac kimlere farzdır?",
+        "a": "Gücü yeten Müslümana ömründe bir defa hac farzdır."
+      },
+      "en": {
+        "q": "For whom is Hajj obligatory?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "de": {
+        "q": "Für wen ist der Hajj verpflichtend?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "nl": {
+        "q": "Voor wie is de hadj verplicht?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "fr": {
+        "q": "Pour qui le Hajj est-il obligatoire ?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "ru": {
+        "q": "Для кого хадж обязателен?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "ku": {
+        "q": "For whom is Hajj obligatory?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "tt": {
+        "q": "For whom is Hajj obligatory?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "ar": {
+        "q": "عَلَى مَنْ يَجِبُ الْحَجُّ؟",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "es": {
+        "q": "For whom is Hajj obligatory?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "it": {
+        "q": "For whom is Hajj obligatory?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "pt": {
+        "q": "For whom is Hajj obligatory?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "ko": {
+        "q": "For whom is Hajj obligatory?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "vi": {
+        "q": "For whom is Hajj obligatory?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "ja": {
+        "q": "For whom is Hajj obligatory?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      },
+      "zh": {
+        "q": "For whom is Hajj obligatory?",
+        "a": "Hajj is obligatory once in a lifetime for Muslims who have the ability and means."
+      }
+    },
+    {
+      "id": 203,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "İslâm’ın beş şartı hangi hadiste açıkça sayılmıştır?",
+        "a": "İbn Ömer’den rivayet edilen Sahih Müslim 16c hadisi İslâm’ın beş temelini açıkça sayar."
+      },
+      "en": {
+        "q": "Which hadith explicitly lists the five pillars?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "de": {
+        "q": "Welcher Hadith nennt die fünf Säulen ausdrücklich?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "nl": {
+        "q": "Welke hadith noemt de vijf zuilen uitdrukkelijk?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "fr": {
+        "q": "Quel hadith énumère clairement les cinq piliers ?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "ru": {
+        "q": "Какой хадис прямо перечисляет пять столпов?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "ku": {
+        "q": "Which hadith explicitly lists the five pillars?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "tt": {
+        "q": "Which hadith explicitly lists the five pillars?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "ar": {
+        "q": "أَيُّ حَدِيثٍ يَذْكُرُ الْأَرْكَانَ الْخَمْسَةَ صَرَاحَةً؟",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "es": {
+        "q": "Which hadith explicitly lists the five pillars?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "it": {
+        "q": "Which hadith explicitly lists the five pillars?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "pt": {
+        "q": "Which hadith explicitly lists the five pillars?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "ko": {
+        "q": "Which hadith explicitly lists the five pillars?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "vi": {
+        "q": "Which hadith explicitly lists the five pillars?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "ja": {
+        "q": "Which hadith explicitly lists the five pillars?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      },
+      "zh": {
+        "q": "Which hadith explicitly lists the five pillars?",
+        "a": "The hadith narrated from Ibn Umar in Sahih Muslim 16c explicitly lists the five pillars."
+      }
+    },
+    {
+      "id": 204,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c",
+        "📖 Kur’an — Zâriyât 51:56 — https://quran.com/51/56"
+      ],
+      "tr": {
+        "q": "Şehadet ile ibadetler arasındaki ilişki nedir?",
+        "a": "Şehadet imanın temel ifadesidir; ibadetler bu imanın gereği olarak Allah’a kulluğu gösterir."
+      },
+      "en": {
+        "q": "What is the relationship between faith testimony and worship?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "de": {
+        "q": "Wie hängen Glaubenszeugnis und Gottesdienste zusammen?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "nl": {
+        "q": "Wat is de relatie tussen geloofsgetuigenis en aanbidding?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "fr": {
+        "q": "Quel est le lien entre profession de foi et actes de culte ?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "ru": {
+        "q": "Как связаны свидетельство веры и поклонение?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "ku": {
+        "q": "What is the relationship between faith testimony and worship?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "tt": {
+        "q": "What is the relationship between faith testimony and worship?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "ar": {
+        "q": "مَا الْعَلَاقَةُ بَيْنَ الشَّهَادَةِ وَالْعِبَادَةِ؟",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "es": {
+        "q": "What is the relationship between faith testimony and worship?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "it": {
+        "q": "What is the relationship between faith testimony and worship?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "pt": {
+        "q": "What is the relationship between faith testimony and worship?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "ko": {
+        "q": "What is the relationship between faith testimony and worship?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "vi": {
+        "q": "What is the relationship between faith testimony and worship?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "ja": {
+        "q": "What is the relationship between faith testimony and worship?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      },
+      "zh": {
+        "q": "What is the relationship between faith testimony and worship?",
+        "a": "The testimony expresses the foundation of faith; worship demonstrates obedience to Allah."
+      }
+    },
+    {
+      "id": 205,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Tâhâ 20:14 — https://quran.com/20/14"
+      ],
+      "tr": {
+        "q": "Namazın Allah’ı anmadaki yeri nedir?",
+        "a": "Allah Teâlâ namazın O’nu anmak için kılınmasını emretmiştir."
+      },
+      "en": {
+        "q": "What is the place of prayer in remembering Allah?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "de": {
+        "q": "Welche Bedeutung hat das Gebet für das Gedenken an Allah?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "nl": {
+        "q": "Welke plaats heeft het gebed in het gedenken van Allah?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "fr": {
+        "q": "Quelle est la place de la prière dans le rappel d’Allah ?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "ru": {
+        "q": "Каково место молитвы в поминании Аллаха?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "ku": {
+        "q": "What is the place of prayer in remembering Allah?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "tt": {
+        "q": "What is the place of prayer in remembering Allah?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "ar": {
+        "q": "مَا مَكَانُ الصَّلَاةِ فِي ذِكْرِ اللَّهِ؟",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "es": {
+        "q": "What is the place of prayer in remembering Allah?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "it": {
+        "q": "What is the place of prayer in remembering Allah?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "pt": {
+        "q": "What is the place of prayer in remembering Allah?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "ko": {
+        "q": "What is the place of prayer in remembering Allah?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "vi": {
+        "q": "What is the place of prayer in remembering Allah?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "ja": {
+        "q": "What is the place of prayer in remembering Allah?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "zh": {
+        "q": "What is the place of prayer in remembering Allah?",
+        "a": "Allah commands prayer so that He may be remembered."
+      }
+    },
+    {
+      "id": 206,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:60 — https://quran.com/9/60",
+        "📚 Hadis — Sahih Müslim 1005 — https://sunnah.com/muslim:1005"
+      ],
+      "tr": {
+        "q": "Zekât ile sadaka aynı şey midir?",
+        "a": "Hayır. Zekât şartları ve hak sahipleri belirlenmiş farz bir ibadettir; sadaka daha geniş bir gönüllü iyilik anlamına gelir."
+      },
+      "en": {
+        "q": "Are zakat and voluntary charity the same?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "de": {
+        "q": "Sind Zakat und freiwillige Almosen dasselbe?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "nl": {
+        "q": "Zijn zakat en vrijwillige liefdadigheid hetzelfde?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "fr": {
+        "q": "La zakat est-elle la même chose que l’aumône volontaire ?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "ru": {
+        "q": "Являются ли закят и добровольная милостыня одним и тем же?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "ku": {
+        "q": "Are zakat and voluntary charity the same?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "tt": {
+        "q": "Are zakat and voluntary charity the same?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "ar": {
+        "q": "هَلِ الزَّكَاةُ وَالصَّدَقَةُ التَّطَوُّعِيَّةُ شَيْءٌ وَاحِدٌ؟",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "es": {
+        "q": "Are zakat and voluntary charity the same?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "it": {
+        "q": "Are zakat and voluntary charity the same?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "pt": {
+        "q": "Are zakat and voluntary charity the same?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "ko": {
+        "q": "Are zakat and voluntary charity the same?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "vi": {
+        "q": "Are zakat and voluntary charity the same?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "ja": {
+        "q": "Are zakat and voluntary charity the same?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      },
+      "zh": {
+        "q": "Are zakat and voluntary charity the same?",
+        "a": "No. Zakat is obligatory with specific conditions and recipients; voluntary charity is broader."
+      }
+    },
+    {
+      "id": 207,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Bakara 2:183 — https://quran.com/2/183",
+        "📚 Hadis — Sahih Buhârî 1903 — https://sunnah.com/bukhari:1903"
+      ],
+      "tr": {
+        "q": "Oruç sadece aç ve susuz kalmak mıdır?",
+        "a": "Hayır. Oruç Allah’a itaat ve takvayı hedefleyen bir ibadettir; kötü davranışlardan da sakınmayı gerektirir."
+      },
+      "en": {
+        "q": "Is fasting only staying hungry and thirsty?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "de": {
+        "q": "Ist Fasten nur Hunger und Durst?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "nl": {
+        "q": "Is vasten alleen honger en dorst?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "fr": {
+        "q": "Le jeûne consiste-t-il seulement à avoir faim et soif ?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "ru": {
+        "q": "Является ли пост только голодом и жаждой?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "ku": {
+        "q": "Is fasting only staying hungry and thirsty?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "tt": {
+        "q": "Is fasting only staying hungry and thirsty?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "ar": {
+        "q": "هَلِ الصِّيَامُ مُجَرَّدُ الْجُوعِ وَالْعَطَشِ؟",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "es": {
+        "q": "Is fasting only staying hungry and thirsty?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "it": {
+        "q": "Is fasting only staying hungry and thirsty?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "pt": {
+        "q": "Is fasting only staying hungry and thirsty?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "ko": {
+        "q": "Is fasting only staying hungry and thirsty?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "vi": {
+        "q": "Is fasting only staying hungry and thirsty?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "ja": {
+        "q": "Is fasting only staying hungry and thirsty?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      },
+      "zh": {
+        "q": "Is fasting only staying hungry and thirsty?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding wrongdoing."
+      }
+    },
+    {
+      "id": 208,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Hac 22:27 — https://quran.com/22/27",
+        "📖 Kur’an — Hucurât 49:13 — https://quran.com/49/13"
+      ],
+      "tr": {
+        "q": "Haccın Müslümanlar arasındaki birlik açısından önemi nedir?",
+        "a": "Hac farklı milletlerden Müslümanları aynı ibadetler etrafında bir araya getirerek ümmet bilincini güçlendirir."
+      },
+      "en": {
+        "q": "Why is Hajj important for Muslim unity?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "de": {
+        "q": "Warum ist der Hajj für die Einheit der Muslime wichtig?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "nl": {
+        "q": "Waarom is de hadj belangrijk voor de eenheid van moslims?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "fr": {
+        "q": "Pourquoi le Hajj est-il important pour l’unité des musulmans ?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "ru": {
+        "q": "Почему хадж важен для единства мусульман?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "ku": {
+        "q": "Why is Hajj important for Muslim unity?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "tt": {
+        "q": "Why is Hajj important for Muslim unity?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "ar": {
+        "q": "لِمَاذَا الْحَجُّ مُهِمٌّ لِوَحْدَةِ الْمُسْلِمِينَ؟",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "es": {
+        "q": "Why is Hajj important for Muslim unity?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "it": {
+        "q": "Why is Hajj important for Muslim unity?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "pt": {
+        "q": "Why is Hajj important for Muslim unity?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "ko": {
+        "q": "Why is Hajj important for Muslim unity?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "vi": {
+        "q": "Why is Hajj important for Muslim unity?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "ja": {
+        "q": "Why is Hajj important for Muslim unity?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      },
+      "zh": {
+        "q": "Why is Hajj important for Muslim unity?",
+        "a": "Hajj brings Muslims from different peoples together around the same acts of worship."
+      }
+    },
+    {
+      "id": 209,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16a — https://sunnah.com/muslim:16a"
+      ],
+      "tr": {
+        "q": "İslâm’ın beş şartını öğrenmek neden önemlidir?",
+        "a": "Bu şartlar Müslümanın temel ibadet hayatını anlamasına ve Allah’a bilinçli kulluk etmesine yardımcı olur."
+      },
+      "en": {
+        "q": "Why is it important to learn the five pillars?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "de": {
+        "q": "Warum ist es wichtig, die fünf Säulen zu lernen?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "nl": {
+        "q": "Waarom is het belangrijk de vijf zuilen te leren?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "fr": {
+        "q": "Pourquoi est-il important d’apprendre les cinq piliers ?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "ru": {
+        "q": "Почему важно изучать пять столпов?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "ku": {
+        "q": "Why is it important to learn the five pillars?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "tt": {
+        "q": "Why is it important to learn the five pillars?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "ar": {
+        "q": "لِمَاذَا يَهُمُّ تَعَلُّمُ الْأَرْكَانِ الْخَمْسَةِ؟",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "es": {
+        "q": "Why is it important to learn the five pillars?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "it": {
+        "q": "Why is it important to learn the five pillars?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "pt": {
+        "q": "Why is it important to learn the five pillars?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "ko": {
+        "q": "Why is it important to learn the five pillars?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "vi": {
+        "q": "Why is it important to learn the five pillars?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "ja": {
+        "q": "Why is it important to learn the five pillars?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "zh": {
+        "q": "Why is it important to learn the five pillars?",
+        "a": "They provide the foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      }
+    }
+  ]
+}
