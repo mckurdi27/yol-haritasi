@@ -141,7 +141,7 @@
   ],
   "day": 4,
   "dayTitle": {
-    "tr": "4. Gün — Peygamberler ve Peygamberlik",
+    "tr": "4. Gün — Vahiy ve Peygamberler",
     "en": "Day 4 — Revelation and Prophets",
     "de": "Tag 4 — Offenbarung und Propheten",
     "nl": "Dag 4 — Openbaring en profeten",
@@ -159,17 +159,17 @@
     "zh": "第4天——启示与先知"
   },
   "daySubtitle": {
-    "tr": "Peygamberlerin görevi, özellikleri, mucizeler ve peygamberlere iman",
+    "tr": "Vahyin ne olduğunu, peygamberlerin görevini ve Hz. Muhammed ﷺ'in risaletini öğren.",
     "en": "Learn what revelation is, the mission of the prophets, and the message of Prophet Muhammad ﷺ.",
     "de": "Lerne, was Offenbarung ist, welche Aufgabe die Propheten hatten und was die Botschaft Muhammads ﷺ war.",
     "nl": "Leer wat openbaring is, wat de taak van de profeten was en wat de boodschap van de profeet Muhammad ﷺ was.",
-    "fr": "Découvrez ce qu’est la révélation, la mission des prophètes et le message du prophète Muhammad ﷺ.",
+    "fr": "Découvrez ce qu'est la révélation, la mission des prophètes et le message du prophète Muhammad ﷺ.",
     "ru": "Узнайте, что такое откровение, какова миссия пророков и в чём заключалось послание пророка Мухаммада ﷺ.",
     "ku": "Fêr bibe ka wahî çi ye, wezîfeya pêxemberan çi ye û risaleta Hz. Muhammed ﷺ çi ye.",
     "tt": "Вәхинең нәрсә икәнен, пәйгамбәрләрнең вазифасын һәм Мөхәммәд ﷺ пәйгамбәрнең рисаләтен өйрәнегез.",
     "ar": "تَعَلَّمْ مَا هُوَ الْوَحْيُ، وَمَا وَظِيفَةُ الْأَنْبِيَاءِ، وَمَا رِسَالَةُ النَّبِيِّ مُحَمَّدٍ ﷺ.",
     "es": "Aprende qué es la revelación, cuál fue la misión de los profetas y cuál fue el mensaje del profeta Muhammad ﷺ.",
-    "it": "Scopri che cos’è la rivelazione, quale fosse la missione dei profeti e quale fosse il messaggio del profeta Muhammad ﷺ.",
+    "it": "Scopri che cos'è la rivelazione, quale fosse la missione dei profeti e quale fosse il messaggio del profeta Muhammad ﷺ.",
     "pt": "Aprenda o que é a revelação, qual foi a missão dos profetas e qual foi a mensagem do profeta Muhammad ﷺ.",
     "ko": "계시가 무엇인지, 예언자들의 사명이 무엇이었는지, 그리고 무함마드 ﷺ 선지자의 메시지가 무엇이었는지 배워 보세요.",
     "vi": "Hãy tìm hiểu mặc khải là gì, sứ mệnh của các vị tiên tri và thông điệp của Nhà tiên tri Muhammad ﷺ.",
@@ -181,71 +181,71 @@
       "id": 58,
       "day": 4,
       "tr": {
-        "q": "Vahiy nedir?",
-        "a": "Allah’ın peygamberlerine bildirdiği ilahî mesaj ve bilgidir."
+        "q": "Peygamberlerin ortak özellikleri nelerdir?",
+        "a": "Bütün peygamberler doğru sözlüdür (sıdk), güvenilirdir (emânet), akıllıdır (fetânet) ve Allah'tan aldıkları vahyi eksiksiz tebliğ ederler (tebliğ)."
       },
       "en": {
-        "q": "What is revelation?",
-        "a": "It is the divine message and knowledge that Allah conveyed to His prophets."
+        "q": "What qualities do all prophets share?",
+        "a": "All prophets are truthful (sidq), trustworthy (amanah), wise (fatanah), and fully convey the revelation they receive from Allah (tabligh)."
       },
       "de": {
-        "q": "Was ist Offenbarung?",
-        "a": "Sie ist die göttliche Botschaft und das Wissen, das Allah Seinen Propheten übermittelte."
+        "q": "Welche gemeinsamen Eigenschaften haben alle Propheten?",
+        "a": "Alle Propheten sind wahrhaftig (Sidq), vertrauenswürdig (Amana), klug (Fatana) und verkünden die von Allah empfangene Offenbarung vollständig (Tabligh)."
       },
       "nl": {
-        "q": "Wat is openbaring?",
-        "a": "Het is de goddelijke boodschap en kennis die Allah aan Zijn profeten heeft geopenbaard."
+        "q": "Welke eigenschappen hebben alle profeten gemeen?",
+        "a": "Alle profeten zijn waarheidsgetrouw (sidq), betrouwbaar (amana), verstandig (fatana) en verkondigen de openbaring die zij van Allah ontvangen volledig (tabligh)."
       },
       "fr": {
-        "q": "Qu’est-ce que la révélation ?",
-        "a": "C’est le message et la connaissance divins qu’Allah a transmis à Ses prophètes."
+        "q": "Quelles qualités les prophètes ont-ils en commun ?",
+        "a": "Tous les prophètes sont véridiques (sidq), dignes de confiance (amana), sages (fatana) et transmettent intégralement la révélation reçue d'Allah (tabligh)."
       },
       "ru": {
-        "q": "Что такое откровение?",
-        "a": "Это божественное послание и знание, которое Аллах передавал Своим пророкам."
+        "q": "Какие качества объединяют всех пророков?",
+        "a": "Все пророки правдивы (сидк), заслуживают доверия (амана), мудры (фатана) и полностью передают откровение, полученное от Аллаха (таблиг)."
       },
       "ku": {
-        "q": "Wahî çi ye?",
-        "a": "Wahî peyama îlahî û zanîna ku Allah ji pêxemberên xwe re şand e."
+        "q": "Taybetmendiyên hevpar ên pêxemberan çi ne?",
+        "a": "Hemû pêxember rastgo ne (sidq), pêbawer in (emanet), aqilmend in (fetanet) û wahya ku ji Xwedê digirin bêkêmasî radigihînin (teblîx)."
       },
       "tt": {
-        "q": "Вәхи нәрсә ул?",
-        "a": "Ул — Аллаһның пәйгамбәрләренә җиткергән илаһи хәбәре һәм белеме."
+        "q": "Барлык пәйгамбәрләрнең уртак сыйфатлары нинди?",
+        "a": "Барлык пәйгамбәрләр дә дөресчел (сыйдык), ышанычлы (әманәт), зирәк (фәтанәт) һәм Аллаһтан алган вәхине тулысынча җиткерүчеләр (тәблиг)."
       },
       "ar": {
-        "q": "مَا هُوَ الْوَحْيُ؟",
-        "a": "هُوَ الرِّسَالَةُ وَالْمَعْرِفَةُ الْإِلَهِيَّةُ الَّتِي أَوْحَاهَا اللَّهُ إِلَى أَنْبِيَائِهِ."
+        "q": "مَا هِيَ الصِّفَاتُ الْمُشْتَرَكَةُ بَيْنَ الْأَنْبِيَاءِ؟",
+        "a": "جَمِيعُ الْأَنْبِيَاءِ صَادِقُونَ، وَأُمَنَاءُ، وَحُكَمَاءُ، وَيُبَلِّغُونَ الْوَحْيَ الَّذِي يَتَلَقَّوْنَهُ مِنَ اللَّهِ كَامِلًا."
       },
       "es": {
-        "q": "¿Qué es la revelación?",
-        "a": "Es el mensaje y conocimiento divinos que Allah comunicó a Sus profetas."
+        "q": "¿Qué cualidades comparten todos los profetas?",
+        "a": "Todos los profetas son veraces (sidq), dignos de confianza (amana), sabios (fatana) y transmiten íntegramente la revelación que reciben de Allah (tabligh)."
       },
       "it": {
-        "q": "Che cos’è la rivelazione?",
-        "a": "È il messaggio e la conoscenza divina che Allah ha comunicato ai Suoi profeti."
+        "q": "Quali qualità hanno in comune tutti i profeti?",
+        "a": "Tutti i profeti sono veritieri (sidq), degni di fiducia (amana), saggi (fatana) e trasmettono integralmente la rivelazione ricevuta da Allah (tabligh)."
       },
       "pt": {
-        "q": "O que é a revelação?",
-        "a": "É a mensagem e o conhecimento divinos que Allah transmitiu aos Seus profetas."
+        "q": "Que qualidades todos os profetas têm em comum?",
+        "a": "Todos os profetas são verdadeiros (sidq), dignos de confiança (amana), sábios (fatana) e transmitem integralmente a revelação que recebem de Allah (tabligh)."
       },
       "ko": {
-        "q": "계시란 무엇입니까?",
-        "a": "계시는 알라께서 자신의 예언자들에게 전달하신 신성한 메시지와 지식입니다."
+        "q": "모든 예언자들이 공통으로 지닌 자질은 무엇입니까?",
+        "a": "모든 예언자는 정직하고(시드크), 신뢰할 수 있으며(아마나), 지혜롭고(파타나), 알라로부터 받은 계시를 온전히 전달합니다(타블리그)."
       },
       "vi": {
-        "q": "Mặc khải là gì?",
-        "a": "Đó là thông điệp và tri thức thiêng liêng mà Allah truyền đạt cho các vị tiên tri của Ngài."
+        "q": "Các nhà tiên tri có những phẩm chất chung nào?",
+        "a": "Tất cả các nhà tiên tri đều trung thực (sidq), đáng tin cậy (amanah), khôn ngoan (fatanah), và truyền đạt trọn vẹn mặc khải nhận được từ Allah (tabligh)."
       },
       "ja": {
-        "q": "啓示とは何ですか？",
-        "a": "それは、アッラーが預言者たちに伝えられた神聖なメッセージと知識です。"
+        "q": "すべての預言者に共通する資質は何ですか？",
+        "a": "すべての預言者は正直（シドク）、信頼できる（アマーナ）、賢明（ファターナ）であり、アッラーから受けた啓示を余すことなく伝えます（タブリーグ）。"
       },
       "zh": {
-        "q": "什么是启示？",
-        "a": "启示是安拉传达给众先知的神圣信息和知识。"
+        "q": "所有先知共有哪些品质？",
+        "a": "所有先知都诚实、可信、睿智，并完整传达从安拉那里领受的启示。"
       },
       "sources": [
-        "Kur'an 42:51"
+        "📖 Kur'an — En'âm Sûresi, 6:48 — https://quran.com/6/48"
       ]
     },
     {
@@ -253,7 +253,7 @@
       "day": 4,
       "tr": {
         "q": "Peygamber kimdir?",
-        "a": "Allah’ın insanlara doğru yolu bildirmek için seçtiği elçidir."
+        "a": "Allah'ın insanlara doğru yolu bildirmek için seçtiği elçidir."
       },
       "en": {
         "q": "Who is a prophet?",
@@ -268,8 +268,8 @@
         "a": "Een profeet is iemand die door Allah is uitgekozen om mensen naar de waarheid te leiden."
       },
       "fr": {
-        "q": "Qu’est-ce qu’un prophète ?",
-        "a": "C’est une personne choisie par Allah pour guider les hommes vers la vérité."
+        "q": "Qu'est-ce qu'un prophète ?",
+        "a": "C'est une personne choisie par Allah pour guider les hommes vers la vérité."
       },
       "ru": {
         "q": "Кто такой пророк?",
@@ -316,7 +316,7 @@
         "a": "先知是安拉选派来引导人们走向真理的人。"
       },
       "sources": [
-        "Kur'an 2:213"
+        "📖 Kur'an — Bakara Sûresi, 2:213 — https://quran.com/2/213"
       ]
     },
     {
@@ -324,7 +324,7 @@
       "day": 4,
       "tr": {
         "q": "Peygamberlerin temel görevi nedir?",
-        "a": "İnsanları Allah’a kulluğa çağırmak, hakikati bildirmek ve doğru yolu göstermek."
+        "a": "İnsanları Allah'a kulluğa çağırmak, hakikati bildirmek ve doğru yolu göstermek."
       },
       "en": {
         "q": "What is the basic mission of the prophets?",
@@ -387,7 +387,7 @@
         "a": "号召人们崇拜安拉、传达真理并指引正道。"
       },
       "sources": [
-        "Kur'an 16:36"
+        "📖 Kur'an — Nahl Sûresi, 16:36 — https://quran.com/16/36"
       ]
     },
     {
@@ -395,7 +395,7 @@
       "day": 4,
       "tr": {
         "q": "Bütün peygamberlerin çağrısı aynı mıydı?",
-        "a": "Temel çağrıları aynıydı: Yalnızca Allah’a kulluk etmek ve O’na ortak koşmamak."
+        "a": "Temel çağrıları aynıydı: Yalnızca Allah'a kulluk etmek ve O'na ortak koşmamak."
       },
       "en": {
         "q": "Was the message of all prophets the same?",
@@ -458,24 +458,24 @@
         "a": "他们的基本号召是相同的：只崇拜安拉，不以任何物与安拉配对。"
       },
       "sources": [
-        "Kur'an 16:36",
-        "Kur'an 21:25"
+        "📖 Kur'an — Nahl Sûresi, 16:36 — https://quran.com/16/36",
+        "📖 Kur'an — Enbiyâ Sûresi, 21:25 — https://quran.com/21/25"
       ]
     },
     {
       "id": 62,
       "day": 4,
       "tr": {
-        "q": "Kur’an’dan adı geçen bazı peygamberler kimlerdir?",
-        "a": "Âdem, Nûh, İbrahim, Mûsâ, Îsâ ve Muhammed ﷺ gibi birçok peygamber Kur’an’da zikredilir."
+        "q": "Kur'an'dan adı geçen bazı peygamberler kimlerdir?",
+        "a": "Âdem, Nûh, İbrahim, Mûsâ, Îsâ ve Muhammed ﷺ gibi birçok peygamber Kur'an'da zikredilir."
       },
       "en": {
-        "q": "Which prophets are mentioned in the Qur’an?",
+        "q": "Which prophets are mentioned in the Qur'an?",
         "a": "Many prophets are mentioned, including Adam, Noah, Abraham, Moses, Jesus, and Muhammad ﷺ."
       },
       "de": {
-        "q": "Welche Propheten werden im Qur’an erwähnt?",
-        "a": "Unter anderem Adam, Noah, Abraham, Mose, Jesus und Muhammad ﷺ werden im Qur’an erwähnt."
+        "q": "Welche Propheten werden im Qur'an erwähnt?",
+        "a": "Unter anderem Adam, Noah, Abraham, Mose, Jesus und Muhammad ﷺ werden im Qur'an erwähnt."
       },
       "nl": {
         "q": "Welke profeten worden in de Koran genoemd?",
@@ -530,308 +530,307 @@
         "a": "《古兰经》中提到了许多先知，包括阿丹、努哈、易卜拉欣、穆萨、尔萨和穆罕默德 ﷺ。"
       },
       "sources": [
-        "Kur'an 4:163"
+        "📖 Kur'an — Nisâ Sûresi, 4:163 — https://quran.com/4/163"
       ]
     },
     {
       "id": 63,
       "day": 4,
       "tr": {
-        "q": "Hz. Muhammed ﷺ kimdir?",
-        "a": "Allah’ın son peygamberi ve bütün insanlara gönderdiği elçisidir."
+        "q": "Peygamberlere mucize verilmesinin amacı nedir?",
+        "a": "Mucizeler, peygamberin Allah tarafından gönderildiğini kanıtlamak ve insanları hakka davet ederken ona destek olmak için verilmiştir."
       },
       "en": {
-        "q": "Who is Prophet Muhammad ﷺ?",
-        "a": "He is the final prophet of Allah and His messenger sent to all humanity."
+        "q": "What is the purpose of miracles given to prophets?",
+        "a": "Miracles were given to prove that a prophet was truly sent by Allah and to support him as he called people to the truth."
       },
       "de": {
-        "q": "Wer ist der Prophet Muhammad ﷺ?",
-        "a": "Er ist Allahs letzter Prophet und Sein Gesandter für die gesamte Menschheit."
+        "q": "Was ist der Zweck der den Propheten gegebenen Wunder?",
+        "a": "Die Wunder wurden gegeben, um zu beweisen, dass der Prophet wirklich von Allah gesandt wurde, und um ihn bei der Verkündung der Wahrheit zu unterstützen."
       },
       "nl": {
-        "q": "Wie is de profeet Muhammad ﷺ?",
-        "a": "Hij is de laatste profeet van Allah en Zijn boodschapper voor de hele mensheid."
+        "q": "Wat is het doel van de wonderen die aan profeten zijn gegeven?",
+        "a": "Wonderen werden gegeven om te bewijzen dat de profeet werkelijk door Allah was gezonden en om hem te steunen bij het oproepen tot de waarheid."
       },
       "fr": {
-        "q": "Qui est le prophète Muhammad ﷺ ?",
-        "a": "Il est le dernier prophète d’Allah et Son messager envoyé à toute l’humanité."
+        "q": "Quel est le but des miracles accordés aux prophètes ?",
+        "a": "Les miracles ont été donnés pour prouver que le prophète était véritablement envoyé par Allah et pour le soutenir dans son appel à la vérité."
       },
       "ru": {
-        "q": "Кто такой пророк Мухаммад ﷺ?",
-        "a": "Он последний пророк Аллаха и Его посланник, отправленный ко всему человечеству."
+        "q": "Какова цель чудес, данных пророкам?",
+        "a": "Чудеса были даны, чтобы доказать, что пророк действительно послан Аллахом, и поддержать его в призыве людей к истине."
       },
       "ku": {
-        "q": "Hz. Muhammed ﷺ kî ye?",
-        "a": "Ew pêxemberê dawî yê Allah û şandiyê Wî ye ku ji bo hemû mirovan hatiye şandin."
+        "q": "Armanca dayîna mûcîzeyan bo pêxemberan çi ye?",
+        "a": "Mûcîze hatin dayîn ji bo îspat bikin ku pêxember ji aliyê Xwedê ve hatiye şandin û ji bo piştgiriya wî di vexwendina mirovan ber bi rastiyê de."
       },
       "tt": {
-        "q": "Мөхәммәд ﷺ кем ул?",
-        "a": "Ул — Аллаһның соңгы пәйгамбәре һәм бөтен кешелеккә җибәрелгән илчесе."
+        "q": "Пәйгамбәрләргә могҗиза бирүнең максаты нинди?",
+        "a": "Могҗизалар пәйгамбәрнең чыннан да Аллаһ тарафыннан җибәрелгәнен раслау һәм аны кешеләрне хакыйкатькә чакырганда ярдәм итү өчен бирелгән."
       },
       "ar": {
-        "q": "مَنْ هُوَ مُحَمَّدٌ ﷺ؟",
-        "a": "هُوَ خَاتَمُ أَنْبِيَاءِ اللَّهِ وَرَسُولُهُ الْمُرْسَلُ إِلَى النَّاسِ جَمِيعًا."
+        "q": "مَا الْغَايَةُ مِنْ إِعْطَاءِ الْمُعْجِزَاتِ لِلْأَنْبِيَاءِ؟",
+        "a": "أُعْطِيَتِ الْمُعْجِزَاتُ لِإِثْبَاتِ أَنَّ النَّبِيَّ مُرْسَلٌ حَقًّا مِنَ اللَّهِ، وَلِمُؤَازَرَتِهِ وَهُوَ يَدْعُو النَّاسَ إِلَى الْحَقِّ."
       },
       "es": {
-        "q": "¿Quién es el profeta Muhammad ﷺ?",
-        "a": "Es el último profeta de Allah y Su mensajero enviado a toda la humanidad."
+        "q": "¿Cuál es el propósito de los milagros dados a los profetas?",
+        "a": "Los milagros se dieron para demostrar que el profeta fue verdaderamente enviado por Allah y para apoyarlo al llamar a la gente hacia la verdad."
       },
       "it": {
-        "q": "Chi è il profeta Muhammad ﷺ?",
-        "a": "È l’ultimo profeta di Allah e il Suo messaggero inviato a tutta l’umanità."
+        "q": "Qual è lo scopo dei miracoli concessi ai profeti?",
+        "a": "I miracoli furono dati per dimostrare che il profeta era davvero inviato da Allah e per sostenerlo nel chiamare le persone verso la verità."
       },
       "pt": {
-        "q": "Quem é o profeta Muhammad ﷺ?",
-        "a": "Ele é o último profeta de Allah e Seu mensageiro enviado a toda a humanidade."
+        "q": "Qual é o propósito dos milagres dados aos profetas?",
+        "a": "Os milagres foram dados para provar que o profeta foi verdadeiramente enviado por Allah e para apoiá-lo ao chamar as pessoas à verdade."
       },
       "ko": {
-        "q": "무함마드 ﷺ 예언자는 누구입니까?",
-        "a": "그는 알라의 마지막 예언자이며 온 인류에게 보내진 그분의 사도입니다."
+        "q": "예언자들에게 기적이 주어진 목적은 무엇입니까?",
+        "a": "기적은 그 예언자가 참으로 알라께서 보내신 자임을 증명하고, 사람들을 진리로 부를 때 그를 돕기 위해 주어졌습니다."
       },
       "vi": {
-        "q": "Nhà tiên tri Muhammad ﷺ là ai?",
-        "a": "Ngài là vị tiên tri cuối cùng của Allah và là vị sứ giả của Ngài được gửi đến toàn thể nhân loại."
+        "q": "Mục đích của phép lạ ban cho các nhà tiên tri là gì?",
+        "a": "Phép lạ được ban để chứng minh vị tiên tri thực sự được Allah cử phái, và để hỗ trợ người ấy khi kêu gọi con người đến với chân lý."
       },
       "ja": {
-        "q": "預言者ムハンマド ﷺ とは誰ですか？",
-        "a": "彼はアッラーの最後の預言者であり、全人類に遣わされた使徒です。"
+        "q": "預言者に奇跡が与えられた目的は何ですか？",
+        "a": "奇跡は、その預言者が本当にアッラーによって遣わされたことを証明し、人々を真理へ招く際に彼を支えるために与えられました。"
       },
       "zh": {
-        "q": "先知穆罕默德 ﷺ 是谁？",
-        "a": "他是安拉的最后一位先知，也是被派遣给全人类的使者。"
+        "q": "赋予先知奇迹的目的是什么？",
+        "a": "奇迹的赐予是为了证明该先知确系安拉所派遣，并在他召唤人们归信真理时给予支持。"
       },
       "sources": [
-        "Kur'an 33:40",
-        "Kur'an 34:28"
+        "📖 Kur'an — Ankebût Sûresi, 29:50 — https://quran.com/29/50"
       ]
     },
     {
       "id": 64,
       "day": 4,
       "tr": {
-        "q": "Hz. Muhammed ﷺ hangi şehirde doğdu?",
-        "a": "Mekke’de doğdu."
+        "q": "Peygamberler günahtan korunmuş mudur? (İsmet sıfatı)",
+        "a": "Evet, peygamberler Allah tarafından büyük ve küçük günahlardan korunmuştur; bu 'ismet' sıfatı, tebliğ ettikleri vahyin güvenilirliğini sağlar."
       },
       "en": {
-        "q": "In which city was Prophet Muhammad ﷺ born?",
-        "a": "He was born in Makkah."
+        "q": "Are prophets protected from sin? (The attribute of 'ismah)",
+        "a": "Yes, prophets are protected by Allah from major and minor sins; this attribute of 'ismah (infallibility) safeguards the reliability of the revelation they convey."
       },
       "de": {
-        "q": "In welcher Stadt wurde der Prophet Muhammad ﷺ geboren?",
-        "a": "Er wurde in Mekka geboren."
+        "q": "Sind Propheten vor Sünde bewahrt? (Die Eigenschaft der 'Isma)",
+        "a": "Ja, Propheten sind von Allah vor großen und kleinen Sünden bewahrt; diese Eigenschaft der 'Isma sichert die Zuverlässigkeit der von ihnen verkündeten Offenbarung."
       },
       "nl": {
-        "q": "In welke stad werd de profeet Muhammad ﷺ geboren?",
-        "a": "Hij werd geboren in Mekka."
+        "q": "Zijn profeten beschermd tegen zonde? (De eigenschap 'isma)",
+        "a": "Ja, profeten zijn door Allah beschermd tegen grote en kleine zonden; deze eigenschap ('isma) waarborgt de betrouwbaarheid van de openbaring die zij verkondigen."
       },
       "fr": {
-        "q": "Dans quelle ville le prophète Muhammad ﷺ est-il né ?",
-        "a": "Il est né à La Mecque."
+        "q": "Les prophètes sont-ils préservés du péché ? (L'attribut de 'isma)",
+        "a": "Oui, les prophètes sont préservés par Allah des grands et petits péchés ; cet attribut de 'isma garantit la fiabilité de la révélation qu'ils transmettent."
       },
       "ru": {
-        "q": "В каком городе родился пророк Мухаммад ﷺ?",
-        "a": "Он родился в Мекке."
+        "q": "Защищены ли пророки от греха? (Качество 'исма)",
+        "a": "Да, Аллах оберегает пророков от больших и малых грехов; это качество ('исма) обеспечивает достоверность передаваемого ими откровения."
       },
       "ku": {
-        "q": "Hz. Muhammed ﷺ li kîjan bajarî ji dayik bû?",
-        "a": "Li Mekkeyê ji dayik bû."
+        "q": "Ma pêxember ji gunehan parastî ne? (Sifeta ismet)",
+        "a": "Belê, pêxember ji aliyê Xwedê ve ji gunehên mezin û biçûk parastî ne; ev sifeta 'ismet' pêbaweriya wahya ku radigihînin misoger dike."
       },
       "tt": {
-        "q": "Мөхәммәд ﷺ кайсы шәһәрдә туган?",
-        "a": "Ул Мәккә шәһәрендә туган."
+        "q": "Пәйгамбәрләр гөнаһтан сакланганмы? (Гыйсмәт сыйфаты)",
+        "a": "Әйе, пәйгамбәрләр Аллаһ тарафыннан зур да, кечкенә дә гөнаһлардан сакланган; бу 'гыйсмәт' сыйфаты алар җиткергән вәхинең ышанычлылыгын тәэмин итә."
       },
       "ar": {
-        "q": "فِي أَيِّ مَدِينَةٍ وُلِدَ النَّبِيُّ مُحَمَّدٌ ﷺ؟",
-        "a": "وُلِدَ فِي مَكَّةَ."
+        "q": "هَلْ الْأَنْبِيَاءُ مَعْصُومُونَ مِنَ الذُّنُوبِ؟ (صِفَةُ الْعِصْمَةِ)",
+        "a": "نَعَمْ، الْأَنْبِيَاءُ مَعْصُومُونَ مِنَ اللَّهِ مِنَ الذُّنُوبِ الْكَبِيرَةِ وَالصَّغِيرَةِ، وَهَذِهِ الصِّفَةُ (الْعِصْمَةُ) تَضْمَنُ مَوْثُوقِيَّةَ الْوَحْيِ الَّذِي يُبَلِّغُونَهُ."
       },
       "es": {
-        "q": "¿En qué ciudad nació el profeta Muhammad ﷺ?",
-        "a": "Nació en La Meca."
+        "q": "¿Están los profetas protegidos del pecado? (El atributo de 'isma)",
+        "a": "Sí, Allah protege a los profetas de los pecados mayores y menores; este atributo ('isma) garantiza la fiabilidad de la revelación que transmiten."
       },
       "it": {
-        "q": "In quale città nacque il profeta Muhammad ﷺ?",
-        "a": "Nacque alla Mecca."
+        "q": "I profeti sono protetti dal peccato? (L'attributo di 'isma)",
+        "a": "Sì, i profeti sono protetti da Allah dai peccati grandi e piccoli; questo attributo ('isma) garantisce l'affidabilità della rivelazione che trasmettono."
       },
       "pt": {
-        "q": "Em que cidade nasceu o profeta Muhammad ﷺ?",
-        "a": "Ele nasceu em Meca."
+        "q": "Os profetas são protegidos do pecado? (O atributo de 'isma)",
+        "a": "Sim, os profetas são protegidos por Allah dos pecados grandes e pequenos; esse atributo ('isma) garante a confiabilidade da revelação que transmitem."
       },
       "ko": {
-        "q": "무함마드 ﷺ 예언자는 어느 도시에서 태어났습니까?",
-        "a": "그는 메카에서 태어났습니다."
+        "q": "예언자는 죄로부터 보호받습니까? ('이스마 속성)",
+        "a": "그렇습니다. 예언자들은 알라에 의해 크고 작은 죄로부터 보호받으며, 이 '이스마' 속성은 그들이 전하는 계시의 신뢰성을 보장합니다."
       },
       "vi": {
-        "q": "Nhà tiên tri Muhammad ﷺ sinh ra ở thành phố nào?",
-        "a": "Ngài sinh ra tại Makkah."
+        "q": "Các nhà tiên tri có được bảo vệ khỏi tội lỗi không? (Thuộc tính 'isma)",
+        "a": "Đúng vậy, Allah bảo vệ các nhà tiên tri khỏi tội lỗi lớn và nhỏ; thuộc tính 'isma này bảo đảm độ tin cậy của mặc khải mà họ truyền đạt."
       },
       "ja": {
-        "q": "預言者ムハンマド ﷺ はどの都市で生まれましたか？",
-        "a": "メッカで生まれました。"
+        "q": "預言者は罪から守られていますか？（イスマの属性）",
+        "a": "はい、預言者はアッラーによって大罪・小罪から守られています。この「イスマ」という属性は、彼らが伝える啓示の信頼性を保証します。"
       },
       "zh": {
-        "q": "先知穆罕默德 ﷺ 出生于哪个城市？",
-        "a": "他出生于麦加。"
+        "q": "先知是否免于犯罪？（无谬性）",
+        "a": "是的，安拉保护先知们免犯大小罪过；这种无谬性确保了他们所传达启示的可靠性。"
       },
       "sources": [
-        "Siyer kaynakları"
+        "📚 Kelâm — Ömer Nasuhi Bilmen, Büyük İslâm İlmihali"
       ]
     },
     {
       "id": 65,
       "day": 4,
       "tr": {
-        "q": "İlk vahiy nerede geldi?",
-        "a": "Hira Mağarası’nda geldi."
+        "q": "Hz. İbrahim (a.s.) hangi yönüyle örnek gösterilir?",
+        "a": "Hz. İbrahim (a.s.), Allah'ın birliğine olan kesin imanı, putlara karşı duruşu ve teslimiyeti sebebiyle Kur'an'da örnek bir önder olarak anılır."
       },
       "en": {
-        "q": "Where did the first revelation come?",
-        "a": "It came in the Cave of Hira."
+        "q": "In what way is Prophet Abraham (a.s.) presented as an example?",
+        "a": "Prophet Abraham (a.s.) is presented in the Qur'an as an exemplary leader because of his firm faith in Allah's oneness, his stand against idols, and his submission to Allah."
       },
       "de": {
-        "q": "Wo kam die erste Offenbarung?",
-        "a": "Sie kam in der Höhle Hira."
+        "q": "In welcher Hinsicht wird der Prophet Abraham (a.s.) als Vorbild genannt?",
+        "a": "Der Prophet Abraham (a.s.) wird im Koran wegen seines festen Glaubens an die Einheit Allahs, seines Widerstands gegen Götzen und seiner Hingabe als vorbildlicher Führer genannt."
       },
       "nl": {
-        "q": "Waar kwam de eerste openbaring?",
-        "a": "In de grot van Hira."
+        "q": "Op welke manier wordt profeet Ibrahim (a.s.) als voorbeeld genoemd?",
+        "a": "Profeet Ibrahim (a.s.) wordt in de Koran genoemd als voorbeeldig leider vanwege zijn vaste geloof in de eenheid van Allah, zijn verzet tegen afgoden en zijn overgave."
       },
       "fr": {
-        "q": "Où la première révélation a-t-elle été reçue ?",
-        "a": "Elle a été reçue dans la grotte de Hira."
+        "q": "Sous quel aspect le prophète Abraham (a.s.) est-il cité en exemple ?",
+        "a": "Le prophète Abraham (a.s.) est cité dans le Coran comme un guide exemplaire pour sa foi ferme en l'unicité d'Allah, son opposition aux idoles et sa soumission."
       },
       "ru": {
-        "q": "Где пророку Мухаммаду ﷺ было ниспослано первое откровение?",
-        "a": "В пещере Хира."
+        "q": "В чём пророк Ибрахим (мир ему) приводится в пример?",
+        "a": "Пророк Ибрахим упоминается в Коране как образцовый предводитель за твёрдую веру в единство Аллаха, противостояние идолам и покорность Аллаху."
       },
       "ku": {
-        "q": "Wahiyê yekem li ku hat?",
-        "a": "Li Şikefta Hîrayê hat."
+        "q": "Hz. Îbrahîm (a.s.) di kîjan alî de wek nimûne tê nîşandan?",
+        "a": "Hz. Îbrahîm (a.s.) di Quranê de wek serokek nimûneyî tê binavkirin, ji ber bawermendiya wî ya bi yekîtiya Xwedê, li dijî pûtan û teslîmbûna wî."
       },
       "tt": {
-        "q": "Беренче вәхи кайда иңгән?",
-        "a": "Ул Хира мәгарәсендә иңгән."
+        "q": "Хәзрәти Ибраһим (г.с.) нинди яктан үрнәк итеп күрсәтелә?",
+        "a": "Хәзрәти Ибраһим (г.с.) Аллаһның берлегенә нык ышануы, потларга каршы торуы һәм буйсынучанлыгы өчен Коръәндә үрнәк җитәкче итеп телгә алына."
       },
       "ar": {
-        "q": "أَيْنَ نَزَلَ الْوَحْيُ الْأَوَّلُ؟",
-        "a": "نَزَلَ فِي غَارِ حِرَاءَ."
+        "q": "بِأَيِّ جَانِبٍ يُذْكَرُ إِبْرَاهِيمُ عَلَيْهِ السَّلَامُ قُدْوَةً؟",
+        "a": "يُذْكَرُ إِبْرَاهِيمُ عَلَيْهِ السَّلَامُ فِي الْقُرْآنِ إِمَامًا قُدْوَةً لِإِيمَانِهِ الرَّاسِخِ بِتَوْحِيدِ اللَّهِ، وَمَوْقِفِهِ ضِدَّ الْأَصْنَامِ، وَتَسْلِيمِهِ لِلَّهِ."
       },
       "es": {
-        "q": "¿Dónde recibió el profeta la primera revelación?",
-        "a": "La recibió en la cueva de Hira."
+        "q": "¿En qué aspecto se presenta al profeta Abraham (a.s.) como ejemplo?",
+        "a": "El profeta Abraham (a.s.) se menciona en el Corán como líder ejemplar por su fe firme en la unicidad de Allah, su oposición a los ídolos y su sumisión."
       },
       "it": {
-        "q": "Dove avvenne la prima rivelazione?",
-        "a": "Avvenne nella grotta di Hira."
+        "q": "In che modo il profeta Abramo (a.s.) è presentato come esempio?",
+        "a": "Il profeta Abramo (a.s.) è citato nel Corano come guida esemplare per la sua ferma fede nell'unicità di Allah, la sua opposizione agli idoli e la sua sottomissione."
       },
       "pt": {
-        "q": "Onde ocorreu a primeira revelação?",
-        "a": "Ela ocorreu na Caverna de Hira."
+        "q": "Em que aspecto o profeta Abraão (a.s.) é apresentado como exemplo?",
+        "a": "O profeta Abraão (a.s.) é mencionado no Alcorão como líder exemplar por sua fé firme na unicidade de Allah, sua posição contra os ídolos e sua submissão."
       },
       "ko": {
-        "q": "첫 번째 계시는 어디에서 내려왔습니까?",
-        "a": "히라 동굴에서 내려왔습니다."
+        "q": "이브라힘(아브라함) 예언자는 어떤 면에서 모범으로 언급됩니까?",
+        "a": "이브라힘 예언자는 알라의 유일성에 대한 확고한 믿음, 우상에 대한 저항, 순종으로 인해 꾸란에서 모범적인 지도자로 언급됩니다."
       },
       "vi": {
-        "q": "Mặc khải đầu tiên được ban xuống ở đâu?",
-        "a": "Mặc khải đầu tiên được ban xuống trong hang Hira."
+        "q": "Tiên tri Ibrahim (Abraham) được nêu gương ở khía cạnh nào?",
+        "a": "Tiên tri Ibrahim được nhắc đến trong Kinh Qur'an như một nhà lãnh đạo mẫu mực nhờ đức tin vững chắc vào sự duy nhất của Allah, việc chống lại tượng thần, và sự quy phục của ông."
       },
       "ja": {
-        "q": "最初の啓示はどこで下されましたか？",
-        "a": "ヒラー洞窟で下されました。"
+        "q": "預言者イブラーヒーム（アブラハム）はどの点で模範とされますか？",
+        "a": "イブラーヒームは、アッラーの唯一性への揺るぎない信仰、偶像への抵抗、そして服従のゆえに、クルアーンの中で模範的な指導者として語られています。"
       },
       "zh": {
-        "q": "第一次启示在哪里降示？",
-        "a": "第一次启示是在希拉山洞降示的。"
+        "q": "易卜拉欣先知在哪方面被树立为榜样？",
+        "a": "易卜拉欣因其对安拉独一性的坚定信仰、反抗偶像崇拜以及顺服安拉，被古兰经誉为典范的领袖。"
       },
       "sources": [
-        "Sahih Buhari, Bed'ü'l-Vahy"
+        "📖 Kur'an — Nahl Sûresi, 16:120 — https://quran.com/16/120"
       ]
     },
     {
       "id": 66,
       "day": 4,
       "tr": {
-        "q": "İlk vahiyde hangi sure ayetleri geldi?",
-        "a": "Alak suresinin ilk beş ayeti geldi."
+        "q": "Hz. Mûsâ (a.s.)'a hangi kutsal kitap verilmiştir?",
+        "a": "Hz. Mûsâ (a.s.)'a Tevrat verilmiştir; Tevrat, İsrâiloğulları'na doğru yolu göstermek üzere indirilen ilâhî bir kitaptır."
       },
       "en": {
-        "q": "Which verses came with the first revelation?",
-        "a": "The first five verses of Surah Al-Alaq were revealed."
+        "q": "Which scripture was given to Prophet Moses (a.s.)?",
+        "a": "Prophet Moses (a.s.) was given the Torah, a divine book revealed to guide the Children of Israel to the right path."
       },
       "de": {
-        "q": "Welche Verse wurden mit der ersten Offenbarung offenbart?",
-        "a": "Die ersten fünf Verse der Sure al-Alaq wurden offenbart."
+        "q": "Welche Schrift wurde dem Propheten Moses (a.s.) gegeben?",
+        "a": "Dem Propheten Moses (a.s.) wurde die Tora gegeben, ein göttliches Buch, das herabgesandt wurde, um die Kinder Israels auf den rechten Weg zu leiten."
       },
       "nl": {
-        "q": "Welke verzen kwamen met de eerste openbaring?",
-        "a": "De eerste vijf verzen van soera Al-Alaq werden geopenbaard."
+        "q": "Welk heilig boek is aan profeet Musa (a.s.) gegeven?",
+        "a": "Aan profeet Musa (a.s.) is de Thora gegeven, een goddelijk boek dat is neergezonden om de Kinderen van Israël naar het rechte pad te leiden."
       },
       "fr": {
-        "q": "Quels versets ont été révélés lors de la première révélation ?",
-        "a": "Les cinq premiers versets de la sourate Al-Alaq."
+        "q": "Quel livre saint a été donné au prophète Moïse (a.s.) ?",
+        "a": "Le prophète Moïse (a.s.) a reçu la Torah, un livre divin révélé pour guider les Enfants d'Israël sur le droit chemin."
       },
       "ru": {
-        "q": "Какие аяты были ниспосланы при первом откровении?",
-        "a": "Первые пять аятов суры «Аль-Алак»."
+        "q": "Какое писание было дано пророку Мусе (мир ему)?",
+        "a": "Пророку Мусе была дана Тора — божественная книга, ниспосланная, чтобы направить сынов Исраиля на правильный путь."
       },
       "ku": {
-        "q": "Di wahiyê yekem de kîjan ayet hatin?",
-        "a": "Pênc ayetên yekem ên Sûreya El-Alaqê hatin."
+        "q": "Kîjan pirtûka pîroz ji Hz. Mûsa (a.s.) re hatiye dayîn?",
+        "a": "Hz. Mûsa (a.s.) re Tewrat hatiye dayîn; Tewrat pirtûkek îlahî ye ku ji bo rêberiya Zarokên Îsraîl hatiye şandin."
       },
       "tt": {
-        "q": "Беренче вәхи белән нинди аятьләр иңгән?",
-        "a": "«Әл-Галәк» сүрәсенең беренче биш аяте иңгән."
+        "q": "Хәзрәти Мусага (г.с.) нинди изге китап бирелгән?",
+        "a": "Хәзрәти Мусага Тәүрат бирелгән; Тәүрат — Исраил уллары туры юлга чакыру өчен иңдерелгән илаһи китап."
       },
       "ar": {
-        "q": "مَا الْآيَاتُ الَّتِي نَزَلَتْ فِي أَوَّلِ الْوَحْيِ؟",
-        "a": "نَزَلَتِ الْآيَاتُ الْخَمْسُ الْأُولَى مِنْ سُورَةِ الْعَلَقِ."
+        "q": "أَيُّ كِتَابٍ أُنْزِلَ عَلَى مُوسَى عَلَيْهِ السَّلَامُ؟",
+        "a": "أُنْزِلَتْ عَلَى مُوسَى عَلَيْهِ السَّلَامُ التَّوْرَاةُ، وَهِيَ كِتَابٌ إِلَهِيٌّ نَزَلَ لِهِدَايَةِ بَنِي إِسْرَائِيلَ إِلَى الطَّرِيقِ الْقَوِيمِ."
       },
       "es": {
-        "q": "¿Qué versículos fueron revelados con la primera revelación?",
-        "a": "Los primeros cinco versículos de la sura Al-Alaq."
+        "q": "¿Qué libro sagrado se dio al profeta Moisés (a.s.)?",
+        "a": "Al profeta Moisés (a.s.) se le dio la Torá, un libro divino revelado para guiar a los Hijos de Israel por el camino recto."
       },
       "it": {
-        "q": "Quali versetti furono rivelati per primi?",
-        "a": "Furono rivelati i primi cinque versetti della sura Al-Alaq."
+        "q": "Quale libro sacro fu dato al profeta Mosè (a.s.)?",
+        "a": "Al profeta Mosè (a.s.) fu data la Torah, un libro divino rivelato per guidare i Figli d'Israele sulla retta via."
       },
       "pt": {
-        "q": "Quais versículos foram revelados na primeira revelação?",
-        "a": "Foram revelados os cinco primeiros versículos da Surata Al-Alaq."
+        "q": "Qual livro sagrado foi dado ao profeta Moisés (a.s.)?",
+        "a": "Ao profeta Moisés (a.s.) foi dada a Torá, um livro divino revelado para guiar os Filhos de Israel pelo caminho reto."
       },
       "ko": {
-        "q": "첫 번째 계시에서 어떤 구절들이 내려왔습니까?",
-        "a": "알알라크 수라의 첫 다섯 구절이 내려왔습니다."
+        "q": "무사(모세) 예언자에게 주어진 경전은 무엇입니까?",
+        "a": "무사 예언자에게는 토라가 주어졌으며, 이는 이스라엘 자손을 올바른 길로 인도하기 위해 계시된 경전입니다."
       },
       "vi": {
-        "q": "Những câu nào được ban xuống trong mặc khải đầu tiên?",
-        "a": "Năm câu đầu tiên của Surah Al-Alaq đã được ban xuống."
+        "q": "Tiên tri Musa (Moses) được ban cho kinh sách nào?",
+        "a": "Tiên tri Musa được ban cho Kinh Torah, một kinh sách thiêng liêng được mặc khải để hướng dẫn con cháu Israel đi theo con đường ngay chính."
       },
       "ja": {
-        "q": "最初の啓示ではどの節が下されましたか？",
-        "a": "スーラ・アル＝アラクの最初の5節が下されました。"
+        "q": "預言者ムーサー（モーセ）に与えられた啓典は何ですか？",
+        "a": "ムーサーにはタウラート（律法）が与えられました。これはイスラエルの民を正しい道に導くために下された啓典です。"
       },
       "zh": {
-        "q": "第一次启示降示了哪些经文？",
-        "a": "降示的是《血块章》的前五节。"
+        "q": "穆萨（摩西）先知被赐予了哪部经典？",
+        "a": "穆萨先知被赐予了《讨拉特》（律法书），这是为引导以色列的子孙走上正道而降示的经典。"
       },
       "sources": [
-        "Kur'an 96:1-5"
+        "📖 Kur'an — İsrâ Sûresi, 17:2 — https://quran.com/17/2"
       ]
     },
     {
       "id": 67,
       "day": 4,
       "tr": {
-        "q": "Kur’an kime indirildi?",
-        "a": "Kur’an, Hz. Muhammed ﷺ’e indirildi."
+        "q": "Kur'an kime indirildi?",
+        "a": "Kur'an, Hz. Muhammed ﷺ'e indirildi."
       },
       "en": {
-        "q": "To whom was the Qur’an revealed?",
-        "a": "The Qur’an was revealed to Prophet Muhammad ﷺ."
+        "q": "To whom was the Qur'an revealed?",
+        "a": "The Qur'an was revealed to Prophet Muhammad ﷺ."
       },
       "de": {
-        "q": "Wem wurde der Qur’an offenbart?",
-        "a": "Der Qur’an wurde dem Propheten Muhammad ﷺ offenbart."
+        "q": "Wem wurde der Qur'an offenbart?",
+        "a": "Der Qur'an wurde dem Propheten Muhammad ﷺ offenbart."
       },
       "nl": {
         "q": "Aan wie werd de Koran geopenbaard?",
@@ -886,23 +885,23 @@
         "a": "《古兰经》降示给先知穆罕默德 ﷺ。"
       },
       "sources": [
-        "Kur'an 26:192-195"
+        "📖 Kur'an — Şuarâ Sûresi, 26:192-195 — https://quran.com/26/192-195"
       ]
     },
     {
       "id": 68,
       "day": 4,
       "tr": {
-        "q": "Kur’an ne kadar sürede indirildi?",
-        "a": "Kur’an yaklaşık 23 yıllık peygamberlik süresi boyunca parça parça indirildi."
+        "q": "Kur'an ne kadar sürede indirildi?",
+        "a": "Kur'an yaklaşık 23 yıllık peygamberlik süresi boyunca parça parça indirildi."
       },
       "en": {
-        "q": "Over how long was the Qur’an revealed?",
-        "a": "The Qur’an was revealed gradually over approximately 23 years of prophethood."
+        "q": "Over how long was the Qur'an revealed?",
+        "a": "The Qur'an was revealed gradually over approximately 23 years of prophethood."
       },
       "de": {
-        "q": "Über welchen Zeitraum wurde der Qur’an offenbart?",
-        "a": "Der Qur’an wurde während einer etwa 23 Jahre dauernden Prophetenschaft schrittweise offenbart."
+        "q": "Über welchen Zeitraum wurde der Qur'an offenbart?",
+        "a": "Der Qur'an wurde während einer etwa 23 Jahre dauernden Prophetenschaft schrittweise offenbart."
       },
       "nl": {
         "q": "Over welke periode werd de Koran geopenbaard?",
@@ -957,87 +956,87 @@
         "a": "《古兰经》在先知使命约23年的时间里逐步降示。"
       },
       "sources": [
-        "Kur'an 17:106",
-        "Kur'an 25:32"
+        "📖 Kur'an — İsrâ Sûresi, 17:106 — https://quran.com/17/106",
+        "📖 Kur'an — Furkān Sûresi, 25:32 — https://quran.com/25/32"
       ]
     },
     {
       "id": 69,
       "day": 4,
       "tr": {
-        "q": "Kur’an hangi melek aracılığıyla Hz. Muhammed ﷺ’e getirildi?",
-        "a": "Cebrâil (a.s.) aracılığıyla getirildi."
+        "q": "Neden birden fazla peygamber gönderilmiştir?",
+        "a": "Allah, her topluma doğru yolu göstermek ve insanların kıyamet günü mazeret ileri sürmesini önlemek için tarih boyunca farklı topluluklara peygamberler göndermiştir."
       },
       "en": {
-        "q": "Which angel brought the Qur’an to Prophet Muhammad ﷺ?",
-        "a": "It was brought by Jibril (Gabriel), peace be upon him."
+        "q": "Why were many prophets sent?",
+        "a": "Allah sent prophets to different peoples throughout history to guide each community to the right path and so that people would have no excuse on the Day of Judgment."
       },
       "de": {
-        "q": "Welcher Engel brachte den Qur’an zum Propheten Muhammad ﷺ?",
-        "a": "Der Engel Dschibril (Gabriel) überbrachte ihn."
+        "q": "Warum wurden viele Propheten gesandt?",
+        "a": "Allah sandte im Laufe der Geschichte verschiedenen Völkern Propheten, um jede Gemeinschaft auf den rechten Weg zu leiten und den Menschen am Jüngsten Tag keine Ausrede zu lassen."
       },
       "nl": {
-        "q": "Welke engel bracht de Koran naar de profeet Muhammad ﷺ?",
-        "a": "De engel Jibril (Gabriël), vrede zij met hem, bracht hem."
+        "q": "Waarom zijn er meerdere profeten gezonden?",
+        "a": "Allah zond door de geschiedenis heen profeten naar verschillende volkeren om elke gemeenschap naar het rechte pad te leiden en zodat mensen geen excuus zouden hebben op de Dag des Oordeels."
       },
       "fr": {
-        "q": "Quel ange a apporté le Coran au prophète Muhammad ﷺ ?",
-        "a": "L’ange Jibril (Gabriel), paix sur lui, l’a apporté."
+        "q": "Pourquoi plusieurs prophètes ont-ils été envoyés ?",
+        "a": "Allah a envoyé des prophètes à différents peuples tout au long de l'histoire pour guider chaque communauté sur le droit chemin et pour que les gens n'aient aucune excuse au Jour du Jugement."
       },
       "ru": {
-        "q": "Какой ангел приносил Коран пророку Мухаммаду ﷺ?",
-        "a": "Его приносил Джибриль, мир ему."
+        "q": "Почему было послано много пророков?",
+        "a": "Аллах на протяжении истории посылал пророков разным народам, чтобы направить каждую общину на правильный путь и лишить людей оправданий в Судный день."
       },
       "ku": {
-        "q": "Kîjan milyaket Qur'an ji Hz. Muhammed ﷺ re anî?",
-        "a": "Cibrîl (a.s.) ew anî."
+        "q": "Çima gelek pêxember hatine şandin?",
+        "a": "Xwedê di dirêjahiya dîrokê de bo gelên cuda pêxember şandine, da ku her civakê ber bi rêya rast ve rêber bike û mirov di Roja Qiyametê de mazûret nebînin."
       },
       "tt": {
-        "q": "Коръәнне Мөхәммәд ﷺ пәйгамбәргә кайсы фәрештә китергән?",
-        "a": "Аны Җәбраил (г.с.) китергән."
+        "q": "Ни өчен күп кенә пәйгамбәрләр җибәрелгән?",
+        "a": "Аллаһ тарих буена төрле халыкларга пәйгамбәрләр җибәргән, һәр җәмгыятьне туры юлга чакыру һәм кешеләрнең Кыямәт көнендә бәһанә китерүен булдырмау өчен."
       },
       "ar": {
-        "q": "أَيُّ مَلَكٍ نَزَّلَ الْقُرْآنَ عَلَى مُحَمَّدٍ ﷺ؟",
-        "a": "نَزَّلَهُ جِبْرِيلُ عَلَيْهِ السَّلَامُ."
+        "q": "لِمَاذَا أُرْسِلَ أَنْبِيَاءُ كَثِيرُونَ؟",
+        "a": "أَرْسَلَ اللَّهُ عَبْرَ التَّارِيخِ أَنْبِيَاءَ إِلَى أُمَمٍ مُخْتَلِفَةٍ لِهِدَايَةِ كُلِّ أُمَّةٍ إِلَى الطَّرِيقِ الْقَوِيمِ وَلِئَلَّا يَكُونَ لِلنَّاسِ عُذْرٌ يَوْمَ الْقِيَامَةِ."
       },
       "es": {
-        "q": "¿Qué ángel llevó el Corán al profeta Muhammad ﷺ?",
-        "a": "Lo llevó el ángel Yibril (Gabriel), la paz sea con él."
+        "q": "¿Por qué se enviaron muchos profetas?",
+        "a": "Allah envió profetas a diferentes pueblos a lo largo de la historia para guiar a cada comunidad por el camino recto y para que la gente no tuviera excusa el Día del Juicio."
       },
       "it": {
-        "q": "Quale angelo portò il Corano al profeta Muhammad ﷺ?",
-        "a": "Fu l’angelo Jibril (Gabriele), pace su di lui."
+        "q": "Perché furono inviati molti profeti?",
+        "a": "Allah inviò profeti a popoli diversi lungo la storia per guidare ogni comunità sulla retta via e affinché le persone non avessero scuse nel Giorno del Giudizio."
       },
       "pt": {
-        "q": "Qual anjo trouxe o Alcorão ao profeta Muhammad ﷺ?",
-        "a": "Foi trazido pelo anjo Jibril (Gabriel), que a paz esteja com ele."
+        "q": "Por que foram enviados muitos profetas?",
+        "a": "Allah enviou profetas a diferentes povos ao longo da história para guiar cada comunidade pelo caminho reto e para que as pessoas não tivessem desculpas no Dia do Juízo."
       },
       "ko": {
-        "q": "어떤 천사가 꾸란을 무함마드 ﷺ 예언자에게 가져왔습니까?",
-        "a": "지브릴(가브리엘) 천사가 가져왔습니다. 그에게 평화가 있기를 바랍니다."
+        "q": "왜 여러 예언자가 보내졌습니까?",
+        "a": "알라께서는 역사를 통해 여러 민족에게 예언자를 보내시어 각 공동체를 올바른 길로 인도하시고, 심판의 날에 사람들이 변명할 수 없게 하셨습니다."
       },
       "vi": {
-        "q": "Vị thiên thần nào đã mang Kinh Qur'an đến cho Nhà tiên tri Muhammad ﷺ?",
-        "a": "Thiên thần Jibril (Gabriel), cầu bình an cho người, đã mang Kinh Qur'an đến."
+        "q": "Tại sao nhiều nhà tiên tri đã được cử phái?",
+        "a": "Xuyên suốt lịch sử, Allah đã cử các nhà tiên tri đến với những dân tộc khác nhau để hướng dẫn mỗi cộng đồng theo con đường ngay chính, để con người không có lý do biện minh vào Ngày Phán Xét."
       },
       "ja": {
-        "q": "どの天使がクルアーンを預言者ムハンマド ﷺ にもたらしましたか？",
-        "a": "天使ジブリール（ガブリエル）がもたらしました。彼に平安あれ。"
+        "q": "なぜ多くの預言者が遣わされたのですか？",
+        "a": "アッラーは歴史を通じて様々な民に預言者を遣わし、それぞれの共同体を正しい道に導き、審判の日に人々が言い訳できないようにされました。"
       },
       "zh": {
-        "q": "哪位天使把《古兰经》带给先知穆罕默德 ﷺ？",
-        "a": "天使哲布拉仪来传达了它，愿他平安。"
+        "q": "为什么派遣了许多先知？",
+        "a": "安拉在历史长河中向不同的民族派遣先知，以引导每个族群走上正道，使人们在末日无可推诿。"
       },
       "sources": [
-        "Kur'an 26:193"
+        "📖 Kur'an — Nisâ Sûresi, 4:165 — https://quran.com/4/165"
       ]
     },
     {
       "id": 70,
       "day": 4,
       "tr": {
-        "q": "Hz. Muhammed ﷺ’in peygamberliğinin temel mesajı neydi?",
-        "a": "Allah’ın birliğine iman etmek ve yalnızca O’na kulluk etmek."
+        "q": "Hz. Muhammed ﷺ'in peygamberliğinin temel mesajı neydi?",
+        "a": "Allah'ın birliğine iman etmek ve yalnızca O'na kulluk etmek."
       },
       "en": {
         "q": "What was the central message of Prophet Muhammad ﷺ?",
@@ -1053,7 +1052,7 @@
       },
       "fr": {
         "q": "Quel était le message central du prophète Muhammad ﷺ ?",
-        "a": "Croire en l’unicité d’Allah et n’adorer que Lui."
+        "a": "Croire en l'unicité d'Allah et n'adorer que Lui."
       },
       "ru": {
         "q": "Каково было основное послание пророка Мухаммада ﷺ?",
@@ -1077,7 +1076,7 @@
       },
       "it": {
         "q": "Qual era il messaggio centrale del profeta Muhammad ﷺ?",
-        "a": "Credere nell’unicità di Allah e adorare soltanto Lui."
+        "a": "Credere nell'unicità di Allah e adorare soltanto Lui."
       },
       "pt": {
         "q": "Qual era a mensagem central do profeta Muhammad ﷺ?",
@@ -1100,16 +1099,16 @@
         "a": "信仰安拉的独一性，只崇拜安拉。"
       },
       "sources": [
-        "Kur'an 21:25",
-        "Kur'an 16:36"
+        "📖 Kur'an — Enbiyâ Sûresi, 21:25 — https://quran.com/21/25",
+        "📖 Kur'an — Nahl Sûresi, 16:36 — https://quran.com/16/36"
       ]
     },
     {
       "id": 71,
       "day": 4,
       "tr": {
-        "q": "Hz. Muhammed ﷺ’in peygamberlerin sonuncusu olduğu nerede bildirilmiştir?",
-        "a": "Kur’an’da Ahzâb suresinin 40. ayetinde bildirilmiştir."
+        "q": "Hz. Muhammed ﷺ'in peygamberlerin sonuncusu olduğu nerede bildirilmiştir?",
+        "a": "Kur'an'da Ahzâb suresinin 40. ayetinde bildirilmiştir."
       },
       "en": {
         "q": "Where is it stated that Muhammad ﷺ is the last of the prophets?",
@@ -1125,7 +1124,7 @@
       },
       "fr": {
         "q": "Où est-il indiqué que Muhammad ﷺ est le dernier des prophètes ?",
-        "a": "C’est indiqué dans le verset 40 de la sourate Al-Ahzab."
+        "a": "C'est indiqué dans le verset 40 de la sourate Al-Ahzab."
       },
       "ru": {
         "q": "Где говорится, что Мухаммад ﷺ является последним из пророков?",
@@ -1148,7 +1147,7 @@
         "a": "Se indica en la aleya 40 de la sura Al-Ahzab."
       },
       "it": {
-        "q": "Dove è detto che Muhammad ﷺ è l’ultimo dei profeti?",
+        "q": "Dove è detto che Muhammad ﷺ è l'ultimo dei profeti?",
         "a": "È detto nel versetto 40 della sura Al-Ahzab."
       },
       "pt": {
@@ -1172,7 +1171,7 @@
         "a": "《艾哈萨卜章》第40节说明了这一点。"
       },
       "sources": [
-        "Kur'an 33:40"
+        "📖 Kur'an — Ahzâb Sûresi, 33:40 — https://quran.com/33/40"
       ]
     },
     {
@@ -1180,7 +1179,7 @@
       "day": 4,
       "tr": {
         "q": "Peygamberlere iman ne demektir?",
-        "a": "Allah’ın gönderdiği bütün peygamberlerin hak olduğuna inanmak demektir."
+        "a": "Allah'ın gönderdiği bütün peygamberlerin hak olduğuna inanmak demektir."
       },
       "en": {
         "q": "What does belief in the prophets mean?",
@@ -1243,7 +1242,7 @@
         "a": "就是相信安拉派遣的所有先知都是真实的。"
       },
       "sources": [
-        "Kur'an 2:285"
+        "📖 Kur'an — Bakara Sûresi, 2:285 — https://quran.com/2/285"
       ]
     },
     {
@@ -1251,11 +1250,11 @@
       "day": 4,
       "tr": {
         "q": "Müslüman peygamberlerden herhangi birini inkâr edebilir mi?",
-        "a": "Hayır. Allah’ın peygamberleri arasında iman bakımından ayrım yapılmaz."
+        "a": "Hayır. Allah'ın peygamberleri arasında iman bakımından ayrım yapılmaz."
       },
       "en": {
         "q": "Can a Muslim reject any of the prophets?",
-        "a": "No. A Muslim does not reject any of Allah’s prophets."
+        "a": "No. A Muslim does not reject any of Allah's prophets."
       },
       "de": {
         "q": "Darf ein Muslim einen der Propheten ablehnen?",
@@ -1266,8 +1265,8 @@
         "a": "Nee. Een moslim verwerpt geen enkele profeet van Allah."
       },
       "fr": {
-        "q": "Un musulman peut-il rejeter l’un des prophètes ?",
-        "a": "Non. Le musulman ne rejette aucun des prophètes d’Allah."
+        "q": "Un musulman peut-il rejeter l'un des prophètes ?",
+        "a": "Non. Le musulman ne rejette aucun des prophètes d'Allah."
       },
       "ru": {
         "q": "Может ли мусульманин отрицать какого-либо пророка?",
@@ -1314,7 +1313,7 @@
         "a": "不可以。穆斯林不否认安拉的任何一位先知。"
       },
       "sources": [
-        "Kur'an 2:136"
+        "📖 Kur'an — Bakara Sûresi, 2:136 — https://quran.com/2/136"
       ]
     },
     {
@@ -1322,11 +1321,11 @@
       "day": 4,
       "tr": {
         "q": "Hz. Îsâ (a.s.) Müslümanlara göre kimdir?",
-        "a": "Allah’ın peygamberlerinden biridir ve Allah’ın kuludur."
+        "a": "Allah'ın peygamberlerinden biridir ve Allah'ın kuludur."
       },
       "en": {
         "q": "Who is Jesus (Isa), according to Muslims?",
-        "a": "He is one of Allah’s prophets and a servant of Allah."
+        "a": "He is one of Allah's prophets and a servant of Allah."
       },
       "de": {
         "q": "Wer ist Jesus (Isa) nach islamischem Glauben?",
@@ -1337,8 +1336,8 @@
         "a": "Hij is een van de profeten van Allah en een dienaar van Allah."
       },
       "fr": {
-        "q": "Qui est Jésus (Issa) selon l’islam ?",
-        "a": "Il est l’un des prophètes d’Allah et un serviteur d’Allah."
+        "q": "Qui est Jésus (Issa) selon l'islam ?",
+        "a": "Il est l'un des prophètes d'Allah et un serviteur d'Allah."
       },
       "ru": {
         "q": "Кем является Иса согласно исламу?",
@@ -1361,7 +1360,7 @@
         "a": "Es uno de los profetas de Allah y un siervo de Allah."
       },
       "it": {
-        "q": "Chi è Gesù (Isa) secondo l’Islam?",
+        "q": "Chi è Gesù (Isa) secondo l'Islam?",
         "a": "È uno dei profeti di Allah e un servo di Allah."
       },
       "pt": {
@@ -1385,24 +1384,24 @@
         "a": "他是安拉的众先知之一，也是安拉的仆人。"
       },
       "sources": [
-        "Kur'an 19:30",
-        "Kur'an 3:45"
+        "📖 Kur'an — Meryem Sûresi, 19:30 — https://quran.com/19/30",
+        "📖 Kur'an — Âl-i İmrân Sûresi, 3:45 — https://quran.com/3/45"
       ]
     },
     {
       "id": 75,
       "day": 4,
       "tr": {
-        "q": "Peygamberimiz Hz. Muhammed ﷺ’in ahlâkı nasıldı?",
-        "a": "Çok güzel ve üstün bir ahlâka sahipti; Kur’an onun ahlâkını övmüştür."
+        "q": "Peygamberimiz Hz. Muhammed ﷺ'in ahlâkı nasıldı?",
+        "a": "Çok güzel ve üstün bir ahlâka sahipti; Kur'an onun ahlâkını övmüştür."
       },
       "en": {
         "q": "What was the character of Prophet Muhammad ﷺ like?",
-        "a": "He had excellent and noble character, and the Qur’an praised his character."
+        "a": "He had excellent and noble character, and the Qur'an praised his character."
       },
       "de": {
         "q": "Wie war der Charakter des Propheten Muhammad ﷺ?",
-        "a": "Er hatte einen vorzüglichen und edlen Charakter, den der Qur’an lobt."
+        "a": "Er hatte einen vorzüglichen und edlen Charakter, den der Qur'an lobt."
       },
       "nl": {
         "q": "Hoe was het karakter van de profeet Muhammad ﷺ?",
@@ -1433,7 +1432,7 @@
         "a": "Tenía un carácter excelente y noble, el cual el Corán elogió."
       },
       "it": {
-        "q": "Com’era il carattere del profeta Muhammad ﷺ?",
+        "q": "Com'era il carattere del profeta Muhammad ﷺ?",
         "a": "Aveva un carattere eccellente e nobile, lodato dal Corano."
       },
       "pt": {
@@ -1457,14 +1456,14 @@
         "a": "他具有极其优秀和高尚的品德，《古兰经》赞美了他的品德。"
       },
       "sources": [
-        "Kur'an 68:4"
+        "📖 Kur'an — Kalem Sûresi, 68:4 — https://quran.com/68/4"
       ]
     },
     {
       "id": 76,
       "day": 4,
       "tr": {
-        "q": "Bir Müslüman Hz. Muhammed ﷺ’e karşı nasıl davranmalıdır?",
+        "q": "Bir Müslüman Hz. Muhammed ﷺ'e karşı nasıl davranmalıdır?",
         "a": "Ona iman etmeli, onu sevmeli, sünnetine uymalı ve getirdiği vahye bağlı kalmalıdır."
       },
       "en": {
@@ -1481,7 +1480,7 @@
       },
       "fr": {
         "q": "Comment un musulman doit-il se comporter envers le prophète Muhammad ﷺ ?",
-        "a": "Il doit croire en lui, l’aimer, suivre sa Sunna et rester attaché à la révélation qu’il a apportée."
+        "a": "Il doit croire en lui, l'aimer, suivre sa Sunna et rester attaché à la révélation qu'il a apportée."
       },
       "ru": {
         "q": "Как мусульманин должен относиться к пророку Мухаммаду ﷺ?",
@@ -1528,9 +1527,9 @@
         "a": "应当信仰他、爱护他、遵循他的圣行，并坚守他所传达的启示。"
       },
       "sources": [
-        "Kur'an 33:21",
-        "Kur'an 59:7"
+        "📖 Kur'an — Ahzâb Sûresi, 33:21 — https://quran.com/33/21",
+        "📖 Kur'an — Haşr Sûresi, 59:7 — https://quran.com/59/7"
       ]
     }
   ]
-}
+    }
