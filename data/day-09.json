@@ -141,7 +141,24 @@
   ],
   "day": 9,
   "dayTitle": "9. Gün — Âhiret ve Ölüm",
-  "daySubtitle": "Ölüm, kabir hayatı, kıyamet, diriliş, hesap, cennet ve cehennem",
+  "daySubtitle": {
+    "tr": "Ölüm, kabir hayatı, kıyamet, diriliş, hesap, cennet ve cehennem",
+    "en": "Death, the life of the grave, the Resurrection, judgment, Paradise and Hell",
+    "de": "Tod, das Leben im Grab, Auferstehung, Abrechnung, Paradies und Hölle",
+    "nl": "De dood, het leven in het graf, de opstanding, het oordeel, het Paradijs en de Hel",
+    "fr": "La mort, la vie dans la tombe, la résurrection, le jugement, le Paradis et l’Enfer",
+    "ru": "Смерть, жизнь в могиле, воскресение, расчёт, Рай и Ад",
+    "ku": "Mirin, jiyana berzaxê, qiyamet, rabûna ji nû ve, hesab, cennet û dojeh",
+    "tt": "Үлем, кабер тормышы, кыямәт, терелү, хисап, җәннәт һәм җәһәннәм",
+    "ar": "الْمَوْتُ وَحَيَاةُ الْبَرْزَخِ وَالْقِيَامَةُ وَالْبَعْثُ وَالْحِسَابُ وَالْجَنَّةُ وَالنَّارُ",
+    "es": "La muerte, la vida de la tumba, la resurrección, el juicio, el Paraíso y el Infierno",
+    "it": "La morte, la vita nella tomba, la resurrezione, il giudizio, il Paradiso e l’Inferno",
+    "pt": "A morte, a vida no túmulo, a ressurreição, o julgamento, o Paraíso e o Inferno",
+    "ko": "죽음, 무덤의 삶, 부활, 심판, 천국과 지옥",
+    "vi": "Cái chết, đời sống trong mộ, sự phục sinh, phán xét, Thiên Đàng và Hỏa Ngục",
+    "ja": "死、墓の世界、復活、清算、楽園と地獄",
+    "zh": "死亡、墓中生活、复活、清算、乐园与火狱"
+  },
   "questions": [
     {
       "id": 153,
