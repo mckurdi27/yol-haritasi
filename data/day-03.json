@@ -245,7 +245,8 @@
         "a": "是的。安拉创造人类时赋予了他们认识并信仰祂的天性（菲特拉）。纵观历史，几乎每个社会都在寻求造物主，这正是这种天性倾向的体现。"
       },
       "sources": [
-        "📖 Kur'an — Rûm Sûresi, 30:30 — https://quran.com/30/30"
+        "📖 Kur'an — Rûm Sûresi, 30:30 — https://quran.com/30/30",
+        "📚 TDV İslâm Ansiklopedisi — Fıtrat — https://islamansiklopedisi.org.tr/fitrat"
       ]
     },
     {
@@ -316,7 +317,8 @@
         "a": "我们坚定地相信真主的存在。受造物中的秩序、尺度和智慧，都指向祂的存在。"
       },
       "sources": [
-        "📖 Kur'an — Âl-i İmrân Sûresi, 3:190 — https://quran.com/3/190"
+        "📖 Kur'an — Âl-i İmrân Sûresi, 3:190 — https://quran.com/3/190",
+        "📚 TDV İslâm Ansiklopedisi — Allah — https://islamansiklopedisi.org.tr/allah"
       ]
     },
     {
@@ -387,7 +389,8 @@
         "a": "真主的独一性，是指相信祂在本体、属性以及应受崇拜的权利方面都是独一无二、绝无匹敌的。"
       },
       "sources": [
-        "📖 Kur'an — İhlâs Sûresi, 112:1 — https://quran.com/112/1"
+        "📖 Kur'an — İhlâs Sûresi, 112:1 — https://quran.com/112/1",
+        "📚 TDV İslâm Ansiklopedisi — Tevhid — https://islamansiklopedisi.org.tr/tevhid"
       ]
     },
     {
@@ -458,7 +461,8 @@
         "a": "舍尔克是指为安拉设立伙伴，把神性归于安拉以外的事物。因为它破坏了认主独一（讨希德），在伊斯兰教中被视为若不悔改便不会被饶恕的罪过。"
       },
       "sources": [
-        "📖 Kur'an — Nisâ Sûresi, 4:48 — https://quran.com/4/48"
+        "📖 Kur'an — Nisâ Sûresi, 4:48 — https://quran.com/4/48",
+        "📚 TDV İslâm Ansiklopedisi — Şirk — https://islamansiklopedisi.org.tr/sirk"
       ]
     },
     {
@@ -529,7 +533,8 @@
         "a": "真主不是被创造的。祂是永恒的，是一切受造物的创造者。"
       },
       "sources": [
-        "📖 Kur'an — Şûrâ Sûresi, 42:11 — https://quran.com/42/11"
+        "📖 Kur'an — Şûrâ Sûresi, 42:11 — https://quran.com/42/11",
+        "📚 TDV İslâm Ansiklopedisi — Allah — https://islamansiklopedisi.org.tr/allah"
       ]
     },
     {
@@ -600,78 +605,80 @@
         "a": "是的。真主没有开始，也没有终结。祂是永恒不灭的。"
       },
       "sources": [
-        "📖 Kur'an — Hadîd Sûresi, 57:3 — https://quran.com/57/3"
+        "📖 Kur'an — Hadîd Sûresi, 57:3 — https://quran.com/57/3",
+        "📚 TDV İslâm Ansiklopedisi — Allah — https://islamansiklopedisi.org.tr/allah"
       ]
     },
     {
       "id": 45,
       "day": 3,
       "tr": {
-        "q": "Allah nerededir ve nasıldır?",
-        "a": "Allah yarattıklarına benzemez. İnsan aklı O'nun zatının hakikatini bütünüyle kavrayamaz."
+        "q": "Allah'ın zatı ve sıfatları hakkında nasıl inanmalıyız?",
+        "a": "Allah'ın zatı ve sıfatları hakkında Kur'an ve sahih sünnetin bildirdiği şekilde inanırız; O'nu yaratılmışlara benzetmeyiz ve O'nun hiçbir benzeri olmadığını kabul ederiz."
       },
       "en": {
-        "q": "Where is Allah and what is He like?",
+        "q": "How should we believe regarding Allah's essence and attributes?",
         "a": "Allah does not resemble His creation. The human mind cannot fully comprehend the reality of His essence."
       },
       "de": {
-        "q": "Wo ist Allah und wie ist Er?",
+        "q": "Wie sollen wir über Allahs Wesen und Eigenschaften glauben?",
         "a": "Allah ähnelt Seiner Schöpfung nicht. Der menschliche Verstand kann die Wirklichkeit Seines Wesens nicht vollständig erfassen."
       },
       "ru": {
-        "q": "Где находится Аллах и каков Он?",
+        "q": "Как мы должны верить в отношении сущности и атрибутов Аллаха?",
         "a": "Аллах не подобен Своим творениям. Человеческий разум не способен полностью постичь сущность Его бытия."
       },
       "ku": {
-        "q": "Xwedê li ku ye û Ew çawa ye?",
+        "q": "Divê em derbarê zat û sifetên Xwedê de çawa bawer bikin?",
         "a": "Xwedê ne dişibe tu yek ji afirandiyan. Aqilê mirovan nikare rastiya zatiya Wî bi tevahî fam bike."
       },
       "tt": {
-        "q": "Аллаһ кайда һәм Ул нинди?",
+        "q": "Аллаһның заты һәм сыйфатлары турында ничек иман итәргә кирәк?",
         "a": "Аллаһ Үзенең мәхлукларына охшамый. Кеше акылы Аның затындагы хакыйкатьне тулысынча аңлый алмый."
       },
       "fr": {
-        "q": "Où est Allah et comment est-Il ?",
+        "q": "Comment devons-nous croire au sujet de l'essence et des attributs d'Allah ?",
         "a": "Allah ne ressemble pas à Ses créatures. L'esprit humain ne peut pas comprendre pleinement la réalité de Son essence."
       },
       "es": {
-        "q": "¿Dónde está Allah y cómo es?",
+        "q": "¿Cómo debemos creer acerca de la esencia y los atributos de Allah?",
         "a": "Allah no se parece a ninguna de Sus criaturas. La mente humana no puede comprender plenamente la realidad de Su esencia."
       },
       "ar": {
-        "q": "أَيْنَ اللَّهُ وَكَيْفَ هُوَ؟",
+        "q": "كَيْفَ نُؤْمِنُ فِي شَأْنِ ذَاتِ اللَّهِ وَصِفَاتِهِ؟",
         "a": "اللَّهُ لَا يُشْبِهُ شَيْئًا مِنْ خَلْقِهِ، وَالْعَقْلُ الْبَشَرِيُّ لَا يَسْتَطِيعُ أَنْ يُدْرِكَ حَقِيقَةَ ذَاتِهِ إِدْرَاكًا كَامِلًا."
       },
       "nl": {
-        "q": "Waar is Allah en hoe is Hij?",
+        "q": "Hoe moeten wij geloven over Allahs wezen en eigenschappen?",
         "a": "Allah lijkt niet op Zijn schepping. Het menselijk verstand kan de werkelijkheid van Zijn Wezen niet volledig bevatten."
       },
       "it": {
-        "q": "Dov'è Allah e com'è?",
+        "q": "Come dobbiamo credere riguardo all'essenza e agli attributi di Allah?",
         "a": "Allah non assomiglia a nessuna delle Sue creature. La mente umana non può comprendere pienamente la realtà della Sua essenza."
       },
       "pt": {
-        "q": "Onde está Allah e como Ele é?",
+        "q": "Como devemos crer acerca da essência e dos atributos de Allah?",
         "a": "Allah não se assemelha à Sua criação. A mente humana não pode compreender plenamente a realidade da Sua essência."
       },
       "ko": {
-        "q": "알라는 어디에 계시며 어떤 분이신가?",
+        "q": "알라의 본질과 속성에 대해 우리는 어떻게 믿어야 합니까?",
         "a": "알라는 그분의 피조물과 닮지 않으신다. 인간의 이성은 그분의 본질의 실체를 완전히 이해할 수 없다."
       },
       "vi": {
-        "q": "Allah ở đâu và Ngài như thế nào?",
+        "q": "Chúng ta nên tin như thế nào về bản thể và các thuộc tính của Allah?",
         "a": "Allah không giống với bất kỳ tạo vật nào của Ngài. Trí óc con người không thể hoàn toàn thấu hiểu thực tại bản thể của Ngài."
       },
       "ja": {
-        "q": "アッラーはどこにおられ、どのような御方ですか？",
+        "q": "アッラーの本質と属性について、私たちはどのように信じるべきですか？",
         "a": "アッラーは御自身の創造物とは似ておられません。人間の理性は、御方の本質の実相を完全に理解することはできません。"
       },
       "zh": {
-        "q": "真主在哪里？祂是怎样的？",
+        "q": "我们应当如何相信安拉的本质和属性？",
         "a": "真主不像任何受造物。人的理智无法完全理解祂本体的真实情况。"
       },
       "sources": [
-        "📖 Kur'an — Bakara Sûresi, 2:255 — https://quran.com/2/255"
+        "📖 Kur'an — Bakara Sûresi, 2:255 — https://quran.com/2/255",
+        "📚 TDV İslâm Ansiklopedisi — Allah’ın sıfatları — https://islamansiklopedisi.org.tr/allah"
       ]
     },
     {
@@ -742,7 +749,8 @@
         "a": "真主有许多美好的尊名，这些尊名见于《古兰经》和可靠的圣行，称为“真主的至美尊名”。"
       },
       "sources": [
-        "📖 Kur'an — A'râf Sûresi, 7:180 — https://quran.com/7/180"
+        "📖 Kur'an — A'râf Sûresi, 7:180 — https://quran.com/7/180",
+        "📚 TDV İslâm Ansiklopedisi — Esmâ-i Hüsnâ — https://islamansiklopedisi.org.tr/esma-i-husna"
       ]
     },
     {
@@ -813,7 +821,8 @@
         "a": "它指的是真主最美好的尊名。"
       },
       "sources": [
-        "📖 Kur'an — İsrâ Sûresi, 17:110 — https://quran.com/17/110"
+        "📖 Kur'an — İsrâ Sûresi, 17:110 — https://quran.com/17/110",
+        "📚 TDV İslâm Ansiklopedisi — Esmâ-i Hüsnâ — https://islamansiklopedisi.org.tr/esma-i-husna"
       ]
     },
     {
@@ -955,7 +964,8 @@
         "a": "是的。真主知道过去、现在和未来。祂的知识涵盖万物。"
       },
       "sources": [
-        "📖 Kur'an — En'âm Sûresi, 6:59 — https://quran.com/6/59"
+        "📖 Kur'an — En'âm Sûresi, 6:59 — https://quran.com/6/59",
+        "📚 TDV İslâm Ansiklopedisi — İlim — https://islamansiklopedisi.org.tr/ilim"
       ]
     },
     {
@@ -1168,7 +1178,8 @@
         "a": "真主的权能是指祂对万物拥有绝对的能力，并以智慧实现祂所意欲的事情。"
       },
       "sources": [
-        "📖 Kur'an — Mülk Sûresi, 67:1 — https://quran.com/67/1"
+        "📖 Kur'an — Mülk Sûresi, 67:1 — https://quran.com/67/1",
+        "📚 TDV İslâm Ansiklopedisi — Kudret — https://islamansiklopedisi.org.tr/kudret"
       ]
     },
     {
@@ -1239,7 +1250,8 @@
         "a": "是的。真主听见祂仆人的祈求，知道他们的处境，并以祂的慈悯接近他们。"
       },
       "sources": [
-        "📖 Kur'an — Kâf Sûresi, 50:16 — https://quran.com/50/16"
+        "📖 Kur'an — Kâf Sûresi, 50:16 — https://quran.com/50/16",
+        "📚 TDV İslâm Ansiklopedisi — Allah — https://islamansiklopedisi.org.tr/allah"
       ]
     },
     {
@@ -1381,7 +1393,8 @@
         "a": "真主的属性是与祂的本体相称的完美属性。这些属性不同于受造物的属性。"
       },
       "sources": [
-        "📖 Kur'an — Haşr Sûresi, 59:22-24 — https://quran.com/59/22-24"
+        "📖 Kur'an — Haşr Sûresi, 59:22-24 — https://quran.com/59/22-24",
+        "📚 TDV İslâm Ansiklopedisi — Sıfat — https://islamansiklopedisi.org.tr/sifat"
       ]
     },
     {
@@ -1453,7 +1466,8 @@
       },
       "sources": [
         "📖 Kur'an — Âl-i İmrân Sûresi, 3:31 — https://quran.com/3/31",
-        "📖 Kur'an — Fâtiha Sûresi, 1:7 — https://quran.com/1/7"
+        "📖 Kur'an — Fâtiha Sûresi, 1:7 — https://quran.com/1/7",
+        "📚 TDV İslâm Ansiklopedisi — Allah — https://islamansiklopedisi.org.tr/allah"
       ]
     },
     {
