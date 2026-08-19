@@ -245,7 +245,8 @@
         "a": "所有先知都诚实、可信、睿智，并完整传达从安拉那里领受的启示。"
       },
       "sources": [
-        "📖 Kur'an — En'âm Sûresi, 6:48 — https://quran.com/6/48"
+        "📖 Kur'an — En'âm Sûresi, 6:48 — https://quran.com/6/48",
+        "📚 TDV İslâm Ansiklopedisi — Peygamber — https://islamansiklopedisi.org.tr/peygamber"
       ]
     },
     {
@@ -316,7 +317,8 @@
         "a": "先知是安拉选派来引导人们走向真理的人。"
       },
       "sources": [
-        "📖 Kur'an — Bakara Sûresi, 2:213 — https://quran.com/2/213"
+        "📖 Kur'an — Bakara Sûresi, 2:213 — https://quran.com/2/213",
+        "📚 TDV İslâm Ansiklopedisi — Peygamber — https://islamansiklopedisi.org.tr/peygamber"
       ]
     },
     {
@@ -387,7 +389,8 @@
         "a": "号召人们崇拜安拉、传达真理并指引正道。"
       },
       "sources": [
-        "📖 Kur'an — Nahl Sûresi, 16:36 — https://quran.com/16/36"
+        "📖 Kur'an — Nahl Sûresi, 16:36 — https://quran.com/16/36",
+        "📚 TDV İslâm Ansiklopedisi — Peygamber — https://islamansiklopedisi.org.tr/peygamber"
       ]
     },
     {
@@ -459,7 +462,8 @@
       },
       "sources": [
         "📖 Kur'an — Nahl Sûresi, 16:36 — https://quran.com/16/36",
-        "📖 Kur'an — Enbiyâ Sûresi, 21:25 — https://quran.com/21/25"
+        "📖 Kur'an — Enbiyâ Sûresi, 21:25 — https://quran.com/21/25",
+        "📚 TDV İslâm Ansiklopedisi — Peygamber — https://islamansiklopedisi.org.tr/peygamber"
       ]
     },
     {
@@ -530,7 +534,8 @@
         "a": "《古兰经》中提到了许多先知，包括阿丹、努哈、易卜拉欣、穆萨、尔萨和穆罕默德 ﷺ。"
       },
       "sources": [
-        "📖 Kur'an — Nisâ Sûresi, 4:163 — https://quran.com/4/163"
+        "📖 Kur'an — Nisâ Sûresi, 4:163 — https://quran.com/4/163",
+        "📚 TDV İslâm Ansiklopedisi — Peygamber — https://islamansiklopedisi.org.tr/peygamber"
       ]
     },
     {
@@ -601,78 +606,81 @@
         "a": "奇迹的赐予是为了证明该先知确系安拉所派遣，并在他召唤人们归信真理时给予支持。"
       },
       "sources": [
-        "📖 Kur'an — Ankebût Sûresi, 29:50 — https://quran.com/29/50"
+        "📖 Kur'an — Ankebût Sûresi, 29:50 — https://quran.com/29/50",
+        "📚 TDV İslâm Ansiklopedisi — Mûcize — https://islamansiklopedisi.org.tr/mucize"
       ]
     },
     {
       "id": 64,
       "day": 4,
       "tr": {
-        "q": "Peygamberler günahtan korunmuş mudur? (İsmet sıfatı)",
-        "a": "Evet, peygamberler Allah tarafından büyük ve küçük günahlardan korunmuştur; bu 'ismet' sıfatı, tebliğ ettikleri vahyin güvenilirliğini sağlar."
+        "q": "Peygamberlerin ismet sıfatı ne demektir?",
+        "a": "İsmet, peygamberlerin Allah'ın vahyini tebliğ ederken yalan ve güveni zedeleyecek davranışlardan korunmuş olmalarını ifade eder. Peygamberlerin beşer oluşu ve zelle konusundaki ayrıntılar ise âlimlerce ayrıca ele alınmıştır."
       },
       "en": {
-        "q": "Are prophets protected from sin? (The attribute of 'ismah)",
+        "q": "What does the attribute of prophetic infallibility (ismah) mean?",
         "a": "Yes, prophets are protected by Allah from major and minor sins; this attribute of 'ismah (infallibility) safeguards the reliability of the revelation they convey."
       },
       "de": {
-        "q": "Sind Propheten vor Sünde bewahrt? (Die Eigenschaft der 'Isma)",
+        "q": "Was bedeutet die Eigenschaft der Unfehlbarkeit (Isma) der Propheten?",
         "a": "Ja, Propheten sind von Allah vor großen und kleinen Sünden bewahrt; diese Eigenschaft der 'Isma sichert die Zuverlässigkeit der von ihnen verkündeten Offenbarung."
       },
       "nl": {
-        "q": "Zijn profeten beschermd tegen zonde? (De eigenschap 'isma)",
+        "q": "Wat betekent de eigenschap van onfeilbaarheid (isma) van de profeten?",
         "a": "Ja, profeten zijn door Allah beschermd tegen grote en kleine zonden; deze eigenschap ('isma) waarborgt de betrouwbaarheid van de openbaring die zij verkondigen."
       },
       "fr": {
-        "q": "Les prophètes sont-ils préservés du péché ? (L'attribut de 'isma)",
+        "q": "Que signifie l'attribut d'infaillibilité (isma) des prophètes ?",
         "a": "Oui, les prophètes sont préservés par Allah des grands et petits péchés ; cet attribut de 'isma garantit la fiabilité de la révélation qu'ils transmettent."
       },
       "ru": {
-        "q": "Защищены ли пророки от греха? (Качество 'исма)",
+        "q": "Что означает качество защищённости пророков от греха (исма)?",
         "a": "Да, Аллах оберегает пророков от больших и малых грехов; это качество ('исма) обеспечивает достоверность передаваемого ими откровения."
       },
       "ku": {
-        "q": "Ma pêxember ji gunehan parastî ne? (Sifeta ismet)",
+        "q": "Sifeta ismetê ya pêxemberan çi tê wate kirin?",
         "a": "Belê, pêxember ji aliyê Xwedê ve ji gunehên mezin û biçûk parastî ne; ev sifeta 'ismet' pêbaweriya wahya ku radigihînin misoger dike."
       },
       "tt": {
-        "q": "Пәйгамбәрләр гөнаһтан сакланганмы? (Гыйсмәт сыйфаты)",
+        "q": "Пәйгамбәрләрнең гөнаһтан сакланган булуы (исмәт) нәрсәне аңлата?",
         "a": "Әйе, пәйгамбәрләр Аллаһ тарафыннан зур да, кечкенә дә гөнаһлардан сакланган; бу 'гыйсмәт' сыйфаты алар җиткергән вәхинең ышанычлылыгын тәэмин итә."
       },
       "ar": {
-        "q": "هَلْ الْأَنْبِيَاءُ مَعْصُومُونَ مِنَ الذُّنُوبِ؟ (صِفَةُ الْعِصْمَةِ)",
+        "q": "مَاذَا تَعْنِي صِفَةُ عِصْمَةِ الْأَنْبِيَاءِ؟",
         "a": "نَعَمْ، الْأَنْبِيَاءُ مَعْصُومُونَ مِنَ اللَّهِ مِنَ الذُّنُوبِ الْكَبِيرَةِ وَالصَّغِيرَةِ، وَهَذِهِ الصِّفَةُ (الْعِصْمَةُ) تَضْمَنُ مَوْثُوقِيَّةَ الْوَحْيِ الَّذِي يُبَلِّغُونَهُ."
       },
       "es": {
-        "q": "¿Están los profetas protegidos del pecado? (El atributo de 'isma)",
+        "q": "¿Qué significa la cualidad de infalibilidad (isma) de los profetas?",
         "a": "Sí, Allah protege a los profetas de los pecados mayores y menores; este atributo ('isma) garantiza la fiabilidad de la revelación que transmiten."
       },
       "it": {
-        "q": "I profeti sono protetti dal peccato? (L'attributo di 'isma)",
+        "q": "Che cosa significa l'infallibilità (isma) dei profeti?",
         "a": "Sì, i profeti sono protetti da Allah dai peccati grandi e piccoli; questo attributo ('isma) garantisce l'affidabilità della rivelazione che trasmettono."
       },
       "pt": {
-        "q": "Os profetas são protegidos do pecado? (O atributo de 'isma)",
+        "q": "O que significa a infalibilidade (isma) dos profetas?",
         "a": "Sim, os profetas são protegidos por Allah dos pecados grandes e pequenos; esse atributo ('isma) garante a confiabilidade da revelação que transmitem."
       },
       "ko": {
-        "q": "예언자는 죄로부터 보호받습니까? ('이스마 속성)",
+        "q": "예언자들의 보호됨(이스마)이라는 속성은 무엇을 의미합니까?",
         "a": "그렇습니다. 예언자들은 알라에 의해 크고 작은 죄로부터 보호받으며, 이 '이스마' 속성은 그들이 전하는 계시의 신뢰성을 보장합니다."
       },
       "vi": {
-        "q": "Các nhà tiên tri có được bảo vệ khỏi tội lỗi không? (Thuộc tính 'isma)",
+        "q": "Đức tính được bảo vệ khỏi tội lỗi (isma) của các nhà tiên tri có nghĩa là gì?",
         "a": "Đúng vậy, Allah bảo vệ các nhà tiên tri khỏi tội lỗi lớn và nhỏ; thuộc tính 'isma này bảo đảm độ tin cậy của mặc khải mà họ truyền đạt."
       },
       "ja": {
-        "q": "預言者は罪から守られていますか？（イスマの属性）",
+        "q": "預言者の無謬性（イスマ）とは何を意味しますか？",
         "a": "はい、預言者はアッラーによって大罪・小罪から守られています。この「イスマ」という属性は、彼らが伝える啓示の信頼性を保証します。"
       },
       "zh": {
-        "q": "先知是否免于犯罪？（无谬性）",
+        "q": "先知的无误与受保护（伊斯玛）是什么意思？",
         "a": "是的，安拉保护先知们免犯大小罪过；这种无谬性确保了他们所传达启示的可靠性。"
       },
       "sources": [
-        "📚 Kelâm — Ömer Nasuhi Bilmen, Büyük İslâm İlmihali"
+        "📚 Fıkıh/Akaid — Ömer Nasuhi Bilmen, Büyük İslâm İlmihali — https://books.google.com/books/about/B%C3%BCy%C3%BCk_%C4%B0slam_%C4%B0lmihali.html?id=XetqEAAAQBAJ",
+        "📚 TDV İslâm Ansiklopedisi — İsmet — https://islamansiklopedisi.org.tr/ismet--kelam",
+        "📚 TDV İslâm Ansiklopedisi — İsmetü’l-Enbiyâ — https://islamansiklopedisi.org.tr/ismetul-enbiya"
       ]
     },
     {
@@ -743,7 +751,8 @@
         "a": "易卜拉欣因其对安拉独一性的坚定信仰、反抗偶像崇拜以及顺服安拉，被古兰经誉为典范的领袖。"
       },
       "sources": [
-        "📖 Kur'an — Nahl Sûresi, 16:120 — https://quran.com/16/120"
+        "📖 Kur'an — Nahl Sûresi, 16:120 — https://quran.com/16/120",
+        "📚 TDV İslâm Ansiklopedisi — İbrâhim — https://islamansiklopedisi.org.tr/ibrahim"
       ]
     },
     {
@@ -814,78 +823,80 @@
         "a": "穆萨先知被赐予了《讨拉特》（律法书），这是为引导以色列的子孙走上正道而降示的经典。"
       },
       "sources": [
-        "📖 Kur'an — İsrâ Sûresi, 17:2 — https://quran.com/17/2"
+        "📖 Kur'an — İsrâ Sûresi, 17:2 — https://quran.com/17/2",
+        "📚 TDV İslâm Ansiklopedisi — Mûsâ — https://islamansiklopedisi.org.tr/musa"
       ]
     },
     {
       "id": 67,
       "day": 4,
       "tr": {
-        "q": "Kur'an kime indirildi?",
-        "a": "Kur'an, Hz. Muhammed ﷺ'e indirildi."
+        "q": "Kur’an’ın Hz. Muhammed ﷺ’e indirilmesi ne anlama gelir?",
+        "a": "Kur’an, Allah’ın kelâmı olarak Cebrâil aracılığıyla Hz. Muhammed ﷺ’e vahyedilmiş ve insanlara tebliğ edilmiştir."
       },
       "en": {
-        "q": "To whom was the Qur'an revealed?",
+        "q": "What does it mean that the Quran was revealed to Prophet Muhammad ﷺ?",
         "a": "The Qur'an was revealed to Prophet Muhammad ﷺ."
       },
       "de": {
-        "q": "Wem wurde der Qur'an offenbart?",
+        "q": "Was bedeutet es, dass der Koran dem Propheten Muhammad ﷺ offenbart wurde?",
         "a": "Der Qur'an wurde dem Propheten Muhammad ﷺ offenbart."
       },
       "nl": {
-        "q": "Aan wie werd de Koran geopenbaard?",
+        "q": "Wat betekent het dat de Koran aan de profeet Muhammad ﷺ werd geopenbaard?",
         "a": "De Koran werd geopenbaard aan de profeet Muhammad ﷺ."
       },
       "fr": {
-        "q": "À qui le Coran a-t-il été révélé ?",
+        "q": "Que signifie le fait que le Coran a été révélé au Prophète Muhammad ﷺ ?",
         "a": "Le Coran a été révélé au prophète Muhammad ﷺ."
       },
       "ru": {
-        "q": "Кому был ниспослан Коран?",
+        "q": "Что означает, что Коран был ниспослан пророку Мухаммаду ﷺ?",
         "a": "Коран был ниспослан пророку Мухаммаду ﷺ."
       },
       "ku": {
-        "q": "Qur'an ji kê re hat daxwazkirin?",
+        "q": "Çi tê wateya ku Qur’an ji Pêxemberê Muhammed ﷺ re hatiye daxuyanîkirin?",
         "a": "Qur'an ji Hz. Muhammed ﷺ re hat daxwazkirin."
       },
       "tt": {
-        "q": "Коръән кемгә иңдерелгән?",
+        "q": "Коръәннең Мөхәммәд ﷺ пәйгамбәргә иңдерелүе нәрсәне аңлата?",
         "a": "Коръән Мөхәммәд ﷺ пәйгамбәргә иңдерелгән."
       },
       "ar": {
-        "q": "إِلَى مَنْ أُنْزِلَ الْقُرْآنُ؟",
+        "q": "مَاذَا يَعْنِي أَنَّ الْقُرْآنَ أُنْزِلَ عَلَى النَّبِيِّ مُحَمَّدٍ ﷺ؟",
         "a": "أُنْزِلَ الْقُرْآنُ عَلَى النَّبِيِّ مُحَمَّدٍ ﷺ."
       },
       "es": {
-        "q": "¿A quién fue revelado el Corán?",
+        "q": "¿Qué significa que el Corán fue revelado al Profeta Muhammad ﷺ?",
         "a": "El Corán fue revelado al profeta Muhammad ﷺ."
       },
       "it": {
-        "q": "A chi fu rivelato il Corano?",
+        "q": "Che cosa significa che il Corano fu rivelato al Profeta Muhammad ﷺ?",
         "a": "Il Corano fu rivelato al profeta Muhammad ﷺ."
       },
       "pt": {
-        "q": "A quem foi revelado o Alcorão?",
+        "q": "O que significa que o Alcorão foi revelado ao Profeta Muhammad ﷺ?",
         "a": "O Alcorão foi revelado ao profeta Muhammad ﷺ."
       },
       "ko": {
-        "q": "꾸란은 누구에게 계시되었습니까?",
+        "q": "꾸란이 예언자 무함마드 ﷺ에게 계시되었다는 것은 무엇을 의미합니까?",
         "a": "꾸란은 예언자 무함마드 ﷺ에게 계시되었습니다."
       },
       "vi": {
-        "q": "Kinh Qur'an được mặc khải cho ai?",
+        "q": "Việc Kinh Qur’an được mặc khải cho Nhà tiên tri Muhammad ﷺ có nghĩa là gì?",
         "a": "Kinh Qur'an được mặc khải cho Nhà tiên tri Muhammad ﷺ."
       },
       "ja": {
-        "q": "クルアーンは誰に啓示されましたか？",
+        "q": "クルアーンが預言者ムハンマド ﷺ に啓示されたとは、どういう意味ですか？",
         "a": "クルアーンは預言者ムハンマド ﷺ に啓示されました。"
       },
       "zh": {
-        "q": "《古兰经》降示给谁？",
+        "q": "《古兰经》启示给先知穆罕默德 ﷺ 意味着什么？",
         "a": "《古兰经》降示给先知穆罕默德 ﷺ。"
       },
       "sources": [
-        "📖 Kur'an — Şuarâ Sûresi, 26:192-195 — https://quran.com/26/192-195"
+        "📖 Kur'an — Şuarâ Sûresi, 26:192-195 — https://quran.com/26/192-195",
+        "📚 TDV İslâm Ansiklopedisi — Kur’an — https://islamansiklopedisi.org.tr/kuran"
       ]
     },
     {
@@ -1028,7 +1039,8 @@
         "a": "安拉在历史长河中向不同的民族派遣先知，以引导每个族群走上正道，使人们在末日无可推诿。"
       },
       "sources": [
-        "📖 Kur'an — Nisâ Sûresi, 4:165 — https://quran.com/4/165"
+        "📖 Kur'an — Nisâ Sûresi, 4:165 — https://quran.com/4/165",
+        "📚 TDV İslâm Ansiklopedisi — Peygamber — https://islamansiklopedisi.org.tr/peygamber"
       ]
     },
     {
@@ -1100,7 +1112,8 @@
       },
       "sources": [
         "📖 Kur'an — Enbiyâ Sûresi, 21:25 — https://quran.com/21/25",
-        "📖 Kur'an — Nahl Sûresi, 16:36 — https://quran.com/16/36"
+        "📖 Kur'an — Nahl Sûresi, 16:36 — https://quran.com/16/36",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
@@ -1171,7 +1184,8 @@
         "a": "《艾哈萨卜章》第40节说明了这一点。"
       },
       "sources": [
-        "📖 Kur'an — Ahzâb Sûresi, 33:40 — https://quran.com/33/40"
+        "📖 Kur'an — Ahzâb Sûresi, 33:40 — https://quran.com/33/40",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
@@ -1242,7 +1256,8 @@
         "a": "就是相信安拉派遣的所有先知都是真实的。"
       },
       "sources": [
-        "📖 Kur'an — Bakara Sûresi, 2:285 — https://quran.com/2/285"
+        "📖 Kur'an — Bakara Sûresi, 2:285 — https://quran.com/2/285",
+        "📚 TDV İslâm Ansiklopedisi — Peygamber — https://islamansiklopedisi.org.tr/peygamber"
       ]
     },
     {
@@ -1313,7 +1328,8 @@
         "a": "不可以。穆斯林不否认安拉的任何一位先知。"
       },
       "sources": [
-        "📖 Kur'an — Bakara Sûresi, 2:136 — https://quran.com/2/136"
+        "📖 Kur'an — Bakara Sûresi, 2:136 — https://quran.com/2/136",
+        "📚 TDV İslâm Ansiklopedisi — Peygamber — https://islamansiklopedisi.org.tr/peygamber"
       ]
     },
     {
@@ -1385,7 +1401,8 @@
       },
       "sources": [
         "📖 Kur'an — Meryem Sûresi, 19:30 — https://quran.com/19/30",
-        "📖 Kur'an — Âl-i İmrân Sûresi, 3:45 — https://quran.com/3/45"
+        "📖 Kur'an — Âl-i İmrân Sûresi, 3:45 — https://quran.com/3/45",
+        "📚 TDV İslâm Ansiklopedisi — Îsâ — https://islamansiklopedisi.org.tr/isa"
       ]
     },
     {
@@ -1456,7 +1473,8 @@
         "a": "他具有极其优秀和高尚的品德，《古兰经》赞美了他的品德。"
       },
       "sources": [
-        "📖 Kur'an — Kalem Sûresi, 68:4 — https://quran.com/68/4"
+        "📖 Kur'an — Kalem Sûresi, 68:4 — https://quran.com/68/4",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
@@ -1528,8 +1546,9 @@
       },
       "sources": [
         "📖 Kur'an — Ahzâb Sûresi, 33:21 — https://quran.com/33/21",
-        "📖 Kur'an — Haşr Sûresi, 59:7 — https://quran.com/59/7"
+        "📖 Kur'an — Haşr Sûresi, 59:7 — https://quran.com/59/7",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     }
   ]
-    }
+}
