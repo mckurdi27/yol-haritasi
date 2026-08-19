@@ -245,7 +245,7 @@
         "a": "信仰的支柱有六项：信仰安拉、祂的天使、祂的经典、祂的众先知、末日，以及善恶皆由前定。"
       },
       "sources": [
-        "📚 Hadis — Sahîh-i Müslim, Îmân 1 (Cibrîl Hadisi) — https://sunnah.com/muslim"
+        "📚 Hadis — Sahîh-i Müslim 8a (Cibrîl Hadisi) — https://sunnah.com/muslim:8a"
       ]
     },
     {
@@ -316,7 +316,8 @@
         "a": "意味着相信天使是安拉用光创造的不可见的受造物，他们不犯罪，完全服从安拉的命令。"
       },
       "sources": [
-        "📖 Kur'an — Enbiyâ Sûresi, 21:19-20 — https://quran.com/21/19-20"
+        "📖 Kur'an — Enbiyâ Sûresi, 21:19-20 — https://quran.com/21/19-20",
+        "📚 TDV İslâm Ansiklopedisi — Melek — https://islamansiklopedisi.org.tr/melek"
       ]
     },
     {
@@ -387,15 +388,16 @@
         "a": "天使是用光创造的受造物，没有饮食睡眠等人类需求，没有性别，日夜赞颂安拉。"
       },
       "sources": [
-        "📖 Kur'an — Tahrîm Sûresi, 66:6 — https://quran.com/66/6"
+        "📖 Kur'an — Tahrîm Sûresi, 66:6 — https://quran.com/66/6",
+        "📚 TDV İslâm Ansiklopedisi — Melek — https://islamansiklopedisi.org.tr/melek"
       ]
     },
     {
       "id": 99,
       "day": 6,
       "tr": {
-        "q": "Mikâil (a.s.)'ın görevi nedir?",
-        "a": "Mikâil (a.s.), Allah'ın izniyle tabiattaki rızkı, yağmuru ve bitkilerin yetişmesini yönetmekle görevli büyük melektir."
+        "q": "Mîkâil (a.s.) hakkında Kur’an ve hadis kaynaklarında ne bildirilmiştir?",
+        "a": "Mîkâil’in adı Kur’an’da Bakara 2:98’de geçer. İslâmî kaynaklarda rızık, yağmur ve bitkilerin gelişmesiyle ilgili işlerle görevlendirildiği açıklanır; bu ayrıntılar Kur’an ayetinden ziyade tefsir ve hadis literatüründe ele alınmıştır."
       },
       "en": {
         "q": "What is the duty of the angel Michael (Mikail)?",
@@ -458,7 +460,9 @@
         "a": "经安拉许可，米卡伊勒天使负责掌管自然界的给养，如降雨和植物的生长。"
       },
       "sources": [
-        "📖 Kur'an — Bakara Sûresi, 2:98 — https://quran.com/2/98"
+        "📖 Kur'an — Bakara Sûresi, 2:98 — https://quran.com/2/98",
+        "📚 TDV İslâm Ansiklopedisi — Mîkâil — https://islamansiklopedisi.org.tr/mikail",
+        "📚 Hadis — Sünen Ebû Dâvûd 767 (Cebrâil, Mîkâil ve İsrâfil zikri) — https://sunnah.com/abudawud:767"
       ]
     },
     {
@@ -529,78 +533,81 @@
         "a": "伊斯拉菲勒天使负责吹响号角，无论是末日降临之时，还是死后复活之时。"
       },
       "sources": [
-        "📖 Kur'an — Zümer Sûresi, 39:68 — https://quran.com/39/68"
+        "📖 Kur'an — Zümer Sûresi, 39:68 — https://quran.com/39/68",
+        "📚 TDV İslâm Ansiklopedisi — İsrâfil — https://islamansiklopedisi.org.tr/israfil",
+        "📚 Hadis — Riyâzü’s-Sâlihîn 409 (İsrâfil ve Sûr) — https://sunnah.com/riyadussalihin:409"
       ]
     },
     {
       "id": 101,
       "day": 6,
       "tr": {
-        "q": "Azrail (ölüm meleği)'in görevi nedir?",
-        "a": "Azrail, Allah'ın kendisine görev verdiği, insanların ve tüm canlıların ruhunu vakti geldiğinde alan melektir."
+        "q": "Ölüm meleğinin (Melekü’l-Mevt) görevi nedir?",
+        "a": "Kur’an’a göre ölüm meleği, Allah’ın emriyle insanların canlarını almakla görevlidir. Kur’an’da onun adı Azrâil olarak değil, “Melekü’l-Mevt” (ölüm meleği) olarak geçer."
       },
       "en": {
-        "q": "What is the duty of the Angel of Death (Azrail)?",
+        "q": "What is the duty of the Angel of Death (Malak al-Mawt)?",
         "a": "Azrail is the angel appointed by Allah to take the souls of people and all living beings when their appointed time comes."
       },
       "de": {
-        "q": "Welche Aufgabe hat der Todesengel (Azrail)?",
+        "q": "Was ist die Aufgabe des Todesengels (Malak al-Mawt)?",
         "a": "Azrail ist der von Allah beauftragte Engel, der die Seelen der Menschen und aller Lebewesen nimmt, wenn ihre Zeit gekommen ist."
       },
       "nl": {
-        "q": "Wat is de taak van de doodsengel (Azrail)?",
+        "q": "Wat is de taak van de Engel des Doods (Malak al-Mawt)?",
         "a": "Azrail is de engel die door Allah is aangesteld om de zielen van mensen en alle levende wezens te nemen wanneer hun tijd is gekomen."
       },
       "fr": {
-        "q": "Quelle est la mission de l'ange de la mort (Azraël) ?",
+        "q": "Quelle est la mission de l'Ange de la Mort (Malak al-Mawt) ?",
         "a": "Azraël est l'ange chargé par Allah de reprendre les âmes des humains et de toutes les créatures vivantes lorsque leur heure est venue."
       },
       "ru": {
-        "q": "В чём заключается обязанность ангела смерти (Азраиля)?",
+        "q": "Какова обязанность Ангела смерти (Малак аль-Маут)?",
         "a": "Азраиль — ангел, назначенный Аллахом забирать души людей и всех живых существ, когда приходит их срок."
       },
       "ku": {
-        "q": "Wezîfeya Milyaketê Mirinê (Ezraîl) çi ye?",
+        "q": "Erka Melaikê Mirin (Melekü’l-Mevt) çi ye?",
         "a": "Ezraîl milyaketê ku Xwedê wezîfedar kiriye ku dema wextê wan tê, giyanên mirovan û hemû zindiyan bistîne."
       },
       "tt": {
-        "q": "Үлем фәрештәсе (Газраил)ның бурычы нинди?",
+        "q": "Үлем фәрештәсенең (Мәләку әл-Мәут) вазифасы нинди?",
         "a": "Газраил — Аллаһ тарафыннан билгеләнгән, кешеләрнең һәм барлык җан ияләренең вакыты җиткәч җанын алучы фәрештә."
       },
       "ar": {
-        "q": "مَا مُهِمَّةُ مَلَكِ الْمَوْتِ (عَزْرَائِيلَ)؟",
+        "q": "مَا وَظِيفَةُ مَلَكِ الْمَوْتِ؟",
         "a": "عَزْرَائِيلُ هُوَ الْمَلَكُ الْمُوَكَّلُ مِنَ اللَّهِ بِقَبْضِ أَرْوَاحِ النَّاسِ وَجَمِيعِ الْأَحْيَاءِ عِنْدَ حُلُولِ أَجَلِهِمْ."
       },
       "es": {
-        "q": "¿Cuál es la función del ángel de la muerte (Azrail)?",
+        "q": "¿Cuál es la función del Ángel de la Muerte (Malak al-Mawt)?",
         "a": "Azrail es el ángel designado por Allah para tomar las almas de las personas y de todos los seres vivos cuando llega su momento."
       },
       "it": {
-        "q": "Qual è il compito dell'angelo della morte (Azrail)?",
+        "q": "Qual è il compito dell'Angelo della Morte (Malak al-Mawt)?",
         "a": "Azrail è l'angelo incaricato da Allah di prendere le anime delle persone e di tutti gli esseri viventi quando giunge il loro momento."
       },
       "pt": {
-        "q": "Qual é a função do anjo da morte (Azrail)?",
+        "q": "Qual é a função do Anjo da Morte (Malak al-Mawt)?",
         "a": "Azrail é o anjo designado por Allah para tomar as almas das pessoas e de todos os seres vivos quando chega o seu momento."
       },
       "ko": {
-        "q": "죽음의 천사(아즈라일)의 임무는 무엇입니까?",
+        "q": "죽음의 천사(말라쿨 마우트)의 임무는 무엇입니까?",
         "a": "아즈라일은 알라께서 정하신 때가 되면 사람과 모든 생명체의 영혼을 거두는 임무를 맡은 천사입니다."
       },
       "vi": {
-        "q": "Nhiệm vụ của thiên thần tử thần (Azrail) là gì?",
+        "q": "Nhiệm vụ của Thiên thần Chết (Malak al-Mawt) là gì?",
         "a": "Azrail là thiên thần được Allah giao nhiệm vụ thu hồi linh hồn của con người và mọi sinh vật khi thời hạn của họ đến."
       },
       "ja": {
-        "q": "死の天使アズラーイールの役目は何ですか？",
+        "q": "死の天使（マラク・アル＝マウト）の役割は何ですか？",
         "a": "アズラーイールは、定められた時が来ると人間やあらゆる生き物の魂を取るよう、アッラーによって任命された天使です。"
       },
       "zh": {
-        "q": "死亡天使阿兹拉伊勒的职责是什么？",
+        "q": "死亡天使（死亡天使）的职责是什么？",
         "a": "阿兹拉伊勒是安拉委任的天使，当大限来临时，负责取走人类和一切生灵的灵魂。"
       },
       "sources": [
-        "📖 Kur'an — Secde Sûresi, 32:11 — https://quran.com/32/11"
+        "📖 Kur'an — Secde Sûresi, 32:11 — https://quran.com/32/11",
+        "📚 TDV İslâm Ansiklopedisi — Azrâil / Ölüm meleği — https://islamansiklopedisi.org.tr/azrail"
       ]
     },
     {
@@ -671,7 +678,8 @@
         "a": "他们是站在每个人左右两侧的两位尊贵的记录天使，记录着此人所做的一切善恶行为。"
       },
       "sources": [
-        "📖 Kur'an — İnfitâr Sûresi, 82:10-12 — https://quran.com/82/10-12"
+        "📖 Kur'an — İnfitâr Sûresi, 82:10-12 — https://quran.com/82/10-12",
+        "📚 TDV İslâm Ansiklopedisi — Kirâmen Kâtibîn — https://islamansiklopedisi.org.tr/kiramen-katibin"
       ]
     },
     {
@@ -742,7 +750,8 @@
         "a": "意味着相信安拉降示给众先知的一切经典都是真实的，都来自安拉。"
       },
       "sources": [
-        "📖 Kur'an — Âl-i İmrân Sûresi, 3:84 — https://quran.com/3/84"
+        "📖 Kur'an — Âl-i İmrân Sûresi, 3:84 — https://quran.com/3/84",
+        "📚 TDV İslâm Ansiklopedisi — İlâhî kitap — https://islamansiklopedisi.org.tr/kitap"
       ]
     },
     {
@@ -813,7 +822,8 @@
         "a": "广为人知的四部经典是：赐予穆萨的《讨拉特》、赐予达五德的《宰逋尔》、赐予尔萨的《引支勒》，以及赐予穆罕默德ﷺ的《古兰经》。"
       },
       "sources": [
-        "📖 Kur'an — Mâide Sûresi, 5:46 — https://quran.com/5/46"
+        "📖 Kur'an — Mâide Sûresi, 5:46 — https://quran.com/5/46",
+        "📚 TDV İslâm Ansiklopedisi — İlâhî kitap — https://islamansiklopedisi.org.tr/kitap"
       ]
     },
     {
@@ -884,7 +894,8 @@
         "a": "古兰经是最后一部经典，证实并护卫此前的经典；安拉亲自保证古兰经将永不被篡改。"
       },
       "sources": [
-        "📖 Kur'an — Mâide Sûresi, 5:48 — https://quran.com/5/48"
+        "📖 Kur'an — Mâide Sûresi, 5:48 — https://quran.com/5/48",
+        "📚 TDV İslâm Ansiklopedisi — Kur’an — https://islamansiklopedisi.org.tr/kuran"
       ]
     },
     {
@@ -955,7 +966,8 @@
         "a": "因为先知向人们传达安拉的命令与禁令；服从他就是服从派遣他的安拉。"
       },
       "sources": [
-        "📖 Kur'an — Nisâ Sûresi, 4:80 — https://quran.com/4/80"
+        "📖 Kur'an — Nisâ Sûresi, 4:80 — https://quran.com/4/80",
+        "📚 TDV İslâm Ansiklopedisi — Sünnet — https://islamansiklopedisi.org.tr/sunnet--peygamber"
       ]
     },
     {
@@ -1026,7 +1038,8 @@
         "a": "不；穆斯林信仰安拉所派遣的所有先知，不将他们中的任何一位区别对待。"
       },
       "sources": [
-        "📖 Kur'an — Bakara Sûresi, 2:285 — https://quran.com/2/285"
+        "📖 Kur'an — Bakara Sûresi, 2:285 — https://quran.com/2/285",
+        "📚 TDV İslâm Ansiklopedisi — Peygamber — https://islamansiklopedisi.org.tr/peygamber"
       ]
     },
     {
@@ -1097,7 +1110,8 @@
         "a": "意味着确信今世生活终将结束，人们死后将被复活，并在安拉面前接受清算。"
       },
       "sources": [
-        "📖 Kur'an — Bakara Sûresi, 2:4 — https://quran.com/2/4"
+        "📖 Kur'an — Bakara Sûresi, 2:4 — https://quran.com/2/4",
+        "📚 TDV İslâm Ansiklopedisi — Âhiret — https://islamansiklopedisi.org.tr/ahiret"
       ]
     },
     {
@@ -1168,7 +1182,8 @@
         "a": "不；末日何时来临只有安拉知道，任何人都无法知晓。"
       },
       "sources": [
-        "📖 Kur'an — A'râf Sûresi, 7:187 — https://quran.com/7/187"
+        "📖 Kur'an — A'râf Sûresi, 7:187 — https://quran.com/7/187",
+        "📚 TDV İslâm Ansiklopedisi — Kıyamet — https://islamansiklopedisi.org.tr/kiyamet"
       ]
     },
     {
@@ -1239,7 +1254,8 @@
         "a": "是指在末日，安拉以其大能使所有人复活，聚集起来接受清算。"
       },
       "sources": [
-        "📖 Kur'an — Yâsîn Sûresi, 36:78-79 — https://quran.com/36/78-79"
+        "📖 Kur'an — Yâsîn Sûresi, 36:78-79 — https://quran.com/36/78-79",
+        "📚 TDV İslâm Ansiklopedisi — Ba‘s — https://islamansiklopedisi.org.tr/bas"
       ]
     },
     {
@@ -1310,7 +1326,9 @@
         "a": "天堂是为信仰并行善者预备的永恒幸福的居所；火狱则是为不信并作恶者预备的惩罚之所。"
       },
       "sources": [
-        "📖 Kur'an — Âl-i İmrân Sûresi, 3:133 — https://quran.com/3/133"
+        "📖 Kur'an — Âl-i İmrân Sûresi, 3:133 — https://quran.com/3/133",
+        "📚 TDV İslâm Ansiklopedisi — Cennet — https://islamansiklopedisi.org.tr/cennet",
+        "📚 TDV İslâm Ansiklopedisi — Cehennem — https://islamansiklopedisi.org.tr/cehennem"
       ]
     },
     {
@@ -1381,7 +1399,9 @@
         "a": "意味着相信安拉以其永恒的知识洞悉万物，并按照既定的分量创造一切，善恶皆由祂的前定而生。"
       },
       "sources": [
-        "📖 Kur'an — Kamer Sûresi, 54:49 — https://quran.com/54/49"
+        "📖 Kur'an — Kamer Sûresi, 54:49 — https://quran.com/54/49",
+        "📚 TDV İslâm Ansiklopedisi — Kader — https://islamansiklopedisi.org.tr/kader",
+        "📚 Hadis — Sahîh-i Müslim 8a (Cibrîl Hadisi) — https://sunnah.com/muslim:8a"
       ]
     },
     {
@@ -1452,7 +1472,8 @@
         "a": "尽管安拉洞悉万物，但祂赋予了人选择的自由；人要为自己的选择负责。"
       },
       "sources": [
-        "📖 Kur'an — Tekvîr Sûresi, 81:28-29 — https://quran.com/81/28-29"
+        "📖 Kur'an — Tekvîr Sûresi, 81:28-29 — https://quran.com/81/28-29",
+        "📚 TDV İslâm Ansiklopedisi — Kader — https://islamansiklopedisi.org.tr/kader"
       ]
     },
     {
@@ -1523,7 +1544,9 @@
         "a": "信仰这六大支柱赋予穆斯林的生活以意义、安定与方向，帮助他们怀着与安拉相联结的意识去做每一件事。"
       },
       "sources": [
-        "📖 Kur'an — Bakara Sûresi, 2:285 — https://quran.com/2/285"
+        "📖 Kur'an — Bakara Sûresi, 2:285 — https://quran.com/2/285",
+        "📚 TDV İslâm Ansiklopedisi — İman — https://islamansiklopedisi.org.tr/iman",
+        "📚 Hadis — Sahîh-i Müslim 8a (Cibrîl Hadisi) — https://sunnah.com/muslim:8a"
       ]
     }
   ]
