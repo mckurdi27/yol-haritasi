@@ -245,7 +245,8 @@
         "a": "先知穆罕默德 ﷺ 是安拉派遣给人类的最后一位先知和使者。"
       },
       "sources": [
-        "📖 Kur'an — Ahzâb Sûresi, 33:40 — https://quran.com/33/40"
+        "📖 Kur'an — Ahzâb Sûresi, 33:40 — https://quran.com/33/40",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
@@ -316,7 +317,9 @@
         "a": "他属于古莱什部落的哈希姆家族。"
       },
       "sources": [
-        "📚 Siyer — İbn Hişâm, es-Sîre; İbn Sa'd, et-Tabakât"
+        "📚 Siyer — İbn Hişâm, es-Sîre; İbn Sa'd, et-Tabakât",
+        "📚 TDV İslâm Ansiklopedisi — Kureyş — https://islamansiklopedisi.org.tr/kureys-beni-kureys",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
@@ -387,7 +390,9 @@
         "a": "他出生于麦加。"
       },
       "sources": [
-        "📚 Siyer — İbn Hişâm, es-Sîre"
+        "📚 Siyer — İbn Hişâm, es-Sîre",
+        "📚 TDV İslâm Ansiklopedisi — Mekke — https://islamansiklopedisi.org.tr/mekke",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
@@ -458,78 +463,80 @@
         "a": "他的父亲是阿卜杜拉，母亲是阿米娜·宾特·瓦赫卜。"
       },
       "sources": [
-        "📚 Siyer — İbn Hişâm, es-Sîre"
+        "📚 Siyer — İbn Hişâm, es-Sîre",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
       "id": 81,
       "day": 5,
       "tr": {
-        "q": "Hz. Muhammed ﷺ gençliğinde hangi güzel lakapla tanınırdı?",
-        "a": "El-Emîn, yani güvenilir kişi, olarak tanınırdı."
+        "q": "Hz. Muhammed ﷺ hangi güzel lakapla tanınırdı?",
+        "a": "Hz. Muhammed ﷺ, peygamberlikten önce de doğruluğu ve güvenilirliği sebebiyle el-Emîn olarak tanınırdı."
       },
       "en": {
-        "q": "By what noble title was Prophet Muhammad ﷺ known in his youth?",
+        "q": "By what honorable nickname was Prophet Muhammad ﷺ known?",
         "a": "He was known as Al-Amin, meaning the trustworthy."
       },
       "de": {
-        "q": "Unter welchem ehrenvollen Beinamen war der Prophet Muhammad ﷺ in seiner Jugend bekannt?",
+        "q": "Unter welchem ehrenvollen Beinamen war der Prophet Muhammad ﷺ bekannt?",
         "a": "Er war als al-Amîn, der Vertrauenswürdige, bekannt."
       },
       "nl": {
-        "q": "Onder welke eervolle bijnaam stond de profeet Muhammad ﷺ in zijn jeugd bekend?",
+        "q": "Onder welke eervolle bijnaam stond de profeet Muhammad ﷺ bekend?",
         "a": "Hij stond bekend als al-Amien, de betrouwbare."
       },
       "fr": {
-        "q": "Par quel titre honorable le Prophète Muhammad ﷺ était-il connu dans sa jeunesse ?",
+        "q": "Par quel surnom honorable le Prophète Muhammad ﷺ était-il connu ?",
         "a": "Il était connu sous le nom d’Al-Amîn, le digne de confiance."
       },
       "ru": {
-        "q": "Под каким почётным именем пророк Мухаммад ﷺ был известен в молодости?",
+        "q": "Под каким почётным прозвищем был известен пророк Мухаммад ﷺ?",
         "a": "Он был известен как аль-Амин — Достойный доверия."
       },
       "ku": {
-        "q": "Hz. Muhammed ﷺ di ciwanî de bi kîjan navê rûmetê dihat nasîn?",
+        "q": "Pêxemberê Muhammed ﷺ bi kîjan navê rêzdar dihat nasîn?",
         "a": "Ew bi navê El-Emîn, ango kesê bawerbar, dihat nasîn."
       },
       "tt": {
-        "q": "Мөхәммәд ﷺ яшь вакытында нинди мактаулы кушамат белән танылган?",
+        "q": "Мөхәммәд ﷺ пәйгамбәр нинди мактаулы кушамат белән танылган?",
         "a": "Ул Әл-Әмин, ягъни ышанычлы кеше, дип танылган."
       },
       "ar": {
-        "q": "بِأَيِّ لَقَبٍ كَرِيمٍ عُرِفَ النَّبِيُّ مُحَمَّدٌ ﷺ فِي شَبَابِهِ؟",
+        "q": "بِأَيِّ لَقَبٍ كَرِيمٍ كَانَ النَّبِيُّ مُحَمَّدٌ ﷺ مَعْرُوفًا؟",
         "a": "عُرِفَ بِـ«الْأَمِينِ»، أَيْ الْمَوْثُوقِ بِهِ."
       },
       "es": {
-        "q": "¿Con qué título honorable era conocido el Profeta Muhammad ﷺ en su juventud?",
+        "q": "¿Por qué honorable apodo era conocido el Profeta Muhammad ﷺ?",
         "a": "Era conocido como Al-Amín, es decir, el digno de confianza."
       },
       "it": {
-        "q": "Con quale titolo onorifico era conosciuto il Profeta Muhammad ﷺ in gioventù?",
+        "q": "Con quale onorifico soprannome era conosciuto il Profeta Muhammad ﷺ?",
         "a": "Era conosciuto come al-Amîn, cioè il degno di fiducia."
       },
       "pt": {
-        "q": "Por qual título honroso o Profeta Muhammad ﷺ era conhecido na juventude?",
+        "q": "Por que honroso apelido era conhecido o Profeta Muhammad ﷺ?",
         "a": "Era conhecido como Al-Amin, isto é, o digno de confiança."
       },
       "ko": {
-        "q": "예언자 무함마드 ﷺ는 젊은 시절 어떤 명예로운 칭호로 알려졌습니까?",
+        "q": "예언자 무함마드 ﷺ는 어떤 명예로운 별칭으로 알려졌습니까?",
         "a": "그분은 ‘알 아민’, 즉 신뢰할 수 있는 분으로 알려졌습니다."
       },
       "vi": {
-        "q": "Khi còn trẻ, Nhà tiên tri Muhammad ﷺ được biết đến với danh hiệu cao quý nào?",
+        "q": "Nhà tiên tri Muhammad ﷺ được biết đến với biệt danh cao quý nào?",
         "a": "Ngài được biết đến với danh hiệu Al-Amin, nghĩa là người đáng tin cậy."
       },
       "ja": {
-        "q": "若い頃、預言者ムハンマド ﷺ はどのような敬称で知られていましたか？",
+        "q": "預言者ムハンマド ﷺ はどのような尊称で知られていましたか？",
         "a": "「アル・アミーン」、すなわち信頼できる人として知られていました。"
       },
       "zh": {
-        "q": "先知穆罕默德 ﷺ 年轻时以什么美誉著称？",
+        "q": "先知穆罕默德 ﷺ 以什么尊贵的称号而闻名？",
         "a": "他以“艾敏”（值得信赖的人）而闻名。"
       },
       "sources": [
-        "📚 Siyer — İbn Hişâm, es-Sîre"
+        "📚 Siyer — İbn Hişâm, es-Sîre",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
@@ -600,7 +607,8 @@
         "a": "他的第一位妻子是赫蒂彻·宾特·胡韦利德。"
       },
       "sources": [
-        "📚 Siyer — İbn Hişâm, es-Sîre"
+        "📚 Siyer — İbn Hişâm, es-Sîre",
+        "📚 TDV İslâm Ansiklopedisi — Hatice — https://islamansiklopedisi.org.tr/hatice"
       ]
     },
     {
@@ -672,7 +680,8 @@
       },
       "sources": [
         "📖 Kur'an — Alak Sûresi, 96:1-5 — https://quran.com/96/1-5",
-        "📚 Hadis — Sahîh-i Buhârî, Bed'ü'l-Vahy — https://sunnah.com/bukhari"
+        "📚 Hadis — Sahîh-i Buhârî 3 — https://sunnah.com/bukhari:3",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
@@ -744,7 +753,8 @@
       },
       "sources": [
         "📖 Kur'an — Alak Sûresi, 96:1-5 — https://quran.com/96/1-5",
-        "📚 Hadis — Sahîh-i Buhârî, Bed'ü'l-Vahy — https://sunnah.com/bukhari"
+        "📚 Hadis — Sahîh-i Buhârî 3 — https://sunnah.com/bukhari:3",
+        "📚 TDV İslâm Ansiklopedisi — Hira — https://islamansiklopedisi.org.tr/hira"
       ]
     },
     {
@@ -816,7 +826,8 @@
       },
       "sources": [
         "📖 Kur'an — Bakara Sûresi, 2:97 — https://quran.com/2/97",
-        "📚 Hadis — Sahîh-i Buhârî, Bed'ü'l-Vahy — https://sunnah.com/bukhari"
+        "📚 Hadis — Sahîh-i Buhârî 3 — https://sunnah.com/bukhari:3",
+        "📚 TDV İslâm Ansiklopedisi — Cebrâil — https://islamansiklopedisi.org.tr/cebrail"
       ]
     },
     {
@@ -887,7 +898,8 @@
         "a": "降下的是《血块章》的前五节。"
       },
       "sources": [
-        "📖 Kur'an — Alak Sûresi, 96:1-5 — https://quran.com/96/1-5"
+        "📖 Kur'an — Alak Sûresi, 96:1-5 — https://quran.com/96/1-5",
+        "📚 Hadis — Sahîh-i Buhârî 3 — https://sunnah.com/bukhari:3"
       ]
     },
     {
@@ -958,7 +970,8 @@
         "a": "他号召人们信仰安拉独一，并只崇拜安拉。"
       },
       "sources": [
-        "📖 Kur'an — Şuarâ Sûresi, 26:214 — https://quran.com/26/214"
+        "📖 Kur'an — Şuarâ Sûresi, 26:214 — https://quran.com/26/214",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
@@ -1029,7 +1042,8 @@
         "a": "他公开且忠实地把安拉的信息传达给人们。"
       },
       "sources": [
-        "📖 Kur'an — Hicr Sûresi, 15:94 — https://quran.com/15/94"
+        "📖 Kur'an — Hicr Sûresi, 15:94 — https://quran.com/15/94",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
@@ -1100,7 +1114,8 @@
         "a": "希吉拉是他奉安拉许可从麦加迁往麦地那。"
       },
       "sources": [
-        "📖 Kur'an — Tevbe Sûresi, 9:40 — https://quran.com/9/40"
+        "📖 Kur'an — Tevbe Sûresi, 9:40 — https://quran.com/9/40",
+        "📚 TDV İslâm Ansiklopedisi — Hicret — https://islamansiklopedisi.org.tr/hicret"
       ]
     },
     {
@@ -1171,7 +1186,9 @@
         "a": "这是穆斯林在麦地那建立有组织共同体的重要转折点。"
       },
       "sources": [
-        "📚 Siyer — İbn Hişâm, es-Sîre; Taberî, Târîh"
+        "📚 Tarih — Taberî, Târîhu’r-Rusül ve’l-Mülûk — https://openlibrary.org/books/OL22146590M/The_History_of_al-Tabari%CC%84",
+        "📚 TDV İslâm Ansiklopedisi — Hicret — https://islamansiklopedisi.org.tr/hicret",
+        "📚 TDV İslâm Ansiklopedisi — Siyer ve Megâzî — https://islamansiklopedisi.org.tr/siyer-ve-megazi"
       ]
     },
     {
@@ -1242,7 +1259,8 @@
         "a": "安拉说，他是被派遣给全世界的慈悯。"
       },
       "sources": [
-        "📖 Kur'an — Enbiyâ Sûresi, 21:107 — https://quran.com/21/107"
+        "📖 Kur'an — Enbiyâ Sûresi, 21:107 — https://quran.com/21/107",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
@@ -1313,7 +1331,8 @@
         "a": "《古兰经》说他具有伟大的品格。"
       },
       "sources": [
-        "📖 Kur'an — Kalem Sûresi, 68:4 — https://quran.com/68/4"
+        "📖 Kur'an — Kalem Sûresi, 68:4 — https://quran.com/68/4",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
@@ -1384,7 +1403,8 @@
         "a": "因为安拉把他树立为应当效法的优秀榜样。"
       },
       "sources": [
-        "📖 Kur'an — Ahzâb Sûresi, 33:21 — https://quran.com/33/21"
+        "📖 Kur'an — Ahzâb Sûresi, 33:21 — https://quran.com/33/21",
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed"
       ]
     },
     {
@@ -1455,7 +1475,8 @@
         "a": "他以慈悯、公正、宽恕和高尚品格待人。"
       },
       "sources": [
-        "📚 Hadis — Sahîh-i Buhârî ve Sahîh-i Müslim, Hz. Peygamber'in güzel ahlâkına dair rivayetler — https://sunnah.com/bukhari"
+        "📚 TDV İslâm Ansiklopedisi — Muhammed — https://islamansiklopedisi.org.tr/muhammed",
+        "📚 Hadis — Sahîh-i Müslim, Fezâil bölümü — https://sunnah.com/muslim/43"
       ]
     },
     {
@@ -1526,7 +1547,8 @@
         "a": "崇拜安拉、具备高尚品格、怜悯他人，并实践和传达真理。"
       },
       "sources": [
-        "📚 Hadis — Sahîh-i Buhârî, Bed'ü'l-Vahy — https://sunnah.com/bukhari"
+        "📚 Hadis — Sahîh-i Buhârî 3 — https://sunnah.com/bukhari:3",
+        "📚 TDV İslâm Ansiklopedisi — Siyer ve Megâzî — https://islamansiklopedisi.org.tr/siyer-ve-megazi"
       ]
     }
   ]
