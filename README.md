@@ -5,6 +5,7 @@
 
 # Bu sıra tüm 30 gün boyunca DEĞİŞMEZ. 
 16 dil ve sıralaması değişmez ama herzaman seçili dil en üstte gösterilir 
+KAYNAK DOSYALAR herzaman 2. sırada olacak
 Bunu  ve days.json dosyasını ana şablon olarak kullan
 İstenen değişiklik için sadece değiştirelecek bölümle ilgili değişikliği söyle
 değişikliği onayladığım takdirde
@@ -197,4 +198,3 @@ yol-haritasi/
 **Alt başlık:** Öğrenilen bilgileri hayata geçirmek, Allah'a kulluk etmek ve İslâm'ı bilinçli bir şekilde yaşamak
 **Soru aralığı:** 552–570
 ---
-  
