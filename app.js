@@ -977,13 +977,13 @@ function renderQuestion() {
   const card = document.createElement("article");
   card.className = "question-card";
 
-  // Seçili dili en üste al; diğer dillerin sabit LANGS sırasını koru.
+  // Seçili dil her zaman ilk sırada; diğer diller sabit sırayı korur.
   const languageOrder = [
     selectedLang,
-    ...LANGS
-      .map(l => l.key)
-      .filter(key => key !== selectedLang)
+    ...LANGS.map(l => l.key).filter(key => key !== selectedLang)
   ];
+
+  let sourcesRendered = false;
 
   languageOrder.forEach(languageKey => {
     const language = LANGS.find(item => item.key === languageKey);
@@ -1010,10 +1010,25 @@ function renderQuestion() {
     block.appendChild(q);
     block.appendChild(a);
     card.appendChild(block);
+
+    // Kaynaklar seçili dil bloğunun hemen altında, yani her zaman 2. sırada.
+    if (languageKey === selectedLang && !sourcesRendered) {
+      if (Array.isArray(question.sources) && question.sources.length) {
+        card.appendChild(renderSources(question.sources));
+      }
+      sourcesRendered = true;
+    }
   });
 
-  if (Array.isArray(question.sources) && question.sources.length) {
-    card.appendChild(renderSources(question.sources));
+  // Seçili dil veri içinde yoksa kaynakları yine en üstteki mevcut dilin altına koy.
+  if (!sourcesRendered && Array.isArray(question.sources) && question.sources.length) {
+    const firstLanguageBlock = card.querySelector('.language-block');
+    const sourcesBox = renderSources(question.sources);
+    if (firstLanguageBlock) {
+      firstLanguageBlock.insertAdjacentElement('afterend', sourcesBox);
+    } else {
+      card.appendChild(sourcesBox);
+    }
   }
 
   content.appendChild(card);
