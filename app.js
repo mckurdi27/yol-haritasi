@@ -977,7 +977,13 @@ function renderQuestion() {
   const card = document.createElement("article");
   card.className = "question-card";
 
-  const languageOrder = LANGS.map(l => l.key);
+  // Seçili dili en üste al; diğer dillerin sabit LANGS sırasını koru.
+  const languageOrder = [
+    selectedLang,
+    ...LANGS
+      .map(l => l.key)
+      .filter(key => key !== selectedLang)
+  ];
 
   languageOrder.forEach(languageKey => {
     const language = LANGS.find(item => item.key === languageKey);
