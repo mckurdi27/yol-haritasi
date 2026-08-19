@@ -141,7 +141,24 @@
   ],
   "day": 7,
   "dayTitle": "7. GÜN — NAMAZA İLK ADIM",
-  "daySubtitle": "Namazın anlamı, vakitleri ve temel rükünleri",
+  "daySubtitle": {
+    "tr": "Namazın anlamı, vakitleri, şartları ve temel rükünleri",
+    "en": "The meaning, times, conditions and basic pillars of prayer",
+    "de": "Die Bedeutung, Zeiten, Voraussetzungen und grundlegenden Säulen des Gebets",
+    "nl": "De betekenis, tijden, voorwaarden en basispijlers van het gebed",
+    "fr": "Le sens, les horaires, les conditions et les piliers essentiels de la prière",
+    "ru": "Смысл, времена, условия и основные столпы молитвы",
+    "ku": "Wate, dem, şert û ruknên bingehîn ên nimêjê",
+    "tt": "Намазның мәгънәсе, вакытлары, шартлары һәм төп рөкеннәре",
+    "ar": "مَعْنَى الصَّلَاةِ وَأَوْقَاتُهَا وَشُرُوطُهَا وَأَرْكَانُهَا الْأَسَاسِيَّةُ",
+    "es": "El significado, los horarios, las condiciones y los pilares básicos de la oración",
+    "it": "Il significato, gli orari, le condizioni e i pilastri fondamentali della preghiera",
+    "pt": "O significado, os horários, as condições e os pilares fundamentais da oração",
+    "ko": "예배의 의미와 시간, 조건 및 기본 기둥",
+    "vi": "Ý nghĩa, thời gian, điều kiện và các trụ cột cơ bản của lễ nguyện Salah",
+    "ja": "礼拝の意味、時間、条件、基本的な要素",
+    "zh": "礼拜的意义、时间、条件和基本要素"
+  },
   "questions": [
     {
       "id": 115,
