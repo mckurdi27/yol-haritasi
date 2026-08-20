@@ -1,0 +1,1523 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 11,
+  "dayTitle": {
+    "tr": "22. Gün — Sünnet ve Hadis",
+    "en": "Day 22 — Sünnet ve Hadis",
+    "de": "22. Tag — Sünnet ve Hadis"
+  },
+  "daySubtitle": {
+    "tr": "Hadis, sünnet, sahih hadis, Peygamberimizin örnekliği ve sünnete bağlılık",
+    "en": "Hadis, sünnet, sahih hadis, Peygamberimizin örnekliği ve sünnete bağlılık",
+    "de": "Hadis, sünnet, sahih hadis, Peygamberimizin örnekliği ve sünnete bağlılık"
+  },
+  "questions": [
+    {
+      "id": 400,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "en": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "de": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "nl": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "fr": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "ru": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "ku": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "tt": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "ar": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "es": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "it": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "pt": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "ko": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "vi": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "ja": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      },
+      "zh": {
+        "q": "Hadis nedir?",
+        "a": "Peygamberimiz ﷺ’in söz, fiil, onay ve niteliklerini aktaran rivayetlerdir."
+      }
+    },
+    {
+      "id": 401,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "en": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "de": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "nl": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "fr": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "ru": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "ku": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "tt": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "ar": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "es": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "it": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "pt": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "ko": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "vi": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "ja": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      },
+      "zh": {
+        "q": "Sünnet nedir?",
+        "a": "Peygamberimiz ﷺ’in örnek yolu, uygulaması ve rehberliğidir."
+      }
+    },
+    {
+      "id": 402,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "en": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "de": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "nl": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "fr": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "ru": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "ku": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "tt": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "ar": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "es": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "it": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "pt": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "ko": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "vi": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "ja": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      },
+      "zh": {
+        "q": "Hadis ile sünnet aynı şey midir?",
+        "a": "Tam olarak aynı değildir; hadisler sünnet hakkında bilgi veren rivayetlerdir."
+      }
+    },
+    {
+      "id": 403,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "en": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "de": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "nl": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "fr": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "ru": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "ku": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "tt": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "ar": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "es": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "it": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "pt": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "ko": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "vi": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "ja": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      },
+      "zh": {
+        "q": "Sahih hadis nedir?",
+        "a": "Hadis usulü ölçütlerine göre güvenilir kabul edilen rivayettir."
+      }
+    },
+    {
+      "id": 404,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "en": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "de": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "nl": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "fr": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "ru": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "ku": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "tt": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "ar": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "es": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "it": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "pt": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "ko": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "vi": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "ja": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      },
+      "zh": {
+        "q": "Hadisleri kimler aktardı?",
+        "a": "Sahabe ve sonraki hadis âlimleri rivayetleri aktarıp değerlendirdiler."
+      }
+    },
+    {
+      "id": 405,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "en": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "de": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "nl": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "fr": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "ru": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "ku": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "tt": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "ar": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "es": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "it": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "pt": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "ko": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "vi": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "ja": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      },
+      "zh": {
+        "q": "Hadis ilmi neden gelişmiştir?",
+        "a": "Peygamberimizin söz ve uygulamalarını doğru korumak için."
+      }
+    },
+    {
+      "id": 406,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "en": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "de": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "nl": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "fr": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "ru": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "ku": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "tt": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "ar": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "es": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "it": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "pt": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "ko": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "vi": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "ja": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      },
+      "zh": {
+        "q": "Sünnete uymak neden önemlidir?",
+        "a": "Kur’an’ın yanında Peygamberimizin örnekliğini takip etmeyi sağlar."
+      }
+    },
+    {
+      "id": 407,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "en": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "de": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "nl": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "fr": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "ru": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "ku": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "tt": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "ar": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "es": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "it": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "pt": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "ko": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "vi": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "ja": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      },
+      "zh": {
+        "q": "Peygamberimiz namaz konusunda neyi öğretti?",
+        "a": "Namazın nasıl kılınacağını sözleri ve uygulamasıyla öğretti."
+      }
+    },
+    {
+      "id": 408,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "en": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "de": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "nl": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "fr": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "ru": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "ku": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "tt": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "ar": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "es": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "it": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "pt": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "ko": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "vi": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "ja": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      },
+      "zh": {
+        "q": "Hadislerin dereceleri var mıdır?",
+        "a": "Evet; sahih, hasen ve zayıf gibi farklı değerlendirme dereceleri vardır."
+      }
+    },
+    {
+      "id": 409,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "en": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "de": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "nl": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "fr": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "ru": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "ku": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "tt": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "ar": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "es": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "it": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "pt": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "ko": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "vi": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "ja": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      },
+      "zh": {
+        "q": "Hadisleri anlamada bağlam neden önemlidir?",
+        "a": "Sözün hangi olay ve şartta söylendiğini anlamaya yardımcı olur."
+      }
+    },
+    {
+      "id": 410,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "en": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "de": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "nl": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "fr": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "ru": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "ku": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "tt": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "ar": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "es": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "it": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "pt": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "ko": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "vi": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "ja": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      },
+      "zh": {
+        "q": "Hadis uydurmak neden büyük bir günahtır?",
+        "a": "Peygamberimize söylemediği bir sözü nispet etmek ağır bir iftiradır."
+      }
+    },
+    {
+      "id": 411,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "en": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "de": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "nl": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "fr": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "ru": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "ku": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "tt": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "ar": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "es": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "it": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "pt": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "ko": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "vi": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "ja": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      },
+      "zh": {
+        "q": "Sünnet sadece ibadetlerden mi oluşur?",
+        "a": "Hayır; ahlâk, aile, toplum ve günlük davranışları da kapsar."
+      }
+    },
+    {
+      "id": 412,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "en": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "de": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "nl": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "fr": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "ru": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "ku": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "tt": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "ar": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "es": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "it": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "pt": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "ko": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "vi": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "ja": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      },
+      "zh": {
+        "q": "Peygamberimizin güzel ahlâkı nerede örneklenir?",
+        "a": "Kur’an ve hadislerde birçok örneği bulunur."
+      }
+    },
+    {
+      "id": 413,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "en": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "de": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "nl": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "fr": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "ru": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "ku": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "tt": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "ar": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "es": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "it": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "pt": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "ko": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "vi": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "ja": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      },
+      "zh": {
+        "q": "Hadis öğrenirken güvenilir kaynak neden önemlidir?",
+        "a": "Yanlış veya uydurma rivayetlerden korunmak için."
+      }
+    },
+    {
+      "id": 414,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "en": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "de": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "nl": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "fr": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "ru": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "ku": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "tt": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "ar": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "es": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "it": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "pt": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "ko": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "vi": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "ja": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      },
+      "zh": {
+        "q": "Sünnet Kur’an’la nasıl ilişkilidir?",
+        "a": "Sünnet Kur’an’ı açıklar ve Peygamberimizin uygulamasıyla örneklendirir."
+      }
+    },
+    {
+      "id": 415,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "en": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "de": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "nl": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "fr": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "ru": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "ku": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "tt": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "ar": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "es": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "it": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "pt": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "ko": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "vi": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "ja": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      },
+      "zh": {
+        "q": "Hadisleri reddetmek konusunda neden dikkatli olunmalıdır?",
+        "a": "Sünnet İslâm’ın anlaşılmasında önemli bir kaynaktır; rivayetler ilmî yöntemlerle değerlendirilmelidir."
+      }
+    },
+    {
+      "id": 416,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "en": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "de": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "nl": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "fr": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "ru": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "ku": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "tt": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "ar": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "es": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "it": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "pt": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "ko": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "vi": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "ja": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      },
+      "zh": {
+        "q": "Hadis ezberlemenin faydası nedir?",
+        "a": "Peygamberimizin rehberliğini hatırlamayı ve yaşamayı kolaylaştırır."
+      }
+    },
+    {
+      "id": 417,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "en": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "de": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "nl": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "fr": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "ru": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "ku": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "tt": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "ar": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "es": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "it": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "pt": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "ko": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "vi": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "ja": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      },
+      "zh": {
+        "q": "Sünnetin amacı nedir?",
+        "a": "Peygamberimizi örnek alarak Allah’ın rızasına uygun yaşamaktır."
+      }
+    },
+    {
+      "id": 418,
+      "day": 22,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6008 — https://sunnah.com/bukhari:6008",
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c"
+      ],
+      "tr": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "en": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "de": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "nl": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "fr": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "ru": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "ku": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "tt": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "ar": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "es": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "it": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "pt": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "ko": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "vi": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "ja": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      },
+      "zh": {
+        "q": "Hadis ve sünnet Müslümanın hayatını nasıl etkiler?",
+        "a": "İbadet, ahlâk ve günlük davranışlarda Peygamberimizin örnekliğini gösterir."
+      }
+    }
+  ]
+}
