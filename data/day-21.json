@@ -1,0 +1,1547 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 21,
+  "dayTitle": {
+    "en": "Day 21 — Living with the Qur'an",
+    "de": "21. Tag — Mit dem Koran leben",
+    "nl": "Dag 21 — Leven met de Koran",
+    "fr": "Jour 21 — Vivre avec le Coran",
+    "ru": "День 21 — Жить с Кораном",
+    "ku": "Roj 21 — Bi Qur'anê re jiyan",
+    "tt": "21 нче көн — Коръән белән яшәү",
+    "ar": "اليَوْمُ 21 — العَيْشُ مَعَ القُرْآنِ",
+    "es": "Día 21 — Vivir con el Corán",
+    "it": "Giorno 21 — Vivere con il Corano",
+    "pt": "Dia 21 — Viver com o Alcorão",
+    "ko": "21일 — 꾸란과 함께 살아가기",
+    "vi": "Ngày 21 — Sống với Kinh Qur'an",
+    "ja": "21日目 — クルアーンとともに生きる",
+    "zh": "第21天——与《古兰经》一起生活"
+  },
+  "daySubtitle": {
+    "en": "Reading, understanding, reflecting on, practicing and giving the Qur'an its place in our lives",
+    "de": "Den Koran lesen, verstehen, darüber nachdenken, danach handeln und ihm einen Platz in unserem Leben geben",
+    "nl": "De Koran lezen, begrijpen, erover nadenken, ernaar handelen en de plaats van de Koran in ons leven",
+    "fr": "Lire, comprendre, méditer et mettre en pratique le Coran et lui donner une place dans notre vie",
+    "ru": "Читать Коран, понимать его, размышлять над ним, применять его и отводить ему место в нашей жизни",
+    "ku": "Qur'anê bixwînin, fêm bikin, li ser wî bifikirin, pê re bijîn û cihê wî di jiyana me de bidin",
+    "tt": "Коръәнне уку, аңлау, аның турында уйлану, аны тормышта куллану һәм тормышыбызда аңа урын бирү",
+    "ar": "قِرَاءَةُ القُرْآنِ وَفَهْمُهُ وَالتَّدَبُّرُ فِيهِ وَالعَمَلُ بِهِ وَإِعْطَاؤُهُ مَكَانَهُ فِي حَيَاتِنَا",
+    "es": "Leer, comprender, reflexionar sobre el Corán, ponerlo en práctica y darle un lugar en nuestra vida",
+    "it": "Leggere, comprendere, riflettere sul Corano, metterlo in pratica e dargli un posto nella nostra vita",
+    "pt": "Ler, compreender, refletir sobre o Alcorão, praticá-lo e dar-lhe um lugar em nossa vida",
+    "ko": "꾸란을 읽고 이해하며 묵상하고 실천하며 우리 삶에서 꾸란의 자리를 세우기",
+    "vi": "Đọc, hiểu, suy ngẫm, thực hành Kinh Qur'an và dành cho Kinh Qur'an một vị trí trong cuộc sống",
+    "ja": "クルアーンを読み、理解し、熟考し、実践し、生活の中でその位置を大切にする",
+    "zh": "阅读、理解、思考并实践《古兰经》，让《古兰经》在我们的生活中占有应有的位置"
+  },
+  "questions": [
+    {
+      "id": 381,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Sâd 38:29 — https://quran.com/38/29",
+        "📖 Kur’an — Hicr 15:9 — https://quran.com/15/9"
+      ],
+      "tr": {
+        "q": "Kur’an okumak neden önemlidir?",
+        "a": "Kur’an Allah’ın kelamıdır ve okunması ibadettir."
+      },
+      "en": {
+        "q": "Why is reading the Qur’an important?",
+        "a": "The Qur’an is the word of Allah, and reciting it is an act of worship."
+      },
+      "de": {
+        "q": "Warum ist das Lesen des Korans wichtig?",
+        "a": "Der Koran ist das Wort Allahs, und sein Rezitieren ist ein Gottesdienst."
+      },
+      "nl": {
+        "q": "Waarom is het lezen van de Koran belangrijk?",
+        "a": "De Koran is het woord van Allah, en het reciteren ervan is een daad van aanbidding."
+      },
+      "fr": {
+        "q": "Pourquoi est-il important de lire le Coran ?",
+        "a": "Le Coran est la parole d’Allah et sa récitation est un acte d’adoration."
+      },
+      "ru": {
+        "q": "Почему важно читать Коран?",
+        "a": "Коран — слово Аллаха, и его чтение является поклонением."
+      },
+      "ku": {
+        "q": "Çima xwendina Qur’anê girîng e?",
+        "a": "Qur’an kelama Xwedê ye û xwendina wî îbadet e."
+      },
+      "tt": {
+        "q": "Коръән уку ни өчен мөһим?",
+        "a": "Коръән — Аллаһның сүзе, ә аны уку гыйбадәт кылуның бер төре."
+      },
+      "ar": {
+        "q": "لِمَاذَا تُعَدُّ قِرَاءَةُ الْقُرْآنِ مُهِمَّةً؟",
+        "a": "الْقُرْآنُ كَلَامُ اللَّهِ، وَتِلَاوَتُهُ عِبَادَةٌ."
+      },
+      "es": {
+        "q": "¿Por qué es importante leer el Corán?",
+        "a": "El Corán es la palabra de Allah y recitarlo es un acto de adoración."
+      },
+      "it": {
+        "q": "Perché è importante leggere il Corano?",
+        "a": "Il Corano è la parola di Allah e recitarlo è un atto di adorazione."
+      },
+      "pt": {
+        "q": "Por que é importante ler o Alcorão?",
+        "a": "O Alcorão é a palavra de Allah, e recitá-lo é um ato de adoração."
+      },
+      "ko": {
+        "q": "꾸란을 읽는 것이 왜 중요한가요?",
+        "a": "꾸란은 알라의 말씀이며, 그것을 낭송하는 것은 예배입니다."
+      },
+      "vi": {
+        "q": "Vì sao đọc Kinh Qur’an lại quan trọng?",
+        "a": "Kinh Qur’an là lời của Allah, và việc đọc tụng là một hành vi thờ phượng."
+      },
+      "ja": {
+        "q": "クルアーンを読むことはなぜ大切ですか。",
+        "a": "クルアーンはアッラーの御言葉であり、それを朗誦することは礼拝です。"
+      },
+      "zh": {
+        "q": "为什么阅读《古兰经》很重要？",
+        "a": "《古兰经》是安拉的言语，诵读它属于崇拜。"
+      }
+    },
+    {
+      "id": 382,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Sâd 38:29 — https://quran.com/38/29",
+        "📖 Kur’an — Muhammed 47:24 — https://quran.com/47/24"
+      ],
+      "tr": {
+        "q": "Kur’an’ı anlamak neden önemlidir?",
+        "a": "Mesajını hayata geçirmek için anlamını öğrenmek gerekir."
+      },
+      "en": {
+        "q": "Why is it important to understand the Qur’an?",
+        "a": "We need to learn its meaning in order to put its message into practice."
+      },
+      "de": {
+        "q": "Warum ist es wichtig, den Koran zu verstehen?",
+        "a": "Wir müssen seine Bedeutung lernen, um seine Botschaft im Leben umzusetzen."
+      },
+      "nl": {
+        "q": "Waarom is het belangrijk de Koran te begrijpen?",
+        "a": "We moeten de betekenis ervan leren om zijn boodschap in praktijk te brengen."
+      },
+      "fr": {
+        "q": "Pourquoi est-il important de comprendre le Coran ?",
+        "a": "Nous devons en apprendre le sens afin de mettre son message en pratique."
+      },
+      "ru": {
+        "q": "Почему важно понимать Коран?",
+        "a": "Нужно изучать его смысл, чтобы воплощать его послание в жизни."
+      },
+      "ku": {
+        "q": "Çima fêmkirina Qur’anê girîng e?",
+        "a": "Divê em wateya wî fêr bibin da ku peyama wî di jiyanê de pêk bînin."
+      },
+      "tt": {
+        "q": "Коръәнне аңлау ни өчен мөһим?",
+        "a": "Аның мәгънәсен өйрәнү кирәк, шулай итеп аның хәбәрен тормышта куллана алабыз."
+      },
+      "ar": {
+        "q": "لِمَاذَا يُهِمُّ فَهْمُ الْقُرْآنِ؟",
+        "a": "يَجِبُ أَنْ نَتَعَلَّمَ مَعَانِيَهُ لِنُطَبِّقَ رِسَالَتَهُ فِي حَيَاتِنَا."
+      },
+      "es": {
+        "q": "¿Por qué es importante comprender el Corán?",
+        "a": "Debemos aprender su significado para poner en práctica su mensaje."
+      },
+      "it": {
+        "q": "Perché è importante comprendere il Corano?",
+        "a": "Dobbiamo impararne il significato per mettere in pratica il suo messaggio."
+      },
+      "pt": {
+        "q": "Por que é importante compreender o Alcorão?",
+        "a": "Precisamos aprender seu significado para colocar sua mensagem em prática."
+      },
+      "ko": {
+        "q": "꾸란을 이해하는 것이 왜 중요한가요?",
+        "a": "꾸란의 메시지를 삶에서 실천하려면 그 의미를 배워야 합니다."
+      },
+      "vi": {
+        "q": "Vì sao hiểu Kinh Qur’an quan trọng?",
+        "a": "Chúng ta cần học ý nghĩa của Kinh để thực hành thông điệp của Kinh trong cuộc sống."
+      },
+      "ja": {
+        "q": "クルアーンを理解することはなぜ大切ですか。",
+        "a": "そのメッセージを生活で実践するために、その意味を学ぶ必要があります。"
+      },
+      "zh": {
+        "q": "为什么理解《古兰经》很重要？",
+        "a": "为了在生活中实践它的信息，我们需要学习它的意义。"
+      }
+    },
+    {
+      "id": 383,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Sâd 38:29 — https://quran.com/38/29",
+        "📖 Kur’an — Muhammed 47:24 — https://quran.com/47/24"
+      ],
+      "tr": {
+        "q": "Kur’an üzerinde tefekkür nedir?",
+        "a": "Ayetlerin anlamı ve hayatımıza mesajı üzerinde düşünmektir."
+      },
+      "en": {
+        "q": "What is reflection on the Qur’an?",
+        "a": "It means thinking about the meanings of its verses and their message for our lives."
+      },
+      "de": {
+        "q": "Was bedeutet das Nachdenken über den Koran?",
+        "a": "Es bedeutet, über die Bedeutungen seiner Verse und ihre Botschaft für unser Leben nachzudenken."
+      },
+      "nl": {
+        "q": "Wat betekent nadenken over de Koran?",
+        "a": "Het betekent nadenken over de betekenissen van de verzen en hun boodschap voor ons leven."
+      },
+      "fr": {
+        "q": "Qu’est-ce que méditer le Coran ?",
+        "a": "C’est réfléchir au sens de ses versets et à leur message pour notre vie."
+      },
+      "ru": {
+        "q": "Что такое размышление над Кораном?",
+        "a": "Это размышление над смыслом аятов и их посланием для нашей жизни."
+      },
+      "ku": {
+        "q": "Tefekkura li ser Qur’anê çi ye?",
+        "a": "Ew e ku mirov li ser wateya ayetan û peyama wan ji bo jiyana xwe bifikire."
+      },
+      "tt": {
+        "q": "Коръән турында фикер йөртү нәрсә ул?",
+        "a": "Бу аятьләрнең мәгънәләре һәм аларның тормышыбыз өчен хәбәрләре турында уйлану."
+      },
+      "ar": {
+        "q": "مَا هُوَ التَّدَبُّرُ فِي الْقُرْآنِ؟",
+        "a": "هُوَ التَّفَكُّرُ فِي مَعَانِي الْآيَاتِ وَرِسَالَتِهَا لِحَيَاتِنَا."
+      },
+      "es": {
+        "q": "¿Qué es reflexionar sobre el Corán?",
+        "a": "Es pensar en el significado de sus versículos y en su mensaje para nuestra vida."
+      },
+      "it": {
+        "q": "Che cos’è riflettere sul Corano?",
+        "a": "È pensare ai significati dei suoi versetti e al loro messaggio per la nostra vita."
+      },
+      "pt": {
+        "q": "O que é refletir sobre o Alcorão?",
+        "a": "É pensar nos significados de seus versículos e em sua mensagem para nossa vida."
+      },
+      "ko": {
+        "q": "꾸란을 묵상한다는 것은 무엇인가요?",
+        "a": "꾸란 구절의 의미와 그것이 우리 삶에 주는 메시지를 생각하는 것입니다."
+      },
+      "vi": {
+        "q": "Suy ngẫm về Kinh Qur’an là gì?",
+        "a": "Đó là suy nghĩ về ý nghĩa của các câu kinh và thông điệp của chúng đối với cuộc sống."
+      },
+      "ja": {
+        "q": "クルアーンについて熟考するとはどういうことですか。",
+        "a": "その節の意味と、私たちの生活へのメッセージについて考えることです。"
+      },
+      "zh": {
+        "q": "思考《古兰经》是什么意思？",
+        "a": "就是思考经文的意义以及它们给我们生活带来的信息。"
+      }
+    },
+    {
+      "id": 384,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Sâd 38:29 — https://quran.com/38/29",
+        "📖 Kur’an — İsrâ 17:9 — https://quran.com/17/9"
+      ],
+      "tr": {
+        "q": "Kur’an sadece okunmak için mi indirilmiştir?",
+        "a": "Hayır; okunması, anlaşılması ve hayatın onun rehberliğinde düzenlenmesi amaçlanır."
+      },
+      "en": {
+        "q": "Was the Qur’an revealed only to be recited?",
+        "a": "No. It is meant to be read, understood, and used to guide our lives."
+      },
+      "de": {
+        "q": "Wurde der Koran nur zum Rezitieren offenbart?",
+        "a": "Nein. Er soll gelesen, verstanden und als Wegweisung für unser Leben befolgt werden."
+      },
+      "nl": {
+        "q": "Is de Koran alleen geopenbaard om te worden gereciteerd?",
+        "a": "Nee. Hij is bedoeld om gelezen, begrepen en als leidraad voor ons leven gevolgd te worden."
+      },
+      "fr": {
+        "q": "Le Coran a-t-il été révélé seulement pour être récité ?",
+        "a": "Non. Il doit être lu, compris et servir de guide à notre vie."
+      },
+      "ru": {
+        "q": "Коран был ниспослан только для чтения?",
+        "a": "Нет. Его следует читать, понимать и руководствоваться им в жизни."
+      },
+      "ku": {
+        "q": "Qur’an tenê ji bo xwendinê hatiye daxistin?",
+        "a": "Na. Divê were xwendin, fêmkirin û wek rêber di jiyanê de bê bikaranîn."
+      },
+      "tt": {
+        "q": "Коръән бары тик уку өчен генә иңдерелгәнме?",
+        "a": "Юк. Аны укырга, аңларга һәм тормышыбызга юл күрсәтүче итеп тотарга кирәк."
+      },
+      "ar": {
+        "q": "هَلْ أُنْزِلَ الْقُرْآنُ لِلتِّلَاوَةِ فَقَطْ؟",
+        "a": "لَا، بَلْ لِيُقْرَأَ وَيُفْهَمَ وَيَكُونَ هَادِيًا لِحَيَاتِنَا."
+      },
+      "es": {
+        "q": "¿Fue revelado el Corán solo para ser recitado?",
+        "a": "No. Debe leerse, comprenderse y tomarse como guía para la vida."
+      },
+      "it": {
+        "q": "Il Corano è stato rivelato solo per essere recitato?",
+        "a": "No. Deve essere letto, compreso e seguito come guida nella vita."
+      },
+      "pt": {
+        "q": "O Alcorão foi revelado apenas para ser recitado?",
+        "a": "Não. Ele deve ser lido, compreendido e usado como orientação para a vida."
+      },
+      "ko": {
+        "q": "꾸란은 낭송만을 위해 계시되었나요?",
+        "a": "아닙니다. 읽고 이해하며 삶의 지침으로 따라야 합니다."
+      },
+      "vi": {
+        "q": "Kinh Qur’an có được ban xuống chỉ để đọc tụng không?",
+        "a": "Không. Kinh cần được đọc, hiểu và dùng làm kim chỉ nam cho cuộc sống."
+      },
+      "ja": {
+        "q": "クルアーンは朗誦するためだけに下されたのですか。",
+        "a": "いいえ。読み、理解し、生活の導きとして実践するためです。"
+      },
+      "zh": {
+        "q": "《古兰经》只是为了诵读而降示的吗？",
+        "a": "不是。它应当被阅读、理解，并作为生活的指引。"
+      }
+    },
+    {
+      "id": 385,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Bakara 2:21 — https://quran.com/2/21",
+        "📖 Kur’an — Nahl 16:90 — https://quran.com/16/90"
+      ],
+      "tr": {
+        "q": "Kur’an’ın temel mesajı nedir?",
+        "a": "Tevhid, kulluk, hidayet, ahlâk ve sorumluluk gibi temel mesajlar içerir."
+      },
+      "en": {
+        "q": "What is the central message of the Qur’an?",
+        "a": "It teaches fundamental messages such as monotheism, worship, guidance, morality, and responsibility."
+      },
+      "de": {
+        "q": "Was ist die zentrale Botschaft des Korans?",
+        "a": "Er vermittelt grundlegende Botschaften wie den Monotheismus, die Anbetung Allahs, Rechtleitung, Moral und Verantwortung."
+      },
+      "nl": {
+        "q": "Wat is de centrale boodschap van de Koran?",
+        "a": "Hij bevat kernboodschappen zoals monotheïsme, aanbidding, leiding, moraal en verantwoordelijkheid."
+      },
+      "fr": {
+        "q": "Quel est le message central du Coran ?",
+        "a": "Il enseigne notamment l’unicité de Dieu, l’adoration, la guidée, la morale et la responsabilité."
+      },
+      "ru": {
+        "q": "Каково центральное послание Корана?",
+        "a": "Он содержит такие основные послания, как единобожие, поклонение, руководство, нравственность и ответственность."
+      },
+      "ku": {
+        "q": "Peyama bingehîn a Qur’anê çi ye?",
+        "a": "Ew peyamên bingehîn ên wek yektaîtiya Xwedê, îbadet, rêberî, exlaq û berpirsiyarî dihewîne."
+      },
+      "tt": {
+        "q": "Коръәннең төп хәбәре нинди?",
+        "a": "Ул бер Аллаһка иман, гыйбадәт, туры юл, әхлак һәм җаваплылык кебек төп хәбәрләрне өйрәтә."
+      },
+      "ar": {
+        "q": "مَا الرِّسَالَةُ الْأَسَاسِيَّةُ لِلْقُرْآنِ؟",
+        "a": "يَشْتَمِلُ عَلَى مَعَانٍ أَسَاسِيَّةٍ كَالتَّوْحِيدِ وَالْعِبَادَةِ وَالْهِدَايَةِ وَالْأَخْلَاقِ وَالْمَسْؤُولِيَّةِ."
+      },
+      "es": {
+        "q": "¿Cuál es el mensaje central del Corán?",
+        "a": "Enseña mensajes fundamentales como la unicidad de Dios, la adoración, la guía, la moral y la responsabilidad."
+      },
+      "it": {
+        "q": "Qual è il messaggio centrale del Corano?",
+        "a": "Insegna messaggi fondamentali come l’unicità di Dio, l’adorazione, la guida, la morale e la responsabilità."
+      },
+      "pt": {
+        "q": "Qual é a mensagem central do Alcorão?",
+        "a": "Ele ensina mensagens fundamentais como a unicidade de Deus, a adoração, a orientação, a moral e a responsabilidade."
+      },
+      "ko": {
+        "q": "꾸란의 중심 메시지는 무엇인가요?",
+        "a": "유일신앙, 예배, 인도, 도덕, 책임과 같은 기본 메시지를 가르칩니다."
+      },
+      "vi": {
+        "q": "Thông điệp cốt lõi của Kinh Qur’an là gì?",
+        "a": "Kinh dạy những thông điệp nền tảng như duy nhất thần, thờ phượng, hướng dẫn, đạo đức và trách nhiệm."
+      },
+      "ja": {
+        "q": "クルアーンの中心的なメッセージは何ですか。",
+        "a": "唯一神信仰、礼拝、導き、道徳、責任などの基本的なメッセージを教えています。"
+      },
+      "zh": {
+        "q": "《古兰经》的核心信息是什么？",
+        "a": "它教导独一神信仰、崇拜、正道、道德和责任等基本信息。"
+      }
+    },
+    {
+      "id": 386,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Zâriyât 51:56 — https://quran.com/51/56",
+        "📖 Kur’an — Nahl 16:90 — https://quran.com/16/90"
+      ],
+      "tr": {
+        "q": "Kur’an insanı neye çağırır?",
+        "a": "Allah’a kulluğa, doğru yola ve güzel ahlâka çağırır."
+      },
+      "en": {
+        "q": "What does the Qur’an call people to?",
+        "a": "It calls people to worship Allah, follow the right path, and live with good character."
+      },
+      "de": {
+        "q": "Wozu ruft der Koran den Menschen auf?",
+        "a": "Er ruft dazu auf, Allah zu dienen, den rechten Weg zu gehen und einen guten Charakter zu haben."
+      },
+      "nl": {
+        "q": "Waartoe roept de Koran de mensen op?",
+        "a": "Tot aanbidding van Allah, het volgen van de rechte weg en een goed karakter."
+      },
+      "fr": {
+        "q": "À quoi le Coran appelle-t-il les gens ?",
+        "a": "Il appelle à adorer Allah, à suivre le droit chemin et à avoir un bon caractère."
+      },
+      "ru": {
+        "q": "К чему призывает Коран?",
+        "a": "Он призывает поклоняться Аллаху, следовать прямым путём и иметь благой нрав."
+      },
+      "ku": {
+        "q": "Qur’an mirovan li çi bang dike?",
+        "a": "Li îbadeta Xwedê, rêya rast û exlaqê baş bang dike."
+      },
+      "tt": {
+        "q": "Коръән кешеләрне нәрсәгә чакыра?",
+        "a": "Ул Аллаһка гыйбадәт кылырга, туры юлдан барырга һәм күркәм холыклы булырга чакыра."
+      },
+      "ar": {
+        "q": "إِلَى مَاذَا يَدْعُو الْقُرْآنُ النَّاسَ؟",
+        "a": "يَدْعُوهُمْ إِلَى عِبَادَةِ اللَّهِ وَاتِّبَاعِ الصِّرَاطِ الْمُسْتَقِيمِ وَحُسْنِ الْخُلُقِ."
+      },
+      "es": {
+        "q": "¿A qué llama el Corán a las personas?",
+        "a": "Llama a adorar a Allah, seguir el camino recto y tener un buen carácter."
+      },
+      "it": {
+        "q": "A che cosa invita il Corano le persone?",
+        "a": "Invita ad adorare Allah, seguire la retta via e avere un buon carattere."
+      },
+      "pt": {
+        "q": "A que o Alcorão chama as pessoas?",
+        "a": "Ele chama a adorar Allah, seguir o caminho reto e ter bom caráter."
+      },
+      "ko": {
+        "q": "꾸란은 사람들에게 무엇을 요구하나요?",
+        "a": "알라를 예배하고 바른 길을 따르며 좋은 품성을 갖추라고 가르칩니다."
+      },
+      "vi": {
+        "q": "Kinh Qur’an kêu gọi con người điều gì?",
+        "a": "Kinh kêu gọi thờ phượng Allah, đi theo con đường ngay thẳng và có phẩm hạnh tốt."
+      },
+      "ja": {
+        "q": "クルアーンは人々を何に招いていますか。",
+        "a": "アッラーを礼拝し、正しい道を歩み、善い人格を持つよう招いています。"
+      },
+      "zh": {
+        "q": "《古兰经》号召人们做什么？",
+        "a": "号召人们崇拜安拉、走正道并具有良好品德。"
+      }
+    },
+    {
+      "id": 387,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Hicr 15:9 — https://quran.com/15/9",
+        "📖 Kur’an — Fussilet 41:42 — https://quran.com/41/42"
+      ],
+      "tr": {
+        "q": "Kur’an nasıl korunmuştur?",
+        "a": "Allah Kur’an’ı koruyacağını bildirmiş; ayrıca ezber ve yazıyla nesilden nesile aktarılmıştır."
+      },
+      "en": {
+        "q": "How has the Qur’an been preserved?",
+        "a": "Allah has promised to preserve the Qur’an, and it has also been transmitted from generation to generation through memorization and writing."
+      },
+      "de": {
+        "q": "Wie wurde der Koran bewahrt?",
+        "a": "Allah hat versprochen, den Koran zu bewahren; außerdem wurde er durch Auswendiglernen und schriftliche Überlieferung von Generation zu Generation weitergegeben."
+      },
+      "nl": {
+        "q": "Hoe is de Koran bewaard gebleven?",
+        "a": "Allah heeft beloofd hem te bewaren; hij is ook van generatie op generatie door memorisatie en schrift overgeleverd."
+      },
+      "fr": {
+        "q": "Comment le Coran a-t-il été préservé ?",
+        "a": "Allah a promis de le préserver et il a été transmis de génération en génération par mémorisation et par écrit."
+      },
+      "ru": {
+        "q": "Как был сохранён Коран?",
+        "a": "Аллах обещал сохранить его; он также передавался из поколения в поколение через заучивание и письменную передачу."
+      },
+      "ku": {
+        "q": "Qur’an çawa hatiye parastin?",
+        "a": "Xwedê soz daye ku wê biparêze; herwiha bi ezberkirin û nivîsandin ji nifşekî bo nifşekî hatiye veguhestin."
+      },
+      "tt": {
+        "q": "Коръән ничек сакланган?",
+        "a": "Аллаһ аны саклаячагын вәгъдә иткән; ул ятлау һәм язу аша буыннан-буынга тапшырылган."
+      },
+      "ar": {
+        "q": "كَيْفَ حُفِظَ الْقُرْآنُ؟",
+        "a": "وَعَدَ اللَّهُ بِحِفْظِهِ، وَنُقِلَ أَيْضًا مِنْ جِيلٍ إِلَى جِيلٍ بِالْحِفْظِ وَالْكِتَابَةِ."
+      },
+      "es": {
+        "q": "¿Cómo se ha preservado el Corán?",
+        "a": "Allah prometió preservarlo y fue transmitido de generación en generación mediante la memorización y la escritura."
+      },
+      "it": {
+        "q": "Come è stato preservato il Corano?",
+        "a": "Allah ha promesso di preservarlo ed esso è stato trasmesso di generazione in generazione attraverso la memorizzazione e la scrittura."
+      },
+      "pt": {
+        "q": "Como o Alcorão foi preservado?",
+        "a": "Allah prometeu preservá-lo, e ele foi transmitido de geração em geração por memorização e por escrito."
+      },
+      "ko": {
+        "q": "꾸란은 어떻게 보존되었나요?",
+        "a": "알라는 꾸란을 보존하겠다고 약속하셨으며, 암송과 기록을 통해 세대에서 세대로 전해졌습니다."
+      },
+      "vi": {
+        "q": "Kinh Qur’an được bảo tồn như thế nào?",
+        "a": "Allah đã hứa bảo tồn Kinh, và Kinh cũng được truyền qua các thế hệ bằng việc ghi nhớ và ghi chép."
+      },
+      "ja": {
+        "q": "クルアーンはどのように保存されましたか。",
+        "a": "アッラーが保存を約束され、暗記と筆記によって世代から世代へ伝えられました。"
+      },
+      "zh": {
+        "q": "《古兰经》是如何保存下来的？",
+        "a": "安拉承诺保护它，同时它也通过背诵和书写代代相传。"
+      }
+    },
+    {
+      "id": 388,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Yûsuf 12:2 — https://quran.com/12/2",
+        "📖 Kur’an — Şuarâ 26:195 — https://quran.com/26/195"
+      ],
+      "tr": {
+        "q": "Kur’an’ın dili nedir?",
+        "a": "Arapçadır."
+      },
+      "en": {
+        "q": "What language is the Qur’an in?",
+        "a": "It is in Arabic."
+      },
+      "de": {
+        "q": "In welcher Sprache ist der Koran?",
+        "a": "Er ist auf Arabisch."
+      },
+      "nl": {
+        "q": "In welke taal is de Koran?",
+        "a": "In het Arabisch."
+      },
+      "fr": {
+        "q": "Dans quelle langue est le Coran ?",
+        "a": "Il est en arabe."
+      },
+      "ru": {
+        "q": "На каком языке Коран?",
+        "a": "На арабском языке."
+      },
+      "ku": {
+        "q": "Qur’an bi kîjan zimên e?",
+        "a": "Bi erebî ye."
+      },
+      "tt": {
+        "q": "Коръән нинди телдә?",
+        "a": "Гарәп телендә."
+      },
+      "ar": {
+        "q": "مَا لُغَةُ الْقُرْآنِ؟",
+        "a": "هِيَ اللُّغَةُ الْعَرَبِيَّةُ."
+      },
+      "es": {
+        "q": "¿En qué idioma está el Corán?",
+        "a": "Está en árabe."
+      },
+      "it": {
+        "q": "In quale lingua è il Corano?",
+        "a": "È in arabo."
+      },
+      "pt": {
+        "q": "Em que língua está o Alcorão?",
+        "a": "Está em árabe."
+      },
+      "ko": {
+        "q": "꾸란은 어떤 언어로 되어 있나요?",
+        "a": "아랍어입니다."
+      },
+      "vi": {
+        "q": "Kinh Qur’an được viết bằng ngôn ngữ nào?",
+        "a": "Bằng tiếng Ả Rập."
+      },
+      "ja": {
+        "q": "クルアーンは何語ですか。",
+        "a": "アラビア語です。"
+      },
+      "zh": {
+        "q": "《古兰经》使用什么语言？",
+        "a": "阿拉伯语。"
+      }
+    },
+    {
+      "id": 389,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Hicr 15:87 — https://quran.com/15/87",
+        "📖 Kur’an — Zümer 39:23 — https://quran.com/39/23"
+      ],
+      "tr": {
+        "q": "Kur’an kaç sûreden oluşur?",
+        "a": "114 sûreden oluşur."
+      },
+      "en": {
+        "q": "How many surahs are there in the Qur’an?",
+        "a": "There are 114 surahs."
+      },
+      "de": {
+        "q": "Wie viele Suren hat der Koran?",
+        "a": "Der Koran besteht aus 114 Suren."
+      },
+      "nl": {
+        "q": "Hoeveel soera’s bevat de Koran?",
+        "a": "114 soera’s."
+      },
+      "fr": {
+        "q": "Combien de sourates contient le Coran ?",
+        "a": "Il contient 114 sourates."
+      },
+      "ru": {
+        "q": "Сколько сур в Коране?",
+        "a": "В Коране 114 сур."
+      },
+      "ku": {
+        "q": "Di Qur’anê de çend sûre hene?",
+        "a": "114 sûre hene."
+      },
+      "tt": {
+        "q": "Коръәндә ничә сүрә бар?",
+        "a": "Коръәндә 114 сүрә бар."
+      },
+      "ar": {
+        "q": "كَمْ عَدَدُ سُوَرِ الْقُرْآنِ؟",
+        "a": "فِيهِ 114 سُورَةً."
+      },
+      "es": {
+        "q": "¿Cuántas suras hay en el Corán?",
+        "a": "Hay 114 suras."
+      },
+      "it": {
+        "q": "Quante sure ci sono nel Corano?",
+        "a": "Ci sono 114 sure."
+      },
+      "pt": {
+        "q": "Quantas suras existem no Alcorão?",
+        "a": "Existem 114 suras."
+      },
+      "ko": {
+        "q": "꾸란에는 몇 개의 수라가 있나요?",
+        "a": "114개의 수라가 있습니다."
+      },
+      "vi": {
+        "q": "Kinh Qur’an có bao nhiêu surah?",
+        "a": "Có 114 surah."
+      },
+      "ja": {
+        "q": "クルアーンには何章ありますか。",
+        "a": "114章あります。"
+      },
+      "zh": {
+        "q": "《古兰经》有多少章？",
+        "a": "共有114章。"
+      }
+    },
+    {
+      "id": 390,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Fâtiha 1:1-7 — https://quran.com/1/1-7",
+        "📜 Hadis — Sahih Müslim 394 — https://sunnah.com/muslim:394"
+      ],
+      "tr": {
+        "q": "Kur’an’ın ilk sûresi hangisidir?",
+        "a": "Fâtiha sûresidir."
+      },
+      "en": {
+        "q": "What is the first surah of the Qur’an?",
+        "a": "It is Surah al-Fatihah."
+      },
+      "de": {
+        "q": "Welche ist die erste Sure des Korans?",
+        "a": "Es ist die Sure al-Fatiha."
+      },
+      "nl": {
+        "q": "Wat is de eerste soera van de Koran?",
+        "a": "Soera al-Fatiha."
+      },
+      "fr": {
+        "q": "Quelle est la première sourate du Coran ?",
+        "a": "C’est la sourate Al-Fatiha."
+      },
+      "ru": {
+        "q": "Какая сура является первой в Коране?",
+        "a": "Это сура Аль-Фатиха."
+      },
+      "ku": {
+        "q": "Sûreya yekem a Qur’anê kîjan e?",
+        "a": "Sûreya Fatihe ye."
+      },
+      "tt": {
+        "q": "Коръәннең беренче сүрәсе нинди?",
+        "a": "Әл-Фатиха сүрәсе."
+      },
+      "ar": {
+        "q": "مَا أَوَّلُ سُورَةٍ فِي الْقُرْآنِ؟",
+        "a": "هِيَ سُورَةُ الْفَاتِحَةِ."
+      },
+      "es": {
+        "q": "¿Cuál es la primera sura del Corán?",
+        "a": "Es la sura Al-Fatiha."
+      },
+      "it": {
+        "q": "Qual è la prima sura del Corano?",
+        "a": "È la sura Al-Fatiha."
+      },
+      "pt": {
+        "q": "Qual é a primeira sura do Alcorão?",
+        "a": "É a sura Al-Fatiha."
+      },
+      "ko": {
+        "q": "꾸란의 첫 번째 수라는 무엇인가요?",
+        "a": "알파티하 수라입니다."
+      },
+      "vi": {
+        "q": "Surah đầu tiên của Kinh Qur’an là surah nào?",
+        "a": "Đó là Surah Al-Fatihah."
+      },
+      "ja": {
+        "q": "クルアーンの最初の章は何ですか。",
+        "a": "アル＝ファーティハ章です。"
+      },
+      "zh": {
+        "q": "《古兰经》的第一章是哪一章？",
+        "a": "法蒂哈章。"
+      }
+    },
+    {
+      "id": 391,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Nâs 114:1-6 — https://quran.com/114/1-6",
+        "📖 Kur’an — Felak 113:1-5 — https://quran.com/113/1-5"
+      ],
+      "tr": {
+        "q": "Kur’an’ın son sûresi hangisidir?",
+        "a": "Nâs sûresidir."
+      },
+      "en": {
+        "q": "What is the last surah of the Qur’an?",
+        "a": "It is Surah an-Nas."
+      },
+      "de": {
+        "q": "Welche ist die letzte Sure des Korans?",
+        "a": "Es ist die Sure an-Nas."
+      },
+      "nl": {
+        "q": "Wat is de laatste soera van de Koran?",
+        "a": "Soera an-Nas."
+      },
+      "fr": {
+        "q": "Quelle est la dernière sourate du Coran ?",
+        "a": "C’est la sourate An-Nas."
+      },
+      "ru": {
+        "q": "Какая сура является последней в Коране?",
+        "a": "Это сура Ан-Нас."
+      },
+      "ku": {
+        "q": "Sûreya dawî ya Qur’anê kîjan e?",
+        "a": "Sûreya Nas e."
+      },
+      "tt": {
+        "q": "Коръәннең соңгы сүрәсе нинди?",
+        "a": "Ән-Нәс сүрәсе."
+      },
+      "ar": {
+        "q": "مَا آخِرُ سُورَةٍ فِي الْقُرْآنِ؟",
+        "a": "هِيَ سُورَةُ النَّاسِ."
+      },
+      "es": {
+        "q": "¿Cuál es la última sura del Corán?",
+        "a": "Es la sura An-Nas."
+      },
+      "it": {
+        "q": "Qual è l’ultima sura del Corano?",
+        "a": "È la sura An-Nas."
+      },
+      "pt": {
+        "q": "Qual é a última sura do Alcorão?",
+        "a": "É a sura An-Nas."
+      },
+      "ko": {
+        "q": "꾸란의 마지막 수라는 무엇인가요?",
+        "a": "안나스 수라입니다."
+      },
+      "vi": {
+        "q": "Surah cuối cùng của Kinh Qur’an là surah nào?",
+        "a": "Đó là Surah An-Nas."
+      },
+      "ja": {
+        "q": "クルアーンの最後の章は何ですか。",
+        "a": "アン＝ナース章です。"
+      },
+      "zh": {
+        "q": "《古兰经》的最后一章是哪一章？",
+        "a": "奈斯章。"
+      }
+    },
+    {
+      "id": 392,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Bakara 2:185 — https://quran.com/2/185",
+        "📖 Kur’an — Kadir 97:1 — https://quran.com/97/1"
+      ],
+      "tr": {
+        "q": "Kur’an hangi ayda indirilmeye başlanmıştır?",
+        "a": "Ramazan ayında indirilmeye başlanmıştır."
+      },
+      "en": {
+        "q": "In which month did the revelation of the Qur’an begin?",
+        "a": "It began to be revealed in Ramadan."
+      },
+      "de": {
+        "q": "In welchem Monat begann die Offenbarung des Korans?",
+        "a": "Sie begann im Ramadan."
+      },
+      "nl": {
+        "q": "In welke maand begon de openbaring van de Koran?",
+        "a": "In Ramadan."
+      },
+      "fr": {
+        "q": "Au cours de quel mois la révélation du Coran a-t-elle commencé ?",
+        "a": "Elle a commencé pendant le mois de Ramadan."
+      },
+      "ru": {
+        "q": "В каком месяце началось ниспослание Корана?",
+        "a": "Оно началось в Рамадан."
+      },
+      "ku": {
+        "q": "Di kîjan mehê de daxuyaniya Qur’anê dest pê kir?",
+        "a": "Di mehê Remezanê de dest pê kir."
+      },
+      "tt": {
+        "q": "Коръәннең иңдерелүе кайсы айда башланган?",
+        "a": "Рамазан аенда башланган."
+      },
+      "ar": {
+        "q": "فِي أَيِّ شَهْرٍ بَدَأَ نُزُولُ الْقُرْآنِ؟",
+        "a": "بَدَأَ نُزُولُهُ فِي رَمَضَانَ."
+      },
+      "es": {
+        "q": "¿En qué mes comenzó la revelación del Corán?",
+        "a": "Comenzó en Ramadán."
+      },
+      "it": {
+        "q": "In quale mese è iniziata la rivelazione del Corano?",
+        "a": "È iniziata nel mese di Ramadan."
+      },
+      "pt": {
+        "q": "Em que mês começou a revelação do Alcorão?",
+        "a": "Começou no mês de Ramadã."
+      },
+      "ko": {
+        "q": "꾸란의 계시는 어느 달에 시작되었나요?",
+        "a": "라마단 달에 시작되었습니다."
+      },
+      "vi": {
+        "q": "Sự mặc khải của Kinh Qur’an bắt đầu vào tháng nào?",
+        "a": "Bắt đầu vào tháng Ramadan."
+      },
+      "ja": {
+        "q": "クルアーンの啓示は何月に始まりましたか。",
+        "a": "ラマダーン月に始まりました。"
+      },
+      "zh": {
+        "q": "《古兰经》的启示始于哪个月份？",
+        "a": "始于斋月。"
+      }
+    },
+    {
+      "id": 393,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Kadir 97:1-5 — https://quran.com/97/1-5",
+        "📖 Kur’an — Duhân 44:3 — https://quran.com/44/3"
+      ],
+      "tr": {
+        "q": "Kur’an’ın indirildiği gece hangisidir?",
+        "a": "Kadir Gecesi olarak bildirilir."
+      },
+      "en": {
+        "q": "Which night is associated with the revelation of the Qur’an?",
+        "a": "It is known as Laylat al-Qadr, the Night of Decree."
+      },
+      "de": {
+        "q": "Welche Nacht ist mit der Offenbarung des Korans verbunden?",
+        "a": "Sie ist als Laylat al-Qadr, die Nacht der Bestimmung, bekannt."
+      },
+      "nl": {
+        "q": "Welke nacht wordt verbonden met de openbaring van de Koran?",
+        "a": "Laylat al-Qadr, de Nacht van de Voorbeschikking."
+      },
+      "fr": {
+        "q": "Quelle nuit est associée à la révélation du Coran ?",
+        "a": "C’est Laylat al-Qadr, la Nuit du Destin."
+      },
+      "ru": {
+        "q": "Какая ночь связана с ниспосланием Корана?",
+        "a": "Это Ляйлят аль-Кадр, Ночь Предопределения."
+      },
+      "ku": {
+        "q": "Kîjan şev bi daxuyaniya Qur’anê ve girêdayî ye?",
+        "a": "Şeva Qedrê ye."
+      },
+      "tt": {
+        "q": "Коръәннең иңдерелүе белән бәйле төн нинди?",
+        "a": "Ул Кадер төне дип атала."
+      },
+      "ar": {
+        "q": "مَا اللَّيْلَةُ الْمُرْتَبِطَةُ بِنُزُولِ الْقُرْآنِ؟",
+        "a": "هِيَ لَيْلَةُ الْقَدْرِ."
+      },
+      "es": {
+        "q": "¿Qué noche está relacionada con la revelación del Corán?",
+        "a": "Es Laylat al-Qadr, la Noche del Decreto."
+      },
+      "it": {
+        "q": "Quale notte è associata alla rivelazione del Corano?",
+        "a": "È Laylat al-Qadr, la Notte del Destino."
+      },
+      "pt": {
+        "q": "Qual noite está associada à revelação do Alcorão?",
+        "a": "É Laylat al-Qadr, a Noite do Decreto."
+      },
+      "ko": {
+        "q": "꾸란의 계시와 관련된 밤은 어느 밤인가요?",
+        "a": "권능의 밤인 라일라툴 카드르입니다."
+      },
+      "vi": {
+        "q": "Đêm nào gắn liền với sự mặc khải của Kinh Qur’an?",
+        "a": "Đó là Laylat al-Qadr, Đêm Định Mệnh."
+      },
+      "ja": {
+        "q": "クルアーンの啓示と結びつく夜は何ですか。",
+        "a": "ライラト・アル＝カドル（定めの夜）です。"
+      },
+      "zh": {
+        "q": "与《古兰经》降示有关的夜晚是哪一夜？",
+        "a": "是盖德尔之夜。"
+      }
+    },
+    {
+      "id": 394,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Mâide 5:48 — https://quran.com/5/48",
+        "📖 Kur’an — En‘âm 6:155 — https://quran.com/6/155"
+      ],
+      "tr": {
+        "q": "Kur’an ile amel etmek ne demektir?",
+        "a": "Kur’an’ın emir ve ilkelerini davranışlara yansıtmaktır."
+      },
+      "en": {
+        "q": "What does it mean to act according to the Qur’an?",
+        "a": "It means reflecting the Qur’an’s commands and principles in our behavior."
+      },
+      "de": {
+        "q": "Was bedeutet es, nach dem Koran zu handeln?",
+        "a": "Es bedeutet, die Gebote und Grundsätze des Korans im eigenen Verhalten umzusetzen."
+      },
+      "nl": {
+        "q": "Wat betekent handelen volgens de Koran?",
+        "a": "Zijn geboden en principes in ons gedrag toepassen."
+      },
+      "fr": {
+        "q": "Que signifie agir selon le Coran ?",
+        "a": "Cela signifie mettre ses commandements et ses principes en pratique dans son comportement."
+      },
+      "ru": {
+        "q": "Что значит поступать согласно Корану?",
+        "a": "Это значит воплощать его повеления и принципы в своём поведении."
+      },
+      "ku": {
+        "q": "Li gorî Qur’anê tevgerîn çi ye?",
+        "a": "Ew e ku em ferman û prensîbên Qur’anê di tevgera xwe de bicih bînin."
+      },
+      "tt": {
+        "q": "Коръән буенча гамәл кылу нәрсә ул?",
+        "a": "Коръәннең әмерләрен һәм принципларын үз-үзеңне тотышта гамәлгә ашыру."
+      },
+      "ar": {
+        "q": "مَاذَا يَعْنِي الْعَمَلُ بِالْقُرْآنِ؟",
+        "a": "أَنْ نُطَبِّقَ أَوَامِرَهُ وَمَبَادِئَهُ فِي سُلُوكِنَا."
+      },
+      "es": {
+        "q": "¿Qué significa actuar según el Corán?",
+        "a": "Significa reflejar sus mandatos y principios en nuestra conducta."
+      },
+      "it": {
+        "q": "Che cosa significa agire secondo il Corano?",
+        "a": "Significa mettere in pratica nei comportamenti i suoi comandi e principi."
+      },
+      "pt": {
+        "q": "O que significa agir de acordo com o Alcorão?",
+        "a": "Significa refletir seus mandamentos e princípios em nosso comportamento."
+      },
+      "ko": {
+        "q": "꾸란에 따라 실천한다는 것은 무엇인가요?",
+        "a": "꾸란의 명령과 원칙을 행동으로 옮기는 것입니다."
+      },
+      "vi": {
+        "q": "Hành động theo Kinh Qur’an nghĩa là gì?",
+        "a": "Là thể hiện các mệnh lệnh và nguyên tắc của Kinh trong hành vi."
+      },
+      "ja": {
+        "q": "クルアーンに従って行動するとはどういうことですか。",
+        "a": "その命令と原則を自分の行動に反映することです。"
+      },
+      "zh": {
+        "q": "按照《古兰经》行事是什么意思？",
+        "a": "就是把《古兰经》的命令和原则落实在行为中。"
+      }
+    },
+    {
+      "id": 395,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Nahl 16:90 — https://quran.com/16/90",
+        "📜 Hadis — Sahih Müslim 746 — https://sunnah.com/muslim:746"
+      ],
+      "tr": {
+        "q": "Kur’an’ın ahlâk üzerindeki etkisi nedir?",
+        "a": "Doğruluk, adalet, merhamet ve sorumluluk gibi değerleri öğretir."
+      },
+      "en": {
+        "q": "What effect does the Qur’an have on character?",
+        "a": "It teaches values such as truthfulness, justice, mercy, and responsibility."
+      },
+      "de": {
+        "q": "Welchen Einfluss hat der Koran auf den Charakter?",
+        "a": "Er lehrt Werte wie Wahrhaftigkeit, Gerechtigkeit, Barmherzigkeit und Verantwortung."
+      },
+      "nl": {
+        "q": "Welke invloed heeft de Koran op het karakter?",
+        "a": "Hij leert waarden zoals waarachtigheid, rechtvaardigheid, barmhartigheid en verantwoordelijkheid."
+      },
+      "fr": {
+        "q": "Quel effet le Coran a-t-il sur le caractère ?",
+        "a": "Il enseigne des valeurs comme la vérité, la justice, la miséricorde et la responsabilité."
+      },
+      "ru": {
+        "q": "Как Коран влияет на нрав?",
+        "a": "Он учит правдивости, справедливости, милосердию и ответственности."
+      },
+      "ku": {
+        "q": "Qur’an li ser exlaqê çi bandor dike?",
+        "a": "Rastî, edalet, rehm û berpirsiyarî wek nirxên bingehîn hîn dike."
+      },
+      "tt": {
+        "q": "Коръән әхлакка ничек тәэсир итә?",
+        "a": "Ул дөреслек, гаделлек, мәрхәмәт һәм җаваплылык кебек кыйммәтләрне өйрәтә."
+      },
+      "ar": {
+        "q": "مَا أَثَرُ الْقُرْآنِ فِي الْأَخْلَاقِ؟",
+        "a": "يُعَلِّمُ الصِّدْقَ وَالْعَدْلَ وَالرَّحْمَةَ وَالْمَسْؤُولِيَّةَ."
+      },
+      "es": {
+        "q": "¿Qué efecto tiene el Corán sobre el carácter?",
+        "a": "Enseña valores como la veracidad, la justicia, la misericordia y la responsabilidad."
+      },
+      "it": {
+        "q": "Quale effetto ha il Corano sul carattere?",
+        "a": "Insegna valori come veridicità, giustizia, misericordia e responsabilità."
+      },
+      "pt": {
+        "q": "Qual é o efeito do Alcorão sobre o caráter?",
+        "a": "Ele ensina valores como veracidade, justiça, misericórdia e responsabilidade."
+      },
+      "ko": {
+        "q": "꾸란은 품성에 어떤 영향을 주나요?",
+        "a": "정직, 정의, 자비, 책임과 같은 가치를 가르칩니다."
+      },
+      "vi": {
+        "q": "Kinh Qur’an ảnh hưởng đến phẩm hạnh như thế nào?",
+        "a": "Kinh dạy các giá trị như trung thực, công bằng, lòng thương xót và trách nhiệm."
+      },
+      "ja": {
+        "q": "クルアーンは人格にどのような影響を与えますか。",
+        "a": "真実、正義、慈悲、責任などの価値を教えます。"
+      },
+      "zh": {
+        "q": "《古兰经》对品德有什么影响？",
+        "a": "它教导诚实、公正、仁慈和责任等价值观。"
+      }
+    },
+    {
+      "id": 396,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — Sâd 38:29 — https://quran.com/38/29",
+        "📖 Kur’an — Muhammed 47:24 — https://quran.com/47/24"
+      ],
+      "tr": {
+        "q": "Kur’an öğrenmenin amacı nedir?",
+        "a": "Allah’ın mesajını doğru anlamak ve hayatı ona göre düzenlemektir."
+      },
+      "en": {
+        "q": "What is the purpose of learning the Qur’an?",
+        "a": "To understand Allah’s message correctly and shape our lives accordingly."
+      },
+      "de": {
+        "q": "Was ist das Ziel, den Koran zu lernen?",
+        "a": "Allahs Botschaft richtig zu verstehen und das eigene Leben danach auszurichten."
+      },
+      "nl": {
+        "q": "Wat is het doel van het leren van de Koran?",
+        "a": "Allahs boodschap juist begrijpen en ons leven ernaar richten."
+      },
+      "fr": {
+        "q": "Quel est le but d’apprendre le Coran ?",
+        "a": "Comprendre correctement le message d’Allah et orienter sa vie en conséquence."
+      },
+      "ru": {
+        "q": "Какова цель изучения Корана?",
+        "a": "Правильно понять послание Аллаха и строить свою жизнь в соответствии с ним."
+      },
+      "ku": {
+        "q": "Armanca fêrbûna Qur’anê çi ye?",
+        "a": "Peyama Xwedê rast fêm bikin û jiyana xwe li gorî wê rêk bikin."
+      },
+      "tt": {
+        "q": "Коръәнне өйрәнүнең максаты нинди?",
+        "a": "Аллаһның хәбәрен дөрес аңлау һәм тормышны шуңа туры китереп кору."
+      },
+      "ar": {
+        "q": "مَا هَدَفُ تَعَلُّمِ الْقُرْآنِ؟",
+        "a": "فَهْمُ رِسَالَةِ اللَّهِ فَهْمًا صَحِيحًا وَتَنْظِيمُ الْحَيَاةِ وَفْقَهَا."
+      },
+      "es": {
+        "q": "¿Cuál es el propósito de aprender el Corán?",
+        "a": "Comprender correctamente el mensaje de Allah y orientar la vida de acuerdo con él."
+      },
+      "it": {
+        "q": "Qual è lo scopo di imparare il Corano?",
+        "a": "Comprendere correttamente il messaggio di Allah e orientare la propria vita di conseguenza."
+      },
+      "pt": {
+        "q": "Qual é o objetivo de aprender o Alcorão?",
+        "a": "Compreender corretamente a mensagem de Allah e orientar a vida de acordo com ela."
+      },
+      "ko": {
+        "q": "꾸란을 배우는 목적은 무엇인가요?",
+        "a": "알라의 메시지를 올바르게 이해하고 그에 따라 삶을 세우는 것입니다."
+      },
+      "vi": {
+        "q": "Mục đích học Kinh Qur’an là gì?",
+        "a": "Là hiểu đúng thông điệp của Allah và định hướng cuộc sống theo đó."
+      },
+      "ja": {
+        "q": "クルアーンを学ぶ目的は何ですか。",
+        "a": "アッラーのメッセージを正しく理解し、それに沿って生活を整えることです。"
+      },
+      "zh": {
+        "q": "学习《古兰经》的目的是什么？",
+        "a": "正确理解安拉的信息，并据此安排生活。"
+      }
+    },
+    {
+      "id": 397,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — A‘râf 7:204 — https://quran.com/7/204",
+        "📖 Kur’an — Müzzemmil 73:4 — https://quran.com/73/4"
+      ],
+      "tr": {
+        "q": "Kur’an okurken saygı neden önemlidir?",
+        "a": "Kur’an Allah’ın kelamı olduğundan Müslüman onu hürmetle okur."
+      },
+      "en": {
+        "q": "Why is respect important when reading the Qur’an?",
+        "a": "Because the Qur’an is the word of Allah, Muslims read it with reverence."
+      },
+      "de": {
+        "q": "Warum ist Respekt beim Lesen des Korans wichtig?",
+        "a": "Weil der Koran das Wort Allahs ist, lesen Muslime ihn mit Ehrfurcht."
+      },
+      "nl": {
+        "q": "Waarom is respect belangrijk bij het lezen van de Koran?",
+        "a": "Omdat de Koran het woord van Allah is, lezen moslims hem met eerbied."
+      },
+      "fr": {
+        "q": "Pourquoi le respect est-il important lors de la lecture du Coran ?",
+        "a": "Parce que le Coran est la parole d’Allah, les musulmans le lisent avec révérence."
+      },
+      "ru": {
+        "q": "Почему важно уважение при чтении Корана?",
+        "a": "Потому что Коран — слово Аллаха, мусульмане читают его с почтением."
+      },
+      "ku": {
+        "q": "Çima rêzgirtin di dema xwendina Qur’anê de girîng e?",
+        "a": "Ji ber ku Qur’an kelama Xwedê ye, misilman wê bi hurmet dixwînin."
+      },
+      "tt": {
+        "q": "Коръән укыганда ни өчен хөрмәт мөһим?",
+        "a": "Коръән Аллаһның сүзе булганга, мөселманнар аны хөрмәт белән укый."
+      },
+      "ar": {
+        "q": "لِمَاذَا يَهُمُّ الِاحْتِرَامُ عِنْدَ قِرَاءَةِ الْقُرْآنِ؟",
+        "a": "لِأَنَّ الْقُرْآنَ كَلَامُ اللَّهِ، فَيَقْرَؤُهُ الْمُسْلِمُ بِتَوْقِيرٍ."
+      },
+      "es": {
+        "q": "¿Por qué es importante respetar el Corán al leerlo?",
+        "a": "Porque el Corán es la palabra de Allah, los musulmanes lo leen con reverencia."
+      },
+      "it": {
+        "q": "Perché è importante il rispetto quando si legge il Corano?",
+        "a": "Perché il Corano è la parola di Allah, i musulmani lo leggono con riverenza."
+      },
+      "pt": {
+        "q": "Por que o respeito é importante ao ler o Alcorão?",
+        "a": "Porque o Alcorão é a palavra de Allah, os muçulmanos o leem com reverência."
+      },
+      "ko": {
+        "q": "꾸란을 읽을 때 왜 존중이 중요한가요?",
+        "a": "꾸란은 알라의 말씀이므로 무슬림은 경건한 마음으로 읽습니다."
+      },
+      "vi": {
+        "q": "Vì sao cần tôn kính khi đọc Kinh Qur’an?",
+        "a": "Vì Kinh Qur’an là lời của Allah nên người Muslim đọc Kinh với lòng tôn kính."
+      },
+      "ja": {
+        "q": "クルアーンを読むとき、なぜ敬意が大切ですか。",
+        "a": "クルアーンはアッラーの御言葉なので、ムスリムは敬意をもって読みます。"
+      },
+      "zh": {
+        "q": "阅读《古兰经》时为什么要尊重？",
+        "a": "因为《古兰经》是安拉的言语，穆斯林以恭敬的态度诵读。"
+      }
+    },
+    {
+      "id": 398,
+      "day": 21,
+      "sources": [
+        "📜 Hadis — Sahih Buhârî 5027 — https://sunnah.com/bukhari:5027",
+        "📜 Hadis — Sünen İbn Mâce 213 — https://sunnah.com/ibnmajah:213"
+      ],
+      "tr": {
+        "q": "Kur’an’ı başkasına öğretmenin değeri nedir?",
+        "a": "Allah’ın kelamını öğretmek büyük bir hayırdır."
+      },
+      "en": {
+        "q": "What is the value of teaching the Qur’an to others?",
+        "a": "Teaching the word of Allah is a great good deed."
+      },
+      "de": {
+        "q": "Welchen Wert hat es, anderen den Koran zu lehren?",
+        "a": "Das Lehren des Wortes Allahs ist eine große gute Tat."
+      },
+      "nl": {
+        "q": "Wat is de waarde van het onderwijzen van de Koran aan anderen?",
+        "a": "Het onderwijzen van het woord van Allah is een grote goede daad."
+      },
+      "fr": {
+        "q": "Quelle est la valeur d’enseigner le Coran aux autres ?",
+        "a": "Enseigner la parole d’Allah est une grande bonne action."
+      },
+      "ru": {
+        "q": "Какова ценность обучения Корану других?",
+        "a": "Обучать слову Аллаха — великое доброе дело."
+      },
+      "ku": {
+        "q": "Fêrkirina Qur’anê ji kesên din re çi nirx e?",
+        "a": "Fêrkirina kelama Xwedê xêrekî mezin e."
+      },
+      "tt": {
+        "q": "Башкаларга Коръән өйрәтүнең кыйммәте нинди?",
+        "a": "Аллаһның сүзен өйрәтү — зур изге эш."
+      },
+      "ar": {
+        "q": "مَا فَضْلُ تَعْلِيمِ الْقُرْآنِ لِلْآخَرِينَ؟",
+        "a": "تَعْلِيمُ كَلَامِ اللَّهِ عَمَلٌ صَالِحٌ عَظِيمٌ."
+      },
+      "es": {
+        "q": "¿Qué valor tiene enseñar el Corán a otros?",
+        "a": "Enseñar la palabra de Allah es una gran buena acción."
+      },
+      "it": {
+        "q": "Qual è il valore di insegnare il Corano agli altri?",
+        "a": "Insegnare la parola di Allah è una grande buona azione."
+      },
+      "pt": {
+        "q": "Qual é o valor de ensinar o Alcorão aos outros?",
+        "a": "Ensinar a palavra de Allah é uma grande boa ação."
+      },
+      "ko": {
+        "q": "다른 사람에게 꾸란을 가르치는 것은 어떤 가치가 있나요?",
+        "a": "알라의 말씀을 가르치는 것은 큰 선행입니다."
+      },
+      "vi": {
+        "q": "Dạy Kinh Qur’an cho người khác có giá trị gì?",
+        "a": "Dạy lời của Allah là một việc thiện lớn."
+      },
+      "ja": {
+        "q": "他の人にクルアーンを教えることにはどんな価値がありますか。",
+        "a": "アッラーの御言葉を教えることは大きな善行です。"
+      },
+      "zh": {
+        "q": "向他人教授《古兰经》有什么价值？",
+        "a": "教授安拉的言语是一项伟大的善行。"
+      }
+    },
+    {
+      "id": 399,
+      "day": 21,
+      "sources": [
+        "📖 Kur’an — İsrâ 17:9 — https://quran.com/17/9",
+        "📖 Kur’an — Nahl 16:89 — https://quran.com/16/89"
+      ],
+      "tr": {
+        "q": "Kur’an hayat rehberi nasıl olur?",
+        "a": "İnsan onu okuyup anlayarak inanç, ibadet ve ahlâkını ona göre düzenlediğinde."
+      },
+      "en": {
+        "q": "How does the Qur’an become a guide for life?",
+        "a": "When a person reads and understands it and shapes faith, worship, and character according to it."
+      },
+      "de": {
+        "q": "Wie wird der Koran zu einem Wegweiser für das Leben?",
+        "a": "Wenn man ihn liest, versteht und Glauben, Gottesdienst und Charakter danach gestaltet."
+      },
+      "nl": {
+        "q": "Hoe wordt de Koran een leidraad voor het leven?",
+        "a": "Wanneer iemand hem leest en begrijpt en geloof, aanbidding en karakter ernaar vormt."
+      },
+      "fr": {
+        "q": "Comment le Coran devient-il un guide pour la vie ?",
+        "a": "Lorsqu’une personne le lit, le comprend et façonne sa foi, son adoration et son caractère selon lui."
+      },
+      "ru": {
+        "q": "Как Коран становится руководством для жизни?",
+        "a": "Когда человек читает и понимает его и строит согласно ему свою веру, поклонение и нрав."
+      },
+      "ku": {
+        "q": "Qur’an çawa dibe rêberê jiyanê?",
+        "a": "Dema ku mirov wê bixwîne, fêm bike û bawerî, îbadet û exlaqê xwe li gorî wê saz bike."
+      },
+      "tt": {
+        "q": "Коръән ничек тормыш өчен юл күрсәтүче була?",
+        "a": "Кеше аны укып, аңлап, иманын, гыйбадәтен һәм әхлагын шуңа туры китергәндә."
+      },
+      "ar": {
+        "q": "كَيْفَ يَكُونُ الْقُرْآنُ دَلِيلًا لِلْحَيَاةِ؟",
+        "a": "عِنْدَمَا يَقْرَؤُهُ الْإِنْسَانُ وَيَفْهَمُهُ وَيُنَظِّمُ إِيمَانَهُ وَعِبَادَتَهُ وَأَخْلَاقَهُ وَفْقَهُ."
+      },
+      "es": {
+        "q": "¿Cómo se convierte el Corán en una guía para la vida?",
+        "a": "Cuando una persona lo lee, lo comprende y orienta según él su fe, adoración y carácter."
+      },
+      "it": {
+        "q": "Come diventa il Corano una guida per la vita?",
+        "a": "Quando una persona lo legge, lo comprende e modella secondo esso la fede, l’adorazione e il carattere."
+      },
+      "pt": {
+        "q": "Como o Alcorão se torna um guia para a vida?",
+        "a": "Quando a pessoa o lê, entende-o e orienta de acordo com ele sua fé, adoração e caráter."
+      },
+      "ko": {
+        "q": "꾸란은 어떻게 삶의 지침이 되나요?",
+        "a": "사람이 꾸란을 읽고 이해하며 믿음과 예배와 품성을 그에 따라 세울 때입니다."
+      },
+      "vi": {
+        "q": "Kinh Qur’an trở thành kim chỉ nam cho cuộc sống như thế nào?",
+        "a": "Khi một người đọc, hiểu Kinh và định hướng đức tin, sự thờ phượng và phẩm hạnh theo Kinh."
+      },
+      "ja": {
+        "q": "クルアーンはどのように人生の導きになりますか。",
+        "a": "それを読み、理解し、信仰・礼拝・人格をそれに沿って整えるときです。"
+      },
+      "zh": {
+        "q": "《古兰经》如何成为生活的指引？",
+        "a": "当一个人阅读并理解它，并据此安排信仰、崇拜和品德时。"
+      }
+    }
+  ]
+}
