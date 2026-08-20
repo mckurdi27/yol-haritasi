@@ -1,0 +1,1549 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 12,
+  "dayTitle": {
+    "tr": "12. Gün — Namazın Temel Yapısı",
+    "en": "Day 12 — The Foundations of Prayer",
+    "de": "12. Tag — Die Grundlagen des Gebets",
+    "nl": "Dag 12 — De basis van het gebed",
+    "fr": "12e jour — Les fondements de la prière",
+    "ru": "12-й день — Основы молитвы",
+    "ku": "Roj 12 — Bingehên nimêjê",
+    "tt": "12 нче көн — Намазның нигезләре",
+    "ar": "اليوم الثاني عشر — أسس الصلاة",
+    "es": "Día 12 — Los fundamentos de la oración",
+    "it": "Giorno 12 — I fondamenti della preghiera",
+    "pt": "Dia 12 — Os fundamentos da oração",
+    "ko": "12일 — 기도의 기본",
+    "vi": "Ngày 12 — Những nền tảng của lễ cầu nguyện",
+    "ja": "12日目 — 礼拝の基本",
+    "zh": "第12天——礼拜的基础"
+  },
+  "daySubtitle": {
+    "tr": "Namazın amacı, vakitleri, kıble, niyet, temel rükünler ve cemaat bilinci",
+    "en": "The purpose, times, qiblah, intention, essential postures and communal dimension of prayer",
+    "de": "Zweck, Zeiten, Qibla, Absicht, grundlegende Gebetshaltungen und Gemeinschaft",
+    "nl": "Doel, tijden, qibla, intentie, basishoudingen en gezamenlijk gebed",
+    "fr": "But, horaires, qibla, intention, postures essentielles et prière en groupe",
+    "ru": "Цель, времена, кибла, намерение, основные положения и коллективная молитва",
+    "ku": "Armanc, dem, qibla, niyet, hereketên bingehîn û nimêja bi cemaatê",
+    "tt": "Максат, вакытлар, кыйбла, ният, төп торышлар һәм җәмәгать намазы",
+    "ar": "غاية الصلاة ومواقيتها والقبلة والنية والأركان الأساسية وصلاة الجماعة",
+    "es": "Propósito, horarios, qibla, intención, posturas esenciales y oración en congregación",
+    "it": "Scopo, orari, qibla, intenzione, posture fondamentali e preghiera comunitaria",
+    "pt": "Objetivo, horários, qibla, intenção, posições essenciais e oração em congregação",
+    "ko": "기도의 목적, 시간, 키블라, 의도, 기본 자세와 공동 예배",
+    "vi": "Mục đích, thời gian, qiblah, ý định, tư thế căn bản và cầu nguyện tập thể",
+    "ja": "礼拝の目的、時間、キブラ、意図、基本姿勢、集団礼拝",
+    "zh": "礼拜的目的、时间、朝向、意向、基本姿势和集体礼拜"
+  },
+  "questions": [
+    {
+      "id": 210,
+      "day": 12,
+      "sources": [
+        "📖 Kur’an — Ankebût 29:45 — https://quran.com/29/45",
+        "📚 Hadis — Sahih Müslim 16a — https://sunnah.com/muslim:16a"
+      ],
+      "tr": {
+        "q": "Namazın Kur’an’da zikredilen temel amacı nedir?",
+        "a": "Kur’an, namazın Allah’ı anmayı güçlendiren ve kişiyi hayâsızlıktan ve kötülükten uzaklaştıran bir ibadet olduğunu bildirir."
+      },
+      "en": {
+        "q": "What is the main purpose of prayer mentioned in the Quran?",
+        "a": "The Quran describes prayer as an act that helps a believer remember Allah and avoid indecency and wrongdoing."
+      },
+      "de": {
+        "q": "Was ist der wichtigste Zweck des Gebets, der im Koran genannt wird?",
+        "a": "Der Koran beschreibt das Gebet als eine Handlung, die den Gläubigen an Allah erinnert und ihn von Schamlosem und Unrechtem abhält."
+      },
+      "nl": {
+        "q": "Wat is het belangrijkste doel van het gebed dat in de Koran wordt genoemd?",
+        "a": "De Koran beschrijft het gebed als een daad die de gelovige helpt Allah te gedenken en onzedelijkheid en kwaad te vermijden."
+      },
+      "fr": {
+        "q": "Quel est le but principal de la prière mentionné dans le Coran ?",
+        "a": "Le Coran présente la prière comme un acte qui aide le croyant à se rappeler d’Allah et à éviter la turpitude et le mal."
+      },
+      "ru": {
+        "q": "Какова главная цель молитвы, упомянутая в Коране?",
+        "a": "Коран описывает молитву как поклонение, которое помогает верующему помнить Аллаха и избегать непристойности и зла."
+      },
+      "ku": {
+        "q": "Armanca bingehîn a nimêjê ya ku di Qur’anê de hatiye gotin çi ye?",
+        "a": "Qur’an dibêje nimêj bîranîna Allah xurt dike û mirov ji fahşayê û xerabiyê dûr dixe."
+      },
+      "tt": {
+        "q": "Коръәндә әйтелгән намазның төп максаты нинди?",
+        "a": "Коръән намазның Аллаһны искә алуны көчәйтүче һәм кешене әдәпсезлектән һәм явызлыктан ерагайтучы гыйбадәт икәнен белдерә."
+      },
+      "ar": {
+        "q": "ما الهدف الأساسي من الصلاة المذكور في القرآن؟",
+        "a": "يبيّن القرآن أن الصلاة عبادة تقوّي ذكر الله وتساعد المؤمن على اجتناب الفحشاء والمنكر."
+      },
+      "es": {
+        "q": "¿Cuál es el propósito principal de la oración mencionado en el Corán?",
+        "a": "El Corán presenta la oración como un acto que ayuda al creyente a recordar a Allah y a evitar la indecencia y el mal."
+      },
+      "it": {
+        "q": "Qual è lo scopo principale della preghiera menzionato nel Corano?",
+        "a": "Il Corano presenta la preghiera come un atto che aiuta il credente a ricordare Allah e ad evitare oscenità e male."
+      },
+      "pt": {
+        "q": "Qual é o principal objetivo da oração mencionado no Alcorão?",
+        "a": "O Alcorão apresenta a oração como um ato que ajuda o crente a lembrar-se de Allah e a evitar a indecência e o mal."
+      },
+      "ko": {
+        "q": "꾸란에서 언급된 기도의 가장 중요한 목적은 무엇입니까?",
+        "a": "꾸란은 기도가 알라를 기억하게 하고 부도덕과 악을 멀리하게 하는 예배라고 설명합니다."
+      },
+      "vi": {
+        "q": "Mục đích chính của việc cầu nguyện được nêu trong Kinh Qur’an là gì?",
+        "a": "Kinh Qur’an mô tả việc cầu nguyện là sự thờ phượng giúp người tin nhớ đến Allah và tránh điều xấu, điều bất thiện."
+      },
+      "ja": {
+        "q": "クルアーンで述べられている礼拝の主な目的は何ですか。",
+        "a": "クルアーンは、礼拝がアッラーを思い起こし、みだらな行為や悪から遠ざかる助けとなる礼拝行為だと示しています。"
+      },
+      "zh": {
+        "q": "《古兰经》中提到的礼拜的主要目的是什么？",
+        "a": "《古兰经》说明礼拜能帮助信士记念真主，并远离丑事和罪恶。"
+      }
+    },
+    {
+      "id": 211,
+      "day": 12,
+      "sources": [
+        "📖 Kur’an — Ankebût 29:45 — https://quran.com/29/45",
+        "📖 Kur’an — Mü’minûn 23:1-2 — https://quran.com/23/1-2"
+      ],
+      "tr": {
+        "q": "Namaz insanı yanlış davranışlardan nasıl koruyabilir?",
+        "a": "Düzenli namaz Allah bilincini güçlendirir ve insanın zararlı davranışlarını kontrol etmesine yardımcı olur."
+      },
+      "en": {
+        "q": "How can prayer protect a person from wrongdoing?",
+        "a": "Regular prayer strengthens awareness of Allah and helps a believer restrain harmful behavior."
+      },
+      "de": {
+        "q": "Wie kann das Gebet einen Menschen vor falschem Handeln schützen?",
+        "a": "Das regelmäßige Gebet stärkt das Bewusstsein für Allah und hilft, schädliches Verhalten zu beherrschen."
+      },
+      "nl": {
+        "q": "Hoe kan het gebed iemand tegen verkeerd gedrag beschermen?",
+        "a": "Regelmatig gebed versterkt het bewustzijn van Allah en helpt schadelijk gedrag te beheersen."
+      },
+      "fr": {
+        "q": "Comment la prière peut-elle protéger une personne du mal ?",
+        "a": "La prière régulière renforce la conscience d’Allah et aide le croyant à maîtriser les comportements nuisibles."
+      },
+      "ru": {
+        "q": "Как молитва может защищать человека от зла?",
+        "a": "Регулярная молитва укрепляет богобоязненность и помогает сдерживать вредное поведение."
+      },
+      "ku": {
+        "q": "Nimêj çawa dikare mirovekî ji tevgerên xerab biparêze?",
+        "a": "Nimêja rêkûpêk hişyarbûna ji Allah xurt dike û alîkar dibe ku mirov tevgerên zirardar kontrol bike."
+      },
+      "tt": {
+        "q": "Намаз кешене начар гамәлләрдән ничек саклый ала?",
+        "a": "Даими намаз Аллаһны аңлауны көчәйтә һәм зарарлы тәртипне тыярга ярдәм итә."
+      },
+      "ar": {
+        "q": "كيف تحمي الصلاة الإنسان من السلوك السيئ؟",
+        "a": "الصلاة المنتظمة تقوّي مراقبة الله وتساعد على ضبط السلوك الضار."
+      },
+      "es": {
+        "q": "¿Cómo puede la oración proteger a una persona del mal?",
+        "a": "La oración regular fortalece la conciencia de Allah y ayuda a controlar las conductas dañinas."
+      },
+      "it": {
+        "q": "Come può la preghiera proteggere una persona dal male?",
+        "a": "La preghiera regolare rafforza la consapevolezza di Allah e aiuta a controllare i comportamenti dannosi."
+      },
+      "pt": {
+        "q": "Como a oração pode proteger uma pessoa do mal?",
+        "a": "A oração regular fortalece a consciência de Allah e ajuda a controlar comportamentos prejudiciais."
+      },
+      "ko": {
+        "q": "기도는 어떻게 사람을 잘못된 행동에서 보호할 수 있습니까?",
+        "a": "규칙적인 기도는 알라에 대한 의식을 강화하고 해로운 행동을 절제하도록 돕습니다."
+      },
+      "vi": {
+        "q": "Cầu nguyện có thể bảo vệ con người khỏi hành vi sai trái như thế nào?",
+        "a": "Việc cầu nguyện đều đặn củng cố ý thức về Allah và giúp kiềm chế hành vi có hại."
+      },
+      "ja": {
+        "q": "礼拝はどのように人を悪い行動から守りますか。",
+        "a": "規則正しい礼拝はアッラーへの意識を強め、有害な行動を抑える助けになります。"
+      },
+      "zh": {
+        "q": "礼拜如何保护人免于错误行为？",
+        "a": "规律的礼拜能够增强对真主的敬畏，并帮助人约束有害行为。"
+      }
+    },
+    {
+      "id": 212,
+      "day": 12,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16a — https://sunnah.com/muslim:16a",
+        "📚 Hadis — Sahih Müslim 610a — https://sunnah.com/muslim:610a"
+      ],
+      "tr": {
+        "q": "Beş vakit namazın farz olduğunu hangi hadis açıklar?",
+        "a": "Cibrîl hadisi ve diğer sahih rivayetler beş vakit namazı dinin temel yükümlülüklerinden biri olarak ortaya koyar."
+      },
+      "en": {
+        "q": "Which hadith explains the five daily prayers as an obligation?",
+        "a": "The hadith of Gabriel and other authentic narrations establish the five daily prayers as part of the religion."
+      },
+      "de": {
+        "q": "Welcher Hadith erklärt die fünf täglichen Gebete als Pflicht?",
+        "a": "Der Hadith über Dschibril und weitere authentische Überlieferungen bestätigen die fünf täglichen Gebete als Teil der Religion."
+      },
+      "nl": {
+        "q": "Welke hadith verklaart de verplichting van de vijf dagelijkse gebeden?",
+        "a": "De hadith van Djibril en andere authentieke overleveringen bevestigen de vijf dagelijkse gebeden als onderdeel van de religie."
+      },
+      "fr": {
+        "q": "Quel hadith explique l’obligation des cinq prières quotidiennes ?",
+        "a": "Le hadith de Gabriel et d’autres récits authentiques établissent les cinq prières quotidiennes comme une partie de la religion."
+      },
+      "ru": {
+        "q": "Какой хадис объясняет обязательность пяти ежедневных молитв?",
+        "a": "Хадис о Джибриле и другие достоверные предания подтверждают пять ежедневных молитв как часть религии."
+      },
+      "ku": {
+        "q": "Kîjan hedîs farz bûna pênc nimêjên rojane rave dike?",
+        "a": "Hedîsa Cibrîl û rivayetên sahîh pênc nimêjên rojane wekî ji erkên bingehîn ên dînê nîşan didin."
+      },
+      "tt": {
+        "q": "Биш вакыт намазның фарыз булуын кайсы хәдис аңлата?",
+        "a": "Җәбраил хәдисе һәм башка сәхих риваятьләр биш вакыт намазны диннең төп бурычларыннан итеп күрсәтә."
+      },
+      "ar": {
+        "q": "أي حديث يبيّن فرض الصلوات الخمس؟",
+        "a": "حديث جبريل وغيره من الأحاديث الصحيحة يثبت الصلوات الخمس كجزء أساسي من الدين."
+      },
+      "es": {
+        "q": "¿Qué hadiz explica la obligación de las cinco oraciones diarias?",
+        "a": "El hadiz de Gabriel y otras narraciones auténticas establecen las cinco oraciones diarias como parte de la religión."
+      },
+      "it": {
+        "q": "Quale hadith spiega l’obbligo delle cinque preghiere quotidiane?",
+        "a": "L’hadith di Gabriele e altre narrazioni autentiche stabiliscono le cinque preghiere quotidiane come parte della religione."
+      },
+      "pt": {
+        "q": "Qual hadith explica a obrigação das cinco orações diárias?",
+        "a": "O hadith de Gabriel e outras narrações autênticas estabelecem as cinco orações diárias como parte da religião."
+      },
+      "ko": {
+        "q": "다섯 번의 매일 기도가 의무임을 설명하는 하디스는 무엇입니까?",
+        "a": "지브릴 하디스와 여러 정통 전승은 하루 다섯 번의 기도를 종교의 기본 의무로 설명합니다."
+      },
+      "vi": {
+        "q": "Hadith nào giải thích nghĩa vụ của năm lễ cầu nguyện hằng ngày?",
+        "a": "Hadith về Jibril và các truyền thuật xác thực khác xác nhận năm lễ cầu nguyện hằng ngày là một nghĩa vụ căn bản của tôn giáo."
+      },
+      "ja": {
+        "q": "五回の毎日の礼拝が義務であることを説明するハディースは何ですか。",
+        "a": "ジブリールのハディースなどの真正な伝承は、五回の毎日の礼拝を宗教の基本的義務として示しています。"
+      },
+      "zh": {
+        "q": "哪段圣训说明每天五次礼拜是义务？",
+        "a": "吉卜利勒圣训以及其他可靠圣训说明每天五次礼拜是宗教的基本义务之一。"
+      }
+    },
+    {
+      "id": 213,
+      "day": 12,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 614a — https://sunnah.com/muslim:614a",
+        "📚 Hadis — Sahih Müslim 612e — https://sunnah.com/muslim/5/223"
+      ],
+      "tr": {
+        "q": "Sabah namazının vakti ne zaman başlar ve biter?",
+        "a": "Gerçek tan yerinin ağarmasıyla başlar ve güneşin doğmasıyla sona erer."
+      },
+      "en": {
+        "q": "When does the time of Fajr prayer begin and end?",
+        "a": "It begins at true dawn and ends when the sun rises."
+      },
+      "de": {
+        "q": "Wann beginnt und endet die Zeit des Fadschr-Gebets?",
+        "a": "Sie beginnt mit der wahren Morgendämmerung und endet mit dem Sonnenaufgang."
+      },
+      "nl": {
+        "q": "Wanneer begint en eindigt de tijd van het Fajr-gebed?",
+        "a": "Die begint bij de ware dageraad en eindigt bij zonsopgang."
+      },
+      "fr": {
+        "q": "Quand commence et finit le temps de la prière du Fajr ?",
+        "a": "Il commence à l’aube véritable et se termine au lever du soleil."
+      },
+      "ru": {
+        "q": "Когда начинается и заканчивается время фаджра?",
+        "a": "Оно начинается с истинной зари и заканчивается восходом солнца."
+      },
+      "ku": {
+        "q": "Wextê nimêja sibehê kengî dest pê dike û kengî diqede?",
+        "a": "Bi sibehê rast dest pê dike û bi rabûna rojê diqede."
+      },
+      "tt": {
+        "q": "Иртәнге намаз вакыты кайчан башлана һәм бетә?",
+        "a": "Ул чын таң атканда башлана һәм кояш чыкканда бетә."
+      },
+      "ar": {
+        "q": "متى يبدأ وقت صلاة الفجر ومتى ينتهي؟",
+        "a": "يبدأ بطلوع الفجر الصادق وينتهي بطلوع الشمس."
+      },
+      "es": {
+        "q": "¿Cuándo comienza y termina el tiempo del Fajr?",
+        "a": "Comienza con el verdadero amanecer y termina con la salida del sol."
+      },
+      "it": {
+        "q": "Quando inizia e termina il tempo del Fajr?",
+        "a": "Inizia con la vera alba e termina con il sorgere del sole."
+      },
+      "pt": {
+        "q": "Quando começa e termina o tempo do Fajr?",
+        "a": "Começa na verdadeira alvorada e termina ao nascer do sol."
+      },
+      "ko": {
+        "q": "파즈르 기도의 시간은 언제 시작하고 끝납니까?",
+        "a": "참된 새벽이 밝을 때 시작하여 해가 뜰 때 끝납니다."
+      },
+      "vi": {
+        "q": "Thời gian Fajr bắt đầu và kết thúc khi nào?",
+        "a": "Bắt đầu từ bình minh thật sự và kết thúc khi mặt trời mọc."
+      },
+      "ja": {
+        "q": "ファジュルの礼拝時間はいつ始まり、いつ終わりますか。",
+        "a": "真の夜明けに始まり、日の出で終わります。"
+      },
+      "zh": {
+        "q": "晨礼的时间何时开始、何时结束？",
+        "a": "从真正的黎明开始，到日出结束。"
+      }
+    },
+    {
+      "id": 214,
+      "day": 12,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 614a — https://sunnah.com/muslim:614a",
+        "📚 Hadis — Sahih Müslim 610a — https://sunnah.com/muslim:610a"
+      ],
+      "tr": {
+        "q": "Öğle namazının vakti ne zaman başlar?",
+        "a": "Güneşin zevalden ayrılmasından sonra başlar."
+      },
+      "en": {
+        "q": "When does the time of Dhuhr prayer begin?",
+        "a": "It begins after the sun passes its zenith."
+      },
+      "de": {
+        "q": "Wann beginnt die Zeit des Dhuhr-Gebets?",
+        "a": "Sie beginnt, nachdem die Sonne den Zenit überschritten hat."
+      },
+      "nl": {
+        "q": "Wanneer begint de tijd van het Dhuhr-gebed?",
+        "a": "Die begint nadat de zon haar hoogste punt heeft gepasseerd."
+      },
+      "fr": {
+        "q": "Quand commence le temps de la prière du Dhuhr ?",
+        "a": "Il commence lorsque le soleil a dépassé son zénith."
+      },
+      "ru": {
+        "q": "Когда начинается время зухра?",
+        "a": "Оно начинается после того, как солнце проходит зенит."
+      },
+      "ku": {
+        "q": "Wextê nimêja nîvro kengî dest pê dike?",
+        "a": "Piştî ku roj ji nîvê asmanê derbas dibe dest pê dike."
+      },
+      "tt": {
+        "q": "Өйлә намазы вакыты кайчан башлана?",
+        "a": "Кояш зениттан узгач башлана."
+      },
+      "ar": {
+        "q": "متى يبدأ وقت صلاة الظهر؟",
+        "a": "يبدأ بعد زوال الشمس عن وسط السماء."
+      },
+      "es": {
+        "q": "¿Cuándo comienza el tiempo del Dhuhr?",
+        "a": "Comienza después de que el sol pasa su cenit."
+      },
+      "it": {
+        "q": "Quando inizia il tempo del Dhuhr?",
+        "a": "Inizia dopo che il sole ha superato lo zenit."
+      },
+      "pt": {
+        "q": "Quando começa o tempo do Dhuhr?",
+        "a": "Começa depois de o sol passar o zénite."
+      },
+      "ko": {
+        "q": "주흐르 기도 시간은 언제 시작합니까?",
+        "a": "태양이 정오를 지나 기울기 시작한 뒤 시작합니다."
+      },
+      "vi": {
+        "q": "Thời gian Dhuhr bắt đầu khi nào?",
+        "a": "Bắt đầu sau khi mặt trời đi qua thiên đỉnh."
+      },
+      "ja": {
+        "q": "ズフルの礼拝時間はいつ始まりますか。",
+        "a": "太陽が天頂を過ぎて傾き始めた後に始まります。"
+      },
+      "zh": {
+        "q": "晌礼的时间何时开始？",
+        "a": "太阳过了中天并开始偏斜后开始。"
+      }
+    },
+    {
+      "id": 215,
+      "day": 12,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 612e — https://sunnah.com/muslim/5/223",
+        "📚 Hadis — Sahih Müslim 610a — https://sunnah.com/muslim:610a"
+      ],
+      "tr": {
+        "q": "İkindi namazının vakti için temel ölçü nedir?",
+        "a": "Öğle vaktinden sonra başlar ve belirlenmiş fıkhî ölçülere göre öğleden sonraki zaman diliminde devam eder."
+      },
+      "en": {
+        "q": "What is the basic measure for the time of Asr prayer?",
+        "a": "Its time begins after Dhuhr and continues during the afternoon according to the established prayer-time rulings."
+      },
+      "de": {
+        "q": "Was ist das grundlegende Maß für die Zeit des Asr-Gebets?",
+        "a": "Sie beginnt nach Dhuhr und dauert am Nachmittag entsprechend den festgelegten Gebetszeiten an."
+      },
+      "nl": {
+        "q": "Wat is de basismaat voor de tijd van het Asr-gebed?",
+        "a": "Die begint na Dhuhr en loopt in de middag volgens de vastgestelde gebedstijden."
+      },
+      "fr": {
+        "q": "Quelle est la mesure générale du temps de la prière de l’Asr ?",
+        "a": "Il commence après le Dhuhr et se poursuit pendant l’après-midi selon les règles établies des horaires de prière."
+      },
+      "ru": {
+        "q": "Как определяется основное время асра?",
+        "a": "Оно начинается после зухра и продолжается во второй половине дня согласно установленным правилам времени молитв."
+      },
+      "ku": {
+        "q": "Pîvana bingehîn a wextê nimêja êvarê çi ye?",
+        "a": "Piştî nîvro dest pê dike û li gorî pîvanên fîqhê yên diyarkirî berdewam dike."
+      },
+      "tt": {
+        "q": "Икенде намазы вакытының төп үлчәве нинди?",
+        "a": "Ул өйләдән соң башлана һәм билгеләнгән фыкһ кагыйдәләре буенча төштән соң дәвам итә."
+      },
+      "ar": {
+        "q": "ما المقياس الأساسي لوقت صلاة العصر؟",
+        "a": "يبدأ بعد الظهر ويستمر في فترة ما بعد الظهر وفق أحكام مواقيت الصلاة."
+      },
+      "es": {
+        "q": "¿Cuál es la medida básica del tiempo del Asr?",
+        "a": "Comienza después del Dhuhr y continúa durante la tarde según las reglas establecidas de los horarios de oración."
+      },
+      "it": {
+        "q": "Qual è la misura di base del tempo dell’Asr?",
+        "a": "Inizia dopo il Dhuhr e continua nel pomeriggio secondo le regole stabilite per gli orari della preghiera."
+      },
+      "pt": {
+        "q": "Qual é a medida básica do tempo do Asr?",
+        "a": "Começa depois do Dhuhr e continua durante a tarde segundo as regras estabelecidas dos horários de oração."
+      },
+      "ko": {
+        "q": "아스르 기도 시간의 기본 기준은 무엇입니까?",
+        "a": "주흐르 이후 시작하며 정해진 예배 시간의 법학적 기준에 따라 오후에 이어집니다."
+      },
+      "vi": {
+        "q": "Tiêu chuẩn cơ bản của thời gian Asr là gì?",
+        "a": "Bắt đầu sau Dhuhr và kéo dài vào buổi chiều theo các quy định về giờ cầu nguyện."
+      },
+      "ja": {
+        "q": "アスルの礼拝時間の基本的な基準は何ですか。",
+        "a": "ズフルの後に始まり、定められた礼拝時間の規定に従って午後に続きます。"
+      },
+      "zh": {
+        "q": "晡礼时间的基本标准是什么？",
+        "a": "在晌礼之后开始，并按照规定的礼拜时间法则持续到下午。"
+      }
+    },
+    {
+      "id": 216,
+      "day": 12,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 614a — https://sunnah.com/muslim:614a",
+        "📖 Kur’an — Hûd 11:114 — https://quran.com/11/114"
+      ],
+      "tr": {
+        "q": "Akşam namazının vakti ne zaman başlar?",
+        "a": "Güneş battığında başlar."
+      },
+      "en": {
+        "q": "When does the time of Maghrib prayer begin?",
+        "a": "It begins when the sun has set."
+      },
+      "de": {
+        "q": "Wann beginnt die Zeit des Maghrib-Gebets?",
+        "a": "Sie beginnt mit dem Sonnenuntergang."
+      },
+      "nl": {
+        "q": "Wanneer begint Maghrib?",
+        "a": "Maghrib begint bij zonsondergang."
+      },
+      "fr": {
+        "q": "Quand commence le temps du Maghrib ?",
+        "a": "Il commence au coucher du soleil."
+      },
+      "ru": {
+        "q": "Когда начинается магриб?",
+        "a": "Он начинается после захода солнца."
+      },
+      "ku": {
+        "q": "Wextê nimêja êvarê kengî dest pê dike?",
+        "a": "Dema roj diçe xwarê dest pê dike."
+      },
+      "tt": {
+        "q": "Ахшам намазы вакыты кайчан башлана?",
+        "a": "Кояш баткач башлана."
+      },
+      "ar": {
+        "q": "متى يبدأ وقت صلاة المغرب؟",
+        "a": "يبدأ عند غروب الشمس."
+      },
+      "es": {
+        "q": "¿Cuándo comienza el Maghrib?",
+        "a": "Comienza cuando se pone el sol."
+      },
+      "it": {
+        "q": "Quando inizia il Maghrib?",
+        "a": "Inizia al tramonto del sole."
+      },
+      "pt": {
+        "q": "Quando começa o Maghrib?",
+        "a": "Começa quando o sol se põe."
+      },
+      "ko": {
+        "q": "마그리브 기도 시간은 언제 시작합니까?",
+        "a": "해가 지는 순간 시작합니다."
+      },
+      "vi": {
+        "q": "Maghrib bắt đầu khi nào?",
+        "a": "Bắt đầu khi mặt trời lặn."
+      },
+      "ja": {
+        "q": "マグリブの礼拝時間はいつ始まりますか。",
+        "a": "日没とともに始まります。"
+      },
+      "zh": {
+        "q": "昏礼时间何时开始？",
+        "a": "太阳落山时开始。"
+      }
+    },
+    {
+      "id": 217,
+      "day": 12,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 612e — https://sunnah.com/muslim/5/223",
+        "📚 Hadis — Sahih Müslim 614b — https://sunnah.com/muslim:614b"
+      ],
+      "tr": {
+        "q": "Yatsı namazının vakti ne zaman başlar?",
+        "a": "Akşam şafağının kaybolmasından sonra başlar."
+      },
+      "en": {
+        "q": "When does the time of Isha prayer begin?",
+        "a": "It begins after the evening twilight has disappeared."
+      },
+      "de": {
+        "q": "Wann beginnt die Zeit des Ischa-Gebets?",
+        "a": "Sie beginnt, nachdem die Abenddämmerung verschwunden ist."
+      },
+      "nl": {
+        "q": "Wanneer begint Isha?",
+        "a": "Isha begint nadat de avondschemering is verdwenen."
+      },
+      "fr": {
+        "q": "Quand commence le temps de l’Isha ?",
+        "a": "Il commence après la disparition du crépuscule du soir."
+      },
+      "ru": {
+        "q": "Когда начинается иша?",
+        "a": "Она начинается после исчезновения вечерних сумерек."
+      },
+      "ku": {
+        "q": "Wextê nimêja şevê kengî dest pê dike?",
+        "a": "Piştî winda bûna şefeqê êvarê dest pê dike."
+      },
+      "tt": {
+        "q": "Ястү намазы вакыты кайчан башлана?",
+        "a": "Кичке шәфәкъ югалгач башлана."
+      },
+      "ar": {
+        "q": "متى يبدأ وقت صلاة العشاء؟",
+        "a": "يبدأ بعد زوال الشفق المسائي."
+      },
+      "es": {
+        "q": "¿Cuándo comienza el Isha?",
+        "a": "Comienza después de que desaparece el crepúsculo vespertino."
+      },
+      "it": {
+        "q": "Quando inizia l’Isha?",
+        "a": "Inizia dopo la scomparsa del crepuscolo serale."
+      },
+      "pt": {
+        "q": "Quando começa o Isha?",
+        "a": "Começa depois de desaparecer o crepúsculo da noite."
+      },
+      "ko": {
+        "q": "이샤 기도 시간은 언제 시작합니까?",
+        "a": "저녁의 박명이 사라진 뒤 시작합니다."
+      },
+      "vi": {
+        "q": "Isha bắt đầu khi nào?",
+        "a": "Bắt đầu sau khi ánh chạng vạng buổi tối biến mất."
+      },
+      "ja": {
+        "q": "イシャーの礼拝時間はいつ始まりますか。",
+        "a": "夕方の薄明が消えた後に始まります。"
+      },
+      "zh": {
+        "q": "宵礼时间何时开始？",
+        "a": "晚霞消失后开始。"
+      }
+    },
+    {
+      "id": 218,
+      "day": 12,
+      "sources": [
+        "📖 Kur’an — Bakara 2:144 — https://quran.com/2/144",
+        "📖 Kur’an — Bakara 2:150 — https://quran.com/2/150"
+      ],
+      "tr": {
+        "q": "Kâbe neden namazın kıblesidir?",
+        "a": "Allah, namaz kılarken Mescid-i Harâm yönüne dönülmesini emretmiştir."
+      },
+      "en": {
+        "q": "Why is the Kaaba the direction of prayer?",
+        "a": "Allah commanded believers to turn toward the Sacred Mosque when praying."
+      },
+      "de": {
+        "q": "Warum ist die Kaaba die Gebetsrichtung?",
+        "a": "Allah hat den Gläubigen befohlen, sich beim Gebet zur Heiligen Moschee zu wenden."
+      },
+      "nl": {
+        "q": "Waarom is de Kaaba de gebedsrichting?",
+        "a": "Allah heeft de gelovigen opgedragen zich tijdens het gebed naar de Heilige Moskee te wenden."
+      },
+      "fr": {
+        "q": "Pourquoi la Kaaba est-elle la direction de la prière ?",
+        "a": "Allah a ordonné aux croyants de se tourner vers la Mosquée sacrée pendant la prière."
+      },
+      "ru": {
+        "q": "Почему Кааба является направлением молитвы?",
+        "a": "Аллах повелел верующим во время молитвы обращаться к Заповедной мечети."
+      },
+      "ku": {
+        "q": "Çima Ka‘be qibla nimêjê ye?",
+        "a": "Allah ferman daye ku di nimêjê de ber bi Mesîdê Heram ve were zivirandin."
+      },
+      "tt": {
+        "q": "Ни өчен Кәгъбә намазның кыйбласы?",
+        "a": "Аллаһ намаз вакытында Мәсҗид әл-Харамга таба борылырга кушкан."
+      },
+      "ar": {
+        "q": "لماذا الكعبة هي قبلة الصلاة؟",
+        "a": "أمر الله المؤمنين بالتوجه إلى المسجد الحرام عند الصلاة."
+      },
+      "es": {
+        "q": "¿Por qué la Kaaba es la dirección de la oración?",
+        "a": "Allah ordenó a los creyentes dirigirse hacia la Mezquita Sagrada durante la oración."
+      },
+      "it": {
+        "q": "Perché la Kaaba è la direzione della preghiera?",
+        "a": "Allah ha ordinato ai credenti di rivolgersi verso la Moschea Sacra durante la preghiera."
+      },
+      "pt": {
+        "q": "Por que a Caaba é a direção da oração?",
+        "a": "Allah ordenou aos crentes que se voltassem para a Mesquita Sagrada durante a oração."
+      },
+      "ko": {
+        "q": "왜 카바가 기도의 방향입니까?",
+        "a": "알라는 예배할 때 성스러운 모스크를 향하도록 신자들에게 명하셨습니다."
+      },
+      "vi": {
+        "q": "Tại sao Kaaba là hướng cầu nguyện?",
+        "a": "Allah đã truyền cho người tin quay về phía Thánh đường trong khi cầu nguyện."
+      },
+      "ja": {
+        "q": "なぜカアバが礼拝の方向なのですか。",
+        "a": "アッラーは礼拝の際に聖なるモスクの方向を向くよう信者に命じました。"
+      },
+      "zh": {
+        "q": "为什么克尔白是礼拜的朝向？",
+        "a": "真主命令信士礼拜时面向禁寺。"
+      }
+    },
+    {
+      "id": 219,
+      "day": 12,
+      "sources": [
+        "📖 Kur’an — Bakara 2:144 — https://quran.com/2/144",
+        "📖 Kur’an — Bakara 2:149 — https://quran.com/2/149"
+      ],
+      "tr": {
+        "q": "Kıble değişikliği hangi olayla ilişkilidir?",
+        "a": "Medine döneminde Mescid-i Harâm’a yönelme emrinin gelmesiyle ilişkilidir."
+      },
+      "en": {
+        "q": "With which event is the change of the prayer direction associated?",
+        "a": "It is associated with the command to turn toward al-Masjid al-Haram in Medina."
+      },
+      "de": {
+        "q": "Mit welchem Ereignis ist die Änderung der Gebetsrichtung verbunden?",
+        "a": "Sie steht mit dem Befehl in Verbindung, sich in Medina zur al-Masdschid al-Haram zu wenden."
+      },
+      "nl": {
+        "q": "Met welke gebeurtenis hangt de verandering van de gebedsrichting samen?",
+        "a": "Met het bevel om in Medina naar al-Masjid al-Haram te wenden."
+      },
+      "fr": {
+        "q": "À quel événement est lié le changement de direction de la prière ?",
+        "a": "Il est lié au commandement de se tourner vers al-Masjid al-Haram à Médine."
+      },
+      "ru": {
+        "q": "С каким событием связано изменение направления молитвы?",
+        "a": "Оно связано с повелением обращаться к аль-Масджид аль-Харам в Медине."
+      },
+      "ku": {
+        "q": "Guhertina qiblê bi kîjan bûyerê ve girêdayî ye?",
+        "a": "Bi fermana ku li Medîneyê ber bi Mesîdê Heram ve were zivirandin ve girêdayî ye."
+      },
+      "tt": {
+        "q": "Кыйбланың үзгәрүе нинди вакыйга белән бәйле?",
+        "a": "Мәдинәдә Мәсҗид әл-Харам ягына борылу әмере белән бәйле."
+      },
+      "ar": {
+        "q": "بأي حدث يرتبط تغيير القبلة؟",
+        "a": "يرتبط بالأمر بالتوجه إلى المسجد الحرام في المدينة المنورة."
+      },
+      "es": {
+        "q": "¿Con qué acontecimiento se relaciona el cambio de la dirección de la oración?",
+        "a": "Se relaciona con el mandato de dirigirse hacia al-Masjid al-Haram en Medina."
+      },
+      "it": {
+        "q": "A quale evento è collegato il cambiamento della direzione della preghiera?",
+        "a": "È collegato al comando di rivolgersi verso al-Masjid al-Haram a Medina."
+      },
+      "pt": {
+        "q": "A que acontecimento está ligado o mudar da direção da oração?",
+        "a": "Está ligado à ordem de se voltar para al-Masjid al-Haram em Medina."
+      },
+      "ko": {
+        "q": "기도 방향의 변경은 어떤 사건과 관련됩니까?",
+        "a": "메디나에서 알마스지드 알하람을 향하라는 명령과 관련됩니다."
+      },
+      "vi": {
+        "q": "Việc thay đổi hướng cầu nguyện gắn với sự kiện nào?",
+        "a": "Gắn với mệnh lệnh quay về al-Masjid al-Haram tại Medina."
+      },
+      "ja": {
+        "q": "礼拝の方向の変更はどの出来事と関係していますか。",
+        "a": "メディナでアル・マスジド・アル・ハラームの方向を向くよう命じられたことと関係しています。"
+      },
+      "zh": {
+        "q": "礼拜朝向的改变与什么事件有关？",
+        "a": "与在麦地那奉命面向禁寺有关。"
+      }
+    },
+    {
+      "id": 220,
+      "day": 12,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 1 — https://sunnah.com/bukhari:1",
+        "📚 Hadis — Sahih Müslim 1907a — https://sunnah.com/muslim:1907a"
+      ],
+      "tr": {
+        "q": "İbadette niyetin yeri nedir?",
+        "a": "Niyet kalbin fiilidir ve kişinin Allah için hangi ibadeti yapmayı amaçladığını belirler."
+      },
+      "en": {
+        "q": "Where is intention located in worship?",
+        "a": "Intention is an act of the heart and determines what worship a person intends to perform for Allah."
+      },
+      "de": {
+        "q": "Wo befindet sich die Absicht bei der Anbetung?",
+        "a": "Die Absicht ist eine Handlung des Herzens und bestimmt, welche Anbetung man für Allah verrichten will."
+      },
+      "nl": {
+        "q": "Waar bevindt de intentie zich bij aanbidding?",
+        "a": "De intentie is een handeling van het hart en bepaalt welke aanbidding men voor Allah wil verrichten."
+      },
+      "fr": {
+        "q": "Où se trouve l’intention dans l’adoration ?",
+        "a": "L’intention est un acte du cœur et détermine l’adoration que l’on veut accomplir pour Allah."
+      },
+      "ru": {
+        "q": "Где находится намерение в поклонении?",
+        "a": "Намерение является действием сердца и определяет, какое поклонение человек совершает ради Аллаха."
+      },
+      "ku": {
+        "q": "Niyet di îbadetê de li ku ye?",
+        "a": "Niyet karê dil e û diyar dike ka mirov ji bo Allah kîjan îbadetê dike."
+      },
+      "tt": {
+        "q": "Гыйбадәттә ният кайда була?",
+        "a": "Ният йөрәктә була һәм кеше Аллаһ өчен нинди гыйбадәт кылырга ниятләгәнен билгели."
+      },
+      "ar": {
+        "q": "أين تكون النية في العبادة؟",
+        "a": "النية عمل القلب وتحدد العبادة التي يقصد المسلم أداءها لله."
+      },
+      "es": {
+        "q": "¿Dónde se encuentra la intención en la adoración?",
+        "a": "La intención es una acción del corazón y determina qué adoración se pretende realizar por Allah."
+      },
+      "it": {
+        "q": "Dove si trova l’intenzione nell’adorazione?",
+        "a": "L’intenzione è un atto del cuore e determina quale adorazione si intende compiere per Allah."
+      },
+      "pt": {
+        "q": "Onde se encontra a intenção na adoração?",
+        "a": "A intenção é uma ação do coração e determina qual adoração se pretende realizar para Allah."
+      },
+      "ko": {
+        "q": "예배에서 의도는 어디에 있습니까?",
+        "a": "의도는 마음의 행위이며 알라를 위해 어떤 예배를 하려는지 결정합니다."
+      },
+      "vi": {
+        "q": "Ý định trong sự thờ phượng nằm ở đâu?",
+        "a": "Ý định là hành động của trái tim và xác định việc thờ phượng mà một người muốn thực hiện vì Allah."
+      },
+      "ja": {
+        "q": "礼拝における意図はどこにありますか。",
+        "a": "意図は心の行為であり、アッラーのためにどの礼拝を行うのかを定めます。"
+      },
+      "zh": {
+        "q": "礼拜中的意向在哪里？",
+        "a": "意向属于内心的行为，决定一个人为真主进行哪一种礼拜。"
+      }
+    },
+    {
+      "id": 221,
+      "day": 12,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 738 — https://sunnah.com/bukhari:738",
+        "📚 Hadis — Sahih Müslim 391a — https://sunnah.com/muslim:391a"
+      ],
+      "tr": {
+        "q": "İftitah tekbirinin işlevi nedir?",
+        "a": "İftitah tekbiri namazın fiilen başlamasını sağlar ve Allah’ın büyüklüğünü ilan eder."
+      },
+      "en": {
+        "q": "What is the function of the opening takbir?",
+        "a": "The opening takbir marks the beginning of the formal prayer and declares the greatness of Allah."
+      },
+      "de": {
+        "q": "Welche Funktion hat der Eröffnungstakbir?",
+        "a": "Der Eröffnungstakbir markiert den Beginn des eigentlichen Gebets und verkündet die Größe Allahs."
+      },
+      "nl": {
+        "q": "Wat is de functie van de openingstakbir?",
+        "a": "De openingstakbir markeert het begin van het gebed en verkondigt de grootheid van Allah."
+      },
+      "fr": {
+        "q": "Quelle est la fonction du takbir d’ouverture ?",
+        "a": "Il marque le début de la prière proprement dite et proclame la grandeur d’Allah."
+      },
+      "ru": {
+        "q": "Какова функция начального такбира?",
+        "a": "Начальный такбир обозначает начало молитвы и провозглашает величие Аллаха."
+      },
+      "ku": {
+        "q": "Karê tekbîra destpêkê çi ye?",
+        "a": "Tekbîra destpêkê destpêka nimêjê nîşan dide û mezinahiya Allah ragihîne."
+      },
+      "tt": {
+        "q": "Ифтитах тәкбиренең вазифасы нинди?",
+        "a": "Ул намазның башлануын белдерә һәм Аллаһның бөеклеген игълан итә."
+      },
+      "ar": {
+        "q": "ما وظيفة تكبيرة الإحرام؟",
+        "a": "تعلن تكبيرة الإحرام بداية الصلاة وتُظهر عظمة الله."
+      },
+      "es": {
+        "q": "¿Qué función tiene el takbir inicial?",
+        "a": "Marca el comienzo de la oración formal y proclama la grandeza de Allah."
+      },
+      "it": {
+        "q": "Qual è la funzione del takbir iniziale?",
+        "a": "Segna l’inizio della preghiera formale e proclama la grandezza di Allah."
+      },
+      "pt": {
+        "q": "Qual é a função do takbir inicial?",
+        "a": "Marca o início da oração formal e proclama a grandeza de Allah."
+      },
+      "ko": {
+        "q": "개시 탁비르의 기능은 무엇입니까?",
+        "a": "개시 탁비르는 정식 기도의 시작을 알리고 알라의 위대함을 선포합니다."
+      },
+      "vi": {
+        "q": "Chức năng của takbir mở đầu là gì?",
+        "a": "Takbir mở đầu đánh dấu sự bắt đầu của lễ cầu nguyện và tuyên bố sự vĩ đại của Allah."
+      },
+      "ja": {
+        "q": "開始のタクビールの役割は何ですか。",
+        "a": "開始のタクビールは正式な礼拝の開始を示し、アッラーの偉大さを宣言します。"
+      },
+      "zh": {
+        "q": "开拜大赞词的作用是什么？",
+        "a": "开拜大赞词标志正式礼拜开始，并宣告真主至大。"
+      }
+    },
+    {
+      "id": 222,
+      "day": 12,
+      "sources": [
+        "📖 Kur’an — Bakara 2:238 — https://quran.com/2/238",
+        "📚 Hadis — Sahih Buhârî 1117 — https://sunnah.com/bukhari:1117"
+      ],
+      "tr": {
+        "q": "Kıyamın namazdaki yeri nedir?",
+        "a": "Ayakta durmak namazın temel duruşlarından biridir; gücü yeten kişi için farz namazda önemlidir."
+      },
+      "en": {
+        "q": "What is the place of standing (qiyam) in prayer?",
+        "a": "Standing is a fundamental posture of prayer, especially in the obligatory prayer for one who is able."
+      },
+      "de": {
+        "q": "Welche Stellung hat der Qiyam im Gebet?",
+        "a": "Das Stehen ist eine grundlegende Gebetshaltung, besonders im Pflichtgebet für denjenigen, der dazu fähig ist."
+      },
+      "nl": {
+        "q": "Welke plaats heeft qiyam in het gebed?",
+        "a": "Staand bidden is een fundamentele houding, vooral in het verplichte gebed voor wie daartoe in staat is."
+      },
+      "fr": {
+        "q": "Quelle est la place du qiyam dans la prière ?",
+        "a": "La station debout est une posture fondamentale, notamment dans la prière obligatoire pour celui qui en est capable."
+      },
+      "ru": {
+        "q": "Каково место кияма в молитве?",
+        "a": "Стояние является основным положением в молитве, особенно в обязательной молитве для того, кто способен стоять."
+      },
+      "ku": {
+        "q": "Qiyam di nimêjê de çi cih digire?",
+        "a": "Rawestan ji hereketên bingehîn ên nimêjê ye, bi taybetî di nimêja farz de ji bo kesê ku dikare raweste."
+      },
+      "tt": {
+        "q": "Кыямның намаздагы урыны нинди?",
+        "a": "Аяк өстендә тору намазның төп торышларыннан, көч җиткән кешегә фарыз намазда аеруча мөһим."
+      },
+      "ar": {
+        "q": "ما مكان القيام في الصلاة؟",
+        "a": "القيام من الهيئات الأساسية في الصلاة، وخاصة في الفرض لمن يستطيع القيام."
+      },
+      "es": {
+        "q": "¿Qué lugar ocupa el qiyam en la oración?",
+        "a": "Estar de pie es una postura fundamental, especialmente en la oración obligatoria para quien puede hacerlo."
+      },
+      "it": {
+        "q": "Qual è il ruolo del qiyam nella preghiera?",
+        "a": "La posizione eretta è fondamentale, soprattutto nella preghiera obbligatoria per chi ne è capace."
+      },
+      "pt": {
+        "q": "Qual é o lugar do qiyam na oração?",
+        "a": "Ficar de pé é uma postura fundamental, especialmente na oração obrigatória para quem é capaz."
+      },
+      "ko": {
+        "q": "기도에서 키얌의 위치는 무엇입니까?",
+        "a": "서 있는 자세는 기도의 기본 자세이며, 능력이 있는 사람의 의무 기도에서 중요합니다."
+      },
+      "vi": {
+        "q": "Qiyam có vị trí gì trong lễ cầu nguyện?",
+        "a": "Đứng là một tư thế căn bản, đặc biệt trong lễ cầu nguyện bắt buộc đối với người có khả năng đứng."
+      },
+      "ja": {
+        "q": "礼拝におけるキヤームの位置は何ですか。",
+        "a": "立つ姿勢は礼拝の基本姿勢であり、立つことのできる人の義務礼拝で特に重要です。"
+      },
+      "zh": {
+        "q": "站立在礼拜中有什么地位？",
+        "a": "站立是礼拜的基本姿势之一；有能力者在主命礼拜中尤其重要。"
+      }
+    },
+    {
+      "id": 223,
+      "day": 12,
+      "sources": [
+        "📖 Kur’an — Bakara 2:43 — https://quran.com/2/43",
+        "📚 Hadis — Sahih Müslim 479 — https://sunnah.com/muslim:479"
+      ],
+      "tr": {
+        "q": "Rükûda hangi anlam öne çıkar?",
+        "a": "Rükû, Allah karşısında tevazu göstermeyi ve O’nu tesbih etmeyi ifade eder."
+      },
+      "en": {
+        "q": "What meaning is emphasized in bowing (ruku)?",
+        "a": "Ruku expresses humility and glorification of Allah."
+      },
+      "de": {
+        "q": "Welche Bedeutung steht beim Ruku im Vordergrund?",
+        "a": "Der Ruku bringt Demut und die Verherrlichung Allahs zum Ausdruck."
+      },
+      "nl": {
+        "q": "Welke betekenis staat centraal bij ruku?",
+        "a": "Ruku drukt nederigheid en het verheerlijken van Allah uit."
+      },
+      "fr": {
+        "q": "Quel sens est mis en avant dans le ruku ?",
+        "a": "Le ruku exprime l’humilité et la glorification d’Allah."
+      },
+      "ru": {
+        "q": "Какой смысл выражает руку?",
+        "a": "Руку выражает смирение и прославление Аллаха."
+      },
+      "ku": {
+        "q": "Di rukû‘ê de kîjan wate derdikeve pêş?",
+        "a": "Rukû‘ nîşana tevazu û mezinbûna Allah e."
+      },
+      "tt": {
+        "q": "Рөкүгътә нинди мәгънә алга чыга?",
+        "a": "Рөкүгъ тыйнаклыкны һәм Аллаһны олуглауды белдерә."
+      },
+      "ar": {
+        "q": "ما المعنى البارز في الركوع؟",
+        "a": "الركوع يعبّر عن التواضع وتعظيم الله."
+      },
+      "es": {
+        "q": "¿Qué significado destaca en el ruku?",
+        "a": "El ruku expresa humildad y glorificación de Allah."
+      },
+      "it": {
+        "q": "Quale significato è espresso nel ruku?",
+        "a": "Il ruku esprime umiltà e glorificazione di Allah."
+      },
+      "pt": {
+        "q": "Que significado é destacado no ruku?",
+        "a": "O ruku expressa humildade e glorificação de Allah."
+      },
+      "ko": {
+        "q": "루쿠에서 강조되는 의미는 무엇입니까?",
+        "a": "루쿠는 겸손과 알라를 찬양함을 표현합니다."
+      },
+      "vi": {
+        "q": "Ý nghĩa nào được nhấn mạnh trong ruku?",
+        "a": "Ruku thể hiện sự khiêm nhường và tôn vinh Allah."
+      },
+      "ja": {
+        "q": "ルクーで強調される意味は何ですか。",
+        "a": "ルクーは謙虚さとアッラーを讃えることを表します。"
+      },
+      "zh": {
+        "q": "鞠躬时强调什么意义？",
+        "a": "鞠躬表达谦卑并赞颂真主。"
+      }
+    },
+    {
+      "id": 224,
+      "day": 12,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 482 — https://sunnah.com/muslim:482",
+        "📖 Kur’an — Alak 96:19 — https://quran.com/96/19"
+      ],
+      "tr": {
+        "q": "Secde neden kulluğun sembolüdür?",
+        "a": "Secdede mümin bedenini yere koyarak Allah’ın huzurunda en güçlü biçimde tevazu ve kulluk gösterir."
+      },
+      "en": {
+        "q": "Why is prostration (sujud) a symbol of servitude?",
+        "a": "In prostration the worshipper places the highest part of the body on the ground in humility before Allah."
+      },
+      "de": {
+        "q": "Warum ist die Niederwerfung ein Symbol der Dienerschaft?",
+        "a": "Bei der Niederwerfung legt der Betende den höchsten Teil seines Körpers demütig vor Allah auf den Boden."
+      },
+      "nl": {
+        "q": "Waarom is sujud een symbool van onderwerping?",
+        "a": "Tijdens sujud buigt de gelovige zich nederig voor Allah en plaatst het lichaam op de grond."
+      },
+      "fr": {
+        "q": "Pourquoi la prosternation est-elle un symbole de servitude ?",
+        "a": "En prosternation, le fidèle pose humblement son corps au sol devant Allah."
+      },
+      "ru": {
+        "q": "Почему земной поклон является символом рабства перед Аллахом?",
+        "a": "Во время суджуда верующий смиренно преклоняется перед Аллахом, опуская тело к земле."
+      },
+      "ku": {
+        "q": "Çima secde sembola bendetiyê ye?",
+        "a": "Di secdeyê de bawerî bi tevazu laşê xwe li erdê datîne û li ber Allah bendetiyê nîşan dide."
+      },
+      "tt": {
+        "q": "Ни өчен сәҗдә коллык билгесе?",
+        "a": "Сәҗдәдә мөэмин Аллаһ алдында тыйнакланып җиргә баш ия."
+      },
+      "ar": {
+        "q": "لماذا السجود رمز للعبودية؟",
+        "a": "في السجود يضع المؤمن جسده على الأرض تواضعاً لله وإظهاراً للعبودية."
+      },
+      "es": {
+        "q": "¿Por qué la postración es símbolo de servidumbre?",
+        "a": "En la postración el creyente se coloca humildemente ante Allah con el cuerpo en el suelo."
+      },
+      "it": {
+        "q": "Perché la prosternazione è simbolo di servitù?",
+        "a": "Nella prosternazione il credente pone il corpo a terra con umiltà davanti ad Allah."
+      },
+      "pt": {
+        "q": "Por que a prostração é símbolo de servidão?",
+        "a": "Na prostração, o crente coloca o corpo no chão com humildade diante de Allah."
+      },
+      "ko": {
+        "q": "수주드는 왜 예속과 섬김의 상징입니까?",
+        "a": "수주드에서 신자는 알라 앞에서 몸을 땅에 대며 겸손과 섬김을 나타냅니다."
+      },
+      "vi": {
+        "q": "Tại sao sujud là biểu tượng của sự phục tùng?",
+        "a": "Trong sujud, người tin đặt thân mình xuống đất với sự khiêm nhường trước Allah."
+      },
+      "ja": {
+        "q": "なぜスジュードは僕としての服従の象徴なのですか。",
+        "a": "スジュードでは信者がアッラーの前で謙虚に身体を地面につけます。"
+      },
+      "zh": {
+        "q": "为什么叩头是为主服务的象征？",
+        "a": "叩头时信士谦卑地将身体伏于地面，在真主面前表现服从。"
+      }
+    },
+    {
+      "id": 225,
+      "day": 12,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 394a — https://sunnah.com/muslim:394a",
+        "📚 Hadis — Sahih Müslim 396a — https://sunnah.com/muslim:396a"
+      ],
+      "tr": {
+        "q": "Fâtiha’nın namazdaki yeri nedir?",
+        "a": "Fâtiha namazda merkezi bir yere sahiptir ve sahih hadisler onun okunmasını vurgular."
+      },
+      "en": {
+        "q": "What is the place of al-Fatiha in prayer?",
+        "a": "Al-Fatiha has a central place in prayer, and authentic hadiths emphasize its recitation."
+      },
+      "de": {
+        "q": "Welche Stellung hat al-Fatiha im Gebet?",
+        "a": "Al-Fatiha hat eine zentrale Stellung im Gebet, und authentische Hadithe betonen ihre Rezitation."
+      },
+      "nl": {
+        "q": "Welke plaats heeft al-Fatiha in het gebed?",
+        "a": "Al-Fatiha heeft een centrale plaats in het gebed en authentieke hadiths benadrukken het reciteren ervan."
+      },
+      "fr": {
+        "q": "Quelle est la place d’al-Fatiha dans la prière ?",
+        "a": "Al-Fatiha occupe une place centrale dans la prière et des hadiths authentiques soulignent sa récitation."
+      },
+      "ru": {
+        "q": "Каково место суры аль-Фатиха в молитве?",
+        "a": "Аль-Фатиха занимает центральное место в молитве, и достоверные хадисы подчёркивают её чтение."
+      },
+      "ku": {
+        "q": "Fatiha di nimêjê de çi cih digire?",
+        "a": "Fatiha di nimêjê de cihê bingehîn heye û hedîsên sahîh xwendina wê nîşan didin."
+      },
+      "tt": {
+        "q": "Фатиха сүрәсенең намаздагы урыны нинди?",
+        "a": "Фатиха намазда үзәк урын тота, һәм сәхих хәдисләр аны укуны ассызыклый."
+      },
+      "ar": {
+        "q": "ما مكانة الفاتحة في الصلاة؟",
+        "a": "للفاتحة مكانة أساسية في الصلاة، وتؤكد الأحاديث الصحيحة قراءتها."
+      },
+      "es": {
+        "q": "¿Qué lugar ocupa al-Fatiha en la oración?",
+        "a": "Al-Fatiha ocupa un lugar central en la oración y los hadices auténticos destacan su recitación."
+      },
+      "it": {
+        "q": "Qual è il ruolo di al-Fatiha nella preghiera?",
+        "a": "Al-Fatiha ha un ruolo centrale nella preghiera e gli hadith autentici sottolineano la sua recitazione."
+      },
+      "pt": {
+        "q": "Qual é o lugar de al-Fatiha na oração?",
+        "a": "Al-Fatiha ocupa um lugar central na oração e hadiths autênticos destacam a sua recitação."
+      },
+      "ko": {
+        "q": "기도에서 알파티하의 위치는 무엇입니까?",
+        "a": "알파티하는 기도에서 중심적인 위치를 가지며 정통 하디스는 그 낭송을 강조합니다."
+      },
+      "vi": {
+        "q": "Al-Fatiha có vị trí nào trong lễ cầu nguyện?",
+        "a": "Al-Fatiha giữ vị trí trung tâm trong lễ cầu nguyện và các hadith xác thực nhấn mạnh việc đọc nó."
+      },
+      "ja": {
+        "q": "礼拝におけるアル・ファーティハの位置は何ですか。",
+        "a": "アル・ファーティハは礼拝で中心的な位置を占め、真正なハディースもその読誦を強調しています。"
+      },
+      "zh": {
+        "q": "《法蒂哈》在礼拜中有什么地位？",
+        "a": "《法蒂哈》在礼拜中占有核心地位，可靠圣训强调诵读它。"
+      }
+    },
+    {
+      "id": 226,
+      "day": 12,
+      "sources": [
+        "📖 Kur’an — Mü’minûn 23:1-2 — https://quran.com/23/1-2",
+        "📖 Kur’an — Ankebût 29:45 — https://quran.com/29/45"
+      ],
+      "tr": {
+        "q": "Namazda huşû nasıl güçlendirilebilir?",
+        "a": "Okunanları anlamak, kalbi namaza vermek, dikkat dağıtıcı şeylerden uzak durmak ve Allah’ın huzurunda olduğunu hatırlamakla güçlendirilebilir."
+      },
+      "en": {
+        "q": "How can khushu in prayer be strengthened?",
+        "a": "It can be strengthened by understanding what is recited, focusing the heart, avoiding distractions and remembering that one stands before Allah."
+      },
+      "de": {
+        "q": "Wie kann man die Khushu im Gebet stärken?",
+        "a": "Durch das Verstehen der Rezitation, Konzentration des Herzens, das Vermeiden von Ablenkungen und das Bewusstsein, vor Allah zu stehen."
+      },
+      "nl": {
+        "q": "Hoe kan khushu in het gebed worden versterkt?",
+        "a": "Door de recitatie te begrijpen, het hart te concentreren, afleiding te vermijden en te beseffen dat men voor Allah staat."
+      },
+      "fr": {
+        "q": "Comment renforcer le khushu dans la prière ?",
+        "a": "En comprenant la récitation, en concentrant le cœur, en évitant les distractions et en se rappelant que l’on se tient devant Allah."
+      },
+      "ru": {
+        "q": "Как укрепить хушу в молитве?",
+        "a": "Понимать читаемое, сосредоточить сердце, избегать отвлечений и помнить, что человек стоит перед Аллахом."
+      },
+      "ku": {
+        "q": "Huşû di nimêjê de çawa dikare xurt bibe?",
+        "a": "Bi fêmkirina tiştên têne xwendin, dayîna dilê xwe bo nimêjê, dûrketina ji distraqsyonan û bîranîna rawestan li ber Allah."
+      },
+      "tt": {
+        "q": "Намазда хушугъны ничек көчәйтергә?",
+        "a": "Укылганны аңлау, йөрәкне намазга юнәлтү, читкә юнәлтүчеләрдән саклану һәм Аллаһ алдында торуыңны истә тоту белән."
+      },
+      "ar": {
+        "q": "كيف يمكن تقوية الخشوع في الصلاة؟",
+        "a": "بفهم ما يُقرأ، وتركيز القلب، وتجنب المشتتات، وتذكر الوقوف بين يدي الله."
+      },
+      "es": {
+        "q": "¿Cómo fortalecer el khushu en la oración?",
+        "a": "Comprendiendo lo que se recita, concentrando el corazón, evitando distracciones y recordando que se está ante Allah."
+      },
+      "it": {
+        "q": "Come rafforzare il khushu nella preghiera?",
+        "a": "Comprendendo ciò che si recita, concentrando il cuore, evitando distrazioni e ricordando di stare davanti ad Allah."
+      },
+      "pt": {
+        "q": "Como fortalecer o khushu na oração?",
+        "a": "Compreendendo o que é recitado, concentrando o coração, evitando distrações e lembrando que se está diante de Allah."
+      },
+      "ko": {
+        "q": "기도에서 후슈우를 어떻게 강화할 수 있습니까?",
+        "a": "낭송의 의미를 이해하고 마음을 집중하며 방해를 피하고 알라 앞에 서 있음을 기억함으로써 강화할 수 있습니다."
+      },
+      "vi": {
+        "q": "Làm thế nào để tăng khushu trong cầu nguyện?",
+        "a": "Bằng cách hiểu điều được đọc, tập trung trái tim, tránh xao nhãng và nhớ rằng mình đang đứng trước Allah."
+      },
+      "ja": {
+        "q": "礼拝でフシュ―を強めるにはどうすればよいですか。",
+        "a": "読誦の意味を理解し、心を集中させ、気を散らすものを避け、アッラーの前に立っていることを思い出すことで強められます。"
+      },
+      "zh": {
+        "q": "怎样增强礼拜中的敬畏和专注？",
+        "a": "理解所诵读的内容，专心于内心，避免干扰，并记得自己正站在真主面前。"
+      }
+    },
+    {
+      "id": 227,
+      "day": 12,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 618 — https://sunnah.com/bukhari:618",
+        "📚 Hadis — Sahih Müslim 578 — https://sunnah.com/muslim:578"
+      ],
+      "tr": {
+        "q": "Ezan ile kamet arasındaki fark nedir?",
+        "a": "Ezan namaz vaktinin girdiğini bildirir; kamet ise farz namazın başlamasından hemen önce yapılan çağrıdır."
+      },
+      "en": {
+        "q": "What is the difference between the adhan and the iqamah?",
+        "a": "The adhan announces the prayer time, while the iqamah is the call immediately preceding the establishment of the obligatory prayer."
+      },
+      "de": {
+        "q": "Was ist der Unterschied zwischen Adhan und Iqama?",
+        "a": "Der Adhan kündigt die Gebetszeit an; die Iqama ist der Ruf unmittelbar vor dem Beginn des Pflichtgebets."
+      },
+      "nl": {
+        "q": "Wat is het verschil tussen adhan en iqama?",
+        "a": "De adhan kondigt het begin van de gebedstijd aan; de iqama is de oproep vlak vóór het verplichte gebed begint."
+      },
+      "fr": {
+        "q": "Quelle est la différence entre l’adhan et l’iqama ?",
+        "a": "L’adhan annonce l’entrée du temps de prière, tandis que l’iqama est l’appel juste avant l’établissement de la prière obligatoire."
+      },
+      "ru": {
+        "q": "В чём разница между азаном и икаматом?",
+        "a": "Азан объявляет наступление времени молитвы, а икамат — призыв непосредственно перед началом обязательной молитвы."
+      },
+      "ku": {
+        "q": "Cûdahiya ezan û qametê çi ye?",
+        "a": "Ezan ketina wextê nimêjê ragihîne; qamet gazî ye ku berî destpêka nimêja farz tê kirin."
+      },
+      "tt": {
+        "q": "Азан белән камәтнең аермасы нинди?",
+        "a": "Азан намаз вакыты керүен хәбәр итә, камәт исә фарыз намаз башланыр алдыннан әйтелә."
+      },
+      "ar": {
+        "q": "ما الفرق بين الأذان والإقامة؟",
+        "a": "الأذان إعلان دخول وقت الصلاة، أما الإقامة فهي النداء الذي يكون مباشرة قبل إقامة الصلاة المفروضة."
+      },
+      "es": {
+        "q": "¿Cuál es la diferencia entre el adhan y la iqama?",
+        "a": "El adhan anuncia la entrada del tiempo de oración; la iqama es la llamada inmediatamente anterior al comienzo de la oración obligatoria."
+      },
+      "it": {
+        "q": "Qual è la differenza tra adhan e iqama?",
+        "a": "L’adhan annuncia l’ingresso dell’orario della preghiera; l’iqama è la chiamata immediatamente precedente all’inizio della preghiera obbligatoria."
+      },
+      "pt": {
+        "q": "Qual é a diferença entre adhan e iqama?",
+        "a": "O adhan anuncia a entrada do horário da oração; a iqama é o chamado imediatamente anterior ao início da oração obrigatória."
+      },
+      "ko": {
+        "q": "아잔과 이까마의 차이는 무엇입니까?",
+        "a": "아잔은 기도 시간이 시작되었음을 알리고, 이까마는 의무 기도가 시작되기 직전에 하는 호출입니다."
+      },
+      "vi": {
+        "q": "Sự khác nhau giữa adhan và iqamah là gì?",
+        "a": "Adhan thông báo giờ cầu nguyện bắt đầu; iqamah là lời gọi ngay trước khi lễ cầu nguyện bắt buộc được thiết lập."
+      },
+      "ja": {
+        "q": "アザーンとイカーマの違いは何ですか。",
+        "a": "アザーンは礼拝時間の開始を知らせ、イカーマは義務礼拝の直前に行う呼びかけです。"
+      },
+      "zh": {
+        "q": "宣礼和成礼词有什么区别？",
+        "a": "宣礼宣布礼拜时间到来；成礼词是在主命礼拜正式开始前发出的呼唤。"
+      }
+    },
+    {
+      "id": 228,
+      "day": 12,
+      "sources": [
+        "📖 Kur’an — Bakara 2:43 — https://quran.com/2/43",
+        "📚 Hadis — Sahih Buhârî 645 — https://sunnah.com/bukhari:645"
+      ],
+      "tr": {
+        "q": "Cemaatle namazın toplumsal faydası nedir?",
+        "a": "Kardeşliği, eşitliği, karşılıklı yardımlaşmayı ve ortak ibadet bilincini güçlendirir."
+      },
+      "en": {
+        "q": "What is a social benefit of congregational prayer?",
+        "a": "It strengthens brotherhood, equality, mutual support and a shared sense of worship among Muslims."
+      },
+      "de": {
+        "q": "Welchen sozialen Nutzen hat das Gemeinschaftsgebet?",
+        "a": "Es stärkt Brüderlichkeit, Gleichheit, gegenseitige Unterstützung und ein gemeinsames Bewusstsein der Anbetung."
+      },
+      "nl": {
+        "q": "Wat is een sociaal voordeel van het gezamenlijke gebed?",
+        "a": "Het versterkt broederschap, gelijkheid, wederzijdse steun en een gedeeld bewustzijn van aanbidding."
+      },
+      "fr": {
+        "q": "Quel est un bienfait social de la prière en groupe ?",
+        "a": "Elle renforce la fraternité, l’égalité, l’entraide et le sentiment d’adoration commune."
+      },
+      "ru": {
+        "q": "Какова социальная польза коллективной молитвы?",
+        "a": "Она укрепляет братство, равенство, взаимную поддержку и общее чувство поклонения."
+      },
+      "ku": {
+        "q": "Feydeya civakî ya nimêja bi cemaatê çi ye?",
+        "a": "Biratiyê, wekheviyê, hevkarî û hesta hevpar a îbadetê xurt dike."
+      },
+      "tt": {
+        "q": "Җәмәгать белән намазның җәмгыяви файдасы нинди?",
+        "a": "Кардәшлекне, тигезлекне, үзара ярдәмне һәм уртак гыйбадәт аңын көчәйтә."
+      },
+      "ar": {
+        "q": "ما الفائدة الاجتماعية لصلاة الجماعة؟",
+        "a": "تقوّي الأخوة والمساواة والتعاون والشعور المشترك بالعبادة."
+      },
+      "es": {
+        "q": "¿Cuál es un beneficio social de la oración en congregación?",
+        "a": "Fortalece la hermandad, la igualdad, la ayuda mutua y el sentido compartido de adoración."
+      },
+      "it": {
+        "q": "Qual è un beneficio sociale della preghiera in congregazione?",
+        "a": "Rafforza fratellanza, uguaglianza, aiuto reciproco e senso condiviso dell’adorazione."
+      },
+      "pt": {
+        "q": "Qual é um benefício social da oração em congregação?",
+        "a": "Fortalece a fraternidade, a igualdade, a ajuda mútua e o sentido comum de adoração."
+      },
+      "ko": {
+        "q": "공동 기도의 사회적 유익은 무엇입니까?",
+        "a": "형제애, 평등, 상호 도움과 공동 예배 의식을 강화합니다."
+      },
+      "vi": {
+        "q": "Lợi ích xã hội của cầu nguyện tập thể là gì?",
+        "a": "Nó củng cố tình huynh đệ, bình đẳng, hỗ trợ lẫn nhau và ý thức cùng thờ phượng."
+      },
+      "ja": {
+        "q": "集団礼拝の社会的な利益は何ですか。",
+        "a": "兄弟愛、平等、相互扶助、そして共に礼拝する意識を強めます。"
+      },
+      "zh": {
+        "q": "集体礼拜有什么社会益处？",
+        "a": "它加强兄弟情谊、平等、互助以及共同崇拜的意识。"
+      }
+    }
+  ]
+}

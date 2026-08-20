@@ -1,0 +1,1549 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 14,
+  "dayTitle": {
+    "tr": "14. Gün — Oruç ve Ramazan",
+    "en": "Day 14 — Fasting and Ramadan",
+    "de": "14. Tag — Fasten und Ramadan",
+    "nl": "Dag 14 — Vasten en Ramadan",
+    "fr": "Jour 14 — Le jeûne et le Ramadan",
+    "ru": "14-й день — Пост и Рамадан",
+    "ku": "Roj 14 — Rojî û Remezan",
+    "tt": "14 нче көн — Ураза һәм Рамазан",
+    "ar": "اليوم الرابع عشر — الصيام ورمضان",
+    "es": "Día 14 — El ayuno y Ramadán",
+    "it": "Giorno 14 — Il digiuno e Ramadan",
+    "pt": "Dia 14 — Jejum e Ramadã",
+    "ko": "14일차 — 금식과 라마단",
+    "vi": "Ngày 14 — Nhịn chay và Ramadan",
+    "ja": "14日目 — 断食とラマダン",
+    "zh": "第14天——斋戒与莱麦丹月"
+  },
+  "daySubtitle": {
+    "tr": "Oruç, Ramazan, sahur, iftar, orucun başlangıcı ve sona ermesi, ruhsatlar ve ahlâkî boyutu",
+    "en": "Fasting, Ramadan, suhur, iftar, the beginning and end of the fast, concessions and moral discipline",
+    "de": "Fasten, Ramadan, Suhur, Iftar, Beginn und Ende des Fastens, Erleichterungen und moralische Disziplin",
+    "nl": "Vasten, Ramadan, suhur, iftar, begin en einde van het vasten, uitzonderingen en morele discipline",
+    "fr": "Le jeûne, le Ramadan, le sahur, l’iftar, le début et la fin du jeûne, les dispenses et la discipline morale",
+    "ru": "Пост, Рамадан, сухур, ифтар, начало и конец поста, послабления и нравственная дисциплина",
+    "ku": "Rojî, Remezan, sehûr, îftar, destpêk û dawiya rojiyê, ruhset û aliyê exlaqî",
+    "tt": "Ураза, Рамазан, сәхәр, ифтар, уразаның башлануы һәм тәмамлануы, җиңеллекләр һәм әхлак",
+    "ar": "الصيام ورمضان والسحور والإفطار ووقت بدء الصيام وانتهائه والرخص والانضباط الأخلاقي",
+    "es": "El ayuno, Ramadán, suhur, iftar, el comienzo y el final del ayuno, las dispensas y la disciplina moral",
+    "it": "Il digiuno, Ramadan, suhur, iftar, l’inizio e la fine del digiuno, le agevolazioni e la disciplina morale",
+    "pt": "Jejum, Ramadã, suhur, iftar, início e fim do jejum, concessões e disciplina moral",
+    "ko": "금식, 라마단, 수후르, 이프타르, 금식의 시작과 끝, 예외와 도덕적 절제",
+    "vi": "Nhịn chay, Ramadan, suhur, iftar, thời điểm bắt đầu và kết thúc, các trường hợp được miễn và kỷ luật đạo đức",
+    "ja": "断食、ラマダン、スフール、イフタール、断食の開始と終了、免除と道徳的自制",
+    "zh": "斋戒、莱麦丹月、封斋饭、开斋、斋戒的开始与结束、减免规定及道德自律"
+  },
+  "questions": [
+    {
+      "id": 248,
+      "day": 14,
+      "sources": [
+        "📖 Kur’an — Bakara 2:183 — https://quran.com/2/183",
+        "📚 Hadis — Sahih Buhârî 1903 — https://sunnah.com/bukhari:1903"
+      ],
+      "tr": {
+        "q": "Oruç nedir?",
+        "a": "Oruç, ibadet niyetiyle imsak vaktinden güneş batıncaya kadar yeme, içme ve belirli şeylerden uzak durmaktır."
+      },
+      "en": {
+        "q": "What is fasting?",
+        "a": "Fasting means abstaining from food, drink and certain things from dawn until sunset with the intention of worship."
+      },
+      "de": {
+        "q": "Was ist das Fasten?",
+        "a": "Fasten bedeutet, mit der Absicht der Anbetung von der Morgendämmerung bis zum Sonnenuntergang auf Essen, Trinken und bestimmte Dinge zu verzichten."
+      },
+      "nl": {
+        "q": "Oruç nedir?",
+        "a": "Oruç, ibadet niyetiyle imsak vaktinden güneş batıncaya kadar yeme, içme ve belirli şeylerden uzak durmaktır."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le jeûne ?",
+        "a": "Le jeûne consiste à s’abstenir de manger, de boire et de certaines choses de l’aube au coucher du soleil avec l’intention d’adorer Allah."
+      },
+      "ru": {
+        "q": "Oruç nedir?",
+        "a": "Oruç, ibadet niyetiyle imsak vaktinden güneş batıncaya kadar yeme, içme ve belirli şeylerden uzak durmaktır."
+      },
+      "ku": {
+        "q": "Oruç nedir?",
+        "a": "Oruç, ibadet niyetiyle imsak vaktinden güneş batıncaya kadar yeme, içme ve belirli şeylerden uzak durmaktır."
+      },
+      "tt": {
+        "q": "Oruç nedir?",
+        "a": "Oruç, ibadet niyetiyle imsak vaktinden güneş batıncaya kadar yeme, içme ve belirli şeylerden uzak durmaktır."
+      },
+      "ar": {
+        "q": "Oruç nedir?",
+        "a": "Oruç, ibadet niyetiyle imsak vaktinden güneş batıncaya kadar yeme, içme ve belirli şeylerden uzak durmaktır."
+      },
+      "es": {
+        "q": "¿Qué es el ayuno?",
+        "a": "El ayuno consiste en abstenerse de comer, beber y de ciertas cosas desde el amanecer hasta la puesta del sol, con intención de adoración."
+      },
+      "it": {
+        "q": "Oruç nedir?",
+        "a": "Oruç, ibadet niyetiyle imsak vaktinden güneş batıncaya kadar yeme, içme ve belirli şeylerden uzak durmaktır."
+      },
+      "pt": {
+        "q": "Oruç nedir?",
+        "a": "Oruç, ibadet niyetiyle imsak vaktinden güneş batıncaya kadar yeme, içme ve belirli şeylerden uzak durmaktır."
+      },
+      "ko": {
+        "q": "Oruç nedir?",
+        "a": "Oruç, ibadet niyetiyle imsak vaktinden güneş batıncaya kadar yeme, içme ve belirli şeylerden uzak durmaktır."
+      },
+      "vi": {
+        "q": "Oruç nedir?",
+        "a": "Oruç, ibadet niyetiyle imsak vaktinden güneş batıncaya kadar yeme, içme ve belirli şeylerden uzak durmaktır."
+      },
+      "ja": {
+        "q": "Oruç nedir?",
+        "a": "Oruç, ibadet niyetiyle imsak vaktinden güneş batıncaya kadar yeme, içme ve belirli şeylerden uzak durmaktır."
+      },
+      "zh": {
+        "q": "Oruç nedir?",
+        "a": "Oruç, ibadet niyetiyle imsak vaktinden güneş batıncaya kadar yeme, içme ve belirli şeylerden uzak durmaktır."
+      }
+    },
+    {
+      "id": 249,
+      "day": 14,
+      "sources": [
+        "📖 Kur’an — Bakara 2:183 — https://quran.com/2/183",
+        "📚 Hadis — Sahih Müslim 8a — https://sunnah.com/muslim:8a"
+      ],
+      "tr": {
+        "q": "Ramazan orucu kime farzdır?",
+        "a": "Şartlarını taşıyan Müslümanlara farzdır."
+      },
+      "en": {
+        "q": "For whom is the Ramadan fast obligatory?",
+        "a": "It is obligatory for Muslims who meet the required conditions."
+      },
+      "de": {
+        "q": "Für wen ist das Fasten im Ramadan verpflichtend?",
+        "a": "Es ist für Muslime verpflichtend, die die erforderlichen Voraussetzungen erfüllen."
+      },
+      "nl": {
+        "q": "Ramazan orucu kime farzdır?",
+        "a": "Şartlarını taşıyan Müslümanlara farzdır."
+      },
+      "fr": {
+        "q": "À qui le jeûne du Ramadan est-il obligatoire ?",
+        "a": "Il est obligatoire pour les musulmans qui remplissent les conditions requises."
+      },
+      "ru": {
+        "q": "Ramazan orucu kime farzdır?",
+        "a": "Şartlarını taşıyan Müslümanlara farzdır."
+      },
+      "ku": {
+        "q": "Ramazan orucu kime farzdır?",
+        "a": "Şartlarını taşıyan Müslümanlara farzdır."
+      },
+      "tt": {
+        "q": "Ramazan orucu kime farzdır?",
+        "a": "Şartlarını taşıyan Müslümanlara farzdır."
+      },
+      "ar": {
+        "q": "Ramazan orucu kime farzdır?",
+        "a": "Şartlarını taşıyan Müslümanlara farzdır."
+      },
+      "es": {
+        "q": "¿Para quién es obligatorio el ayuno de Ramadán?",
+        "a": "Es obligatorio para los musulmanes que cumplen las condiciones requeridas."
+      },
+      "it": {
+        "q": "Ramazan orucu kime farzdır?",
+        "a": "Şartlarını taşıyan Müslümanlara farzdır."
+      },
+      "pt": {
+        "q": "Ramazan orucu kime farzdır?",
+        "a": "Şartlarını taşıyan Müslümanlara farzdır."
+      },
+      "ko": {
+        "q": "Ramazan orucu kime farzdır?",
+        "a": "Şartlarını taşıyan Müslümanlara farzdır."
+      },
+      "vi": {
+        "q": "Ramazan orucu kime farzdır?",
+        "a": "Şartlarını taşıyan Müslümanlara farzdır."
+      },
+      "ja": {
+        "q": "Ramazan orucu kime farzdır?",
+        "a": "Şartlarını taşıyan Müslümanlara farzdır."
+      },
+      "zh": {
+        "q": "Ramazan orucu kime farzdır?",
+        "a": "Şartlarını taşıyan Müslümanlara farzdır."
+      }
+    },
+    {
+      "id": 250,
+      "day": 14,
+      "sources": [
+        "📖 Kur’an — Bakara 2:185 — https://quran.com/2/185",
+        "📚 Hadis — Sahih Müslim 1080a — https://sunnah.com/muslim:1080a"
+      ],
+      "tr": {
+        "q": "Ramazan hangi ayda tutulur?",
+        "a": "Hicrî takvimin dokuzuncu ayı olan Ramazan’da tutulur."
+      },
+      "en": {
+        "q": "In which month is Ramadan observed?",
+        "a": "It is observed in Ramadan, the ninth month of the Hijri calendar."
+      },
+      "de": {
+        "q": "In welchem Monat wird Ramadan gefastet?",
+        "a": "Im Ramadan, dem neunten Monat des islamischen Mondkalenders."
+      },
+      "nl": {
+        "q": "Ramazan hangi ayda tutulur?",
+        "a": "Hicrî takvimin dokuzuncu ayı olan Ramazan’da tutulur."
+      },
+      "fr": {
+        "q": "Pendant quel mois jeûne-t-on ?",
+        "a": "Pendant le Ramadan, le neuvième mois du calendrier lunaire islamique."
+      },
+      "ru": {
+        "q": "Ramazan hangi ayda tutulur?",
+        "a": "Hicrî takvimin dokuzuncu ayı olan Ramazan’da tutulur."
+      },
+      "ku": {
+        "q": "Ramazan hangi ayda tutulur?",
+        "a": "Hicrî takvimin dokuzuncu ayı olan Ramazan’da tutulur."
+      },
+      "tt": {
+        "q": "Ramazan hangi ayda tutulur?",
+        "a": "Hicrî takvimin dokuzuncu ayı olan Ramazan’da tutulur."
+      },
+      "ar": {
+        "q": "Ramazan hangi ayda tutulur?",
+        "a": "Hicrî takvimin dokuzuncu ayı olan Ramazan’da tutulur."
+      },
+      "es": {
+        "q": "¿En qué mes se ayuna?",
+        "a": "En Ramadán, el noveno mes del calendario lunar islámico."
+      },
+      "it": {
+        "q": "Ramazan hangi ayda tutulur?",
+        "a": "Hicrî takvimin dokuzuncu ayı olan Ramazan’da tutulur."
+      },
+      "pt": {
+        "q": "Ramazan hangi ayda tutulur?",
+        "a": "Hicrî takvimin dokuzuncu ayı olan Ramazan’da tutulur."
+      },
+      "ko": {
+        "q": "Ramazan hangi ayda tutulur?",
+        "a": "Hicrî takvimin dokuzuncu ayı olan Ramazan’da tutulur."
+      },
+      "vi": {
+        "q": "Ramazan hangi ayda tutulur?",
+        "a": "Hicrî takvimin dokuzuncu ayı olan Ramazan’da tutulur."
+      },
+      "ja": {
+        "q": "Ramazan hangi ayda tutulur?",
+        "a": "Hicrî takvimin dokuzuncu ayı olan Ramazan’da tutulur."
+      },
+      "zh": {
+        "q": "Ramazan hangi ayda tutulur?",
+        "a": "Hicrî takvimin dokuzuncu ayı olan Ramazan’da tutulur."
+      }
+    },
+    {
+      "id": 251,
+      "day": 14,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 1923 — https://sunnah.com/bukhari:1923",
+        "📖 Kur’an — Bakara 2:187 — https://quran.com/2/187"
+      ],
+      "tr": {
+        "q": "Sahur nedir?",
+        "a": "Oruçtan önce gece yenilen ve içilen yemek vaktidir."
+      },
+      "en": {
+        "q": "What is suhur?",
+        "a": "Suhur is the meal taken before the fast begins."
+      },
+      "de": {
+        "q": "Was ist Suhur?",
+        "a": "Suhur ist die Mahlzeit vor Beginn des Fastens."
+      },
+      "nl": {
+        "q": "Sahur nedir?",
+        "a": "Oruçtan önce gece yenilen ve içilen yemek vaktidir."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le sahur ?",
+        "a": "Le sahur est le repas pris avant le début du jeûne."
+      },
+      "ru": {
+        "q": "Sahur nedir?",
+        "a": "Oruçtan önce gece yenilen ve içilen yemek vaktidir."
+      },
+      "ku": {
+        "q": "Sahur nedir?",
+        "a": "Oruçtan önce gece yenilen ve içilen yemek vaktidir."
+      },
+      "tt": {
+        "q": "Sahur nedir?",
+        "a": "Oruçtan önce gece yenilen ve içilen yemek vaktidir."
+      },
+      "ar": {
+        "q": "Sahur nedir?",
+        "a": "Oruçtan önce gece yenilen ve içilen yemek vaktidir."
+      },
+      "es": {
+        "q": "¿Qué es el suhur?",
+        "a": "El suhur es la comida que se toma antes de comenzar el ayuno."
+      },
+      "it": {
+        "q": "Sahur nedir?",
+        "a": "Oruçtan önce gece yenilen ve içilen yemek vaktidir."
+      },
+      "pt": {
+        "q": "Sahur nedir?",
+        "a": "Oruçtan önce gece yenilen ve içilen yemek vaktidir."
+      },
+      "ko": {
+        "q": "Sahur nedir?",
+        "a": "Oruçtan önce gece yenilen ve içilen yemek vaktidir."
+      },
+      "vi": {
+        "q": "Sahur nedir?",
+        "a": "Oruçtan önce gece yenilen ve içilen yemek vaktidir."
+      },
+      "ja": {
+        "q": "Sahur nedir?",
+        "a": "Oruçtan önce gece yenilen ve içilen yemek vaktidir."
+      },
+      "zh": {
+        "q": "Sahur nedir?",
+        "a": "Oruçtan önce gece yenilen ve içilen yemek vaktidir."
+      }
+    },
+    {
+      "id": 252,
+      "day": 14,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 1957 — https://sunnah.com/bukhari:1957",
+        "📖 Kur’an — Bakara 2:187 — https://quran.com/2/187"
+      ],
+      "tr": {
+        "q": "İftar nedir?",
+        "a": "Güneş battıktan sonra orucun açılmasıdır."
+      },
+      "en": {
+        "q": "What is iftar?",
+        "a": "Iftar is breaking the fast after sunset."
+      },
+      "de": {
+        "q": "Was ist Iftar?",
+        "a": "Iftar ist das Beenden des Fastens nach Sonnenuntergang."
+      },
+      "nl": {
+        "q": "İftar nedir?",
+        "a": "Güneş battıktan sonra orucun açılmasıdır."
+      },
+      "fr": {
+        "q": "Qu’est-ce que l’iftar ?",
+        "a": "L’iftar est la rupture du jeûne après le coucher du soleil."
+      },
+      "ru": {
+        "q": "İftar nedir?",
+        "a": "Güneş battıktan sonra orucun açılmasıdır."
+      },
+      "ku": {
+        "q": "İftar nedir?",
+        "a": "Güneş battıktan sonra orucun açılmasıdır."
+      },
+      "tt": {
+        "q": "İftar nedir?",
+        "a": "Güneş battıktan sonra orucun açılmasıdır."
+      },
+      "ar": {
+        "q": "İftar nedir?",
+        "a": "Güneş battıktan sonra orucun açılmasıdır."
+      },
+      "es": {
+        "q": "¿Qué es el iftar?",
+        "a": "El iftar es romper el ayuno después de la puesta del sol."
+      },
+      "it": {
+        "q": "İftar nedir?",
+        "a": "Güneş battıktan sonra orucun açılmasıdır."
+      },
+      "pt": {
+        "q": "İftar nedir?",
+        "a": "Güneş battıktan sonra orucun açılmasıdır."
+      },
+      "ko": {
+        "q": "İftar nedir?",
+        "a": "Güneş battıktan sonra orucun açılmasıdır."
+      },
+      "vi": {
+        "q": "İftar nedir?",
+        "a": "Güneş battıktan sonra orucun açılmasıdır."
+      },
+      "ja": {
+        "q": "İftar nedir?",
+        "a": "Güneş battıktan sonra orucun açılmasıdır."
+      },
+      "zh": {
+        "q": "İftar nedir?",
+        "a": "Güneş battıktan sonra orucun açılmasıdır."
+      }
+    },
+    {
+      "id": 253,
+      "day": 14,
+      "sources": [
+        "📖 Kur’an — Bakara 2:187 — https://quran.com/2/187",
+        "📚 Hadis — Sahih Müslim 1090a — https://sunnah.com/muslim:1090a"
+      ],
+      "tr": {
+        "q": "Oruç ne zaman başlar?",
+        "a": "İmsak vaktinin girmesiyle başlar."
+      },
+      "en": {
+        "q": "When does the fast begin?",
+        "a": "It begins when dawn, or imsak, enters."
+      },
+      "de": {
+        "q": "Wann beginnt das Fasten?",
+        "a": "Es beginnt mit dem Eintritt der Morgendämmerung, also der Im­sak-Zeit."
+      },
+      "nl": {
+        "q": "Oruç ne zaman başlar?",
+        "a": "İmsak vaktinin girmesiyle başlar."
+      },
+      "fr": {
+        "q": "Quand le jeûne commence-t-il ?",
+        "a": "Il commence à l’entrée de l’aube, au moment de l’imsak."
+      },
+      "ru": {
+        "q": "Oruç ne zaman başlar?",
+        "a": "İmsak vaktinin girmesiyle başlar."
+      },
+      "ku": {
+        "q": "Oruç ne zaman başlar?",
+        "a": "İmsak vaktinin girmesiyle başlar."
+      },
+      "tt": {
+        "q": "Oruç ne zaman başlar?",
+        "a": "İmsak vaktinin girmesiyle başlar."
+      },
+      "ar": {
+        "q": "Oruç ne zaman başlar?",
+        "a": "İmsak vaktinin girmesiyle başlar."
+      },
+      "es": {
+        "q": "¿Cuándo comienza el ayuno?",
+        "a": "Comienza cuando entra el tiempo del amanecer, el imsak."
+      },
+      "it": {
+        "q": "Oruç ne zaman başlar?",
+        "a": "İmsak vaktinin girmesiyle başlar."
+      },
+      "pt": {
+        "q": "Oruç ne zaman başlar?",
+        "a": "İmsak vaktinin girmesiyle başlar."
+      },
+      "ko": {
+        "q": "Oruç ne zaman başlar?",
+        "a": "İmsak vaktinin girmesiyle başlar."
+      },
+      "vi": {
+        "q": "Oruç ne zaman başlar?",
+        "a": "İmsak vaktinin girmesiyle başlar."
+      },
+      "ja": {
+        "q": "Oruç ne zaman başlar?",
+        "a": "İmsak vaktinin girmesiyle başlar."
+      },
+      "zh": {
+        "q": "Oruç ne zaman başlar?",
+        "a": "İmsak vaktinin girmesiyle başlar."
+      }
+    },
+    {
+      "id": 254,
+      "day": 14,
+      "sources": [
+        "📖 Kur’an — Bakara 2:187 — https://quran.com/2/187",
+        "📚 Hadis — Sahih Buhârî 1954 — https://sunnah.com/bukhari:1954"
+      ],
+      "tr": {
+        "q": "Oruç ne zaman sona erer?",
+        "a": "Güneşin batmasıyla sona erer."
+      },
+      "en": {
+        "q": "When does the fast end?",
+        "a": "It ends at sunset."
+      },
+      "de": {
+        "q": "Wann endet das Fasten?",
+        "a": "Es endet mit dem Sonnenuntergang."
+      },
+      "nl": {
+        "q": "Oruç ne zaman sona erer?",
+        "a": "Güneşin batmasıyla sona erer."
+      },
+      "fr": {
+        "q": "Quand le jeûne se termine-t-il ?",
+        "a": "Il se termine au coucher du soleil."
+      },
+      "ru": {
+        "q": "Oruç ne zaman sona erer?",
+        "a": "Güneşin batmasıyla sona erer."
+      },
+      "ku": {
+        "q": "Oruç ne zaman sona erer?",
+        "a": "Güneşin batmasıyla sona erer."
+      },
+      "tt": {
+        "q": "Oruç ne zaman sona erer?",
+        "a": "Güneşin batmasıyla sona erer."
+      },
+      "ar": {
+        "q": "Oruç ne zaman sona erer?",
+        "a": "Güneşin batmasıyla sona erer."
+      },
+      "es": {
+        "q": "¿Cuándo termina el ayuno?",
+        "a": "Termina cuando se pone el sol."
+      },
+      "it": {
+        "q": "Oruç ne zaman sona erer?",
+        "a": "Güneşin batmasıyla sona erer."
+      },
+      "pt": {
+        "q": "Oruç ne zaman sona erer?",
+        "a": "Güneşin batmasıyla sona erer."
+      },
+      "ko": {
+        "q": "Oruç ne zaman sona erer?",
+        "a": "Güneşin batmasıyla sona erer."
+      },
+      "vi": {
+        "q": "Oruç ne zaman sona erer?",
+        "a": "Güneşin batmasıyla sona erer."
+      },
+      "ja": {
+        "q": "Oruç ne zaman sona erer?",
+        "a": "Güneşin batmasıyla sona erer."
+      },
+      "zh": {
+        "q": "Oruç ne zaman sona erer?",
+        "a": "Güneşin batmasıyla sona erer."
+      }
+    },
+    {
+      "id": 255,
+      "day": 14,
+      "sources": [
+        "📖 Kur’an — Bakara 2:183 — https://quran.com/2/183",
+        "📚 Hadis — Sahih Buhârî 1903 — https://sunnah.com/bukhari:1903"
+      ],
+      "tr": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Takvayı, sabrı ve Allah’a karşı sorumluluk bilincini geliştirmektir."
+      },
+      "en": {
+        "q": "What is the purpose of fasting?",
+        "a": "It develops God-consciousness, patience and responsibility before Allah."
+      },
+      "de": {
+        "q": "Was ist das Ziel des Fastens?",
+        "a": "Es stärkt Gottesbewusstsein, Geduld und Verantwortungsbewusstsein gegenüber Allah."
+      },
+      "nl": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Takvayı, sabrı ve Allah’a karşı sorumluluk bilincini geliştirmektir."
+      },
+      "fr": {
+        "q": "Quel est le but du jeûne ?",
+        "a": "Il vise à développer la piété, la patience et le sens de la responsabilité envers Allah."
+      },
+      "ru": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Takvayı, sabrı ve Allah’a karşı sorumluluk bilincini geliştirmektir."
+      },
+      "ku": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Takvayı, sabrı ve Allah’a karşı sorumluluk bilincini geliştirmektir."
+      },
+      "tt": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Takvayı, sabrı ve Allah’a karşı sorumluluk bilincini geliştirmektir."
+      },
+      "ar": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Takvayı, sabrı ve Allah’a karşı sorumluluk bilincini geliştirmektir."
+      },
+      "es": {
+        "q": "¿Cuál es el propósito del ayuno?",
+        "a": "Desarrollar la conciencia de Dios, la paciencia y el sentido de responsabilidad ante Allah."
+      },
+      "it": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Takvayı, sabrı ve Allah’a karşı sorumluluk bilincini geliştirmektir."
+      },
+      "pt": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Takvayı, sabrı ve Allah’a karşı sorumluluk bilincini geliştirmektir."
+      },
+      "ko": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Takvayı, sabrı ve Allah’a karşı sorumluluk bilincini geliştirmektir."
+      },
+      "vi": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Takvayı, sabrı ve Allah’a karşı sorumluluk bilincini geliştirmektir."
+      },
+      "ja": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Takvayı, sabrı ve Allah’a karşı sorumluluk bilincini geliştirmektir."
+      },
+      "zh": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Takvayı, sabrı ve Allah’a karşı sorumluluk bilincini geliştirmektir."
+      }
+    },
+    {
+      "id": 256,
+      "day": 14,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 1903 — https://sunnah.com/bukhari:1903",
+        "📖 Kur’an — Bakara 2:183 — https://quran.com/2/183"
+      ],
+      "tr": {
+        "q": "Oruç sadece aç kalmak mıdır?",
+        "a": "Hayır; dil, göz, kulak ve davranışları da günahlardan korumaya çalışmaktır."
+      },
+      "en": {
+        "q": "Is fasting only staying hungry?",
+        "a": "No. It also means protecting the tongue, eyes, ears and actions from sins."
+      },
+      "de": {
+        "q": "Ist Fasten nur Hunger zu ertragen?",
+        "a": "Nein. Es bedeutet auch, Zunge, Augen, Ohren und Handlungen vor Sünden zu schützen."
+      },
+      "nl": {
+        "q": "Oruç sadece aç kalmak mıdır?",
+        "a": "Hayır; dil, göz, kulak ve davranışları da günahlardan korumaya çalışmaktır."
+      },
+      "fr": {
+        "q": "Le jeûne consiste-t-il seulement à avoir faim ?",
+        "a": "Non. Il consiste aussi à préserver la langue, les yeux, les oreilles et les actes des péchés."
+      },
+      "ru": {
+        "q": "Oruç sadece aç kalmak mıdır?",
+        "a": "Hayır; dil, göz, kulak ve davranışları da günahlardan korumaya çalışmaktır."
+      },
+      "ku": {
+        "q": "Oruç sadece aç kalmak mıdır?",
+        "a": "Hayır; dil, göz, kulak ve davranışları da günahlardan korumaya çalışmaktır."
+      },
+      "tt": {
+        "q": "Oruç sadece aç kalmak mıdır?",
+        "a": "Hayır; dil, göz, kulak ve davranışları da günahlardan korumaya çalışmaktır."
+      },
+      "ar": {
+        "q": "Oruç sadece aç kalmak mıdır?",
+        "a": "Hayır; dil, göz, kulak ve davranışları da günahlardan korumaya çalışmaktır."
+      },
+      "es": {
+        "q": "¿Ayunar es solamente pasar hambre?",
+        "a": "No. También significa proteger la lengua, los ojos, los oídos y las acciones de los pecados."
+      },
+      "it": {
+        "q": "Oruç sadece aç kalmak mıdır?",
+        "a": "Hayır; dil, göz, kulak ve davranışları da günahlardan korumaya çalışmaktır."
+      },
+      "pt": {
+        "q": "Oruç sadece aç kalmak mıdır?",
+        "a": "Hayır; dil, göz, kulak ve davranışları da günahlardan korumaya çalışmaktır."
+      },
+      "ko": {
+        "q": "Oruç sadece aç kalmak mıdır?",
+        "a": "Hayır; dil, göz, kulak ve davranışları da günahlardan korumaya çalışmaktır."
+      },
+      "vi": {
+        "q": "Oruç sadece aç kalmak mıdır?",
+        "a": "Hayır; dil, göz, kulak ve davranışları da günahlardan korumaya çalışmaktır."
+      },
+      "ja": {
+        "q": "Oruç sadece aç kalmak mıdır?",
+        "a": "Hayır; dil, göz, kulak ve davranışları da günahlardan korumaya çalışmaktır."
+      },
+      "zh": {
+        "q": "Oruç sadece aç kalmak mıdır?",
+        "a": "Hayır; dil, göz, kulak ve davranışları da günahlardan korumaya çalışmaktır."
+      }
+    },
+    {
+      "id": 257,
+      "day": 14,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 1903 — https://sunnah.com/bukhari:1903",
+        "📚 Hadis — Sahih Müslim 1151a — https://sunnah.com/muslim:1151a"
+      ],
+      "tr": {
+        "q": "Oruçlu kişi yalan söylemekten neden kaçınmalıdır?",
+        "a": "Oruç ahlâkî dönüşüm ve takva ile birlikte düşünülür."
+      },
+      "en": {
+        "q": "Why should a fasting person avoid lying?",
+        "a": "Because fasting should be accompanied by moral improvement and God-consciousness."
+      },
+      "de": {
+        "q": "Warum soll ein Fastender Lügen vermeiden?",
+        "a": "Weil das Fasten mit moralischer Verbesserung und Gottesbewusstsein verbunden sein soll."
+      },
+      "nl": {
+        "q": "Oruçlu kişi yalan söylemekten neden kaçınmalıdır?",
+        "a": "Oruç ahlâkî dönüşüm ve takva ile birlikte düşünülür."
+      },
+      "fr": {
+        "q": "Pourquoi celui qui jeûne doit-il éviter de mentir ?",
+        "a": "Parce que le jeûne doit s’accompagner d’une amélioration morale et de la piété."
+      },
+      "ru": {
+        "q": "Oruçlu kişi yalan söylemekten neden kaçınmalıdır?",
+        "a": "Oruç ahlâkî dönüşüm ve takva ile birlikte düşünülür."
+      },
+      "ku": {
+        "q": "Oruçlu kişi yalan söylemekten neden kaçınmalıdır?",
+        "a": "Oruç ahlâkî dönüşüm ve takva ile birlikte düşünülür."
+      },
+      "tt": {
+        "q": "Oruçlu kişi yalan söylemekten neden kaçınmalıdır?",
+        "a": "Oruç ahlâkî dönüşüm ve takva ile birlikte düşünülür."
+      },
+      "ar": {
+        "q": "Oruçlu kişi yalan söylemekten neden kaçınmalıdır?",
+        "a": "Oruç ahlâkî dönüşüm ve takva ile birlikte düşünülür."
+      },
+      "es": {
+        "q": "¿Por qué quien ayuna debe evitar mentir?",
+        "a": "Porque el ayuno debe ir acompañado de mejora moral y conciencia de Dios."
+      },
+      "it": {
+        "q": "Oruçlu kişi yalan söylemekten neden kaçınmalıdır?",
+        "a": "Oruç ahlâkî dönüşüm ve takva ile birlikte düşünülür."
+      },
+      "pt": {
+        "q": "Oruçlu kişi yalan söylemekten neden kaçınmalıdır?",
+        "a": "Oruç ahlâkî dönüşüm ve takva ile birlikte düşünülür."
+      },
+      "ko": {
+        "q": "Oruçlu kişi yalan söylemekten neden kaçınmalıdır?",
+        "a": "Oruç ahlâkî dönüşüm ve takva ile birlikte düşünülür."
+      },
+      "vi": {
+        "q": "Oruçlu kişi yalan söylemekten neden kaçınmalıdır?",
+        "a": "Oruç ahlâkî dönüşüm ve takva ile birlikte düşünülür."
+      },
+      "ja": {
+        "q": "Oruçlu kişi yalan söylemekten neden kaçınmalıdır?",
+        "a": "Oruç ahlâkî dönüşüm ve takva ile birlikte düşünülür."
+      },
+      "zh": {
+        "q": "Oruçlu kişi yalan söylemekten neden kaçınmalıdır?",
+        "a": "Oruç ahlâkî dönüşüm ve takva ile birlikte düşünülür."
+      }
+    },
+    {
+      "id": 258,
+      "day": 14,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 1933 — https://sunnah.com/bukhari:1933",
+        "📚 Hadis — Sahih Müslim 1155a — https://sunnah.com/muslim:1155a"
+      ],
+      "tr": {
+        "q": "Unutarak yemek içmek orucu bozar mı?",
+        "a": "Unutarak yemek veya içmek konusunda sahih hadiste orucun devam edeceği bildirilmiştir."
+      },
+      "en": {
+        "q": "Does eating or drinking forgetfully invalidate the fast?",
+        "a": "An authentic hadith states that a person who eats or drinks forgetfully should continue the fast."
+      },
+      "de": {
+        "q": "Bricht versehentliches Essen oder Trinken das Fasten?",
+        "a": "Ein authentischer Hadith berichtet, dass man nach versehentlichem Essen oder Trinken das Fasten fortsetzt."
+      },
+      "nl": {
+        "q": "Unutarak yemek içmek orucu bozar mı?",
+        "a": "Unutarak yemek veya içmek konusunda sahih hadiste orucun devam edeceği bildirilmiştir."
+      },
+      "fr": {
+        "q": "Manger ou boire par oubli annule-t-il le jeûne ?",
+        "a": "Un hadith authentique indique que celui qui mange ou boit par oubli poursuit son jeûne."
+      },
+      "ru": {
+        "q": "Unutarak yemek içmek orucu bozar mı?",
+        "a": "Unutarak yemek veya içmek konusunda sahih hadiste orucun devam edeceği bildirilmiştir."
+      },
+      "ku": {
+        "q": "Unutarak yemek içmek orucu bozar mı?",
+        "a": "Unutarak yemek veya içmek konusunda sahih hadiste orucun devam edeceği bildirilmiştir."
+      },
+      "tt": {
+        "q": "Unutarak yemek içmek orucu bozar mı?",
+        "a": "Unutarak yemek veya içmek konusunda sahih hadiste orucun devam edeceği bildirilmiştir."
+      },
+      "ar": {
+        "q": "Unutarak yemek içmek orucu bozar mı?",
+        "a": "Unutarak yemek veya içmek konusunda sahih hadiste orucun devam edeceği bildirilmiştir."
+      },
+      "es": {
+        "q": "¿Comer o beber por olvido rompe el ayuno?",
+        "a": "Un hadiz auténtico indica que quien come o bebe por olvido debe continuar su ayuno."
+      },
+      "it": {
+        "q": "Unutarak yemek içmek orucu bozar mı?",
+        "a": "Unutarak yemek veya içmek konusunda sahih hadiste orucun devam edeceği bildirilmiştir."
+      },
+      "pt": {
+        "q": "Unutarak yemek içmek orucu bozar mı?",
+        "a": "Unutarak yemek veya içmek konusunda sahih hadiste orucun devam edeceği bildirilmiştir."
+      },
+      "ko": {
+        "q": "Unutarak yemek içmek orucu bozar mı?",
+        "a": "Unutarak yemek veya içmek konusunda sahih hadiste orucun devam edeceği bildirilmiştir."
+      },
+      "vi": {
+        "q": "Unutarak yemek içmek orucu bozar mı?",
+        "a": "Unutarak yemek veya içmek konusunda sahih hadiste orucun devam edeceği bildirilmiştir."
+      },
+      "ja": {
+        "q": "Unutarak yemek içmek orucu bozar mı?",
+        "a": "Unutarak yemek veya içmek konusunda sahih hadiste orucun devam edeceği bildirilmiştir."
+      },
+      "zh": {
+        "q": "Unutarak yemek içmek orucu bozar mı?",
+        "a": "Unutarak yemek veya içmek konusunda sahih hadiste orucun devam edeceği bildirilmiştir."
+      }
+    },
+    {
+      "id": 259,
+      "day": 14,
+      "sources": [
+        "📖 Kur’an — Bakara 2:184–185 — https://quran.com/2/184-185",
+        "📚 Hadis — Sahih Müslim 1146a — https://sunnah.com/muslim:1146a"
+      ],
+      "tr": {
+        "q": "Hasta kişi oruç konusunda ne yapabilir?",
+        "a": "Hastalığın durumuna göre oruç tutmayıp daha sonra kaza etmesi gerekebilir."
+      },
+      "en": {
+        "q": "What may a sick person do about fasting?",
+        "a": "Depending on the illness, the person may refrain from fasting and make up the missed days later."
+      },
+      "de": {
+        "q": "Was kann ein kranker Mensch beim Fasten tun?",
+        "a": "Je nach Krankheit kann er das Fasten auslassen und die versäumten Tage später nachholen."
+      },
+      "nl": {
+        "q": "Hasta kişi oruç konusunda ne yapabilir?",
+        "a": "Hastalığın durumuna göre oruç tutmayıp daha sonra kaza etmesi gerekebilir."
+      },
+      "fr": {
+        "q": "Que peut faire une personne malade concernant le jeûne ?",
+        "a": "Selon son état, elle peut ne pas jeûner et rattraper les jours manqués plus tard."
+      },
+      "ru": {
+        "q": "Hasta kişi oruç konusunda ne yapabilir?",
+        "a": "Hastalığın durumuna göre oruç tutmayıp daha sonra kaza etmesi gerekebilir."
+      },
+      "ku": {
+        "q": "Hasta kişi oruç konusunda ne yapabilir?",
+        "a": "Hastalığın durumuna göre oruç tutmayıp daha sonra kaza etmesi gerekebilir."
+      },
+      "tt": {
+        "q": "Hasta kişi oruç konusunda ne yapabilir?",
+        "a": "Hastalığın durumuna göre oruç tutmayıp daha sonra kaza etmesi gerekebilir."
+      },
+      "ar": {
+        "q": "Hasta kişi oruç konusunda ne yapabilir?",
+        "a": "Hastalığın durumuna göre oruç tutmayıp daha sonra kaza etmesi gerekebilir."
+      },
+      "es": {
+        "q": "¿Qué puede hacer una persona enferma respecto al ayuno?",
+        "a": "Según su enfermedad, puede no ayunar y recuperar después los días perdidos."
+      },
+      "it": {
+        "q": "Hasta kişi oruç konusunda ne yapabilir?",
+        "a": "Hastalığın durumuna göre oruç tutmayıp daha sonra kaza etmesi gerekebilir."
+      },
+      "pt": {
+        "q": "Hasta kişi oruç konusunda ne yapabilir?",
+        "a": "Hastalığın durumuna göre oruç tutmayıp daha sonra kaza etmesi gerekebilir."
+      },
+      "ko": {
+        "q": "Hasta kişi oruç konusunda ne yapabilir?",
+        "a": "Hastalığın durumuna göre oruç tutmayıp daha sonra kaza etmesi gerekebilir."
+      },
+      "vi": {
+        "q": "Hasta kişi oruç konusunda ne yapabilir?",
+        "a": "Hastalığın durumuna göre oruç tutmayıp daha sonra kaza etmesi gerekebilir."
+      },
+      "ja": {
+        "q": "Hasta kişi oruç konusunda ne yapabilir?",
+        "a": "Hastalığın durumuna göre oruç tutmayıp daha sonra kaza etmesi gerekebilir."
+      },
+      "zh": {
+        "q": "Hasta kişi oruç konusunda ne yapabilir?",
+        "a": "Hastalığın durumuna göre oruç tutmayıp daha sonra kaza etmesi gerekebilir."
+      }
+    },
+    {
+      "id": 260,
+      "day": 14,
+      "sources": [
+        "📖 Kur’an — Bakara 2:184–185 — https://quran.com/2/184-185",
+        "📚 Hadis — Sahih Müslim 1113a — https://sunnah.com/muslim:1113a"
+      ],
+      "tr": {
+        "q": "Yolculukta oruç için ruhsat var mıdır?",
+        "a": "Kur’an yolculuk ve hastalık durumunda orucun başka günlerde kaza edilebileceğini bildirir."
+      },
+      "en": {
+        "q": "Is there a concession for fasting while travelling?",
+        "a": "The Qur’an allows a sick person or traveller to make up missed fasts on other days."
+      },
+      "de": {
+        "q": "Gibt es eine Erleichterung für Reisende?",
+        "a": "Der Koran erlaubt Kranken und Reisenden, versäumte Fastentage an anderen Tagen nachzuholen."
+      },
+      "nl": {
+        "q": "Yolculukta oruç için ruhsat var mıdır?",
+        "a": "Kur’an yolculuk ve hastalık durumunda orucun başka günlerde kaza edilebileceğini bildirir."
+      },
+      "fr": {
+        "q": "Existe-t-il une dispense pour le voyageur ?",
+        "a": "Le Coran permet au malade ou au voyageur de rattraper les jours manqués à d’autres moments."
+      },
+      "ru": {
+        "q": "Yolculukta oruç için ruhsat var mıdır?",
+        "a": "Kur’an yolculuk ve hastalık durumunda orucun başka günlerde kaza edilebileceğini bildirir."
+      },
+      "ku": {
+        "q": "Yolculukta oruç için ruhsat var mıdır?",
+        "a": "Kur’an yolculuk ve hastalık durumunda orucun başka günlerde kaza edilebileceğini bildirir."
+      },
+      "tt": {
+        "q": "Yolculukta oruç için ruhsat var mıdır?",
+        "a": "Kur’an yolculuk ve hastalık durumunda orucun başka günlerde kaza edilebileceğini bildirir."
+      },
+      "ar": {
+        "q": "Yolculukta oruç için ruhsat var mıdır?",
+        "a": "Kur’an yolculuk ve hastalık durumunda orucun başka günlerde kaza edilebileceğini bildirir."
+      },
+      "es": {
+        "q": "¿Existe una concesión para quien viaja?",
+        "a": "El Corán permite al enfermo o al viajero recuperar los días de ayuno en otros días."
+      },
+      "it": {
+        "q": "Yolculukta oruç için ruhsat var mıdır?",
+        "a": "Kur’an yolculuk ve hastalık durumunda orucun başka günlerde kaza edilebileceğini bildirir."
+      },
+      "pt": {
+        "q": "Yolculukta oruç için ruhsat var mıdır?",
+        "a": "Kur’an yolculuk ve hastalık durumunda orucun başka günlerde kaza edilebileceğini bildirir."
+      },
+      "ko": {
+        "q": "Yolculukta oruç için ruhsat var mıdır?",
+        "a": "Kur’an yolculuk ve hastalık durumunda orucun başka günlerde kaza edilebileceğini bildirir."
+      },
+      "vi": {
+        "q": "Yolculukta oruç için ruhsat var mıdır?",
+        "a": "Kur’an yolculuk ve hastalık durumunda orucun başka günlerde kaza edilebileceğini bildirir."
+      },
+      "ja": {
+        "q": "Yolculukta oruç için ruhsat var mıdır?",
+        "a": "Kur’an yolculuk ve hastalık durumunda orucun başka günlerde kaza edilebileceğini bildirir."
+      },
+      "zh": {
+        "q": "Yolculukta oruç için ruhsat var mıdır?",
+        "a": "Kur’an yolculuk ve hastalık durumunda orucun başka günlerde kaza edilebileceğini bildirir."
+      }
+    },
+    {
+      "id": 261,
+      "day": 14,
+      "sources": [
+        "📖 Kur’an — Bakara 2:185 — https://quran.com/2/185",
+        "📚 Hadis — Sahih Buhârî 4993 — https://sunnah.com/bukhari:4993"
+      ],
+      "tr": {
+        "q": "Ramazan’ın Kur’an ile ilişkisi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı ay Ramazan’dır."
+      },
+      "en": {
+        "q": "What is the relationship between Ramadan and the Qur’an?",
+        "a": "Ramadan is the month in which the revelation of the Qur’an began."
+      },
+      "de": {
+        "q": "Welche Beziehung besteht zwischen Ramadan und dem Koran?",
+        "a": "Ramadan ist der Monat, in dem die Offenbarung des Korans begann."
+      },
+      "nl": {
+        "q": "Ramazan’ın Kur’an ile ilişkisi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı ay Ramazan’dır."
+      },
+      "fr": {
+        "q": "Quel est le lien entre le Ramadan et le Coran ?",
+        "a": "Le Ramadan est le mois durant lequel la révélation du Coran a commencé."
+      },
+      "ru": {
+        "q": "Ramazan’ın Kur’an ile ilişkisi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı ay Ramazan’dır."
+      },
+      "ku": {
+        "q": "Ramazan’ın Kur’an ile ilişkisi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı ay Ramazan’dır."
+      },
+      "tt": {
+        "q": "Ramazan’ın Kur’an ile ilişkisi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı ay Ramazan’dır."
+      },
+      "ar": {
+        "q": "Ramazan’ın Kur’an ile ilişkisi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı ay Ramazan’dır."
+      },
+      "es": {
+        "q": "¿Qué relación tiene Ramadán con el Corán?",
+        "a": "Ramadán es el mes en el que comenzó la revelación del Corán."
+      },
+      "it": {
+        "q": "Ramazan’ın Kur’an ile ilişkisi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı ay Ramazan’dır."
+      },
+      "pt": {
+        "q": "Ramazan’ın Kur’an ile ilişkisi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı ay Ramazan’dır."
+      },
+      "ko": {
+        "q": "Ramazan’ın Kur’an ile ilişkisi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı ay Ramazan’dır."
+      },
+      "vi": {
+        "q": "Ramazan’ın Kur’an ile ilişkisi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı ay Ramazan’dır."
+      },
+      "ja": {
+        "q": "Ramazan’ın Kur’an ile ilişkisi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı ay Ramazan’dır."
+      },
+      "zh": {
+        "q": "Ramazan’ın Kur’an ile ilişkisi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı ay Ramazan’dır."
+      }
+    },
+    {
+      "id": 262,
+      "day": 14,
+      "sources": [
+        "📖 Kur’an — Kadir 97:1–5 — https://quran.com/97",
+        "📚 Hadis — Sahih Buhârî 2014 — https://sunnah.com/bukhari:2014"
+      ],
+      "tr": {
+        "q": "Kadir Gecesi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı mübarek gece olarak bildirilen gecedir."
+      },
+      "en": {
+        "q": "What is Laylat al-Qadr?",
+        "a": "It is the blessed night associated with the beginning of the revelation of the Qur’an."
+      },
+      "de": {
+        "q": "Was ist die Nacht der Bestimmung?",
+        "a": "Sie ist die gesegnete Nacht, die mit dem Beginn der Offenbarung des Korans verbunden ist."
+      },
+      "nl": {
+        "q": "Kadir Gecesi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı mübarek gece olarak bildirilen gecedir."
+      },
+      "fr": {
+        "q": "Qu’est-ce que Laylat al-Qadr ?",
+        "a": "C’est la nuit bénie associée au début de la révélation du Coran."
+      },
+      "ru": {
+        "q": "Kadir Gecesi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı mübarek gece olarak bildirilen gecedir."
+      },
+      "ku": {
+        "q": "Kadir Gecesi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı mübarek gece olarak bildirilen gecedir."
+      },
+      "tt": {
+        "q": "Kadir Gecesi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı mübarek gece olarak bildirilen gecedir."
+      },
+      "ar": {
+        "q": "Kadir Gecesi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı mübarek gece olarak bildirilen gecedir."
+      },
+      "es": {
+        "q": "¿Qué es Laylat al-Qadr?",
+        "a": "Es la noche bendita asociada al comienzo de la revelación del Corán."
+      },
+      "it": {
+        "q": "Kadir Gecesi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı mübarek gece olarak bildirilen gecedir."
+      },
+      "pt": {
+        "q": "Kadir Gecesi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı mübarek gece olarak bildirilen gecedir."
+      },
+      "ko": {
+        "q": "Kadir Gecesi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı mübarek gece olarak bildirilen gecedir."
+      },
+      "vi": {
+        "q": "Kadir Gecesi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı mübarek gece olarak bildirilen gecedir."
+      },
+      "ja": {
+        "q": "Kadir Gecesi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı mübarek gece olarak bildirilen gecedir."
+      },
+      "zh": {
+        "q": "Kadir Gecesi nedir?",
+        "a": "Kur’an’ın indirilmeye başlandığı mübarek gece olarak bildirilen gecedir."
+      }
+    },
+    {
+      "id": 263,
+      "day": 14,
+      "sources": [
+        "📖 Kur’an — Bakara 2:183 — https://quran.com/2/183",
+        "📚 Hadis — Sahih Müslim 1162a — https://sunnah.com/muslim:1162a"
+      ],
+      "tr": {
+        "q": "Oruç insana hangi ahlâkı kazandırabilir?",
+        "a": "Sabır, irade, şükür ve yoksulların hâlini anlama duygusunu güçlendirebilir."
+      },
+      "en": {
+        "q": "What qualities can fasting develop?",
+        "a": "It can strengthen patience, self-control, gratitude and empathy for people in need."
+      },
+      "de": {
+        "q": "Welche Eigenschaften kann Fasten fördern?",
+        "a": "Es kann Geduld, Selbstbeherrschung, Dankbarkeit und Mitgefühl mit Bedürftigen stärken."
+      },
+      "nl": {
+        "q": "Oruç insana hangi ahlâkı kazandırabilir?",
+        "a": "Sabır, irade, şükür ve yoksulların hâlini anlama duygusunu güçlendirebilir."
+      },
+      "fr": {
+        "q": "Quelles qualités le jeûne peut-il développer ?",
+        "a": "Il peut renforcer la patience, la maîtrise de soi, la gratitude et l’empathie envers les démunis."
+      },
+      "ru": {
+        "q": "Oruç insana hangi ahlâkı kazandırabilir?",
+        "a": "Sabır, irade, şükür ve yoksulların hâlini anlama duygusunu güçlendirebilir."
+      },
+      "ku": {
+        "q": "Oruç insana hangi ahlâkı kazandırabilir?",
+        "a": "Sabır, irade, şükür ve yoksulların hâlini anlama duygusunu güçlendirebilir."
+      },
+      "tt": {
+        "q": "Oruç insana hangi ahlâkı kazandırabilir?",
+        "a": "Sabır, irade, şükür ve yoksulların hâlini anlama duygusunu güçlendirebilir."
+      },
+      "ar": {
+        "q": "Oruç insana hangi ahlâkı kazandırabilir?",
+        "a": "Sabır, irade, şükür ve yoksulların hâlini anlama duygusunu güçlendirebilir."
+      },
+      "es": {
+        "q": "¿Qué cualidades puede desarrollar el ayuno?",
+        "a": "Puede fortalecer la paciencia, el autocontrol, la gratitud y la empatía hacia los necesitados."
+      },
+      "it": {
+        "q": "Oruç insana hangi ahlâkı kazandırabilir?",
+        "a": "Sabır, irade, şükür ve yoksulların hâlini anlama duygusunu güçlendirebilir."
+      },
+      "pt": {
+        "q": "Oruç insana hangi ahlâkı kazandırabilir?",
+        "a": "Sabır, irade, şükür ve yoksulların hâlini anlama duygusunu güçlendirebilir."
+      },
+      "ko": {
+        "q": "Oruç insana hangi ahlâkı kazandırabilir?",
+        "a": "Sabır, irade, şükür ve yoksulların hâlini anlama duygusunu güçlendirebilir."
+      },
+      "vi": {
+        "q": "Oruç insana hangi ahlâkı kazandırabilir?",
+        "a": "Sabır, irade, şükür ve yoksulların hâlini anlama duygusunu güçlendirebilir."
+      },
+      "ja": {
+        "q": "Oruç insana hangi ahlâkı kazandırabilir?",
+        "a": "Sabır, irade, şükür ve yoksulların hâlini anlama duygusunu güçlendirebilir."
+      },
+      "zh": {
+        "q": "Oruç insana hangi ahlâkı kazandırabilir?",
+        "a": "Sabır, irade, şükür ve yoksulların hâlini anlama duygusunu güçlendirebilir."
+      }
+    },
+    {
+      "id": 264,
+      "day": 14,
+      "sources": [
+        "📚 Hadis — İbn Mâce 1753 — https://sunnah.com/ibnmajah:1753",
+        "📚 Hadis — Sahih Buhârî 1901 — https://sunnah.com/bukhari:1901"
+      ],
+      "tr": {
+        "q": "İftar duası neden yapılır?",
+        "a": "Allah’a şükretmek ve ibadetin kabulünü dilemek için dua edilir."
+      },
+      "en": {
+        "q": "Why is a supplication made at iftar?",
+        "a": "To thank Allah and ask Him to accept the worship."
+      },
+      "de": {
+        "q": "Warum wird beim Iftar ein Bittgebet gesprochen?",
+        "a": "Um Allah zu danken und Ihn zu bitten, die Anbetung anzunehmen."
+      },
+      "nl": {
+        "q": "İftar duası neden yapılır?",
+        "a": "Allah’a şükretmek ve ibadetin kabulünü dilemek için dua edilir."
+      },
+      "fr": {
+        "q": "Pourquoi fait-on une invocation au moment de l’iftar ?",
+        "a": "Pour remercier Allah et Lui demander d’accepter l’adoration."
+      },
+      "ru": {
+        "q": "İftar duası neden yapılır?",
+        "a": "Allah’a şükretmek ve ibadetin kabulünü dilemek için dua edilir."
+      },
+      "ku": {
+        "q": "İftar duası neden yapılır?",
+        "a": "Allah’a şükretmek ve ibadetin kabulünü dilemek için dua edilir."
+      },
+      "tt": {
+        "q": "İftar duası neden yapılır?",
+        "a": "Allah’a şükretmek ve ibadetin kabulünü dilemek için dua edilir."
+      },
+      "ar": {
+        "q": "İftar duası neden yapılır?",
+        "a": "Allah’a şükretmek ve ibadetin kabulünü dilemek için dua edilir."
+      },
+      "es": {
+        "q": "¿Por qué se hace una súplica al romper el ayuno?",
+        "a": "Para agradecer a Allah y pedirle que acepte la adoración."
+      },
+      "it": {
+        "q": "İftar duası neden yapılır?",
+        "a": "Allah’a şükretmek ve ibadetin kabulünü dilemek için dua edilir."
+      },
+      "pt": {
+        "q": "İftar duası neden yapılır?",
+        "a": "Allah’a şükretmek ve ibadetin kabulünü dilemek için dua edilir."
+      },
+      "ko": {
+        "q": "İftar duası neden yapılır?",
+        "a": "Allah’a şükretmek ve ibadetin kabulünü dilemek için dua edilir."
+      },
+      "vi": {
+        "q": "İftar duası neden yapılır?",
+        "a": "Allah’a şükretmek ve ibadetin kabulünü dilemek için dua edilir."
+      },
+      "ja": {
+        "q": "İftar duası neden yapılır?",
+        "a": "Allah’a şükretmek ve ibadetin kabulünü dilemek için dua edilir."
+      },
+      "zh": {
+        "q": "İftar duası neden yapılır?",
+        "a": "Allah’a şükretmek ve ibadetin kabulünü dilemek için dua edilir."
+      }
+    },
+    {
+      "id": 265,
+      "day": 14,
+      "sources": [
+        "📖 Kur’an — Bakara 2:261 — https://quran.com/2/261",
+        "📚 Hadis — Sahih Buhârî 1904 — https://sunnah.com/bukhari:1904"
+      ],
+      "tr": {
+        "q": "Ramazan yardımlaşmayı nasıl artırır?",
+        "a": "Sadaka, zekât ve ihtiyaç sahiplerine yardım konusunda toplumsal dayanışmayı güçlendirir."
+      },
+      "en": {
+        "q": "How does Ramadan increase mutual help?",
+        "a": "Charity, zakat and helping people in need strengthen social solidarity."
+      },
+      "de": {
+        "q": "Wie fördert Ramadan die gegenseitige Hilfe?",
+        "a": "Almosen, Zakat und Hilfe für Bedürftige stärken den gesellschaftlichen Zusammenhalt."
+      },
+      "nl": {
+        "q": "Ramazan yardımlaşmayı nasıl artırır?",
+        "a": "Sadaka, zekât ve ihtiyaç sahiplerine yardım konusunda toplumsal dayanışmayı güçlendirir."
+      },
+      "fr": {
+        "q": "Comment le Ramadan augmente-t-il l’entraide ?",
+        "a": "La charité, la zakat et l’aide aux personnes dans le besoin renforcent la solidarité sociale."
+      },
+      "ru": {
+        "q": "Ramazan yardımlaşmayı nasıl artırır?",
+        "a": "Sadaka, zekât ve ihtiyaç sahiplerine yardım konusunda toplumsal dayanışmayı güçlendirir."
+      },
+      "ku": {
+        "q": "Ramazan yardımlaşmayı nasıl artırır?",
+        "a": "Sadaka, zekât ve ihtiyaç sahiplerine yardım konusunda toplumsal dayanışmayı güçlendirir."
+      },
+      "tt": {
+        "q": "Ramazan yardımlaşmayı nasıl artırır?",
+        "a": "Sadaka, zekât ve ihtiyaç sahiplerine yardım konusunda toplumsal dayanışmayı güçlendirir."
+      },
+      "ar": {
+        "q": "Ramazan yardımlaşmayı nasıl artırır?",
+        "a": "Sadaka, zekât ve ihtiyaç sahiplerine yardım konusunda toplumsal dayanışmayı güçlendirir."
+      },
+      "es": {
+        "q": "¿Cómo aumenta Ramadán la ayuda mutua?",
+        "a": "La caridad, el zakat y la ayuda a los necesitados fortalecen la solidaridad social."
+      },
+      "it": {
+        "q": "Ramazan yardımlaşmayı nasıl artırır?",
+        "a": "Sadaka, zekât ve ihtiyaç sahiplerine yardım konusunda toplumsal dayanışmayı güçlendirir."
+      },
+      "pt": {
+        "q": "Ramazan yardımlaşmayı nasıl artırır?",
+        "a": "Sadaka, zekât ve ihtiyaç sahiplerine yardım konusunda toplumsal dayanışmayı güçlendirir."
+      },
+      "ko": {
+        "q": "Ramazan yardımlaşmayı nasıl artırır?",
+        "a": "Sadaka, zekât ve ihtiyaç sahiplerine yardım konusunda toplumsal dayanışmayı güçlendirir."
+      },
+      "vi": {
+        "q": "Ramazan yardımlaşmayı nasıl artırır?",
+        "a": "Sadaka, zekât ve ihtiyaç sahiplerine yardım konusunda toplumsal dayanışmayı güçlendirir."
+      },
+      "ja": {
+        "q": "Ramazan yardımlaşmayı nasıl artırır?",
+        "a": "Sadaka, zekât ve ihtiyaç sahiplerine yardım konusunda toplumsal dayanışmayı güçlendirir."
+      },
+      "zh": {
+        "q": "Ramazan yardımlaşmayı nasıl artırır?",
+        "a": "Sadaka, zekât ve ihtiyaç sahiplerine yardım konusunda toplumsal dayanışmayı güçlendirir."
+      }
+    },
+    {
+      "id": 266,
+      "day": 14,
+      "sources": [
+        "📖 Kur’an — Bakara 2:185 — https://quran.com/2/185",
+        "📚 Hadis — Sahih Buhârî 1990 — https://sunnah.com/bukhari:1990"
+      ],
+      "tr": {
+        "q": "Oruç bittikten sonra ne olur?",
+        "a": "Ramazan Bayramı ile oruç dönemi sona erer ve Müslümanlar bayram namazı ve şükürle günü karşılar."
+      },
+      "en": {
+        "q": "What happens after Ramadan fasting ends?",
+        "a": "The fasting period ends with Eid al-Fitr, welcomed with the Eid prayer and gratitude."
+      },
+      "de": {
+        "q": "Was geschieht nach dem Ramadan?",
+        "a": "Die Fastenzeit endet mit Eid al-Fitr, mit Festgebet und Dankbarkeit."
+      },
+      "nl": {
+        "q": "Oruç bittikten sonra ne olur?",
+        "a": "Ramazan Bayramı ile oruç dönemi sona erer ve Müslümanlar bayram namazı ve şükürle günü karşılar."
+      },
+      "fr": {
+        "q": "Que se passe-t-il après le Ramadan ?",
+        "a": "Le jeûne se termine avec l’Aïd al-Fitr, accueilli par la prière de l’Aïd et la gratitude."
+      },
+      "ru": {
+        "q": "Oruç bittikten sonra ne olur?",
+        "a": "Ramazan Bayramı ile oruç dönemi sona erer ve Müslümanlar bayram namazı ve şükürle günü karşılar."
+      },
+      "ku": {
+        "q": "Oruç bittikten sonra ne olur?",
+        "a": "Ramazan Bayramı ile oruç dönemi sona erer ve Müslümanlar bayram namazı ve şükürle günü karşılar."
+      },
+      "tt": {
+        "q": "Oruç bittikten sonra ne olur?",
+        "a": "Ramazan Bayramı ile oruç dönemi sona erer ve Müslümanlar bayram namazı ve şükürle günü karşılar."
+      },
+      "ar": {
+        "q": "Oruç bittikten sonra ne olur?",
+        "a": "Ramazan Bayramı ile oruç dönemi sona erer ve Müslümanlar bayram namazı ve şükürle günü karşılar."
+      },
+      "es": {
+        "q": "¿Qué ocurre después del ayuno de Ramadán?",
+        "a": "El período de ayuno termina con el Eid al-Fitr, recibido con la oración del Eid y gratitud."
+      },
+      "it": {
+        "q": "Oruç bittikten sonra ne olur?",
+        "a": "Ramazan Bayramı ile oruç dönemi sona erer ve Müslümanlar bayram namazı ve şükürle günü karşılar."
+      },
+      "pt": {
+        "q": "Oruç bittikten sonra ne olur?",
+        "a": "Ramazan Bayramı ile oruç dönemi sona erer ve Müslümanlar bayram namazı ve şükürle günü karşılar."
+      },
+      "ko": {
+        "q": "Oruç bittikten sonra ne olur?",
+        "a": "Ramazan Bayramı ile oruç dönemi sona erer ve Müslümanlar bayram namazı ve şükürle günü karşılar."
+      },
+      "vi": {
+        "q": "Oruç bittikten sonra ne olur?",
+        "a": "Ramazan Bayramı ile oruç dönemi sona erer ve Müslümanlar bayram namazı ve şükürle günü karşılar."
+      },
+      "ja": {
+        "q": "Oruç bittikten sonra ne olur?",
+        "a": "Ramazan Bayramı ile oruç dönemi sona erer ve Müslümanlar bayram namazı ve şükürle günü karşılar."
+      },
+      "zh": {
+        "q": "Oruç bittikten sonra ne olur?",
+        "a": "Ramazan Bayramı ile oruç dönemi sona erer ve Müslümanlar bayram namazı ve şükürle günü karşılar."
+      }
+    }
+  ]
+}

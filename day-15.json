@@ -1,0 +1,1549 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 15,
+  "dayTitle": {
+    "tr": "15. Gün — Zekât ve Sadaka",
+    "en": "Day 15 — Zakat and Sadaqah",
+    "de": "15. Tag — Zakat und Sadaqa",
+    "nl": "Dag 15 — Zakat en Sadaqah",
+    "fr": "Jour 15 — Zakat et Sadaqa",
+    "ru": "15-й день — Закят и садака",
+    "ku": "Roj 15 — Zekat û Sedeqe",
+    "tt": "15 нче көн — Зәкят һәм сәдака",
+    "ar": "اليوم الخامس عشر — الزكاة والصدقة",
+    "es": "Día 15 — Zakat y sadaqa",
+    "it": "Giorno 15 — Zakat e sadaqa",
+    "pt": "Dia 15 — Zakat e sadaqah",
+    "ko": "15일차 — 자카트와 사다카",
+    "vi": "Ngày 15 — Zakat và Sadaqah",
+    "ja": "15日目 — ザカートとサダカ",
+    "zh": "第15天——天课与施舍"
+  },
+  "daySubtitle": {
+    "tr": "Zekâtın anlamı, şartları, kimlere verileceği ve sadakanın önemi",
+    "en": "Meaning and conditions of zakat, its recipients, and the importance of sadaqah",
+    "de": "Bedeutung und Voraussetzungen der Zakat, ihre Empfänger und die Bedeutung der Sadaqa",
+    "nl": "Betekenis en voorwaarden van zakat, ontvangers en het belang van sadaqah",
+    "fr": "Sens et conditions de la zakat, ses bénéficiaires et l’importance de la sadaqa",
+    "ru": "Смысл и условия закята, его получатели и значение садаки",
+    "ku": "Wateya û şertên zekatê, kesên ku mafdar in û girîngiya sedeqeyê",
+    "tt": "Зәкятнең мәгънәсе һәм шартлары, аны алучылар һәм сәдаканың әһәмияте",
+    "ar": "معنى الزكاة وشروطها ومستحقوها وأهمية الصدقة",
+    "es": "Significado y condiciones del zakat, sus beneficiarios e importancia de la sadaqa",
+    "it": "Significato e condizioni della zakat, beneficiari e importanza della sadaqa",
+    "pt": "Significado e condições do zakat, seus beneficiários e a importância da sadaqah",
+    "ko": "자카트의 의미와 조건, 수혜자와 사다카의 중요성",
+    "vi": "Ý nghĩa và điều kiện của zakat, người được nhận và tầm quan trọng của sadaqah",
+    "ja": "ザカートの意味と条件、受給者、サダカの重要性",
+    "zh": "天课的意义与条件、受益者及施舍的重要性"
+  },
+  "questions": [
+    {
+      "id": 267,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:60 — https://quran.com/9/60",
+        "📚 Hadis — Sahih Buhârî 1395 — https://sunnah.com/bukhari:1395"
+      ],
+      "tr": {
+        "q": "Zekât nedir?",
+        "a": "Şartlarını taşıyan Müslümanın belirli malından belirli hak sahiplerine verdiği farz mali ibadettir."
+      },
+      "en": {
+        "q": "What is zakat?",
+        "a": "Zakat is an obligatory financial act of worship in which an eligible Muslim gives a prescribed portion of certain wealth to specified recipients."
+      },
+      "de": {
+        "q": "Was ist Zakat?",
+        "a": "Zakat ist eine verpflichtende finanzielle gottesdienstliche Handlung, bei der ein berechtigter Muslim einen vorgeschriebenen Anteil bestimmten Vermögens an festgelegte Empfänger gibt."
+      },
+      "nl": {
+        "q": "Wat is zakat?",
+        "a": "Zakat is een verplichte financiële aanbidding waarbij een geschikte moslim een vastgesteld deel van bepaald bezit aan aangewezen ontvangers geeft."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la zakat ?",
+        "a": "La zakat est un acte financier obligatoire par lequel un musulman remplissant les conditions donne une part prescrite de certains biens à des bénéficiaires déterminés."
+      },
+      "ru": {
+        "q": "Что такое закят?",
+        "a": "Закят — обязательное финансовое поклонение, при котором имеющий право мусульманин отдаёт установленную долю определённого имущества установленным получателям."
+      },
+      "ku": {
+        "q": "Zekat çi ye?",
+        "a": "Zekat îbadeteke darayî ya farz e; misilmanê ku şertan pêk tîne beşek diyarkirî ji malê xwe dide kesên mafdar."
+      },
+      "tt": {
+        "q": "Зәкят нәрсә ул?",
+        "a": "Зәкят — фарыз булган малый гыйбадәт; шартларга туры килгән мөселман билгеле малыннан билгеләнгән өлешне хаклы кешеләргә бирә."
+      },
+      "ar": {
+        "q": "ما الزكاة؟",
+        "a": "الزكاة عبادة مالية واجبة، يدفع فيها المسلم المستحق جزءًا محددًا من ماله إلى مستحقين معينين."
+      },
+      "es": {
+        "q": "¿Qué es el zakat?",
+        "a": "El zakat es un acto financiero obligatorio por el que un musulmán que cumple las condiciones entrega una parte establecida de ciertos bienes a destinatarios determinados."
+      },
+      "it": {
+        "q": "Che cos’è la zakat?",
+        "a": "La zakat è un atto finanziario obbligatorio con cui un musulmano idoneo destina una quota prescritta di alcuni beni a beneficiari stabiliti."
+      },
+      "pt": {
+        "q": "O que é o zakat?",
+        "a": "Zakat é um ato financeiro obrigatório pelo qual um muçulmano que cumpre as condições entrega uma parte determinada de certos bens a beneficiários específicos."
+      },
+      "ko": {
+        "q": "자카트란 무엇입니까?",
+        "a": "자카트는 조건을 갖춘 무슬림이 일정한 재산의 정해진 일부를 정해진 수혜자에게 주는 의무적 재정 예배입니다."
+      },
+      "vi": {
+        "q": "Zakat là gì?",
+        "a": "Zakat là một hình thức thờ phượng tài chính bắt buộc, trong đó người Hồi giáo đủ điều kiện trao một phần tài sản quy định cho những người được chỉ định."
+      },
+      "ja": {
+        "q": "ザカートとは何ですか。",
+        "a": "ザカートは、条件を満たすムスリムが一定の財産から定められた割合を決められた受給者に与える義務のある金銭的礼拝です。"
+      },
+      "zh": {
+        "q": "什么是天课？",
+        "a": "天课是一项必须的财务功修，符合条件的穆斯林从特定财产中拿出规定比例给指定的受益者。"
+      }
+    },
+    {
+      "id": 268,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:103 — https://quran.com/9/103",
+        "📚 Hadis — Sahih Buhârî 1404 — https://sunnah.com/bukhari:1404"
+      ],
+      "tr": {
+        "q": "Zekât neden farzdır?",
+        "a": "Malı arındırmak, ihtiyaç sahiplerine destek olmak ve Allah’ın emrine uymak için farzdır."
+      },
+      "en": {
+        "q": "Why is zakat obligatory?",
+        "a": "It is obligatory to purify wealth, support those in need, and obey Allah’s command."
+      },
+      "de": {
+        "q": "Warum ist Zakat verpflichtend?",
+        "a": "Sie ist verpflichtend, um Vermögen zu reinigen, Bedürftige zu unterstützen und Allahs Gebot zu befolgen."
+      },
+      "nl": {
+        "q": "Waarom is zakat verplicht?",
+        "a": "Het is verplicht om bezit te zuiveren, behoeftigen te steunen en Allahs gebod te gehoorzamen."
+      },
+      "fr": {
+        "q": "Pourquoi la zakat est-elle obligatoire ?",
+        "a": "Elle est obligatoire pour purifier les biens, soutenir les nécessiteux et obéir au commandement d’Allah."
+      },
+      "ru": {
+        "q": "Почему закят обязателен?",
+        "a": "Он обязателен для очищения имущества, поддержки нуждающихся и исполнения повеления Аллаха."
+      },
+      "ku": {
+        "q": "Çima zekat farz e?",
+        "a": "Ji bo paqijkirina malê, piştgiriya hewcedaran û guhdana emrê Allah farz e."
+      },
+      "tt": {
+        "q": "Ни өчен зәкят фарыз?",
+        "a": "Ул малны пакьләү, мохтаҗларга ярдәм итү һәм Аллаһ әмеренә буйсыну өчен фарыз."
+      },
+      "ar": {
+        "q": "لماذا الزكاة واجبة؟",
+        "a": "تجب لتطهير المال، ومساعدة المحتاجين، وطاعة أمر الله."
+      },
+      "es": {
+        "q": "¿Por qué es obligatorio el zakat?",
+        "a": "Es obligatorio para purificar los bienes, apoyar a los necesitados y obedecer el mandato de Allah."
+      },
+      "it": {
+        "q": "Perché la zakat è obbligatoria?",
+        "a": "È obbligatoria per purificare i beni, sostenere i bisognosi e obbedire al comando di Allah."
+      },
+      "pt": {
+        "q": "Por que o zakat é obrigatório?",
+        "a": "É obrigatória para purificar os bens, apoiar os necessitados e obedecer ao mandamento de Allah."
+      },
+      "ko": {
+        "q": "왜 자카트는 의무입니까?",
+        "a": "재산을 정결하게 하고 어려운 사람을 돕고 알라의 명령에 순종하기 위해 의무입니다."
+      },
+      "vi": {
+        "q": "Tại sao zakat là bắt buộc?",
+        "a": "Bắt buộc để thanh lọc tài sản, hỗ trợ người cần giúp và tuân theo mệnh lệnh của Allah."
+      },
+      "ja": {
+        "q": "なぜザカートは義務なのですか。",
+        "a": "財産を清め、困窮者を支え、アッラーの命令に従うために義務です。"
+      },
+      "zh": {
+        "q": "为什么天课是主命？",
+        "a": "天课是为了净化财富、帮助有需要的人并服从真主的命令。"
+      }
+    },
+    {
+      "id": 269,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:103 — https://quran.com/9/103",
+        "📚 Hadis — Sahih Buhârî 1399 — https://sunnah.com/bukhari:1399"
+      ],
+      "tr": {
+        "q": "Zekât kimlere farz olur?",
+        "a": "Nisap miktarı mala sahip olup diğer şartları taşıyan Müslümanlara farz olur."
+      },
+      "en": {
+        "q": "For whom is zakat obligatory?",
+        "a": "It is obligatory for Muslims who possess the nisab and meet the other required conditions."
+      },
+      "de": {
+        "q": "Für wen ist Zakat verpflichtend?",
+        "a": "Sie ist für Muslime verpflichtend, die den Nisab besitzen und die weiteren Voraussetzungen erfüllen."
+      },
+      "nl": {
+        "q": "Voor wie is zakat verplicht?",
+        "a": "Het is verplicht voor moslims die de nisab bezitten en aan de overige voorwaarden voldoen."
+      },
+      "fr": {
+        "q": "Pour qui la zakat est-elle obligatoire ?",
+        "a": "Elle est obligatoire pour les musulmans qui possèdent le nisab et remplissent les autres conditions."
+      },
+      "ru": {
+        "q": "Для кого закят обязателен?",
+        "a": "Он обязателен для мусульман, владеющих нисабом и выполняющих остальные условия."
+      },
+      "ku": {
+        "q": "Zekat li ser kê farz e?",
+        "a": "Li ser misilmanên ku nisabê hene û şertên din jî pêk tînin farz e."
+      },
+      "tt": {
+        "q": "Зәкят кемгә фарыз?",
+        "a": "Нисабка ия булган һәм башка шартларны үтәгән мөселманнарга фарыз."
+      },
+      "ar": {
+        "q": "على من تجب الزكاة؟",
+        "a": "تجب على المسلم الذي يملك النصاب وتتوفر فيه بقية الشروط."
+      },
+      "es": {
+        "q": "¿Para quién es obligatorio el zakat?",
+        "a": "Es obligatorio para los musulmanes que poseen el nisab y cumplen las demás condiciones."
+      },
+      "it": {
+        "q": "Per chi è obbligatoria la zakat?",
+        "a": "È obbligatoria per i musulmani che possiedono il nisab e soddisfano le altre condizioni."
+      },
+      "pt": {
+        "q": "Para quem o zakat é obrigatório?",
+        "a": "É obrigatória para muçulmanos que possuem o nisab e cumprem as demais condições."
+      },
+      "ko": {
+        "q": "누구에게 자카트가 의무입니까?",
+        "a": "니사브를 보유하고 다른 조건도 충족하는 무슬림에게 의무입니다."
+      },
+      "vi": {
+        "q": "Zakat bắt buộc đối với ai?",
+        "a": "Bắt buộc đối với người Hồi giáo có nisab và đáp ứng các điều kiện khác."
+      },
+      "ja": {
+        "q": "誰にザカートが義務ですか。",
+        "a": "ニサーブを所有し、その他の条件を満たすムスリムに義務です。"
+      },
+      "zh": {
+        "q": "天课对谁是主命？",
+        "a": "拥有满贯额并符合其他条件的穆斯林必须缴纳。"
+      }
+    },
+    {
+      "id": 270,
+      "day": 15,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 1451 — https://sunnah.com/bukhari:1451",
+        "📚 Hadis — Sahih Müslim 979a — https://sunnah.com/muslim:979a"
+      ],
+      "tr": {
+        "q": "Nisap nedir?",
+        "a": "Zekât yükümlülüğünde esas alınan belirli asgari mal varlığı ölçüsüdür."
+      },
+      "en": {
+        "q": "What is nisab?",
+        "a": "Nisab is the minimum threshold of wealth used to determine zakat liability."
+      },
+      "de": {
+        "q": "Was ist Nisab?",
+        "a": "Nisab ist der festgelegte Mindestwert des Vermögens, ab dem Zakat geschuldet ist."
+      },
+      "nl": {
+        "q": "Wat is nisab?",
+        "a": "Nisab is de minimale vermogensgrens die bepaalt of zakat verschuldigd is."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le nisab ?",
+        "a": "Le nisab est le seuil minimal de richesse servant à déterminer l’obligation de la zakat."
+      },
+      "ru": {
+        "q": "Что такое нисаб?",
+        "a": "Нисаб — установленный минимальный размер имущества, при котором возникает обязанность закята."
+      },
+      "ku": {
+        "q": "Nisab çi ye?",
+        "a": "Nisab sînorê herî kêm ê mal e ku li gorî wî zekat dibe farz."
+      },
+      "tt": {
+        "q": "Нисаб нәрсә ул?",
+        "a": "Нисаб — зәкят бурычы барлыкка килә торган минималь мал күләме."
+      },
+      "ar": {
+        "q": "ما النصاب؟",
+        "a": "النصاب هو الحد الأدنى من المال الذي تجب عنده الزكاة."
+      },
+      "es": {
+        "q": "¿Qué es el nisab?",
+        "a": "El nisab es el umbral mínimo de riqueza que determina la obligación del zakat."
+      },
+      "it": {
+        "q": "Che cos’è il nisab?",
+        "a": "Il nisab è la soglia minima di ricchezza che determina l’obbligo della zakat."
+      },
+      "pt": {
+        "q": "O que é o nisab?",
+        "a": "Nisab é o limite mínimo de riqueza usado para determinar a obrigação do zakat."
+      },
+      "ko": {
+        "q": "니사브란 무엇입니까?",
+        "a": "니사브는 자카트 의무를 판단하는 최소 재산 기준입니다."
+      },
+      "vi": {
+        "q": "Nisab là gì?",
+        "a": "Nisab là mức tài sản tối thiểu để xác định nghĩa vụ zakat."
+      },
+      "ja": {
+        "q": "ニサーブとは何ですか。",
+        "a": "ニサーブはザカートの義務が生じる最低財産基準です。"
+      },
+      "zh": {
+        "q": "什么是满贯额（nisab）？",
+        "a": "满贯额是判断天课义务的最低财产标准。"
+      }
+    },
+    {
+      "id": 271,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Bakara 2:43 — https://quran.com/2/43",
+        "📖 Kur’an — Tevbe 9:71 — https://quran.com/9/71"
+      ],
+      "tr": {
+        "q": "Zekâtın Kur’an’daki önemi nedir?",
+        "a": "Kur’an’da namazla birlikte birçok yerde zikredilir."
+      },
+      "en": {
+        "q": "What is the importance of zakat in the Qur’an?",
+        "a": "The Qur’an mentions zakat together with prayer in many places, showing its importance."
+      },
+      "de": {
+        "q": "Welche Bedeutung hat Zakat im Koran?",
+        "a": "Der Koran nennt Zakat an vielen Stellen zusammen mit dem Gebet und zeigt damit ihre Bedeutung."
+      },
+      "nl": {
+        "q": "Wat is het belang van zakat in de Koran?",
+        "a": "De Koran noemt zakat vaak samen met het gebed, wat het belang ervan toont."
+      },
+      "fr": {
+        "q": "Quelle est l’importance de la zakat dans le Coran ?",
+        "a": "Le Coran mentionne souvent la zakat avec la prière, ce qui montre son importance."
+      },
+      "ru": {
+        "q": "Каково значение закята в Коране?",
+        "a": "Коран во многих местах упоминает закят вместе с молитвой, подчёркивая его значение."
+      },
+      "ku": {
+        "q": "Girîngiya zekatê di Qur'anê de çi ye?",
+        "a": "Di Qur'anê de gelek caran zekat bi nimêjê re tê zikrkirin û ev girîngiya wê nîşan dide."
+      },
+      "tt": {
+        "q": "Коръәндә зәкятнең әһәмияте нинди?",
+        "a": "Коръәндә зәкят күп урында намаз белән бергә искә алына, бу аның әһәмиятен күрсәтә."
+      },
+      "ar": {
+        "q": "ما أهمية الزكاة في القرآن؟",
+        "a": "يذكر القرآن الزكاة مع الصلاة في مواضع كثيرة، مما يدل على أهميتها."
+      },
+      "es": {
+        "q": "¿Cuál es la importancia del zakat en el Corán?",
+        "a": "El Corán menciona muchas veces el zakat junto con la oración, mostrando su importancia."
+      },
+      "it": {
+        "q": "Qual è l’importanza della zakat nel Corano?",
+        "a": "Il Corano cita spesso la zakat insieme alla preghiera, mostrando la sua importanza."
+      },
+      "pt": {
+        "q": "Qual é a importância do zakat no Alcorão?",
+        "a": "O Alcorão menciona zakat juntamente com a oração em muitos lugares, mostrando sua importância."
+      },
+      "ko": {
+        "q": "꾸란에서 자카트의 중요성은 무엇입니까?",
+        "a": "꾸란은 여러 곳에서 예배와 함께 자카트를 언급하여 그 중요성을 보여 줍니다."
+      },
+      "vi": {
+        "q": "Zakat có tầm quan trọng gì trong Qur’an?",
+        "a": "Qur’an nhiều lần nhắc zakat cùng với lễ nguyện, cho thấy tầm quan trọng của nó."
+      },
+      "ja": {
+        "q": "クルアーンにおけるザカートの重要性は何ですか。",
+        "a": "クルアーンは多くの箇所で礼拝とともにザカートを述べ、その重要性を示しています。"
+      },
+      "zh": {
+        "q": "《古兰经》中天课的重要性是什么？",
+        "a": "《古兰经》多次把天课与礼拜并提，显示其重要性。"
+      }
+    },
+    {
+      "id": 272,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:60 — https://quran.com/9/60",
+        "📚 Hadis — Sahih Buhârî 1496 — https://sunnah.com/bukhari:1496"
+      ],
+      "tr": {
+        "q": "Zekât kimlere verilebilir?",
+        "a": "Kur’an’da Tevbe 9:60’ta belirtilen sınıflara verilebilir."
+      },
+      "en": {
+        "q": "To whom can zakat be given?",
+        "a": "It can be given to the categories specified in Qur’an 9:60."
+      },
+      "de": {
+        "q": "Wem kann Zakat gegeben werden?",
+        "a": "Sie kann den in Koran 9:60 genannten Empfängergruppen gegeben werden."
+      },
+      "nl": {
+        "q": "Aan wie kan zakat worden gegeven?",
+        "a": "Het kan worden gegeven aan de categorieën die in Koran 9:60 worden genoemd."
+      },
+      "fr": {
+        "q": "À qui peut-on donner la zakat ?",
+        "a": "Elle peut être donnée aux catégories mentionnées dans le Coran 9:60."
+      },
+      "ru": {
+        "q": "Кому можно отдавать закят?",
+        "a": "Он может быть дан категориям, указанным в Коране 9:60."
+      },
+      "ku": {
+        "q": "Zekat dikare bide kê?",
+        "a": "Dikare bide komên ku di Tevbe 9:60 de hatine diyarkirin."
+      },
+      "tt": {
+        "q": "Зәкят кемнәргә бирелә ала?",
+        "a": "Аны Тәүбә 9:60та күрсәтелгән төркемнәргә бирергә була."
+      },
+      "ar": {
+        "q": "لمن تُعطى الزكاة؟",
+        "a": "تعطى للأصناف المذكورة في سورة التوبة 9:60."
+      },
+      "es": {
+        "q": "¿A quién se puede dar el zakat?",
+        "a": "Puede darse a las categorías indicadas en el Corán 9:60."
+      },
+      "it": {
+        "q": "A chi si può dare la zakat?",
+        "a": "Può essere data alle categorie indicate nel Corano 9:60."
+      },
+      "pt": {
+        "q": "A quem pode ser dado o zakat?",
+        "a": "Pode ser dado às categorias indicadas no Alcorão 9:60."
+      },
+      "ko": {
+        "q": "자카트는 누구에게 줄 수 있습니까?",
+        "a": "꾸란 9:60에 언급된 대상에게 줄 수 있습니다."
+      },
+      "vi": {
+        "q": "Zakat có thể được trao cho ai?",
+        "a": "Có thể trao cho các nhóm được nêu trong Qur’an 9:60."
+      },
+      "ja": {
+        "q": "ザカートは誰に与えられますか。",
+        "a": "クルアーン9章60節に示された受給対象に与えられます。"
+      },
+      "zh": {
+        "q": "天课可以给谁？",
+        "a": "可以给《古兰经》9:60所列的各类受益者。"
+      }
+    },
+    {
+      "id": 273,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:60 — https://quran.com/9/60",
+        "📖 Kur’an — Bakara 2:273 — https://quran.com/2/273"
+      ],
+      "tr": {
+        "q": "Zekât herkese verilir mi?",
+        "a": "Hayır; Kur’an’ın belirlediği hak sahiplerine verilir."
+      },
+      "en": {
+        "q": "Can zakat be given to everyone?",
+        "a": "No. It is given to the eligible categories identified by the Qur’an."
+      },
+      "de": {
+        "q": "Kann Zakat jedem gegeben werden?",
+        "a": "Nein. Sie wird den vom Koran bestimmten berechtigten Empfängergruppen gegeben."
+      },
+      "nl": {
+        "q": "Kan zakat aan iedereen worden gegeven?",
+        "a": "Nee. Het wordt gegeven aan de door de Koran aangewezen rechthebbenden."
+      },
+      "fr": {
+        "q": "Peut-on donner la zakat à tout le monde ?",
+        "a": "Non. Elle est donnée aux bénéficiaires désignés par le Coran."
+      },
+      "ru": {
+        "q": "Можно ли отдавать закят каждому?",
+        "a": "Нет. Он отдаётся определённым Кораном правомочным получателям."
+      },
+      "ku": {
+        "q": "Ma zekat dikare ji her kesî re bê dayîn?",
+        "a": "Na. Divê bide kesên mafdar ên ku Qur'an destnîşan dike."
+      },
+      "tt": {
+        "q": "Зәкятне һәркемгә биреп буламы?",
+        "a": "Юк. Ул Коръән күрсәткән хаклы кешеләргә бирелә."
+      },
+      "ar": {
+        "q": "هل تُعطى الزكاة لكل أحد؟",
+        "a": "لا، بل تعطى للمستحقين الذين حددهم القرآن."
+      },
+      "es": {
+        "q": "¿Se puede dar zakat a cualquiera?",
+        "a": "No. Se entrega a los beneficiarios establecidos por el Corán."
+      },
+      "it": {
+        "q": "La zakat può essere data a chiunque?",
+        "a": "No. Viene data ai beneficiari stabiliti dal Corano."
+      },
+      "pt": {
+        "q": "O zakat pode ser dado a qualquer pessoa?",
+        "a": "Não. É dado aos beneficiários determinados pelo Alcorão."
+      },
+      "ko": {
+        "q": "자카트를 모든 사람에게 줄 수 있습니까?",
+        "a": "아닙니다. 꾸란이 정한 자격 있는 수혜자에게 줍니다."
+      },
+      "vi": {
+        "q": "Có thể trao zakat cho bất cứ ai không?",
+        "a": "Không. Zakat được trao cho những người đủ điều kiện theo Qur’an."
+      },
+      "ja": {
+        "q": "ザカートを誰にでも与えてよいですか。",
+        "a": "いいえ。クルアーンが定める適格な受給者に与えます。"
+      },
+      "zh": {
+        "q": "天课可以给任何人吗？",
+        "a": "不可以。应当给《古兰经》规定的合资格受益者。"
+      }
+    },
+    {
+      "id": 274,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Bakara 2:261 — https://quran.com/2/261",
+        "📚 Hadis — Sahih Müslim 1005 — https://sunnah.com/muslim:1005"
+      ],
+      "tr": {
+        "q": "Sadaka nedir?",
+        "a": "Allah rızası için yapılan gönüllü maddi veya manevi iyiliktir."
+      },
+      "en": {
+        "q": "What is sadaqah?",
+        "a": "Sadaqah is voluntary material or non-material goodness done for Allah’s sake."
+      },
+      "de": {
+        "q": "Was ist Sadaqa?",
+        "a": "Sadaqa ist eine freiwillige materielle oder nichtmaterielle gute Tat um Allahs willen."
+      },
+      "nl": {
+        "q": "Wat is sadaqah?",
+        "a": "Sadaqah is vrijwillige materiële of immateriële goedheid omwille van Allah."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la sadaqa ?",
+        "a": "La sadaqa est une bonne action matérielle ou morale volontaire accomplie pour Allah."
+      },
+      "ru": {
+        "q": "Что такое садака?",
+        "a": "Садака — добровольное материальное или нематериальное добро ради Аллаха."
+      },
+      "ku": {
+        "q": "Sedeqe çi ye?",
+        "a": "Sedeqe qenciyeke madî an ne-madî ye ku bi dilxwaziya ji bo Allah tê kirin."
+      },
+      "tt": {
+        "q": "Сәдака нәрсә ул?",
+        "a": "Сәдака — Аллаһ ризалыгы өчен ирекле рәвештә эшләнгән матди яки рухи яхшылык."
+      },
+      "ar": {
+        "q": "ما الصدقة؟",
+        "a": "الصدقة إحسان مادي أو معنوي تطوعي يُفعل ابتغاء مرضاة الله."
+      },
+      "es": {
+        "q": "¿Qué es la sadaqa?",
+        "a": "La sadaqa es una buena acción material o moral voluntaria realizada por Allah."
+      },
+      "it": {
+        "q": "Che cos’è la sadaqa?",
+        "a": "La sadaqa è un’opera volontaria materiale o morale compiuta per Allah."
+      },
+      "pt": {
+        "q": "O que é sadaqah?",
+        "a": "Sadaqah é uma boa ação material ou espiritual voluntária feita por Allah."
+      },
+      "ko": {
+        "q": "사다카란 무엇입니까?",
+        "a": "사다카는 알라를 위해 자발적으로 행하는 물질적 또는 비물질적 선행입니다."
+      },
+      "vi": {
+        "q": "Sadaqah là gì?",
+        "a": "Sadaqah là việc thiện vật chất hoặc tinh thần tự nguyện vì Allah."
+      },
+      "ja": {
+        "q": "サダカとは何ですか。",
+        "a": "サダカとは、アッラーのために自発的に行う物質的・精神的な善行です。"
+      },
+      "zh": {
+        "q": "什么是施舍（sadaqah）？",
+        "a": "施舍是为了真主而自愿进行的物质或精神善行。"
+      }
+    },
+    {
+      "id": 275,
+      "day": 15,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 6021 — https://sunnah.com/bukhari:6021",
+        "📚 Hadis — Sahih Müslim 1009 — https://sunnah.com/muslim:1009"
+      ],
+      "tr": {
+        "q": "Sadaka sadece para mıdır?",
+        "a": "Hayır; güzel söz ve çeşitli iyilikler de sadaka olabilir."
+      },
+      "en": {
+        "q": "Is sadaqah only money?",
+        "a": "No. A kind word and various good deeds can also be sadaqah."
+      },
+      "de": {
+        "q": "Ist Sadaqa nur Geld?",
+        "a": "Nein. Auch ein gutes Wort und verschiedene gute Taten können Sadaqa sein."
+      },
+      "nl": {
+        "q": "Is sadaqah alleen geld?",
+        "a": "Nee. Ook een goed woord en goede daden kunnen sadaqah zijn."
+      },
+      "fr": {
+        "q": "La sadaqa est-elle seulement de l’argent ?",
+        "a": "Non. Une bonne parole et diverses bonnes actions peuvent aussi être une sadaqa."
+      },
+      "ru": {
+        "q": "Садака — это только деньги?",
+        "a": "Нет. Доброе слово и другие благие дела тоже могут быть садакой."
+      },
+      "ku": {
+        "q": "Sedeqe tenê pere ye?",
+        "a": "Na. Peyvek baş û karên qenc jî dikarin sedeqe bin."
+      },
+      "tt": {
+        "q": "Сәдака акчадан гына торамы?",
+        "a": "Юк. Яхшы сүз һәм башка изге гамәлләр дә сәдака була ала."
+      },
+      "ar": {
+        "q": "هل الصدقة مال فقط؟",
+        "a": "لا، فالكلمة الطيبة والأعمال الصالحة قد تكون صدقة أيضًا."
+      },
+      "es": {
+        "q": "¿La sadaqa es solo dinero?",
+        "a": "No. Una buena palabra y diversas buenas acciones también pueden ser sadaqa."
+      },
+      "it": {
+        "q": "La sadaqa è solo denaro?",
+        "a": "No. Anche una buona parola e diverse buone azioni possono essere sadaqa."
+      },
+      "pt": {
+        "q": "Sadaqah é apenas dinheiro?",
+        "a": "Não. Uma palavra boa e várias boas ações também podem ser sadaqah."
+      },
+      "ko": {
+        "q": "사다카는 돈만을 뜻합니까?",
+        "a": "아닙니다. 좋은 말과 여러 선행도 사다카가 될 수 있습니다."
+      },
+      "vi": {
+        "q": "Sadaqah chỉ là tiền phải không?",
+        "a": "Không. Lời nói tốt và nhiều việc thiện cũng có thể là sadaqah."
+      },
+      "ja": {
+        "q": "サダカはお金だけですか。",
+        "a": "いいえ。良い言葉や様々な善行もサダカになります。"
+      },
+      "zh": {
+        "q": "施舍只是钱吗？",
+        "a": "不是。善言和各种善行也可以是施舍。"
+      }
+    },
+    {
+      "id": 276,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:60 — https://quran.com/9/60",
+        "📖 Kur’an — Bakara 2:271 — https://quran.com/2/271"
+      ],
+      "tr": {
+        "q": "Zekât ile sadaka arasındaki fark nedir?",
+        "a": "Zekât belirli şartlarla farzdır; sadaka ise genel olarak gönüllü iyiliktir."
+      },
+      "en": {
+        "q": "What is the difference between zakat and sadaqah?",
+        "a": "Zakat is obligatory under specified conditions; sadaqah is generally voluntary charity."
+      },
+      "de": {
+        "q": "Was ist der Unterschied zwischen Zakat und Sadaqa?",
+        "a": "Zakat ist unter bestimmten Bedingungen verpflichtend; Sadaqa ist grundsätzlich freiwillige Wohltätigkeit."
+      },
+      "nl": {
+        "q": "Wat is het verschil tussen zakat en sadaqah?",
+        "a": "Zakat is onder voorwaarden verplicht; sadaqah is doorgaans vrijwillige liefdadigheid."
+      },
+      "fr": {
+        "q": "Quelle est la différence entre zakat et sadaqa ?",
+        "a": "La zakat est obligatoire sous certaines conditions ; la sadaqa est généralement volontaire."
+      },
+      "ru": {
+        "q": "В чём разница между закятом и садакой?",
+        "a": "Закят обязателен при определённых условиях; садака в целом добровольна."
+      },
+      "ku": {
+        "q": "Cûdahiya zekat û sedeqeyê çi ye?",
+        "a": "Zekat bi şertan farz e; sedeqe bi gelemperî bi dilxwazî ye."
+      },
+      "tt": {
+        "q": "Зәкят белән сәдака арасында нинди аерма бар?",
+        "a": "Зәкят билгеле шартларда фарыз; сәдака гадәттә ирекле ярдәм."
+      },
+      "ar": {
+        "q": "ما الفرق بين الزكاة والصدقة؟",
+        "a": "الزكاة واجبة بشروط معينة، أما الصدقة فهي في الأصل تطوعية."
+      },
+      "es": {
+        "q": "¿Cuál es la diferencia entre zakat y sadaqa?",
+        "a": "El zakat es obligatorio bajo ciertas condiciones; la sadaqa es generalmente voluntaria."
+      },
+      "it": {
+        "q": "Qual è la differenza tra zakat e sadaqa?",
+        "a": "La zakat è obbligatoria a determinate condizioni; la sadaqa è generalmente volontaria."
+      },
+      "pt": {
+        "q": "Qual é a diferença entre zakat e sadaqah?",
+        "a": "Zakat é obrigatório sob certas condições; sadaqah é geralmente voluntário."
+      },
+      "ko": {
+        "q": "자카트와 사다카의 차이는 무엇입니까?",
+        "a": "자카트는 일정 조건에서 의무이고 사다카는 일반적으로 자발적입니다."
+      },
+      "vi": {
+        "q": "Zakat khác sadaqah như thế nào?",
+        "a": "Zakat bắt buộc theo điều kiện; sadaqah nhìn chung là tự nguyện."
+      },
+      "ja": {
+        "q": "ザカートとサダカの違いは何ですか。",
+        "a": "ザカートは条件を満たせば義務ですが、サダカは一般に任意の施しです。"
+      },
+      "zh": {
+        "q": "天课和施舍有什么区别？",
+        "a": "天课在满足条件时是主命；施舍一般是自愿的。"
+      }
+    },
+    {
+      "id": 277,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:60 — https://quran.com/9/60",
+        "📚 Hadis — Sahih Buhârî 1423 — https://sunnah.com/bukhari:1423"
+      ],
+      "tr": {
+        "q": "Zekât topluma ne kazandırır?",
+        "a": "Dayanışmayı ve ihtiyaç sahiplerinin desteklenmesini güçlendirir."
+      },
+      "en": {
+        "q": "What does zakat bring to society?",
+        "a": "It strengthens solidarity and support for people in need."
+      },
+      "de": {
+        "q": "Was bringt Zakat der Gesellschaft?",
+        "a": "Sie stärkt Solidarität und die Unterstützung Bedürftiger."
+      },
+      "nl": {
+        "q": "Wat brengt zakat de samenleving?",
+        "a": "Het versterkt solidariteit en steun voor mensen in nood."
+      },
+      "fr": {
+        "q": "Que procure la zakat à la société ?",
+        "a": "Elle renforce la solidarité et le soutien aux personnes dans le besoin."
+      },
+      "ru": {
+        "q": "Что закят даёт обществу?",
+        "a": "Он укрепляет солидарность и поддержку нуждающихся."
+      },
+      "ku": {
+        "q": "Zekat ji civakê re çi dide?",
+        "a": "Zekat hevkarî û piştgiriya hewcedaran xurt dike."
+      },
+      "tt": {
+        "q": "Зәкят җәмгыятькә нәрсә бирә?",
+        "a": "Ул җәмгыятьтә үзара ярдәмне һәм мохтаҗларга булышуны көчәйтә."
+      },
+      "ar": {
+        "q": "ماذا تحقق الزكاة للمجتمع؟",
+        "a": "تقوي التكافل ومساندة المحتاجين."
+      },
+      "es": {
+        "q": "¿Qué aporta el zakat a la sociedad?",
+        "a": "Fortalece la solidaridad y el apoyo a quienes lo necesitan."
+      },
+      "it": {
+        "q": "Cosa porta la zakat alla società?",
+        "a": "Rafforza la solidarietà e il sostegno ai bisognosi."
+      },
+      "pt": {
+        "q": "O que o zakat traz à sociedade?",
+        "a": "Fortalece a solidariedade e o apoio aos necessitados."
+      },
+      "ko": {
+        "q": "자카트는 사회에 무엇을 가져옵니까?",
+        "a": "사회적 연대와 어려운 사람에 대한 지원을 강화합니다."
+      },
+      "vi": {
+        "q": "Zakat mang lại gì cho xã hội?",
+        "a": "Nó tăng cường đoàn kết và hỗ trợ người cần giúp."
+      },
+      "ja": {
+        "q": "ザカートは社会に何をもたらしますか。",
+        "a": "社会的連帯と困窮者への支援を強めます。"
+      },
+      "zh": {
+        "q": "天课给社会带来什么？",
+        "a": "它加强社会互助并支持有需要的人。"
+      }
+    },
+    {
+      "id": 278,
+      "day": 15,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 1 — https://sunnah.com/bukhari:1",
+        "📚 Hadis — Sahih Müslim 1907a — https://sunnah.com/muslim:1907a"
+      ],
+      "tr": {
+        "q": "Zekât verirken niyet gerekir mi?",
+        "a": "Zekât bir ibadet olduğu için niyet önemlidir."
+      },
+      "en": {
+        "q": "Is intention required when giving zakat?",
+        "a": "Yes. Since zakat is an act of worship, sincere intention is important."
+      },
+      "de": {
+        "q": "Ist beim Geben von Zakat eine Absicht erforderlich?",
+        "a": "Ja. Da Zakat ein Gottesdienst ist, ist eine aufrichtige Absicht wichtig."
+      },
+      "nl": {
+        "q": "Is een intentie nodig bij het geven van zakat?",
+        "a": "Ja. Omdat zakat aanbidding is, is een oprechte intentie belangrijk."
+      },
+      "fr": {
+        "q": "Faut-il avoir l’intention en donnant la zakat ?",
+        "a": "Oui. Comme la zakat est un acte d’adoration, l’intention sincère est importante."
+      },
+      "ru": {
+        "q": "Нужно ли намерение при выплате закята?",
+        "a": "Да. Поскольку закят — поклонение, искреннее намерение важно."
+      },
+      "ku": {
+        "q": "Di dayîna zekatê de niyet pêwîst e?",
+        "a": "Erê. Ji ber ku zekat îbadet e, niyeta ixlasî girîng e."
+      },
+      "tt": {
+        "q": "Зәкят биргәндә ният кирәкме?",
+        "a": "Әйе. Зәкят гыйбадәт булганга, ихлас ният мөһим."
+      },
+      "ar": {
+        "q": "هل تجب النية عند إخراج الزكاة؟",
+        "a": "نعم، فالزكاة عبادة والنية الصادقة مهمة فيها."
+      },
+      "es": {
+        "q": "¿Se necesita intención al dar el zakat?",
+        "a": "Sí. Como es un acto de adoración, la intención sincera es importante."
+      },
+      "it": {
+        "q": "È necessaria l’intenzione quando si dà la zakat?",
+        "a": "Sì. Essendo un atto di culto, è importante un’intenzione sincera."
+      },
+      "pt": {
+        "q": "É necessária intenção ao dar o zakat?",
+        "a": "Sim. Como zakat é adoração, a intenção sincera é importante."
+      },
+      "ko": {
+        "q": "자카트를 줄 때 의도가 필요합니까?",
+        "a": "그렇습니다. 자카트는 예배이므로 진실한 의도가 중요합니다."
+      },
+      "vi": {
+        "q": "Có cần ý định khi trao zakat không?",
+        "a": "Có. Vì zakat là thờ phượng nên ý định chân thành rất quan trọng."
+      },
+      "ja": {
+        "q": "ザカートを支払うとき意図は必要ですか。",
+        "a": "はい。ザカートは礼拝なので、誠実な意図が重要です。"
+      },
+      "zh": {
+        "q": "缴纳天课需要举意吗？",
+        "a": "需要。因为天课属于功修，真诚的举意很重要。"
+      }
+    },
+    {
+      "id": 279,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Bakara 2:264 — https://quran.com/2/264",
+        "📖 Kur’an — Bakara 2:262 — https://quran.com/2/262"
+      ],
+      "tr": {
+        "q": "Zekât gösteriş için verilebilir mi?",
+        "a": "İbadet Allah rızası için yapılmalı, gösterişten kaçınılmalıdır."
+      },
+      "en": {
+        "q": "Can zakat be given for showing off?",
+        "a": "Acts of worship should be for Allah’s sake, not for showing off."
+      },
+      "de": {
+        "q": "Darf Zakat aus Gründen der Selbstdarstellung gegeben werden?",
+        "a": "Gottesdienste sollen um Allahs willen und nicht zur Selbstdarstellung verrichtet werden."
+      },
+      "nl": {
+        "q": "Mag zakat worden gegeven om indruk te maken?",
+        "a": "Aanbidding hoort voor Allah te gebeuren, niet om indruk te maken."
+      },
+      "fr": {
+        "q": "Peut-on donner la zakat pour se faire remarquer ?",
+        "a": "Les actes d’adoration doivent être accomplis pour Allah, non pour se faire remarquer."
+      },
+      "ru": {
+        "q": "Можно ли давать закят ради показухи?",
+        "a": "Поклонение совершается ради Аллаха, а не ради показухи."
+      },
+      "ku": {
+        "q": "Ma dikare zekat ji bo nîşandanê bê dayîn?",
+        "a": "Îbadet divê ji bo Allah be, ne ji bo nîşandanê."
+      },
+      "tt": {
+        "q": "Зәкятне күрсәтү өчен бирергә ярыймы?",
+        "a": "Гыйбадәт Аллаһ өчен башкарылырга тиеш, күрсәтү өчен түгел."
+      },
+      "ar": {
+        "q": "هل يجوز إخراج الزكاة رياءً؟",
+        "a": "ينبغي أن تكون العبادة لله لا للرياء."
+      },
+      "es": {
+        "q": "¿Se puede dar zakat para presumir?",
+        "a": "Los actos de adoración deben hacerse por Allah, no para presumir."
+      },
+      "it": {
+        "q": "Si può dare la zakat per mettersi in mostra?",
+        "a": "Gli atti di culto devono essere compiuti per Allah, non per mettersi in mostra."
+      },
+      "pt": {
+        "q": "Pode-se dar zakat para se exibir?",
+        "a": "Os atos de adoração devem ser feitos por Allah, não para exibição."
+      },
+      "ko": {
+        "q": "보여주기 위해 자카트를 줄 수 있습니까?",
+        "a": "예배는 알라를 위해 해야 하며 사람에게 보이기 위한 것이어서는 안 됩니다."
+      },
+      "vi": {
+        "q": "Có thể trao zakat để khoe khoang không?",
+        "a": "Việc thờ phượng phải vì Allah, không phải để phô trương."
+      },
+      "ja": {
+        "q": "見せるためにザカートを支払ってよいですか。",
+        "a": "礼拝はアッラーのために行い、人に見せるためではありません。"
+      },
+      "zh": {
+        "q": "可以为了炫耀而给天课吗？",
+        "a": "功修应当为了真主，而不是为了炫耀。"
+      }
+    },
+    {
+      "id": 280,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Bakara 2:271 — https://quran.com/2/271",
+        "📚 Hadis — Sahih Buhârî 1423 — https://sunnah.com/bukhari:1423"
+      ],
+      "tr": {
+        "q": "Sadakanın gizli verilmesinin faydası nedir?",
+        "a": "İhlâsı korumaya ve gösterişten uzak durmaya yardımcı olabilir."
+      },
+      "en": {
+        "q": "What is the benefit of giving sadaqah secretly?",
+        "a": "It can help protect sincerity and keep the act away from ostentation."
+      },
+      "de": {
+        "q": "Welchen Nutzen hat geheime Sadaqa?",
+        "a": "Sie kann helfen, Aufrichtigkeit zu bewahren und Prahlerei zu vermeiden."
+      },
+      "nl": {
+        "q": "Wat is het voordeel van sadaqah in het geheim geven?",
+        "a": "Het kan helpen oprechtheid te bewaren en pronken te vermijden."
+      },
+      "fr": {
+        "q": "Quel est l’intérêt de donner la sadaqa en secret ?",
+        "a": "Elle peut aider à préserver la sincérité et à éviter l’ostentation."
+      },
+      "ru": {
+        "q": "В чём польза тайной садаки?",
+        "a": "Это помогает сохранять искренность и избегать показухи."
+      },
+      "ku": {
+        "q": "Feydeya dayîna sedeqeyê veşartî çi ye?",
+        "a": "Dikare alîkar be ku ixlas were parastin û ji riyê dûr bimînin."
+      },
+      "tt": {
+        "q": "Сәдаканы яшерен бирүнең нинди файдасы бар?",
+        "a": "Ул ихласлыкны сакларга һәм мактанудан ерак булырга ярдәм итә ала."
+      },
+      "ar": {
+        "q": "ما فائدة صدقة السر؟",
+        "a": "قد تساعد على حفظ الإخلاص والابتعاد عن الرياء."
+      },
+      "es": {
+        "q": "¿Cuál es el beneficio de dar sadaqa en secreto?",
+        "a": "Puede ayudar a conservar la sinceridad y evitar la ostentación."
+      },
+      "it": {
+        "q": "Qual è il beneficio di dare la sadaqa in segreto?",
+        "a": "Può aiutare a preservare la sincerità ed evitare l’ostentazione."
+      },
+      "pt": {
+        "q": "Qual é o benefício de dar sadaqah em segredo?",
+        "a": "Pode ajudar a preservar a sinceridade e evitar ostentação."
+      },
+      "ko": {
+        "q": "사다카를 비밀리에 주는 유익은 무엇입니까?",
+        "a": "진실성을 지키고 과시를 피하는 데 도움이 될 수 있습니다."
+      },
+      "vi": {
+        "q": "Lợi ích của việc bố thí sadaqah kín đáo là gì?",
+        "a": "Nó giúp giữ sự chân thành và tránh khoe khoang."
+      },
+      "ja": {
+        "q": "サダカを密かに行う利点は何ですか。",
+        "a": "誠実さを守り、見せびらかしを避ける助けになります。"
+      },
+      "zh": {
+        "q": "秘密施舍有什么益处？",
+        "a": "它有助于保持真诚并远离炫耀。"
+      }
+    },
+    {
+      "id": 281,
+      "day": 15,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 2588 — https://sunnah.com/muslim:2588",
+        "📖 Kur’an — Saba 34:39 — https://quran.com/34/39"
+      ],
+      "tr": {
+        "q": "Zekât malı azaltır mı?",
+        "a": "Manevî açıdan zekât malı bereketlendiren ve temizleyen bir ibadettir."
+      },
+      "en": {
+        "q": "Does zakat decrease wealth?",
+        "a": "Spiritually, zakat purifies wealth and is a means of blessing."
+      },
+      "de": {
+        "q": "Verringert Zakat das Vermögen?",
+        "a": "Geistlich reinigt Zakat das Vermögen und ist ein Mittel des Segens."
+      },
+      "nl": {
+        "q": "Vermindert zakat het vermogen?",
+        "a": "Geestelijk reinigt zakat het bezit en is het een middel tot zegen."
+      },
+      "fr": {
+        "q": "La zakat diminue-t-elle les biens ?",
+        "a": "Spirituellement, la zakat purifie les biens et est une cause de bénédiction."
+      },
+      "ru": {
+        "q": "Уменьшает ли закят имущество?",
+        "a": "В духовном смысле закят очищает имущество и является причиной благословения."
+      },
+      "ku": {
+        "q": "Ma zekat mal kêm dike?",
+        "a": "Di aliyê manewî de zekat malê paqij dike û bibe sedema bereketê."
+      },
+      "tt": {
+        "q": "Зәкят малны киметәме?",
+        "a": "Рухи яктан зәкят малны чистарта һәм бәрәкәткә сәбәп була."
+      },
+      "ar": {
+        "q": "هل تنقص الزكاة المال؟",
+        "a": "من الناحية المعنوية، تطهر الزكاة المال وتكون سببًا للبركة."
+      },
+      "es": {
+        "q": "¿El zakat reduce la riqueza?",
+        "a": "Espiritualmente, el zakat purifica la riqueza y es un medio de bendición."
+      },
+      "it": {
+        "q": "La zakat diminuisce la ricchezza?",
+        "a": "Spiritualmente, la zakat purifica i beni ed è un mezzo di benedizione."
+      },
+      "pt": {
+        "q": "O zakat reduz a riqueza?",
+        "a": "Espiritualmente, zakat purifica os bens e é um meio de bênção."
+      },
+      "ko": {
+        "q": "자카트가 재산을 줄입니까?",
+        "a": "영적으로 자카트는 재산을 정화하고 복을 가져오는 예배입니다."
+      },
+      "vi": {
+        "q": "Zakat có làm giảm tài sản không?",
+        "a": "Về tinh thần, zakat thanh lọc tài sản và là một phương tiện của phúc lành."
+      },
+      "ja": {
+        "q": "ザカートは財産を減らしますか。",
+        "a": "精神的には財産を清め、祝福の原因となります。"
+      },
+      "zh": {
+        "q": "天课会使财富减少吗？",
+        "a": "从精神意义上说，天课能净化财富并成为获得福泽的途径。"
+      }
+    },
+    {
+      "id": 282,
+      "day": 15,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 1631 — https://sunnah.com/muslim:1631",
+        "📖 Kur’an — Yasin 36:12 — https://quran.com/36/12"
+      ],
+      "tr": {
+        "q": "Sadaka-i câriye nedir?",
+        "a": "İnsan öldükten sonra da sevabı devam eden kalıcı hayırdır."
+      },
+      "en": {
+        "q": "What is sadaqah jariyah?",
+        "a": "Sadaqah jariyah is a lasting charity whose reward continues after a person dies."
+      },
+      "de": {
+        "q": "Was ist Sadaqa Dschariya?",
+        "a": "Sadaqa Dschariya ist eine dauerhafte Wohltat, deren Lohn nach dem Tod weitergeht."
+      },
+      "nl": {
+        "q": "Wat is sadaqah jariyah?",
+        "a": "Sadaqah jariyah is blijvende liefdadigheid waarvan de beloning na de dood voortduurt."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la sadaqa jariya ?",
+        "a": "La sadaqa jariya est une œuvre durable dont la récompense continue après la mort."
+      },
+      "ru": {
+        "q": "Что такое садака джария?",
+        "a": "Садака джария — постоянное благодеяние, награда за которое продолжается после смерти."
+      },
+      "ku": {
+        "q": "Sedeqeya cariyê çi ye?",
+        "a": "Sedeqeya cariyê xêrek e ku piştî mirinê jî sevaba wê berdewam dike."
+      },
+      "tt": {
+        "q": "Сәдака җария нәрсә ул?",
+        "a": "Сәдака җария — кеше үлгәннән соң да савабы дәвам итә торган даими хәер."
+      },
+      "ar": {
+        "q": "ما الصدقة الجارية؟",
+        "a": "الصدقة الجارية عمل باقٍ يستمر أجره بعد وفاة الإنسان."
+      },
+      "es": {
+        "q": "¿Qué es la sadaqa jariya?",
+        "a": "La sadaqa jariya es una obra duradera cuya recompensa continúa después de la muerte."
+      },
+      "it": {
+        "q": "Che cos’è la sadaqa jariya?",
+        "a": "La sadaqa jariya è un’opera duratura la cui ricompensa continua dopo la morte."
+      },
+      "pt": {
+        "q": "O que é sadaqah jariyah?",
+        "a": "Sadaqah jariyah é uma caridade duradoura cuja recompensa continua após a morte."
+      },
+      "ko": {
+        "q": "사다카 자리야란 무엇입니까?",
+        "a": "사다카 자리야는 사람이 죽은 뒤에도 보상이 계속되는 지속적인 선행입니다."
+      },
+      "vi": {
+        "q": "Sadaqah jariyah là gì?",
+        "a": "Sadaqah jariyah là việc thiện lâu dài, phần thưởng tiếp tục sau khi người làm qua đời."
+      },
+      "ja": {
+        "q": "サダカ・ジャーリヤとは何ですか。",
+        "a": "サダカ・ジャーリヤは、死後も報奨が続く継続的な善行です。"
+      },
+      "zh": {
+        "q": "什么是持续施舍（sadaqah jariyah）？",
+        "a": "持续施舍是人在去世后功德仍继续的长久善行。"
+      }
+    },
+    {
+      "id": 283,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:60 — https://quran.com/9/60",
+        "📖 Kur’an — Haşr 59:7 — https://quran.com/59/7"
+      ],
+      "tr": {
+        "q": "Zekât ile fakirlere yardım arasındaki ilişki nedir?",
+        "a": "Zekât toplumdaki maddî dayanışmanın önemli bir aracıdır."
+      },
+      "en": {
+        "q": "What is the relationship between zakat and helping the poor?",
+        "a": "Zakat is an important means of material solidarity and support for people in need."
+      },
+      "de": {
+        "q": "Welcher Zusammenhang besteht zwischen Zakat und der Hilfe für Arme?",
+        "a": "Zakat ist ein wichtiges Mittel materieller Solidarität und Hilfe für Bedürftige."
+      },
+      "nl": {
+        "q": "Wat is het verband tussen zakat en hulp aan armen?",
+        "a": "Zakat is een belangrijk middel voor materiële solidariteit en hulp aan behoeftigen."
+      },
+      "fr": {
+        "q": "Quel est le lien entre la zakat et l’aide aux pauvres ?",
+        "a": "La zakat est un moyen important de solidarité matérielle et d’aide aux nécessiteux."
+      },
+      "ru": {
+        "q": "Как связаны закят и помощь бедным?",
+        "a": "Закят является важным средством материальной поддержки и солидарности с бедными."
+      },
+      "ku": {
+        "q": "Têkiliya zekatê û alîkariya feqîran çi ye?",
+        "a": "Zekat amûrek girîng e ji bo hevkarîya madî û alîkariya feqîran."
+      },
+      "tt": {
+        "q": "Зәкят белән ярлыларга ярдәм арасында нинди бәйләнеш бар?",
+        "a": "Зәкят мохтаҗларга матди ярдәм һәм җәмгыяви бердәмлекнең мөһим чарасы."
+      },
+      "ar": {
+        "q": "ما العلاقة بين الزكاة ومساعدة الفقراء؟",
+        "a": "الزكاة وسيلة مهمة للتكافل المادي ومساعدة المحتاجين."
+      },
+      "es": {
+        "q": "¿Qué relación hay entre zakat y ayudar a los pobres?",
+        "a": "El zakat es un medio importante de solidaridad material y ayuda a los necesitados."
+      },
+      "it": {
+        "q": "Qual è il rapporto tra zakat e aiuto ai poveri?",
+        "a": "La zakat è un importante mezzo di solidarietà materiale e aiuto ai bisognosi."
+      },
+      "pt": {
+        "q": "Qual é a relação entre zakat e ajudar os pobres?",
+        "a": "Zakat é um meio importante de solidariedade material e ajuda aos necessitados."
+      },
+      "ko": {
+        "q": "자카트와 가난한 사람을 돕는 일은 어떤 관계가 있습니까?",
+        "a": "자카트는 가난한 사람을 돕고 물질적 연대를 이루는 중요한 수단입니다."
+      },
+      "vi": {
+        "q": "Zakat liên quan thế nào đến việc giúp người nghèo?",
+        "a": "Zakat là phương tiện quan trọng để hỗ trợ vật chất và giúp người nghèo."
+      },
+      "ja": {
+        "q": "ザカートと貧しい人を助けることにはどんな関係がありますか。",
+        "a": "ザカートは貧しい人を助け、物質的な連帯を実現する重要な手段です。"
+      },
+      "zh": {
+        "q": "天课与帮助穷人有什么关系？",
+        "a": "天课是帮助穷人和加强物质互助的重要途径。"
+      }
+    },
+    {
+      "id": 284,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:34–35 — https://quran.com/9/34-35",
+        "📚 Hadis — Sahih Buhârî 1403 — https://sunnah.com/bukhari:1403"
+      ],
+      "tr": {
+        "q": "Zekât vermemek neden ciddi bir meseledir?",
+        "a": "Çünkü şartlarını taşıyan kimse için farz bir ibadeti terk etmek anlamına gelir."
+      },
+      "en": {
+        "q": "Why is refusing to give zakat a serious matter?",
+        "a": "Because for a person who meets its conditions, abandoning an obligatory act of worship is serious."
+      },
+      "de": {
+        "q": "Warum ist die Verweigerung der Zakat eine ernste Angelegenheit?",
+        "a": "Für jemanden, der die Voraussetzungen erfüllt, bedeutet dies das Unterlassen einer verpflichtenden Anbetung."
+      },
+      "nl": {
+        "q": "Waarom is het niet geven van zakat een ernstige zaak?",
+        "a": "Voor wie aan de voorwaarden voldoet, is het nalaten van een verplichte aanbidding ernstig."
+      },
+      "fr": {
+        "q": "Pourquoi refuser de donner la zakat est-il grave ?",
+        "a": "Pour celui qui remplit les conditions, l’abandon d’un acte obligatoire est une affaire grave."
+      },
+      "ru": {
+        "q": "Почему отказ от закята является серьёзным делом?",
+        "a": "Для того, кто обязан выплачивать закят, оставление обязательного поклонения является серьёзным делом."
+      },
+      "ku": {
+        "q": "Çima nedana zekatê mijareke girîng e?",
+        "a": "Ji bo kesê ku zekat li ser wî farz e, terk kirina îbadeta farz mijareke girîng e."
+      },
+      "tt": {
+        "q": "Зәкят бирмәү ни өчен җитди мәсьәлә?",
+        "a": "Шартлары булган кеше өчен фарыз гыйбадәтне калдыру җитди эш."
+      },
+      "ar": {
+        "q": "لماذا ترك الزكاة أمر خطير؟",
+        "a": "لمن وجبت عليه الزكاة، ترك عبادة واجبة أمر خطير."
+      },
+      "es": {
+        "q": "¿Por qué es grave no dar el zakat?",
+        "a": "Para quien cumple las condiciones, abandonar un acto obligatorio es un asunto serio."
+      },
+      "it": {
+        "q": "Perché non dare la zakat è una questione grave?",
+        "a": "Per chi ne ha l’obbligo, abbandonare un atto obbligatorio è una questione seria."
+      },
+      "pt": {
+        "q": "Por que não dar o zakat é uma questão séria?",
+        "a": "Para quem cumpre as condições, abandonar uma obrigação de adoração é algo sério."
+      },
+      "ko": {
+        "q": "자카트를 내지 않는 것이 왜 심각한 문제입니까?",
+        "a": "조건을 갖춘 사람이 의무 예배를 버리는 것은 심각한 일입니다."
+      },
+      "vi": {
+        "q": "Tại sao không nộp zakat là vấn đề nghiêm trọng?",
+        "a": "Đối với người đủ điều kiện, bỏ một nghĩa vụ thờ phượng là vấn đề nghiêm trọng."
+      },
+      "ja": {
+        "q": "ザカートを支払わないことがなぜ重大なのですか。",
+        "a": "条件を満たす人が義務の礼拝を放棄することは重大です。"
+      },
+      "zh": {
+        "q": "为什么不缴纳天课是严重的问题？",
+        "a": "对符合条件的人来说，放弃主命功修是严重的问题。"
+      }
+    },
+    {
+      "id": 285,
+      "day": 15,
+      "sources": [
+        "📖 Kur’an — Bakara 2:267 — https://quran.com/2/267",
+        "📚 Hadis — Sahih Müslim 1015 — https://sunnah.com/muslim:1015"
+      ],
+      "tr": {
+        "q": "Zekâtın temel ruhu nedir?",
+        "a": "Allah’ın emrine itaat, şükür ve ihtiyaç sahipleriyle dayanışmadır."
+      },
+      "en": {
+        "q": "What is the essential spirit of zakat?",
+        "a": "Its core is obedience to Allah, gratitude, and solidarity with those in need."
+      },
+      "de": {
+        "q": "Was ist der grundlegende Geist der Zakat?",
+        "a": "Ihr Kern ist Gehorsam gegenüber Allah, Dankbarkeit und Solidarität mit Bedürftigen."
+      },
+      "nl": {
+        "q": "Wat is de kern van zakat?",
+        "a": "De kern is gehoorzaamheid aan Allah, dankbaarheid en solidariteit met behoeftigen."
+      },
+      "fr": {
+        "q": "Quel est l’esprit essentiel de la zakat ?",
+        "a": "Son esprit essentiel est l’obéissance à Allah, la gratitude et la solidarité avec les nécessiteux."
+      },
+      "ru": {
+        "q": "В чём основной смысл закята?",
+        "a": "Его основа — покорность Аллаху, благодарность и солидарность с нуждающимися."
+      },
+      "ku": {
+        "q": "Ruhê bingehîn ê zekatê çi ye?",
+        "a": "Ruhê wê bingehîn guhdana Allah, spasdarî û hevkarî bi hewcedaran re ye."
+      },
+      "tt": {
+        "q": "Зәкятнең төп рухы нинди?",
+        "a": "Аның нигезе — Аллаһка буйсыну, шөкер һәм мохтаҗлар белән ярдәмләшү."
+      },
+      "ar": {
+        "q": "ما الروح الأساسية للزكاة؟",
+        "a": "روحها الأساسية طاعة الله وشكره والتكافل مع المحتاجين."
+      },
+      "es": {
+        "q": "¿Cuál es el espíritu fundamental del zakat?",
+        "a": "Su esencia es obedecer a Allah, agradecer y solidarizarse con los necesitados."
+      },
+      "it": {
+        "q": "Qual è lo spirito fondamentale della zakat?",
+        "a": "Il suo spirito essenziale è obbedienza ad Allah, gratitudine e solidarietà con i bisognosi."
+      },
+      "pt": {
+        "q": "Qual é o espírito essencial do zakat?",
+        "a": "Seu espírito essencial é obedecer a Allah, agradecer e solidarizar-se com os necessitados."
+      },
+      "ko": {
+        "q": "자카트의 기본 정신은 무엇입니까?",
+        "a": "핵심 정신은 알라께 순종하고 감사하며 어려운 사람과 연대하는 것입니다."
+      },
+      "vi": {
+        "q": "Tinh thần cốt lõi của zakat là gì?",
+        "a": "Tinh thần cốt lõi là vâng phục Allah, biết ơn và đoàn kết với người cần giúp."
+      },
+      "ja": {
+        "q": "ザカートの基本精神は何ですか。",
+        "a": "その核心はアッラーへの服従、感謝、困窮者との連帯です。"
+      },
+      "zh": {
+        "q": "天课的核心精神是什么？",
+        "a": "其核心是服从真主、感恩以及与有需要者互助。"
+      }
+    }
+  ]
+}

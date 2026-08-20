@@ -1,0 +1,1523 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 16,
+  "dayTitle": {
+    "tr": "16. Gün — Hac ve Umre",
+    "en": "Day 16 — Hac ve Umre",
+    "de": "16. Tag — Hac ve Umre"
+  },
+  "daySubtitle": {
+    "tr": "Hac, umre, ihram, Kâbe, Arafat, tavaf ve hac ibadetinin temel esasları",
+    "en": "Hac, umre, ihram, Kâbe, Arafat, tavaf ve hac ibadetinin temel esasları",
+    "de": "Hac, umre, ihram, Kâbe, Arafat, tavaf ve hac ibadetinin temel esasları"
+  },
+  "questions": [
+    {
+      "id": 286,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:97 — https://quran.com/3/97",
+        "📜 Hadis — Sahih Buhârî 1513 — https://sunnah.com/bukhari:1513"
+      ],
+      "tr": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "en": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "de": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "nl": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "fr": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "ru": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "ku": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "tt": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "ar": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "es": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "it": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "pt": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "ko": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "vi": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "ja": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      },
+      "zh": {
+        "q": "Hac nedir?",
+        "a": "Belirli zamanlarda Kâbe ve çevresinde belirli ibadetleri yerine getirmektir."
+      }
+    },
+    {
+      "id": 287,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:97 — https://quran.com/3/97",
+        "📜 Hadis — Sahih Buhârî 1513 — https://sunnah.com/bukhari:1513"
+      ],
+      "tr": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "en": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "de": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "nl": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "fr": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "ru": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "ku": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "tt": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "ar": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "es": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "it": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "pt": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "ko": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "vi": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "ja": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      },
+      "zh": {
+        "q": "Hac kime farzdır?",
+        "a": "Maddi ve bedeni imkânı bulunan, şartlarını taşıyan Müslümana farzdır."
+      }
+    },
+    {
+      "id": 288,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Bakara 2:196 — https://quran.com/2/196",
+        "📜 Hadis — Sahih Buhârî 1773 — https://sunnah.com/bukhari:1773"
+      ],
+      "tr": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "en": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "de": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "nl": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "fr": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "ru": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "ku": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "tt": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "ar": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "es": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "it": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "pt": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "ko": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "vi": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "ja": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      },
+      "zh": {
+        "q": "Umre nedir?",
+        "a": "Hac mevsimi dışında da yapılabilen ziyaret ve ibadetlerden oluşur."
+      }
+    },
+    {
+      "id": 289,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Bakara 2:196 — https://quran.com/2/196",
+        "📜 Hadis — Sahih Müslim 1218a — https://sunnah.com/muslim:1218a"
+      ],
+      "tr": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "en": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "de": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "nl": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "fr": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "ru": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "ku": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "tt": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "ar": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "es": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "it": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "pt": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "ko": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "vi": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "ja": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      },
+      "zh": {
+        "q": "İhram nedir?",
+        "a": "Hac veya umre niyetiyle girilen özel ibadet hâli ve buna bağlı hükümlerdir."
+      }
+    },
+    {
+      "id": 290,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Bakara 2:125 — https://quran.com/2/125",
+        "📖 Kur’an — Âl-i İmrân 3:97 — https://quran.com/3/97"
+      ],
+      "tr": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "en": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "de": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "nl": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "fr": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "ru": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "ku": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "tt": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "ar": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "es": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "it": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "pt": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "ko": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "vi": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "ja": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      },
+      "zh": {
+        "q": "Kâbe nedir?",
+        "a": "Mekke’de bulunan ve Müslümanların namazda yöneldiği kutsal yapıdır."
+      }
+    },
+    {
+      "id": 291,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Bakara 2:125 — https://quran.com/2/125",
+        "📜 Hadis — Sahih Müslim 1218a — https://sunnah.com/muslim:1218a"
+      ],
+      "tr": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "en": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "de": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "nl": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "fr": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "ru": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "ku": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "tt": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "ar": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "es": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "it": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "pt": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "ko": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "vi": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "ja": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      },
+      "zh": {
+        "q": "Tavaf nedir?",
+        "a": "Kâbe’nin etrafında usulüne uygun şekilde yedi şavt dönmektir."
+      }
+    },
+    {
+      "id": 292,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Bakara 2:158 — https://quran.com/2/158",
+        "📜 Hadis — Sahih Müslim 1218a — https://sunnah.com/muslim:1218a"
+      ],
+      "tr": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "en": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "de": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "nl": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "fr": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "ru": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "ku": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "tt": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "ar": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "es": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "it": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "pt": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "ko": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "vi": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "ja": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      },
+      "zh": {
+        "q": "Sa‘y nedir?",
+        "a": "Safa ile Merve arasında yapılan ibadettir."
+      }
+    },
+    {
+      "id": 293,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Bakara 2:198 — https://quran.com/2/198",
+        "📜 Hadis — Sahih Buhârî 1664 — https://sunnah.com/bukhari:1664"
+      ],
+      "tr": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "en": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "de": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "nl": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "fr": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "ru": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "ku": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "tt": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "ar": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "es": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "it": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "pt": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "ko": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "vi": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "ja": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      },
+      "zh": {
+        "q": "Arafat’ın hacdaki yeri nedir?",
+        "a": "Arafat’ta vakfe haccın temel görevlerindendir."
+      }
+    },
+    {
+      "id": 294,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Bakara 2:198 — https://quran.com/2/198",
+        "📜 Hadis — Sahih Müslim 1218a — https://sunnah.com/muslim:1218a"
+      ],
+      "tr": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "en": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "de": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "nl": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "fr": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "ru": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "ku": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "tt": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "ar": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "es": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "it": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "pt": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "ko": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "vi": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "ja": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      },
+      "zh": {
+        "q": "Müzdelife nedir?",
+        "a": "Hac menasikinden bir bölümün yerine getirildiği Arafat ile Mina arasındaki bölgedir."
+      }
+    },
+    {
+      "id": 295,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Bakara 2:203 — https://quran.com/2/203",
+        "📜 Hadis — Sahih Müslim 1218a — https://sunnah.com/muslim:1218a"
+      ],
+      "tr": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "en": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "de": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "nl": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "fr": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "ru": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "ku": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "tt": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "ar": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "es": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "it": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "pt": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "ko": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "vi": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "ja": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      },
+      "zh": {
+        "q": "Mina nedir?",
+        "a": "Hac sırasında konaklama ve bazı menasikin yerine getirildiği bölgedir."
+      }
+    },
+    {
+      "id": 296,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Bakara 2:197 — https://quran.com/2/197",
+        "📜 Hadis — Sahih Müslim 1218a — https://sunnah.com/muslim:1218a"
+      ],
+      "tr": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac, Kur’an’ın bildirdiği belirli Hicrî aylarda yapılır; hac menasikinin ana günleri Zilhicce’dedir."
+      },
+      "en": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "de": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "nl": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "fr": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "ru": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "ku": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "tt": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "ar": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "es": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "it": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "pt": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "ko": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "vi": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "ja": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      },
+      "zh": {
+        "q": "Hac hangi ayda yapılır?",
+        "a": "Hac belirli Hicrî aylarda yapılır ve ana menasiki Zilhicce’de gerçekleşir."
+      }
+    },
+    {
+      "id": 297,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Hac 22:28 — https://quran.com/22/28",
+        "📜 Hadis — Sahih Buhârî 1773 — https://sunnah.com/bukhari:1773"
+      ],
+      "tr": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "en": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "de": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "nl": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "fr": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "ru": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "ku": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "tt": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "ar": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "es": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "it": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "pt": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "ko": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "vi": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "ja": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      },
+      "zh": {
+        "q": "Haccın amacı nedir?",
+        "a": "Allah’a kulluk, teslimiyet, takva ve ümmet bilincini güçlendirmektir."
+      }
+    },
+    {
+      "id": 298,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Hac 22:27 — https://quran.com/22/27",
+        "📜 Hadis — Sahih Müslim 1218a — https://sunnah.com/muslim:1218a"
+      ],
+      "tr": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "en": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "de": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "nl": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "fr": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "ru": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "ku": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "tt": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "ar": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "es": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "it": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "pt": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "ko": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "vi": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "ja": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      },
+      "zh": {
+        "q": "Hac Müslümanları nasıl birleştirir?",
+        "a": "Farklı milletlerden Müslümanları aynı ibadet etrafında buluşturur."
+      }
+    },
+    {
+      "id": 299,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Bakara 2:197 — https://quran.com/2/197",
+        "📜 Hadis — Sahih Müslim 1218a — https://sunnah.com/muslim:1218a"
+      ],
+      "tr": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "en": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "de": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "nl": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "fr": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "ru": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "ku": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "tt": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "ar": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "es": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "it": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "pt": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "ko": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "vi": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "ja": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      },
+      "zh": {
+        "q": "Hacda ihram yasakları neden vardır?",
+        "a": "İbadetin disiplinini, sabrı ve Allah’a teslimiyeti öğretir."
+      }
+    },
+    {
+      "id": 300,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Hac 22:36–37 — https://quran.com/22/36",
+        "📜 Hadis — Sahih Buhârî 1716 — https://sunnah.com/bukhari:1716"
+      ],
+      "tr": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Kurban Bayramı, Zilhicce’nin 10. gününde başlar ve hac menasikiyle aynı döneme denk gelir; hacdaki kurban (hedy) ibadetiyle de doğrudan bağlantılıdır."
+      },
+      "en": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "de": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "nl": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "fr": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "ru": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "ku": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "tt": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "ar": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "es": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "it": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "pt": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "ko": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "vi": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "ja": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      },
+      "zh": {
+        "q": "Kurban Bayramı hacla nasıl ilişkilidir?",
+        "a": "Zilhicce’nin hac günleri ve Kurban Bayramı aynı dönemde gerçekleşir."
+      }
+    },
+    {
+      "id": 301,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Bakara 2:198 — https://quran.com/2/198",
+        "📜 Hadis — Sahih Müslim 1218a — https://sunnah.com/muslim:1218a"
+      ],
+      "tr": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "en": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "de": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "nl": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "fr": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "ru": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "ku": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "tt": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "ar": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "es": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "it": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "pt": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "ko": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "vi": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "ja": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      },
+      "zh": {
+        "q": "Hacda dua neden önemlidir?",
+        "a": "Hac, dua ve Allah’a yönelişin yoğun olduğu bir ibadettir."
+      }
+    },
+    {
+      "id": 302,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:97 — https://quran.com/3/97",
+        "📜 Hadis — Sahih Buhârî 1773 — https://sunnah.com/bukhari:1773"
+      ],
+      "tr": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "en": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "de": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "nl": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "fr": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "ru": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "ku": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "tt": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "ar": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "es": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "it": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "pt": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "ko": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "vi": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "ja": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      },
+      "zh": {
+        "q": "Umre hac yerine geçer mi?",
+        "a": "Umre, hac ibadetinin yerine geçmez; ayrı bir ibadettir."
+      }
+    },
+    {
+      "id": 303,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Bakara 2:198 — https://quran.com/2/198",
+        "📜 Hadis — Sahih Buhârî 1664 — https://sunnah.com/bukhari:1664"
+      ],
+      "tr": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "en": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "de": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "nl": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "fr": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "ru": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "ku": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "tt": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "ar": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "es": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "it": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "pt": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "ko": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "vi": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "ja": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      },
+      "zh": {
+        "q": "Hacda vakfe nedir?",
+        "a": "Arafat’ta belirli zaman içinde bulunmaktır."
+      }
+    },
+    {
+      "id": 304,
+      "day": 16,
+      "sources": [
+        "📖 Kur’an — Hac 22:28 — https://quran.com/22/28",
+        "📜 Hadis — Sahih Buhârî 1671 — https://sunnah.com/bukhari:1671"
+      ],
+      "tr": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "en": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "de": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "nl": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "fr": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "ru": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "ku": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "tt": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "ar": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "es": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "it": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "pt": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "ko": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "vi": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "ja": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      },
+      "zh": {
+        "q": "Hacdan alınacak temel ders nedir?",
+        "a": "Tevhid, teslimiyet, sabır, kardeşlik ve Allah’a yöneliştir."
+      }
+    }
+  ]
+}

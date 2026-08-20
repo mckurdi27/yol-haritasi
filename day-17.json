@@ -1,0 +1,1523 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 17,
+  "dayTitle": {
+    "tr": "17. Gün — Helâl ve Haram",
+    "en": "Day 17 — Halal and Haram",
+    "de": "17. Tag — Halal und Haram"
+  },
+  "daySubtitle": {
+    "tr": "Helâl, haram, şüpheli şeyler, temiz kazanç, ticaret, yiyecekler ve günlük hayatta İslâmî ölçüler",
+    "en": "Halal, haram, doubtful matters, lawful income, trade, food, and Islamic guidance in daily life",
+    "de": "Halal, haram, zweifelhafte Dinge, rechtmäßiger Erwerb, Handel, Lebensmittel und islamische Maßstäbe im Alltag"
+  },
+  "questions": [
+    {
+      "id": 305,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Bakara 2:168 — https://quran.com/2/168",
+        "📚 Hadis — Sahih Müslim 1599a — https://sunnah.com/muslim:1599a"
+      ],
+      "tr": {
+        "q": "Helâl ne demektir?",
+        "a": "Helâl, dinin yapılmasına izin verdiği ve meşru kabul ettiği şeydir."
+      },
+      "en": {
+        "q": "What does halal mean?",
+        "a": "Halal means something that Islam permits and considers lawful."
+      },
+      "de": {
+        "q": "Was bedeutet halal?",
+        "a": "Halal bedeutet etwas, das der Islam erlaubt und als rechtmäßig anerkennt."
+      },
+      "nl": {
+        "q": "Wat betekent halal?",
+        "a": "Halal betekent iets wat de islam toestaat en als toegestaan beschouwt."
+      },
+      "fr": {
+        "q": "Que signifie halal ?",
+        "a": "Halal désigne ce que l’islam autorise et considère comme licite."
+      },
+      "ru": {
+        "q": "Что означает «халяль»?",
+        "a": "Халяль — это то, что ислам разрешает и считает дозволенным."
+      },
+      "ku": {
+        "q": "Halal çi ye?",
+        "a": "Halal ew e ku Îslam destûrê dide û wekî tiştekî rewa qebûl dike."
+      },
+      "tt": {
+        "q": "Хәләл нәрсә дигән сүз?",
+        "a": "Хәләл — Ислам рөхсәт иткән һәм дөрес дип таныган нәрсә."
+      },
+      "ar": {
+        "q": "مَاذَا يَعْنِي الْحَلَالُ؟",
+        "a": "الْحَلَالُ هُوَ مَا أَبَاحَهُ الْإِسْلَامُ وَاعْتَبَرَهُ مَشْرُوعًا."
+      },
+      "es": {
+        "q": "¿Qué significa halal?",
+        "a": "Halal es aquello que el islam permite y considera lícito."
+      },
+      "it": {
+        "q": "Che cosa significa halal?",
+        "a": "Halal indica ciò che l’Islam permette e considera lecito."
+      },
+      "pt": {
+        "q": "O que significa halal?",
+        "a": "Halal é aquilo que o Islão permite e considera lícito."
+      },
+      "ko": {
+        "q": "할랄은 무슨 뜻인가요?",
+        "a": "할랄은 이슬람에서 허용하고 합법적인 것으로 여기는 것을 뜻합니다."
+      },
+      "vi": {
+        "q": "Halal nghĩa là gì?",
+        "a": "Halal là những gì Hồi giáo cho phép và coi là hợp pháp."
+      },
+      "ja": {
+        "q": "ハラールとは何ですか？",
+        "a": "ハラールとは、イスラームが許可し、適法と認めるものです。"
+      },
+      "zh": {
+        "q": "“清真”是什么意思？",
+        "a": "清真是指伊斯兰允许并认可为合法的事物。"
+      }
+    },
+    {
+      "id": 306,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Mâide 5:3 — https://quran.com/5/3",
+        "📖 Kur’an — A‘râf 7:33 — https://quran.com/7/33"
+      ],
+      "tr": {
+        "q": "Haram ne demektir?",
+        "a": "Haram, dinin kesin olarak yasakladığı şeydir."
+      },
+      "en": {
+        "q": "What does haram mean?",
+        "a": "Haram means something that Islam expressly forbids."
+      },
+      "de": {
+        "q": "Was bedeutet haram?",
+        "a": "Haram bedeutet etwas, das der Islam ausdrücklich verbietet."
+      },
+      "nl": {
+        "q": "Wat betekent haram?",
+        "a": "Haram betekent iets wat de islam uitdrukkelijk verbiedt."
+      },
+      "fr": {
+        "q": "Que signifie haram ?",
+        "a": "Haram désigne ce que l’islam interdit clairement."
+      },
+      "ru": {
+        "q": "Что означает «харам»?",
+        "a": "Харам — это то, что ислам однозначно запрещает."
+      },
+      "ku": {
+        "q": "Haram çi ye?",
+        "a": "Haram ew e ku Îslam bi eşkere qedexe dike."
+      },
+      "tt": {
+        "q": "Хәрәм нәрсә дигән сүз?",
+        "a": "Хәрәм — Ислам ачык рәвештә тыйган нәрсә."
+      },
+      "ar": {
+        "q": "مَاذَا يَعْنِي الْحَرَامُ؟",
+        "a": "الْحَرَامُ هُوَ مَا حَرَّمَهُ الْإِسْلَامُ حَظْرًا صَرِيحًا."
+      },
+      "es": {
+        "q": "¿Qué significa haram?",
+        "a": "Haram es aquello que el islam prohíbe expresamente."
+      },
+      "it": {
+        "q": "Che cosa significa haram?",
+        "a": "Haram indica ciò che l’Islam vieta esplicitamente."
+      },
+      "pt": {
+        "q": "O que significa haram?",
+        "a": "Haram é aquilo que o Islão proíbe expressamente."
+      },
+      "ko": {
+        "q": "하람은 무슨 뜻인가요?",
+        "a": "하람은 이슬람에서 명확하게 금지한 것을 뜻합니다."
+      },
+      "vi": {
+        "q": "Haram nghĩa là gì?",
+        "a": "Haram là những gì Hồi giáo nghiêm cấm."
+      },
+      "ja": {
+        "q": "ハラームとは何ですか？",
+        "a": "ハラームとは、イスラームが明確に禁じているものです。"
+      },
+      "zh": {
+        "q": "“非法”在伊斯兰中是什么意思？",
+        "a": "哈拉姆是指伊斯兰明确禁止的事物。"
+      }
+    },
+    {
+      "id": 307,
+      "day": 17,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 52 — https://sunnah.com/bukhari:52",
+        "📚 Hadis — Sahih Müslim 1599a — https://sunnah.com/muslim:1599a"
+      ],
+      "tr": {
+        "q": "Şüpheli şeyler nedir?",
+        "a": "Şüpheli şeyler, helâl veya haram olduğu açıkça belli olmayan ve hükmü konusunda tereddüt bulunan şeylerdir."
+      },
+      "en": {
+        "q": "What are doubtful matters?",
+        "a": "Doubtful matters are things whose halal or haram status is not clearly known."
+      },
+      "de": {
+        "q": "Was sind zweifelhafte Dinge?",
+        "a": "Zweifelhafte Dinge sind Angelegenheiten, deren Erlaubtheit oder Verbot nicht eindeutig ist."
+      },
+      "nl": {
+        "q": "Wat zijn twijfelachtige zaken?",
+        "a": "Twijfelachtige zaken zijn zaken waarvan niet duidelijk is of ze halal of haram zijn."
+      },
+      "fr": {
+        "q": "Que sont les choses douteuses ?",
+        "a": "Ce sont des choses dont le caractère licite ou illicite n’est pas clairement établi."
+      },
+      "ru": {
+        "q": "Что такое сомнительные вещи?",
+        "a": "Это то, о чём неясно, дозволено оно или запрещено."
+      },
+      "ku": {
+        "q": "Tiştên gumanbar çi ne?",
+        "a": "Ew tişt in ku ne helal ne jî harambûna wan bi zelalî nayê zanîn."
+      },
+      "tt": {
+        "q": "Шикле әйберләр нәрсә ул?",
+        "a": "Бу — хәләлме, хәраммы икәне ачык булмаган нәрсәләр."
+      },
+      "ar": {
+        "q": "مَا هِيَ الشُّبُهَاتُ؟",
+        "a": "هِيَ الْأُمُورُ الَّتِي لَا يَتَبَيَّنُ بوضوحٍ أَهِيَ حَلَالٌ أَمْ حَرَامٌ."
+      },
+      "es": {
+        "q": "¿Qué son los asuntos dudosos?",
+        "a": "Son asuntos cuyo carácter lícito o ilícito no está claro."
+      },
+      "it": {
+        "q": "Che cosa sono le questioni dubbie?",
+        "a": "Sono questioni il cui carattere lecito o illecito non è chiaro."
+      },
+      "pt": {
+        "q": "O que são coisas duvidosas?",
+        "a": "São coisas cujo caráter lícito ou ilícito não está claro."
+      },
+      "ko": {
+        "q": "의심스러운 일은 무엇인가요?",
+        "a": "할랄인지 하람인지 분명하지 않은 일을 말합니다."
+      },
+      "vi": {
+        "q": "Những điều đáng ngờ là gì?",
+        "a": "Đó là những điều chưa rõ là halal hay haram."
+      },
+      "ja": {
+        "q": "疑わしい事柄とは何ですか？",
+        "a": "ハラールかハラームかが明確でない事柄です。"
+      },
+      "zh": {
+        "q": "可疑的事情是什么？",
+        "a": "是指不能明确判断为合法还是禁忌的事情。"
+      }
+    },
+    {
+      "id": 308,
+      "day": 17,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 52 — https://sunnah.com/bukhari:52",
+        "📚 Hadis — Sahih Müslim 1599a — https://sunnah.com/muslim:1599a"
+      ],
+      "tr": {
+        "q": "Şüpheli şeylerden kaçınmanın faydası nedir?",
+        "a": "Şüpheli şeylerden kaçınmak insanın dinini ve onurunu korumasına yardımcı olur."
+      },
+      "en": {
+        "q": "What is the benefit of avoiding doubtful matters?",
+        "a": "Avoiding doubtful matters helps a person protect their faith and dignity."
+      },
+      "de": {
+        "q": "Welchen Nutzen hat es, Zweifelhaftes zu meiden?",
+        "a": "Das Meiden zweifelhafter Dinge hilft, Glauben und Würde zu schützen."
+      },
+      "nl": {
+        "q": "Wat is het voordeel van het vermijden van twijfelachtige zaken?",
+        "a": "Het helpt iemands geloof en waardigheid te beschermen."
+      },
+      "fr": {
+        "q": "Quel est l’avantage d’éviter les choses douteuses ?",
+        "a": "Cela aide à préserver la foi et la dignité de la personne."
+      },
+      "ru": {
+        "q": "Какова польза избегать сомнительного?",
+        "a": "Это помогает человеку сохранять веру и достоинство."
+      },
+      "ku": {
+        "q": "Çi feydeya dûrketina ji tiştên gumanbar e?",
+        "a": "Ew alîkarî dike ku mirov bawerî û rûmeta xwe biparêze."
+      },
+      "tt": {
+        "q": "Шикле нәрсәләрдән тыелуның файдасы нинди?",
+        "a": "Бу кешенең иманын һәм дәрәҗәсен сакларга ярдәм итә."
+      },
+      "ar": {
+        "q": "مَا فَائِدَةُ اجْتِنَابِ الشُّبُهَاتِ؟",
+        "a": "يُسَاعِدُ ذَلِكَ عَلَى حِفْظِ الدِّينِ وَالْكَرَامَةِ."
+      },
+      "es": {
+        "q": "¿Qué beneficio tiene evitar los asuntos dudosos?",
+        "a": "Ayuda a proteger la fe y la dignidad de la persona."
+      },
+      "it": {
+        "q": "Qual è il beneficio di evitare le questioni dubbie?",
+        "a": "Aiuta a proteggere la fede e la dignità della persona."
+      },
+      "pt": {
+        "q": "Qual é o benefício de evitar coisas duvidosas?",
+        "a": "Ajuda a proteger a fé e a dignidade da pessoa."
+      },
+      "ko": {
+        "q": "의심스러운 일을 피하면 어떤 유익이 있나요?",
+        "a": "신앙과 품위를 지키는 데 도움이 됩니다."
+      },
+      "vi": {
+        "q": "Lợi ích của việc tránh những điều đáng ngờ là gì?",
+        "a": "Điều đó giúp bảo vệ đức tin và phẩm giá của một người."
+      },
+      "ja": {
+        "q": "疑わしい事柄を避ける利点は何ですか？",
+        "a": "信仰と尊厳を守る助けになります。"
+      },
+      "zh": {
+        "q": "避免可疑事情有什么好处？",
+        "a": "这有助于保护一个人的信仰和尊严。"
+      }
+    },
+    {
+      "id": 309,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Bakara 2:168 — https://quran.com/2/168",
+        "📖 Kur’an — Nisâ 4:29 — https://quran.com/4/29"
+      ],
+      "tr": {
+        "q": "Helâl kazanç neden önemlidir?",
+        "a": "Helâl kazanç, kişinin geçimini meşru yollarla sağlamasını ve başkasının hakkına girmemesini hedefler."
+      },
+      "en": {
+        "q": "Why is halal income important?",
+        "a": "Halal income means earning one’s livelihood through lawful means and avoiding the rights of others."
+      },
+      "de": {
+        "q": "Warum ist halal verdientes Einkommen wichtig?",
+        "a": "Es bedeutet, den Lebensunterhalt auf erlaubte Weise zu verdienen und die Rechte anderer nicht zu verletzen."
+      },
+      "nl": {
+        "q": "Waarom is halal inkomen belangrijk?",
+        "a": "Halal inkomen betekent je levensonderhoud op geoorloofde wijze verdienen en de rechten van anderen niet schenden."
+      },
+      "fr": {
+        "q": "Pourquoi un revenu halal est-il important ?",
+        "a": "Un revenu halal consiste à gagner sa vie par des moyens licites et à ne pas porter atteinte aux droits d’autrui."
+      },
+      "ru": {
+        "q": "Почему важен дозволенный (халяльный) доход?",
+        "a": "Это означает зарабатывать на жизнь дозволенными способами и не нарушать права других."
+      },
+      "ku": {
+        "q": "Çima dahata helal girîng e?",
+        "a": "Wateya wê ew e ku mirov bi rêyên rewa debara xwe bike û mafê kesên din nebinpêje."
+      },
+      "tt": {
+        "q": "Хәләл табыш ни өчен мөһим?",
+        "a": "Бу ризык һәм тормыш чыгымнарын рөхсәт ителгән юллар белән табу һәм башкаларның хокукларын бозмау дигән сүз."
+      },
+      "ar": {
+        "q": "لِمَاذَا الدَّخْلُ الْحَلَالُ مُهِمٌّ؟",
+        "a": "يَعْنِي كَسْبَ الرِّزْقِ بِطُرُقٍ مَشْرُوعَةٍ وَعَدَمَ الِاعْتِدَاءِ عَلَى حُقُوقِ الْآخَرِينَ."
+      },
+      "es": {
+        "q": "¿Por qué es importante el ingreso halal?",
+        "a": "Significa ganarse la vida por medios lícitos y respetar los derechos ajenos."
+      },
+      "it": {
+        "q": "Perché è importante un reddito halal?",
+        "a": "Significa guadagnarsi da vivere con mezzi leciti e rispettare i diritti degli altri."
+      },
+      "pt": {
+        "q": "Por que a renda halal é importante?",
+        "a": "Significa ganhar o sustento por meios lícitos e respeitar os direitos dos outros."
+      },
+      "ko": {
+        "q": "할랄 소득은 왜 중요한가요?",
+        "a": "허용된 방법으로 생계를 얻고 다른 사람의 권리를 침해하지 않는 것을 뜻합니다."
+      },
+      "vi": {
+        "q": "Vì sao thu nhập halal quan trọng?",
+        "a": "Đó là kiếm sống bằng cách hợp pháp và không xâm phạm quyền lợi của người khác."
+      },
+      "ja": {
+        "q": "ハラールな収入はなぜ重要ですか？",
+        "a": "合法的な方法で生計を得、他人の権利を侵害しないことを意味します。"
+      },
+      "zh": {
+        "q": "为什么清真收入很重要？",
+        "a": "这意味着通过合法方式谋生，并不侵犯他人的权利。"
+      }
+    },
+    {
+      "id": 310,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Bakara 2:275 — https://quran.com/2/275",
+        "📖 Kur’an — Bakara 2:278–279 — https://quran.com/2/278"
+      ],
+      "tr": {
+        "q": "Faiz nedir ve İslâm neden yasaklar?",
+        "a": "Faiz, borç veya alışverişte dinen yasaklanan haksız artıştır; Kur’an ribâyı açıkça yasaklar."
+      },
+      "en": {
+        "q": "What is interest (riba), and why is it prohibited in Islam?",
+        "a": "Riba is a prohibited increase in lending or financial transactions; the Qur’an explicitly forbids it."
+      },
+      "de": {
+        "q": "Was ist Zins (Riba) und warum ist er im Islam verboten?",
+        "a": "Riba ist ein religiös verbotener Mehrbetrag bei Darlehen oder Finanzgeschäften; der Koran verbietet ihn ausdrücklich."
+      },
+      "nl": {
+        "q": "Wat is rente (riba) en waarom is die verboden?",
+        "a": "Riba is een verboden vermeerdering bij leningen of financiële transacties; de Koran verbiedt dit uitdrukkelijk."
+      },
+      "fr": {
+        "q": "Qu’est-ce que l’intérêt (riba) et pourquoi est-il interdit ?",
+        "a": "Le riba est une augmentation interdite dans les prêts ou les transactions financières ; le Coran l’interdit explicitement."
+      },
+      "ru": {
+        "q": "Что такое риба и почему она запрещена?",
+        "a": "Это запрещённая прибавка в займах или финансовых сделках; Коран прямо запрещает её."
+      },
+      "ku": {
+        "q": "Faîz (riba) çi ye û çima qedexe ye?",
+        "a": "Riba zêdebûnek qedexekirî di deyn û danûstendinên darayî de ye; Qur’an ew bi eşkere qedexe dike."
+      },
+      "tt": {
+        "q": "Риба нәрсә ул һәм ни өчен тыелган?",
+        "a": "Риба — бурычта яки финанс эшләрендә тыелган өстәмә; Коръән аны ачык тыя."
+      },
+      "ar": {
+        "q": "مَا هُوَ الرِّبَا وَلِمَاذَا هُوَ مُحَرَّمٌ؟",
+        "a": "الرِّبَا زِيَادَةٌ مُحَرَّمَةٌ فِي الْقُرُوضِ أَوِ الْمُعَامَلَاتِ الْمَالِيَّةِ، وَقَدْ حَرَّمَهُ الْقُرْآنُ صَرَاحَةً."
+      },
+      "es": {
+        "q": "¿Qué es el interés (riba) y por qué está prohibido?",
+        "a": "Es un incremento prohibido en préstamos o transacciones financieras; el Corán lo prohíbe expresamente."
+      },
+      "it": {
+        "q": "Che cos’è l’interesse (riba) e perché è vietato?",
+        "a": "È un aumento vietato nei prestiti o nelle transazioni finanziarie; il Corano lo proibisce esplicitamente."
+      },
+      "pt": {
+        "q": "O que é juros (riba) e por que são proibidos?",
+        "a": "É um acréscimo proibido em empréstimos ou transações financeiras; o Alcorão o proíbe claramente."
+      },
+      "ko": {
+        "q": "이자(리바)는 무엇이며 왜 금지되나요?",
+        "a": "대출이나 금융 거래에서 금지된 추가 이익을 말하며 꾸란은 이를 명확히 금지합니다."
+      },
+      "vi": {
+        "q": "Lãi suất (riba) là gì và vì sao bị cấm?",
+        "a": "Đó là khoản tăng thêm bị cấm trong cho vay hoặc giao dịch tài chính; Kinh Qur’an cấm rõ ràng."
+      },
+      "ja": {
+        "q": "利子（リバー）とは何で、なぜ禁止されていますか？",
+        "a": "貸付や金融取引で禁じられた上乗せを指し、クルアーンはそれを明確に禁じています。"
+      },
+      "zh": {
+        "q": "利息（里巴）是什么？为什么被禁止？",
+        "a": "它是借贷或金融交易中被禁止的额外增加；《古兰经》明确禁止里巴。"
+      }
+    },
+    {
+      "id": 311,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Mutaffifîn 83:1–3 — https://quran.com/83/1",
+        "📚 Hadis — Sahih Buhârî 2079 — https://sunnah.com/bukhari:2079"
+      ],
+      "tr": {
+        "q": "Ticarette dürüstlük neden önemlidir?",
+        "a": "Dürüst ticaret güveni korur, haksız kazancı önler ve insanların haklarına saygı göstermeyi sağlar."
+      },
+      "en": {
+        "q": "Why is honesty important in trade?",
+        "a": "Honest trade builds trust, prevents unjust gain, and respects people’s rights."
+      },
+      "de": {
+        "q": "Warum ist Ehrlichkeit im Handel wichtig?",
+        "a": "Ehrlicher Handel schafft Vertrauen, verhindert unrechtmäßigen Gewinn und achtet die Rechte anderer."
+      },
+      "nl": {
+        "q": "Waarom is eerlijkheid in de handel belangrijk?",
+        "a": "Eerlijke handel bouwt vertrouwen op, voorkomt onrechtmatige winst en respecteert de rechten van mensen."
+      },
+      "fr": {
+        "q": "Pourquoi l’honnêteté est-elle importante dans le commerce ?",
+        "a": "Le commerce honnête établit la confiance, empêche le gain injuste et respecte les droits des personnes."
+      },
+      "ru": {
+        "q": "Почему честность важна в торговле?",
+        "a": "Она создаёт доверие, предотвращает несправедливую прибыль и защищает права людей."
+      },
+      "ku": {
+        "q": "Çima rastgoî di bazirganiyê de girîng e?",
+        "a": "Ew bawerî ava dike, qezenca neheq asteng dike û mafên mirovan diparêze."
+      },
+      "tt": {
+        "q": "Сәүдәдә намуслылык ни өчен мөһим?",
+        "a": "Ул ышаныч тудыра, гадел булмаган табышны булдырмый һәм кешеләрнең хокукларын хөрмәт итә."
+      },
+      "ar": {
+        "q": "لِمَاذَا الصِّدْقُ مُهِمٌّ فِي التِّجَارَةِ؟",
+        "a": "لِأَنَّهُ يَبْنِي الثِّقَةَ وَيَمْنَعُ الرِّبْحَ غَيْرَ الْعَادِلِ وَيَحْفَظُ حُقُوقَ النَّاسِ."
+      },
+      "es": {
+        "q": "¿Por qué es importante la honestidad en el comercio?",
+        "a": "Genera confianza, evita ganancias injustas y respeta los derechos de las personas."
+      },
+      "it": {
+        "q": "Perché l’onestà è importante nel commercio?",
+        "a": "Costruisce fiducia, evita guadagni ingiusti e rispetta i diritti delle persone."
+      },
+      "pt": {
+        "q": "Por que a honestidade é importante no comércio?",
+        "a": "Gera confiança, evita ganhos injustos e respeita os direitos das pessoas."
+      },
+      "ko": {
+        "q": "거래에서 정직이 왜 중요한가요?",
+        "a": "신뢰를 만들고 부당한 이익을 막으며 사람들의 권리를 존중하게 합니다."
+      },
+      "vi": {
+        "q": "Vì sao trung thực quan trọng trong buôn bán?",
+        "a": "Nó tạo niềm tin, ngăn lợi nhuận bất chính và tôn trọng quyền của mọi người."
+      },
+      "ja": {
+        "q": "商取引で正直さが重要なのはなぜですか？",
+        "a": "信頼を築き、不当な利益を防ぎ、人々の権利を尊重するからです。"
+      },
+      "zh": {
+        "q": "为什么商业中的诚实很重要？",
+        "a": "诚实交易建立信任，防止不公正获利，并尊重他人的权利。"
+      }
+    },
+    {
+      "id": 312,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Mutaffifîn 83:1–3 — https://quran.com/83/1",
+        "📖 Kur’an — Hûd 11:85 — https://quran.com/11/85"
+      ],
+      "tr": {
+        "q": "Ölçü ve tartıda hile yapmak neden haramdır?",
+        "a": "Çünkü başkasının hakkını eksiltmek ve haksız kazanç elde etmek anlamına gelir."
+      },
+      "en": {
+        "q": "Why is cheating in weights and measures haram?",
+        "a": "Because it means reducing another person’s due and gaining unfairly."
+      },
+      "de": {
+        "q": "Warum ist Betrug bei Maß und Gewicht haram?",
+        "a": "Weil dadurch der Anspruch eines anderen geschmälert und unrechtmäßiger Gewinn erzielt wird."
+      },
+      "nl": {
+        "q": "Waarom is bedrog met maten en gewichten haram?",
+        "a": "Omdat het betekent dat iemand anders minder krijgt dan hem toekomt en er onrechtmatige winst wordt gemaakt."
+      },
+      "fr": {
+        "q": "Pourquoi tricher sur les mesures et les poids est-il haram ?",
+        "a": "Parce que cela consiste à diminuer le droit d’autrui et à obtenir un gain injuste."
+      },
+      "ru": {
+        "q": "Почему обман в мерах и весах является харамом?",
+        "a": "Потому что он уменьшает право другого человека и приносит несправедливую выгоду."
+      },
+      "ku": {
+        "q": "Çima di pîvan û giraniyê de xapandin haram e?",
+        "a": "Ji ber ku mafê kesekî din kêm dike û qezenceya neheq çêdike."
+      },
+      "tt": {
+        "q": "Үлчәүдә һәм үлчәмдә алдау ни өчен хәрам?",
+        "a": "Чөнки ул башка кешенең хакын киметә һәм гадел булмаган табыш китерә."
+      },
+      "ar": {
+        "q": "لِمَاذَا الْغِشُّ فِي الْمِيزَانِ وَالْمِكْيَالِ حَرَامٌ؟",
+        "a": "لِأَنَّهُ يَنْقُصُ حَقَّ الْآخَرِ وَيُحَقِّقُ كَسْبًا غَيْرَ عَادِلٍ."
+      },
+      "es": {
+        "q": "¿Por qué es haram engañar en pesos y medidas?",
+        "a": "Porque reduce el derecho de otra persona y produce una ganancia injusta."
+      },
+      "it": {
+        "q": "Perché è haram imbrogliare su pesi e misure?",
+        "a": "Perché significa ridurre ciò che spetta a un’altra persona e ottenere un guadagno ingiusto."
+      },
+      "pt": {
+        "q": "Por que fraudar pesos e medidas é haram?",
+        "a": "Porque reduz o direito de outra pessoa e gera ganho injusto."
+      },
+      "ko": {
+        "q": "저울과 분량을 속이는 것이 왜 하람인가요?",
+        "a": "다른 사람의 정당한 몫을 줄이고 부당한 이익을 얻기 때문입니다."
+      },
+      "vi": {
+        "q": "Vì sao gian lận cân đo là haram?",
+        "a": "Vì làm giảm phần đáng được hưởng của người khác và tạo lợi ích bất công."
+      },
+      "ja": {
+        "q": "計量や重量をごまかすことがなぜハラームなのですか？",
+        "a": "他人の正当な取り分を減らし、不当な利益を得ることになるからです。"
+      },
+      "zh": {
+        "q": "为什么在度量衡上作弊属于非法？",
+        "a": "因为这会减少他人应得的权益，并取得不公正的利益。"
+      }
+    },
+    {
+      "id": 313,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Bakara 2:188 — https://quran.com/2/188",
+        "📚 Hadis — Sünen Ebû Dâvûd 3580 — https://sunnah.com/abudawud:3580"
+      ],
+      "tr": {
+        "q": "Rüşvet nedir?",
+        "a": "Rüşvet, hak etmediği bir menfaati elde etmek veya bir hakkı haksız biçimde değiştirmek için verilen menfaattir."
+      },
+      "en": {
+        "q": "What is bribery?",
+        "a": "Bribery is a benefit offered to obtain an undeserved advantage or to unjustly influence a right."
+      },
+      "de": {
+        "q": "Was ist Bestechung?",
+        "a": "Bestechung ist ein Vorteil, der gegeben wird, um einen unverdienten Vorteil zu erhalten oder ein Recht unrechtmäßig zu beeinflussen."
+      },
+      "nl": {
+        "q": "Wat is omkoping?",
+        "a": "Omkoping is een voordeel dat wordt gegeven om een onverdiend voordeel te krijgen of een recht onrechtmatig te beïnvloeden."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la corruption ?",
+        "a": "La corruption est un avantage donné pour obtenir un privilège immérité ou influencer injustement un droit."
+      },
+      "ru": {
+        "q": "Что такое взятка?",
+        "a": "Это выгода, предлагаемая для получения незаслуженного преимущества или несправедливого влияния на право."
+      },
+      "ku": {
+        "q": "Rüşwet çi ye?",
+        "a": "Ew menfeetek e ku ji bo qezenca neheq an bandorkirina neheq a mafekî tê dayîn."
+      },
+      "tt": {
+        "q": "Ришвәт нәрсә ул?",
+        "a": "Ришвәт — лаек булмаган өстенлек алу яки хокукка гаделсез йогынты ясау өчен бирелгән файда."
+      },
+      "ar": {
+        "q": "مَا هِيَ الرِّشْوَةُ؟",
+        "a": "هِيَ مَنْفَعَةٌ تُقَدَّمُ لِلْحُصُولِ عَلَى مَزِيَّةٍ لَا يَسْتَحِقُّهَا الشَّخْصُ أَوْ لِلتَّأْثِيرِ فِي حَقٍّ بِغَيْرِ حَقٍّ."
+      },
+      "es": {
+        "q": "¿Qué es el soborno?",
+        "a": "Es un beneficio ofrecido para obtener una ventaja no merecida o influir injustamente en un derecho."
+      },
+      "it": {
+        "q": "Che cos’è la corruzione?",
+        "a": "È un vantaggio offerto per ottenere un privilegio non meritato o influenzare ingiustamente un diritto."
+      },
+      "pt": {
+        "q": "O que é suborno?",
+        "a": "É um benefício oferecido para obter vantagem indevida ou influenciar injustamente um direito."
+      },
+      "ko": {
+        "q": "뇌물이란 무엇인가요?",
+        "a": "받을 자격이 없는 이익을 얻거나 권리를 부당하게 바꾸기 위해 제공하는 이익입니다."
+      },
+      "vi": {
+        "q": "Hối lộ là gì?",
+        "a": "Là lợi ích được đưa để có được đặc quyền không xứng đáng hoặc tác động bất công đến một quyền."
+      },
+      "ja": {
+        "q": "賄賂とは何ですか？",
+        "a": "不当な利益を得たり、権利を不正に動かしたりするために与える利益です。"
+      },
+      "zh": {
+        "q": "贿赂是什么？",
+        "a": "为了取得不应得的利益或不公正地影响某项权利而提供的利益。"
+      }
+    },
+    {
+      "id": 314,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Nisâ 4:58 — https://quran.com/4/58",
+        "📚 Hadis — Sahih Buhârî 33 — https://sunnah.com/bukhari:33"
+      ],
+      "tr": {
+        "q": "Emanet nedir?",
+        "a": "Emanet, korunması veya yerine getirilmesi kişiye bırakılan haktır, maldır veya sorumluluktur."
+      },
+      "en": {
+        "q": "What is a trust (amanah)?",
+        "a": "A trust is a right, property, or responsibility entrusted to a person to protect or fulfill."
+      },
+      "de": {
+        "q": "Was ist eine anvertraute Verantwortung (Amanah)?",
+        "a": "Eine Amanah ist ein Recht, Eigentum oder eine Verantwortung, die jemandem zum Schutz oder zur Erfüllung anvertraut wird."
+      },
+      "nl": {
+        "q": "Wat is een amanah?",
+        "a": "Een amanah is een recht, bezit of verantwoordelijkheid die aan iemand is toevertrouwd om te bewaren of te vervullen."
+      },
+      "fr": {
+        "q": "Qu’est-ce qu’une amanah ?",
+        "a": "Une amanah est un droit, un bien ou une responsabilité confié à une personne pour être préservé ou accompli."
+      },
+      "ru": {
+        "q": "Что такое аманат?",
+        "a": "Это право, имущество или ответственность, доверенные человеку для сохранения или исполнения."
+      },
+      "ku": {
+        "q": "Emanet çi ye?",
+        "a": "Emanet maf, mal an berpirsiyariyek e ku ji kesekî re tê spartin ku biparêze an bicîh bîne."
+      },
+      "tt": {
+        "q": "Әманәт нәрсә ул?",
+        "a": "Әманәт — саклау яки үтәү өчен кешегә тапшырылган хокук, мал яки җаваплылык."
+      },
+      "ar": {
+        "q": "مَا هِيَ الْأَمَانَةُ؟",
+        "a": "هِيَ حَقٌّ أَوْ مَالٌ أَوْ مَسْؤُولِيَّةٌ تُوَكَّلُ إِلَى شَخْصٍ لِيَحْفَظَهَا أَوْ يُؤَدِّيَهَا."
+      },
+      "es": {
+        "q": "¿Qué es una amanah?",
+        "a": "Es un derecho, bien o responsabilidad confiado a una persona para protegerlo o cumplirlo."
+      },
+      "it": {
+        "q": "Che cos’è un’amanah?",
+        "a": "È un diritto, un bene o una responsabilità affidata a qualcuno da custodire o adempiere."
+      },
+      "pt": {
+        "q": "O que é uma amanah?",
+        "a": "É um direito, bem ou responsabilidade confiado a alguém para guardar ou cumprir."
+      },
+      "ko": {
+        "q": "아마나란 무엇인가요?",
+        "a": "보호하거나 이행하도록 맡겨진 권리, 재산 또는 책임입니다."
+      },
+      "vi": {
+        "q": "Amanah là gì?",
+        "a": "Là quyền, tài sản hoặc trách nhiệm được giao cho một người để bảo vệ hoặc thực hiện."
+      },
+      "ja": {
+        "q": "アマーナとは何ですか？",
+        "a": "守る、または果たすために託された権利、財産、責任のことです。"
+      },
+      "zh": {
+        "q": "什么是阿玛奈？",
+        "a": "指托付给某人保管或履行的权利、财产或责任。"
+      }
+    },
+    {
+      "id": 315,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Bakara 2:168 — https://quran.com/2/168",
+        "📖 Kur’an — Mâide 5:88 — https://quran.com/5/88"
+      ],
+      "tr": {
+        "q": "Helâl yiyecek ne demektir?",
+        "a": "Helâl yiyecek, İslâm’ın yasaklamadığı ve meşru kabul ettiği yiyecektir."
+      },
+      "en": {
+        "q": "What does halal food mean?",
+        "a": "Halal food is food that Islam does not prohibit and regards as lawful."
+      },
+      "de": {
+        "q": "Was bedeutet halal bei Lebensmitteln?",
+        "a": "Halal-Lebensmittel sind Speisen, die der Islam nicht verbietet und als erlaubt anerkennt."
+      },
+      "nl": {
+        "q": "Wat betekent halal voedsel?",
+        "a": "Halal voedsel is voedsel dat de islam niet verbiedt en als toegestaan beschouwt."
+      },
+      "fr": {
+        "q": "Que signifie nourriture halal ?",
+        "a": "Une nourriture halal est une nourriture que l’islam n’interdit pas et considère comme licite."
+      },
+      "ru": {
+        "q": "Что означает халяльная пища?",
+        "a": "Это пища, которую ислам не запрещает и считает дозволенной."
+      },
+      "ku": {
+        "q": "Xwarina helal çi ye?",
+        "a": "Xwarina helal ew xwarin e ku Îslam qedexe nekiriye û rewa qebûl dike."
+      },
+      "tt": {
+        "q": "Хәләл ризык нәрсә ул?",
+        "a": "Хәләл ризык — Ислам тыелмаган һәм рөхсәт ителгән дип санаган ризык."
+      },
+      "ar": {
+        "q": "مَا مَعْنَى الطَّعَامِ الْحَلَالِ؟",
+        "a": "هُوَ الطَّعَامُ الَّذِي لَمْ يُحَرِّمْهُ الْإِسْلَامُ وَاعْتَبَرَهُ مَشْرُوعًا."
+      },
+      "es": {
+        "q": "¿Qué significa comida halal?",
+        "a": "Es comida que el islam no prohíbe y considera lícita."
+      },
+      "it": {
+        "q": "Che cosa significa cibo halal?",
+        "a": "È il cibo che l’Islam non vieta e considera lecito."
+      },
+      "pt": {
+        "q": "O que significa comida halal?",
+        "a": "É a comida que o Islão não proíbe e considera lícita."
+      },
+      "ko": {
+        "q": "할랄 음식은 무엇인가요?",
+        "a": "이슬람이 금지하지 않고 허용하는 음식입니다."
+      },
+      "vi": {
+        "q": "Thực phẩm halal nghĩa là gì?",
+        "a": "Là thực phẩm Hồi giáo không cấm và coi là hợp pháp."
+      },
+      "ja": {
+        "q": "ハラール食品とは何ですか？",
+        "a": "イスラームが禁じておらず、合法と認める食品です。"
+      },
+      "zh": {
+        "q": "清真食品是什么意思？",
+        "a": "指伊斯兰没有禁止并认可为合法的食品。"
+      }
+    },
+    {
+      "id": 316,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Bakara 2:173 — https://quran.com/2/173",
+        "📖 Kur’an — Mâide 5:3 — https://quran.com/5/3"
+      ],
+      "tr": {
+        "q": "Haram yiyeceklere Kur’an’dan örnekler nelerdir?",
+        "a": "Leş, kan, domuz eti ve Allah’tan başkası adına kesilen hayvanlar Kur’an’da haram kılınan yiyeceklere örnektir."
+      },
+      "en": {
+        "q": "What are examples of prohibited foods in the Qur’an?",
+        "a": "Carrion, blood, pork, and animals dedicated to other than Allah are examples."
+      },
+      "de": {
+        "q": "Welche verbotenen Lebensmittel nennt der Koran?",
+        "a": "Aas, Blut, Schweinefleisch und Tiere, die für andere als Allah geschlachtet wurden, sind Beispiele."
+      },
+      "nl": {
+        "q": "Welke verboden voedingsmiddelen noemt de Koran?",
+        "a": "Kadavers, bloed, varkensvlees en dieren die aan anderen dan Allah zijn gewijd, zijn voorbeelden."
+      },
+      "fr": {
+        "q": "Quels aliments interdits le Coran mentionne-t-il ?",
+        "a": "La bête morte, le sang, le porc et les animaux consacrés à autre qu’Allah en sont des exemples."
+      },
+      "ru": {
+        "q": "Какие запрещённые продукты упоминает Коран?",
+        "a": "Падаль, кровь, свинина и животные, посвящённые не Аллаху, являются примерами."
+      },
+      "ku": {
+        "q": "Qur’anê çi xwarinên qedexekirî nimûne dide?",
+        "a": "Mirî, xwîn, goştê beraz û heywanên ku ji bilî Xwedê ji bo kesekî din hatine qetandin nimûne ne."
+      },
+      "tt": {
+        "q": "Коръәндә нинди тыелган ризыклар мисал итеп китерелә?",
+        "a": "Үлек, кан, дуңгыз ите һәм Аллаһтан башка исем белән чалынган хайваннар мисал булып тора."
+      },
+      "ar": {
+        "q": "مَا أَمْثِلَةُ الْأَطْعِمَةِ الْمُحَرَّمَةِ فِي الْقُرْآنِ؟",
+        "a": "مِنْهَا الْمَيْتَةُ وَالدَّمُ وَلَحْمُ الْخِنْزِيرِ وَمَا أُهِلَّ لِغَيْرِ اللَّهِ بِهِ."
+      },
+      "es": {
+        "q": "¿Qué alimentos prohibidos menciona el Corán?",
+        "a": "La carne de animal muerto, la sangre, el cerdo y los animales dedicados a otros que Allah son ejemplos."
+      },
+      "it": {
+        "q": "Quali cibi proibiti sono menzionati nel Corano?",
+        "a": "Carne di animale morto, sangue, carne di maiale e animali dedicati ad altri oltre ad Allah."
+      },
+      "pt": {
+        "q": "Quais alimentos proibidos são mencionados no Alcorão?",
+        "a": "Carniça, sangue, carne de porco e animais dedicados a outros além de Allah são exemplos."
+      },
+      "ko": {
+        "q": "꾸란에서 금지된 음식의 예는 무엇인가요?",
+        "a": "죽은 짐승, 피, 돼지고기와 알라 외의 이름으로 바친 동물이 예입니다."
+      },
+      "vi": {
+        "q": "Kinh Qur’an nêu những thực phẩm bị cấm nào?",
+        "a": "Xác chết, máu, thịt lợn và động vật được hiến cho ai khác ngoài Allah là những ví dụ."
+      },
+      "ja": {
+        "q": "クルアーンが挙げる禁止食品の例は何ですか？",
+        "a": "死肉、血、豚肉、アッラー以外の名で捧げられた動物などです。"
+      },
+      "zh": {
+        "q": "《古兰经》列举了哪些禁食？",
+        "a": "死肉、血、猪肉以及以安拉以外之名宰杀的动物都是例子。"
+      }
+    },
+    {
+      "id": 317,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Mâide 5:90–91 — https://quran.com/5/90",
+        "📚 Hadis — Sahih Müslim 2003 — https://sunnah.com/muslim:2003"
+      ],
+      "tr": {
+        "q": "İçki neden haramdır?",
+        "a": "Kur’an içkiyi şeytanın işi olarak niteler ve ondan uzak durmayı emreder; çünkü düşmanlık ve Allah’ı anmaktan uzaklaşma gibi zararlarına dikkat çeker."
+      },
+      "en": {
+        "q": "Why is alcohol prohibited?",
+        "a": "The Qur’an describes intoxicants as Satan’s work and commands believers to avoid them because of their harms."
+      },
+      "de": {
+        "q": "Warum ist Alkohol verboten?",
+        "a": "Der Koran bezeichnet berauschende Mittel als Werk Satans und fordert dazu auf, sie wegen ihrer Schäden zu meiden."
+      },
+      "nl": {
+        "q": "Waarom is alcohol verboden?",
+        "a": "De Koran noemt bedwelmende middelen het werk van Satan en gebiedt ze te vermijden vanwege hun schade."
+      },
+      "fr": {
+        "q": "Pourquoi l’alcool est-il interdit ?",
+        "a": "Le Coran présente les intoxicants comme une œuvre de Satan et ordonne de les éviter en raison de leurs méfaits."
+      },
+      "ru": {
+        "q": "Почему алкоголь запрещён?",
+        "a": "Коран называет опьяняющее деяние делом шайтана и велит избегать его из-за вреда."
+      },
+      "ku": {
+        "q": "Çima vexwarina alkolê haram e?",
+        "a": "Qur’an alkolê wekî karê şeytan nîşan dide û ji ber zirarên wê dûrketinê emr dike."
+      },
+      "tt": {
+        "q": "Алкоголь ни өчен тыелган?",
+        "a": "Коръән исерткечләрне шайтан эше дип атый һәм аларның зыяны аркасында алардан ерак торырга куша."
+      },
+      "ar": {
+        "q": "لِمَاذَا الْخَمْرُ مُحَرَّمٌ؟",
+        "a": "يَصِفُ الْقُرْآنُ الْمُسْكِرَاتِ بِأَنَّهَا مِنْ عَمَلِ الشَّيْطَانِ وَيَأْمُرُ بِاجْتِنَابِهَا لِمَا فِيهَا مِنْ أَضْرَارٍ."
+      },
+      "es": {
+        "q": "¿Por qué está prohibido el alcohol?",
+        "a": "El Corán lo presenta como obra de Satanás y ordena evitarlo por sus daños."
+      },
+      "it": {
+        "q": "Perché l’alcol è vietato?",
+        "a": "Il Corano lo descrive come opera di Satana e ordina di evitarlo per i suoi danni."
+      },
+      "pt": {
+        "q": "Por que o álcool é proibido?",
+        "a": "O Alcorão o apresenta como obra de Satanás e ordena evitá-lo por causa de seus danos."
+      },
+      "ko": {
+        "q": "술은 왜 금지되나요?",
+        "a": "꾸란은 취하게 하는 것을 사탄의 일로 설명하며 그 해로움 때문에 피하라고 명합니다."
+      },
+      "vi": {
+        "q": "Vì sao rượu bị cấm?",
+        "a": "Kinh Qur’an gọi chất gây say là việc của Satan và ra lệnh tránh vì những tác hại của chúng."
+      },
+      "ja": {
+        "q": "酒が禁止されているのはなぜですか？",
+        "a": "クルアーンは酔わせるものを悪魔の業とし、その害のため避けるよう命じています。"
+      },
+      "zh": {
+        "q": "为什么酒类被禁止？",
+        "a": "《古兰经》把使人醉迷的东西称为恶魔的行为，并因其危害命人远离。"
+      }
+    },
+    {
+      "id": 318,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Mâide 5:90–91 — https://quran.com/5/90",
+        "📖 Kur’an — Bakara 2:219 — https://quran.com/2/219"
+      ],
+      "tr": {
+        "q": "Kumar neden haramdır?",
+        "a": "Kumar, insanlar arasında düşmanlık ve kin doğurabilen, Allah’ı anmaktan ve namazdan alıkoyabilen bir davranış olarak yasaklanmıştır."
+      },
+      "en": {
+        "q": "Why is gambling prohibited?",
+        "a": "Gambling can create hostility and hatred and can distract people from remembering Allah and prayer."
+      },
+      "de": {
+        "q": "Warum ist Glücksspiel verboten?",
+        "a": "Glücksspiel kann Feindschaft und Hass hervorrufen und vom Gedenken an Allah und vom Gebet abhalten."
+      },
+      "nl": {
+        "q": "Waarom is gokken verboden?",
+        "a": "Gokken kan vijandschap en haat veroorzaken en mensen afhouden van het gedenken van Allah en van het gebed."
+      },
+      "fr": {
+        "q": "Pourquoi le jeu d’argent est-il interdit ?",
+        "a": "Il peut engendrer l’hostilité et la haine et détourner du rappel d’Allah et de la prière."
+      },
+      "ru": {
+        "q": "Почему азартные игры запрещены?",
+        "a": "Они могут порождать вражду и ненависть и отвлекать от поминания Аллаха и молитвы."
+      },
+      "ku": {
+        "q": "Çima qimartiyê haram e?",
+        "a": "Ew dikare dijminatî û kîn çêbike û mirovan ji bîranîna Xwedê û nimêjê dûr bixe."
+      },
+      "tt": {
+        "q": "Уен оттыру ни өчен тыелган?",
+        "a": "Ул дошманлык һәм нәфрәт тудырырга һәм Аллаһны искә алудан һәм намаздан читләштерергә мөмкин."
+      },
+      "ar": {
+        "q": "لِمَاذَا الْقِمَارُ مُحَرَّمٌ؟",
+        "a": "لِأَنَّهُ قَدْ يُوَلِّدُ الْعَدَاوَةَ وَالْبَغْضَاءَ وَيَصُدُّ عَنْ ذِكْرِ اللَّهِ وَالصَّلَاةِ."
+      },
+      "es": {
+        "q": "¿Por qué está prohibido el juego?",
+        "a": "Puede generar enemistad y odio y apartar del recuerdo de Allah y de la oración."
+      },
+      "it": {
+        "q": "Perché il gioco d’azzardo è vietato?",
+        "a": "Può generare ostilità e odio e allontanare dal ricordo di Allah e dalla preghiera."
+      },
+      "pt": {
+        "q": "Por que o jogo de azar é proibido?",
+        "a": "Pode gerar hostilidade e ódio e afastar da lembrança de Allah e da oração."
+      },
+      "ko": {
+        "q": "도박은 왜 금지되나요?",
+        "a": "적대와 증오를 일으키고 알라를 기억하고 기도하는 일을 방해할 수 있기 때문입니다."
+      },
+      "vi": {
+        "q": "Vì sao cờ bạc bị cấm?",
+        "a": "Nó có thể gây thù hận và làm con người xa rời việc nhớ Allah và cầu nguyện."
+      },
+      "ja": {
+        "q": "賭博が禁止されているのはなぜですか？",
+        "a": "敵意や憎しみを生み、アッラーを思い礼拝することから人を遠ざけることがあるからです。"
+      },
+      "zh": {
+        "q": "为什么赌博被禁止？",
+        "a": "赌博可能造成敌意和仇恨，使人远离记念安拉和礼拜。"
+      }
+    },
+    {
+      "id": 319,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Mâide 5:1 — https://quran.com/5/1",
+        "📖 Kur’an — İsrâ 17:34 — https://quran.com/17/34"
+      ],
+      "tr": {
+        "q": "Ticarette sözleşme neden önemlidir?",
+        "a": "Sözleşme ve anlaşmalara bağlılık, tarafların haklarını korur ve belirsizlik ile anlaşmazlığı azaltır."
+      },
+      "en": {
+        "q": "Why are contracts important in trade?",
+        "a": "Keeping contracts protects the parties’ rights and reduces uncertainty and disputes."
+      },
+      "de": {
+        "q": "Warum sind Verträge im Handel wichtig?",
+        "a": "Die Einhaltung von Verträgen schützt die Rechte der Beteiligten und verringert Unsicherheit und Streit."
+      },
+      "nl": {
+        "q": "Waarom zijn contracten belangrijk in de handel?",
+        "a": "Het nakomen van contracten beschermt de rechten van partijen en vermindert onzekerheid en geschillen."
+      },
+      "fr": {
+        "q": "Pourquoi les contrats sont-ils importants dans le commerce ?",
+        "a": "Le respect des contrats protège les droits des parties et réduit l’incertitude et les conflits."
+      },
+      "ru": {
+        "q": "Почему договоры важны в торговле?",
+        "a": "Они защищают права сторон и уменьшают неопределённость и споры."
+      },
+      "ku": {
+        "q": "Çima peyman di bazirganiyê de girîng in?",
+        "a": "Peyman mafên aliyên peymanê diparêzin û nezelaliyê û nakokiyan kêm dikin."
+      },
+      "tt": {
+        "q": "Сәүдәдә килешүләр ни өчен мөһим?",
+        "a": "Алар якларның хокукларын саклый һәм билгесезлек белән бәхәсләрне киметә."
+      },
+      "ar": {
+        "q": "لِمَاذَا الْعُقُودُ مُهِمَّةٌ فِي التِّجَارَةِ؟",
+        "a": "لِأَنَّهَا تَحْفَظُ حُقُوقَ الْأَطْرَافِ وَتُقَلِّلُ الْغُمُوضَ وَالنِّزَاعَ."
+      },
+      "es": {
+        "q": "¿Por qué son importantes los contratos en el comercio?",
+        "a": "Protegen los derechos de las partes y reducen la incertidumbre y los conflictos."
+      },
+      "it": {
+        "q": "Perché i contratti sono importanti nel commercio?",
+        "a": "Proteggono i diritti delle parti e riducono incertezza e controversie."
+      },
+      "pt": {
+        "q": "Por que os contratos são importantes no comércio?",
+        "a": "Protegem os direitos das partes e reduzem incertezas e conflitos."
+      },
+      "ko": {
+        "q": "거래에서 계약은 왜 중요한가요?",
+        "a": "당사자의 권리를 보호하고 불확실성과 분쟁을 줄입니다."
+      },
+      "vi": {
+        "q": "Vì sao hợp đồng quan trọng trong buôn bán?",
+        "a": "Hợp đồng bảo vệ quyền của các bên và giảm bất định, tranh chấp."
+      },
+      "ja": {
+        "q": "商取引で契約が重要なのはなぜですか？",
+        "a": "当事者の権利を守り、不確実性や争いを減らすからです。"
+      },
+      "zh": {
+        "q": "为什么商业合同很重要？",
+        "a": "合同保护双方权益，并减少不确定性和争议。"
+      }
+    },
+    {
+      "id": 320,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Bakara 2:282 — https://quran.com/2/282",
+        "📖 Kur’an — Bakara 2:283 — https://quran.com/2/283"
+      ],
+      "tr": {
+        "q": "Borç verirken neye dikkat edilmelidir?",
+        "a": "Borç belirli bir süre için veriliyorsa yazılması, şartların açıkça belirtilmesi ve adaletle kayıt altına alınması gerekir."
+      },
+      "en": {
+        "q": "What should be considered when giving a loan?",
+        "a": "A fixed-term debt should be written down, its terms made clear, and the transaction recorded fairly."
+      },
+      "de": {
+        "q": "Worauf sollte man bei einem Darlehen achten?",
+        "a": "Ein befristetes Darlehen sollte schriftlich festgehalten, klar vereinbart und fair dokumentiert werden."
+      },
+      "nl": {
+        "q": "Waarop moet men letten bij het lenen van geld?",
+        "a": "Een lening met een vaste termijn moet worden opgeschreven, duidelijk worden afgesproken en eerlijk worden vastgelegd."
+      },
+      "fr": {
+        "q": "À quoi faut-il faire attention lorsqu’on prête de l’argent ?",
+        "a": "Une dette à terme doit être écrite, ses conditions précisées et la transaction enregistrée équitablement."
+      },
+      "ru": {
+        "q": "На что обратить внимание при выдаче займа?",
+        "a": "Срочный долг следует записать, ясно определить условия и оформить справедливо."
+      },
+      "ku": {
+        "q": "Dema ku mirov deyn dide divê çi bike?",
+        "a": "Deynê bi demê divê were nivîsandin, şertên wê zelal bin û bi dadperwerî were tomar kirin."
+      },
+      "tt": {
+        "q": "Акча биргәндә нәрсәгә игътибар итәргә?",
+        "a": "Мерзімді бурычны язып куярга, шартларын ачыкларга һәм гадел рәвештә теркәргә кирәк."
+      },
+      "ar": {
+        "q": "مَا الَّذِي يَجِبُ مُرَاعَاتُهُ عِنْدَ إِقْرَاضِ الْمَالِ؟",
+        "a": "يَنْبَغِي كِتَابَةُ الدَّيْنِ الْمُؤَجَّلِ وَتَوْضِيحُ شُرُوطِهِ وَتَوْثِيقُهُ بِعَدْلٍ."
+      },
+      "es": {
+        "q": "¿Qué debe tenerse en cuenta al prestar dinero?",
+        "a": "Una deuda a plazo debe escribirse, aclarar sus condiciones y registrarse con justicia."
+      },
+      "it": {
+        "q": "A cosa bisogna fare attenzione quando si presta denaro?",
+        "a": "Un debito a termine dovrebbe essere scritto, chiarito e registrato con equità."
+      },
+      "pt": {
+        "q": "A que se deve prestar atenção ao emprestar dinheiro?",
+        "a": "Uma dívida com prazo deve ser escrita, ter condições claras e ser registrada com justiça."
+      },
+      "ko": {
+        "q": "돈을 빌려줄 때 무엇을 주의해야 하나요?",
+        "a": "기한이 있는 채무는 기록하고 조건을 분명히 하며 공정하게 문서화해야 합니다."
+      },
+      "vi": {
+        "q": "Cần chú ý gì khi cho vay?",
+        "a": "Khoản nợ có kỳ hạn nên được viết ra, nêu rõ điều kiện và ghi chép công bằng."
+      },
+      "ja": {
+        "q": "お金を貸すとき何に注意すべきですか？",
+        "a": "期限のある債務は書面にし、条件を明確にして公正に記録するべきです。"
+      },
+      "zh": {
+        "q": "借钱时应注意什么？",
+        "a": "有期限的债务应写明、明确条件，并公平地记录。"
+      }
+    },
+    {
+      "id": 321,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Bakara 2:168 — https://quran.com/2/168",
+        "📚 Hadis — Sahih Müslim 1599a — https://sunnah.com/muslim:1599a"
+      ],
+      "tr": {
+        "q": "Helâl ve haram bilinci günlük hayatı nasıl etkiler?",
+        "a": "Bu bilinç, kişinin yiyecek, kazanç, alışveriş ve davranışlarında meşru olanı tercih etmesine yardımcı olur."
+      },
+      "en": {
+        "q": "How does awareness of halal and haram affect daily life?",
+        "a": "It helps a person choose lawful options in food, income, shopping, and behavior."
+      },
+      "de": {
+        "q": "Wie beeinflusst das Bewusstsein für halal und haram den Alltag?",
+        "a": "Es hilft, bei Essen, Einkommen, Einkäufen und Verhalten erlaubte Wege zu wählen."
+      },
+      "nl": {
+        "q": "Hoe beïnvloedt kennis van halal en haram het dagelijks leven?",
+        "a": "Het helpt iemand bij eten, inkomen, aankopen en gedrag voor geoorloofde keuzes te kiezen."
+      },
+      "fr": {
+        "q": "Comment la conscience du halal et du haram influence-t-elle la vie quotidienne ?",
+        "a": "Elle aide à choisir ce qui est licite dans l’alimentation, les revenus, les achats et les comportements."
+      },
+      "ru": {
+        "q": "Как сознание халяля и харама влияет на повседневную жизнь?",
+        "a": "Оно помогает выбирать дозволенное в еде, доходах, покупках и поведении."
+      },
+      "ku": {
+        "q": "Hişyariya helal û haram rojane çawa bandor dike?",
+        "a": "Ew alîkar e ku mirov di xwarin, dahat, kirîn û tevgerê de rêyên rewa hilbijêre."
+      },
+      "tt": {
+        "q": "Хәләл һәм хәрам аңлавы көндәлек тормышка ничек тәэсир итә?",
+        "a": "Ул ризыкта, керемдә, сатып алуда һәм тәртиптә рөхсәт ителгәнне сайларга ярдәм итә."
+      },
+      "ar": {
+        "q": "كَيْفَ يُؤَثِّرُ الْوَعْيُ بِالْحَلَالِ وَالْحَرَامِ فِي الْحَيَاةِ الْيَوْمِيَّةِ؟",
+        "a": "يُسَاعِدُ الشَّخْصَ عَلَى اخْتِيَارِ الْمَشْرُوعِ فِي الطَّعَامِ وَالدَّخْلِ وَالْمُشْتَرَيَاتِ وَالسُّلُوكِ."
+      },
+      "es": {
+        "q": "¿Cómo influye la conciencia de halal y haram en la vida diaria?",
+        "a": "Ayuda a elegir lo lícito en alimentos, ingresos, compras y conducta."
+      },
+      "it": {
+        "q": "Come influisce nella vita quotidiana la consapevolezza di halal e haram?",
+        "a": "Aiuta a scegliere ciò che è lecito nel cibo, nel reddito, negli acquisti e nei comportamenti."
+      },
+      "pt": {
+        "q": "Como a consciência de halal e haram afeta a vida diária?",
+        "a": "Ajuda a escolher o que é lícito em alimentos, renda, compras e comportamento."
+      },
+      "ko": {
+        "q": "할랄과 하람에 대한 의식은 일상에 어떤 영향을 주나요?",
+        "a": "음식, 소득, 구매와 행동에서 허용된 선택을 하도록 돕습니다."
+      },
+      "vi": {
+        "q": "Ý thức halal và haram ảnh hưởng đời sống thế nào?",
+        "a": "Nó giúp chọn điều hợp pháp trong ăn uống, thu nhập, mua bán và hành vi."
+      },
+      "ja": {
+        "q": "ハラールとハラームの意識は日常生活にどう影響しますか？",
+        "a": "食事、収入、買い物、行動で合法的な選択をする助けになります。"
+      },
+      "zh": {
+        "q": "清真与非法意识如何影响日常生活？",
+        "a": "它帮助人在饮食、收入、购物和行为中选择合法的方式。"
+      }
+    },
+    {
+      "id": 322,
+      "day": 17,
+      "sources": [
+        "📖 Kur’an — Bakara 2:188 — https://quran.com/2/188",
+        "📚 Hadis — Sahih Müslim 1015 — https://sunnah.com/muslim:1015"
+      ],
+      "tr": {
+        "q": "Kazancın temiz olması neden önemlidir?",
+        "a": "Temiz kazanç, haksızlık ve haram yollardan uzak durmayı; kişinin geçimini meşru yollarla sağlamasını ifade eder."
+      },
+      "en": {
+        "q": "Why is clean income important?",
+        "a": "Clean income means avoiding injustice and unlawful means and earning a livelihood through lawful ways."
+      },
+      "de": {
+        "q": "Warum ist ein reines Einkommen wichtig?",
+        "a": "Es bedeutet, Ungerechtigkeit und verbotene Wege zu meiden und den Lebensunterhalt rechtmäßig zu verdienen."
+      },
+      "nl": {
+        "q": "Waarom is een zuiver inkomen belangrijk?",
+        "a": "Het betekent onrecht en verboden middelen te vermijden en het levensonderhoud op geoorloofde wijze te verdienen."
+      },
+      "fr": {
+        "q": "Pourquoi un revenu propre est-il important ?",
+        "a": "Il signifie éviter l’injustice et les moyens interdits et gagner sa vie par des voies licites."
+      },
+      "ru": {
+        "q": "Почему важен чистый доход?",
+        "a": "Это означает избегать несправедливости и запретных способов и зарабатывать дозволенно."
+      },
+      "ku": {
+        "q": "Çima dahata paqij girîng e?",
+        "a": "Wateya wê dûrketina ji neheqî û rêyên qedexekirî û qezencê bi rêyên rewa ye."
+      },
+      "tt": {
+        "q": "Чиста табыш ни өчен мөһим?",
+        "a": "Ул гаделсезлектән һәм тыелган юллардан саклану һәм рөхсәтле юл белән табыш алу дигән сүз."
+      },
+      "ar": {
+        "q": "لِمَاذَا الدَّخْلُ الطَّيِّبُ مُهِمٌّ؟",
+        "a": "لِأَنَّهُ يَعْنِي تَرْكَ الظُّلْمِ وَالطُّرُقِ الْمُحَرَّمَةِ وَطَلَبَ الرِّزْقِ بِطُرُقٍ مَشْرُوعَةٍ."
+      },
+      "es": {
+        "q": "¿Por qué es importante un ingreso limpio?",
+        "a": "Significa evitar la injusticia y los medios prohibidos y ganarse la vida de forma lícita."
+      },
+      "it": {
+        "q": "Perché è importante un reddito pulito?",
+        "a": "Significa evitare ingiustizia e mezzi proibiti e guadagnarsi da vivere lecitamente."
+      },
+      "pt": {
+        "q": "Por que é importante ter uma renda limpa?",
+        "a": "Significa evitar injustiça e meios proibidos e ganhar o sustento de forma lícita."
+      },
+      "ko": {
+        "q": "깨끗한 소득은 왜 중요한가요?",
+        "a": "부당함과 금지된 방법을 피하고 합법적인 방법으로 생계를 얻는 것을 뜻합니다."
+      },
+      "vi": {
+        "q": "Vì sao thu nhập trong sạch quan trọng?",
+        "a": "Nó có nghĩa là tránh bất công và phương tiện bị cấm, và kiếm sống bằng cách hợp pháp."
+      },
+      "ja": {
+        "q": "清い収入が重要なのはなぜですか？",
+        "a": "不正や禁止された手段を避け、合法的に生計を得ることを意味するからです。"
+      },
+      "zh": {
+        "q": "为什么清洁的收入很重要？",
+        "a": "它意味着远离不公和禁忌手段，通过合法方式谋生。"
+      }
+    },
+    {
+      "id": 323,
+      "day": 17,
+      "sources": [
+        "📚 Hadis — Sahih Buhârî 52 — https://sunnah.com/bukhari:52",
+        "📚 Hadis — Sahih Müslim 1599a — https://sunnah.com/muslim:1599a"
+      ],
+      "tr": {
+        "q": "Şüpheli kazançtan kaçınmak neden değerlidir?",
+        "a": "Şüpheli kazançtan kaçınmak, harama düşme riskini azaltır ve kişinin dinî hassasiyetini korur."
+      },
+      "en": {
+        "q": "Why is it valuable to avoid doubtful earnings?",
+        "a": "It reduces the risk of falling into haram and helps preserve religious integrity."
+      },
+      "de": {
+        "q": "Warum ist es wertvoll, zweifelhaftes Einkommen zu meiden?",
+        "a": "Es verringert das Risiko, in Verbotenes zu geraten, und schützt die religiöse Gewissenhaftigkeit."
+      },
+      "nl": {
+        "q": "Waarom is het waardevol om twijfelachtig inkomen te vermijden?",
+        "a": "Het vermindert het risico om in haram te vallen en beschermt religieuze zorgvuldigheid."
+      },
+      "fr": {
+        "q": "Pourquoi est-il important d’éviter les revenus douteux ?",
+        "a": "Cela réduit le risque de tomber dans le haram et protège la conscience religieuse."
+      },
+      "ru": {
+        "q": "Почему важно избегать сомнительного дохода?",
+        "a": "Это уменьшает риск впасть в харам и помогает сохранять религиозную чистоту."
+      },
+      "ku": {
+        "q": "Çima dûrketina ji dahata gumanbar girîng e?",
+        "a": "Ew metirsiya ketina haramê kêm dike û paqijiya baweriyê diparêze."
+      },
+      "tt": {
+        "q": "Шикле табыштан саклану ни өчен мөһим?",
+        "a": "Ул хәрамга төшү куркынычын киметә һәм дини сафлыкны саклый."
+      },
+      "ar": {
+        "q": "لِمَاذَا يَنْبَغِي تَرْكُ الدَّخْلِ الْمُشْتَبِهِ؟",
+        "a": "لِأَنَّهُ يُقَلِّلُ خَطَرَ الْوُقُوعِ فِي الْحَرَامِ وَيَحْفَظُ الْوَرَعَ الدِّينِيَّ."
+      },
+      "es": {
+        "q": "¿Por qué es valioso evitar ingresos dudosos?",
+        "a": "Reduce el riesgo de caer en lo haram y protege la integridad religiosa."
+      },
+      "it": {
+        "q": "Perché è importante evitare guadagni dubbi?",
+        "a": "Riduce il rischio di cadere nell’haram e protegge l’integrità religiosa."
+      },
+      "pt": {
+        "q": "Por que é valioso evitar ganhos duvidosos?",
+        "a": "Reduz o risco de cair no haram e protege a integridade religiosa."
+      },
+      "ko": {
+        "q": "의심스러운 수입을 피하는 것이 왜 중요한가요?",
+        "a": "하람에 빠질 위험을 줄이고 신앙적 성실성을 지켜 줍니다."
+      },
+      "vi": {
+        "q": "Vì sao nên tránh thu nhập đáng ngờ?",
+        "a": "Điều đó giảm nguy cơ rơi vào haram và bảo vệ sự chính trực tôn giáo."
+      },
+      "ja": {
+        "q": "疑わしい収入を避けることがなぜ大切ですか？",
+        "a": "ハラームに陥る危険を減らし、信仰上の誠実さを守るからです。"
+      },
+      "zh": {
+        "q": "为什么应避免可疑收入？",
+        "a": "这能降低陷入非法行为的风险，并维护宗教上的正直。"
+      }
+    }
+  ]
+}

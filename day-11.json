@@ -1,0 +1,1549 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 11,
+  "dayTitle": {
+    "tr": "11. Gün — İslâm’ın Beş Şartı",
+    "en": "Day 11 — The Five Pillars of Islam",
+    "de": "11. Tag — Die fünf Säulen des Islam",
+    "nl": "Dag 11 — De vijf zuilen van de islam",
+    "fr": "Jour 11 — Les cinq piliers de l’islam",
+    "ru": "11-й день — Пять столпов Ислама",
+    "ku": "Roj 11 — Pênc Şertên Îslamê",
+    "tt": "11 нче көн — Исламның биш баганасы",
+    "ar": "الْيَوْمُ الْحَادِيَ عَشَرُ — أَرْكَانُ الْإِسْلَامِ الْخَمْسَةُ",
+    "es": "Día 11 — Los cinco pilares del Islam",
+    "it": "Giorno 11 — I cinque pilastri dell’Islam",
+    "pt": "Dia 11 — Os cinco pilares do Islão",
+    "ko": "11일차 — 이슬람의 다섯 기둥",
+    "vi": "Ngày 11 — Năm trụ cột của Islam",
+    "ja": "11日目 — イスラームの五柱",
+    "zh": "第11天——伊斯兰的五大支柱"
+  },
+  "daySubtitle": {
+    "tr": "Şehadet, namaz, zekât, oruç ve hac: İslâm’ın beş temel şartını tanımak",
+    "en": "Learning the five pillars of Islam: testimony of faith, prayer, zakat, fasting and pilgrimage",
+    "de": "Die fünf Säulen des Islam: Glaubenszeugnis, Gebet, Zakat, Fasten und Pilgerfahrt",
+    "nl": "De vijf zuilen van de islam: geloofsgetuigenis, gebed, zakat, vasten en bedevaart",
+    "fr": "Les cinq piliers de l’islam : profession de foi, prière, zakat, jeûne et pèlerinage",
+    "ru": "Пять столпов Ислама: свидетельство веры, молитва, закят, пост и паломничество",
+    "ku": "Pênc şertên Îslamê: şehadet, nimêj, zekat, rojî û hec",
+    "tt": "Исламның биш баганасы: шәһадәт, намаз, зәкят, ураза һәм хаҗ",
+    "ar": "الشَّهَادَةُ وَالصَّلَاةُ وَالزَّكَاةُ وَالصِّيَامُ وَالْحَجُّ: أَرْكَانُ الْإِسْلَامِ الْخَمْسَةُ",
+    "es": "Los cinco pilares del Islam: profesión de fe, oración, zakat, ayuno y peregrinación",
+    "it": "I cinque pilastri dell’Islam: testimonianza di fede, preghiera, zakat, digiuno e pellegrinaggio",
+    "pt": "Os cinco pilares do Islão: testemunho de fé, oração, zakat, jejum e peregrinação",
+    "ko": "이슬람의 다섯 기둥: 신앙고백, 예배, 자카트, 금식과 성지순례",
+    "vi": "Năm trụ cột của Islam: lời tuyên tín, lễ nguyện, zakat, nhịn chay và hành hương",
+    "ja": "イスラームの五柱：信仰告白、礼拝、ザカート、断食、巡礼",
+    "zh": "伊斯兰的五大支柱：信仰作证、礼拜、天课、斋戒和朝觐"
+  },
+  "questions": [
+    {
+      "id": 191,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c",
+        "📖 Kur’an — Bakara 2:177 — https://quran.com/2/177"
+      ],
+      "tr": {
+        "q": "İslâm’ın beş şartı nelerdir?",
+        "a": "İslâm’ın beş temel şartı şehadet, namaz, zekât, Ramazan orucu ve hacdır."
+      },
+      "en": {
+        "q": "What are the five pillars of Islam?",
+        "a": "The five pillars are the testimony of faith, prayer, zakat, Ramadan fasting, and pilgrimage."
+      },
+      "de": {
+        "q": "Was sind die fünf Säulen des Islam?",
+        "a": "Die fünf Säulen sind das Glaubenszeugnis, das Gebet, die Zakat, das Fasten im Ramadan und die Pilgerfahrt."
+      },
+      "nl": {
+        "q": "Wat zijn de vijf zuilen van de islam?",
+        "a": "De vijf zuilen zijn de geloofsgetuigenis, het gebed, de zakat, het vasten in Ramadan en de bedevaart."
+      },
+      "fr": {
+        "q": "Quels sont les cinq piliers de l’islam ?",
+        "a": "Les cinq piliers sont la profession de foi, la prière, la zakat, le jeûne du Ramadan et le pèlerinage."
+      },
+      "ru": {
+        "q": "Каковы пять столпов Ислама?",
+        "a": "Пять столпов — свидетельство веры, молитва, закят, пост в Рамадан и паломничество."
+      },
+      "ku": {
+        "q": "Pênc şertên Îslamê çi ne?",
+        "a": "Pênc şert şehadet, nimêj, zekat, rojîya Remezanê û hec in."
+      },
+      "tt": {
+        "q": "Исламның биш баганасы нинди?",
+        "a": "Биш багана: шәһадәт, намаз, зәкят, Рамазан уразасы һәм хаҗ."
+      },
+      "ar": {
+        "q": "مَا أَرْكَانُ الْإِسْلَامِ الْخَمْسَةُ؟",
+        "a": "أَرْكَانُ الْإِسْلَامِ هِيَ الشَّهَادَةُ، وَإِقَامُ الصَّلَاةِ، وَإِيتَاءُ الزَّكَاةِ، وَصِيَامُ رَمَضَانَ، وَحَجُّ الْبَيْتِ."
+      },
+      "es": {
+        "q": "¿Cuáles son los cinco pilares del Islam?",
+        "a": "Los cinco pilares son el testimonio de fe, la oración, el zakat, el ayuno de Ramadán y la peregrinación."
+      },
+      "it": {
+        "q": "Quali sono i cinque pilastri dell’Islam?",
+        "a": "I cinque pilastri sono la testimonianza di fede, la preghiera, la zakat, il digiuno di Ramadan e il pellegrinaggio."
+      },
+      "pt": {
+        "q": "Quais são os cinco pilares do Islão?",
+        "a": "Os cinco pilares são o testemunho de fé, a oração, o zakat, o jejum do Ramadão e a peregrinação."
+      },
+      "ko": {
+        "q": "이슬람의 다섯 기둥은 무엇입니까?",
+        "a": "다섯 기둥은 신앙고백, 예배, 자카트, 라마단 금식, 성지순례입니다."
+      },
+      "vi": {
+        "q": "Năm trụ cột của Islam là gì?",
+        "a": "Năm trụ cột là lời tuyên tín đức tin, lễ nguyện, zakat, nhịn chay Ramadan và hành hương."
+      },
+      "ja": {
+        "q": "イスラームの五柱とは何ですか。",
+        "a": "五柱とは、信仰告白、礼拝、ザカート、ラマダーンの断食、巡礼です。"
+      },
+      "zh": {
+        "q": "伊斯兰的五大支柱是什么？",
+        "a": "五大支柱是信仰作证、礼拜、天课、斋戒和朝觐。"
+      }
+    },
+    {
+      "id": 192,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c",
+        "📖 Kur’an — Muhammed 47:19 — https://quran.com/47/19"
+      ],
+      "tr": {
+        "q": "Kelime-i şehadet ne anlama gelir?",
+        "a": "Allah’tan başka ilah olmadığına ve Muhammed’in Allah’ın kulu ve elçisi olduğuna şahitlik etmektir."
+      },
+      "en": {
+        "q": "What does the testimony of faith mean?",
+        "a": "It means affirming that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger."
+      },
+      "de": {
+        "q": "Was bedeutet das Glaubenszeugnis?",
+        "a": "Es bedeutet zu bezeugen, dass es keine anbetungswürdige Gottheit außer Allah gibt und dass Muhammad Sein Diener und Gesandter ist."
+      },
+      "nl": {
+        "q": "Wat betekent de geloofsgetuigenis?",
+        "a": "Het betekent getuigen dat er geen godheid is die het waard is aanbeden te worden behalve Allah en dat Mohammed Zijn dienaar en Boodschapper is."
+      },
+      "fr": {
+        "q": "Que signifie la profession de foi ?",
+        "a": "Elle consiste à attester qu’il n’y a aucune divinité digne d’adoration en dehors d’Allah et que Muhammad est Son serviteur et Messager."
+      },
+      "ru": {
+        "q": "Что означает свидетельство веры?",
+        "a": "Это свидетельство того, что нет божества, достойного поклонения, кроме Аллаха, и что Мухаммад — Его раб и Посланник."
+      },
+      "ku": {
+        "q": "Kelîme-i şehadet çi wate dike?",
+        "a": "Wateya wê ew e ku şahidî bidî ku ji bilî Allahê tu îlahê ku hêjayî perestînê be tune ye û Muhammed bende û Resûlê Wî ye."
+      },
+      "tt": {
+        "q": "Шәһадәт сүзе нәрсәне аңлата?",
+        "a": "Ул Аллаһтан башка гыйбадәт кылырга лаеклы илаһ юклыгын һәм Мөхәммәднең Аның колы һәм Рәсүле булуын таныклый."
+      },
+      "ar": {
+        "q": "مَاذَا تَعْنِي الشَّهَادَةُ؟",
+        "a": "هِيَ الشَّهَادَةُ بِأَنْ لَا إِلَهَ إِلَّا اللَّهُ، وَأَنَّ مُحَمَّدًا عَبْدُ اللَّهِ وَرَسُولُهُ."
+      },
+      "es": {
+        "q": "¿Qué significa el testimonio de fe?",
+        "a": "Significa dar testimonio de que no hay ninguna divinidad digna de adoración excepto Allah y de que Muhammad es Su siervo y Mensajero."
+      },
+      "it": {
+        "q": "Che cosa significa la testimonianza di fede?",
+        "a": "Significa testimoniare che non c’è alcuna divinità degna di adorazione all’infuori di Allah e che Muhammad è Suo servo e Messaggero."
+      },
+      "pt": {
+        "q": "O que significa o testemunho de fé?",
+        "a": "Significa testemunhar que não há divindade digna de adoração além de Allah e que Muhammad é Seu servo e Mensageiro."
+      },
+      "ko": {
+        "q": "신앙고백은 무엇을 의미합니까?",
+        "a": "알라 외에는 예배받을 자격이 있는 신이 없으며 무함마드가 그분의 종이자 사도임을 증언하는 것입니다."
+      },
+      "vi": {
+        "q": "Lời tuyên tín đức tin có nghĩa là gì?",
+        "a": "Đó là tuyên chứng rằng không có thần linh nào đáng được thờ phụng ngoài Allah và Muhammad là người bề tôi và Sứ giả của Ngài."
+      },
+      "ja": {
+        "q": "信仰告白とは何を意味しますか。",
+        "a": "アッラー以外に崇拝に値する神はなく、ムハンマドはその僕であり使徒であると証言することです。"
+      },
+      "zh": {
+        "q": "信仰作证是什么意思？",
+        "a": "就是见证除安拉外没有应受崇拜的神明，并见证穆罕默德是安拉的仆人和使者。"
+      }
+    },
+    {
+      "id": 193,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16a — https://sunnah.com/muslim:16a",
+        "📖 Kur’an — Tâhâ 20:14 — https://quran.com/20/14"
+      ],
+      "tr": {
+        "q": "Namaz neden İslâm’ın şartlarından biridir?",
+        "a": "Namaz, Allah’a kulluğun temel günlük ibadetlerinden ve İslâm’ın beş şartından biridir."
+      },
+      "en": {
+        "q": "Why is prayer one of the pillars of Islam?",
+        "a": "Prayer is a fundamental daily act of worship and one of the five pillars of Islam."
+      },
+      "de": {
+        "q": "Warum gehört das Gebet zu den Säulen des Islam?",
+        "a": "Das Gebet ist eine grundlegende tägliche Gottesverehrung und eine der fünf Säulen des Islam."
+      },
+      "nl": {
+        "q": "Waarom is het gebed een zuil van de islam?",
+        "a": "Het gebed is een fundamentele dagelijkse daad van aanbidding en een van de vijf zuilen van de islam."
+      },
+      "fr": {
+        "q": "Pourquoi la prière est-elle un pilier de l’islam ?",
+        "a": "La prière est un acte fondamental de culte quotidien et l’un des cinq piliers de l’islam."
+      },
+      "ru": {
+        "q": "Почему молитва является столпом Ислама?",
+        "a": "Молитва — основное ежедневное поклонение и один из пяти столпов Ислама."
+      },
+      "ku": {
+        "q": "Çima nimêj yek ji şertên Îslamê ye?",
+        "a": "Nimêj îbadeta bingehîn a rojane ye û yek ji pênc şertên Îslamê ye."
+      },
+      "tt": {
+        "q": "Ни өчен намаз Ислам баганаларының берсе?",
+        "a": "Намаз — көн саен үтәлә торган төп гыйбадәт һәм Исламның биш баганасының берсе."
+      },
+      "ar": {
+        "q": "لِمَاذَا الصَّلَاةُ رُكْنٌ مِنْ أَرْكَانِ الْإِسْلَامِ؟",
+        "a": "لِأَنَّهَا عِبَادَةٌ أَسَاسِيَّةٌ تُؤَدَّى كُلَّ يَوْمٍ، وَهِيَ مِنْ أَرْكَانِ الْإِسْلَامِ الْخَمْسَةِ."
+      },
+      "es": {
+        "q": "¿Por qué la oración es uno de los pilares del Islam?",
+        "a": "La oración es un acto fundamental de adoración diaria y uno de los cinco pilares del Islam."
+      },
+      "it": {
+        "q": "Perché la preghiera è uno dei pilastri dell’Islam?",
+        "a": "La preghiera è un atto fondamentale di culto quotidiano e uno dei cinque pilastri dell’Islam."
+      },
+      "pt": {
+        "q": "Por que a oração é um dos pilares do Islão?",
+        "a": "A oração é um ato fundamental de adoração diária e um dos cinco pilares do Islão."
+      },
+      "ko": {
+        "q": "왜 예배가 이슬람의 기둥 중 하나입니까?",
+        "a": "예배는 매일 드리는 기본적인 숭배 행위이며 이슬람의 다섯 기둥 가운데 하나입니다."
+      },
+      "vi": {
+        "q": "Tại sao lễ nguyện là một trụ cột của Islam?",
+        "a": "Lễ nguyện là một hình thức thờ phượng căn bản hằng ngày và là một trong năm trụ cột của Islam."
+      },
+      "ja": {
+        "q": "なぜ礼拝はイスラームの柱の一つなのですか。",
+        "a": "礼拝は毎日行う基本的な崇拝であり、イスラームの五柱の一つだからです。"
+      },
+      "zh": {
+        "q": "为什么礼拜是伊斯兰的支柱之一？",
+        "a": "礼拜是每日基本的崇拜，也是伊斯兰五大支柱之一。"
+      }
+    },
+    {
+      "id": 194,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16a — https://sunnah.com/muslim:16a",
+        "📖 Kur’an — İsrâ 17:78 — https://quran.com/17/78"
+      ],
+      "tr": {
+        "q": "Günde kaç vakit farz namaz vardır?",
+        "a": "Her gün beş vakit farz namaz vardır: sabah, öğle, ikindi, akşam ve yatsı."
+      },
+      "en": {
+        "q": "How many obligatory prayers are there each day?",
+        "a": "There are five obligatory prayers each day: Fajr, Dhuhr, Asr, Maghrib, and Isha."
+      },
+      "de": {
+        "q": "Wie viele Pflichtgebete gibt es täglich?",
+        "a": "Es gibt jeden Tag fünf Pflichtgebete: Fadschr, Zuhr, Asr, Maghrib und Ischa."
+      },
+      "nl": {
+        "q": "Hoeveel verplichte gebeden zijn er per dag?",
+        "a": "Er zijn elke dag vijf verplichte gebeden: Fajr, Dhuhr, Asr, Maghrib en Isha."
+      },
+      "fr": {
+        "q": "Combien de prières obligatoires y a-t-il chaque jour ?",
+        "a": "Il y a cinq prières obligatoires chaque jour : Fajr, Dhuhr, Asr, Maghrib et Icha."
+      },
+      "ru": {
+        "q": "Сколько обязательных молитв совершается каждый день?",
+        "a": "Каждый день совершаются пять обязательных молитв: фаджр, зухр, аср, магриб и иша."
+      },
+      "ku": {
+        "q": "Di rojê de çend nimêzên farz hene?",
+        "a": "Di rojê de pênc nimêzên farz hene: sibeh, nîvro, êvar, megrîb û îşa."
+      },
+      "tt": {
+        "q": "Көненә ничә фарыз намаз бар?",
+        "a": "Көненә биш фарыз намаз бар: иртәнге, өйлә, икенде, ахшам һәм ястү."
+      },
+      "ar": {
+        "q": "كَمْ صَلَاةً فَرْضًا فِي الْيَوْمِ؟",
+        "a": "فِي الْيَوْمِ خَمْسُ صَلَوَاتٍ مَفْرُوضَةٍ: الْفَجْرُ، وَالظُّهْرُ، وَالْعَصْرُ، وَالْمَغْرِبُ، وَالْعِشَاءُ."
+      },
+      "es": {
+        "q": "¿Cuántas oraciones obligatorias hay cada día?",
+        "a": "Hay cinco oraciones obligatorias cada día: Fajr, Dhuhr, Asr, Maghrib e Isha."
+      },
+      "it": {
+        "q": "Quante preghiere obbligatorie ci sono ogni giorno?",
+        "a": "Ogni giorno ci sono cinque preghiere obbligatorie: Fajr, Dhuhr, Asr, Maghrib e Isha."
+      },
+      "pt": {
+        "q": "Quantas orações obrigatórias existem por dia?",
+        "a": "Há cinco orações obrigatórias por dia: Fajr, Dhuhr, Asr, Maghrib e Isha."
+      },
+      "ko": {
+        "q": "하루에 의무 예배는 몇 번입니까?",
+        "a": "하루에 다섯 번의 의무 예배가 있습니다: 파즈르, 두흐르, 아스르, 마그리브, 이샤입니다."
+      },
+      "vi": {
+        "q": "Mỗi ngày có bao nhiêu lễ nguyện bắt buộc?",
+        "a": "Mỗi ngày có năm lễ nguyện bắt buộc: Fajr, Dhuhr, Asr, Maghrib và Isha."
+      },
+      "ja": {
+        "q": "一日に義務の礼拝は何回ありますか。",
+        "a": "一日に五回あります。ファジュル、ズフル、アスル、マグリブ、イシャーです。"
+      },
+      "zh": {
+        "q": "每天有几次主命礼拜？",
+        "a": "每天有五次主命礼拜：晨礼、晌礼、晡礼、昏礼和宵礼。"
+      }
+    },
+    {
+      "id": 195,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:60 — https://quran.com/9/60",
+        "📖 Kur’an — Tevbe 9:103 — https://quran.com/9/103"
+      ],
+      "tr": {
+        "q": "Zekât nedir?",
+        "a": "Zekât, şartlarını taşıyan Müslümanın malından belirli bir kısmı hak sahiplerine vermesidir."
+      },
+      "en": {
+        "q": "What is zakat?",
+        "a": "Zakat is giving a prescribed portion of qualifying wealth to those entitled to receive it."
+      },
+      "de": {
+        "q": "Was ist Zakat?",
+        "a": "Zakat bedeutet, einen vorgeschriebenen Anteil des entsprechenden Vermögens an die Berechtigten zu geben."
+      },
+      "nl": {
+        "q": "Wat is zakat?",
+        "a": "Zakat is het geven van een voorgeschreven deel van geschikt vermogen aan mensen die daar recht op hebben."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la zakat ?",
+        "a": "La zakat consiste à donner une part prescrite des biens éligibles aux personnes qui y ont droit."
+      },
+      "ru": {
+        "q": "Что такое закят?",
+        "a": "Закят — это передача установленной доли соответствующего имущества тем, кто имеет право её получить."
+      },
+      "ku": {
+        "q": "Zekat çi ye?",
+        "a": "Zekat dayîna beşek ji malê ku şertên zekatê pêk tîne bo kesên ku mafê wergirtinê hene ye."
+      },
+      "tt": {
+        "q": "Зәкят нәрсә ул?",
+        "a": "Зәкят — билгеле шартларга туры килгән малның билгеләнгән өлешен аңа хокуклы кешеләргә бирү."
+      },
+      "ar": {
+        "q": "مَا الزَّكَاةُ؟",
+        "a": "الزَّكَاةُ هِيَ إِخْرَاجُ قَدْرٍ مُحَدَّدٍ مِنَ الْمَالِ الْمُسْتَحِقِّ لِلزَّكَاةِ وَإِعْطَاؤُهُ لِمَنْ يَسْتَحِقُّهُ."
+      },
+      "es": {
+        "q": "¿Qué es el zakat?",
+        "a": "El zakat consiste en entregar una parte prescrita de los bienes sujetos al zakat a quienes tienen derecho a recibirla."
+      },
+      "it": {
+        "q": "Che cos’è la zakat?",
+        "a": "La zakat consiste nel dare una quota prescritta del patrimonio soggetto alla zakat a chi ne ha diritto."
+      },
+      "pt": {
+        "q": "O que é o zakat?",
+        "a": "Zakat é dar uma parte prescrita dos bens sujeitos ao zakat às pessoas que têm direito a recebê-la."
+      },
+      "ko": {
+        "q": "자카트란 무엇입니까?",
+        "a": "자카트는 조건을 충족하는 재산의 정해진 일부를 받을 자격이 있는 사람들에게 나누어 주는 것입니다."
+      },
+      "vi": {
+        "q": "Zakat là gì?",
+        "a": "Zakat là trao một phần tài sản theo mức quy định cho những người có quyền được nhận."
+      },
+      "ja": {
+        "q": "ザカートとは何ですか。",
+        "a": "ザカートとは、条件を満たす財産の定められた一部を受給資格のある人々に与えることです。"
+      },
+      "zh": {
+        "q": "天课是什么？",
+        "a": "天课是把符合条件的财产中规定的一部分给予有资格接受的人。"
+      }
+    },
+    {
+      "id": 196,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:103 — https://quran.com/9/103",
+        "📖 Kur’an — Haşr 59:7 — https://quran.com/59/7"
+      ],
+      "tr": {
+        "q": "Zekâtın amacı nedir?",
+        "a": "Zekât malı temizlemeye, ihtiyaç sahiplerini desteklemeye ve toplumsal dayanışmayı güçlendirmeye vesile olur."
+      },
+      "en": {
+        "q": "What is the purpose of zakat?",
+        "a": "Zakat helps purify wealth, support people in need, and strengthen social solidarity."
+      },
+      "de": {
+        "q": "Was ist der Zweck der Zakat?",
+        "a": "Zakat trägt dazu bei, das Vermögen zu läutern, Bedürftige zu unterstützen und den gesellschaftlichen Zusammenhalt zu stärken."
+      },
+      "nl": {
+        "q": "Wat is het doel van zakat?",
+        "a": "Zakat helpt het vermogen te zuiveren, behoeftigen te ondersteunen en de sociale verbondenheid te versterken."
+      },
+      "fr": {
+        "q": "Quel est le but de la zakat ?",
+        "a": "La zakat contribue à purifier les biens, à soutenir les nécessiteux et à renforcer la solidarité sociale."
+      },
+      "ru": {
+        "q": "Какова цель закята?",
+        "a": "Закят помогает очищать имущество, поддерживать нуждающихся и укреплять общественную солидарность."
+      },
+      "ku": {
+        "q": "Armanca zekatê çi ye?",
+        "a": "Zekat malê paqij dike, piştgirî dide hewcedaran û hevgirtina civakî xurt dike."
+      },
+      "tt": {
+        "q": "Зәкятнең максаты нинди?",
+        "a": "Зәкят малны пакьләүгә, мохтаҗларга ярдәм итүгә һәм җәмгыятьтә үзара ярдәмне ныгытуга хезмәт итә."
+      },
+      "ar": {
+        "q": "مَا هَدَفُ الزَّكَاةِ؟",
+        "a": "تُسَاعِدُ الزَّكَاةُ عَلَى تَطْهِيرِ الْمَالِ، وَدَعْمِ الْمُحْتَاجِينَ، وَتَقْوِيَةِ التَّكَافُلِ الْمُجْتَمَعِيِّ."
+      },
+      "es": {
+        "q": "¿Cuál es el propósito del zakat?",
+        "a": "El zakat ayuda a purificar los bienes, apoyar a los necesitados y fortalecer la solidaridad social."
+      },
+      "it": {
+        "q": "Qual è lo scopo della zakat?",
+        "a": "La zakat aiuta a purificare i beni, sostenere i bisognosi e rafforzare la solidarietà sociale."
+      },
+      "pt": {
+        "q": "Qual é o objetivo do zakat?",
+        "a": "O zakat ajuda a purificar os bens, apoiar os necessitados e fortalecer a solidariedade social."
+      },
+      "ko": {
+        "q": "자카트의 목적은 무엇입니까?",
+        "a": "자카트는 재산을 정화하고 도움이 필요한 사람을 지원하며 사회적 연대를 강화하는 데 도움이 됩니다."
+      },
+      "vi": {
+        "q": "Mục đích của zakat là gì?",
+        "a": "Zakat giúp thanh lọc tài sản, hỗ trợ người cần giúp đỡ và củng cố tình đoàn kết xã hội."
+      },
+      "ja": {
+        "q": "ザカートの目的は何ですか。",
+        "a": "財産を清め、困窮者を支援し、社会的な助け合いを強めることにつながります。"
+      },
+      "zh": {
+        "q": "天课的目的是什么？",
+        "a": "天课有助于净化财富、帮助有需要的人并加强社会互助。"
+      }
+    },
+    {
+      "id": 197,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:60 — https://quran.com/9/60",
+        "📚 Tefsir/İslami kaynak — https://islamansiklopedisi.org.tr/zekat"
+      ],
+      "tr": {
+        "q": "Kimlere zekât verilebilir?",
+        "a": "Kur’an’da zekâtın verilebileceği sekiz sınıf Tevbe 9:60’ta açıklanmıştır."
+      },
+      "en": {
+        "q": "Who can receive zakat?",
+        "a": "The Quran identifies eight categories of people who may receive zakat in At-Tawbah 9:60."
+      },
+      "de": {
+        "q": "Wer darf Zakat erhalten?",
+        "a": "Der Koran nennt in At-Tauba 9:60 acht Gruppen, die Zakat erhalten dürfen."
+      },
+      "nl": {
+        "q": "Wie kan zakat ontvangen?",
+        "a": "De Koran noemt in At-Tawbah 9:60 acht categorieën mensen die zakat mogen ontvangen."
+      },
+      "fr": {
+        "q": "Qui peut recevoir la zakat ?",
+        "a": "Le Coran mentionne huit catégories de bénéficiaires de la zakat dans At-Tawbah 9:60."
+      },
+      "ru": {
+        "q": "Кто может получать закят?",
+        "a": "Коран называет восемь категорий получателей закята в суре «Ат-Тауба», 9:60."
+      },
+      "ku": {
+        "q": "Kî dikare zekat bistîne?",
+        "a": "Qur’an di Tevbe 9:60 de heşt komên kesan ku dikarin zekat bistînin destnîşan dike."
+      },
+      "tt": {
+        "q": "Кемнәр зәкят ала ала?",
+        "a": "Коръән Тәүбә 9:60 аятендә зәкят ала алучы сигез төркемне атый."
+      },
+      "ar": {
+        "q": "مَنْ يَسْتَحِقُّ الزَّكَاةَ؟",
+        "a": "ذَكَرَ الْقُرْآنُ ثَمَانِيَةَ أَصْنَافٍ لِمُسْتَحِقِّي الزَّكَاةِ فِي التَّوْبَةِ ٩:٦٠."
+      },
+      "es": {
+        "q": "¿Quiénes pueden recibir el zakat?",
+        "a": "El Corán menciona ocho categorías de beneficiarios del zakat en At-Tawbah 9:60."
+      },
+      "it": {
+        "q": "Chi può ricevere la zakat?",
+        "a": "Il Corano indica otto categorie di beneficiari della zakat in At-Tawbah 9:60."
+      },
+      "pt": {
+        "q": "Quem pode receber o zakat?",
+        "a": "O Alcorão menciona oito categorias de beneficiários do zakat em At-Tawbah 9:60."
+      },
+      "ko": {
+        "q": "누가 자카트를 받을 수 있습니까?",
+        "a": "꾸란은 타우바 9장 60절에서 자카트를 받을 수 있는 여덟 부류를 제시합니다."
+      },
+      "vi": {
+        "q": "Ai có thể nhận zakat?",
+        "a": "Kinh Qur’an nêu tám nhóm người được nhận zakat trong At-Tawbah 9:60."
+      },
+      "ja": {
+        "q": "誰がザカートを受け取れますか。",
+        "a": "クルアーンは悔悟章9章60節で、ザカートを受け取れる八つの対象を示しています。"
+      },
+      "zh": {
+        "q": "谁可以领取天课？",
+        "a": "《古兰经》在忏悔章9章60节列出了可以领取天课的八类人。"
+      }
+    },
+    {
+      "id": 198,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Bakara 2:183 — https://quran.com/2/183",
+        "📖 Kur’an — Bakara 2:187 — https://quran.com/2/187"
+      ],
+      "tr": {
+        "q": "Ramazan orucu nedir?",
+        "a": "Ramazanda imsak vaktinden güneş batıncaya kadar orucu bozan şeylerden Allah için uzak durmaktır."
+      },
+      "en": {
+        "q": "What is the Ramadan fast?",
+        "a": "It means abstaining for Allah from things that break the fast, from dawn until sunset during Ramadan."
+      },
+      "de": {
+        "q": "Was ist das Ramadanfasten?",
+        "a": "Es bedeutet, im Ramadan von der Morgendämmerung bis zum Sonnenuntergang um Allahs willen alles zu meiden, was das Fasten bricht."
+      },
+      "nl": {
+        "q": "Wat is het vasten in Ramadan?",
+        "a": "Het betekent tijdens Ramadan van de dageraad tot zonsondergang omwille van Allah afzien van wat het vasten verbreekt."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le jeûne du Ramadan ?",
+        "a": "Il consiste, pendant le Ramadan, à s’abstenir pour Allah de ce qui rompt le jeûne, de l’aube au coucher du soleil."
+      },
+      "ru": {
+        "q": "Что такое пост в Рамадан?",
+        "a": "В Рамадан это воздержание ради Аллаха от того, что нарушает пост, от рассвета до заката."
+      },
+      "ku": {
+        "q": "Rojîya Remezanê çi ye?",
+        "a": "Di Remezanê de, ji sibehê heta rojavabûnê, ji bo Allah ji tiştên ku rojiyê bişkînin dûr ketin e."
+      },
+      "tt": {
+        "q": "Рамазан уразасы нәрсә ул?",
+        "a": "Рамазанда таң атканнан кояш батканга кадәр, Аллаһ өчен уразаны бозучы нәрсәләрдән тыелу."
+      },
+      "ar": {
+        "q": "مَا صِيَامُ رَمَضَانَ؟",
+        "a": "هُوَ الِامْتِنَاعُ لِلَّهِ عَمَّا يُفْسِدُ الصَّوْمَ مِنَ الْفَجْرِ إِلَى غُرُوبِ الشَّمْسِ فِي رَمَضَانَ."
+      },
+      "es": {
+        "q": "¿Qué es el ayuno de Ramadán?",
+        "a": "Consiste en abstenerse por Allah, desde el alba hasta la puesta del sol durante Ramadán, de aquello que rompe el ayuno."
+      },
+      "it": {
+        "q": "Che cos’è il digiuno di Ramadan?",
+        "a": "Durante il Ramadan significa astenersi per Allah, dall’alba al tramonto, da ciò che invalida il digiuno."
+      },
+      "pt": {
+        "q": "O que é o jejum do Ramadão?",
+        "a": "Durante o Ramadão, consiste em abster-se por Allah, desde a alvorada até ao pôr do sol, daquilo que quebra o jejum."
+      },
+      "ko": {
+        "q": "라마단 금식이란 무엇입니까?",
+        "a": "라마단 동안 새벽부터 해질 때까지 알라를 위해 금식을 깨뜨리는 일을 삼가는 것입니다."
+      },
+      "vi": {
+        "q": "Nhịn chay Ramadan là gì?",
+        "a": "Trong Ramadan, đó là kiêng những điều làm mất việc nhịn chay vì Allah từ lúc rạng đông đến khi mặt trời lặn."
+      },
+      "ja": {
+        "q": "ラマダーンの断食とは何ですか。",
+        "a": "ラマダーン中、夜明けから日没まで、アッラーのために断食を無効にするものを避けることです。"
+      },
+      "zh": {
+        "q": "斋月的斋戒是什么？",
+        "a": "在斋月从黎明到日落，为安拉而戒除破坏斋戒的事物。"
+      }
+    },
+    {
+      "id": 199,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Bakara 2:183 — https://quran.com/2/183",
+        "📖 Kur’an — Bakara 2:183 — https://quran.com/2/183"
+      ],
+      "tr": {
+        "q": "Oruç tutmanın amacı nedir?",
+        "a": "Oruç, takvayı ve Allah’a karşı sorumluluk bilincini geliştirmek için farz kılınmıştır."
+      },
+      "en": {
+        "q": "What is the purpose of fasting?",
+        "a": "Fasting was prescribed to develop taqwa and awareness of one’s responsibility before Allah."
+      },
+      "de": {
+        "q": "Was ist der Zweck des Fastens?",
+        "a": "Das Fasten wurde vorgeschrieben, um Gottesfurcht und Verantwortungsbewusstsein gegenüber Allah zu entwickeln."
+      },
+      "nl": {
+        "q": "Wat is het doel van het vasten?",
+        "a": "Het vasten is voorgeschreven om taqwa en bewustzijn van verantwoordelijkheid tegenover Allah te ontwikkelen."
+      },
+      "fr": {
+        "q": "Quel est le but du jeûne ?",
+        "a": "Le jeûne a été prescrit afin de développer la taqwa et la conscience de sa responsabilité devant Allah."
+      },
+      "ru": {
+        "q": "Какова цель поста?",
+        "a": "Пост предписан для развития богобоязненности и чувства ответственности перед Аллахом."
+      },
+      "ku": {
+        "q": "Armanca rojiyê çi ye?",
+        "a": "Rojî ji bo pêşxistina teqwayê û hişyariya berpirsiyariyê li hember Allah farz bûye."
+      },
+      "tt": {
+        "q": "Уразаның максаты нинди?",
+        "a": "Ураза тәкъвалыкны һәм Аллаһ каршында җаваплылык хисен үстерү өчен фарыз ителде."
+      },
+      "ar": {
+        "q": "مَا هَدَفُ الصِّيَامِ؟",
+        "a": "فُرِضَ الصِّيَامُ لِتَنْمِيَةِ التَّقْوَى وَالشُّعُورِ بِالْمَسْؤُولِيَّةِ أَمَامَ اللَّهِ."
+      },
+      "es": {
+        "q": "¿Cuál es el propósito del ayuno?",
+        "a": "El ayuno fue prescrito para desarrollar la taqwa y la conciencia de la responsabilidad ante Allah."
+      },
+      "it": {
+        "q": "Qual è lo scopo del digiuno?",
+        "a": "Il digiuno è stato prescritto per sviluppare la taqwa e la consapevolezza della responsabilità davanti ad Allah."
+      },
+      "pt": {
+        "q": "Qual é o objetivo do jejum?",
+        "a": "O jejum foi prescrito para desenvolver a taqwa e a consciência da responsabilidade perante Allah."
+      },
+      "ko": {
+        "q": "금식의 목적은 무엇입니까?",
+        "a": "금식은 타끄와와 알라 앞에서의 책임 의식을 기르기 위해 의무화되었습니다."
+      },
+      "vi": {
+        "q": "Mục đích của việc nhịn chay là gì?",
+        "a": "Việc nhịn chay được quy định để phát triển taqwa và ý thức trách nhiệm trước Allah."
+      },
+      "ja": {
+        "q": "断食の目的は何ですか。",
+        "a": "断食はタクワとアッラーに対する責任意識を育てるために定められました。"
+      },
+      "zh": {
+        "q": "斋戒的目的是什么？",
+        "a": "斋戒是为了培养敬畏安拉的意识和责任感而规定的。"
+      }
+    },
+    {
+      "id": 200,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Bakara 2:185 — https://quran.com/2/185",
+        "📖 Kur’an — Bakara 2:185 — https://quran.com/2/185"
+      ],
+      "tr": {
+        "q": "Ramazan orucu hangi ayda tutulur?",
+        "a": "Ramazan ayında tutulur; Kur’an bu ayı Kur’an’ın indirildiği ay olarak bildirir."
+      },
+      "en": {
+        "q": "In which month is the Ramadan fast observed?",
+        "a": "It is observed in Ramadan, the month in which the Quran was revealed."
+      },
+      "de": {
+        "q": "In welchem Monat wird im Ramadan gefastet?",
+        "a": "Das Fasten wird im Ramadan gehalten, dem Monat, in dem der Koran offenbart wurde."
+      },
+      "nl": {
+        "q": "In welke maand wordt het Ramadanvasten gehouden?",
+        "a": "Het wordt in Ramadan gehouden, de maand waarin de Koran werd geopenbaard."
+      },
+      "fr": {
+        "q": "Pendant quel mois jeûne-t-on le Ramadan ?",
+        "a": "Le jeûne est observé pendant le Ramadan, le mois au cours duquel le Coran a été révélé."
+      },
+      "ru": {
+        "q": "В каком месяце соблюдается пост Рамадана?",
+        "a": "Он соблюдается в Рамадане — месяце, в котором был ниспослан Коран."
+      },
+      "ku": {
+        "q": "Rojîya Remezanê di kîjan mehê de ye?",
+        "a": "Di meha Remezanê de ye; ew meh e ku Qur’an tê de hat xwarin."
+      },
+      "tt": {
+        "q": "Рамазан уразасы кайсы айда тотыла?",
+        "a": "Ул Коръән иңдерелгән Рамазан аенда тотыла."
+      },
+      "ar": {
+        "q": "فِي أَيِّ شَهْرٍ يُصَامُ رَمَضَانُ؟",
+        "a": "يُصَامُ فِي شَهْرِ رَمَضَانَ، وَهُوَ الشَّهْرُ الَّذِي أُنْزِلَ فِيهِ الْقُرْآنُ."
+      },
+      "es": {
+        "q": "¿En qué mes se realiza el ayuno de Ramadán?",
+        "a": "Se realiza en Ramadán, el mes en el que fue revelado el Corán."
+      },
+      "it": {
+        "q": "In quale mese si osserva il digiuno di Ramadan?",
+        "a": "Si osserva nel Ramadan, il mese in cui è stato rivelato il Corano."
+      },
+      "pt": {
+        "q": "Em que mês se faz o jejum do Ramadão?",
+        "a": "Faz-se no Ramadão, o mês em que o Alcorão foi revelado."
+      },
+      "ko": {
+        "q": "라마단 금식은 어느 달에 합니까?",
+        "a": "꾸란이 계시된 달인 라마단에 금식합니다."
+      },
+      "vi": {
+        "q": "Nhịn chay Ramadan được thực hiện vào tháng nào?",
+        "a": "Được thực hiện trong Ramadan, tháng mà Qur’an được mặc khải."
+      },
+      "ja": {
+        "q": "ラマダーンの断食は何月に行いますか。",
+        "a": "クルアーンが啓示された月であるラマダーンに行います。"
+      },
+      "zh": {
+        "q": "斋月斋戒在哪个月进行？",
+        "a": "在斋月进行；斋月正是《古兰经》开始降示的月份。"
+      }
+    },
+    {
+      "id": 201,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:97 — https://quran.com/3/97",
+        "📖 Kur’an — Hac 22:27 — https://quran.com/22/27"
+      ],
+      "tr": {
+        "q": "Hac nedir?",
+        "a": "Hac, gücü yeten Müslümanın belirli zamanda Kâbe’yi ve hac ibadetlerini yerine getirmesidir."
+      },
+      "en": {
+        "q": "What is Hajj?",
+        "a": "Hajj is the pilgrimage to the Kaaba and the performance of its prescribed rites at a specified time by a Muslim who is able."
+      },
+      "de": {
+        "q": "Was ist der Haddsch?",
+        "a": "Der Haddsch ist die Pilgerfahrt zur Kaaba und die Durchführung der vorgeschriebenen Riten zu einer bestimmten Zeit durch einen dazu fähigen Muslim."
+      },
+      "nl": {
+        "q": "Wat is de hadj?",
+        "a": "De hadj is de bedevaart naar de Kaaba en het uitvoeren van de voorgeschreven rituelen op een bepaalde tijd door een moslim die daartoe in staat is."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le Hajj ?",
+        "a": "Le Hajj est le pèlerinage à la Kaaba et l’accomplissement de ses rites prescrits à une période déterminée par le musulman qui en a la capacité."
+      },
+      "ru": {
+        "q": "Что такое хадж?",
+        "a": "Хадж — паломничество к Каабе и совершение установленных обрядов в определённое время тем мусульманином, который способен это сделать."
+      },
+      "ku": {
+        "q": "Hec çi ye?",
+        "a": "Hec ziyareta Ka‘beyê û pêkanîna menasikên wê di demeke diyarkirî de ji bo misilmanê ku dikare ye."
+      },
+      "tt": {
+        "q": "Хаҗ нәрсә ул?",
+        "a": "Хаҗ — мөмкинлеге булган мөселманның билгеле вакытта Кәгъбәгә барып, билгеләнгән гыйбадәт гамәлләрен үтәве."
+      },
+      "ar": {
+        "q": "مَا الْحَجُّ؟",
+        "a": "الْحَجُّ هُوَ قَصْدُ الْكَعْبَةِ وَأَدَاءُ مَنَاسِكِ الْحَجِّ فِي وَقْتٍ مُحَدَّدٍ لِمَنْ قَدَرَ عَلَيْهِ."
+      },
+      "es": {
+        "q": "¿Qué es el Hajj?",
+        "a": "El Hajj es la peregrinación a la Kaaba y la realización de sus ritos prescritos en un tiempo determinado por quien tiene capacidad para hacerlo."
+      },
+      "it": {
+        "q": "Che cos’è l’Hajj?",
+        "a": "L’Hajj è il pellegrinaggio alla Kaaba e il compimento dei suoi riti prescritti in un periodo stabilito da parte di chi ne ha la possibilità."
+      },
+      "pt": {
+        "q": "O que é o Hajj?",
+        "a": "O Hajj é a peregrinação à Caaba e a realização dos seus ritos prescritos num período determinado por quem tem capacidade para isso."
+      },
+      "ko": {
+        "q": "하지란 무엇입니까?",
+        "a": "하지는 능력이 있는 무슬림이 정해진 시기에 카바를 순례하고 정해진 의식을 수행하는 것입니다."
+      },
+      "vi": {
+        "q": "Hajj là gì?",
+        "a": "Hajj là cuộc hành hương đến Kaaba và thực hiện các nghi lễ quy định vào thời gian nhất định đối với người Muslim có khả năng."
+      },
+      "ja": {
+        "q": "ハッジとは何ですか。",
+        "a": "ハッジとは、能力のあるムスリムが定められた時期にカアバへ巡礼し、定められた儀礼を行うことです。"
+      },
+      "zh": {
+        "q": "朝觐是什么？",
+        "a": "朝觐是有能力的穆斯林在规定的时间前往克尔白并完成规定的朝觐仪式。"
+      }
+    },
+    {
+      "id": 202,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:97 — https://quran.com/3/97",
+        "📖 Kur’an — Âl-i İmrân 3:97 — https://quran.com/3/97"
+      ],
+      "tr": {
+        "q": "Hac kimlere farzdır?",
+        "a": "Gücü yeten Müslümana ömründe bir defa hac farzdır."
+      },
+      "en": {
+        "q": "Who is Hajj obligatory for?",
+        "a": "Hajj is obligatory once in a lifetime for a Muslim who has the ability to perform it."
+      },
+      "de": {
+        "q": "Für wen ist der Haddsch verpflichtend?",
+        "a": "Der Haddsch ist für einen dazu fähigen Muslim einmal im Leben verpflichtend."
+      },
+      "nl": {
+        "q": "Voor wie is de hadj verplicht?",
+        "a": "De hadj is eenmaal in het leven verplicht voor een moslim die daartoe in staat is."
+      },
+      "fr": {
+        "q": "Pour qui le Hajj est-il obligatoire ?",
+        "a": "Le Hajj est obligatoire une fois dans la vie pour le musulman qui en a la capacité."
+      },
+      "ru": {
+        "q": "Для кого хадж является обязательным?",
+        "a": "Хадж обязателен один раз в жизни для мусульманина, имеющего возможность его совершить."
+      },
+      "ku": {
+        "q": "Hec ji bo kê farz e?",
+        "a": "Ji bo misilmanê ku dikare, hec carekê di jiyanê de farz e."
+      },
+      "tt": {
+        "q": "Хаҗ кемгә фарыз?",
+        "a": "Мөмкинлеге булган мөселманга хаҗ гомерендә бер тапкыр фарыз."
+      },
+      "ar": {
+        "q": "عَلَى مَنْ يَجِبُ الْحَجُّ؟",
+        "a": "يَجِبُ الْحَجُّ مَرَّةً فِي الْعُمْرِ عَلَى الْمُسْلِمِ الْقَادِرِ عَلَيْهِ."
+      },
+      "es": {
+        "q": "¿Para quién es obligatorio el Hajj?",
+        "a": "El Hajj es obligatorio una vez en la vida para el musulmán que tiene capacidad para realizarlo."
+      },
+      "it": {
+        "q": "Per chi è obbligatorio l’Hajj?",
+        "a": "L’Hajj è obbligatorio una volta nella vita per il musulmano che ne ha la possibilità."
+      },
+      "pt": {
+        "q": "Para quem é obrigatório o Hajj?",
+        "a": "O Hajj é obrigatório uma vez na vida para o muçulmano que tenha capacidade para o realizar."
+      },
+      "ko": {
+        "q": "누구에게 하지가 의무입니까?",
+        "a": "하지는 능력이 있는 무슬림에게 평생 한 번 의무입니다."
+      },
+      "vi": {
+        "q": "Hajj bắt buộc đối với ai?",
+        "a": "Hajj bắt buộc một lần trong đời đối với người Muslim có đủ khả năng thực hiện."
+      },
+      "ja": {
+        "q": "ハッジは誰に義務ですか。",
+        "a": "能力のあるムスリムには、生涯に一度ハッジが義務です。"
+      },
+      "zh": {
+        "q": "朝觐对谁是主命？",
+        "a": "对于有能力的穆斯林，一生一次朝觐是主命。"
+      }
+    },
+    {
+      "id": 203,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c",
+        "📚 Hadis — Sahih Müslim 16a — https://sunnah.com/muslim:16a"
+      ],
+      "tr": {
+        "q": "İslâm’ın beş şartı hangi hadiste açıkça sayılmıştır?",
+        "a": "İbn Ömer’den rivayet edilen Sahih Müslim 16c hadisi İslâm’ın beş temelini açıkça sayar."
+      },
+      "en": {
+        "q": "Which hadith explicitly lists the five pillars of Islam?",
+        "a": "Sahih Muslim 16c, narrated from Ibn Umar, explicitly lists the five pillars of Islam."
+      },
+      "de": {
+        "q": "In welchem Hadith werden die fünf Säulen des Islam ausdrücklich genannt?",
+        "a": "Sahih Muslim 16c, überliefert von Ibn Umar, nennt die fünf Säulen des Islam ausdrücklich."
+      },
+      "nl": {
+        "q": "In welke hadith worden de vijf zuilen van de islam expliciet genoemd?",
+        "a": "Sahih Muslim 16c, overgeleverd door Ibn Umar, noemt de vijf zuilen van de islam expliciet."
+      },
+      "fr": {
+        "q": "Dans quel hadith les cinq piliers de l’islam sont-ils explicitement énumérés ?",
+        "a": "Le Sahih Muslim 16c, rapporté par Ibn Umar, énumère explicitement les cinq piliers de l’islam."
+      },
+      "ru": {
+        "q": "В каком хадисе ясно перечислены пять столпов Ислама?",
+        "a": "В Сахих Муслим 16c, переданном от Ибн Умара, пять столпов Ислама перечислены прямо."
+      },
+      "ku": {
+        "q": "Kîjan hedîs pênc şertên Îslamê bi eşkere dide?",
+        "a": "Sahîh Muslim 16c, ku ji Ibn Umar hatiye rivayetkirin, pênc şertên Îslamê bi eşkere dide."
+      },
+      "tt": {
+        "q": "Исламның биш баганасы кайсы хәдистә ачык санала?",
+        "a": "Ибн Гомәр риваять иткән Сәхих Мөслим 16c хәдисендә биш багана ачык санала."
+      },
+      "ar": {
+        "q": "فِي أَيِّ حَدِيثٍ ذُكِرَتْ أَرْكَانُ الْإِسْلَامِ خَمْسَةً صَرَاحَةً؟",
+        "a": "ذُكِرَتْ فِي صَحِيحِ مُسْلِمٍ ١٦ج، مِنْ رِوَايَةِ ابْنِ عُمَرَ، أَرْكَانُ الْإِسْلَامِ الْخَمْسَةُ صَرَاحَةً."
+      },
+      "es": {
+        "q": "¿En qué hadiz se enumeran explícitamente los cinco pilares del Islam?",
+        "a": "El Sahih Muslim 16c, narrado por Ibn Umar, enumera explícitamente los cinco pilares del Islam."
+      },
+      "it": {
+        "q": "In quale hadith sono elencati esplicitamente i cinque pilastri dell’Islam?",
+        "a": "Il Sahih Muslim 16c, narrato da Ibn Umar, elenca esplicitamente i cinque pilastri dell’Islam."
+      },
+      "pt": {
+        "q": "Em que hadith são explicitamente enumerados os cinco pilares do Islão?",
+        "a": "O Sahih Muslim 16c, narrado por Ibn Umar, enumera explicitamente os cinco pilares do Islão."
+      },
+      "ko": {
+        "q": "이슬람의 다섯 기둥이 명시적으로 나오는 하디스는 무엇입니까?",
+        "a": "이븐 우마르가 전한 사히흐 무슬림 16c가 이슬람의 다섯 기둥을 명시적으로 열거합니다."
+      },
+      "vi": {
+        "q": "Hadith nào nêu rõ năm trụ cột của Islam?",
+        "a": "Sahih Muslim 16c, do Ibn Umar thuật lại, nêu rõ năm trụ cột của Islam."
+      },
+      "ja": {
+        "q": "イスラームの五柱を明確に列挙するハディースはどれですか。",
+        "a": "イブン・ウマルが伝えたサヒーフ・ムスリム16cが五柱を明確に列挙しています。"
+      },
+      "zh": {
+        "q": "哪一段圣训明确列举了伊斯兰的五大支柱？",
+        "a": "伊本·欧麦尔传述的《穆斯林圣训实录》16c明确列举了伊斯兰的五大支柱。"
+      }
+    },
+    {
+      "id": 204,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16c — https://sunnah.com/muslim:16c",
+        "📖 Kur’an — Zâriyât 51:56 — https://quran.com/51/56"
+      ],
+      "tr": {
+        "q": "Şehadet ile ibadetler arasındaki ilişki nedir?",
+        "a": "Şehadet imanın temel ifadesidir; ibadetler bu imanın gereği olarak Allah’a kulluğu gösterir."
+      },
+      "en": {
+        "q": "What is the relationship between the testimony of faith and worship?",
+        "a": "The testimony is the fundamental expression of faith; acts of worship demonstrate servitude to Allah as a consequence of that faith."
+      },
+      "de": {
+        "q": "Welcher Zusammenhang besteht zwischen Glaubenszeugnis und Gottesdiensten?",
+        "a": "Das Glaubenszeugnis ist der grundlegende Ausdruck des Glaubens; die Gottesdienste zeigen die Hingabe an Allah als Folge dieses Glaubens."
+      },
+      "nl": {
+        "q": "Wat is de relatie tussen de geloofsgetuigenis en aanbidding?",
+        "a": "De geloofsgetuigenis is de fundamentele uitdrukking van geloof; aanbidding toont de toewijding aan Allah die uit dat geloof voortvloeit."
+      },
+      "fr": {
+        "q": "Quel est le lien entre la profession de foi et les actes d’adoration ?",
+        "a": "La profession de foi est l’expression fondamentale de la foi ; les actes d’adoration manifestent la servitude envers Allah qui en découle."
+      },
+      "ru": {
+        "q": "Как связаны свидетельство веры и поклонение?",
+        "a": "Свидетельство — основное выражение веры, а поклонение показывает покорность Аллаху, вытекающую из этой веры."
+      },
+      "ku": {
+        "q": "Têkiliya şehadet û îbadetan çi ye?",
+        "a": "Şehadet bingeha îmanê ye; îbadet nîşan dide ku ji wê baweriyê re bendeyiya Allah tê pêk anîn."
+      },
+      "tt": {
+        "q": "Шәһадәт белән гыйбадәтләр арасында нинди бәйләнеш бар?",
+        "a": "Шәһадәт — иманның төп белдерүе; гыйбадәтләр шул иманнан килгән Аллаһка коллыкны күрсәтә."
+      },
+      "ar": {
+        "q": "مَا الْعَلَاقَةُ بَيْنَ الشَّهَادَةِ وَالْعِبَادَاتِ؟",
+        "a": "الشَّهَادَةُ هِيَ التَّعْبِيرُ الْأَسَاسِيُّ عَنِ الْإِيمَانِ، وَالْعِبَادَاتُ تُظْهِرُ عُبُودِيَّةَ اللَّهِ النَّاشِئَةَ عَنْ هَذَا الْإِيمَانِ."
+      },
+      "es": {
+        "q": "¿Qué relación hay entre el testimonio de fe y los actos de adoración?",
+        "a": "El testimonio es la expresión fundamental de la fe; los actos de adoración muestran la servidumbre a Allah que se deriva de esa fe."
+      },
+      "it": {
+        "q": "Qual è il rapporto tra la testimonianza di fede e gli atti di culto?",
+        "a": "La testimonianza è l’espressione fondamentale della fede; gli atti di culto mostrano la sottomissione ad Allah che deriva da quella fede."
+      },
+      "pt": {
+        "q": "Qual é a relação entre o testemunho de fé e os atos de adoração?",
+        "a": "O testemunho é a expressão fundamental da fé; os atos de adoração demonstram a servidão a Allah que resulta dessa fé."
+      },
+      "ko": {
+        "q": "신앙고백과 예배의 관계는 무엇입니까?",
+        "a": "신앙고백은 믿음의 기본적인 표현이며, 예배는 그 믿음에서 비롯된 알라에 대한 종속과 헌신을 나타냅니다."
+      },
+      "vi": {
+        "q": "Mối quan hệ giữa lời tuyên tín và việc thờ phượng là gì?",
+        "a": "Lời tuyên tín là biểu hiện nền tảng của đức tin; việc thờ phượng thể hiện sự phụng sự Allah phát sinh từ đức tin ấy."
+      },
+      "ja": {
+        "q": "信仰告白と崇拝行為にはどんな関係がありますか。",
+        "a": "信仰告白は信仰の基本的な表明であり、崇拝行為はその信仰から生じるアッラーへの服従を示します。"
+      },
+      "zh": {
+        "q": "信仰作证与崇拜之间有什么关系？",
+        "a": "信仰作证是信仰的基本表达；崇拜行为体现了这种信仰所产生的对安拉的服从。"
+      }
+    },
+    {
+      "id": 205,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Tâhâ 20:14 — https://quran.com/20/14",
+        "📖 Kur’an — Ankebût 29:45 — https://quran.com/29/45"
+      ],
+      "tr": {
+        "q": "Namazın Allah’ı anmadaki yeri nedir?",
+        "a": "Allah Teâlâ namazın O’nu anmak için kılınmasını emretmiştir."
+      },
+      "en": {
+        "q": "What is the place of prayer in remembering Allah?",
+        "a": "Allah commands prayer so that He may be remembered."
+      },
+      "de": {
+        "q": "Welche Bedeutung hat das Gebet für das Gedenken an Allah?",
+        "a": "Allah hat das Gebet angeordnet, damit Seiner gedacht wird."
+      },
+      "nl": {
+        "q": "Welke plaats heeft het gebed bij het gedenken van Allah?",
+        "a": "Allah heeft het gebed opgedragen zodat Hij wordt herdacht."
+      },
+      "fr": {
+        "q": "Quelle est la place de la prière dans le rappel d’Allah ?",
+        "a": "Allah a ordonné la prière afin qu’Il soit rappelé."
+      },
+      "ru": {
+        "q": "Какова роль молитвы в поминании Аллаха?",
+        "a": "Аллах повелел совершать молитву, чтобы поминать Его."
+      },
+      "ku": {
+        "q": "Nimêj di bîranîna Allah de çi cih digire?",
+        "a": "Allah fermana nimêjê da da ku Ew bê bîranîn."
+      },
+      "tt": {
+        "q": "Аллаһны искә алуда намазның урыны нинди?",
+        "a": "Аллаһ Аны искә алу өчен намаз укырга әмер иткән."
+      },
+      "ar": {
+        "q": "مَا مَكَانَةُ الصَّلَاةِ فِي ذِكْرِ اللَّهِ؟",
+        "a": "أَمَرَ اللَّهُ بِإِقَامِ الصَّلَاةِ لِذِكْرِهِ."
+      },
+      "es": {
+        "q": "¿Qué lugar ocupa la oración en el recuerdo de Allah?",
+        "a": "Allah ordena la oración para que Él sea recordado."
+      },
+      "it": {
+        "q": "Qual è il ruolo della preghiera nel ricordare Allah?",
+        "a": "Allah ha ordinato la preghiera affinché Egli venga ricordato."
+      },
+      "pt": {
+        "q": "Qual é o lugar da oração na recordação de Allah?",
+        "a": "Allah ordenou a oração para que Ele seja lembrado."
+      },
+      "ko": {
+        "q": "알라를 기억하는 데 예배는 어떤 의미가 있습니까?",
+        "a": "알라는 자신이 기억되도록 예배를 명하셨습니다."
+      },
+      "vi": {
+        "q": "Lễ nguyện có vai trò gì trong việc tưởng nhớ Allah?",
+        "a": "Allah ra lệnh thực hiện lễ nguyện để tưởng nhớ Ngài."
+      },
+      "ja": {
+        "q": "アッラーを想起するうえで礼拝にはどんな役割がありますか。",
+        "a": "アッラーは御自身を想起するために礼拝を命じられました。"
+      },
+      "zh": {
+        "q": "礼拜在记念安拉方面有什么作用？",
+        "a": "安拉命令人礼拜，以便记念祂。"
+      }
+    },
+    {
+      "id": 206,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Tevbe 9:60 — https://quran.com/9/60",
+        "📚 Hadis — Sahih Müslim 1005 — https://sunnah.com/muslim:1005"
+      ],
+      "tr": {
+        "q": "Zekât ile sadaka aynı şey midir?",
+        "a": "Hayır. Zekât şartları ve hak sahipleri belirlenmiş farz bir ibadettir; sadaka daha geniş bir gönüllü iyilik anlamına gelir."
+      },
+      "en": {
+        "q": "Are zakat and voluntary charity the same?",
+        "a": "No. Zakat is obligatory with defined conditions and recipients, while voluntary charity is a broader form of voluntary goodness."
+      },
+      "de": {
+        "q": "Sind Zakat und freiwillige Almosen dasselbe?",
+        "a": "Nein. Zakat ist unter bestimmten Bedingungen verpflichtend und hat festgelegte Empfänger; freiwillige Almosen sind umfassender."
+      },
+      "nl": {
+        "q": "Zijn zakat en vrijwillige liefdadigheid hetzelfde?",
+        "a": "Nee. Zakat is verplicht onder bepaalde voorwaarden en heeft vastgestelde ontvangers; vrijwillige liefdadigheid is ruimer."
+      },
+      "fr": {
+        "q": "La zakat et l’aumône volontaire sont-elles la même chose ?",
+        "a": "Non. La zakat est obligatoire sous certaines conditions et a des bénéficiaires déterminés ; l’aumône volontaire est plus large."
+      },
+      "ru": {
+        "q": "Являются ли закят и добровольная милостыня одним и тем же?",
+        "a": "Нет. Закят обязателен при определённых условиях и имеет установленных получателей, а добровольная милостыня шире."
+      },
+      "ku": {
+        "q": "Zekat û sedqeya bi dilxwazî heman tişt in?",
+        "a": "Na. Zekat farz e, şert û wergirên wê diyarkirî ne; sedqeya dilxwazî firehtir e."
+      },
+      "tt": {
+        "q": "Зәкят белән ирекле сәдака бер үк нәрсәме?",
+        "a": "Юк. Зәкят билгеле шартлар белән фарыз һәм алучылары билгеләнгән; ирекле сәдака киңрәк."
+      },
+      "ar": {
+        "q": "هَلِ الزَّكَاةُ وَالصَّدَقَةُ التَّطَوُّعِيَّةُ شَيْءٌ وَاحِدٌ؟",
+        "a": "لَا. الزَّكَاةُ فَرِيضَةٌ لَهَا شُرُوطٌ وَمُسْتَحِقُّونَ مُحَدَّدُونَ، أَمَّا الصَّدَقَةُ التَّطَوُّعِيَّةُ فَأَوْسَعُ."
+      },
+      "es": {
+        "q": "¿Son lo mismo el zakat y la caridad voluntaria?",
+        "a": "No. El zakat es obligatorio bajo determinadas condiciones y tiene beneficiarios definidos; la caridad voluntaria es más amplia."
+      },
+      "it": {
+        "q": "Zakat e carità volontaria sono la stessa cosa?",
+        "a": "No. La zakat è obbligatoria a determinate condizioni e ha destinatari stabiliti; la carità volontaria è più ampia."
+      },
+      "pt": {
+        "q": "Zakat e caridade voluntária são a mesma coisa?",
+        "a": "Não. O zakat é obrigatório sob condições específicas e tem beneficiários definidos; a caridade voluntária é mais ampla."
+      },
+      "ko": {
+        "q": "자카트와 자발적 자선은 같은 것입니까?",
+        "a": "아닙니다. 자카트는 정해진 조건과 수혜자가 있는 의무이고, 자발적 자선은 더 넓은 선행입니다."
+      },
+      "vi": {
+        "q": "Zakat và bố thí tự nguyện có giống nhau không?",
+        "a": "Không. Zakat là nghĩa vụ với điều kiện và đối tượng nhận được quy định; bố thí tự nguyện có phạm vi rộng hơn."
+      },
+      "ja": {
+        "q": "ザカートと任意の施しは同じですか。",
+        "a": "いいえ。ザカートは条件と受給者が定められた義務で、任意の施しはより広い善行です。"
+      },
+      "zh": {
+        "q": "天课和自愿施舍是一回事吗？",
+        "a": "不是。天课是在特定条件下的主命，并有规定的受益人；自愿施舍的范围更广。"
+      }
+    },
+    {
+      "id": 207,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Bakara 2:183 — https://quran.com/2/183",
+        "📚 Hadis — Sahih Buhârî 1903 — https://sunnah.com/bukhari:1903"
+      ],
+      "tr": {
+        "q": "Oruç sadece aç ve susuz kalmak mıdır?",
+        "a": "Hayır. Oruç Allah’a itaat ve takvayı hedefleyen bir ibadettir; kötü davranışlardan da sakınmayı gerektirir."
+      },
+      "en": {
+        "q": "Is fasting only staying hungry and thirsty?",
+        "a": "No. Fasting is worship aimed at obedience and taqwa and includes avoiding sinful behavior."
+      },
+      "de": {
+        "q": "Bedeutet Fasten nur, hungrig und durstig zu bleiben?",
+        "a": "Nein. Fasten ist ein Gottesdienst, der Gehorsam und Taqwa fördern soll und auch das Meiden von Sünde umfasst."
+      },
+      "nl": {
+        "q": "Is vasten alleen honger en dorst verdragen?",
+        "a": "Nee. Vasten is aanbidding gericht op gehoorzaamheid en taqwa en omvat ook het vermijden van zondig gedrag."
+      },
+      "fr": {
+        "q": "Le jeûne consiste-t-il seulement à avoir faim et soif ?",
+        "a": "Non. Le jeûne est un acte d’adoration destiné à favoriser l’obéissance et la taqwa, et il implique aussi d’éviter le péché."
+      },
+      "ru": {
+        "q": "Пост — это только голод и жажда?",
+        "a": "Нет. Пост — поклонение, направленное на послушание и богобоязненность; он также включает отказ от греховных поступков."
+      },
+      "ku": {
+        "q": "Rojî tenê birçîbûn û tîbûn e?",
+        "a": "Na. Rojî îbadet e ji bo bindestbûna Allah û teqwa, û dûrketina ji gunehan jî dihewîne."
+      },
+      "tt": {
+        "q": "Ураза бары тик ач һәм сусау гынамы?",
+        "a": "Юк. Ураза — буйсыну һәм тәкъвалык өчен гыйбадәт, ул гөнаһлы эшләрдән тыелуны да үз эченә ала."
+      },
+      "ar": {
+        "q": "هَلِ الصِّيَامُ مُجَرَّدُ الْجُوعِ وَالْعَطَشِ؟",
+        "a": "لَا. الصِّيَامُ عِبَادَةٌ لِلطَّاعَةِ وَالتَّقْوَى، وَيَشْمَلُ أَيْضًا تَرْكَ الْمَعَاصِي."
+      },
+      "es": {
+        "q": "¿Ayunar consiste solamente en pasar hambre y sed?",
+        "a": "No. El ayuno es una adoración destinada a la obediencia y la taqwa, e incluye evitar conductas pecaminosas."
+      },
+      "it": {
+        "q": "Il digiuno consiste soltanto nel sopportare fame e sete?",
+        "a": "No. Il digiuno è un atto di culto volto all’obbedienza e alla taqwa e comprende anche evitare comportamenti peccaminosi."
+      },
+      "pt": {
+        "q": "Jejuar significa apenas passar fome e sede?",
+        "a": "Não. O jejum é uma adoração destinada à obediência e à taqwa e inclui evitar comportamentos pecaminosos."
+      },
+      "ko": {
+        "q": "금식은 단지 배고픔과 목마름을 견디는 것입니까?",
+        "a": "아닙니다. 금식은 순종과 타끄와를 위한 예배이며 죄악된 행동을 피하는 것도 포함합니다."
+      },
+      "vi": {
+        "q": "Nhịn chay có phải chỉ là chịu đói và khát không?",
+        "a": "Không. Nhịn chay là sự thờ phượng nhằm vâng phục và đạt taqwa, đồng thời bao gồm tránh hành vi tội lỗi."
+      },
+      "ja": {
+        "q": "断食は空腹と喉の渇きを我慢するだけですか。",
+        "a": "いいえ。断食は服従とタクワを目指す崇拝であり、罪深い行為を避けることも含みます。"
+      },
+      "zh": {
+        "q": "斋戒只是忍受饥饿和口渴吗？",
+        "a": "不是。斋戒是为了服从安拉和培养敬畏的崇拜，也包括远离罪恶行为。"
+      }
+    },
+    {
+      "id": 208,
+      "day": 11,
+      "sources": [
+        "📖 Kur’an — Hac 22:27 — https://quran.com/22/27",
+        "📖 Kur’an — Hucurât 49:13 — https://quran.com/49/13"
+      ],
+      "tr": {
+        "q": "Haccın Müslümanlar arasındaki birlik açısından önemi nedir?",
+        "a": "Hac farklı milletlerden Müslümanları aynı ibadetler etrafında bir araya getirerek ümmet bilincini güçlendirir."
+      },
+      "en": {
+        "q": "Why is Hajj important for Muslim unity?",
+        "a": "Hajj brings Muslims from different peoples together in the same acts of worship and strengthens their sense of belonging to one community."
+      },
+      "de": {
+        "q": "Warum ist der Haddsch für die Einheit der Muslime wichtig?",
+        "a": "Der Haddsch bringt Muslime verschiedener Völker in denselben Gottesdiensten zusammen und stärkt das Bewusstsein für die gemeinsame Umma."
+      },
+      "nl": {
+        "q": "Waarom is de hadj belangrijk voor de eenheid van moslims?",
+        "a": "De hadj brengt moslims van verschillende volken samen in dezelfde vormen van aanbidding en versterkt hun gevoel van verbondenheid als één gemeenschap."
+      },
+      "fr": {
+        "q": "Pourquoi le Hajj est-il important pour l’unité des musulmans ?",
+        "a": "Le Hajj réunit des musulmans de peuples différents dans les mêmes actes d’adoration et renforce le sentiment d’appartenir à une même communauté."
+      },
+      "ru": {
+        "q": "Почему хадж важен для единства мусульман?",
+        "a": "Хадж объединяет мусульман разных народов в одних обрядах и укрепляет чувство принадлежности к единой общине."
+      },
+      "ku": {
+        "q": "Çima hec ji bo yekîtiya misilmanan girîng e?",
+        "a": "Hec misilmanên ji gelên cuda di heman îbadetan de dicivîne û hestê endambûna ummetê xurt dike."
+      },
+      "tt": {
+        "q": "Хаҗ мөселманнар бердәмлеге өчен ни өчен мөһим?",
+        "a": "Хаҗ төрле халыклардан мөселманнарны бер үк гыйбадәтләрдә берләштерә һәм бер өммәт булу хисен ныгыта."
+      },
+      "ar": {
+        "q": "لِمَاذَا الْحَجُّ مُهِمٌّ لِوَحْدَةِ الْمُسْلِمِينَ؟",
+        "a": "يَجْمَعُ الْحَجُّ مُسْلِمِينَ مِنْ شُعُوبٍ مُخْتَلِفَةٍ فِي عِبَادَاتٍ وَاحِدَةٍ، وَيُقَوِّي شُعُورَ الْانْتِمَاءِ إِلَى أُمَّةٍ وَاحِدَةٍ."
+      },
+      "es": {
+        "q": "¿Por qué es importante el Hajj para la unidad de los musulmanes?",
+        "a": "El Hajj reúne a musulmanes de distintos pueblos en los mismos actos de adoración y fortalece el sentido de pertenecer a una sola comunidad."
+      },
+      "it": {
+        "q": "Perché l’Hajj è importante per l’unità dei musulmani?",
+        "a": "L’Hajj riunisce musulmani di popoli diversi negli stessi atti di culto e rafforza il senso di appartenere a un’unica comunità."
+      },
+      "pt": {
+        "q": "Por que o Hajj é importante para a unidade dos muçulmanos?",
+        "a": "O Hajj reúne muçulmanos de diferentes povos nos mesmos atos de adoração e fortalece o sentimento de pertencer a uma única comunidade."
+      },
+      "ko": {
+        "q": "하지는 무슬림의 단결에 왜 중요합니까?",
+        "a": "하지는 서로 다른 민족의 무슬림들을 같은 예배로 모으고 하나의 공동체에 속한다는 의식을 강화합니다."
+      },
+      "vi": {
+        "q": "Vì sao Hajj quan trọng đối với sự đoàn kết của người Muslim?",
+        "a": "Hajj quy tụ người Muslim từ nhiều dân tộc trong cùng các nghi lễ và củng cố ý thức thuộc về một cộng đồng."
+      },
+      "ja": {
+        "q": "ハッジはムスリムの団結にとってなぜ重要ですか。",
+        "a": "ハッジは異なる民族のムスリムを同じ崇拝に集め、一つの共同体に属する意識を強めます。"
+      },
+      "zh": {
+        "q": "朝觐为什么有助于穆斯林团结？",
+        "a": "朝觐把来自不同民族的穆斯林聚集在相同的崇拜中，增强共同体意识。"
+      }
+    },
+    {
+      "id": 209,
+      "day": 11,
+      "sources": [
+        "📚 Hadis — Sahih Müslim 16a — https://sunnah.com/muslim:16a",
+        "📖 Kur’an — Zâriyât 51:56 — https://quran.com/51/56"
+      ],
+      "tr": {
+        "q": "İslâm’ın beş şartını öğrenmek neden önemlidir?",
+        "a": "Bu şartlar Müslümanın temel ibadet hayatını anlamasına ve Allah’a bilinçli kulluk etmesine yardımcı olur."
+      },
+      "en": {
+        "q": "Why is it important to learn the five pillars?",
+        "a": "They provide a foundation for understanding a Muslim’s basic worship and serving Allah consciously."
+      },
+      "de": {
+        "q": "Warum ist es wichtig, die fünf Säulen zu lernen?",
+        "a": "Sie bilden die Grundlage, um das grundlegende gottesdienstliche Leben eines Muslims zu verstehen und Allah bewusst zu dienen."
+      },
+      "nl": {
+        "q": "Waarom is het belangrijk de vijf zuilen te leren?",
+        "a": "Ze vormen de basis om het fundamentele religieuze leven van een moslim te begrijpen en Allah bewust te dienen."
+      },
+      "fr": {
+        "q": "Pourquoi est-il important d’apprendre les cinq piliers ?",
+        "a": "Ils constituent une base pour comprendre la vie cultuelle du musulman et servir Allah consciemment."
+      },
+      "ru": {
+        "q": "Почему важно изучать пять столпов?",
+        "a": "Они дают основу для понимания основного поклонения мусульманина и сознательного служения Аллаху."
+      },
+      "ku": {
+        "q": "Çima fêrbûna pênc şertan girîng e?",
+        "a": "Ew bingehek in ji bo fêmkirina jiyana îbadetê ya misilmanekî û ji bo ku bi hişyarî xizmeta Allah bike."
+      },
+      "tt": {
+        "q": "Биш багананы өйрәнү ни өчен мөһим?",
+        "a": "Алар мөселманның төп гыйбадәт тормышын аңлау һәм Аллаһка аңлы рәвештә хезмәт итү өчен нигез бирә."
+      },
+      "ar": {
+        "q": "لِمَاذَا يَهُمُّ تَعَلُّمُ الْأَرْكَانِ الْخَمْسَةِ؟",
+        "a": "لِأَنَّهَا تُوَفِّرُ أَسَاسًا لِفَهْمِ حَيَاةِ الْمُسْلِمِ الْعِبَادِيَّةِ وَخِدْمَةِ اللَّهِ بِوَعْيٍ."
+      },
+      "es": {
+        "q": "¿Por qué es importante aprender los cinco pilares?",
+        "a": "Constituyen la base para comprender la vida de culto de un musulmán y servir a Allah conscientemente."
+      },
+      "it": {
+        "q": "Perché è importante imparare i cinque pilastri?",
+        "a": "Essi costituiscono la base per comprendere la vita di culto del musulmano e servire Allah con consapevolezza."
+      },
+      "pt": {
+        "q": "Por que é importante aprender os cinco pilares?",
+        "a": "Eles formam a base para compreender a vida de adoração de um muçulmano e servir Allah conscientemente."
+      },
+      "ko": {
+        "q": "다섯 기둥을 배우는 것이 왜 중요합니까?",
+        "a": "다섯 기둥은 무슬림의 기본적인 예배 생활을 이해하고 알라를 의식적으로 섬기는 토대를 제공합니다."
+      },
+      "vi": {
+        "q": "Vì sao cần học năm trụ cột?",
+        "a": "Năm trụ cột tạo nền tảng để hiểu đời sống thờ phượng căn bản của người Muslim và phụng sự Allah một cách có ý thức."
+      },
+      "ja": {
+        "q": "五柱を学ぶことはなぜ重要ですか。",
+        "a": "五柱はムスリムの基本的な崇拝生活を理解し、意識をもってアッラーに仕えるための土台となります。"
+      },
+      "zh": {
+        "q": "为什么学习伊斯兰的五大支柱很重要？",
+        "a": "五大支柱为理解穆斯林的基本崇拜生活和有意识地侍奉安拉提供基础。"
+      }
+    }
+  ]
+}

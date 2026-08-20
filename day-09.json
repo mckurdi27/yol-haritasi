@@ -1,0 +1,1531 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 9,
+  "dayTitle": "9. Gün — Âhiret ve Ölüm",
+  "daySubtitle": {
+    "tr": "Ölüm, kabir hayatı, kıyamet, diriliş, hesap, cennet ve cehennem",
+    "en": "Death, the life of the grave, the Resurrection, judgment, Paradise and Hell",
+    "de": "Tod, das Leben im Grab, Auferstehung, Abrechnung, Paradies und Hölle",
+    "nl": "De dood, het leven in het graf, de opstanding, het oordeel, het Paradijs en de Hel",
+    "fr": "La mort, la vie dans la tombe, la résurrection, le jugement, le Paradis et l’Enfer",
+    "ru": "Смерть, жизнь в могиле, воскресение, расчёт, Рай и Ад",
+    "ku": "Mirin, jiyana berzaxê, qiyamet, rabûna ji nû ve, hesab, cennet û dojeh",
+    "tt": "Үлем, кабер тормышы, кыямәт, терелү, хисап, җәннәт һәм җәһәннәм",
+    "ar": "الْمَوْتُ وَحَيَاةُ الْبَرْزَخِ وَالْقِيَامَةُ وَالْبَعْثُ وَالْحِسَابُ وَالْجَنَّةُ وَالنَّارُ",
+    "es": "La muerte, la vida de la tumba, la resurrección, el juicio, el Paraíso y el Infierno",
+    "it": "La morte, la vita nella tomba, la resurrezione, il giudizio, il Paradiso e l’Inferno",
+    "pt": "A morte, a vida no túmulo, a ressurreição, o julgamento, o Paraíso e o Inferno",
+    "ko": "죽음, 무덤의 삶, 부활, 심판, 천국과 지옥",
+    "vi": "Cái chết, đời sống trong mộ, sự phục sinh, phán xét, Thiên Đàng và Hỏa Ngục",
+    "ja": "死、墓の世界、復活、清算、楽園と地獄",
+    "zh": "死亡、墓中生活、复活、清算、乐园与火狱"
+  },
+  "questions": [
+    {
+      "id": 153,
+      "day": 9,
+      "tr": {
+        "q": "Ölüm nedir?",
+        "a": "Ölüm, dünya hayatının sona ermesi ve insanın âhiret hayatına geçişidir."
+      },
+      "en": {
+        "q": "What is death?",
+        "a": "Death is the end of worldly life and the transition to the Hereafter."
+      },
+      "de": {
+        "q": "Was ist der Tod?",
+        "a": "Der Tod ist das Ende des irdischen Lebens und der Übergang zum Jenseits."
+      },
+      "nl": {
+        "q": "Wat is de dood?",
+        "a": "De dood is het einde van het aardse leven en de overgang naar het Hiernamaals."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la mort ?",
+        "a": "La mort est la fin de la vie terrestre et le passage vers l’au-delà."
+      },
+      "ru": {
+        "q": "What is death?",
+        "a": "Death is the end of worldly life and the transition to the Hereafter."
+      },
+      "ku": {
+        "q": "What is death?",
+        "a": "Death is the end of worldly life and the transition to the Hereafter."
+      },
+      "tt": {
+        "q": "What is death?",
+        "a": "Death is the end of worldly life and the transition to the Hereafter."
+      },
+      "ar": {
+        "q": "What is death?",
+        "a": "Death is the end of worldly life and the transition to the Hereafter."
+      },
+      "es": {
+        "q": "What is death?",
+        "a": "Death is the end of worldly life and the transition to the Hereafter."
+      },
+      "it": {
+        "q": "What is death?",
+        "a": "Death is the end of worldly life and the transition to the Hereafter."
+      },
+      "pt": {
+        "q": "What is death?",
+        "a": "Death is the end of worldly life and the transition to the Hereafter."
+      },
+      "ko": {
+        "q": "What is death?",
+        "a": "Death is the end of worldly life and the transition to the Hereafter."
+      },
+      "vi": {
+        "q": "What is death?",
+        "a": "Death is the end of worldly life and the transition to the Hereafter."
+      },
+      "ja": {
+        "q": "What is death?",
+        "a": "Death is the end of worldly life and the transition to the Hereafter."
+      },
+      "zh": {
+        "q": "What is death?",
+        "a": "Death is the end of worldly life and the transition to the Hereafter."
+      },
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:185 — https://quran.com/3/185",
+        "📖 Kur’an — Enbiyâ 21:35 — https://quran.com/21/35"
+      ]
+    },
+    {
+      "id": 154,
+      "day": 9,
+      "tr": {
+        "q": "Her insan ölümü tadacak mıdır?",
+        "a": "Evet. Kur’an, her nefsin ölümü tadacağını bildirir."
+      },
+      "en": {
+        "q": "Will every person taste death?",
+        "a": "Yes. The Qur’an states that every soul will taste death."
+      },
+      "de": {
+        "q": "Wird jeder Mensch den Tod kosten?",
+        "a": "Ja. Der Koran sagt, dass jede Seele den Tod kosten wird."
+      },
+      "nl": {
+        "q": "Zal ieder mens de dood proeven?",
+        "a": "Ja. De Koran zegt dat iedere ziel de dood zal proeven."
+      },
+      "fr": {
+        "q": "Toute personne goûtera-t-elle la mort ?",
+        "a": "Oui. Le Coran affirme que toute âme goûtera la mort."
+      },
+      "ru": {
+        "q": "Will every person taste death?",
+        "a": "Yes. The Qur’an states that every soul will taste death."
+      },
+      "ku": {
+        "q": "Will every person taste death?",
+        "a": "Yes. The Qur’an states that every soul will taste death."
+      },
+      "tt": {
+        "q": "Will every person taste death?",
+        "a": "Yes. The Qur’an states that every soul will taste death."
+      },
+      "ar": {
+        "q": "Will every person taste death?",
+        "a": "Yes. The Qur’an states that every soul will taste death."
+      },
+      "es": {
+        "q": "Will every person taste death?",
+        "a": "Yes. The Qur’an states that every soul will taste death."
+      },
+      "it": {
+        "q": "Will every person taste death?",
+        "a": "Yes. The Qur’an states that every soul will taste death."
+      },
+      "pt": {
+        "q": "Will every person taste death?",
+        "a": "Yes. The Qur’an states that every soul will taste death."
+      },
+      "ko": {
+        "q": "Will every person taste death?",
+        "a": "Yes. The Qur’an states that every soul will taste death."
+      },
+      "vi": {
+        "q": "Will every person taste death?",
+        "a": "Yes. The Qur’an states that every soul will taste death."
+      },
+      "ja": {
+        "q": "Will every person taste death?",
+        "a": "Yes. The Qur’an states that every soul will taste death."
+      },
+      "zh": {
+        "q": "Will every person taste death?",
+        "a": "Yes. The Qur’an states that every soul will taste death."
+      },
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:185 — https://quran.com/3/185"
+      ]
+    },
+    {
+      "id": 155,
+      "day": 9,
+      "tr": {
+        "q": "Ölümü hatırlamak neden önemlidir?",
+        "a": "Ölümü hatırlamak insanı dünya hayatının geçiciliğini düşünmeye ve iyi ameller işlemeye yöneltir."
+      },
+      "en": {
+        "q": "Why is remembering death important?",
+        "a": "Remembering death reminds us that worldly life is temporary and encourages good deeds."
+      },
+      "de": {
+        "q": "Warum ist es wichtig, an den Tod zu denken?",
+        "a": "Die Erinnerung an den Tod zeigt die Vergänglichkeit des irdischen Lebens und ermutigt zu guten Taten."
+      },
+      "nl": {
+        "q": "Waarom is het belangrijk aan de dood te denken?",
+        "a": "Het herinnert ons eraan dat het aardse leven tijdelijk is en moedigt goede daden aan."
+      },
+      "fr": {
+        "q": "Pourquoi est-il important de se souvenir de la mort ?",
+        "a": "Cela rappelle que la vie terrestre est temporaire et encourage les bonnes œuvres."
+      },
+      "ru": {
+        "q": "Why is remembering death important?",
+        "a": "Remembering death reminds us that worldly life is temporary and encourages good deeds."
+      },
+      "ku": {
+        "q": "Why is remembering death important?",
+        "a": "Remembering death reminds us that worldly life is temporary and encourages good deeds."
+      },
+      "tt": {
+        "q": "Why is remembering death important?",
+        "a": "Remembering death reminds us that worldly life is temporary and encourages good deeds."
+      },
+      "ar": {
+        "q": "Why is remembering death important?",
+        "a": "Remembering death reminds us that worldly life is temporary and encourages good deeds."
+      },
+      "es": {
+        "q": "Why is remembering death important?",
+        "a": "Remembering death reminds us that worldly life is temporary and encourages good deeds."
+      },
+      "it": {
+        "q": "Why is remembering death important?",
+        "a": "Remembering death reminds us that worldly life is temporary and encourages good deeds."
+      },
+      "pt": {
+        "q": "Why is remembering death important?",
+        "a": "Remembering death reminds us that worldly life is temporary and encourages good deeds."
+      },
+      "ko": {
+        "q": "Why is remembering death important?",
+        "a": "Remembering death reminds us that worldly life is temporary and encourages good deeds."
+      },
+      "vi": {
+        "q": "Why is remembering death important?",
+        "a": "Remembering death reminds us that worldly life is temporary and encourages good deeds."
+      },
+      "ja": {
+        "q": "Why is remembering death important?",
+        "a": "Remembering death reminds us that worldly life is temporary and encourages good deeds."
+      },
+      "zh": {
+        "q": "Why is remembering death important?",
+        "a": "Remembering death reminds us that worldly life is temporary and encourages good deeds."
+      },
+      "sources": [
+        "📖 Kur’an — Haşr 59:18 — https://quran.com/59/18",
+        "📖 Hadis — Tirmizî, Zühd 25 — https://sunnah.com/tirmidhi:2307"
+      ]
+    },
+    {
+      "id": 156,
+      "day": 9,
+      "tr": {
+        "q": "Ölümden sonra hayat var mıdır?",
+        "a": "Evet. İslam’a göre ölüm yok oluş değildir; insan diriliş ve hesap için yeniden hayata döndürülecektir."
+      },
+      "en": {
+        "q": "Is there life after death?",
+        "a": "Yes. In Islam, death is not annihilation; people will be resurrected for judgment."
+      },
+      "de": {
+        "q": "Gibt es ein Leben nach dem Tod?",
+        "a": "Ja. Im Islam ist der Tod keine Auslöschung; die Menschen werden zum Gericht auferweckt."
+      },
+      "nl": {
+        "q": "Is er leven na de dood?",
+        "a": "Ja. In de islam is de dood geen vernietiging; mensen zullen voor het oordeel worden opgewekt."
+      },
+      "fr": {
+        "q": "Y a-t-il une vie après la mort ?",
+        "a": "Oui. En islam, la mort n’est pas l’anéantissement ; les humains seront ressuscités pour le jugement."
+      },
+      "ru": {
+        "q": "Is there life after death?",
+        "a": "Yes. In Islam, death is not annihilation; people will be resurrected for judgment."
+      },
+      "ku": {
+        "q": "Is there life after death?",
+        "a": "Yes. In Islam, death is not annihilation; people will be resurrected for judgment."
+      },
+      "tt": {
+        "q": "Is there life after death?",
+        "a": "Yes. In Islam, death is not annihilation; people will be resurrected for judgment."
+      },
+      "ar": {
+        "q": "Is there life after death?",
+        "a": "Yes. In Islam, death is not annihilation; people will be resurrected for judgment."
+      },
+      "es": {
+        "q": "Is there life after death?",
+        "a": "Yes. In Islam, death is not annihilation; people will be resurrected for judgment."
+      },
+      "it": {
+        "q": "Is there life after death?",
+        "a": "Yes. In Islam, death is not annihilation; people will be resurrected for judgment."
+      },
+      "pt": {
+        "q": "Is there life after death?",
+        "a": "Yes. In Islam, death is not annihilation; people will be resurrected for judgment."
+      },
+      "ko": {
+        "q": "Is there life after death?",
+        "a": "Yes. In Islam, death is not annihilation; people will be resurrected for judgment."
+      },
+      "vi": {
+        "q": "Is there life after death?",
+        "a": "Yes. In Islam, death is not annihilation; people will be resurrected for judgment."
+      },
+      "ja": {
+        "q": "Is there life after death?",
+        "a": "Yes. In Islam, death is not annihilation; people will be resurrected for judgment."
+      },
+      "zh": {
+        "q": "Is there life after death?",
+        "a": "Yes. In Islam, death is not annihilation; people will be resurrected for judgment."
+      },
+      "sources": [
+        "📖 Kur’an — Mü’minûn 23:15–16 — https://quran.com/23/15-16",
+        "📖 Kur’an — Hac 22:7 — https://quran.com/22/7"
+      ]
+    },
+    {
+      "id": 157,
+      "day": 9,
+      "tr": {
+        "q": "Kabir hayatı nedir?",
+        "a": "Kabir hayatı, ölüm ile kıyamet arasındaki berzah dönemidir."
+      },
+      "en": {
+        "q": "What is the life of the grave?",
+        "a": "It is the barzakh period between death and the Resurrection."
+      },
+      "de": {
+        "q": "Was ist das Leben im Grab?",
+        "a": "Es ist die Barzakh-Zeit zwischen dem Tod und der Auferstehung."
+      },
+      "nl": {
+        "q": "Wat is het leven in het graf?",
+        "a": "Het is de barzakh-periode tussen de dood en de Opstanding."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la vie dans la tombe ?",
+        "a": "C’est la période du barzakh entre la mort et la Résurrection."
+      },
+      "ru": {
+        "q": "What is the life of the grave?",
+        "a": "It is the barzakh period between death and the Resurrection."
+      },
+      "ku": {
+        "q": "What is the life of the grave?",
+        "a": "It is the barzakh period between death and the Resurrection."
+      },
+      "tt": {
+        "q": "What is the life of the grave?",
+        "a": "It is the barzakh period between death and the Resurrection."
+      },
+      "ar": {
+        "q": "What is the life of the grave?",
+        "a": "It is the barzakh period between death and the Resurrection."
+      },
+      "es": {
+        "q": "What is the life of the grave?",
+        "a": "It is the barzakh period between death and the Resurrection."
+      },
+      "it": {
+        "q": "What is the life of the grave?",
+        "a": "It is the barzakh period between death and the Resurrection."
+      },
+      "pt": {
+        "q": "What is the life of the grave?",
+        "a": "It is the barzakh period between death and the Resurrection."
+      },
+      "ko": {
+        "q": "What is the life of the grave?",
+        "a": "It is the barzakh period between death and the Resurrection."
+      },
+      "vi": {
+        "q": "What is the life of the grave?",
+        "a": "It is the barzakh period between death and the Resurrection."
+      },
+      "ja": {
+        "q": "What is the life of the grave?",
+        "a": "It is the barzakh period between death and the Resurrection."
+      },
+      "zh": {
+        "q": "What is the life of the grave?",
+        "a": "It is the barzakh period between death and the Resurrection."
+      },
+      "sources": [
+        "📖 Kur’an — Mü’minûn 23:99–100 — https://quran.com/23/99-100",
+        "📚 TDV İslâm Ansiklopedisi — Berzah — https://islamansiklopedisi.org.tr/berzah"
+      ]
+    },
+    {
+      "id": 158,
+      "day": 9,
+      "tr": {
+        "q": "Berzah nedir?",
+        "a": "Berzah, ölüm ile kıyamet arasındaki ayırıcı ve ara dönemdir."
+      },
+      "en": {
+        "q": "What is Barzakh?",
+        "a": "Barzakh is the intervening period between death and the Resurrection."
+      },
+      "de": {
+        "q": "Was ist Barzakh?",
+        "a": "Barzakh ist die Zwischenzeit zwischen dem Tod und der Auferstehung."
+      },
+      "nl": {
+        "q": "Wat is Barzakh?",
+        "a": "Barzakh is de tussenperiode tussen de dood en de Opstanding."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le Barzakh ?",
+        "a": "Le Barzakh est la période intermédiaire entre la mort et la Résurrection."
+      },
+      "ru": {
+        "q": "What is Barzakh?",
+        "a": "Barzakh is the intervening period between death and the Resurrection."
+      },
+      "ku": {
+        "q": "What is Barzakh?",
+        "a": "Barzakh is the intervening period between death and the Resurrection."
+      },
+      "tt": {
+        "q": "What is Barzakh?",
+        "a": "Barzakh is the intervening period between death and the Resurrection."
+      },
+      "ar": {
+        "q": "What is Barzakh?",
+        "a": "Barzakh is the intervening period between death and the Resurrection."
+      },
+      "es": {
+        "q": "What is Barzakh?",
+        "a": "Barzakh is the intervening period between death and the Resurrection."
+      },
+      "it": {
+        "q": "What is Barzakh?",
+        "a": "Barzakh is the intervening period between death and the Resurrection."
+      },
+      "pt": {
+        "q": "What is Barzakh?",
+        "a": "Barzakh is the intervening period between death and the Resurrection."
+      },
+      "ko": {
+        "q": "What is Barzakh?",
+        "a": "Barzakh is the intervening period between death and the Resurrection."
+      },
+      "vi": {
+        "q": "What is Barzakh?",
+        "a": "Barzakh is the intervening period between death and the Resurrection."
+      },
+      "ja": {
+        "q": "What is Barzakh?",
+        "a": "Barzakh is the intervening period between death and the Resurrection."
+      },
+      "zh": {
+        "q": "What is Barzakh?",
+        "a": "Barzakh is the intervening period between death and the Resurrection."
+      },
+      "sources": [
+        "📖 Kur’an — Mü’minûn 23:100 — https://quran.com/23/100",
+        "📚 TDV İslâm Ansiklopedisi — Berzah — https://islamansiklopedisi.org.tr/berzah"
+      ]
+    },
+    {
+      "id": 159,
+      "day": 9,
+      "tr": {
+        "q": "Kıyamet nedir?",
+        "a": "Kıyamet, dünya düzeninin sona ermesi ve âhiret hayatının başlamasıyla ilgili büyük olayların gerçekleşeceği gündür."
+      },
+      "en": {
+        "q": "What is the Day of Resurrection?",
+        "a": "It is the day associated with the end of the worldly order and the beginning of the Hereafter."
+      },
+      "de": {
+        "q": "Was ist der Tag der Auferstehung?",
+        "a": "Es ist der Tag des Endes der weltlichen Ordnung und des Beginns des Jenseits."
+      },
+      "nl": {
+        "q": "Wat is de Dag van de Opstanding?",
+        "a": "Het is de dag waarop het wereldse leven eindigt en het Hiernamaals begint."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le Jour de la Résurrection ?",
+        "a": "C’est le jour lié à la fin de l’ordre terrestre et au début de l’au-delà."
+      },
+      "ru": {
+        "q": "What is the Day of Resurrection?",
+        "a": "It is the day associated with the end of the worldly order and the beginning of the Hereafter."
+      },
+      "ku": {
+        "q": "What is the Day of Resurrection?",
+        "a": "It is the day associated with the end of the worldly order and the beginning of the Hereafter."
+      },
+      "tt": {
+        "q": "What is the Day of Resurrection?",
+        "a": "It is the day associated with the end of the worldly order and the beginning of the Hereafter."
+      },
+      "ar": {
+        "q": "What is the Day of Resurrection?",
+        "a": "It is the day associated with the end of the worldly order and the beginning of the Hereafter."
+      },
+      "es": {
+        "q": "What is the Day of Resurrection?",
+        "a": "It is the day associated with the end of the worldly order and the beginning of the Hereafter."
+      },
+      "it": {
+        "q": "What is the Day of Resurrection?",
+        "a": "It is the day associated with the end of the worldly order and the beginning of the Hereafter."
+      },
+      "pt": {
+        "q": "What is the Day of Resurrection?",
+        "a": "It is the day associated with the end of the worldly order and the beginning of the Hereafter."
+      },
+      "ko": {
+        "q": "What is the Day of Resurrection?",
+        "a": "It is the day associated with the end of the worldly order and the beginning of the Hereafter."
+      },
+      "vi": {
+        "q": "What is the Day of Resurrection?",
+        "a": "It is the day associated with the end of the worldly order and the beginning of the Hereafter."
+      },
+      "ja": {
+        "q": "What is the Day of Resurrection?",
+        "a": "It is the day associated with the end of the worldly order and the beginning of the Hereafter."
+      },
+      "zh": {
+        "q": "What is the Day of Resurrection?",
+        "a": "It is the day associated with the end of the worldly order and the beginning of the Hereafter."
+      },
+      "sources": [
+        "📖 Kur’an — Hac 22:7 — https://quran.com/22/7",
+        "📖 Kur’an — Kıyâmet 75:1–14 — https://quran.com/75/1-14"
+      ]
+    },
+    {
+      "id": 160,
+      "day": 9,
+      "tr": {
+        "q": "Sûra üflenmesi ne anlama gelir?",
+        "a": "Sûra üflenmesi, kıyamet ve dirilişle ilgili ilâhî bildirilen büyük olaylardan biridir."
+      },
+      "en": {
+        "q": "What does the blowing of the Trumpet mean?",
+        "a": "The blowing of the Trumpet is one of the major events described in revelation concerning the Resurrection."
+      },
+      "de": {
+        "q": "Was bedeutet das Blasen in das Horn?",
+        "a": "Das Blasen in das Horn gehört zu den großen Ereignissen, die in der Offenbarung über die Auferstehung beschrieben werden."
+      },
+      "nl": {
+        "q": "Wat betekent het blazen op de bazuin?",
+        "a": "Het is een van de grote gebeurtenissen die in de openbaring over de Opstanding worden beschreven."
+      },
+      "fr": {
+        "q": "Que signifie le souffle dans la Trompe ?",
+        "a": "C’est l’un des grands événements décrits par la révélation au sujet de la Résurrection."
+      },
+      "ru": {
+        "q": "What does the blowing of the Trumpet mean?",
+        "a": "The blowing of the Trumpet is one of the major events described in revelation concerning the Resurrection."
+      },
+      "ku": {
+        "q": "What does the blowing of the Trumpet mean?",
+        "a": "The blowing of the Trumpet is one of the major events described in revelation concerning the Resurrection."
+      },
+      "tt": {
+        "q": "What does the blowing of the Trumpet mean?",
+        "a": "The blowing of the Trumpet is one of the major events described in revelation concerning the Resurrection."
+      },
+      "ar": {
+        "q": "What does the blowing of the Trumpet mean?",
+        "a": "The blowing of the Trumpet is one of the major events described in revelation concerning the Resurrection."
+      },
+      "es": {
+        "q": "What does the blowing of the Trumpet mean?",
+        "a": "The blowing of the Trumpet is one of the major events described in revelation concerning the Resurrection."
+      },
+      "it": {
+        "q": "What does the blowing of the Trumpet mean?",
+        "a": "The blowing of the Trumpet is one of the major events described in revelation concerning the Resurrection."
+      },
+      "pt": {
+        "q": "What does the blowing of the Trumpet mean?",
+        "a": "The blowing of the Trumpet is one of the major events described in revelation concerning the Resurrection."
+      },
+      "ko": {
+        "q": "What does the blowing of the Trumpet mean?",
+        "a": "The blowing of the Trumpet is one of the major events described in revelation concerning the Resurrection."
+      },
+      "vi": {
+        "q": "What does the blowing of the Trumpet mean?",
+        "a": "The blowing of the Trumpet is one of the major events described in revelation concerning the Resurrection."
+      },
+      "ja": {
+        "q": "What does the blowing of the Trumpet mean?",
+        "a": "The blowing of the Trumpet is one of the major events described in revelation concerning the Resurrection."
+      },
+      "zh": {
+        "q": "What does the blowing of the Trumpet mean?",
+        "a": "The blowing of the Trumpet is one of the major events described in revelation concerning the Resurrection."
+      },
+      "sources": [
+        "📖 Kur’an — Zümer 39:68 — https://quran.com/39/68",
+        "📖 Kur’an — Yâsîn 36:51 — https://quran.com/36/51"
+      ]
+    },
+    {
+      "id": 161,
+      "day": 9,
+      "tr": {
+        "q": "Ba's nedir?",
+        "a": "Ba's, insanların ölümden sonra yeniden diriltilmesidir."
+      },
+      "en": {
+        "q": "What is Ba'th?",
+        "a": "Ba'th is the resurrection of people after death."
+      },
+      "de": {
+        "q": "Was ist Ba'th?",
+        "a": "Ba'th ist die Auferweckung der Menschen nach dem Tod."
+      },
+      "nl": {
+        "q": "Wat is Ba'th?",
+        "a": "Ba'th is het opnieuw tot leven brengen van mensen na de dood."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la Ba‘th ?",
+        "a": "C’est la résurrection des êtres humains après la mort."
+      },
+      "ru": {
+        "q": "What is Ba'th?",
+        "a": "Ba'th is the resurrection of people after death."
+      },
+      "ku": {
+        "q": "What is Ba'th?",
+        "a": "Ba'th is the resurrection of people after death."
+      },
+      "tt": {
+        "q": "What is Ba'th?",
+        "a": "Ba'th is the resurrection of people after death."
+      },
+      "ar": {
+        "q": "What is Ba'th?",
+        "a": "Ba'th is the resurrection of people after death."
+      },
+      "es": {
+        "q": "What is Ba'th?",
+        "a": "Ba'th is the resurrection of people after death."
+      },
+      "it": {
+        "q": "What is Ba'th?",
+        "a": "Ba'th is the resurrection of people after death."
+      },
+      "pt": {
+        "q": "What is Ba'th?",
+        "a": "Ba'th is the resurrection of people after death."
+      },
+      "ko": {
+        "q": "What is Ba'th?",
+        "a": "Ba'th is the resurrection of people after death."
+      },
+      "vi": {
+        "q": "What is Ba'th?",
+        "a": "Ba'th is the resurrection of people after death."
+      },
+      "ja": {
+        "q": "What is Ba'th?",
+        "a": "Ba'th is the resurrection of people after death."
+      },
+      "zh": {
+        "q": "What is Ba'th?",
+        "a": "Ba'th is the resurrection of people after death."
+      },
+      "sources": [
+        "📖 Kur’an — Hac 22:7 — https://quran.com/22/7",
+        "📖 Kur’an — Yâsîn 36:78–79 — https://quran.com/36/78-79"
+      ]
+    },
+    {
+      "id": 162,
+      "day": 9,
+      "tr": {
+        "q": "Haşir nedir?",
+        "a": "Haşir, insanların diriltildikten sonra hesap için bir araya toplanmasıdır."
+      },
+      "en": {
+        "q": "What is Hashr?",
+        "a": "Hashr is the gathering of people after resurrection for judgment."
+      },
+      "de": {
+        "q": "Was ist Haschr?",
+        "a": "Haschr ist die Versammlung der Menschen nach der Auferweckung zum Gericht."
+      },
+      "nl": {
+        "q": "Wat is Hasjr?",
+        "a": "Hasjr is het verzamelen van mensen na de opstanding voor het oordeel."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le Hashr ?",
+        "a": "C’est le rassemblement des êtres humains après la résurrection pour le jugement."
+      },
+      "ru": {
+        "q": "What is Hashr?",
+        "a": "Hashr is the gathering of people after resurrection for judgment."
+      },
+      "ku": {
+        "q": "What is Hashr?",
+        "a": "Hashr is the gathering of people after resurrection for judgment."
+      },
+      "tt": {
+        "q": "What is Hashr?",
+        "a": "Hashr is the gathering of people after resurrection for judgment."
+      },
+      "ar": {
+        "q": "What is Hashr?",
+        "a": "Hashr is the gathering of people after resurrection for judgment."
+      },
+      "es": {
+        "q": "What is Hashr?",
+        "a": "Hashr is the gathering of people after resurrection for judgment."
+      },
+      "it": {
+        "q": "What is Hashr?",
+        "a": "Hashr is the gathering of people after resurrection for judgment."
+      },
+      "pt": {
+        "q": "What is Hashr?",
+        "a": "Hashr is the gathering of people after resurrection for judgment."
+      },
+      "ko": {
+        "q": "What is Hashr?",
+        "a": "Hashr is the gathering of people after resurrection for judgment."
+      },
+      "vi": {
+        "q": "What is Hashr?",
+        "a": "Hashr is the gathering of people after resurrection for judgment."
+      },
+      "ja": {
+        "q": "What is Hashr?",
+        "a": "Hashr is the gathering of people after resurrection for judgment."
+      },
+      "zh": {
+        "q": "What is Hashr?",
+        "a": "Hashr is the gathering of people after resurrection for judgment."
+      },
+      "sources": [
+        "📖 Kur’an — Kehf 18:47 — https://quran.com/18/47",
+        "📖 Kur’an — Zümer 39:68–70 — https://quran.com/39/68-70"
+      ]
+    },
+    {
+      "id": 163,
+      "day": 9,
+      "tr": {
+        "q": "Mahşer nedir?",
+        "a": "Mahşer, insanların hesap için toplanacağı yerdir."
+      },
+      "en": {
+        "q": "What is Mahshar?",
+        "a": "Mahshar is the place where people will be gathered for judgment."
+      },
+      "de": {
+        "q": "Was ist der Mahschär?",
+        "a": "Mahschär ist der Ort, an dem die Menschen zum Gericht versammelt werden."
+      },
+      "nl": {
+        "q": "Wat is Mahshar?",
+        "a": "Mahshar is de plaats waar mensen voor het oordeel worden verzameld."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le Mahshar ?",
+        "a": "C’est le lieu où les êtres humains seront rassemblés pour le jugement."
+      },
+      "ru": {
+        "q": "What is Mahshar?",
+        "a": "Mahshar is the place where people will be gathered for judgment."
+      },
+      "ku": {
+        "q": "What is Mahshar?",
+        "a": "Mahshar is the place where people will be gathered for judgment."
+      },
+      "tt": {
+        "q": "What is Mahshar?",
+        "a": "Mahshar is the place where people will be gathered for judgment."
+      },
+      "ar": {
+        "q": "What is Mahshar?",
+        "a": "Mahshar is the place where people will be gathered for judgment."
+      },
+      "es": {
+        "q": "What is Mahshar?",
+        "a": "Mahshar is the place where people will be gathered for judgment."
+      },
+      "it": {
+        "q": "What is Mahshar?",
+        "a": "Mahshar is the place where people will be gathered for judgment."
+      },
+      "pt": {
+        "q": "What is Mahshar?",
+        "a": "Mahshar is the place where people will be gathered for judgment."
+      },
+      "ko": {
+        "q": "What is Mahshar?",
+        "a": "Mahshar is the place where people will be gathered for judgment."
+      },
+      "vi": {
+        "q": "What is Mahshar?",
+        "a": "Mahshar is the place where people will be gathered for judgment."
+      },
+      "ja": {
+        "q": "What is Mahshar?",
+        "a": "Mahshar is the place where people will be gathered for judgment."
+      },
+      "zh": {
+        "q": "What is Mahshar?",
+        "a": "Mahshar is the place where people will be gathered for judgment."
+      },
+      "sources": [
+        "📖 Kur’an — Zümer 39:69 — https://quran.com/39/69",
+        "📚 TDV İslâm Ansiklopedisi — Mahşer — https://islamansiklopedisi.org.tr/mahser"
+      ]
+    },
+    {
+      "id": 164,
+      "day": 9,
+      "tr": {
+        "q": "Hesap günü nedir?",
+        "a": "Hesap günü, insanların yaptıkları amellerden sorgulanacağı âhiret günüdür."
+      },
+      "en": {
+        "q": "What is the Day of Reckoning?",
+        "a": "It is the Hereafter day when people will be questioned about their deeds."
+      },
+      "de": {
+        "q": "Was ist der Tag der Abrechnung?",
+        "a": "Es ist der Tag des Jenseits, an dem die Menschen nach ihren Taten befragt werden."
+      },
+      "nl": {
+        "q": "Wat is de Dag van de Afrekening?",
+        "a": "Het is de dag waarop mensen over hun daden zullen worden ondervraagd."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le Jour du Jugement ?",
+        "a": "C’est le jour où les êtres humains seront interrogés sur leurs œuvres."
+      },
+      "ru": {
+        "q": "What is the Day of Reckoning?",
+        "a": "It is the Hereafter day when people will be questioned about their deeds."
+      },
+      "ku": {
+        "q": "What is the Day of Reckoning?",
+        "a": "It is the Hereafter day when people will be questioned about their deeds."
+      },
+      "tt": {
+        "q": "What is the Day of Reckoning?",
+        "a": "It is the Hereafter day when people will be questioned about their deeds."
+      },
+      "ar": {
+        "q": "What is the Day of Reckoning?",
+        "a": "It is the Hereafter day when people will be questioned about their deeds."
+      },
+      "es": {
+        "q": "What is the Day of Reckoning?",
+        "a": "It is the Hereafter day when people will be questioned about their deeds."
+      },
+      "it": {
+        "q": "What is the Day of Reckoning?",
+        "a": "It is the Hereafter day when people will be questioned about their deeds."
+      },
+      "pt": {
+        "q": "What is the Day of Reckoning?",
+        "a": "It is the Hereafter day when people will be questioned about their deeds."
+      },
+      "ko": {
+        "q": "What is the Day of Reckoning?",
+        "a": "It is the Hereafter day when people will be questioned about their deeds."
+      },
+      "vi": {
+        "q": "What is the Day of Reckoning?",
+        "a": "It is the Hereafter day when people will be questioned about their deeds."
+      },
+      "ja": {
+        "q": "What is the Day of Reckoning?",
+        "a": "It is the Hereafter day when people will be questioned about their deeds."
+      },
+      "zh": {
+        "q": "What is the Day of Reckoning?",
+        "a": "It is the Hereafter day when people will be questioned about their deeds."
+      },
+      "sources": [
+        "📖 Kur’an — İnfitâr 82:10–12 — https://quran.com/82/10-12",
+        "📖 Kur’an — Zilzâl 99:7–8 — https://quran.com/99/7-8"
+      ]
+    },
+    {
+      "id": 165,
+      "day": 9,
+      "tr": {
+        "q": "Amel defteri nedir?",
+        "a": "Amel defteri, insanın dünyadaki amellerinin kaydedildiğini ifade eden dinî kavramdır."
+      },
+      "en": {
+        "q": "What is the record of deeds?",
+        "a": "It is the religious concept referring to the record of a person’s deeds in worldly life."
+      },
+      "de": {
+        "q": "Was ist das Tatenbuch?",
+        "a": "Es bezeichnet das religiöse Verständnis, dass die Taten eines Menschen aufgezeichnet werden."
+      },
+      "nl": {
+        "q": "Wat is het boek van daden?",
+        "a": "Het is het religieuze begrip dat de daden van een mens worden opgetekend."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le registre des œuvres ?",
+        "a": "C’est le concept religieux selon lequel les œuvres d’une personne sont enregistrées."
+      },
+      "ru": {
+        "q": "What is the record of deeds?",
+        "a": "It is the religious concept referring to the record of a person’s deeds in worldly life."
+      },
+      "ku": {
+        "q": "What is the record of deeds?",
+        "a": "It is the religious concept referring to the record of a person’s deeds in worldly life."
+      },
+      "tt": {
+        "q": "What is the record of deeds?",
+        "a": "It is the religious concept referring to the record of a person’s deeds in worldly life."
+      },
+      "ar": {
+        "q": "What is the record of deeds?",
+        "a": "It is the religious concept referring to the record of a person’s deeds in worldly life."
+      },
+      "es": {
+        "q": "What is the record of deeds?",
+        "a": "It is the religious concept referring to the record of a person’s deeds in worldly life."
+      },
+      "it": {
+        "q": "What is the record of deeds?",
+        "a": "It is the religious concept referring to the record of a person’s deeds in worldly life."
+      },
+      "pt": {
+        "q": "What is the record of deeds?",
+        "a": "It is the religious concept referring to the record of a person’s deeds in worldly life."
+      },
+      "ko": {
+        "q": "What is the record of deeds?",
+        "a": "It is the religious concept referring to the record of a person’s deeds in worldly life."
+      },
+      "vi": {
+        "q": "What is the record of deeds?",
+        "a": "It is the religious concept referring to the record of a person’s deeds in worldly life."
+      },
+      "ja": {
+        "q": "What is the record of deeds?",
+        "a": "It is the religious concept referring to the record of a person’s deeds in worldly life."
+      },
+      "zh": {
+        "q": "What is the record of deeds?",
+        "a": "It is the religious concept referring to the record of a person’s deeds in worldly life."
+      },
+      "sources": [
+        "📖 Kur’an — Kehf 18:49 — https://quran.com/18/49",
+        "📖 Kur’an — Hâkka 69:19–29 — https://quran.com/69/19-29"
+      ]
+    },
+    {
+      "id": 166,
+      "day": 9,
+      "tr": {
+        "q": "Mizan nedir?",
+        "a": "Mizan, âhirette amellerin değerlendirilmesi ve adaletin gerçekleşmesiyle ilgili ilâhî ölçüdür."
+      },
+      "en": {
+        "q": "What is the Mizan?",
+        "a": "Mizan is the divine measure associated with the evaluation of deeds and the establishment of justice in the Hereafter."
+      },
+      "de": {
+        "q": "Was ist die Mizan?",
+        "a": "Mizan ist das göttliche Maß im Zusammenhang mit der Bewertung der Taten und der Gerechtigkeit im Jenseits."
+      },
+      "nl": {
+        "q": "Wat is de Mizan?",
+        "a": "Mizan is de goddelijke maat die verband houdt met de beoordeling van daden en rechtvaardigheid in het Hiernamaals."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la Mizan ?",
+        "a": "C’est la balance divine liée à l’évaluation des œuvres et à la justice dans l’au-delà."
+      },
+      "ru": {
+        "q": "What is the Mizan?",
+        "a": "Mizan is the divine measure associated with the evaluation of deeds and the establishment of justice in the Hereafter."
+      },
+      "ku": {
+        "q": "What is the Mizan?",
+        "a": "Mizan is the divine measure associated with the evaluation of deeds and the establishment of justice in the Hereafter."
+      },
+      "tt": {
+        "q": "What is the Mizan?",
+        "a": "Mizan is the divine measure associated with the evaluation of deeds and the establishment of justice in the Hereafter."
+      },
+      "ar": {
+        "q": "What is the Mizan?",
+        "a": "Mizan is the divine measure associated with the evaluation of deeds and the establishment of justice in the Hereafter."
+      },
+      "es": {
+        "q": "What is the Mizan?",
+        "a": "Mizan is the divine measure associated with the evaluation of deeds and the establishment of justice in the Hereafter."
+      },
+      "it": {
+        "q": "What is the Mizan?",
+        "a": "Mizan is the divine measure associated with the evaluation of deeds and the establishment of justice in the Hereafter."
+      },
+      "pt": {
+        "q": "What is the Mizan?",
+        "a": "Mizan is the divine measure associated with the evaluation of deeds and the establishment of justice in the Hereafter."
+      },
+      "ko": {
+        "q": "What is the Mizan?",
+        "a": "Mizan is the divine measure associated with the evaluation of deeds and the establishment of justice in the Hereafter."
+      },
+      "vi": {
+        "q": "What is the Mizan?",
+        "a": "Mizan is the divine measure associated with the evaluation of deeds and the establishment of justice in the Hereafter."
+      },
+      "ja": {
+        "q": "What is the Mizan?",
+        "a": "Mizan is the divine measure associated with the evaluation of deeds and the establishment of justice in the Hereafter."
+      },
+      "zh": {
+        "q": "What is the Mizan?",
+        "a": "Mizan is the divine measure associated with the evaluation of deeds and the establishment of justice in the Hereafter."
+      },
+      "sources": [
+        "📖 Kur’an — Enbiyâ 21:47 — https://quran.com/21/47",
+        "📖 Kur’an — Mü’minûn 23:102–103 — https://quran.com/23/102-103"
+      ]
+    },
+    {
+      "id": 167,
+      "day": 9,
+      "tr": {
+        "q": "Sırat nedir?",
+        "a": "Sırat, âhiret hayatında geçişiyle ilgili hadislerde bildirilen köprüdür."
+      },
+      "en": {
+        "q": "What is the Sirat?",
+        "a": "Sirat is the bridge described in hadiths in connection with passage in the Hereafter."
+      },
+      "de": {
+        "q": "Was ist der Sirat?",
+        "a": "Sirat ist die in Hadithen beschriebene Brücke im Zusammenhang mit dem Übergang im Jenseits."
+      },
+      "nl": {
+        "q": "Wat is de Sirat?",
+        "a": "Sirat is de brug die in hadiths wordt beschreven in verband met de doorgang in het Hiernamaals."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le Sirat ?",
+        "a": "C’est le pont décrit dans les hadiths en rapport avec le passage dans l’au-delà."
+      },
+      "ru": {
+        "q": "What is the Sirat?",
+        "a": "Sirat is the bridge described in hadiths in connection with passage in the Hereafter."
+      },
+      "ku": {
+        "q": "What is the Sirat?",
+        "a": "Sirat is the bridge described in hadiths in connection with passage in the Hereafter."
+      },
+      "tt": {
+        "q": "What is the Sirat?",
+        "a": "Sirat is the bridge described in hadiths in connection with passage in the Hereafter."
+      },
+      "ar": {
+        "q": "What is the Sirat?",
+        "a": "Sirat is the bridge described in hadiths in connection with passage in the Hereafter."
+      },
+      "es": {
+        "q": "What is the Sirat?",
+        "a": "Sirat is the bridge described in hadiths in connection with passage in the Hereafter."
+      },
+      "it": {
+        "q": "What is the Sirat?",
+        "a": "Sirat is the bridge described in hadiths in connection with passage in the Hereafter."
+      },
+      "pt": {
+        "q": "What is the Sirat?",
+        "a": "Sirat is the bridge described in hadiths in connection with passage in the Hereafter."
+      },
+      "ko": {
+        "q": "What is the Sirat?",
+        "a": "Sirat is the bridge described in hadiths in connection with passage in the Hereafter."
+      },
+      "vi": {
+        "q": "What is the Sirat?",
+        "a": "Sirat is the bridge described in hadiths in connection with passage in the Hereafter."
+      },
+      "ja": {
+        "q": "What is the Sirat?",
+        "a": "Sirat is the bridge described in hadiths in connection with passage in the Hereafter."
+      },
+      "zh": {
+        "q": "What is the Sirat?",
+        "a": "Sirat is the bridge described in hadiths in connection with passage in the Hereafter."
+      },
+      "sources": [
+        "📖 Hadis — Sahih Buhârî 7439 — https://sunnah.com/bukhari:7439",
+        "📖 Hadis — Sahih Müslim 183 — https://sunnah.com/muslim:183"
+      ]
+    },
+    {
+      "id": 168,
+      "day": 9,
+      "tr": {
+        "q": "Şefaat nedir?",
+        "a": "Şefaat, Allah’ın izin verdiği kimselerin O’nun izniyle bazı kullar hakkında aracılık etmesidir."
+      },
+      "en": {
+        "q": "What is intercession (Shafa'ah)?",
+        "a": "It is intercession by those whom Allah permits, by His permission, concerning some servants."
+      },
+      "de": {
+        "q": "Was ist Fürsprache (Schafa'a)?",
+        "a": "Es ist die Fürsprache derjenigen, denen Allah dies mit Seiner Erlaubnis gestattet."
+      },
+      "nl": {
+        "q": "Wat is voorspraak (Shafa'ah)?",
+        "a": "Het is voorspraak door degenen aan wie Allah dit met Zijn toestemming toestaat."
+      },
+      "fr": {
+        "q": "Qu’est-ce que l’intercession (Shafa‘ah) ?",
+        "a": "C’est l’intercession de ceux qu’Allah autorise, avec Sa permission."
+      },
+      "ru": {
+        "q": "What is intercession (Shafa'ah)?",
+        "a": "It is intercession by those whom Allah permits, by His permission, concerning some servants."
+      },
+      "ku": {
+        "q": "What is intercession (Shafa'ah)?",
+        "a": "It is intercession by those whom Allah permits, by His permission, concerning some servants."
+      },
+      "tt": {
+        "q": "What is intercession (Shafa'ah)?",
+        "a": "It is intercession by those whom Allah permits, by His permission, concerning some servants."
+      },
+      "ar": {
+        "q": "What is intercession (Shafa'ah)?",
+        "a": "It is intercession by those whom Allah permits, by His permission, concerning some servants."
+      },
+      "es": {
+        "q": "What is intercession (Shafa'ah)?",
+        "a": "It is intercession by those whom Allah permits, by His permission, concerning some servants."
+      },
+      "it": {
+        "q": "What is intercession (Shafa'ah)?",
+        "a": "It is intercession by those whom Allah permits, by His permission, concerning some servants."
+      },
+      "pt": {
+        "q": "What is intercession (Shafa'ah)?",
+        "a": "It is intercession by those whom Allah permits, by His permission, concerning some servants."
+      },
+      "ko": {
+        "q": "What is intercession (Shafa'ah)?",
+        "a": "It is intercession by those whom Allah permits, by His permission, concerning some servants."
+      },
+      "vi": {
+        "q": "What is intercession (Shafa'ah)?",
+        "a": "It is intercession by those whom Allah permits, by His permission, concerning some servants."
+      },
+      "ja": {
+        "q": "What is intercession (Shafa'ah)?",
+        "a": "It is intercession by those whom Allah permits, by His permission, concerning some servants."
+      },
+      "zh": {
+        "q": "What is intercession (Shafa'ah)?",
+        "a": "It is intercession by those whom Allah permits, by His permission, concerning some servants."
+      },
+      "sources": [
+        "📖 Kur’an — Bakara 2:255 — https://quran.com/2/255",
+        "📖 Kur’an — Necm 53:26 — https://quran.com/53/26"
+      ]
+    },
+    {
+      "id": 169,
+      "day": 9,
+      "tr": {
+        "q": "Cennet nedir?",
+        "a": "Cennet, Allah’ın iman edip salih amel işleyen kulları için hazırladığı ebedî nimet yurdudur."
+      },
+      "en": {
+        "q": "What is Paradise?",
+        "a": "Paradise is the everlasting abode of blessing prepared by Allah for those who believe and do righteous deeds."
+      },
+      "de": {
+        "q": "Was ist das Paradies?",
+        "a": "Das Paradies ist die ewige Wohnstätte der Gnaden, die Allah den Gläubigen und rechtschaffen Handelnden bereitet hat."
+      },
+      "nl": {
+        "q": "Wat is het Paradijs?",
+        "a": "Het Paradijs is de eeuwige verblijfplaats van zegeningen die Allah heeft bereid voor gelovigen en rechtvaardigen."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le Paradis ?",
+        "a": "C’est la demeure éternelle des bienfaits préparée par Allah pour les croyants et les justes."
+      },
+      "ru": {
+        "q": "What is Paradise?",
+        "a": "Paradise is the everlasting abode of blessing prepared by Allah for those who believe and do righteous deeds."
+      },
+      "ku": {
+        "q": "What is Paradise?",
+        "a": "Paradise is the everlasting abode of blessing prepared by Allah for those who believe and do righteous deeds."
+      },
+      "tt": {
+        "q": "What is Paradise?",
+        "a": "Paradise is the everlasting abode of blessing prepared by Allah for those who believe and do righteous deeds."
+      },
+      "ar": {
+        "q": "What is Paradise?",
+        "a": "Paradise is the everlasting abode of blessing prepared by Allah for those who believe and do righteous deeds."
+      },
+      "es": {
+        "q": "What is Paradise?",
+        "a": "Paradise is the everlasting abode of blessing prepared by Allah for those who believe and do righteous deeds."
+      },
+      "it": {
+        "q": "What is Paradise?",
+        "a": "Paradise is the everlasting abode of blessing prepared by Allah for those who believe and do righteous deeds."
+      },
+      "pt": {
+        "q": "What is Paradise?",
+        "a": "Paradise is the everlasting abode of blessing prepared by Allah for those who believe and do righteous deeds."
+      },
+      "ko": {
+        "q": "What is Paradise?",
+        "a": "Paradise is the everlasting abode of blessing prepared by Allah for those who believe and do righteous deeds."
+      },
+      "vi": {
+        "q": "What is Paradise?",
+        "a": "Paradise is the everlasting abode of blessing prepared by Allah for those who believe and do righteous deeds."
+      },
+      "ja": {
+        "q": "What is Paradise?",
+        "a": "Paradise is the everlasting abode of blessing prepared by Allah for those who believe and do righteous deeds."
+      },
+      "zh": {
+        "q": "What is Paradise?",
+        "a": "Paradise is the everlasting abode of blessing prepared by Allah for those who believe and do righteous deeds."
+      },
+      "sources": [
+        "📖 Kur’an — Bakara 2:25 — https://quran.com/2/25",
+        "📖 Kur’an — Tevbe 9:72 — https://quran.com/9/72"
+      ]
+    },
+    {
+      "id": 170,
+      "day": 9,
+      "tr": {
+        "q": "Cehennem nedir?",
+        "a": "Cehennem, inkâr ve isyanın karşılığı olarak Kur’an ve sünnette bildirilen azap yurdudur."
+      },
+      "en": {
+        "q": "What is Hell?",
+        "a": "Hell is the abode of punishment described in the Qur’an and Sunnah in connection with disbelief and disobedience."
+      },
+      "de": {
+        "q": "Was ist die Hölle?",
+        "a": "Die Hölle ist die im Koran und in der Sunna beschriebene Stätte der Strafe für Unglauben und Ungehorsam."
+      },
+      "nl": {
+        "q": "Wat is de Hel?",
+        "a": "De Hel is de verblijfplaats van straf die in de Koran en de soenna wordt beschreven voor ongeloof en ongehoorzaamheid."
+      },
+      "fr": {
+        "q": "Qu’est-ce que l’Enfer ?",
+        "a": "C’est le lieu du châtiment décrit dans le Coran et la Sunna pour l’incroyance et la désobéissance."
+      },
+      "ru": {
+        "q": "What is Hell?",
+        "a": "Hell is the abode of punishment described in the Qur’an and Sunnah in connection with disbelief and disobedience."
+      },
+      "ku": {
+        "q": "What is Hell?",
+        "a": "Hell is the abode of punishment described in the Qur’an and Sunnah in connection with disbelief and disobedience."
+      },
+      "tt": {
+        "q": "What is Hell?",
+        "a": "Hell is the abode of punishment described in the Qur’an and Sunnah in connection with disbelief and disobedience."
+      },
+      "ar": {
+        "q": "What is Hell?",
+        "a": "Hell is the abode of punishment described in the Qur’an and Sunnah in connection with disbelief and disobedience."
+      },
+      "es": {
+        "q": "What is Hell?",
+        "a": "Hell is the abode of punishment described in the Qur’an and Sunnah in connection with disbelief and disobedience."
+      },
+      "it": {
+        "q": "What is Hell?",
+        "a": "Hell is the abode of punishment described in the Qur’an and Sunnah in connection with disbelief and disobedience."
+      },
+      "pt": {
+        "q": "What is Hell?",
+        "a": "Hell is the abode of punishment described in the Qur’an and Sunnah in connection with disbelief and disobedience."
+      },
+      "ko": {
+        "q": "What is Hell?",
+        "a": "Hell is the abode of punishment described in the Qur’an and Sunnah in connection with disbelief and disobedience."
+      },
+      "vi": {
+        "q": "What is Hell?",
+        "a": "Hell is the abode of punishment described in the Qur’an and Sunnah in connection with disbelief and disobedience."
+      },
+      "ja": {
+        "q": "What is Hell?",
+        "a": "Hell is the abode of punishment described in the Qur’an and Sunnah in connection with disbelief and disobedience."
+      },
+      "zh": {
+        "q": "What is Hell?",
+        "a": "Hell is the abode of punishment described in the Qur’an and Sunnah in connection with disbelief and disobedience."
+      },
+      "sources": [
+        "📖 Kur’an — Bakara 2:24 — https://quran.com/2/24",
+        "📖 Kur’an — Tahrîm 66:6 — https://quran.com/66/6"
+      ]
+    },
+    {
+      "id": 171,
+      "day": 9,
+      "tr": {
+        "q": "Ölümden sonra geride kalan amellerden hangileri devam eder?",
+        "a": "Sahih hadise göre sadaka-i câriye, faydalanılan ilim ve kendisine dua eden salih evlat gibi bazı amellerin sevabı devam eder."
+      },
+      "en": {
+        "q": "Which deeds can continue to benefit a person after death?",
+        "a": "According to an authentic hadith, ongoing charity, beneficial knowledge, and a righteous child who prays for the deceased can continue to benefit them."
+      },
+      "de": {
+        "q": "Welche Taten können einem Menschen nach seinem Tod weiter nützen?",
+        "a": "Nach einem authentischen Hadith können fortdauernde Almosen, nützliches Wissen und ein frommes Kind, das für ihn betet, weiter Nutzen bringen."
+      },
+      "nl": {
+        "q": "Welke daden kunnen iemand na zijn dood blijven baten?",
+        "a": "Volgens een authentieke hadith kunnen doorlopende liefdadigheid, nuttige kennis en een vroom kind dat voor hem bidt blijven baten."
+      },
+      "fr": {
+        "q": "Quelles œuvres peuvent encore profiter à une personne après sa mort ?",
+        "a": "Selon un hadith authentique, l’aumône continue, le savoir utile et un enfant pieux qui prie pour elle peuvent continuer à lui profiter."
+      },
+      "ru": {
+        "q": "Which deeds can continue to benefit a person after death?",
+        "a": "According to an authentic hadith, ongoing charity, beneficial knowledge, and a righteous child who prays for the deceased can continue to benefit them."
+      },
+      "ku": {
+        "q": "Which deeds can continue to benefit a person after death?",
+        "a": "According to an authentic hadith, ongoing charity, beneficial knowledge, and a righteous child who prays for the deceased can continue to benefit them."
+      },
+      "tt": {
+        "q": "Which deeds can continue to benefit a person after death?",
+        "a": "According to an authentic hadith, ongoing charity, beneficial knowledge, and a righteous child who prays for the deceased can continue to benefit them."
+      },
+      "ar": {
+        "q": "Which deeds can continue to benefit a person after death?",
+        "a": "According to an authentic hadith, ongoing charity, beneficial knowledge, and a righteous child who prays for the deceased can continue to benefit them."
+      },
+      "es": {
+        "q": "Which deeds can continue to benefit a person after death?",
+        "a": "According to an authentic hadith, ongoing charity, beneficial knowledge, and a righteous child who prays for the deceased can continue to benefit them."
+      },
+      "it": {
+        "q": "Which deeds can continue to benefit a person after death?",
+        "a": "According to an authentic hadith, ongoing charity, beneficial knowledge, and a righteous child who prays for the deceased can continue to benefit them."
+      },
+      "pt": {
+        "q": "Which deeds can continue to benefit a person after death?",
+        "a": "According to an authentic hadith, ongoing charity, beneficial knowledge, and a righteous child who prays for the deceased can continue to benefit them."
+      },
+      "ko": {
+        "q": "Which deeds can continue to benefit a person after death?",
+        "a": "According to an authentic hadith, ongoing charity, beneficial knowledge, and a righteous child who prays for the deceased can continue to benefit them."
+      },
+      "vi": {
+        "q": "Which deeds can continue to benefit a person after death?",
+        "a": "According to an authentic hadith, ongoing charity, beneficial knowledge, and a righteous child who prays for the deceased can continue to benefit them."
+      },
+      "ja": {
+        "q": "Which deeds can continue to benefit a person after death?",
+        "a": "According to an authentic hadith, ongoing charity, beneficial knowledge, and a righteous child who prays for the deceased can continue to benefit them."
+      },
+      "zh": {
+        "q": "Which deeds can continue to benefit a person after death?",
+        "a": "According to an authentic hadith, ongoing charity, beneficial knowledge, and a righteous child who prays for the deceased can continue to benefit them."
+      },
+      "sources": [
+        "📖 Hadis — Sahih Müslim 1631 — https://sunnah.com/muslim:1631",
+        "📖 Hadis — Sahih Müslim 1004 — https://sunnah.com/muslim:1004"
+      ]
+    }
+  ]
+}
