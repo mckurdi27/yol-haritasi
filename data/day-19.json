@@ -1,0 +1,1549 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 19,
+  "dayTitle": {
+    "tr": "19. Gün — Kötü Ahlâktan Sakınmak",
+    "en": "Day 19 — Avoiding Bad Character",
+    "de": "19. Tag — Schlechte Charaktereigenschaften vermeiden",
+    "nl": "Dag 19 — Slecht karakter vermijden",
+    "fr": "19e jour — Éviter les mauvais comportements",
+    "ru": "19-й день — Избегание дурного нрава",
+    "ku": "Roj 19 — Ji exlaqê xerab dûrketin",
+    "tt": "19 нчы көн — Начар холыктан саклану",
+    "ar": "اليوم 19 — الوقاية من سوء الأخلاق",
+    "es": "Día 19 — Evitar el mal carácter",
+    "it": "Giorno 19 — Evitare il cattivo carattere",
+    "pt": "Dia 19 — Evitar o mau caráter",
+    "ko": "19일 — 나쁜 품성을 피하기",
+    "vi": "Ngày 19 — Tránh tính xấu",
+    "ja": "19日目 — 悪い性格を避ける",
+    "zh": "第19天——远离恶劣品德"
+  },
+  "daySubtitle": {
+    "tr": "Yalan, gıybet, iftira, kibir, haset, öfke ve diğer kötü davranışlardan korunmak",
+    "en": "Avoiding lying, backbiting, slander, arrogance, envy, anger and other harmful behaviors",
+    "de": "Lügen, üble Nachrede, Verleumdung, Hochmut, Neid, Zorn und andere schädliche Verhaltensweisen vermeiden",
+    "nl": "Liegen, roddel, laster, hoogmoed, afgunst, woede en ander schadelijk gedrag vermijden",
+    "fr": "Éviter le mensonge, la médisance, la calomnie, l’orgueil, l’envie, la colère et les autres mauvais comportements",
+    "ru": "Избегание лжи, злословия, клеветы, высокомерия, зависти, гнева и других вредных поступков",
+    "ku": "Ji derew, gîbet, îftirâ, kibr, heset, hêrs û tevgerên din ên xerab dûrketin",
+    "tt": "Ялганнан, гайбәттән, яладан, тәкәбберлектән, көнчелектән, ачудан һәм башка начар гамәлләрдән саклану",
+    "ar": "الوقاية من الكذب والغيبة والبهتان والكِبر والحسد والغضب وغيرها من السلوكيات السيئة",
+    "es": "Evitar la mentira, la murmuración, la calumnia, la soberbia, la envidia, la ira y otras conductas dañinas",
+    "it": "Evitare la menzogna, la maldicenza, la calunnia, la superbia, l’invidia, la rabbia e altri comportamenti dannosi",
+    "pt": "Evitar mentira, maledicência, calúnia, arrogância, inveja, raiva e outros comportamentos prejudiciais",
+    "ko": "거짓말, 험담, 중상, 교만, 질투, 분노와 같은 해로운 행동을 피하기",
+    "vi": "Tránh nói dối, nói xấu, vu khống, kiêu ngạo, đố kỵ, giận dữ và các hành vi có hại khác",
+    "ja": "嘘、陰口、中傷、高慢、嫉妬、怒り、その他の有害な行動を避ける",
+    "zh": "远离说谎、背后议论、诬陷、傲慢、嫉妒、愤怒和其他有害行为"
+  },
+  "questions": [
+    {
+      "id": 343,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Ahzâb 33:70 — https://quran.com/33/70",
+        "📚 Hadis — Sahih al-Bukhari 6094 — https://sunnah.com/bukhari:6094"
+      ],
+      "tr": {
+        "q": "Yalan nedir?",
+        "a": "Gerçeğe aykırı söz söylemektir."
+      },
+      "en": {
+        "q": "What is lying?",
+        "a": "It is saying something that is contrary to the truth."
+      },
+      "de": {
+        "q": "Was ist Lügen?",
+        "a": "Es bedeutet, etwas zu sagen, das der Wahrheit widerspricht."
+      },
+      "nl": {
+        "q": "Wat is liegen?",
+        "a": "Het is iets zeggen dat in strijd is met de waarheid."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le mensonge ?",
+        "a": "C’est dire quelque chose qui est contraire à la vérité."
+      },
+      "ru": {
+        "q": "Что такое ложь?",
+        "a": "Это слова, противоречащие истине."
+      },
+      "ku": {
+        "q": "Derew çi ye?",
+        "a": "Peyvek an gotinek li dijî rastiyê gotin e."
+      },
+      "tt": {
+        "q": "Ялган нәрсә ул?",
+        "a": "Чынбарлыкка каршы сүз әйтү."
+      },
+      "ar": {
+        "q": "ما الكذب؟",
+        "a": "هو قول ما يخالف الحقيقة."
+      },
+      "es": {
+        "q": "¿Qué es mentir?",
+        "a": "Es decir algo contrario a la verdad."
+      },
+      "it": {
+        "q": "Che cos’è mentire?",
+        "a": "Dire qualcosa che è contrario alla verità."
+      },
+      "pt": {
+        "q": "O que é mentir?",
+        "a": "É dizer algo contrário à verdade."
+      },
+      "ko": {
+        "q": "거짓말이란 무엇인가요?",
+        "a": "진실과 반대되는 말을 하는 것입니다."
+      },
+      "vi": {
+        "q": "Nói dối là gì?",
+        "a": "Là nói điều trái với sự thật."
+      },
+      "ja": {
+        "q": "嘘とは何ですか？",
+        "a": "真実に反することを言うことです。"
+      },
+      "zh": {
+        "q": "什么是说谎？",
+        "a": "说出与事实相反的话。"
+      }
+    },
+    {
+      "id": 344,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Hac 22:30 — https://quran.com/22/30",
+        "📚 Hadis — Sahih al-Bukhari 6094 — https://sunnah.com/bukhari:6094"
+      ],
+      "tr": {
+        "q": "Yalan neden haramdır?",
+        "a": "Güveni bozar ve insanlara zarar verebilir."
+      },
+      "en": {
+        "q": "Why is lying forbidden?",
+        "a": "It destroys trust and can harm people."
+      },
+      "de": {
+        "q": "Warum ist Lügen verboten?",
+        "a": "Es zerstört Vertrauen und kann Menschen schaden."
+      },
+      "nl": {
+        "q": "Waarom is liegen verboden?",
+        "a": "Het schaadt het vertrouwen en kan mensen schade berokkenen."
+      },
+      "fr": {
+        "q": "Pourquoi le mensonge est-il interdit ?",
+        "a": "Il détruit la confiance et peut nuire aux personnes."
+      },
+      "ru": {
+        "q": "Почему ложь запрещена?",
+        "a": "Она разрушает доверие и может причинять людям вред."
+      },
+      "ku": {
+        "q": "Çima derew qedexe ye?",
+        "a": "Ew baweriyê xera dike û dikare zirarê bide mirovan."
+      },
+      "tt": {
+        "q": "Ни өчен ялган тыелган?",
+        "a": "Ул ышанычны боза һәм кешеләргә зыян китерергә мөмкин."
+      },
+      "ar": {
+        "q": "لماذا الكذب حرام؟",
+        "a": "لأنه يفسد الثقة وقد يسبب الضرر للناس."
+      },
+      "es": {
+        "q": "¿Por qué está prohibida la mentira?",
+        "a": "Porque destruye la confianza y puede perjudicar a las personas."
+      },
+      "it": {
+        "q": "Perché mentire è vietato?",
+        "a": "Perché distrugge la fiducia e può danneggiare le persone."
+      },
+      "pt": {
+        "q": "Por que mentir é proibido?",
+        "a": "Porque destrói a confiança e pode prejudicar as pessoas."
+      },
+      "ko": {
+        "q": "왜 거짓말은 금지되나요?",
+        "a": "신뢰를 무너뜨리고 사람들에게 해를 끼칠 수 있기 때문입니다."
+      },
+      "vi": {
+        "q": "Tại sao nói dối bị cấm?",
+        "a": "Vì nó phá vỡ niềm tin và có thể gây hại cho người khác."
+      },
+      "ja": {
+        "q": "なぜ嘘は禁止されているのですか？",
+        "a": "信頼を壊し、人に害を与えることがあるからです。"
+      },
+      "zh": {
+        "q": "为什么说谎是被禁止的？",
+        "a": "因为它会破坏信任，也可能伤害他人。"
+      }
+    },
+    {
+      "id": 345,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Hucurât 49:12 — https://quran.com/49/12",
+        "📚 Hadis — Sahih Muslim 2589 — https://sunnah.com/muslim:2589"
+      ],
+      "tr": {
+        "q": "Gıybet nedir?",
+        "a": "Bir kişinin arkasından hoşlanmayacağı bir özelliğini konuşmaktır."
+      },
+      "en": {
+        "q": "What is backbiting?",
+        "a": "It is mentioning behind someone’s back a trait they would dislike being mentioned."
+      },
+      "de": {
+        "q": "Was ist üble Nachrede?",
+        "a": "Man spricht hinter dem Rücken einer Person über eine Eigenschaft, die sie nicht genannt haben möchte."
+      },
+      "nl": {
+        "q": "Wat is roddel?",
+        "a": "Over iemand achter zijn rug spreken over een eigenschap die hij of zij niet genoemd wil hebben."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la médisance ?",
+        "a": "C’est parler derrière le dos d’une personne d’un défaut qu’elle n’aimerait pas voir mentionné."
+      },
+      "ru": {
+        "q": "Что такое злословие?",
+        "a": "Это говорить за спиной человека о его качестве, о котором ему было бы неприятно услышать."
+      },
+      "ku": {
+        "q": "Gîbet çi ye?",
+        "a": "Li pişt kesekî behsa taybetiyekê dikin ku ew naxwaze were gotin."
+      },
+      "tt": {
+        "q": "Гыйбәт нәрсә ул?",
+        "a": "Кеше артыннан ул ошатмаган сыйфатын сөйләү."
+      },
+      "ar": {
+        "q": "ما الغِيبة؟",
+        "a": "هي ذكر الإنسان في غيابه بما يكره أن يُذكر به."
+      },
+      "es": {
+        "q": "¿Qué es la murmuración?",
+        "a": "Hablar a espaldas de una persona sobre una característica que no le gustaría que se mencionara."
+      },
+      "it": {
+        "q": "Che cos’è la maldicenza?",
+        "a": "Parlare alle spalle di una persona di una caratteristica che non vorrebbe fosse menzionata."
+      },
+      "pt": {
+        "q": "O que é falar mal de alguém pelas costas?",
+        "a": "É mencionar, na ausência de uma pessoa, uma característica que ela não gostaria que fosse mencionada."
+      },
+      "ko": {
+        "q": "험담이란 무엇인가요?",
+        "a": "그 사람이 듣기를 싫어할 만한 특징을 뒤에서 말하는 것입니다."
+      },
+      "vi": {
+        "q": "Nói xấu sau lưng là gì?",
+        "a": "Là nói sau lưng một người về điều mà họ không muốn bị nhắc đến."
+      },
+      "ja": {
+        "q": "陰口とは何ですか？",
+        "a": "その人が言われたくない特徴を、本人のいないところで話すことです。"
+      },
+      "zh": {
+        "q": "什么是背后议论？",
+        "a": "在一个人不在场时谈论他不喜欢被提及的缺点。"
+      }
+    },
+    {
+      "id": 346,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Nûr 24:4 — https://quran.com/24/4",
+        "📚 Hadis — Sahih Muslim 2589 — https://sunnah.com/muslim:2589"
+      ],
+      "tr": {
+        "q": "İftira nedir?",
+        "a": "Bir kimseye yapmadığı bir şeyi haksız yere isnat etmektir."
+      },
+      "en": {
+        "q": "What is slander?",
+        "a": "It is falsely attributing something to a person that they did not do."
+      },
+      "de": {
+        "q": "Was ist Verleumdung?",
+        "a": "Man schreibt einer Person zu Unrecht etwas zu, das sie nicht getan hat."
+      },
+      "nl": {
+        "q": "Wat is laster?",
+        "a": "Iemand ten onrechte iets toeschrijven wat die persoon niet heeft gedaan."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la calomnie ?",
+        "a": "C’est attribuer injustement à quelqu’un une chose qu’il n’a pas faite."
+      },
+      "ru": {
+        "q": "Что такое клевета?",
+        "a": "Это несправедливо приписывать человеку то, чего он не совершал."
+      },
+      "ku": {
+        "q": "Îftirâ çi ye?",
+        "a": "Bi neheqî tiştekî ku kesek nekiriye pê ve girêdan e."
+      },
+      "tt": {
+        "q": "Яла нәрсә ул?",
+        "a": "Кеше кылмаган эшне аңа нахакка тану."
+      },
+      "ar": {
+        "q": "ما البهتان؟",
+        "a": "هو أن تنسب إلى شخص ظلماً شيئاً لم يفعله."
+      },
+      "es": {
+        "q": "¿Qué es la calumnia?",
+        "a": "Atribuir injustamente a alguien algo que no hizo."
+      },
+      "it": {
+        "q": "Che cos’è la calunnia?",
+        "a": "Attribuire ingiustamente a una persona qualcosa che non ha fatto."
+      },
+      "pt": {
+        "q": "O que é calúnia?",
+        "a": "É atribuir injustamente a alguém algo que ele não fez."
+      },
+      "ko": {
+        "q": "중상이란 무엇인가요?",
+        "a": "사람이 하지 않은 일을 부당하게 그 사람에게 돌리는 것입니다."
+      },
+      "vi": {
+        "q": "Vu khống là gì?",
+        "a": "Là gán cho một người điều họ không làm một cách bất công."
+      },
+      "ja": {
+        "q": "中傷とは何ですか？",
+        "a": "その人がしていないことを不当にその人のせいにすることです。"
+      },
+      "zh": {
+        "q": "什么是诬陷？",
+        "a": "把一个人没有做过的事情不公正地归于他。"
+      }
+    },
+    {
+      "id": 347,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Lokman 31:18 — https://quran.com/31/18",
+        "📚 Hadis — Sahih Muslim 91a — https://sunnah.com/muslim:91a"
+      ],
+      "tr": {
+        "q": "Kibir nedir?",
+        "a": "Kendini üstün görüp insanları küçümsemektir."
+      },
+      "en": {
+        "q": "What is arrogance?",
+        "a": "It is considering oneself superior and looking down on others."
+      },
+      "de": {
+        "q": "Was ist Hochmut?",
+        "a": "Man hält sich für überlegen und verachtet andere."
+      },
+      "nl": {
+        "q": "Wat is hoogmoed?",
+        "a": "Jezelf superieur vinden en anderen minachten."
+      },
+      "fr": {
+        "q": "Qu’est-ce que l’orgueil ?",
+        "a": "C’est se croire supérieur et mépriser les autres."
+      },
+      "ru": {
+        "q": "Что такое высокомерие?",
+        "a": "Считать себя выше других и унижать их."
+      },
+      "ku": {
+        "q": "Kibr çi ye?",
+        "a": "Xwe ji kesên din bilindtir dîtin û wan biçûk dîtin e."
+      },
+      "tt": {
+        "q": "Тәкәбберлек нәрсә ул?",
+        "a": "Үзеңне өстен күреп, башкаларны кимсетү."
+      },
+      "ar": {
+        "q": "ما الكِبر؟",
+        "a": "أن يرى الإنسان نفسه أفضل من غيره ويحتقر الناس."
+      },
+      "es": {
+        "q": "¿Qué es la soberbia?",
+        "a": "Considerarse superior y despreciar a los demás."
+      },
+      "it": {
+        "q": "Che cos’è la superbia?",
+        "a": "Considerarsi superiori e disprezzare gli altri."
+      },
+      "pt": {
+        "q": "O que é arrogância?",
+        "a": "É considerar-se superior e desprezar os outros."
+      },
+      "ko": {
+        "q": "교만이란 무엇인가요?",
+        "a": "자신을 남보다 우월하게 여기고 다른 사람을 낮추는 것입니다."
+      },
+      "vi": {
+        "q": "Kiêu ngạo là gì?",
+        "a": "Là tự coi mình hơn người và coi thường người khác."
+      },
+      "ja": {
+        "q": "高慢とは何ですか？",
+        "a": "自分を他人より優れていると考え、人を見下すことです。"
+      },
+      "zh": {
+        "q": "什么是傲慢？",
+        "a": "认为自己高人一等并轻视别人。"
+      }
+    },
+    {
+      "id": 348,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Nisâ 4:54 — https://quran.com/4/54",
+        "📚 Hadis — Sahih Muslim 2563a — https://sunnah.com/muslim:2563a"
+      ],
+      "tr": {
+        "q": "Haset nedir?",
+        "a": "Başkasındaki nimetin yok olmasını istemektir."
+      },
+      "en": {
+        "q": "What is envy?",
+        "a": "It is wishing that another person’s blessing would disappear."
+      },
+      "de": {
+        "q": "Was ist Neid?",
+        "a": "Man wünscht, dass die Gabe oder der Segen eines anderen verschwindet."
+      },
+      "nl": {
+        "q": "Wat is afgunst?",
+        "a": "Wensen dat de zegen van iemand anders verdwijnt."
+      },
+      "fr": {
+        "q": "Qu’est-ce que l’envie ?",
+        "a": "C’est souhaiter la disparition du bienfait accordé à quelqu’un d’autre."
+      },
+      "ru": {
+        "q": "Что такое зависть?",
+        "a": "Желать, чтобы благо или милость другого человека исчезли."
+      },
+      "ku": {
+        "q": "Heset çi ye?",
+        "a": "Xwestina ku ni‘meta kesekî din ji dest biçû."
+      },
+      "tt": {
+        "q": "Көнчелек нәрсә ул?",
+        "a": "Башка кешенең нигъмәте юкка чыгуын теләү."
+      },
+      "ar": {
+        "q": "ما الحسد؟",
+        "a": "تمني زوال نعمة عن شخص آخر."
+      },
+      "es": {
+        "q": "¿Qué es la envidia?",
+        "a": "Desear que desaparezca la bendición que tiene otra persona."
+      },
+      "it": {
+        "q": "Che cos’è l’invidia?",
+        "a": "Desiderare che scompaia la benedizione che un’altra persona possiede."
+      },
+      "pt": {
+        "q": "O que é inveja?",
+        "a": "É desejar que desapareça a bênção que outra pessoa possui."
+      },
+      "ko": {
+        "q": "질투란 무엇인가요?",
+        "a": "다른 사람이 받은 은혜가 사라지기를 바라는 것입니다."
+      },
+      "vi": {
+        "q": "Đố kỵ là gì?",
+        "a": "Là mong ân phúc của người khác biến mất."
+      },
+      "ja": {
+        "q": "嫉妬とは何ですか？",
+        "a": "他人が与えられた恵みがなくなることを願うことです。"
+      },
+      "zh": {
+        "q": "什么是嫉妒？",
+        "a": "希望别人所拥有的恩惠消失。"
+      }
+    },
+    {
+      "id": 349,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Haşr 59:10 — https://quran.com/59/10",
+        "📚 Hadis — Sahih Muslim 2563a — https://sunnah.com/muslim:2563a"
+      ],
+      "tr": {
+        "q": "Kin nedir?",
+        "a": "Birine karşı uzun süre düşmanlık ve kötü niyet beslemektir."
+      },
+      "en": {
+        "q": "What is resentment?",
+        "a": "It is holding hostility and ill will toward someone for a long time."
+      },
+      "de": {
+        "q": "Was ist Groll?",
+        "a": "Man hegt lange Feindschaft und böse Absichten gegen jemanden."
+      },
+      "nl": {
+        "q": "Wat is wrok?",
+        "a": "Langdurige vijandigheid en kwade bedoelingen tegenover iemand koesteren."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la rancune ?",
+        "a": "C’est nourrir longtemps de l’hostilité et de mauvaises intentions envers quelqu’un."
+      },
+      "ru": {
+        "q": "Что такое злоба?",
+        "a": "Долго хранить вражду и недоброжелательность к человеку."
+      },
+      "ku": {
+        "q": "Kîn çi ye?",
+        "a": "Ji bo kesekî demeke dirêj dijminatî û niyeta xerab hildan e."
+      },
+      "tt": {
+        "q": "Кин нәрсә ул?",
+        "a": "Бер кешегә озак вакыт дошманлык һәм начар ният саклау."
+      },
+      "ar": {
+        "q": "ما الحقد؟",
+        "a": "إضمار العداوة وسوء النية تجاه شخص مدة طويلة."
+      },
+      "es": {
+        "q": "¿Qué es el rencor?",
+        "a": "Guardar durante mucho tiempo hostilidad y malas intenciones hacia alguien."
+      },
+      "it": {
+        "q": "Che cos’è il rancore?",
+        "a": "Conservare a lungo ostilità e cattive intenzioni verso qualcuno."
+      },
+      "pt": {
+        "q": "O que é rancor?",
+        "a": "É guardar por muito tempo hostilidade e más intenções contra alguém."
+      },
+      "ko": {
+        "q": "원한이란 무엇인가요?",
+        "a": "누군가에게 오랫동안 적대감과 악의를 품는 것입니다."
+      },
+      "vi": {
+        "q": "Oán hận là gì?",
+        "a": "Là giữ sự thù địch và ác ý với một người trong thời gian dài."
+      },
+      "ja": {
+        "q": "恨みとは何ですか？",
+        "a": "人に対して長く敵意や悪意を抱くことです。"
+      },
+      "zh": {
+        "q": "什么是怨恨？",
+        "a": "长久地对某人怀有敌意和恶意。"
+      }
+    },
+    {
+      "id": 350,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:134 — https://quran.com/3/134",
+        "📚 Hadis — Sahih al-Bukhari 6116 — https://sunnah.com/bukhari:6116"
+      ],
+      "tr": {
+        "q": "Öfkeyi kontrol etmek neden önemlidir?",
+        "a": "Öfke haksız söz ve davranışlara yol açabilir."
+      },
+      "en": {
+        "q": "Why is controlling anger important?",
+        "a": "Anger can lead to unjust words and actions."
+      },
+      "de": {
+        "q": "Warum ist es wichtig, den Zorn zu kontrollieren?",
+        "a": "Zorn kann zu ungerechten Worten und Handlungen führen."
+      },
+      "nl": {
+        "q": "Waarom is het belangrijk woede te beheersen?",
+        "a": "Woede kan leiden tot onrechtvaardige woorden en daden."
+      },
+      "fr": {
+        "q": "Pourquoi est-il important de maîtriser sa colère ?",
+        "a": "La colère peut conduire à des paroles et des actes injustes."
+      },
+      "ru": {
+        "q": "Почему важно контролировать гнев?",
+        "a": "Гнев может привести к несправедливым словам и поступкам."
+      },
+      "ku": {
+        "q": "Çima kontrolkirina hêrsê girîng e?",
+        "a": "Hêrs dikare bibe sedema gotin û tevgerên neheq."
+      },
+      "tt": {
+        "q": "Ачуны тыю ни өчен мөһим?",
+        "a": "Ачу гаделсез сүзләргә һәм эшләргә китерергә мөмкин."
+      },
+      "ar": {
+        "q": "لماذا ضبط الغضب مهم؟",
+        "a": "لأن الغضب قد يؤدي إلى أقوال وأفعال ظالمة."
+      },
+      "es": {
+        "q": "¿Por qué es importante controlar la ira?",
+        "a": "La ira puede llevar a palabras y acciones injustas."
+      },
+      "it": {
+        "q": "Perché è importante controllare la rabbia?",
+        "a": "La rabbia può portare a parole e azioni ingiuste."
+      },
+      "pt": {
+        "q": "Por que é importante controlar a raiva?",
+        "a": "A raiva pode levar a palavras e ações injustas."
+      },
+      "ko": {
+        "q": "화를 다스리는 것이 왜 중요한가요?",
+        "a": "화는 부당한 말과 행동으로 이어질 수 있기 때문입니다."
+      },
+      "vi": {
+        "q": "Tại sao kiểm soát cơn giận quan trọng?",
+        "a": "Vì giận dữ có thể dẫn đến lời nói và hành động bất công."
+      },
+      "ja": {
+        "q": "怒りを抑えることがなぜ大切ですか？",
+        "a": "怒りは不当な言葉や行動につながることがあるからです。"
+      },
+      "zh": {
+        "q": "为什么控制愤怒很重要？",
+        "a": "因为愤怒可能导致不公正的言语和行为。"
+      }
+    },
+    {
+      "id": 351,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Hucurât 49:11 — https://quran.com/49/11",
+        "📚 Hadis — Sahih Muslim 2564a — https://sunnah.com/muslim:2564a"
+      ],
+      "tr": {
+        "q": "Alay etmek neden yanlıştır?",
+        "a": "İnsanı küçümsemek ve onurunu zedelemek anlamına gelebilir."
+      },
+      "en": {
+        "q": "Why is mocking others wrong?",
+        "a": "It can mean belittling a person and harming their dignity."
+      },
+      "de": {
+        "q": "Warum ist es falsch, andere zu verspotten?",
+        "a": "Es kann bedeuten, einen Menschen herabzusetzen und seine Würde zu verletzen."
+      },
+      "nl": {
+        "q": "Waarom is spotten met anderen verkeerd?",
+        "a": "Het kan iemand kleineren en zijn waardigheid schaden."
+      },
+      "fr": {
+        "q": "Pourquoi se moquer des autres est-il mauvais ?",
+        "a": "Cela peut rabaisser une personne et porter atteinte à sa dignité."
+      },
+      "ru": {
+        "q": "Почему нельзя насмехаться над другими?",
+        "a": "Это может унижать человека и задевать его достоинство."
+      },
+      "ku": {
+        "q": "Çima tinazkirina bi kesên din re xelet e?",
+        "a": "Dikare kesekî biçûk bike û rûmeta wî bişkîne."
+      },
+      "tt": {
+        "q": "Башкалардан көлү ни өчен дөрес түгел?",
+        "a": "Бу кешене кимсетергә һәм аның абруена зыян китерергә мөмкин."
+      },
+      "ar": {
+        "q": "لماذا السخرية من الآخرين خطأ؟",
+        "a": "لأنها قد تحط من قدر الإنسان وتؤذي كرامته."
+      },
+      "es": {
+        "q": "¿Por qué está mal burlarse de los demás?",
+        "a": "Puede humillar a una persona y dañar su dignidad."
+      },
+      "it": {
+        "q": "Perché è sbagliato deridere gli altri?",
+        "a": "Può umiliare una persona e ferirne la dignità."
+      },
+      "pt": {
+        "q": "Por que é errado zombar dos outros?",
+        "a": "Isso pode humilhar uma pessoa e ferir sua dignidade."
+      },
+      "ko": {
+        "q": "다른 사람을 조롱하면 왜 잘못인가요?",
+        "a": "사람을 깎아내리고 존엄성을 해칠 수 있기 때문입니다."
+      },
+      "vi": {
+        "q": "Tại sao chế giễu người khác là sai?",
+        "a": "Vì điều đó có thể hạ thấp và làm tổn thương phẩm giá của một người."
+      },
+      "ja": {
+        "q": "人をあざ笑うことがなぜ間違いですか？",
+        "a": "人を軽視し、その尊厳を傷つけることがあるからです。"
+      },
+      "zh": {
+        "q": "为什么嘲笑别人是错误的？",
+        "a": "因为这可能贬低他人并伤害其尊严。"
+      }
+    },
+    {
+      "id": 352,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Hucurât 49:12 — https://quran.com/49/12",
+        "📚 Hadis — Sahih al-Bukhari 6064 — https://sunnah.com/bukhari:6064"
+      ],
+      "tr": {
+        "q": "Suizan nedir?",
+        "a": "Delil olmadan bir kişi hakkında kötü zanda bulunmaktır."
+      },
+      "en": {
+        "q": "What is having a bad opinion of someone without evidence?",
+        "a": "It is thinking badly of someone without evidence."
+      },
+      "de": {
+        "q": "Was ist ein schlechtes Urteil über jemanden ohne Beweis?",
+        "a": "Man denkt ohne Beweis schlecht über eine Person."
+      },
+      "nl": {
+        "q": "Wat is een slechte verdenking zonder bewijs?",
+        "a": "Zonder bewijs slecht over iemand denken."
+      },
+      "fr": {
+        "q": "Qu’est-ce qu’un mauvais soupçon sans preuve ?",
+        "a": "C’est penser mal d’une personne sans preuve."
+      },
+      "ru": {
+        "q": "Что такое плохое мнение без доказательств?",
+        "a": "Это плохо думать о человеке без доказательств."
+      },
+      "ku": {
+        "q": "Sûizan çi ye?",
+        "a": "Bê delîl li ser kesekî bi xerabî guman kirin e."
+      },
+      "tt": {
+        "q": "Дәлилсез начар уйлау нәрсә ул?",
+        "a": "Дәлилсез кешене начар дип уйлау."
+      },
+      "ar": {
+        "q": "ما سوء الظن بلا دليل؟",
+        "a": "أن تظن السوء بشخص من غير دليل."
+      },
+      "es": {
+        "q": "¿Qué es pensar mal de alguien sin pruebas?",
+        "a": "Es tener una mala opinión de una persona sin pruebas."
+      },
+      "it": {
+        "q": "Che cos’è il sospetto negativo senza prove?",
+        "a": "Pensare male di una persona senza prove."
+      },
+      "pt": {
+        "q": "O que é ter uma má suspeita sem provas?",
+        "a": "É pensar mal de alguém sem provas."
+      },
+      "ko": {
+        "q": "근거 없이 나쁘게 생각하는 것은 무엇인가요?",
+        "a": "증거 없이 어떤 사람을 나쁘게 생각하는 것입니다."
+      },
+      "vi": {
+        "q": "Nghi ngờ xấu không có bằng chứng là gì?",
+        "a": "Là nghĩ xấu về một người mà không có bằng chứng."
+      },
+      "ja": {
+        "q": "根拠のない悪い思い込みとは何ですか？",
+        "a": "証拠なしに人を悪く考えることです。"
+      },
+      "zh": {
+        "q": "什么是没有证据的恶意猜疑？",
+        "a": "没有证据却对一个人抱有恶意的看法。"
+      }
+    },
+    {
+      "id": 353,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Hucurât 49:12 — https://quran.com/49/12",
+        "📚 Hadis — Sahih Muslim 2563a — https://sunnah.com/muslim:2563a"
+      ],
+      "tr": {
+        "q": "Tecessüs nedir?",
+        "a": "İnsanların gizli hâllerini araştırıp açığa çıkarmaya çalışmaktır."
+      },
+      "en": {
+        "q": "What is spying into people’s private matters?",
+        "a": "It is investigating people’s private affairs and trying to expose them."
+      },
+      "de": {
+        "q": "Was bedeutet es, die Privatsphäre anderer auszuspionieren?",
+        "a": "Man sucht nach ihren verborgenen Angelegenheiten und versucht, sie aufzudecken."
+      },
+      "nl": {
+        "q": "Wat is het bespioneren van iemands privézaken?",
+        "a": "De verborgen zaken van mensen onderzoeken en proberen ze openbaar te maken."
+      },
+      "fr": {
+        "q": "Qu’est-ce que l’espionnage de la vie privée ?",
+        "a": "C’est rechercher les affaires cachées des gens et essayer de les dévoiler."
+      },
+      "ru": {
+        "q": "Что такое вмешательство в тайные дела людей?",
+        "a": "Исследовать их скрытые дела и пытаться раскрыть их."
+      },
+      "ku": {
+        "q": "Tecessûs çi ye?",
+        "a": "Lêgerîna li halên veşartî yên mirovan û hewildana eşkerekirina wan e."
+      },
+      "tt": {
+        "q": "Тәҗәссүс нәрсә ул?",
+        "a": "Кешеләрнең яшерен хәлләрен тикшереп, аларны ачарга тырышу."
+      },
+      "ar": {
+        "q": "ما التجسس؟",
+        "a": "البحث عن أحوال الناس الخفية ومحاولة كشفها."
+      },
+      "es": {
+        "q": "¿Qué es espiar la intimidad de otros?",
+        "a": "Investigar sus asuntos ocultos e intentar descubrirlos."
+      },
+      "it": {
+        "q": "Che cos’è lo spionaggio della vita privata?",
+        "a": "Indagare sugli aspetti nascosti della vita delle persone e cercare di rivelarli."
+      },
+      "pt": {
+        "q": "O que é investigar a privacidade das pessoas?",
+        "a": "É procurar seus assuntos ocultos e tentar expô-los."
+      },
+      "ko": {
+        "q": "사생활을 엿보는 것은 무엇인가요?",
+        "a": "사람들의 숨겨진 일을 조사하고 드러내려 하는 것입니다."
+      },
+      "vi": {
+        "q": "Theo dõi đời tư người khác là gì?",
+        "a": "Là tìm hiểu những việc riêng tư và cố gắng phơi bày chúng."
+      },
+      "ja": {
+        "q": "人の私生活を詮索するとは何ですか？",
+        "a": "人の隠された事柄を調べ、それを明らかにしようとすることです。"
+      },
+      "zh": {
+        "q": "什么是窥探他人隐私？",
+        "a": "调查他人的隐秘事情并试图把它们公开。"
+      }
+    },
+    {
+      "id": 354,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — A‘râf 7:31 — https://quran.com/7/31",
+        "📚 Hadis — Sunan Ibn Majah 3605 — https://sunnah.com/ibnmajah:3605"
+      ],
+      "tr": {
+        "q": "İsraf nedir?",
+        "a": "Kaynakları gereksiz ve ölçüsüz biçimde tüketmektir."
+      },
+      "en": {
+        "q": "What is wastefulness?",
+        "a": "It is consuming resources unnecessarily and excessively."
+      },
+      "de": {
+        "q": "Was ist Verschwendung?",
+        "a": "Ressourcen unnötig und maßlos zu verbrauchen."
+      },
+      "nl": {
+        "q": "Wat is verspilling?",
+        "a": "Middelen onnodig en buitensporig verbruiken."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le gaspillage ?",
+        "a": "C’est consommer inutilement et excessivement les ressources."
+      },
+      "ru": {
+        "q": "Что такое расточительство?",
+        "a": "Ненужно и чрезмерно расходовать ресурсы."
+      },
+      "ku": {
+        "q": "Îsraf çi ye?",
+        "a": "Çavkaniyan bêhewce û bê pîvan xerc kirin e."
+      },
+      "tt": {
+        "q": "Исраф нәрсә ул?",
+        "a": "Ресурсларны кирәксез һәм чамасыз куллану."
+      },
+      "ar": {
+        "q": "ما الإسراف؟",
+        "a": "استهلاك الموارد بلا حاجة وبشكل مفرط."
+      },
+      "es": {
+        "q": "¿Qué es el derroche?",
+        "a": "Consumir recursos de manera innecesaria y excesiva."
+      },
+      "it": {
+        "q": "Che cos’è lo spreco?",
+        "a": "Consumare risorse inutilmente e in modo eccessivo."
+      },
+      "pt": {
+        "q": "O que é desperdício?",
+        "a": "É consumir recursos de forma desnecessária e excessiva."
+      },
+      "ko": {
+        "q": "낭비란 무엇인가요?",
+        "a": "자원을 필요 이상으로 지나치게 사용하는 것입니다."
+      },
+      "vi": {
+        "q": "Lãng phí là gì?",
+        "a": "Là sử dụng tài nguyên một cách không cần thiết và quá mức."
+      },
+      "ja": {
+        "q": "浪費とは何ですか？",
+        "a": "資源を必要以上に、過度に使うことです。"
+      },
+      "zh": {
+        "q": "什么是浪费？",
+        "a": "不必要且过度地消耗资源。"
+      }
+    },
+    {
+      "id": 355,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Ahzâb 33:70 — https://quran.com/33/70",
+        "📚 Hadis — Sahih al-Bukhari 6018 — https://sunnah.com/bukhari:6018"
+      ],
+      "tr": {
+        "q": "Kötü sözden nasıl korunulur?",
+        "a": "Konuşmadan önce düşünmek ve faydalı söz söylemekle."
+      },
+      "en": {
+        "q": "How can one protect oneself from hurtful speech?",
+        "a": "By thinking before speaking and choosing beneficial words."
+      },
+      "de": {
+        "q": "Wie kann man sich vor verletzenden Worten schützen?",
+        "a": "Indem man vor dem Sprechen nachdenkt und hilfreiche Worte wählt."
+      },
+      "nl": {
+        "q": "Hoe bescherm je jezelf tegen kwetsende woorden?",
+        "a": "Door na te denken voordat je spreekt en nuttige woorden te kiezen."
+      },
+      "fr": {
+        "q": "Comment se protéger des mauvaises paroles ?",
+        "a": "En réfléchissant avant de parler et en choisissant des paroles utiles."
+      },
+      "ru": {
+        "q": "Как защититься от плохих слов?",
+        "a": "Думать перед тем, как говорить, и выбирать полезные слова."
+      },
+      "ku": {
+        "q": "Meriv çawa ji gotinên xerab xwe diparêze?",
+        "a": "Berî axaftinê difikire û gotinên bikêr hilbijêre."
+      },
+      "tt": {
+        "q": "Начар сүзләрдән ничек сакланырга?",
+        "a": "Сөйләгәнче уйлап, файдалы сүзләр сайлап."
+      },
+      "ar": {
+        "q": "كيف نحمي أنفسنا من الكلام السيئ؟",
+        "a": "بالتفكير قبل الكلام واختيار الكلام النافع."
+      },
+      "es": {
+        "q": "¿Cómo protegerse de las malas palabras?",
+        "a": "Pensando antes de hablar y eligiendo palabras útiles."
+      },
+      "it": {
+        "q": "Come proteggersi dalle parole offensive?",
+        "a": "Pensando prima di parlare e scegliendo parole utili."
+      },
+      "pt": {
+        "q": "Como se proteger de palavras ruins?",
+        "a": "Pensando antes de falar e escolhendo palavras úteis."
+      },
+      "ko": {
+        "q": "나쁜 말을 어떻게 피할 수 있나요?",
+        "a": "말하기 전에 생각하고 유익한 말을 선택하면 됩니다."
+      },
+      "vi": {
+        "q": "Làm thế nào để tránh lời nói xấu?",
+        "a": "Suy nghĩ trước khi nói và chọn những lời có ích."
+      },
+      "ja": {
+        "q": "悪い言葉からどう身を守れますか？",
+        "a": "話す前に考え、役に立つ言葉を選ぶことです。"
+      },
+      "zh": {
+        "q": "怎样保护自己不说坏话？",
+        "a": "说话前先思考，并选择有益的话。"
+      }
+    },
+    {
+      "id": 356,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Hucurât 49:12 — https://quran.com/49/12",
+        "📚 Hadis — Sahih Muslim 2589 — https://sunnah.com/muslim:2589"
+      ],
+      "tr": {
+        "q": "Gıybet eden kişi ne yapmalıdır?",
+        "a": "Günahından tövbe etmeli ve verdiği zararı mümkün olduğunca telafi etmelidir."
+      },
+      "en": {
+        "q": "What should a person who backbites do?",
+        "a": "They should repent and, as far as possible, make amends for the harm caused."
+      },
+      "de": {
+        "q": "Was soll jemand tun, der üble Nachrede begangen hat?",
+        "a": "Er soll bereuen und den verursachten Schaden so weit wie möglich wiedergutmachen."
+      },
+      "nl": {
+        "q": "Wat moet iemand doen die heeft geroddeld?",
+        "a": "Berouw tonen en de veroorzaakte schade zo veel mogelijk herstellen."
+      },
+      "fr": {
+        "q": "Que doit faire celui qui a médit ?",
+        "a": "Il doit se repentir et réparer autant que possible le tort causé."
+      },
+      "ru": {
+        "q": "Что должен делать тот, кто злословил?",
+        "a": "Покаяться и по возможности возместить причинённый вред."
+      },
+      "ku": {
+        "q": "Kesê ku gîbet kiriye divê çi bike?",
+        "a": "Divê tobe bike û zirara ku daye heta ku dikare telafî bike."
+      },
+      "tt": {
+        "q": "Гыйбәт сөйләгән кеше нишләргә тиеш?",
+        "a": "Тәүбә итәргә һәм китергән зарарын мөмкин кадәр төзәтергә тиеш."
+      },
+      "ar": {
+        "q": "ماذا يفعل من اغتاب؟",
+        "a": "يتوب إلى الله ويحاول إصلاح الضرر الذي سببه قدر استطاعته."
+      },
+      "es": {
+        "q": "¿Qué debe hacer quien ha murmurado?",
+        "a": "Arrepentirse y reparar, en lo posible, el daño causado."
+      },
+      "it": {
+        "q": "Cosa deve fare chi ha fatto maldicenza?",
+        "a": "Deve pentirsi e, per quanto possibile, riparare il danno causato."
+      },
+      "pt": {
+        "q": "O que deve fazer quem praticou maledicência?",
+        "a": "Deve arrepender-se e, tanto quanto possível, reparar o dano causado."
+      },
+      "ko": {
+        "q": "험담한 사람은 어떻게 해야 하나요?",
+        "a": "회개하고 자신이 끼친 피해를 가능한 한 바로잡아야 합니다."
+      },
+      "vi": {
+        "q": "Người nói xấu người khác nên làm gì?",
+        "a": "Nên sám hối và cố gắng khắc phục thiệt hại đã gây ra trong khả năng của mình."
+      },
+      "ja": {
+        "q": "陰口を言った人は何をすべきですか？",
+        "a": "悔い改め、できる限り与えた害を償うべきです。"
+      },
+      "zh": {
+        "q": "说背后坏话的人应该怎样做？",
+        "a": "应当悔改，并尽可能弥补自己造成的伤害。"
+      }
+    },
+    {
+      "id": 357,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Nahl 16:18 — https://quran.com/16/18",
+        "📚 Hadis — Sahih Muslim 2564a — https://sunnah.com/muslim:2564a"
+      ],
+      "tr": {
+        "q": "Haset nasıl tedavi edilebilir?",
+        "a": "Şükür, dua ve başkasının nimetine sevinmeyi öğrenmekle."
+      },
+      "en": {
+        "q": "How can envy be treated?",
+        "a": "By gratitude, prayer, and learning to be happy for another person’s blessing."
+      },
+      "de": {
+        "q": "Wie kann Neid behandelt werden?",
+        "a": "Durch Dankbarkeit, Gebet und das Lernen, sich über die Gaben anderer zu freuen."
+      },
+      "nl": {
+        "q": "Hoe kan afgunst worden behandeld?",
+        "a": "Door dankbaarheid, gebed en te leren blij te zijn met de zegen van een ander."
+      },
+      "fr": {
+        "q": "Comment traiter l’envie ?",
+        "a": "Par la gratitude, la prière et en apprenant à se réjouir du bienfait d’autrui."
+      },
+      "ru": {
+        "q": "Как лечить зависть?",
+        "a": "Благодарностью, молитвой и умением радоваться благу другого."
+      },
+      "ku": {
+        "q": "Heset çawa tê dermankirin?",
+        "a": "Bi şukrê, duayê û fêrbûna kêfxweşbûna bi ni‘meta kesekî din."
+      },
+      "tt": {
+        "q": "Көнчелекне ничек дәваларга?",
+        "a": "Шөкер, дога һәм башкаларның нигъмәтенә шатланырга өйрәнү белән."
+      },
+      "ar": {
+        "q": "كيف يُعالج الحسد؟",
+        "a": "بالشكر والدعاء وتعلم الفرح بنعمة الآخرين."
+      },
+      "es": {
+        "q": "¿Cómo se puede tratar la envidia?",
+        "a": "Con gratitud, oración y aprendiendo a alegrarse por el bien de otra persona."
+      },
+      "it": {
+        "q": "Come si può curare l’invidia?",
+        "a": "Con gratitudine, preghiera e imparando a gioire della benedizione altrui."
+      },
+      "pt": {
+        "q": "Como tratar a inveja?",
+        "a": "Com gratidão, oração e aprendendo a alegrar-se com a bênção de outra pessoa."
+      },
+      "ko": {
+        "q": "질투는 어떻게 치료할 수 있나요?",
+        "a": "감사와 기도, 그리고 다른 사람의 은혜를 기뻐하는 마음을 배우는 것으로 치료할 수 있습니다."
+      },
+      "vi": {
+        "q": "Có thể chữa lòng đố kỵ thế nào?",
+        "a": "Bằng lòng biết ơn, cầu nguyện và học cách vui mừng trước ân phúc của người khác."
+      },
+      "ja": {
+        "q": "嫉妬はどのように治せますか？",
+        "a": "感謝と祈り、そして他人の恵みを喜ぶことを学ぶことによってです。"
+      },
+      "zh": {
+        "q": "怎样治疗嫉妒？",
+        "a": "通过感恩、祈祷，并学习为他人的恩惠感到高兴。"
+      }
+    },
+    {
+      "id": 358,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Lokman 31:18 — https://quran.com/31/18",
+        "📚 Hadis — Sahih Muslim 91a — https://sunnah.com/muslim:91a"
+      ],
+      "tr": {
+        "q": "Kibir nasıl azaltılır?",
+        "a": "İnsanın kendi acziyetini hatırlaması ve Allah’ın büyüklüğünü düşünmesiyle."
+      },
+      "en": {
+        "q": "How can arrogance be reduced?",
+        "a": "By remembering one’s own weakness and reflecting on Allah’s greatness."
+      },
+      "de": {
+        "q": "Wie kann Hochmut verringert werden?",
+        "a": "Indem man die eigene Schwäche bedenkt und über Allahs Größe nachdenkt."
+      },
+      "nl": {
+        "q": "Hoe kan hoogmoed worden verminderd?",
+        "a": "Door de eigen zwakte te herinneren en over de grootheid van Allah na te denken."
+      },
+      "fr": {
+        "q": "Comment réduire l’orgueil ?",
+        "a": "En se rappelant sa propre faiblesse et en méditant sur la grandeur d’Allah."
+      },
+      "ru": {
+        "q": "Как уменьшить высокомерие?",
+        "a": "Помнить о собственной слабости и размышлять о величии Аллаха."
+      },
+      "ku": {
+        "q": "Kibr çawa kêm dibe?",
+        "a": "Bi bîranîna lawazbûna xwe û fikirîna li ser mezinahiya Allah."
+      },
+      "tt": {
+        "q": "Тәкәбберлекне ничек киметергә?",
+        "a": "Үзеңнең көчсезлегеңне искә алып, Аллаһның бөеклеге турында уйланып."
+      },
+      "ar": {
+        "q": "كيف يقل الكِبر؟",
+        "a": "بتذكر ضعف الإنسان والتفكر في عظمة الله."
+      },
+      "es": {
+        "q": "¿Cómo reducir la soberbia?",
+        "a": "Recordando la propia debilidad y reflexionando sobre la grandeza de Allah."
+      },
+      "it": {
+        "q": "Come si può ridurre la superbia?",
+        "a": "Ricordando la propria debolezza e riflettendo sulla grandezza di Allah."
+      },
+      "pt": {
+        "q": "Como reduzir a arrogância?",
+        "a": "Lembrando da própria fraqueza e refletindo sobre a grandeza de Allah."
+      },
+      "ko": {
+        "q": "교만을 어떻게 줄일 수 있나요?",
+        "a": "자신의 약함을 기억하고 알라의 위대하심을 생각함으로써 줄일 수 있습니다."
+      },
+      "vi": {
+        "q": "Làm thế nào để giảm kiêu ngạo?",
+        "a": "Bằng cách nhớ đến sự yếu đuối của mình và suy ngẫm về sự vĩ đại của Allah."
+      },
+      "ja": {
+        "q": "高慢をどう減らせますか？",
+        "a": "自分の弱さを思い出し、アッラーの偉大さを考えることによってです。"
+      },
+      "zh": {
+        "q": "怎样减少傲慢？",
+        "a": "记住自己的软弱，并思考真主的伟大。"
+      }
+    },
+    {
+      "id": 359,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Furkân 25:27–29 — https://quran.com/25/27-29",
+        "📚 Hadis — Sahih al-Bukhari 2101 — https://sunnah.com/bukhari:2101"
+      ],
+      "tr": {
+        "q": "Kötü arkadaşlığın zararı nedir?",
+        "a": "İnsanı yanlış davranışlara sürükleyebilir."
+      },
+      "en": {
+        "q": "What is the harm of bad company?",
+        "a": "It can lead a person toward wrong behavior."
+      },
+      "de": {
+        "q": "Was schadet schlechte Gesellschaft?",
+        "a": "Sie kann einen Menschen zu falschem Verhalten führen."
+      },
+      "nl": {
+        "q": "Wat is de schade van slecht gezelschap?",
+        "a": "Het kan iemand tot verkeerd gedrag leiden."
+      },
+      "fr": {
+        "q": "Quel est le danger d’une mauvaise compagnie ?",
+        "a": "Elle peut pousser une personne vers de mauvais comportements."
+      },
+      "ru": {
+        "q": "Каков вред плохого окружения?",
+        "a": "Оно может подтолкнуть человека к неправильному поведению."
+      },
+      "ku": {
+        "q": "Zirara hevaltiya xerab çi ye?",
+        "a": "Dikare mirov ber bi tevgerên şaş ve bibe."
+      },
+      "tt": {
+        "q": "Начар дуслыкның зыяны нинди?",
+        "a": "Ул кешене дөрес булмаган гамәлләргә этәрергә мөмкин."
+      },
+      "ar": {
+        "q": "ما ضرر الصحبة السيئة؟",
+        "a": "قد تدفع الإنسان إلى السلوك الخاطئ."
+      },
+      "es": {
+        "q": "¿Cuál es el daño de las malas compañías?",
+        "a": "Pueden llevar a una persona hacia conductas incorrectas."
+      },
+      "it": {
+        "q": "Qual è il danno della cattiva compagnia?",
+        "a": "Può spingere una persona verso comportamenti sbagliati."
+      },
+      "pt": {
+        "q": "Qual é o dano de más companhias?",
+        "a": "Elas podem levar uma pessoa a comportamentos errados."
+      },
+      "ko": {
+        "q": "나쁜 친구 관계의 해로움은 무엇인가요?",
+        "a": "사람을 잘못된 행동으로 이끌 수 있습니다."
+      },
+      "vi": {
+        "q": "Tác hại của bạn bè xấu là gì?",
+        "a": "Họ có thể kéo một người vào những hành vi sai trái."
+      },
+      "ja": {
+        "q": "悪い友人関係の害は何ですか？",
+        "a": "人を間違った行動へ導くことがあります。"
+      },
+      "zh": {
+        "q": "坏朋友有什么危害？",
+        "a": "他们可能把人引向错误的行为。"
+      }
+    },
+    {
+      "id": 360,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Hucurât 49:12 — https://quran.com/49/12",
+        "📚 Hadis — Sahih al-Bukhari 6056 — https://sunnah.com/bukhari:6056"
+      ],
+      "tr": {
+        "q": "Dedikodu neden zararlıdır?",
+        "a": "Güveni ve toplumdaki kardeşliği zedeler."
+      },
+      "en": {
+        "q": "Why is gossip harmful?",
+        "a": "It damages trust and brotherhood in society."
+      },
+      "de": {
+        "q": "Warum ist Klatsch schädlich?",
+        "a": "Er beschädigt Vertrauen und die Brüderlichkeit in der Gesellschaft."
+      },
+      "nl": {
+        "q": "Waarom is roddel schadelijk?",
+        "a": "Het schaadt vertrouwen en broederschap in de samenleving."
+      },
+      "fr": {
+        "q": "Pourquoi les commérages sont-ils nuisibles ?",
+        "a": "Ils détériorent la confiance et la fraternité dans la société."
+      },
+      "ru": {
+        "q": "Почему сплетни вредны?",
+        "a": "Они разрушают доверие и братство в обществе."
+      },
+      "ku": {
+        "q": "Çima gotegot zirardar e?",
+        "a": "Bawerî û biratiya di civakê de lawaz dike."
+      },
+      "tt": {
+        "q": "Гайбәт ни өчен зарарлы?",
+        "a": "Ул җәмгыятьтә ышанычны һәм туганлыкны какшата."
+      },
+      "ar": {
+        "q": "لماذا النميمة والقيل والقال ضاران؟",
+        "a": "لأنهما يضعفان الثقة والأخوة في المجتمع."
+      },
+      "es": {
+        "q": "¿Por qué son dañinos los chismes?",
+        "a": "Porque dañan la confianza y la hermandad en la sociedad."
+      },
+      "it": {
+        "q": "Perché il pettegolezzo è dannoso?",
+        "a": "Danneggia la fiducia e la fratellanza nella società."
+      },
+      "pt": {
+        "q": "Por que a fofoca é prejudicial?",
+        "a": "Ela prejudica a confiança e a fraternidade na sociedade."
+      },
+      "ko": {
+        "q": "험담과 소문이 왜 해로운가요?",
+        "a": "사회에서 신뢰와 형제애를 약화시키기 때문입니다."
+      },
+      "vi": {
+        "q": "Tại sao tin đồn có hại?",
+        "a": "Vì chúng làm tổn hại niềm tin và tình huynh đệ trong xã hội."
+      },
+      "ja": {
+        "q": "うわさ話はなぜ有害ですか？",
+        "a": "社会の信頼と兄弟愛を傷つけるからです。"
+      },
+      "zh": {
+        "q": "为什么流言蜚语有害？",
+        "a": "因为它会破坏社会中的信任和兄弟情谊。"
+      }
+    },
+    {
+      "id": 361,
+      "day": 19,
+      "sources": [
+        "📖 Kur’an — Nahl 16:90 — https://quran.com/16/90",
+        "📚 Hadis — Jami` at-Tirmidhi 2003 — https://sunnah.com/tirmidhi:2003"
+      ],
+      "tr": {
+        "q": "Kötü ahlâktan korunmanın yolu nedir?",
+        "a": "Tövbe, nefis terbiyesi, güzel arkadaşlık ve Kur’an-sünnet rehberliğiyle."
+      },
+      "en": {
+        "q": "How can one protect oneself from bad character?",
+        "a": "Through repentance, self-discipline, good company, and guidance from the Qur’an and Sunnah."
+      },
+      "de": {
+        "q": "Wie kann man sich vor schlechtem Charakter schützen?",
+        "a": "Durch Reue, Selbstdisziplin, gute Gesellschaft und die Führung von Qur’an und Sunna."
+      },
+      "nl": {
+        "q": "Hoe bescherm je jezelf tegen slecht karakter?",
+        "a": "Door berouw, zelfdiscipline, goed gezelschap en leiding van de Koran en de Soenna."
+      },
+      "fr": {
+        "q": "Comment se protéger du mauvais caractère ?",
+        "a": "Par le repentir, la maîtrise de soi, une bonne compagnie et la guidance du Coran et de la Sunna."
+      },
+      "ru": {
+        "q": "Как защититься от плохого нрава?",
+        "a": "Покаянием, воспитанием души, хорошим окружением и руководством Корана и Сунны."
+      },
+      "ku": {
+        "q": "Meriv çawa ji exlaqê xerab xwe diparêze?",
+        "a": "Bi tobe, terbiyehiya nefsê, hevaltiya baş û rêberiya Qur’an û Sunnetê."
+      },
+      "tt": {
+        "q": "Начар холыктан ничек сакланырга?",
+        "a": "Тәүбә, нәфес тәрбиясе, яхшы дуслык һәм Коръән-Сөннәт җитәкчелеге белән."
+      },
+      "ar": {
+        "q": "كيف نحمي أنفسنا من سوء الأخلاق؟",
+        "a": "بالتوبة وتهذيب النفس والصحبة الصالحة والاهتداء بالقرآن والسنة."
+      },
+      "es": {
+        "q": "¿Cómo protegerse del mal carácter?",
+        "a": "Con arrepentimiento, disciplina personal, buenas compañías y guía del Corán y la Sunna."
+      },
+      "it": {
+        "q": "Come proteggersi dal cattivo carattere?",
+        "a": "Con il pentimento, l’autodisciplina, buone compagnie e la guida del Corano e della Sunna."
+      },
+      "pt": {
+        "q": "Como se proteger do mau caráter?",
+        "a": "Com arrependimento, disciplina pessoal, boas companhias e orientação do Alcorão e da Sunna."
+      },
+      "ko": {
+        "q": "나쁜 품성으로부터 어떻게 자신을 지킬 수 있나요?",
+        "a": "회개, 자기 수양, 좋은 친구 관계, 그리고 꾸란과 순나의 지도를 통해서입니다."
+      },
+      "vi": {
+        "q": "Làm thế nào để bảo vệ mình khỏi tính xấu?",
+        "a": "Bằng sự sám hối, rèn luyện bản thân, bạn tốt và sự hướng dẫn của Qur’an và Sunnah."
+      },
+      "ja": {
+        "q": "悪い性格からどう身を守れますか？",
+        "a": "悔い改め、自制、良い友人、そしてクルアーンとスンナの導きによってです。"
+      },
+      "zh": {
+        "q": "怎样保护自己免受坏品德的影响？",
+        "a": "通过悔改、自我修养、结交好朋友，以及遵循《古兰经》和圣训的指导。"
+      }
+    }
+  ]
+}
