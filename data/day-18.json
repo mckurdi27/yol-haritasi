@@ -1,0 +1,1549 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 11,
+  "dayTitle": {
+    "tr": "18. Gün — Güzel Ahlâk",
+    "en": "Day 18 — Good Character",
+    "de": "18. Tag — Guter Charakter",
+    "nl": "Dag 18 — Goed karakter",
+    "fr": "18e jour — Bon caractère",
+    "ru": "18-й день — Благонравие",
+    "ku": "Roj 18 — Exlaqê baş",
+    "tt": "18-нче көн — Яхшы әхлак",
+    "ar": "اليوم 18 — حُسْنُ الْخُلُقِ",
+    "es": "Día 18 — Buen carácter",
+    "it": "Giorno 18 — Buon carattere",
+    "pt": "Dia 18 — Bom caráter",
+    "ko": "18일차 — 좋은 품성",
+    "vi": "Ngày 18 — Đức hạnh tốt",
+    "ja": "18日目 — 良い人格",
+    "zh": "第18天——良好品德"
+  },
+  "daySubtitle": {
+    "tr": "Doğruluk, sabır, şükür, merhamet, adalet, tevazu ve güzel davranışlar",
+    "en": "Honesty, patience, gratitude, mercy, justice, humility, and good conduct",
+    "de": "Ehrlichkeit, Geduld, Dankbarkeit, Barmherzigkeit, Gerechtigkeit, Demut und gutes Verhalten",
+    "nl": "Eerlijkheid, geduld, dankbaarheid, barmhartigheid, rechtvaardigheid, nederigheid en goed gedrag",
+    "fr": "Honnêteté, patience, gratitude, miséricorde, justice, humilité et bonnes actions",
+    "ru": "Честность, терпение, благодарность, милосердие, справедливость, смирение и добрые поступки",
+    "ku": "Rastbûn, sebr, spasdarî, dilovanî, dad, nizmbûn û tevgerên baş",
+    "tt": "Дөреслек, сабыр, шөкер, мәрхәмәт, гаделлек, тыйнаклык һәм яхшы гамәлләр",
+    "ar": "الصِّدْقُ وَالصَّبْرُ وَالشُّكْرُ وَالرَّحْمَةُ وَالْعَدْلُ وَالتَّوَاضُعُ وَحُسْنُ السُّلُوكِ",
+    "es": "Honestidad, paciencia, gratitud, misericordia, justicia, humildad y buenas acciones",
+    "it": "Onestà, pazienza, gratitudine, misericordia, giustizia, umiltà e buon comportamento",
+    "pt": "Honestidade, paciência, gratidão, misericórdia, justiça, humildade e boas ações",
+    "ko": "정직, 인내, 감사, 자비, 정의, 겸손과 선한 행동",
+    "vi": "Trung thực, kiên nhẫn, biết ơn, nhân ái, công bằng, khiêm nhường và hành vi tốt",
+    "ja": "正直、忍耐、感謝、慈悲、公正、謙虚、そして善い行い",
+    "zh": "诚实、忍耐、感恩、慈悲、公正、谦逊和善行"
+  },
+  "questions": [
+    {
+      "id": 324,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Kalem 68:4 — https://quran.com/68/4",
+        "📚 Hadis — Tirmizî 2003 — https://sunnah.com/tirmidhi:2003"
+      ],
+      "tr": {
+        "q": "Güzel ahlâk nedir?",
+        "a": "İnsanın doğru, merhametli, adil ve güzel davranışlar göstermesidir."
+      },
+      "en": {
+        "q": "What is good character?",
+        "a": "It means behaving truthfully, mercifully, justly, and well."
+      },
+      "de": {
+        "q": "Was bedeutet guter Charakter?",
+        "a": "Es bedeutet, wahrhaftig, barmherzig, gerecht und gut zu handeln."
+      },
+      "nl": {
+        "q": "Wat is een goed karakter?",
+        "a": "Het betekent dat je waarheidsgetrouw, barmhartig, rechtvaardig en goed handelt."
+      },
+      "fr": {
+        "q": "Qu’est-ce qu’un bon caractère ?",
+        "a": "C’est le fait d’agir avec vérité, miséricorde, justice et bonté."
+      },
+      "ru": {
+        "q": "Что такое благонравие?",
+        "a": "Это правдивое, милосердное, справедливое и доброе поведение."
+      },
+      "ku": {
+        "q": "Exlaqê baş çi ye?",
+        "a": "Ew ew e ku mirov rast, dilovan, dadperwer û baş tevbigere."
+      },
+      "tt": {
+        "q": "Яхшы әхлак нәрсә ул?",
+        "a": "Ул дөрес, шәфкатьле, гадел һәм яхшы гамәлләр кылу дигән сүз."
+      },
+      "ar": {
+        "q": "مَا حُسْنُ الْخُلُقِ؟",
+        "a": "هُوَ أَنْ يَتَصَرَّفَ الإِنْسَانُ بِالصِّدْقِ وَالرَّحْمَةِ وَالْعَدْلِ وَالْخَيْرِ."
+      },
+      "es": {
+        "q": "¿Qué es el buen carácter?",
+        "a": "Es comportarse con verdad, misericordia, justicia y bondad."
+      },
+      "it": {
+        "q": "Che cos’è il buon carattere?",
+        "a": "È comportarsi con sincerità, misericordia, giustizia e bontà."
+      },
+      "pt": {
+        "q": "O que é bom caráter?",
+        "a": "É agir com verdade, misericórdia, justiça e bondade."
+      },
+      "ko": {
+        "q": "좋은 품성이란 무엇입니까?",
+        "a": "진실하고 자비롭고 공정하며 선하게 행동하는 것입니다."
+      },
+      "vi": {
+        "q": "Đức hạnh tốt là gì?",
+        "a": "Đó là sống chân thật, nhân ái, công bằng và tốt đẹp."
+      },
+      "ja": {
+        "q": "良い人格とは何ですか。",
+        "a": "正直で、慈悲深く、公正で、善良に行動することです。"
+      },
+      "zh": {
+        "q": "什么是良好的品德？",
+        "a": "就是诚实、慈悲、公正并以善行事。"
+      }
+    },
+    {
+      "id": 325,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Ahzâb 33:70 — https://quran.com/33/70",
+        "📚 Hadis — Sahih Buhârî 6094 — https://sunnah.com/bukhari:6094"
+      ],
+      "tr": {
+        "q": "Doğruluk neden önemlidir?",
+        "a": "Güvenin ve sağlam ilişkilerin temelidir."
+      },
+      "en": {
+        "q": "Why is honesty important?",
+        "a": "It is the foundation of trust and sound relationships."
+      },
+      "de": {
+        "q": "Warum ist Ehrlichkeit wichtig?",
+        "a": "Sie ist die Grundlage für Vertrauen und gute Beziehungen."
+      },
+      "nl": {
+        "q": "Waarom is eerlijkheid belangrijk?",
+        "a": "Ze is de basis van vertrouwen en goede relaties."
+      },
+      "fr": {
+        "q": "Pourquoi l’honnêteté est-elle importante ?",
+        "a": "Elle est la base de la confiance et de relations solides."
+      },
+      "ru": {
+        "q": "Почему важна честность?",
+        "a": "Она является основой доверия и крепких отношений."
+      },
+      "ku": {
+        "q": "Çima rastbûn girîng e?",
+        "a": "Ji bo bawerî û têkiliyên bihêz bingeh e."
+      },
+      "tt": {
+        "q": "Ни өчен дөреслек мөһим?",
+        "a": "Ул ышанычның һәм ныклы мөнәсәбәтләрнең нигезе."
+      },
+      "ar": {
+        "q": "لِمَاذَا الصِّدْقُ مُهِمٌّ؟",
+        "a": "لِأَنَّهُ أَسَاسُ الثِّقَةِ وَالْعَلَاقَاتِ الْمَتِينَةِ."
+      },
+      "es": {
+        "q": "¿Por qué es importante la honestidad?",
+        "a": "Es la base de la confianza y de las relaciones sólidas."
+      },
+      "it": {
+        "q": "Perché è importante l’onestà?",
+        "a": "È la base della fiducia e delle relazioni solide."
+      },
+      "pt": {
+        "q": "Por que a honestidade é importante?",
+        "a": "Ela é a base da confiança e de relacionamentos sólidos."
+      },
+      "ko": {
+        "q": "정직이 왜 중요합니까?",
+        "a": "신뢰와 건전한 관계의 기초이기 때문입니다."
+      },
+      "vi": {
+        "q": "Vì sao sự trung thực quan trọng?",
+        "a": "Vì đó là nền tảng của niềm tin và các mối quan hệ bền vững."
+      },
+      "ja": {
+        "q": "正直さはなぜ大切ですか。",
+        "a": "信頼と健全な人間関係の基礎だからです。"
+      },
+      "zh": {
+        "q": "诚实为什么重要？",
+        "a": "因为它是信任和稳固关系的基础。"
+      }
+    },
+    {
+      "id": 326,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Bakara 2:153 — https://quran.com/2/153",
+        "📚 Hadis — Sahih Buhârî 6114 — https://sunnah.com/bukhari:6114"
+      ],
+      "tr": {
+        "q": "Sabır nedir?",
+        "a": "Zorluklarda Allah’a bağlı kalarak doğru tutumu sürdürmektir."
+      },
+      "en": {
+        "q": "What is patience?",
+        "a": "It means maintaining the right attitude while remaining devoted to Allah in difficulties."
+      },
+      "de": {
+        "q": "Was ist Geduld?",
+        "a": "In Schwierigkeiten bedeutet sie, Allah verbunden zu bleiben und die richtige Haltung zu bewahren."
+      },
+      "nl": {
+        "q": "Wat is geduld?",
+        "a": "In moeilijkheden betekent het dat je Allah trouw blijft en de juiste houding behoudt."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la patience ?",
+        "a": "C’est garder la bonne attitude dans les difficultés tout en restant attaché à Allah."
+      },
+      "ru": {
+        "q": "Что такое терпение?",
+        "a": "Это сохранять правильное отношение в трудностях, оставаясь преданным Аллаху."
+      },
+      "ku": {
+        "q": "Sebir çi ye?",
+        "a": "Di zehmetiyan de girêdayî Allah bimînî û helwesteke rast bidomînî."
+      },
+      "tt": {
+        "q": "Сабыр нәрсә ул?",
+        "a": "Авырлыкларда Аллаһка бәйле булып, дөрес карашны саклау."
+      },
+      "ar": {
+        "q": "مَا الصَّبْرُ؟",
+        "a": "هُوَ الثَّبَاتُ عَلَى الْمَوْقِفِ الصَّحِيحِ مَعَ التَّعَلُّقِ بِاللَّهِ فِي الشَّدَائِدِ."
+      },
+      "es": {
+        "q": "¿Qué es la paciencia?",
+        "a": "Es mantener una actitud correcta en las dificultades permaneciendo unido a Allah."
+      },
+      "it": {
+        "q": "Che cos’è la pazienza?",
+        "a": "È mantenere un atteggiamento corretto nelle difficoltà rimanendo legati ad Allah."
+      },
+      "pt": {
+        "q": "O que é a paciência?",
+        "a": "É manter uma atitude correta nas dificuldades, permanecendo ligado a Allah."
+      },
+      "ko": {
+        "q": "인내란 무엇입니까?",
+        "a": "어려움 속에서도 알라께 의지하며 올바른 태도를 유지하는 것입니다."
+      },
+      "vi": {
+        "q": "Kiên nhẫn là gì?",
+        "a": "Là giữ thái độ đúng đắn trong khó khăn và luôn gắn bó với Allah."
+      },
+      "ja": {
+        "q": "忍耐とは何ですか。",
+        "a": "困難の中でもアッラーに従い、正しい態度を保つことです。"
+      },
+      "zh": {
+        "q": "什么是忍耐？",
+        "a": "就是在困难中依靠真主并保持正确的态度。"
+      }
+    },
+    {
+      "id": 327,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Bakara 2:152 — https://quran.com/2/152",
+        "📚 Hadis — Sahih Buhârî 6463 — https://sunnah.com/bukhari:6463"
+      ],
+      "tr": {
+        "q": "Şükür nedir?",
+        "a": "Allah’ın nimetlerini bilmek ve O’na teşekkür etmektir."
+      },
+      "en": {
+        "q": "What is gratitude?",
+        "a": "It means recognizing Allah’s blessings and thanking Him."
+      },
+      "de": {
+        "q": "Was ist Dankbarkeit?",
+        "a": "Allahs Gaben zu erkennen und Ihm zu danken."
+      },
+      "nl": {
+        "q": "Wat is dankbaarheid?",
+        "a": "De zegeningen van Allah erkennen en Hem daarvoor danken."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la gratitude ?",
+        "a": "C’est reconnaître les bienfaits d’Allah et Le remercier."
+      },
+      "ru": {
+        "q": "Что такое благодарность?",
+        "a": "Это признавать блага Аллаха и благодарить Его."
+      },
+      "ku": {
+        "q": "Spasdari çi ye?",
+        "a": "Nasînî nîmetên Allah û şikir ji Wî re kirin e."
+      },
+      "tt": {
+        "q": "Шөкер итү нәрсә ул?",
+        "a": "Аллаһның нигъмәтләрен тану һәм Аңа рәхмәт әйтү."
+      },
+      "ar": {
+        "q": "مَا الشُّكْرُ؟",
+        "a": "هُوَ مَعْرِفَةُ نِعَمِ اللَّهِ وَشُكْرُهُ عَلَيْهَا."
+      },
+      "es": {
+        "q": "¿Qué es la gratitud?",
+        "a": "Es reconocer las bendiciones de Allah y darle gracias."
+      },
+      "it": {
+        "q": "Che cos’è la gratitudine?",
+        "a": "È riconoscere le benedizioni di Allah e ringraziarLo."
+      },
+      "pt": {
+        "q": "O que é gratidão?",
+        "a": "É reconhecer as bênçãos de Allah e agradecer-Lhe."
+      },
+      "ko": {
+        "q": "감사란 무엇입니까?",
+        "a": "알라의 은혜를 알고 그분께 감사하는 것입니다."
+      },
+      "vi": {
+        "q": "Lòng biết ơn là gì?",
+        "a": "Là nhận biết những ân phúc của Allah và tạ ơn Ngài."
+      },
+      "ja": {
+        "q": "感謝とは何ですか。",
+        "a": "アッラーの恵みを知り、アッラーに感謝することです。"
+      },
+      "zh": {
+        "q": "感恩是什么？",
+        "a": "就是认识真主的恩典并感谢真主。"
+      }
+    },
+    {
+      "id": 328,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Enbiyâ 21:107 — https://quran.com/21/107",
+        "📚 Hadis — Sahih Buhârî 6013 — https://sunnah.com/bukhari:6013"
+      ],
+      "tr": {
+        "q": "Merhamet nedir?",
+        "a": "Canlılara karşı şefkat ve iyilik göstermektir."
+      },
+      "en": {
+        "q": "What is mercy?",
+        "a": "It means showing compassion and kindness toward living beings."
+      },
+      "de": {
+        "q": "Was ist Barmherzigkeit?",
+        "a": "Lebewesen mit Mitgefühl und Güte zu begegnen."
+      },
+      "nl": {
+        "q": "Wat is barmhartigheid?",
+        "a": "Mededogen en goedheid tonen tegenover levende wezens."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la miséricorde ?",
+        "a": "C’est montrer compassion et bonté envers les êtres vivants."
+      },
+      "ru": {
+        "q": "Что такое милосердие?",
+        "a": "Это проявлять сострадание и доброту к живым существам."
+      },
+      "ku": {
+        "q": "Dilovanî çi ye?",
+        "a": "Nîşandana şefqet û başiyê li hember zindiyan e."
+      },
+      "tt": {
+        "q": "Мәрхәмәт нәрсә ул?",
+        "a": "Җан ияләренә шәфкать һәм яхшылык күрсәтү."
+      },
+      "ar": {
+        "q": "مَا الرَّحْمَةُ؟",
+        "a": "هِيَ إِظْهَارُ الشَّفَقَةِ وَالْإِحْسَانِ لِلْمَخْلُوقَاتِ."
+      },
+      "es": {
+        "q": "¿Qué es la misericordia?",
+        "a": "Es mostrar compasión y bondad hacia los seres vivos."
+      },
+      "it": {
+        "q": "Che cos’è la misericordia?",
+        "a": "È mostrare compassione e bontà verso gli esseri viventi."
+      },
+      "pt": {
+        "q": "O que é misericórdia?",
+        "a": "É demonstrar compaixão e bondade para com os seres vivos."
+      },
+      "ko": {
+        "q": "자비란 무엇입니까?",
+        "a": "생명 있는 존재들에게 연민과 선행을 베푸는 것입니다."
+      },
+      "vi": {
+        "q": "Lòng thương xót là gì?",
+        "a": "Là thể hiện lòng trắc ẩn và sự tử tế với các sinh vật."
+      },
+      "ja": {
+        "q": "慈悲とは何ですか。",
+        "a": "生き物に思いやりと善意を示すことです。"
+      },
+      "zh": {
+        "q": "慈悲是什么？",
+        "a": "就是对有生命的众生表现怜悯和善意。"
+      }
+    },
+    {
+      "id": 329,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Nisâ 4:58 — https://quran.com/4/58",
+        "📚 Hadis — Sahih Buhârî 2447 — https://sunnah.com/bukhari:2447"
+      ],
+      "tr": {
+        "q": "Adalet nedir?",
+        "a": "Hakkı gözetmek ve her şeyi yerli yerine koymaktır."
+      },
+      "en": {
+        "q": "What is justice?",
+        "a": "It means upholding rights and putting everything in its proper place."
+      },
+      "de": {
+        "q": "Was ist Gerechtigkeit?",
+        "a": "Rechte zu wahren und alles an seinen richtigen Platz zu setzen."
+      },
+      "nl": {
+        "q": "Wat is rechtvaardigheid?",
+        "a": "Rechten respecteren en alles op zijn juiste plaats zetten."
+      },
+      "fr": {
+        "q": "Qu’est-ce que la justice ?",
+        "a": "C’est respecter les droits et donner à chaque chose sa juste place."
+      },
+      "ru": {
+        "q": "Что такое справедливость?",
+        "a": "Это соблюдать права и ставить всё на своё место."
+      },
+      "ku": {
+        "q": "Dad çi ye?",
+        "a": "Parastina mafan û danîna her tiştî li cihê xwe ye."
+      },
+      "tt": {
+        "q": "Гаделлек нәрсә ул?",
+        "a": "Хокукларны саклау һәм һәр нәрсәне үз урынына кую."
+      },
+      "ar": {
+        "q": "مَا الْعَدْلُ؟",
+        "a": "هُوَ رِعَايَةُ الْحُقُوقِ وَوَضْعُ كُلِّ شَيْءٍ فِي مَوْضِعِهِ."
+      },
+      "es": {
+        "q": "¿Qué es la justicia?",
+        "a": "Es respetar los derechos y dar a cada cosa su lugar adecuado."
+      },
+      "it": {
+        "q": "Che cos’è la giustizia?",
+        "a": "È rispettare i diritti e mettere ogni cosa al suo posto."
+      },
+      "pt": {
+        "q": "O que é justiça?",
+        "a": "É respeitar os direitos e colocar cada coisa no seu devido lugar."
+      },
+      "ko": {
+        "q": "정의란 무엇입니까?",
+        "a": "권리를 지키고 모든 것을 제자리에 두는 것입니다."
+      },
+      "vi": {
+        "q": "Công bằng là gì?",
+        "a": "Là tôn trọng quyền lợi và đặt mọi việc đúng chỗ."
+      },
+      "ja": {
+        "q": "正義とは何ですか。",
+        "a": "権利を守り、すべてをあるべき場所に置くことです。"
+      },
+      "zh": {
+        "q": "正义是什么？",
+        "a": "就是维护权利，让每件事各得其所。"
+      }
+    },
+    {
+      "id": 330,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Furkân 25:63 — https://quran.com/25/63",
+        "📚 Hadis — Sahih Müslim 2588 — https://sunnah.com/muslim:2588"
+      ],
+      "tr": {
+        "q": "Tevazu nedir?",
+        "a": "Kendini başkalarından üstün görmemektir."
+      },
+      "en": {
+        "q": "What is humility?",
+        "a": "It means not considering yourself superior to others."
+      },
+      "de": {
+        "q": "Was ist Demut?",
+        "a": "Sich nicht für besser als andere zu halten."
+      },
+      "nl": {
+        "q": "Wat is nederigheid?",
+        "a": "Jezelf niet beter vinden dan anderen."
+      },
+      "fr": {
+        "q": "Qu’est-ce que l’humilité ?",
+        "a": "C’est ne pas se considérer supérieur aux autres."
+      },
+      "ru": {
+        "q": "Что такое смирение?",
+        "a": "Не считать себя выше других."
+      },
+      "ku": {
+        "q": "Nizmbûn çi ye?",
+        "a": "Xwe ji kesên din bilindtir nedîtin e."
+      },
+      "tt": {
+        "q": "Тыйнаклык нәрсә ул?",
+        "a": "Үзеңне башкалардан өстен күрмәү."
+      },
+      "ar": {
+        "q": "مَا التَّوَاضُعُ؟",
+        "a": "هُوَ أَلَّا يَرَى الْإِنْسَانُ نَفْسَهُ أَفْضَلَ مِنَ الْآخَرِينَ."
+      },
+      "es": {
+        "q": "¿Qué es la humildad?",
+        "a": "Es no considerarse superior a los demás."
+      },
+      "it": {
+        "q": "Che cos’è l’umiltà?",
+        "a": "È non considerarsi superiori agli altri."
+      },
+      "pt": {
+        "q": "O que é humildade?",
+        "a": "É não se considerar superior aos outros."
+      },
+      "ko": {
+        "q": "겸손이란 무엇입니까?",
+        "a": "자신을 다른 사람보다 우월하다고 여기지 않는 것입니다."
+      },
+      "vi": {
+        "q": "Khiêm nhường là gì?",
+        "a": "Là không xem mình cao hơn người khác."
+      },
+      "ja": {
+        "q": "謙虚さとは何ですか。",
+        "a": "自分を他人より優れていると考えないことです。"
+      },
+      "zh": {
+        "q": "谦逊是什么？",
+        "a": "就是不认为自己比别人优越。"
+      }
+    },
+    {
+      "id": 331,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:134 — https://quran.com/3/134",
+        "📚 Hadis — Sahih Müslim 2588 — https://sunnah.com/muslim:2588"
+      ],
+      "tr": {
+        "q": "Affetmek neden güzel ahlâktır?",
+        "a": "İntikam yerine iyilik ve barışı tercih etmeye yardımcı olur."
+      },
+      "en": {
+        "q": "Why is forgiveness good character?",
+        "a": "It helps us choose kindness and peace instead of revenge."
+      },
+      "de": {
+        "q": "Warum gehört Vergebung zum guten Charakter?",
+        "a": "Sie hilft uns, Güte und Frieden statt Rache zu wählen."
+      },
+      "nl": {
+        "q": "Waarom is vergeven goed karakter?",
+        "a": "Het helpt ons om goedheid en vrede te verkiezen boven wraak."
+      },
+      "fr": {
+        "q": "Pourquoi le pardon relève-t-il du bon caractère ?",
+        "a": "Il nous aide à préférer la bonté et la paix à la vengeance."
+      },
+      "ru": {
+        "q": "Почему прощение является благонравием?",
+        "a": "Оно помогает предпочитать доброту и мир мести."
+      },
+      "ku": {
+        "q": "Çima efûkirin exlaqê baş e?",
+        "a": "Ji bo ku em li şûna tolhildanê başî û aştiyê hilbijêrin alîkar e."
+      },
+      "tt": {
+        "q": "Гафу итү ни өчен яхшы әхлак?",
+        "a": "Ул үч алу урынына яхшылыкны һәм тынычлыкны сайларга ярдәм итә."
+      },
+      "ar": {
+        "q": "لِمَاذَا الْعَفْوُ مِنْ حُسْنِ الْخُلُقِ؟",
+        "a": "لِأَنَّهُ يُسَاعِدُ عَلَى اخْتِيَارِ الْإِحْسَانِ وَالسَّلَامِ بَدَلَ الِانْتِقَامِ."
+      },
+      "es": {
+        "q": "¿Por qué perdonar es buen carácter?",
+        "a": "Ayuda a elegir la bondad y la paz en lugar de la venganza."
+      },
+      "it": {
+        "q": "Perché perdonare è buon carattere?",
+        "a": "Aiuta a scegliere la bontà e la pace invece della vendetta."
+      },
+      "pt": {
+        "q": "Por que perdoar é bom caráter?",
+        "a": "Ajuda a escolher a bondade e a paz em vez da vingança."
+      },
+      "ko": {
+        "q": "용서는 왜 좋은 품성입니까?",
+        "a": "복수 대신 선행과 평화를 선택하도록 도와주기 때문입니다."
+      },
+      "vi": {
+        "q": "Vì sao tha thứ là đức tính tốt?",
+        "a": "Nó giúp ta chọn lòng tốt và hòa bình thay vì trả thù."
+      },
+      "ja": {
+        "q": "赦しはなぜ良い人格ですか。",
+        "a": "復讐ではなく善意と平和を選ぶ助けになるからです。"
+      },
+      "zh": {
+        "q": "宽恕为什么是美德？",
+        "a": "因为它帮助我们选择善良与和平，而不是报复。"
+      }
+    },
+    {
+      "id": 332,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Nahl 16:91 — https://quran.com/16/91",
+        "📚 Hadis — Sahih Buhârî 33 — https://sunnah.com/bukhari:33"
+      ],
+      "tr": {
+        "q": "Sözünde durmak neden önemlidir?",
+        "a": "Güvenilirliğin göstergesidir."
+      },
+      "en": {
+        "q": "Why is keeping your word important?",
+        "a": "It is a sign of reliability."
+      },
+      "de": {
+        "q": "Warum ist es wichtig, sein Wort zu halten?",
+        "a": "Es ist ein Zeichen von Zuverlässigkeit."
+      },
+      "nl": {
+        "q": "Waarom is je woord houden belangrijk?",
+        "a": "Het is een teken van betrouwbaarheid."
+      },
+      "fr": {
+        "q": "Pourquoi est-il important de tenir sa parole ?",
+        "a": "C’est un signe de fiabilité."
+      },
+      "ru": {
+        "q": "Почему важно держать слово?",
+        "a": "Это признак надёжности."
+      },
+      "ku": {
+        "q": "Çima peymana xwe girîng e?",
+        "a": "Nîşana bawerbarbûnê ye."
+      },
+      "tt": {
+        "q": "Сүзеңдә тору ни өчен мөһим?",
+        "a": "Ул ышанычлылык билгесе."
+      },
+      "ar": {
+        "q": "لِمَاذَا الْوَفَاءُ بِالْوَعْدِ مُهِمٌّ؟",
+        "a": "لِأَنَّهُ عَلَامَةٌ عَلَى الْمَوْثُوقِيَّةِ."
+      },
+      "es": {
+        "q": "¿Por qué es importante cumplir la palabra?",
+        "a": "Es una señal de fiabilidad."
+      },
+      "it": {
+        "q": "Perché è importante mantenere la parola?",
+        "a": "È un segno di affidabilità."
+      },
+      "pt": {
+        "q": "Por que é importante cumprir a palavra?",
+        "a": "É um sinal de confiabilidade."
+      },
+      "ko": {
+        "q": "약속을 지키는 것이 왜 중요합니까?",
+        "a": "신뢰할 수 있는 사람이라는 표시이기 때문입니다."
+      },
+      "vi": {
+        "q": "Vì sao giữ lời quan trọng?",
+        "a": "Đó là dấu hiệu của sự đáng tin cậy."
+      },
+      "ja": {
+        "q": "約束を守ることはなぜ大切ですか。",
+        "a": "信頼できる人であることのしるしだからです。"
+      },
+      "zh": {
+        "q": "守信为什么重要？",
+        "a": "因为这是可靠的表现。"
+      }
+    },
+    {
+      "id": 333,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23",
+        "📚 Hadis — Sahih Buhârî 5971 — https://sunnah.com/bukhari:5971"
+      ],
+      "tr": {
+        "q": "Anne-babaya iyilik neden önemlidir?",
+        "a": "Kur’an Allah’a kulluktan sonra anne-babaya iyiliği önemle zikreder."
+      },
+      "en": {
+        "q": "Why is kindness to parents important?",
+        "a": "The Quran emphasizes kindness to parents after worshipping Allah."
+      },
+      "de": {
+        "q": "Warum ist Güte gegenüber den Eltern wichtig?",
+        "a": "Der Koran betont die Güte gegenüber den Eltern nach der Anbetung Allahs."
+      },
+      "nl": {
+        "q": "Waarom is goedheid tegenover ouders belangrijk?",
+        "a": "De Koran benadrukt goedheid tegenover ouders na de aanbidding van Allah."
+      },
+      "fr": {
+        "q": "Pourquoi la bonté envers les parents est-elle importante ?",
+        "a": "Le Coran souligne la bonté envers les parents après l’adoration d’Allah."
+      },
+      "ru": {
+        "q": "Почему важно хорошо относиться к родителям?",
+        "a": "Коран особо подчёркивает доброту к родителям после поклонения Аллаху."
+      },
+      "ku": {
+        "q": "Çima başî li dê û bav girîng e?",
+        "a": "Qur’an piştî ibadeta Allah başiyê li dê û bav bi girîngî tîne ber ziman."
+      },
+      "tt": {
+        "q": "Ата-анага игелек ни өчен мөһим?",
+        "a": "Коръән Аллаһка гыйбадәттән соң ата-анага яхшылык кылуны аерым ассызыклый."
+      },
+      "ar": {
+        "q": "لِمَاذَا الْإِحْسَانُ إِلَى الْوَالِدَيْنِ مُهِمٌّ؟",
+        "a": "يُؤَكِّدُ الْقُرْآنُ الْإِحْسَانَ إِلَى الْوَالِدَيْنِ بَعْدَ عِبَادَةِ اللَّهِ."
+      },
+      "es": {
+        "q": "¿Por qué es importante tratar bien a los padres?",
+        "a": "El Corán destaca la bondad hacia los padres después de adorar a Allah."
+      },
+      "it": {
+        "q": "Perché è importante essere buoni con i genitori?",
+        "a": "Il Corano sottolinea la bontà verso i genitori dopo l’adorazione di Allah."
+      },
+      "pt": {
+        "q": "Por que é importante ser bondoso com os pais?",
+        "a": "O Alcorão enfatiza a bondade para com os pais depois da adoração a Allah."
+      },
+      "ko": {
+        "q": "부모님께 잘하는 것이 왜 중요합니까?",
+        "a": "꾸란은 알라를 예배한 다음 부모님께 선행할 것을 강조합니다."
+      },
+      "vi": {
+        "q": "Vì sao hiếu thảo với cha mẹ quan trọng?",
+        "a": "Kinh Qur’an nhấn mạnh việc đối xử tốt với cha mẹ sau việc thờ phượng Allah."
+      },
+      "ja": {
+        "q": "両親に親切にすることはなぜ大切ですか。",
+        "a": "クルアーンはアッラーへの崇拝の後に両親への善行を強調しています。"
+      },
+      "zh": {
+        "q": "孝敬父母为什么重要？",
+        "a": "《古兰经》在强调崇拜真主之后，特别强调善待父母。"
+      }
+    },
+    {
+      "id": 334,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Nisâ 4:36 — https://quran.com/4/36",
+        "📚 Hadis — Sahih Buhârî 6018 — https://sunnah.com/bukhari:6018"
+      ],
+      "tr": {
+        "q": "Komşuya iyilik nasıl yapılır?",
+        "a": "Rahatsız etmemek, yardım etmek ve ihtiyaç hâlinde destek olmakla."
+      },
+      "en": {
+        "q": "How should we treat our neighbors well?",
+        "a": "By not disturbing them, helping them, and supporting them when they need it."
+      },
+      "de": {
+        "q": "Wie kann man dem Nachbarn Gutes tun?",
+        "a": "Indem man ihn nicht belästigt, ihm hilft und ihn bei Bedarf unterstützt."
+      },
+      "nl": {
+        "q": "Hoe doe je goed voor je buren?",
+        "a": "Door hen niet lastig te vallen, te helpen en te steunen wanneer dat nodig is."
+      },
+      "fr": {
+        "q": "Comment être bon envers ses voisins ?",
+        "a": "En ne les dérangeant pas, en les aidant et en les soutenant lorsqu’ils en ont besoin."
+      },
+      "ru": {
+        "q": "Как хорошо относиться к соседям?",
+        "a": "Не причинять им беспокойства, помогать им и поддерживать их в нужде."
+      },
+      "ku": {
+        "q": "Meriv çawa li cîranan başiyê dike?",
+        "a": "Bi wan neaciz kirin, alîkarî kirin û di hewcedariyê de piştgirî danê."
+      },
+      "tt": {
+        "q": "Күршеләргә ничек яхшылык күрсәтергә?",
+        "a": "Аларны борчымаска, ярдәм итәргә һәм кирәк вакытта булышырга."
+      },
+      "ar": {
+        "q": "كَيْفَ نُحْسِنُ إِلَى الْجِيرَانِ؟",
+        "a": "بِعَدَمِ إِيذَائِهِمْ، وَمُسَاعَدَتِهِمْ، وَدَعْمِهِمْ عِنْدَ الْحَاجَةِ."
+      },
+      "es": {
+        "q": "¿Cómo se trata bien a los vecinos?",
+        "a": "No molestándolos, ayudándolos y apoyándolos cuando lo necesitan."
+      },
+      "it": {
+        "q": "Come si fa del bene ai vicini?",
+        "a": "Non disturbándoli, aiutandoli e sostenendoli quando ne hanno bisogno."
+      },
+      "pt": {
+        "q": "Como fazer o bem aos vizinhos?",
+        "a": "Não os incomodando, ajudando-os e apoiando-os quando precisam."
+      },
+      "ko": {
+        "q": "이웃에게 어떻게 선행을 베풉니까?",
+        "a": "방해하지 않고 돕고 필요할 때 지원하는 것입니다."
+      },
+      "vi": {
+        "q": "Làm thế nào để đối xử tốt với hàng xóm?",
+        "a": "Không làm phiền, giúp đỡ và hỗ trợ họ khi họ cần."
+      },
+      "ja": {
+        "q": "隣人に親切にするにはどうしますか。",
+        "a": "迷惑をかけず、助け、必要なときに支えることです。"
+      },
+      "zh": {
+        "q": "怎样善待邻居？",
+        "a": "不打扰他们，帮助他们，并在他们需要时给予支持。"
+      }
+    },
+    {
+      "id": 335,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Duhâ 93:9 — https://quran.com/93/9",
+        "📚 Hadis — Sahih Buhârî 6005 — https://sunnah.com/bukhari:6005"
+      ],
+      "tr": {
+        "q": "Yetimlere karşı nasıl davranılmalıdır?",
+        "a": "Hakları korunmalı, onlara şefkat ve adaletle davranılmalıdır."
+      },
+      "en": {
+        "q": "How should we treat orphans?",
+        "a": "Their rights should be protected, and they should be treated with compassion and justice."
+      },
+      "de": {
+        "q": "Wie soll man mit Waisen umgehen?",
+        "a": "Ihre Rechte sollen geschützt und sie mit Barmherzigkeit und Gerechtigkeit behandelt werden."
+      },
+      "nl": {
+        "q": "Hoe moeten we met wezen omgaan?",
+        "a": "Hun rechten moeten worden beschermd en ze moeten met mededogen en rechtvaardigheid worden behandeld."
+      },
+      "fr": {
+        "q": "Comment faut-il traiter les orphelins ?",
+        "a": "Il faut protéger leurs droits et les traiter avec compassion et justice."
+      },
+      "ru": {
+        "q": "Как следует относиться к сиротам?",
+        "a": "Нужно защищать их права и относиться к ним с милосердием и справедливостью."
+      },
+      "ku": {
+        "q": "Divê em çawa bi sêwiyan re tevbigere?",
+        "a": "Mafên wan divê bêne parastin û bi dilovanî û dadperwerî re bêne muamele kirin."
+      },
+      "tt": {
+        "q": "Ятимнәргә ничек мөнәсәбәт итәргә?",
+        "a": "Аларның хокукларын сакларга, шәфкать һәм гаделлек белән мөгамәлә итәргә кирәк."
+      },
+      "ar": {
+        "q": "كَيْفَ يَنْبَغِي أَنْ نُعَامِلَ الْيَتَامَى؟",
+        "a": "يَجِبُ حِفْظُ حُقُوقِهِمْ وَمُعَامَلَتُهُمْ بِالرَّحْمَةِ وَالْعَدْلِ."
+      },
+      "es": {
+        "q": "¿Cómo debemos tratar a los huérfanos?",
+        "a": "Debemos proteger sus derechos y tratarlos con misericordia y justicia."
+      },
+      "it": {
+        "q": "Come dobbiamo trattare gli orfani?",
+        "a": "I loro diritti devono essere protetti e devono essere trattati con misericordia e giustizia."
+      },
+      "pt": {
+        "q": "Como devemos tratar os órfãos?",
+        "a": "Seus direitos devem ser protegidos e eles devem ser tratados com misericórdia e justiça."
+      },
+      "ko": {
+        "q": "고아를 어떻게 대해야 합니까?",
+        "a": "그들의 권리를 보호하고 자비와 정의로 대해야 합니다."
+      },
+      "vi": {
+        "q": "Nên đối xử với trẻ mồ côi thế nào?",
+        "a": "Cần bảo vệ quyền lợi của các em và đối xử với các em bằng lòng thương và công bằng."
+      },
+      "ja": {
+        "q": "孤児にはどのように接すべきですか。",
+        "a": "権利を守り、慈悲と公正をもって接するべきです。"
+      },
+      "zh": {
+        "q": "应当怎样对待孤儿？",
+        "a": "应保护他们的权利，以慈悲和公正对待他们。"
+      }
+    },
+    {
+      "id": 336,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Mâûn 107:1–3 — https://quran.com/107/1-3",
+        "📚 Hadis — Sahih Müslim 2699 — https://sunnah.com/muslim:2699"
+      ],
+      "tr": {
+        "q": "Fakirleri gözetmek neden önemlidir?",
+        "a": "Toplumsal merhamet ve adaletin gereğidir."
+      },
+      "en": {
+        "q": "Why is caring for the poor important?",
+        "a": "It is required by social mercy and justice."
+      },
+      "de": {
+        "q": "Warum ist es wichtig, für Arme zu sorgen?",
+        "a": "Es gehört zu sozialer Barmherzigkeit und Gerechtigkeit."
+      },
+      "nl": {
+        "q": "Waarom is zorg voor de armen belangrijk?",
+        "a": "Het is een vereiste van maatschappelijke barmhartigheid en rechtvaardigheid."
+      },
+      "fr": {
+        "q": "Pourquoi est-il important de prendre soin des pauvres ?",
+        "a": "C’est une exigence de la miséricorde et de la justice sociales."
+      },
+      "ru": {
+        "q": "Почему важно заботиться о бедных?",
+        "a": "Это требование общественного милосердия и справедливости."
+      },
+      "ku": {
+        "q": "Çima lênêrîna feqîran girîng e?",
+        "a": "Ji merhemeta civakî û dadperweriyê ye."
+      },
+      "tt": {
+        "q": "Фәкыйрьләр турында кайгырту ни өчен мөһим?",
+        "a": "Ул җәмгыяви мәрхәмәт һәм гаделлек таләбе."
+      },
+      "ar": {
+        "q": "لِمَاذَا رِعَايَةُ الْفُقَرَاءِ مُهِمَّةٌ؟",
+        "a": "لِأَنَّهَا مِنْ مُقْتَضَيَاتِ الرَّحْمَةِ وَالْعَدْلِ فِي الْمُجْتَمَعِ."
+      },
+      "es": {
+        "q": "¿Por qué es importante cuidar de los pobres?",
+        "a": "Es una exigencia de la misericordia y la justicia social."
+      },
+      "it": {
+        "q": "Perché è importante prendersi cura dei poveri?",
+        "a": "È una necessità della misericordia e della giustizia sociale."
+      },
+      "pt": {
+        "q": "Por que é importante cuidar dos pobres?",
+        "a": "É uma exigência da misericórdia e da justiça social."
+      },
+      "ko": {
+        "q": "가난한 사람을 돌보는 것이 왜 중요합니까?",
+        "a": "사회적 자비와 정의의 요구이기 때문입니다."
+      },
+      "vi": {
+        "q": "Vì sao chăm lo cho người nghèo quan trọng?",
+        "a": "Đó là yêu cầu của lòng nhân ái và công bằng xã hội."
+      },
+      "ja": {
+        "q": "貧しい人々を気遣うことはなぜ大切ですか。",
+        "a": "社会的な慈悲と正義の要請だからです。"
+      },
+      "zh": {
+        "q": "关怀穷人为什么重要？",
+        "a": "因为这是社会慈悲与公正的要求。"
+      }
+    },
+    {
+      "id": 337,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Bakara 2:83 — https://quran.com/2/83",
+        "📚 Hadis — Sahih Buhârî 6018 — https://sunnah.com/bukhari:6018"
+      ],
+      "tr": {
+        "q": "Güzel söz nedir?",
+        "a": "Doğru, nazik ve karşıdakini incitmeyen sözdür."
+      },
+      "en": {
+        "q": "What is a good word?",
+        "a": "It is a truthful, kind word that does not hurt the other person."
+      },
+      "de": {
+        "q": "Was ist ein gutes Wort?",
+        "a": "Ein wahres und freundliches Wort, das den anderen nicht verletzt."
+      },
+      "nl": {
+        "q": "Wat is een goed woord?",
+        "a": "Een waar en vriendelijk woord dat de ander niet kwetst."
+      },
+      "fr": {
+        "q": "Qu’est-ce qu’une bonne parole ?",
+        "a": "Une parole vraie et aimable qui ne blesse pas l’autre."
+      },
+      "ru": {
+        "q": "Что такое доброе слово?",
+        "a": "Это правдивое и вежливое слово, которое не причиняет другому боли."
+      },
+      "ku": {
+        "q": "Gotina baş çi ye?",
+        "a": "Gotineke rast û nazik e ku kesê din aciz neke."
+      },
+      "tt": {
+        "q": "Яхшы сүз нәрсә ул?",
+        "a": "Дөрес, әдәпле һәм каршыдагы кешене рәнҗетми торган сүз."
+      },
+      "ar": {
+        "q": "مَا الْكَلَامُ الطَّيِّبُ؟",
+        "a": "هُوَ كَلَامٌ صَادِقٌ وَلَطِيفٌ لَا يُؤْذِي الْآخَرَ."
+      },
+      "es": {
+        "q": "¿Qué es una buena palabra?",
+        "a": "Es una palabra verdadera y amable que no hiere al otro."
+      },
+      "it": {
+        "q": "Che cos’è una buona parola?",
+        "a": "È una parola vera e gentile che non ferisce l’altra persona."
+      },
+      "pt": {
+        "q": "O que é uma boa palavra?",
+        "a": "É uma palavra verdadeira e gentil que não magoa o outro."
+      },
+      "ko": {
+        "q": "좋은 말이란 무엇입니까?",
+        "a": "진실하고 친절하며 상대방을 상처 입히지 않는 말입니다."
+      },
+      "vi": {
+        "q": "Lời nói tốt là gì?",
+        "a": "Là lời nói chân thật, lịch sự và không làm tổn thương người khác."
+      },
+      "ja": {
+        "q": "良い言葉とは何ですか。",
+        "a": "正しく、親切で、相手を傷つけない言葉です。"
+      },
+      "zh": {
+        "q": "善言是什么？",
+        "a": "就是诚实、和善且不伤害他人的话。"
+      }
+    },
+    {
+      "id": 338,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:134 — https://quran.com/3/134",
+        "📚 Hadis — Sahih Buhârî 6114 — https://sunnah.com/bukhari:6114"
+      ],
+      "tr": {
+        "q": "Öfkeyi kontrol etmek neden önemlidir?",
+        "a": "Öfkenin haksızlığa ve kırıcı davranışlara yol açmasını önler."
+      },
+      "en": {
+        "q": "Why is controlling anger important?",
+        "a": "It prevents anger from leading to injustice and hurtful behavior."
+      },
+      "de": {
+        "q": "Warum ist es wichtig, den Zorn zu kontrollieren?",
+        "a": "Es verhindert, dass Zorn zu Ungerechtigkeit und verletzendem Verhalten führt."
+      },
+      "nl": {
+        "q": "Waarom is het belangrijk om woede te beheersen?",
+        "a": "Het voorkomt dat woede leidt tot onrecht en kwetsend gedrag."
+      },
+      "fr": {
+        "q": "Pourquoi est-il important de maîtriser sa colère ?",
+        "a": "Cela empêche la colère de mener à l’injustice et aux comportements blessants."
+      },
+      "ru": {
+        "q": "Почему важно контролировать гнев?",
+        "a": "Это не позволяет гневу привести к несправедливости и обидному поведению."
+      },
+      "ku": {
+        "q": "Çima kontrolkirina hêrsê girîng e?",
+        "a": "Pêşî li hêrsê digire ku bibe sedema neheqî û tevgerên birîndar dikin."
+      },
+      "tt": {
+        "q": "Ачуны тыю ни өчен мөһим?",
+        "a": "Ул ачуның гаделсезлеккә һәм рәнҗетүче гамәлләргә китерүенә юл куймый."
+      },
+      "ar": {
+        "q": "لِمَاذَا السَّيْطَرَةُ عَلَى الْغَضَبِ مُهِمَّةٌ؟",
+        "a": "لِأَنَّهَا تَمْنَعُ الْغَضَبَ مِنَ التَّسَبُّبِ فِي الظُّلْمِ وَالسُّلُوكِ الْمُؤْذِي."
+      },
+      "es": {
+        "q": "¿Por qué es importante controlar la ira?",
+        "a": "Evita que la ira lleve a la injusticia y a conductas hirientes."
+      },
+      "it": {
+        "q": "Perché è importante controllare la rabbia?",
+        "a": "Impedisce che la rabbia porti all’ingiustizia e a comportamenti offensivi."
+      },
+      "pt": {
+        "q": "Por que é importante controlar a raiva?",
+        "a": "Evita que a raiva leve à injustiça e a comportamentos ofensivos."
+      },
+      "ko": {
+        "q": "분노를 조절하는 것이 왜 중요합니까?",
+        "a": "분노가 부당함과 상처 주는 행동으로 이어지는 것을 막기 때문입니다."
+      },
+      "vi": {
+        "q": "Vì sao kiểm soát cơn giận quan trọng?",
+        "a": "Nó ngăn cơn giận dẫn đến bất công và hành vi gây tổn thương."
+      },
+      "ja": {
+        "q": "怒りを抑えることはなぜ大切ですか。",
+        "a": "怒りが不正や人を傷つける行動につながるのを防ぐからです。"
+      },
+      "zh": {
+        "q": "控制愤怒为什么重要？",
+        "a": "因为它能防止愤怒导致不公和伤人的行为。"
+      }
+    },
+    {
+      "id": 339,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — İbrâhîm 14:7 — https://quran.com/14/7",
+        "📚 Hadis — Tirmizî 1954 — https://sunnah.com/tirmidhi:1954"
+      ],
+      "tr": {
+        "q": "İnsanlara teşekkür etmek güzel ahlâk mıdır?",
+        "a": "Evet; şükür ve vefanın bir göstergesidir."
+      },
+      "en": {
+        "q": "Is thanking people good character?",
+        "a": "Yes; it is a sign of gratitude and loyalty."
+      },
+      "de": {
+        "q": "Gehört es zum guten Charakter, Menschen zu danken?",
+        "a": "Ja; es ist ein Zeichen von Dankbarkeit und Treue."
+      },
+      "nl": {
+        "q": "Is mensen bedanken goed karakter?",
+        "a": "Ja; het is een teken van dankbaarheid en trouw."
+      },
+      "fr": {
+        "q": "Remercier les gens est-il un bon caractère ?",
+        "a": "Oui ; c’est un signe de gratitude et de reconnaissance."
+      },
+      "ru": {
+        "q": "Является ли благодарность людям благонравием?",
+        "a": "Да; это признак благодарности и признательности."
+      },
+      "ku": {
+        "q": "Spasdarî ji mirovan re exlaqê baş e?",
+        "a": "Erê; nîşana spasdarî û wefadarî ye."
+      },
+      "tt": {
+        "q": "Кешеләргә рәхмәт әйтү яхшы әхлакмы?",
+        "a": "Әйе; ул шөкер һәм кадер белү билгесе."
+      },
+      "ar": {
+        "q": "هَلْ شُكْرُ النَّاسِ مِنْ حُسْنِ الْخُلُقِ؟",
+        "a": "نَعَمْ؛ فَهُوَ عَلَامَةٌ عَلَى الشُّكْرِ وَالْوَفَاءِ."
+      },
+      "es": {
+        "q": "¿Dar las gracias a las personas es buen carácter?",
+        "a": "Sí; es una señal de gratitud y lealtad."
+      },
+      "it": {
+        "q": "Ringraziare le persone è buon carattere?",
+        "a": "Sì; è un segno di gratitudine e riconoscenza."
+      },
+      "pt": {
+        "q": "Agradecer às pessoas é bom caráter?",
+        "a": "Sim; é sinal de gratidão e lealdade."
+      },
+      "ko": {
+        "q": "사람들에게 감사하는 것이 좋은 품성입니까?",
+        "a": "네. 감사와 의리를 나타내는 것입니다."
+      },
+      "vi": {
+        "q": "Cảm ơn mọi người có phải là đức tính tốt không?",
+        "a": "Có; đó là biểu hiện của lòng biết ơn và sự thủy chung."
+      },
+      "ja": {
+        "q": "人に感謝することは良い人格ですか。",
+        "a": "はい。感謝と誠実さの表れです。"
+      },
+      "zh": {
+        "q": "感谢他人是美德吗？",
+        "a": "是的，这是感恩和守信的表现。"
+      }
+    },
+    {
+      "id": 340,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:159 — https://quran.com/3/159",
+        "📚 Hadis — Tirmizî 1956 — https://sunnah.com/tirmidhi:1956"
+      ],
+      "tr": {
+        "q": "Güler yüzlülük neden değerlidir?",
+        "a": "İnsanlar arasında sevgi ve yakınlık oluşturur."
+      },
+      "en": {
+        "q": "Why is smiling valuable?",
+        "a": "It creates love and closeness among people."
+      },
+      "de": {
+        "q": "Warum ist ein freundliches Lächeln wertvoll?",
+        "a": "Es schafft Liebe und Nähe zwischen Menschen."
+      },
+      "nl": {
+        "q": "Waarom is een glimlach waardevol?",
+        "a": "Hij schept liefde en verbondenheid tussen mensen."
+      },
+      "fr": {
+        "q": "Pourquoi le sourire est-il précieux ?",
+        "a": "Il crée de l’affection et de la proximité entre les gens."
+      },
+      "ru": {
+        "q": "Почему улыбка ценна?",
+        "a": "Она создаёт любовь и близость между людьми."
+      },
+      "ku": {
+        "q": "Çima rûkenîn girîng e?",
+        "a": "Di nav mirovan de evîn û nêzîkbûn çêdike."
+      },
+      "tt": {
+        "q": "Елмаю ни өчен кадерле?",
+        "a": "Ул кешеләр арасында мәхәббәт һәм якынлык тудыра."
+      },
+      "ar": {
+        "q": "لِمَاذَا الْبِشْرُ وَالِابْتِسَامَةُ قَيِّمَانِ؟",
+        "a": "لِأَنَّهُمَا يُوَلِّدَانِ الْمَحَبَّةَ وَالْقُرْبَ بَيْنَ النَّاسِ."
+      },
+      "es": {
+        "q": "¿Por qué es valiosa una sonrisa?",
+        "a": "Crea amor y cercanía entre las personas."
+      },
+      "it": {
+        "q": "Perché il sorriso è prezioso?",
+        "a": "Crea affetto e vicinanza tra le persone."
+      },
+      "pt": {
+        "q": "Por que o sorriso é valioso?",
+        "a": "Ele cria amor e proximidade entre as pessoas."
+      },
+      "ko": {
+        "q": "미소가 왜 가치 있습니까?",
+        "a": "사람들 사이에 사랑과 친밀감을 만들기 때문입니다."
+      },
+      "vi": {
+        "q": "Vì sao nụ cười có giá trị?",
+        "a": "Nó tạo ra tình yêu thương và sự gần gũi giữa mọi người."
+      },
+      "ja": {
+        "q": "笑顔はなぜ大切ですか。",
+        "a": "人々の間に愛情と親しみを生むからです。"
+      },
+      "zh": {
+        "q": "微笑为什么珍贵？",
+        "a": "因为它能在人们之间产生爱与亲近。"
+      }
+    },
+    {
+      "id": 341,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Mâide 5:2 — https://quran.com/5/2",
+        "📚 Hadis — Sahih Buhârî 6021 — https://sunnah.com/bukhari:6021"
+      ],
+      "tr": {
+        "q": "İyilikte yarışmak ne demektir?",
+        "a": "Hayır işlerinde birbirini teşvik etmek demektir."
+      },
+      "en": {
+        "q": "What does competing in good deeds mean?",
+        "a": "It means encouraging one another to do good deeds."
+      },
+      "de": {
+        "q": "Was bedeutet, im Guten zu wetteifern?",
+        "a": "Einander zu guten Taten anzuspornen."
+      },
+      "nl": {
+        "q": "Wat betekent wedijveren in het goede?",
+        "a": "Elkaar aanmoedigen om goede daden te verrichten."
+      },
+      "fr": {
+        "q": "Que signifie rivaliser dans le bien ?",
+        "a": "S’encourager mutuellement à accomplir de bonnes actions."
+      },
+      "ru": {
+        "q": "Что значит соревноваться в добрых делах?",
+        "a": "Побуждать друг друга совершать добро."
+      },
+      "ku": {
+        "q": "Pêşbazî di başiyê de çi ye?",
+        "a": "Wateya wê teşwîqkirina hev e ku em karên xêrê bikin."
+      },
+      "tt": {
+        "q": "Яхшылыкта ярышу нәрсә дигән сүз?",
+        "a": "Бер-береңне хәерле эшләргә өндәү дигән сүз."
+      },
+      "ar": {
+        "q": "مَا مَعْنَى الْمُسَارَعَةِ فِي الْخَيْرِ؟",
+        "a": "هُوَ تَشْجِيعُ بَعْضِنَا بَعْضًا عَلَى فِعْلِ الْخَيْرِ."
+      },
+      "es": {
+        "q": "¿Qué significa competir en buenas obras?",
+        "a": "Significa animarse mutuamente a hacer el bien."
+      },
+      "it": {
+        "q": "Che cosa significa gareggiare nel bene?",
+        "a": "Significa incoraggiarsi a vicenda a compiere il bene."
+      },
+      "pt": {
+        "q": "O que significa competir nas boas ações?",
+        "a": "Significa incentivar uns aos outros a praticar o bem."
+      },
+      "ko": {
+        "q": "선행을 위해 경쟁한다는 것은 무슨 뜻입니까?",
+        "a": "서로 선행을 하도록 격려하는 것입니다."
+      },
+      "vi": {
+        "q": "Thi đua làm việc thiện nghĩa là gì?",
+        "a": "Là khuyến khích nhau cùng làm điều tốt."
+      },
+      "ja": {
+        "q": "善行を競うとはどういう意味ですか。",
+        "a": "互いに善行をするよう励ますことです。"
+      },
+      "zh": {
+        "q": "在善行上竞赛是什么意思？",
+        "a": "就是互相鼓励去行善。"
+      }
+    },
+    {
+      "id": 342,
+      "day": 18,
+      "sources": [
+        "📖 Kur’an — Kalem 68:4 — https://quran.com/68/4",
+        "📚 Hadis — Tirmizî 2003 — https://sunnah.com/tirmidhi:2003"
+      ],
+      "tr": {
+        "q": "Güzel ahlâkın amacı nedir?",
+        "a": "Allah’ın rızasını kazanmak ve insanlarla güzel ilişkiler kurmaktır."
+      },
+      "en": {
+        "q": "What is the purpose of good character?",
+        "a": "To gain Allah’s pleasure and build good relationships with people."
+      },
+      "de": {
+        "q": "Was ist das Ziel eines guten Charakters?",
+        "a": "Allahs Wohlgefallen zu erlangen und gute Beziehungen zu Menschen aufzubauen."
+      },
+      "nl": {
+        "q": "Wat is het doel van goed karakter?",
+        "a": "Allahs welbehagen te verkrijgen en goede relaties met mensen op te bouwen."
+      },
+      "fr": {
+        "q": "Quel est le but du bon caractère ?",
+        "a": "Obtenir l’agrément d’Allah et établir de bonnes relations avec les gens."
+      },
+      "ru": {
+        "q": "Какова цель благонравия?",
+        "a": "Обрести довольство Аллаха и строить хорошие отношения с людьми."
+      },
+      "ku": {
+        "q": "Armanca exlaqê baş çi ye?",
+        "a": "Qezenca razîbûna Allah û ava kirina têkiliyên baş bi mirovan re ye."
+      },
+      "tt": {
+        "q": "Яхшы әхлакның максаты нәрсә?",
+        "a": "Аллаһның ризалыгын алу һәм кешеләр белән яхшы мөнәсәбәтләр төзү."
+      },
+      "ar": {
+        "q": "مَا هَدَفُ حُسْنِ الْخُلُقِ؟",
+        "a": "نَيْلُ رِضَا اللَّهِ وَإِقَامَةُ عَلاقَاتٍ حَسَنَةٍ مَعَ النَّاسِ."
+      },
+      "es": {
+        "q": "¿Cuál es el propósito del buen carácter?",
+        "a": "Obtener la complacencia de Allah y establecer buenas relaciones con las personas."
+      },
+      "it": {
+        "q": "Qual è lo scopo del buon carattere?",
+        "a": "Ottenere il compiacimento di Allah e costruire buone relazioni con le persone."
+      },
+      "pt": {
+        "q": "Qual é o objetivo do bom caráter?",
+        "a": "Obter a satisfação de Allah e construir boas relações com as pessoas."
+      },
+      "ko": {
+        "q": "좋은 품성의 목적은 무엇입니까?",
+        "a": "알라의 기쁨을 얻고 사람들과 좋은 관계를 세우는 것입니다."
+      },
+      "vi": {
+        "q": "Mục đích của đức hạnh tốt là gì?",
+        "a": "Là đạt được sự hài lòng của Allah và xây dựng quan hệ tốt với mọi người."
+      },
+      "ja": {
+        "q": "良い人格の目的は何ですか。",
+        "a": "アッラーの喜びを得て、人々と良い関係を築くことです。"
+      },
+      "zh": {
+        "q": "良好品德的目的是什么？",
+        "a": "就是获得真主的喜悦，并与人建立良好关系。"
+      }
+    }
+  ]
+}
