@@ -1,0 +1,1549 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 20,
+  "dayTitle": {
+    "tr": "20. Gün — Dua ve Zikir",
+    "en": "Day 20 — Supplication and Remembrance",
+    "de": "20. Tag — Bittgebet und Gedenken",
+    "nl": "Dag 20 — Smeekbede en gedenken",
+    "fr": "20e jour — Invocation et rappel",
+    "ru": "20-й день — Дуа и поминание Аллаха",
+    "ku": "Rojê 20 — Dua û Zikr",
+    "tt": "20 нче көн — Дога һәм зикер",
+    "ar": "اليوم العشرون — الدعاء والذِّكر",
+    "es": "Día 20 — Du‘a y recuerdo de Allah",
+    "it": "Giorno 20 — Duʿā e ricordo di Allah",
+    "pt": "Dia 20 — Duʿā e lembrança de Allah",
+    "ko": "20일 — 두아와 알라를 기억하기",
+    "vi": "Ngày 20 — Duʿā và tưởng nhớ Allah",
+    "ja": "20日目 — ドゥアーとアッラーへの唱念",
+    "zh": "第20天——祈祷与记念真主"
+  },
+  "daySubtitle": {
+    "tr": "Dua, zikir, tesbih, istiğfar, salavat ve Allah’ı anmanın önemi",
+    "en": "The importance of duʿā, dhikr, tasbīḥ, seeking forgiveness, ṣalawāt, and remembering Allah",
+    "de": "Die Bedeutung von Duʿā, Dhikr, Tasbīḥ, Istighfār, Ṣalawāt und dem Gedenken Allahs",
+    "nl": "Het belang van duʿā, dhikr, tasbīḥ, istighfār, ṣalawāt en het gedenken van Allah",
+    "fr": "L’importance du duʿā, du dhikr, du tasbīḥ, de l’istighfār, des ṣalawāt et du rappel d’Allah",
+    "ru": "Значение дуа, зикра, тасбиха, истигфара, салавата и поминания Аллаха",
+    "ku": "Girîngiya duayê, zikrê, tesbîhê, îstîxfarê, selawatê û bîranîna Xwedê",
+    "tt": "Дога, зикер, тәсбих, истигъфар, салават һәм Аллаһны искә алуның әһәмияте",
+    "ar": "أهمية الدعاء والذِّكر والتسبيح والاستغفار والصلاة على النبي ﷺ وذكر الله",
+    "es": "La importancia del duʿā, el dhikr, el tasbīḥ, el istighfār, las ṣalawāt y el recuerdo de Allah",
+    "it": "L’importanza di duʿā, dhikr, tasbīḥ, istighfār, ṣalawāt e del ricordo di Allah",
+    "pt": "A importância do duʿā, dhikr, tasbīḥ, istighfār, ṣalawāt e da lembrança de Allah",
+    "ko": "두아, 즈크르, 타스비흐, 용서를 구함, 살라와트와 알라를 기억하는 것의 중요성",
+    "vi": "Tầm quan trọng của duʿā, dhikr, tasbīḥ, istighfār, ṣalawāt và việc tưởng nhớ Allah",
+    "ja": "ドゥアー、ズィクル、タスビーフ、赦しを求めること、サラワート、そしてアッラーを唱念することの重要性",
+    "zh": "祈祷、记念真主、赞颂、求饶、祝福先知以及记念真主的重要性"
+  },
+  "questions": [
+    {
+      "id": 362,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Gâfir 40:60 — https://quran.com/40/60",
+        "📚 Hadis — Tirmizî 3371 — https://sunnah.com/tirmidhi:3371"
+      ],
+      "tr": {
+        "q": "Dua nedir?",
+        "a": "Kulun Allah’a yönelerek O’ndan istemesi ve O’na yalvarmasıdır."
+      },
+      "en": {
+        "q": "What is duʿā?",
+        "a": "It is a servant turning to Allah, asking Him and supplicating to Him."
+      },
+      "de": {
+        "q": "Was ist Duʿā?",
+        "a": "Es ist, dass der Diener sich Allah zuwendet, Ihn bittet und Ihn anfleht."
+      },
+      "nl": {
+        "q": "Wat is duʿā?",
+        "a": "Het is dat een dienaar zich tot Allah wendt, Hem vraagt en Hem aanroept."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le duʿā ?",
+        "a": "C’est le fait que le serviteur se tourne vers Allah, Lui demande et L’implore."
+      },
+      "ru": {
+        "q": "Что такое дуа?",
+        "a": "Это обращение раба к Аллаху с просьбой и мольбой."
+      },
+      "ku": {
+        "q": "Dua çi ye?",
+        "a": "Dua ew e ku bende berê xwe dide Allah û ji Wî dixwaze û dua dike."
+      },
+      "tt": {
+        "q": "Нәрсә ул дога?",
+        "a": "Дога — бәндәнең Аллаһы Тәгаләгә мөрәҗәгать итеп, Аннан соравы һәм ялваруы."
+      },
+      "ar": {
+        "q": "مَا الدُّعَاءُ؟",
+        "a": "هُوَ تَوَجُّهُ العَبْدِ إِلَى اللَّهِ بِالسُّؤَالِ وَالابْتِهَالِ."
+      },
+      "es": {
+        "q": "¿Qué es el duʿā?",
+        "a": "Es que el siervo se dirija a Allah, Le pida y Le suplique."
+      },
+      "it": {
+        "q": "Che cos’è il duʿā?",
+        "a": "È che il servo si rivolga ad Allah, Gli chieda e Lo supplichi."
+      },
+      "pt": {
+        "q": "O que é o duʿā?",
+        "a": "É o servo voltar-se para Allah, pedir-Lhe e suplicar-Lhe."
+      },
+      "ko": {
+        "q": "두아(간구)란 무엇인가?",
+        "a": "종이 알라께 향하여 그분께 간청하고 간구하는 것입니다."
+      },
+      "vi": {
+        "q": "Duʿā là gì?",
+        "a": "Là việc người tôi tớ hướng về Allah, cầu xin và khẩn cầu Ngài."
+      },
+      "ja": {
+        "q": "ドゥアーとは何ですか？",
+        "a": "しもべがアッラーに向かい、御方に願い求め、祈願することです。"
+      },
+      "zh": {
+        "q": "什么是祈祷（杜阿）？",
+        "a": "就是仆人向真主祈求并恳求真主。"
+      }
+    },
+    {
+      "id": 363,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Bakara 2:186 — https://quran.com/2/186",
+        "📚 Hadis — Tirmizî 2969 — https://sunnah.com/tirmidhi:2969"
+      ],
+      "tr": {
+        "q": "Dua neden önemlidir?",
+        "a": "Allah’a bağlılığı ve kulun ihtiyaçlarını O’na arz etmesini ifade eder."
+      },
+      "en": {
+        "q": "Why is duʿā important?",
+        "a": "It expresses devotion to Allah and presenting one’s needs to Him."
+      },
+      "de": {
+        "q": "Warum ist Duʿā wichtig?",
+        "a": "Es zeigt die Verbundenheit mit Allah und das Vortragen der eigenen Bedürfnisse vor Ihm."
+      },
+      "nl": {
+        "q": "Waarom is duʿā belangrijk?",
+        "a": "Het drukt verbondenheid met Allah uit en het voorleggen van de eigen behoeften aan Hem."
+      },
+      "fr": {
+        "q": "Pourquoi le duʿā est-il important ?",
+        "a": "Il exprime l’attachement à Allah et le fait de Lui présenter ses besoins."
+      },
+      "ru": {
+        "q": "Почему дуа важно?",
+        "a": "Оно выражает преданность Аллаху и обращение к Нему со своими нуждами."
+      },
+      "ku": {
+        "q": "Çima dua girîng e?",
+        "a": "Ji girêdana bi Allah re û pêşkêşkirina hewcedariyên xwe ji Wî re nîşan dide."
+      },
+      "tt": {
+        "q": "Ни өчен дога мөһим?",
+        "a": "Ул Аллаһы Тәгаләгә бәйлелекне һәм үз ихтыяҗларыңны Аңа тапшыруны белдерә."
+      },
+      "ar": {
+        "q": "لِمَاذَا الدُّعَاءُ مُهِمٌّ؟",
+        "a": "لِأَنَّهُ يُعَبِّرُ عَنْ تَعَلُّقِ العَبْدِ بِاللَّهِ وَعَرْضِ حَاجَاتِهِ عَلَيْهِ."
+      },
+      "es": {
+        "q": "¿Por qué es importante el duʿā?",
+        "a": "Expresa la dependencia de Allah y presentar ante Él nuestras necesidades."
+      },
+      "it": {
+        "q": "Perché il duʿā è importante?",
+        "a": "Esprime il legame con Allah e il presentarGli i propri bisogni."
+      },
+      "pt": {
+        "q": "Por que o duʿā é importante?",
+        "a": "Expressa a ligação com Allah e apresentar-Lhe as nossas necessidades."
+      },
+      "ko": {
+        "q": "두아는 왜 중요한가?",
+        "a": "알라께 대한 의존과 자신의 필요를 그분께 아뢰는 것을 나타내기 때문입니다."
+      },
+      "vi": {
+        "q": "Tại sao duʿā quan trọng?",
+        "a": "Vì nó thể hiện sự gắn bó với Allah và trình bày nhu cầu của mình với Ngài."
+      },
+      "ja": {
+        "q": "なぜドゥアーは重要ですか？",
+        "a": "アッラーへの信頼と、自分の必要を御方に訴えることを表すからです。"
+      },
+      "zh": {
+        "q": "为什么祈祷很重要？",
+        "a": "因为它表达了对真主的依赖，并把自己的需要呈交给真主。"
+      }
+    },
+    {
+      "id": 364,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Ahzâb 33:41 — https://quran.com/33/41",
+        "📚 Hadis — Buhârî 6407 — https://sunnah.com/bukhari:6407"
+      ],
+      "tr": {
+        "q": "Zikir nedir?",
+        "a": "Allah’ı anmak ve O’nu hatırda tutmaktır."
+      },
+      "en": {
+        "q": "What is dhikr?",
+        "a": "It is remembering Allah and keeping Him in mind."
+      },
+      "de": {
+        "q": "Was ist Dhikr?",
+        "a": "Allah zu gedenken und Ihn im Herzen und Bewusstsein zu behalten."
+      },
+      "nl": {
+        "q": "Wat is dhikr?",
+        "a": "Allah gedenken en Hem in gedachten houden."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le dhikr ?",
+        "a": "C’est se rappeler Allah et Le garder à l’esprit."
+      },
+      "ru": {
+        "q": "Что такое зикр?",
+        "a": "Это поминание Аллаха и сохранение памяти о Нём."
+      },
+      "ku": {
+        "q": "Zikr çi ye?",
+        "a": "Ew bîranîna Allah û li bîr anîna Wî ye."
+      },
+      "tt": {
+        "q": "Нәрсә ул зикер?",
+        "a": "Зикер — Аллаһы Тәгаләне искә алу һәм Аны күңелдә тоту."
+      },
+      "ar": {
+        "q": "مَا الذِّكْرُ؟",
+        "a": "هُوَ ذِكْرُ اللَّهِ وَاسْتِحْضَارُهُ فِي القَلْبِ."
+      },
+      "es": {
+        "q": "¿Qué es el dhikr?",
+        "a": "Es recordar a Allah y tenerlo presente."
+      },
+      "it": {
+        "q": "Che cos’è il dhikr?",
+        "a": "È ricordare Allah e tenerLo presente."
+      },
+      "pt": {
+        "q": "O que é dhikr?",
+        "a": "É lembrar-se de Allah e tê-Lo presente."
+      },
+      "ko": {
+        "q": "즈크르란 무엇인가?",
+        "a": "알라를 기억하고 마음에 그분을 간직하는 것입니다."
+      },
+      "vi": {
+        "q": "Dhikr là gì?",
+        "a": "Là nhớ đến Allah và luôn ghi nhớ Ngài."
+      },
+      "ja": {
+        "q": "ズィクルとは何ですか？",
+        "a": "アッラーを唱念し、御方を心に留めることです。"
+      },
+      "zh": {
+        "q": "什么是记念真主？",
+        "a": "就是记念真主，并让对真主的记念常存于心。"
+      }
+    },
+    {
+      "id": 365,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — İsrâ 17:111 — https://quran.com/17/111",
+        "📚 Hadis — Buhârî 6406 — https://sunnah.com/bukhari:6406"
+      ],
+      "tr": {
+        "q": "Tesbih nedir?",
+        "a": "Allah’ı eksikliklerden tenzih ederek anmaktır."
+      },
+      "en": {
+        "q": "What is tasbīḥ?",
+        "a": "It is declaring Allah free of every imperfection."
+      },
+      "de": {
+        "q": "Was ist Tasbīḥ?",
+        "a": "Allah von jeder Unvollkommenheit freizusprechen."
+      },
+      "nl": {
+        "q": "Wat is tasbīḥ?",
+        "a": "Allah vrijspreken van iedere tekortkoming."
+      },
+      "fr": {
+        "q": "Qu’est-ce que le tasbīḥ ?",
+        "a": "C’est déclarer Allah exempt de toute imperfection."
+      },
+      "ru": {
+        "q": "Что такое тасбих?",
+        "a": "Это возвеличивать Аллаха и утверждать Его совершенство, отрицая недостатки."
+      },
+      "ku": {
+        "q": "Tesbîh çi ye?",
+        "a": "Ew Allah ji hemû kêmasiyan paqij û dûr zanîn e."
+      },
+      "tt": {
+        "q": "Нәрсә ул тәсбих?",
+        "a": "Аллаһы Тәгаләне барлык кимчелекләрдән пакь дип тану."
+      },
+      "ar": {
+        "q": "مَا التَّسْبِيحُ؟",
+        "a": "هُوَ تَنْزِيهُ اللَّهِ عَنْ كُلِّ نَقْصٍ وَعَيْبٍ."
+      },
+      "es": {
+        "q": "¿Qué es el tasbīḥ?",
+        "a": "Es declarar a Allah libre de toda imperfección."
+      },
+      "it": {
+        "q": "Che cos’è il tasbīḥ?",
+        "a": "È dichiarare Allah libero da ogni imperfezione."
+      },
+      "pt": {
+        "q": "O que é tasbīḥ?",
+        "a": "É declarar Allah livre de toda imperfeição."
+      },
+      "ko": {
+        "q": "타스비흐란 무엇인가?",
+        "a": "알라께 모든 불완전함이 없음을 선언하며 그분을 찬양하는 것입니다."
+      },
+      "vi": {
+        "q": "Tasbīḥ là gì?",
+        "a": "Là tuyên bố Allah hoàn toàn thanh sạch khỏi mọi khiếm khuyết."
+      },
+      "ja": {
+        "q": "タスビーフとは何ですか？",
+        "a": "アッラーをあらゆる欠点から無縁な御方として称えることです。"
+      },
+      "zh": {
+        "q": "什么是赞颂真主？",
+        "a": "就是宣认真主远离一切缺陷。"
+      }
+    },
+    {
+      "id": 366,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Nûh 71:10 — https://quran.com/71/10",
+        "📚 Hadis — Buhârî 6307 — https://sunnah.com/bukhari:6307"
+      ],
+      "tr": {
+        "q": "İstiğfar nedir?",
+        "a": "Allah’tan bağışlanma dilemektir."
+      },
+      "en": {
+        "q": "What is istighfār?",
+        "a": "It is asking Allah for forgiveness."
+      },
+      "de": {
+        "q": "Was ist Istighfār?",
+        "a": "Allah um Vergebung zu bitten."
+      },
+      "nl": {
+        "q": "Wat is istighfār?",
+        "a": "Allah om vergeving vragen."
+      },
+      "fr": {
+        "q": "Qu’est-ce que l’istighfār ?",
+        "a": "C’est demander pardon à Allah."
+      },
+      "ru": {
+        "q": "Что такое истигфар?",
+        "a": "Это просить у Аллаха прощения."
+      },
+      "ku": {
+        "q": "Îstîxfar çi ye?",
+        "a": "Ew ji Allah daxwaza efû û baxşandinê kirin e."
+      },
+      "tt": {
+        "q": "Нәрсә ул истигъфар?",
+        "a": "Аллаһы Тәгаләдән гафу итүен сорау."
+      },
+      "ar": {
+        "q": "مَا الاسْتِغْفَارُ؟",
+        "a": "هُوَ طَلَبُ المَغْفِرَةِ مِنَ اللَّهِ."
+      },
+      "es": {
+        "q": "¿Qué es el istighfār?",
+        "a": "Es pedir perdón a Allah."
+      },
+      "it": {
+        "q": "Che cos’è l’istighfār?",
+        "a": "È chiedere perdono ad Allah."
+      },
+      "pt": {
+        "q": "O que é istighfār?",
+        "a": "É pedir perdão a Allah."
+      },
+      "ko": {
+        "q": "이스티그파르란 무엇인가?",
+        "a": "알라께 용서를 구하는 것입니다."
+      },
+      "vi": {
+        "q": "Istighfār là gì?",
+        "a": "Là cầu xin Allah tha thứ."
+      },
+      "ja": {
+        "q": "イスティグファールとは何ですか？",
+        "a": "アッラーに赦しを求めることです。"
+      },
+      "zh": {
+        "q": "什么是求饶？",
+        "a": "就是向真主请求宽恕。"
+      }
+    },
+    {
+      "id": 367,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Ahzâb 33:56 — https://quran.com/33/56",
+        "📚 Hadis — Buhârî 6357 — https://sunnah.com/bukhari:6357"
+      ],
+      "tr": {
+        "q": "Salavat nedir?",
+        "a": "Peygamberimiz Muhammed ﷺ için Allah’ın rahmetini ve selamını dilemek üzere yapılan duadır."
+      },
+      "en": {
+        "q": "What is ṣalawāt?",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      },
+      "de": {
+        "q": "Was sind Ṣalawāt?",
+        "a": "Ṣalawāt sind Bittgebete um Allahs Segen und Frieden für den Propheten Muhammad ﷺ."
+      },
+      "nl": {
+        "q": "Wat is ṣalawāt?",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      },
+      "fr": {
+        "q": "Que sont les ṣalawāt ?",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      },
+      "ru": {
+        "q": "Что такое салават?",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      },
+      "ku": {
+        "q": "Selawat çi ye?",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      },
+      "tt": {
+        "q": "Salavat nedir?",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      },
+      "ar": {
+        "q": "مَا الصَّلَوَاتُ عَلَى النَّبِيِّ ﷺ؟",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      },
+      "es": {
+        "q": "¿Qué son las ṣalawāt?",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      },
+      "it": {
+        "q": "Salavat nedir?",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      },
+      "pt": {
+        "q": "Salavat nedir?",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      },
+      "ko": {
+        "q": "Salavat nedir?",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      },
+      "vi": {
+        "q": "Salavat nedir?",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      },
+      "ja": {
+        "q": "Salavat nedir?",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      },
+      "zh": {
+        "q": "Salavat nedir?",
+        "a": "Ṣalawāt is a supplication for Allah’s blessings and peace upon Prophet Muhammad ﷺ."
+      }
+    },
+    {
+      "id": 368,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — A‘râf 7:55 — https://quran.com/7/55",
+        "📚 Hadis — Buhârî 6340 — https://sunnah.com/bukhari:6340"
+      ],
+      "tr": {
+        "q": "Dua sadece zor zamanda mı yapılır?",
+        "a": "Hayır; Müslüman kolaylıkta ve zorlukta Allah’a dua eder."
+      },
+      "en": {
+        "q": "Is duʿā only made in difficult times?",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      },
+      "de": {
+        "q": "Wird Duʿā nur in schwierigen Zeiten gesprochen?",
+        "a": "Nein. Ein Muslim wendet sich Allah sowohl in Zeiten der Erleichterung als auch der Schwierigkeit zu."
+      },
+      "nl": {
+        "q": "Wordt duʿā alleen in moeilijke tijden gedaan?",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      },
+      "fr": {
+        "q": "Le duʿā est-il réservé aux moments difficiles ?",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      },
+      "ru": {
+        "q": "Дуа читают только в трудные времена?",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      },
+      "ku": {
+        "q": "Ma dua tenê di demên dijwar de tê kirin?",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      },
+      "tt": {
+        "q": "Dua sadece zor zamanda mı yapılır?",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      },
+      "ar": {
+        "q": "هَلْ يُدْعَى اللَّهُ فَقَطْ فِي أَوْقَاتِ الشِّدَّةِ؟",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      },
+      "es": {
+        "q": "¿Se hace duʿā solo en tiempos difíciles?",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      },
+      "it": {
+        "q": "Dua sadece zor zamanda mı yapılır?",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      },
+      "pt": {
+        "q": "Dua sadece zor zamanda mı yapılır?",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      },
+      "ko": {
+        "q": "Dua sadece zor zamanda mı yapılır?",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      },
+      "vi": {
+        "q": "Dua sadece zor zamanda mı yapılır?",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      },
+      "ja": {
+        "q": "Dua sadece zor zamanda mı yapılır?",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      },
+      "zh": {
+        "q": "Dua sadece zor zamanda mı yapılır?",
+        "a": "No. A Muslim calls upon Allah in ease as well as hardship."
+      }
+    },
+    {
+      "id": 369,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Talâk 65:3 — https://quran.com/65/3",
+        "📚 Hadis — Tirmizî 2344 — https://sunnah.com/tirmidhi:2344"
+      ],
+      "tr": {
+        "q": "Dua ile tevekkül arasında nasıl bir ilişki vardır?",
+        "a": "Kul sebeplere sarılırken sonucu Allah’a bırakır ve O’na güvenir."
+      },
+      "en": {
+        "q": "What is the relationship between duʿā and tawakkul?",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      },
+      "de": {
+        "q": "Welcher Zusammenhang besteht zwischen Duʿā und Tawakkul?",
+        "a": "Der Diener ergreift erlaubte Mittel, überlässt das Ergebnis aber Allah und vertraut Ihm."
+      },
+      "nl": {
+        "q": "Wat is de relatie tussen duʿā en tawakkul?",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      },
+      "fr": {
+        "q": "Quel est le lien entre le duʿā et le tawakkul ?",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      },
+      "ru": {
+        "q": "Как связаны дуа и таваккуль?",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      },
+      "ku": {
+        "q": "Têkiliya di navbera dua û tevekkulê de çi ye?",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      },
+      "tt": {
+        "q": "Dua ile tevekkül arasında nasıl bir ilişki vardır?",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      },
+      "ar": {
+        "q": "مَا العَلَاقَةُ بَيْنَ الدُّعَاءِ وَالتَّوَكُّلِ؟",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      },
+      "es": {
+        "q": "¿Qué relación hay entre el duʿā y el tawakkul?",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      },
+      "it": {
+        "q": "Dua ile tevekkül arasında nasıl bir ilişki vardır?",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      },
+      "pt": {
+        "q": "Dua ile tevekkül arasında nasıl bir ilişki vardır?",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      },
+      "ko": {
+        "q": "Dua ile tevekkül arasında nasıl bir ilişki vardır?",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      },
+      "vi": {
+        "q": "Dua ile tevekkül arasında nasıl bir ilişki vardır?",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      },
+      "ja": {
+        "q": "Dua ile tevekkül arasında nasıl bir ilişki vardır?",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      },
+      "zh": {
+        "q": "Dua ile tevekkül arasında nasıl bir ilişki vardır?",
+        "a": "A servant takes lawful means while entrusting the outcome to Allah and relying on Him."
+      }
+    },
+    {
+      "id": 370,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Zümer 39:53 — https://quran.com/39/53",
+        "📚 Hadis — Buhârî 6340 — https://sunnah.com/bukhari:6340"
+      ],
+      "tr": {
+        "q": "Dua kabul edilmezse ne yapılmalıdır?",
+        "a": "Ümitsizliğe düşmeden dua etmeye ve Allah’a güvenmeye devam edilmelidir."
+      },
+      "en": {
+        "q": "What should one do if a duʿā seems not to be answered?",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      },
+      "de": {
+        "q": "Was soll man tun, wenn ein Duʿā scheinbar nicht erhört wird?",
+        "a": "Man soll nicht verzweifeln, sondern weiter Duʿā machen, Allah dienen und auf Seine Weisheit vertrauen."
+      },
+      "nl": {
+        "q": "Wat moet men doen als een duʿā niet verhoord lijkt te worden?",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      },
+      "fr": {
+        "q": "Que faire si une invocation semble ne pas être exaucée ?",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      },
+      "ru": {
+        "q": "Что делать, если дуа не получает ответа?",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      },
+      "ku": {
+        "q": "Heke dua nehat bersivandin divê çi bê kirin?",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      },
+      "tt": {
+        "q": "Dua kabul edilmezse ne yapılmalıdır?",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      },
+      "ar": {
+        "q": "مَاذَا يَفْعَلُ المُسْلِمُ إِذَا لَمْ يَرَ إِجَابَةً لِدُعَائِهِ؟",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      },
+      "es": {
+        "q": "¿Qué se debe hacer si una súplica parece no ser respondida?",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      },
+      "it": {
+        "q": "Dua kabul edilmezse ne yapılmalıdır?",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      },
+      "pt": {
+        "q": "Dua kabul edilmezse ne yapılmalıdır?",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      },
+      "ko": {
+        "q": "Dua kabul edilmezse ne yapılmalıdır?",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      },
+      "vi": {
+        "q": "Dua kabul edilmezse ne yapılmalıdır?",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      },
+      "ja": {
+        "q": "Dua kabul edilmezse ne yapılmalıdır?",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      },
+      "zh": {
+        "q": "Dua kabul edilmezse ne yapılmalıdır?",
+        "a": "One should not despair; continue making duʿā, worshipping Allah and trusting His wisdom."
+      }
+    },
+    {
+      "id": 371,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Ra‘d 13:28 — https://quran.com/13/28",
+        "📚 Hadis — Müslim 2675 — https://sunnah.com/muslim:2675"
+      ],
+      "tr": {
+        "q": "Zikir kalbi nasıl etkiler?",
+        "a": "Allah’ı hatırlamak kalbe huzur ve bilinç kazandırabilir."
+      },
+      "en": {
+        "q": "How does dhikr affect the heart?",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      },
+      "de": {
+        "q": "Wie wirkt sich Dhikr auf das Herz aus?",
+        "a": "Das Gedenken Allahs kann Ruhe schenken und das Bewusstsein für Ihn stärken."
+      },
+      "nl": {
+        "q": "Welke invloed heeft dhikr op het hart?",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      },
+      "fr": {
+        "q": "Quel effet le dhikr a-t-il sur le cœur ?",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      },
+      "ru": {
+        "q": "Как зикр влияет на сердце?",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      },
+      "ku": {
+        "q": "Zikr çawa bandorê li dil dike?",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      },
+      "tt": {
+        "q": "Zikir kalbi nasıl etkiler?",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      },
+      "ar": {
+        "q": "كَيْفَ يُؤَثِّرُ الذِّكْرُ فِي القَلْبِ؟",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      },
+      "es": {
+        "q": "¿Cómo influye el dhikr en el corazón?",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      },
+      "it": {
+        "q": "Zikir kalbi nasıl etkiler?",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      },
+      "pt": {
+        "q": "Zikir kalbi nasıl etkiler?",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      },
+      "ko": {
+        "q": "Zikir kalbi nasıl etkiler?",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      },
+      "vi": {
+        "q": "Zikir kalbi nasıl etkiler?",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      },
+      "ja": {
+        "q": "Zikir kalbi nasıl etkiler?",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      },
+      "zh": {
+        "q": "Zikir kalbi nasıl etkiler?",
+        "a": "Remembering Allah can bring tranquility and strengthen awareness of Him."
+      }
+    },
+    {
+      "id": 372,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Hicr 15:9 — https://quran.com/15/9",
+        "📚 Hadis — Müslim 804a — https://sunnah.com/muslim:804a"
+      ],
+      "tr": {
+        "q": "Kur’an zikir midir?",
+        "a": "Evet; Kur’an Allah’ın zikridir ve onu okumak Allah’ı anmanın önemli yollarındandır."
+      },
+      "en": {
+        "q": "Is the Qur’an a form of dhikr?",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      },
+      "de": {
+        "q": "Ist der Qur’an eine Form des Dhikr?",
+        "a": "Ja. Der Qur’an bezeichnet sich als Ermahnung, und seine Rezitation ist eine wichtige Form des Gedenkens."
+      },
+      "nl": {
+        "q": "Is de Koran een vorm van dhikr?",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      },
+      "fr": {
+        "q": "Le Coran est-il une forme de dhikr ?",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      },
+      "ru": {
+        "q": "Является ли Коран зикром?",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      },
+      "ku": {
+        "q": "Ma Quran celebek ji zikrê ye?",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      },
+      "tt": {
+        "q": "Kur’an zikir midir?",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      },
+      "ar": {
+        "q": "هَلِ القُرْآنُ مِنَ الذِّكْرِ؟",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      },
+      "es": {
+        "q": "¿Es el Corán una forma de dhikr?",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      },
+      "it": {
+        "q": "Kur’an zikir midir?",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      },
+      "pt": {
+        "q": "Kur’an zikir midir?",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      },
+      "ko": {
+        "q": "Kur’an zikir midir?",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      },
+      "vi": {
+        "q": "Kur’an zikir midir?",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      },
+      "ja": {
+        "q": "Kur’an zikir midir?",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      },
+      "zh": {
+        "q": "Kur’an zikir midir?",
+        "a": "Yes. The Qur’an describes itself as a reminder, and reciting it is an important act of remembrance."
+      }
+    },
+    {
+      "id": 373,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Zümer 39:2 — https://quran.com/39/2",
+        "📚 Hadis — Müslim 2985 — https://sunnah.com/muslim:2985"
+      ],
+      "tr": {
+        "q": "Dua ederken ihlâs neden önemlidir?",
+        "a": "Duanın yalnız Allah’a yöneltilmesini sağlar."
+      },
+      "en": {
+        "q": "Why is sincerity important when making duʿā?",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      },
+      "de": {
+        "q": "Warum ist Aufrichtigkeit beim Duʿā wichtig?",
+        "a": "Aufrichtigkeit sorgt dafür, dass die Bitte allein an Allah gerichtet wird."
+      },
+      "nl": {
+        "q": "Waarom is oprechtheid belangrijk bij duʿā?",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      },
+      "fr": {
+        "q": "Pourquoi la sincérité est-elle importante dans le duʿā ?",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      },
+      "ru": {
+        "q": "Почему искренность важна в дуа?",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      },
+      "ku": {
+        "q": "Çima ixlas di dua de girîng e?",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      },
+      "tt": {
+        "q": "Dua ederken ihlâs neden önemlidir?",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      },
+      "ar": {
+        "q": "لِمَاذَا الإِخْلَاصُ مُهِمٌّ فِي الدُّعَاءِ؟",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      },
+      "es": {
+        "q": "¿Por qué es importante la sinceridad al hacer duʿā?",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      },
+      "it": {
+        "q": "Dua ederken ihlâs neden önemlidir?",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      },
+      "pt": {
+        "q": "Dua ederken ihlâs neden önemlidir?",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      },
+      "ko": {
+        "q": "Dua ederken ihlâs neden önemlidir?",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      },
+      "vi": {
+        "q": "Dua ederken ihlâs neden önemlidir?",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      },
+      "ja": {
+        "q": "Dua ederken ihlâs neden önemlidir?",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      },
+      "zh": {
+        "q": "Dua ederken ihlâs neden önemlidir?",
+        "a": "Sincerity keeps the supplication directed to Allah alone."
+      }
+    },
+    {
+      "id": 374,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — A‘râf 7:55 — https://quran.com/7/55",
+        "📚 Hadis — Tirmizî 3477 — https://sunnah.com/tirmidhi:3477"
+      ],
+      "tr": {
+        "q": "Duanın adabından biri nedir?",
+        "a": "Hamd, salavat, tevazu ve samimiyetle Allah’a yönelmektir."
+      },
+      "en": {
+        "q": "What is one etiquette of making duʿā?",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      },
+      "de": {
+        "q": "Was gehört zu den guten Umgangsformen beim Duʿā?",
+        "a": "Allah mit Lob, Ṣalawāt, Demut und Aufrichtigkeit anzurufen gehört zu den guten Umgangsformen des Duʿā."
+      },
+      "nl": {
+        "q": "Wat is een etiquette van duʿā?",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      },
+      "fr": {
+        "q": "Quel est un comportement recommandé lors du duʿā ?",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      },
+      "ru": {
+        "q": "Каков один из этикетов дуа?",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      },
+      "ku": {
+        "q": "Yek ji edebên duaê çi ye?",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      },
+      "tt": {
+        "q": "Duanın adabından biri nedir?",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      },
+      "ar": {
+        "q": "مَا أَحَدُ آدَابِ الدُّعَاءِ؟",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      },
+      "es": {
+        "q": "¿Cuál es una buena conducta al hacer duʿā?",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      },
+      "it": {
+        "q": "Duanın adabından biri nedir?",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      },
+      "pt": {
+        "q": "Duanın adabından biri nedir?",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      },
+      "ko": {
+        "q": "Duanın adabından biri nedir?",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      },
+      "vi": {
+        "q": "Duanın adabından biri nedir?",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      },
+      "ja": {
+        "q": "Duanın adabından biri nedir?",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      },
+      "zh": {
+        "q": "Duanın adabından biri nedir?",
+        "a": "Turning to Allah with praise, ṣalawāt, humility and sincerity is among the etiquettes of duʿā."
+      }
+    },
+    {
+      "id": 375,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Âl-i İmrân 3:135 — https://quran.com/3/135",
+        "📚 Hadis — Buhârî 6307 — https://sunnah.com/bukhari:6307"
+      ],
+      "tr": {
+        "q": "İstiğfar ne zaman yapılır?",
+        "a": "Her zaman yapılabilir; özellikle günahlardan sonra tövbe ile birlikte önemlidir."
+      },
+      "en": {
+        "q": "When should one seek forgiveness?",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      },
+      "de": {
+        "q": "Wann sollte man Allah um Vergebung bitten?",
+        "a": "Es kann jederzeit geschehen; besonders wichtig ist es zusammen mit der Reue nach Sünden."
+      },
+      "nl": {
+        "q": "Wanneer moet men Allah om vergeving vragen?",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      },
+      "fr": {
+        "q": "Quand faut-il demander pardon à Allah ?",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      },
+      "ru": {
+        "q": "Когда следует просить прощения?",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      },
+      "ku": {
+        "q": "Dema kengî divê mirov ji Allah lêborîn bixwaze?",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      },
+      "tt": {
+        "q": "İstiğfar ne zaman yapılır?",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      },
+      "ar": {
+        "q": "مَتَى يُسْتَغْفَرُ اللَّهُ؟",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      },
+      "es": {
+        "q": "¿Cuándo se debe pedir perdón a Allah?",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      },
+      "it": {
+        "q": "İstiğfar ne zaman yapılır?",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      },
+      "pt": {
+        "q": "İstiğfar ne zaman yapılır?",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      },
+      "ko": {
+        "q": "İstiğfar ne zaman yapılır?",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      },
+      "vi": {
+        "q": "İstiğfar ne zaman yapılır?",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      },
+      "ja": {
+        "q": "İstiğfar ne zaman yapılır?",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      },
+      "zh": {
+        "q": "İstiğfar ne zaman yapılır?",
+        "a": "It can be done at any time; it is especially important with repentance after sins."
+      }
+    },
+    {
+      "id": 376,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Ahzâb 33:41-42 — https://quran.com/33/41-42",
+        "📚 Hadis — Buhârî 6306 — https://sunnah.com/bukhari:6306"
+      ],
+      "tr": {
+        "q": "Sabah ve akşam zikirlerinin amacı nedir?",
+        "a": "Günü Allah’ı anarak geçirmek ve manevi korunma bilincini güçlendirmektir."
+      },
+      "en": {
+        "q": "What is the purpose of morning and evening adhkār?",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      },
+      "de": {
+        "q": "Was ist der Zweck des morgendlichen und abendlichen Dhikr?",
+        "a": "Sie helfen dem Gläubigen, den Tag mit dem Gedenken Allahs und geistiger Achtsamkeit zu beginnen und zu beenden."
+      },
+      "nl": {
+        "q": "Wat is het doel van ochtend- en avondadhkār?",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      },
+      "fr": {
+        "q": "Quel est le but des adhkār du matin et du soir ?",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      },
+      "ru": {
+        "q": "Какова цель утреннего и вечернего зикра?",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      },
+      "ku": {
+        "q": "Armanca zikrên sibê û êvarê çi ye?",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      },
+      "tt": {
+        "q": "Sabah ve akşam zikirlerinin amacı nedir?",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      },
+      "ar": {
+        "q": "مَا هَدَفُ أَذْكَارِ الصَّبَاحِ وَالمَسَاءِ؟",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      },
+      "es": {
+        "q": "¿Cuál es el propósito de los adhkār de la mañana y de la tarde?",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      },
+      "it": {
+        "q": "Sabah ve akşam zikirlerinin amacı nedir?",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      },
+      "pt": {
+        "q": "Sabah ve akşam zikirlerinin amacı nedir?",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      },
+      "ko": {
+        "q": "Sabah ve akşam zikirlerinin amacı nedir?",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      },
+      "vi": {
+        "q": "Sabah ve akşam zikirlerinin amacı nedir?",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      },
+      "ja": {
+        "q": "Sabah ve akşam zikirlerinin amacı nedir?",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      },
+      "zh": {
+        "q": "Sabah ve akşam zikirlerinin amacı nedir?",
+        "a": "They help a believer begin and end the day with remembrance of Allah and spiritual awareness."
+      }
+    },
+    {
+      "id": 377,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Necm 53:39 — https://quran.com/53/39",
+        "📚 Hadis — Buhârî 6411 — https://sunnah.com/bukhari:6411"
+      ],
+      "tr": {
+        "q": "Dua insanı pasifleştirir mi?",
+        "a": "Hayır; dua sebeplere sarılmayı ve Allah’a güvenmeyi engellemez."
+      },
+      "en": {
+        "q": "Does duʿā make a person passive?",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      },
+      "de": {
+        "q": "Macht Duʿā einen Menschen passiv?",
+        "a": "Nein. Duʿā hindert nicht daran, praktische Mittel zu ergreifen; es begleitet Bemühung und Vertrauen auf Allah."
+      },
+      "nl": {
+        "q": "Maakt duʿā iemand passief?",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      },
+      "fr": {
+        "q": "Le duʿā rend-il une personne passive ?",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      },
+      "ru": {
+        "q": "Делает ли дуа человека пассивным?",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      },
+      "ku": {
+        "q": "Ma dua mirov pasîf dike?",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      },
+      "tt": {
+        "q": "Dua insanı pasifleştirir mi?",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      },
+      "ar": {
+        "q": "هَلْ يَجْعَلُ الدُّعَاءُ الإِنْسَانَ سَلْبِيًّا؟",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      },
+      "es": {
+        "q": "¿El duʿā vuelve pasiva a una persona?",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      },
+      "it": {
+        "q": "Dua insanı pasifleştirir mi?",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      },
+      "pt": {
+        "q": "Dua insanı pasifleştirir mi?",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      },
+      "ko": {
+        "q": "Dua insanı pasifleştirir mi?",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      },
+      "vi": {
+        "q": "Dua insanı pasifleştirir mi?",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      },
+      "ja": {
+        "q": "Dua insanı pasifleştirir mi?",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      },
+      "zh": {
+        "q": "Dua insanı pasifleştirir mi?",
+        "a": "No. Duʿā does not prevent taking practical means; it accompanies effort and trust in Allah."
+      }
+    },
+    {
+      "id": 378,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Bakara 2:152 — https://quran.com/2/152",
+        "📚 Hadis — Buhârî 6407 — https://sunnah.com/bukhari:6407"
+      ],
+      "tr": {
+        "q": "Zikir dil ile mi yapılır?",
+        "a": "Dil ile yapılır; fakat kalbin de Allah’ı hatırlaması hedeflenir."
+      },
+      "en": {
+        "q": "Is dhikr done only with the tongue?",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      },
+      "de": {
+        "q": "Wird Dhikr nur mit der Zunge gemacht?",
+        "a": "Die Zunge kann Dhikr-Worte sprechen; zugleich soll auch das Herz Allah gedenken."
+      },
+      "nl": {
+        "q": "Wordt dhikr alleen met de tong gedaan?",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      },
+      "fr": {
+        "q": "Le dhikr se fait-il seulement avec la langue ?",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      },
+      "ru": {
+        "q": "Зикр совершается только языком?",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      },
+      "ku": {
+        "q": "Ma zikr tenê bi ziman tê kirin?",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      },
+      "tt": {
+        "q": "Zikir dil ile mi yapılır?",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      },
+      "ar": {
+        "q": "هَلْ يَكُونُ الذِّكْرُ بِاللِّسَانِ فَقَطْ؟",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      },
+      "es": {
+        "q": "¿El dhikr se hace solo con la lengua?",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      },
+      "it": {
+        "q": "Zikir dil ile mi yapılır?",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      },
+      "pt": {
+        "q": "Zikir dil ile mi yapılır?",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      },
+      "ko": {
+        "q": "Zikir dil ile mi yapılır?",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      },
+      "vi": {
+        "q": "Zikir dil ile mi yapılır?",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      },
+      "ja": {
+        "q": "Zikir dil ile mi yapılır?",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      },
+      "zh": {
+        "q": "Zikir dil ile mi yapılır?",
+        "a": "The tongue may recite words of dhikr, while the goal is also for the heart to remember Allah."
+      }
+    },
+    {
+      "id": 379,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Ahzâb 33:41 — https://quran.com/33/41",
+        "📚 Hadis — Buhârî 6307 — https://sunnah.com/bukhari:6307"
+      ],
+      "tr": {
+        "q": "Allah’ı anmanın Kur’an’daki önemi nedir?",
+        "a": "Kur’an Allah’ı çokça anmayı teşvik eder."
+      },
+      "en": {
+        "q": "What is the importance of remembering Allah in the Qur’an?",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      },
+      "de": {
+        "q": "Welche Bedeutung hat das Gedenken Allahs im Qur’an?",
+        "a": "Der Qur’an ermutigt die Gläubigen wiederholt dazu, Allah häufig zu gedenken."
+      },
+      "nl": {
+        "q": "Wat is het belang van het gedenken van Allah in de Koran?",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      },
+      "fr": {
+        "q": "Quelle est l’importance du rappel d’Allah dans le Coran ?",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      },
+      "ru": {
+        "q": "Каково значение поминания Аллаха в Коране?",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      },
+      "ku": {
+        "q": "Girîngiya bîranîna Allah di Quranê de çi ye?",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      },
+      "tt": {
+        "q": "Allah’ı anmanın Kur’an’daki önemi nedir?",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      },
+      "ar": {
+        "q": "مَا أَهَمِّيَّةُ ذِكْرِ اللَّهِ فِي القُرْآنِ؟",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      },
+      "es": {
+        "q": "¿Qué importancia tiene recordar a Allah en el Corán?",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      },
+      "it": {
+        "q": "Allah’ı anmanın Kur’an’daki önemi nedir?",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      },
+      "pt": {
+        "q": "Allah’ı anmanın Kur’an’daki önemi nedir?",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      },
+      "ko": {
+        "q": "Allah’ı anmanın Kur’an’daki önemi nedir?",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      },
+      "vi": {
+        "q": "Allah’ı anmanın Kur’an’daki önemi nedir?",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      },
+      "ja": {
+        "q": "Allah’ı anmanın Kur’an’daki önemi nedir?",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      },
+      "zh": {
+        "q": "Allah’ı anmanın Kur’an’daki önemi nedir?",
+        "a": "The Qur’an repeatedly encourages believers to remember Allah frequently."
+      }
+    },
+    {
+      "id": 380,
+      "day": 20,
+      "sources": [
+        "📖 Kur’an — Ra‘d 13:28 — https://quran.com/13/28",
+        "📚 Hadis — Tirmizî 3371 — https://sunnah.com/tirmidhi:3371"
+      ],
+      "tr": {
+        "q": "Dua ve zikir günlük hayatı nasıl değiştirir?",
+        "a": "Allah bilincini güçlendirir ve davranışlara manevi yön verir."
+      },
+      "en": {
+        "q": "How can duʿā and dhikr change daily life?",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      },
+      "de": {
+        "q": "Wie können Duʿā und Dhikr den Alltag verändern?",
+        "a": "Sie stärken das Bewusstsein für Allah und können Entscheidungen und Verhalten im Alltag geistlich ausrichten."
+      },
+      "nl": {
+        "q": "Hoe kunnen duʿā en dhikr het dagelijks leven veranderen?",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      },
+      "fr": {
+        "q": "Comment le duʿā et le dhikr peuvent-ils changer la vie quotidienne ?",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      },
+      "ru": {
+        "q": "Как дуа и зикр меняют повседневную жизнь?",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      },
+      "ku": {
+        "q": "Dua û zikr çawa dikarin jiyana rojane biguherînin?",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      },
+      "tt": {
+        "q": "Dua ve zikir günlük hayatı nasıl değiştirir?",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      },
+      "ar": {
+        "q": "كَيْفَ يُغَيِّرُ الدُّعَاءُ وَالذِّكْرُ الحَيَاةَ اليَوْمِيَّةَ؟",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      },
+      "es": {
+        "q": "¿Cómo pueden el duʿā y el dhikr cambiar la vida diaria?",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      },
+      "it": {
+        "q": "Dua ve zikir günlük hayatı nasıl değiştirir?",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      },
+      "pt": {
+        "q": "Dua ve zikir günlük hayatı nasıl değiştirir?",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      },
+      "ko": {
+        "q": "Dua ve zikir günlük hayatı nasıl değiştirir?",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      },
+      "vi": {
+        "q": "Dua ve zikir günlük hayatı nasıl değiştirir?",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      },
+      "ja": {
+        "q": "Dua ve zikir günlük hayatı nasıl değiştirir?",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      },
+      "zh": {
+        "q": "Dua ve zikir günlük hayatı nasıl değiştirir?",
+        "a": "They strengthen awareness of Allah and can give daily choices and behavior a spiritual direction."
+      }
+    }
+  ]
+}
