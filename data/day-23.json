@@ -1,0 +1,1523 @@
+{
+  "project": {
+    "title": "📖 Bir Müslümanın Yol Haritası",
+    "subtitle": "16 Dilli Günlük Dinî Bilgi Rehberi",
+    "totalDays": 30,
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "masterFile": "data/days.json",
+    "websiteUsesMasterFile": false,
+    "websiteSource": "data/day-XX.json"
+  },
+  "rules": {
+    "questionNumbering": "continuous",
+    "questionsPerDay": 19,
+    "totalQuestions": 570,
+    "totalDays": 30,
+    "languageOrder": [
+      "tr",
+      "en",
+      "de",
+      "nl",
+      "fr",
+      "ru",
+      "ku",
+      "tt",
+      "ar",
+      "es",
+      "it",
+      "pt",
+      "ko",
+      "vi",
+      "ja",
+      "zh"
+    ],
+    "fixedLanguageOrder": true,
+    "navigation": {
+      "questionInput": true,
+      "dayInput": true,
+      "enterToNavigate": true,
+      "questionNavigation": "previous / number input / next",
+      "dayNavigation": "previous day / number input / next day"
+    }
+  },
+  "languages": [
+    {
+      "position": 1,
+      "code": "tr",
+      "name": "Türkçe",
+      "flag": "🇹🇷"
+    },
+    {
+      "position": 2,
+      "code": "en",
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "position": 3,
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "🇩🇪"
+    },
+    {
+      "position": 4,
+      "code": "nl",
+      "name": "Nederlands / Flemenkçe",
+      "flag": "🇳🇱"
+    },
+    {
+      "position": 5,
+      "code": "fr",
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    {
+      "position": 6,
+      "code": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺"
+    },
+    {
+      "position": 7,
+      "code": "ku",
+      "name": "Kurmancî",
+      "flag": "🇹🇯"
+    },
+    {
+      "position": 8,
+      "code": "tt",
+      "name": "Tatarca",
+      "flag": "🇧🇬"
+    },
+    {
+      "position": 9,
+      "code": "ar",
+      "name": "العربية",
+      "flag": "🇸🇦"
+    },
+    {
+      "position": 10,
+      "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸"
+    },
+    {
+      "position": 11,
+      "code": "it",
+      "name": "Italiano",
+      "flag": "🇮🇹"
+    },
+    {
+      "position": 12,
+      "code": "pt",
+      "name": "Português",
+      "flag": "🇵🇹"
+    },
+    {
+      "position": 13,
+      "code": "ko",
+      "name": "한국어",
+      "flag": "🇰🇷"
+    },
+    {
+      "position": 14,
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳"
+    },
+    {
+      "position": 15,
+      "code": "ja",
+      "name": "日本語",
+      "flag": "🇯🇵"
+    },
+    {
+      "position": 16,
+      "code": "zh",
+      "name": "中文",
+      "flag": "🇨🇳"
+    }
+  ],
+  "day": 11,
+  "dayTitle": {
+    "tr": "23. Gün — Aile ve İslâm",
+    "en": "Day 23 — Aile ve İslâm",
+    "de": "23. Tag — Aile ve İslâm"
+  },
+  "daySubtitle": {
+    "tr": "Evlilik, anne-baba, eşler, çocuklar, akrabalık ve aile sorumlulukları",
+    "en": "Evlilik, anne-baba, eşler, çocuklar, akrabalık ve aile sorumlulukları",
+    "de": "Evlilik, anne-baba, eşler, çocuklar, akrabalık ve aile sorumlulukları"
+  },
+  "questions": [
+    {
+      "id": 419,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Aile nedir?",
+        "a": "İnsanların sevgi, sorumluluk ve dayanışma içinde oluşturduğu temel toplumsal yapıdır."
+      },
+      "en": {
+        "q": "What is a family?",
+        "a": "It is the basic social structure formed by people through love, responsibility and solidarity."
+      },
+      "de": {
+        "q": "Was ist eine Familie?",
+        "a": "Sie ist die grundlegende soziale Struktur, die Menschen durch Liebe, Verantwortung und Solidarität bilden."
+      },
+      "nl": {
+        "q": "Wat is een gezin?",
+        "a": "Het is de fundamentele sociale structuur die mensen vormen door liefde, verantwoordelijkheid en solidariteit."
+      },
+      "fr": {
+        "q": "Qu’est-ce qu’une famille ?",
+        "a": "C’est la structure sociale fondamentale formée par les personnes dans l’amour, la responsabilité et la solidarité."
+      },
+      "ru": {
+        "q": "Что такое семья?",
+        "a": "Это основная социальная структура, которую люди создают на основе любви, ответственности и взаимопомощи."
+      },
+      "ku": {
+        "q": "Malbat çi ye?",
+        "a": "E avahiya civakî ya bingehîn e ku mirov bi evîn, berpirsiyarî û hevkarî ava dikin."
+      },
+      "tt": {
+        "q": "Гаилә нәрсә ул?",
+        "a": "Ул кешеләр мәхәббәт, җаваплылык һәм бердәмлек белән төзи торган төп иҗтимагый структура."
+      },
+      "ar": {
+        "q": "مَا هِيَ الْأُسْرَةُ؟",
+        "a": "هِيَ الْبِنْيَةُ الْاجْتِمَاعِيَّةُ الْأَسَاسِيَّةُ الَّتِي يُقِيمُهَا النَّاسُ عَلَى الْمَحَبَّةِ وَالْمَسْؤُولِيَّةِ وَالتَّضَامُنِ."
+      },
+      "es": {
+        "q": "¿Qué es una familia?",
+        "a": "Es la estructura social básica que las personas forman con amor, responsabilidad y solidaridad."
+      },
+      "it": {
+        "q": "Che cos’è una famiglia?",
+        "a": "È la struttura sociale fondamentale che le persone formano con amore, responsabilità e solidarietà."
+      },
+      "pt": {
+        "q": "O que é uma família?",
+        "a": "É a estrutura social básica que as pessoas formam com amor, responsabilidade e solidariedade."
+      },
+      "ko": {
+        "q": "가족이란 무엇입니까?",
+        "a": "사랑, 책임과 연대 속에서 사람들이 이루는 기본적인 사회 구조입니다."
+      },
+      "vi": {
+        "q": "Gia đình là gì?",
+        "a": "Là cấu trúc xã hội cơ bản được con người xây dựng bằng tình yêu, trách nhiệm và đoàn kết."
+      },
+      "ja": {
+        "q": "家族とは何ですか？",
+        "a": "愛、責任、連帯によって人々が築く基本的な社会構造です。"
+      },
+      "zh": {
+        "q": "家庭是什么？",
+        "a": "是人们在爱、责任和团结中形成的基本社会结构。"
+      }
+    },
+    {
+      "id": 420,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "İslâm aileyi neden önemser?",
+        "a": "Aile neslin, sevginin, eğitimin ve sorumluluğun temel ortamıdır."
+      },
+      "en": {
+        "q": "Why does Islam value the family?",
+        "a": "Family is the main environment for generations, love, education and responsibility."
+      },
+      "de": {
+        "q": "Warum legt der Islam Wert auf die Familie?",
+        "a": "Die Familie ist der grundlegende Ort für Generationen, Liebe, Erziehung und Verantwortung."
+      },
+      "nl": {
+        "q": "Waarom hecht de islam waarde aan het gezin?",
+        "a": "Het gezin is de belangrijkste omgeving voor generaties, liefde, opvoeding en verantwoordelijkheid."
+      },
+      "fr": {
+        "q": "Pourquoi l’islam accorde-t-il de l’importance à la famille ?",
+        "a": "La famille est le cadre essentiel des générations, de l’amour, de l’éducation et de la responsabilité."
+      },
+      "ru": {
+        "q": "Почему ислам придает семье большое значение?",
+        "a": "Семья — основная среда для поколений, любви, воспитания и ответственности."
+      },
+      "ku": {
+        "q": "Çima Îslam malbatê girîng dibîne?",
+        "a": "Malbat cihê bingehîn e ji bo nifşan, evînê, perwerdehiyê û berpirsiyariyê."
+      },
+      "tt": {
+        "q": "Ни өчен Ислам гаиләне мөһим дип саный?",
+        "a": "Гаилә — буыннар, мәхәббәт, тәрбия һәм җаваплылык өчен төп мохит."
+      },
+      "ar": {
+        "q": "لِمَاذَا يُعَظِّمُ الْإِسْلَامُ شَأْنَ الْأُسْرَةِ؟",
+        "a": "الْأُسْرَةُ هِيَ الْبِيئَةُ الْأَسَاسِيَّةُ لِلنَّسْلِ وَالْمَحَبَّةِ وَالتَّرْبِيَةِ وَالْمَسْؤُولِيَّةِ."
+      },
+      "es": {
+        "q": "¿Por qué el islam valora la familia?",
+        "a": "La familia es el entorno principal para las generaciones, el amor, la educación y la responsabilidad."
+      },
+      "it": {
+        "q": "Perché l’Islam dà importanza alla famiglia?",
+        "a": "La famiglia è l’ambiente fondamentale per le generazioni, l’amore, l’educazione e la responsabilità."
+      },
+      "pt": {
+        "q": "Por que o Islã valoriza a família?",
+        "a": "A família é o ambiente principal para as gerações, o amor, a educação e a responsabilidade."
+      },
+      "ko": {
+        "q": "이슬람은 왜 가족을 중요하게 여깁니까?",
+        "a": "가족은 세대, 사랑, 교육과 책임을 위한 기본적인 환경입니다."
+      },
+      "vi": {
+        "q": "Tại sao Islam coi trọng gia đình?",
+        "a": "Gia đình là môi trường chính cho các thế hệ, tình yêu, giáo dục và trách nhiệm."
+      },
+      "ja": {
+        "q": "イスラームはなぜ家族を重視するのですか？",
+        "a": "家族は世代、愛、教育、責任の基本的な場です。"
+      },
+      "zh": {
+        "q": "伊斯兰为什么重视家庭？",
+        "a": "家庭是培育后代、爱、教育和责任的基本环境。"
+      }
+    },
+    {
+      "id": 421,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Evlilikte temel amaçlardan biri nedir?",
+        "a": "Huzur, sevgi, merhamet ve helâl bir aile kurmaktır."
+      },
+      "en": {
+        "q": "What is one of the main purposes of marriage?",
+        "a": "It is to establish a lawful family based on peace, love and mercy."
+      },
+      "de": {
+        "q": "Was ist eines der Hauptziele der Ehe?",
+        "a": "Es geht darum, eine rechtmäßige Familie auf Frieden, Liebe und Barmherzigkeit zu gründen."
+      },
+      "nl": {
+        "q": "Wat is een van de belangrijkste doelen van het huwelijk?",
+        "a": "Het doel is een halal gezin op te bouwen op basis van vrede, liefde en barmhartigheid."
+      },
+      "fr": {
+        "q": "Quel est l’un des buts fondamentaux du mariage ?",
+        "a": "Il s’agit de fonder une famille licite fondée sur la paix, l’amour et la miséricorde."
+      },
+      "ru": {
+        "q": "Какова одна из основных целей брака?",
+        "a": "Создать дозволенную семью, основанную на спокойствии, любви и милосердии."
+      },
+      "ku": {
+        "q": "Yek ji armancên bingehîn ên zewacê çi ye?",
+        "a": "Avakirina malbatekê helal e li ser bingeha aramî, evîn û merhemetê."
+      },
+      "tt": {
+        "q": "Никахның төп максатларының берсе нинди?",
+        "a": "Ул тынычлык, мәхәббәт һәм мәрхәмәткә нигезләнгән хәләл гаилә кору."
+      },
+      "ar": {
+        "q": "مَا أَحَدُ أَهَمِّ أَهْدَافِ الزَّوَاجِ؟",
+        "a": "هُوَ تَأْسِيسُ أُسْرَةٍ حَلَالٍ قَائِمَةٍ عَلَى السَّكِينَةِ وَالْمَحَبَّةِ وَالرَّحْمَةِ."
+      },
+      "es": {
+        "q": "¿Cuál es uno de los objetivos principales del matrimonio?",
+        "a": "Es formar una familia lícita basada en paz, amor y misericordia."
+      },
+      "it": {
+        "q": "Qual è uno degli scopi principali del matrimonio?",
+        "a": "È fondare una famiglia lecita basata su pace, amore e misericordia."
+      },
+      "pt": {
+        "q": "Qual é um dos principais objetivos do casamento?",
+        "a": "É formar uma família lícita baseada em paz, amor e misericórdia."
+      },
+      "ko": {
+        "q": "결혼의 주요 목적 중 하나는 무엇입니까?",
+        "a": "평온, 사랑과 자비를 바탕으로 합법적인 가정을 세우는 것입니다."
+      },
+      "vi": {
+        "q": "Một trong những mục đích chính của hôn nhân là gì?",
+        "a": "Là xây dựng một gia đình hợp pháp dựa trên bình an, tình yêu và lòng thương xót."
+      },
+      "ja": {
+        "q": "結婚の主な目的の一つは何ですか？",
+        "a": "平安、愛、慈悲に基づく正当な家庭を築くことです。"
+      },
+      "zh": {
+        "q": "婚姻的主要目的之一是什么？",
+        "a": "建立以安宁、爱和慈悲为基础的合法家庭。"
+      }
+    },
+    {
+      "id": 422,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Eşler birbirine nasıl davranmalıdır?",
+        "a": "Sevgi, merhamet, adalet ve güzel muameleyle."
+      },
+      "en": {
+        "q": "How should spouses treat each other?",
+        "a": "With love, mercy, justice and good treatment."
+      },
+      "de": {
+        "q": "Wie sollten Ehepartner miteinander umgehen?",
+        "a": "Mit Liebe, Barmherzigkeit, Gerechtigkeit und guter Behandlung."
+      },
+      "nl": {
+        "q": "Hoe moeten echtgenoten met elkaar omgaan?",
+        "a": "Met liefde, barmhartigheid, rechtvaardigheid en goede behandeling."
+      },
+      "fr": {
+        "q": "Comment les époux doivent-ils se traiter ?",
+        "a": "Avec amour, miséricorde, justice et bont traitement."
+      },
+      "ru": {
+        "q": "Как супругам следует относиться друг к другу?",
+        "a": "С любовью, милосердием, справедливостью и добрым обращением."
+      },
+      "ku": {
+        "q": "Divê hevjîn bi hev re çawa tevbigere?",
+        "a": "Bi evîn, merhemet, dad û muameleya baş."
+      },
+      "tt": {
+        "q": "Ир белән хатын бер-берсенә ничек мөнәсәбәттә булырга тиеш?",
+        "a": "Мәхәббәт, мәрхәмәт, гаделлек һәм яхшы мөгамәлә белән."
+      },
+      "ar": {
+        "q": "كَيْفَ يَنْبَغِي لِلزَّوْجَيْنِ أَنْ يُعَامِلَ أَحَدُهُمَا الْآخَرَ؟",
+        "a": "بِالْمَحَبَّةِ وَالرَّحْمَةِ وَالْعَدْلِ وَحُسْنِ الْمُعَامَلَةِ."
+      },
+      "es": {
+        "q": "¿Cómo deben tratarse los esposos?",
+        "a": "Con amor, misericordia, justicia y buen trato."
+      },
+      "it": {
+        "q": "Come dovrebbero trattarsi i coniugi?",
+        "a": "Con amore, misericordia, giustizia e buon trattamento."
+      },
+      "pt": {
+        "q": "Como os cônjuges devem tratar-se?",
+        "a": "Com amor, misericórdia, justiça e bom tratamento."
+      },
+      "ko": {
+        "q": "배우자는 서로 어떻게 대해야 합니까?",
+        "a": "사랑, 자비, 공정함과 좋은 대우로 해야 합니다."
+      },
+      "vi": {
+        "q": "Vợ chồng nên đối xử với nhau như thế nào?",
+        "a": "Bằng tình yêu, lòng thương xót, công bằng và cách đối xử tốt."
+      },
+      "ja": {
+        "q": "夫婦は互いにどのように接するべきですか？",
+        "a": "愛、慈悲、公正、良い扱いによってです。"
+      },
+      "zh": {
+        "q": "夫妻应当如何相处？",
+        "a": "以爱、慈悲、公平和善待相处。"
+      }
+    },
+    {
+      "id": 423,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Anne-babaya iyilik nasıl yapılır?",
+        "a": "Saygı göstermek, ihtiyaçlarında destek olmak ve onları incitmemekle."
+      },
+      "en": {
+        "q": "How should one be good to one’s parents?",
+        "a": "By showing respect, supporting them in their needs and not hurting them."
+      },
+      "de": {
+        "q": "Wie soll man gut zu seinen Eltern sein?",
+        "a": "Indem man Respekt zeigt, sie bei ihren Bedürfnissen unterstützt und sie nicht verletzt."
+      },
+      "nl": {
+        "q": "Hoe moet men goed zijn voor zijn ouders?",
+        "a": "Door respect te tonen, hen bij hun behoeften te steunen en hen niet te kwetsen."
+      },
+      "fr": {
+        "q": "Comment doit-on être bienfaisant envers ses parents ?",
+        "a": "En leur témoignant du respect, en les aidant dans leurs besoins et en ne leur faisant pas de mal."
+      },
+      "ru": {
+        "q": "Как следует хорошо относиться к родителям?",
+        "a": "Уважая их, поддерживая в нуждах и не причиняя им вреда."
+      },
+      "ku": {
+        "q": "Merivaniya ji dê û bav re çawa tê kirin?",
+        "a": "Bi rêzgirtin, di hewcedariyên wan de piştgirîkirin û wan neêşandin."
+      },
+      "tt": {
+        "q": "Ата-анага яхшылык ничек күрсәтелә?",
+        "a": "Аларга хөрмәт күрсәтеп, ихтыяҗларында ярдәм итеп һәм аларны рәнҗетмичә."
+      },
+      "ar": {
+        "q": "كَيْفَ يُحْسَنُ إِلَى الْوَالِدَيْنِ؟",
+        "a": "بِاحْتِرَامِهِمَا وَمُسَاعَدَتِهِمَا عِنْدَ الْحَاجَةِ وَعَدَمِ إِيذَائِهِمَا."
+      },
+      "es": {
+        "q": "¿Cómo se debe tratar bien a los padres?",
+        "a": "Mostrando respeto, apoyándolos en sus necesidades y sin hacerles daño."
+      },
+      "it": {
+        "q": "Come si deve essere buoni con i propri genitori?",
+        "a": "Mostrando rispetto, sostenendoli nei loro bisogni e senza ferirli."
+      },
+      "pt": {
+        "q": "Como se deve fazer o bem aos pais?",
+        "a": "Demonstrando respeito, ajudando-os nas suas necessidades e não os magoando."
+      },
+      "ko": {
+        "q": "부모에게 어떻게 효도해야 합니까?",
+        "a": "존중하고 필요할 때 돕고 상처를 주지 않음으로써입니다."
+      },
+      "vi": {
+        "q": "Nên đối xử tốt với cha mẹ như thế nào?",
+        "a": "Bằng cách tôn trọng, hỗ trợ khi họ cần và không làm tổn thương họ."
+      },
+      "ja": {
+        "q": "両親にどのように善行を尽くすべきですか？",
+        "a": "敬意を示し、必要なときに支え、傷つけないことです。"
+      },
+      "zh": {
+        "q": "怎样孝敬父母？",
+        "a": "尊敬他们，在需要时帮助他们，不伤害他们。"
+      }
+    },
+    {
+      "id": 424,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Anne-babaya itaatin sınırı nedir?",
+        "a": "Allah’a isyan olan bir konuda itaat edilmez; buna rağmen güzel muamele sürdürülür."
+      },
+      "en": {
+        "q": "What is the limit of obedience to parents?",
+        "a": "One does not obey in a matter involving disobedience to Allah; nevertheless, good treatment continues."
+      },
+      "de": {
+        "q": "Wo liegt die Grenze des Gehorsams gegenüber den Eltern?",
+        "a": "In einer Sache, die Ungehorsam gegenüber Allah beinhaltet, gibt es keinen Gehorsam; dennoch bleibt der gute Umgang bestehen."
+      },
+      "nl": {
+        "q": "Wat is de grens van gehoorzaamheid aan ouders?",
+        "a": "Men gehoorzaamt niet in een zaak die ongehoorzaamheid aan Allah inhoudt; goede behandeling blijft echter bestaan."
+      },
+      "fr": {
+        "q": "Quelle est la limite de l’obéissance aux parents ?",
+        "a": "On n’obéit pas dans une affaire qui implique la désobéissance à Allah ; néanmoins, la bienveillance demeure."
+      },
+      "ru": {
+        "q": "Какова граница повиновения родителям?",
+        "a": "В вопросе, связанном с ослушанием Аллаха, нет повиновения; при этом доброе отношение сохраняется."
+      },
+      "ku": {
+        "q": "Sînorê obediyeta ji dê û bav re çi ye?",
+        "a": "Di mijara ku tê de isyankirina Allah hebe, obedî tune ye; lê muameleya baş berdewam dike."
+      },
+      "tt": {
+        "q": "Ата-анага буйсынуның чиге нинди?",
+        "a": "Аллаһка каршы килү булган эштә буйсынмыйлар; шуңа да карамастан, яхшы мөгамәлә дәвам итә."
+      },
+      "ar": {
+        "q": "مَا حَدُّ طَاعَةِ الْوَالِدَيْنِ؟",
+        "a": "لَا طَاعَةَ فِي مَعْصِيَةِ اللَّهِ، مَعَ بَقَاءِ حُسْنِ الْمُعَامَلَةِ."
+      },
+      "es": {
+        "q": "¿Cuál es el límite de la obediencia a los padres?",
+        "a": "No se obedece en algo que implique desobedecer a Allah; aun así, se mantiene el buen trato."
+      },
+      "it": {
+        "q": "Qual è il limite dell’obbedienza ai genitori?",
+        "a": "Non si obbedisce in ciò che implica disobbedienza ad Allah; tuttavia si mantiene un buon trattamento."
+      },
+      "pt": {
+        "q": "Qual é o limite da obediência aos pais?",
+        "a": "Não se obedece em algo que implique desobediência a Allah; ainda assim, mantém-se o bom trato."
+      },
+      "ko": {
+        "q": "부모에 대한 순종의 한계는 무엇입니까?",
+        "a": "알라께 대한 불순종인 경우에는 순종하지 않지만, 그럼에도 좋은 대우는 계속합니다."
+      },
+      "vi": {
+        "q": "Giới hạn của việc vâng lời cha mẹ là gì?",
+        "a": "Không vâng lời trong điều trái với Allah; tuy vậy vẫn phải tiếp tục đối xử tốt."
+      },
+      "ja": {
+        "q": "両親への服従の限界は何ですか？",
+        "a": "アッラーへの不服従となる事柄には従いませんが、それでも良い扱いは続けます。"
+      },
+      "zh": {
+        "q": "孝敬父母的界限是什么？",
+        "a": "在违抗真主的事情上不服从；即便如此仍应善待父母。"
+      }
+    },
+    {
+      "id": 425,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Çocukların ailedeki hakkı nedir?",
+        "a": "Sevgi, bakım, eğitim ve adalet görme hakkına sahiptirler."
+      },
+      "en": {
+        "q": "What are children’s rights in the family?",
+        "a": "They have the right to love, care, education and fair treatment."
+      },
+      "de": {
+        "q": "Welche Rechte haben Kinder in der Familie?",
+        "a": "Sie haben Anspruch auf Liebe, Fürsorge, Erziehung und gerechte Behandlung."
+      },
+      "nl": {
+        "q": "Wat zijn de rechten van kinderen in het gezin?",
+        "a": "Ze hebben recht op liefde, zorg, opvoeding en eerlijke behandeling."
+      },
+      "fr": {
+        "q": "Quels sont les droits des enfants dans la famille ?",
+        "a": "Ils ont droit à l’amour, aux soins, à l’éducation et à un traitement équitable."
+      },
+      "ru": {
+        "q": "Каковы права детей в семье?",
+        "a": "Они имеют право на любовь, заботу, воспитание и справедливое отношение."
+      },
+      "ku": {
+        "q": "Mafên zarokan di malbatê de çi ne?",
+        "a": "Mafê wan heye ku evîn, lênêrîn, perwerde û dad bibînin."
+      },
+      "tt": {
+        "q": "Балаларның гаиләдәге хокуклары нинди?",
+        "a": "Аларның мәхәббәт, тәрбия, белем һәм гадел мөгамәләгә хокуклары бар."
+      },
+      "ar": {
+        "q": "مَا حُقُوقُ الْأَطْفَالِ فِي الْأُسْرَةِ؟",
+        "a": "لَهُمْ حَقُّ الْمَحَبَّةِ وَالرِّعَايَةِ وَالتَّرْبِيَةِ وَالْمُعَامَلَةِ الْعَادِلَةِ."
+      },
+      "es": {
+        "q": "¿Cuáles son los derechos de los hijos en la familia?",
+        "a": "Tienen derecho a amor, cuidado, educación y trato justo."
+      },
+      "it": {
+        "q": "Quali sono i diritti dei figli nella famiglia?",
+        "a": "Hanno diritto all’amore, alla cura, all’educazione e a un trattamento equo."
+      },
+      "pt": {
+        "q": "Quais são os direitos das crianças na família?",
+        "a": "Têm direito a amor, cuidado, educação e tratamento justo."
+      },
+      "ko": {
+        "q": "가족에서 자녀의 권리는 무엇입니까?",
+        "a": "사랑, 돌봄, 교육과 공정한 대우를 받을 권리가 있습니다."
+      },
+      "vi": {
+        "q": "Quyền của trẻ em trong gia đình là gì?",
+        "a": "Các em có quyền được yêu thương, chăm sóc, giáo dục và đối xử công bằng."
+      },
+      "ja": {
+        "q": "家族における子どもの権利は何ですか？",
+        "a": "愛情、養育、教育、公平な扱いを受ける権利があります。"
+      },
+      "zh": {
+        "q": "孩子在家庭中的权利是什么？",
+        "a": "他们有权得到爱、照顾、教育和公平对待。"
+      }
+    },
+    {
+      "id": 426,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Çocuklar anne-babaya karşı ne yapmalıdır?",
+        "a": "Saygılı, iyi ve yardımcı olmaya çalışmalıdırlar."
+      },
+      "en": {
+        "q": "How should children behave toward their parents?",
+        "a": "They should be respectful, kind and try to help."
+      },
+      "de": {
+        "q": "Wie sollen Kinder ihren Eltern gegenüber handeln?",
+        "a": "Sie sollen respektvoll und gut sein und versuchen zu helfen."
+      },
+      "nl": {
+        "q": "Hoe moeten kinderen tegenover hun ouders handelen?",
+        "a": "Ze moeten respectvol en goed zijn en proberen te helpen."
+      },
+      "fr": {
+        "q": "Comment les enfants doivent-ils se comporter envers leurs parents ?",
+        "a": "Ils doivent être respectueux, bienveillants et chercher à aider."
+      },
+      "ru": {
+        "q": "Как дети должны относиться к родителям?",
+        "a": "Они должны быть уважительными, добрыми и стараться помогать."
+      },
+      "ku": {
+        "q": "Divê zarok li hember dê û bavê xwe çi bikin?",
+        "a": "Divê bi rêz, baş û alîkar bin."
+      },
+      "tt": {
+        "q": "Балалар ата-аналарына карата нәрсә эшләргә тиеш?",
+        "a": "Алар хөрмәтле, яхшы булырга һәм ярдәм итәргә тырышырга тиеш."
+      },
+      "ar": {
+        "q": "مَاذَا يَجِبُ عَلَى الْأَبْنَاءِ نَحْوَ وَالِدَيْهِمْ؟",
+        "a": "يَجِبُ أَنْ يَكُونُوا مُحْتَرِمِينَ وَصَالِحِينَ وَيَسْعَوْا إِلَى الْمُسَاعَدَةِ."
+      },
+      "es": {
+        "q": "¿Cómo deben comportarse los hijos con sus padres?",
+        "a": "Deben ser respetuosos, buenos y tratar de ayudar."
+      },
+      "it": {
+        "q": "Come devono comportarsi i figli verso i genitori?",
+        "a": "Devono essere rispettosi, buoni e cercare di aiutare."
+      },
+      "pt": {
+        "q": "Como os filhos devem agir para com os pais?",
+        "a": "Devem ser respeitosos, bons e procurar ajudar."
+      },
+      "ko": {
+        "q": "자녀는 부모에게 어떻게 행동해야 합니까?",
+        "a": "존중하고 선하게 대하며 도우려고 노력해야 합니다."
+      },
+      "vi": {
+        "q": "Con cái nên đối xử với cha mẹ như thế nào?",
+        "a": "Nên tôn trọng, tốt bụng và cố gắng giúp đỡ."
+      },
+      "ja": {
+        "q": "子どもは両親に対してどう振る舞うべきですか？",
+        "a": "敬意を払い、善良に接し、助けようと努めるべきです。"
+      },
+      "zh": {
+        "q": "子女应当怎样对待父母？",
+        "a": "应当尊敬父母、善待他们并尽力帮助。"
+      }
+    },
+    {
+      "id": 427,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Akrabalık bağlarını korumak nedir?",
+        "a": "Akrabaları ziyaret etmek, aramak, destek olmak ve bağları koparmamaktır."
+      },
+      "en": {
+        "q": "What does maintaining family ties mean?",
+        "a": "It means visiting relatives, keeping in touch, supporting them and not cutting ties."
+      },
+      "de": {
+        "q": "Was bedeutet die Pflege der Verwandtschaftsbande?",
+        "a": "Es bedeutet, Verwandte zu besuchen, Kontakt zu halten, sie zu unterstützen und die Beziehungen nicht abzubrechen."
+      },
+      "nl": {
+        "q": "Wat betekent het onderhouden van familiebanden?",
+        "a": "Het betekent familie bezoeken, contact houden, steun bieden en de banden niet verbreken."
+      },
+      "fr": {
+        "q": "Que signifie préserver les liens de parenté ?",
+        "a": "Cela signifie rendre visite aux proches, garder le contact, les soutenir et ne pas rompre les liens."
+      },
+      "ru": {
+        "q": "Что означает поддерживать родственные связи?",
+        "a": "Это означает навещать родственников, поддерживать связь, помогать им и не разрывать отношения."
+      },
+      "ku": {
+        "q": "Parastina têkiliyên xizmtiyê çi ye?",
+        "a": "Ew e ku mirov xizmên xwe ziyaret bike, telefon bike, piştgirî bike û têkiliyan qut neke."
+      },
+      "tt": {
+        "q": "Туганлык җепләрен саклау нәрсә ул?",
+        "a": "Ул туганнарга бару, хәбәрләшү, ярдәм итү һәм бәйләнешләрне өзмәү дигән сүз."
+      },
+      "ar": {
+        "q": "مَا مَعْنَى صِلَةِ الرَّحِمِ؟",
+        "a": "هُوَ زِيَارَةُ الْأَقَارِبِ وَالتَّوَاصُلُ مَعَهُمْ وَدَعْمُهُمْ وَعَدَمُ قَطْعِ الصِّلَاتِ."
+      },
+      "es": {
+        "q": "¿Qué significa mantener los lazos familiares?",
+        "a": "Significa visitar a los familiares, mantenerse en contacto, apoyarlos y no romper los lazos."
+      },
+      "it": {
+        "q": "Che cosa significa mantenere i legami di parentela?",
+        "a": "Significa visitare i parenti, mantenere i contatti, sostenerli e non interrompere i legami."
+      },
+      "pt": {
+        "q": "O que significa manter os laços familiares?",
+        "a": "Significa visitar os parentes, manter contato, apoiá-los e não romper os laços."
+      },
+      "ko": {
+        "q": "가족 관계를 유지한다는 것은 무엇입니까?",
+        "a": "친척을 방문하고 연락하며 돕고 관계를 끊지 않는 것입니다."
+      },
+      "vi": {
+        "q": "Duy trì quan hệ họ hàng nghĩa là gì?",
+        "a": "Nghĩa là thăm hỏi họ hàng, giữ liên lạc, hỗ trợ và không cắt đứt quan hệ."
+      },
+      "ja": {
+        "q": "親族関係を保つとはどういうことですか？",
+        "a": "親族を訪ね、連絡を取り、支え、関係を断たないことです。"
+      },
+      "zh": {
+        "q": "维护亲属关系是什么意思？",
+        "a": "探望亲属、保持联系、给予支持，不断绝关系。"
+      }
+    },
+    {
+      "id": 428,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Sıla-i rahim neden önemlidir?",
+        "a": "Aile bağlarını güçlendirir ve İslâm’da önem verilen bir sorumluluktur."
+      },
+      "en": {
+        "q": "Why is maintaining family ties important?",
+        "a": "It strengthens family ties and is a responsibility valued in Islam."
+      },
+      "de": {
+        "q": "Warum ist die Pflege der Verwandtschaft wichtig?",
+        "a": "Sie stärkt die Familienbande und ist eine im Islam wichtige Verantwortung."
+      },
+      "nl": {
+        "q": "Waarom zijn familiebanden belangrijk?",
+        "a": "Het versterkt familiebanden en is een verantwoordelijkheid die in de islam belangrijk is."
+      },
+      "fr": {
+        "q": "Pourquoi préserver les liens de parenté est-il important ?",
+        "a": "Elle renforce les liens familiaux et constitue une responsabilité importante en islam."
+      },
+      "ru": {
+        "q": "Почему поддержание родственных связей важно?",
+        "a": "Она укрепляет семейные связи и является важной ответственностью в исламе."
+      },
+      "ku": {
+        "q": "Çima parastina têkiliyên xizmtiyê girîng e?",
+        "a": "Ew têkiliyên malbatê xurt dike û di Îslamê de berpirsiyariyek girîng e."
+      },
+      "tt": {
+        "q": "Ни өчен туганлык җепләрен саклау мөһим?",
+        "a": "Ул гаилә бәйләнешләрен ныгыта һәм Исламда мөһим җаваплылык санала."
+      },
+      "ar": {
+        "q": "لِمَاذَا صِلَةُ الرَّحِمِ مُهِمَّةٌ؟",
+        "a": "تُقَوِّي صِلَاتِ الْأُسْرَةِ وَهِيَ مَسْؤُولِيَّةٌ مُهِمَّةٌ فِي الْإِسْلَامِ."
+      },
+      "es": {
+        "q": "¿Por qué es importante mantener los lazos familiares?",
+        "a": "Fortalece los lazos familiares y es una responsabilidad valorada en el islam."
+      },
+      "it": {
+        "q": "Perché è importante mantenere i legami di parentela?",
+        "a": "Rafforza i legami familiari ed è una responsabilità importante nell’Islam."
+      },
+      "pt": {
+        "q": "Por que é importante manter os laços familiares?",
+        "a": "Fortalece os laços familiares e é uma responsabilidade valorizada no Islã."
+      },
+      "ko": {
+        "q": "가족 관계를 유지하는 것이 왜 중요합니까?",
+        "a": "가족 관계를 강화하며 이슬람에서 중요하게 여기는 책임입니다."
+      },
+      "vi": {
+        "q": "Tại sao duy trì quan hệ họ hàng lại quan trọng?",
+        "a": "Nó củng cố quan hệ gia đình và là trách nhiệm được coi trọng trong Islam."
+      },
+      "ja": {
+        "q": "親族関係を保つことはなぜ重要ですか？",
+        "a": "家族の絆を強め、イスラームで重視される責任です。"
+      },
+      "zh": {
+        "q": "维护亲属关系为什么重要？",
+        "a": "它加强家庭纽带，是伊斯兰重视的一项责任。"
+      }
+    },
+    {
+      "id": 429,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Eşler arasında danışma neden önemlidir?",
+        "a": "Ortak kararları adalet ve anlayışla almaya yardımcı olur."
+      },
+      "en": {
+        "q": "Why is consultation between spouses important?",
+        "a": "It helps spouses make joint decisions with justice and understanding."
+      },
+      "de": {
+        "q": "Warum ist Beratung zwischen Ehepartnern wichtig?",
+        "a": "Sie hilft Ehepartnern, gemeinsame Entscheidungen mit Gerechtigkeit und Verständnis zu treffen."
+      },
+      "nl": {
+        "q": "Waarom is overleg tussen echtgenoten belangrijk?",
+        "a": "Het helpt echtgenoten gezamenlijke beslissingen te nemen met rechtvaardigheid en begrip."
+      },
+      "fr": {
+        "q": "Pourquoi la concertation entre époux est-elle importante ?",
+        "a": "Elle aide les époux à prendre des décisions communes avec justice et compréhension."
+      },
+      "ru": {
+        "q": "Почему совет и согласование между супругами важны?",
+        "a": "Она помогает супругам принимать общие решения со справедливостью и пониманием."
+      },
+      "ku": {
+        "q": "Çima şêwirmendî di navbera hevjînan de girîng e?",
+        "a": "Alîkar dike ku hevjîn bi dad û têgihiştinê biryarên hevpar bidin."
+      },
+      "tt": {
+        "q": "Ни өчен ир белән хатын арасында киңәшләшү мөһим?",
+        "a": "Ул ир белән хатынга гаделлек һәм аңлау белән уртак карарлар кабул итәргә ярдәм итә."
+      },
+      "ar": {
+        "q": "لِمَاذَا تَكُونُ الْمُشَاوَرَةُ بَيْنَ الزَّوْجَيْنِ مُهِمَّةً؟",
+        "a": "تُسَاعِدُ الزَّوْجَيْنِ عَلَى اتِّخَاذِ الْقَرَارَاتِ الْمُشْتَرَكَةِ بِالْعَدْلِ وَالتَّفَهُّمِ."
+      },
+      "es": {
+        "q": "¿Por qué es importante consultar entre los esposos?",
+        "a": "Ayuda a los esposos a tomar decisiones conjuntas con justicia y comprensión."
+      },
+      "it": {
+        "q": "Perché è importante consultarsi tra coniugi?",
+        "a": "Aiuta i coniugi a prendere decisioni comuni con giustizia e comprensione."
+      },
+      "pt": {
+        "q": "Por que a consulta entre os cônjuges é importante?",
+        "a": "Ajuda os cônjuges a tomar decisões conjuntas com justiça e compreensão."
+      },
+      "ko": {
+        "q": "배우자 간의 상의가 왜 중요합니까?",
+        "a": "배우자가 공정하고 이해심 있게 공동 결정을 내리는 데 도움이 됩니다."
+      },
+      "vi": {
+        "q": "Tại sao vợ chồng bàn bạc với nhau lại quan trọng?",
+        "a": "Giúp vợ chồng đưa ra quyết định chung với công bằng và thấu hiểu."
+      },
+      "ja": {
+        "q": "夫婦間の相談はなぜ重要ですか？",
+        "a": "夫婦が公正と理解をもって共同の決定をする助けになります。"
+      },
+      "zh": {
+        "q": "夫妻之间为什么要协商？",
+        "a": "有助于夫妻以公平和理解作出共同决定。"
+      }
+    },
+    {
+      "id": 430,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Aile içinde adalet neden gereklidir?",
+        "a": "Haksızlığı ve ayrımcılığı önler."
+      },
+      "en": {
+        "q": "Why is justice necessary within the family?",
+        "a": "It prevents injustice and discrimination."
+      },
+      "de": {
+        "q": "Warum ist Gerechtigkeit in der Familie notwendig?",
+        "a": "Sie verhindert Ungerechtigkeit und Diskriminierung."
+      },
+      "nl": {
+        "q": "Waarom is rechtvaardigheid binnen het gezin nodig?",
+        "a": "Het voorkomt onrecht en discriminatie."
+      },
+      "fr": {
+        "q": "Pourquoi la justice est-elle nécessaire dans la famille ?",
+        "a": "Elle prévient l’injustice et la discrimination."
+      },
+      "ru": {
+        "q": "Почему справедливость необходима в семье?",
+        "a": "Она предотвращает несправедливость и дискриминацию."
+      },
+      "ku": {
+        "q": "Çima dad di nav malbatê de pêwîst e?",
+        "a": "Ew neheqî û cudakeriyê pêş dike."
+      },
+      "tt": {
+        "q": "Ни өчен гаиләдә гаделлек кирәк?",
+        "a": "Ул гаделсезлек һәм аерым карауны булдырмый."
+      },
+      "ar": {
+        "q": "لِمَاذَا الْعَدْلُ ضَرُورِيٌّ فِي الْأُسْرَةِ؟",
+        "a": "يَمْنَعُ الظُّلْمَ وَالتَّمْيِيزَ."
+      },
+      "es": {
+        "q": "¿Por qué es necesaria la justicia en la familia?",
+        "a": "Previene la injusticia y la discriminación."
+      },
+      "it": {
+        "q": "Perché la giustizia è necessaria nella famiglia?",
+        "a": "Previene l’ingiustizia e la discriminazione."
+      },
+      "pt": {
+        "q": "Por que a justiça é necessária na família?",
+        "a": "Previne a injustiça e a discriminação."
+      },
+      "ko": {
+        "q": "가정에서 공정함이 왜 필요합니까?",
+        "a": "불의와 차별을 막습니다."
+      },
+      "vi": {
+        "q": "Tại sao công bằng là cần thiết trong gia đình?",
+        "a": "Ngăn ngừa bất công và phân biệt đối xử."
+      },
+      "ja": {
+        "q": "家族の中で正義が必要なのはなぜですか？",
+        "a": "不正と差別を防ぎます。"
+      },
+      "zh": {
+        "q": "家庭中为什么需要公平？",
+        "a": "防止不公和歧视。"
+      }
+    },
+    {
+      "id": 431,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Ailede merhamet nasıl gösterilir?",
+        "a": "Dinlemek, affetmek, destek olmak ve incitmemekle."
+      },
+      "en": {
+        "q": "How is mercy shown in the family?",
+        "a": "By listening, forgiving, supporting and not hurting one another."
+      },
+      "de": {
+        "q": "Wie zeigt man Barmherzigkeit in der Familie?",
+        "a": "Durch Zuhören, Vergeben, Unterstützen und Nichtverletzen."
+      },
+      "nl": {
+        "q": "Hoe wordt barmhartigheid in het gezin getoond?",
+        "a": "Door te luisteren, te vergeven, te steunen en elkaar niet te kwetsen."
+      },
+      "fr": {
+        "q": "Comment la miséricorde se manifeste-t-elle dans la famille ?",
+        "a": "En écoutant, en pardonnant, en soutenant et en ne blessant pas."
+      },
+      "ru": {
+        "q": "Как проявляется милосердие в семье?",
+        "a": "Слушая, прощая, поддерживая и не причиняя боли."
+      },
+      "ku": {
+        "q": "Di malbatê de merhemet çawa tê nîşandan?",
+        "a": "Bi guhdarîkirin, efûkirin, piştgirîkirin û neêşandinê."
+      },
+      "tt": {
+        "q": "Гаиләдә мәрхәмәт ничек күрсәтелә?",
+        "a": "Тыңлау, гафу итү, ярдәм итү һәм рәнҗетмәү белән."
+      },
+      "ar": {
+        "q": "كَيْفَ تُظْهَرُ الرَّحْمَةُ فِي الْأُسْرَةِ؟",
+        "a": "بِالِاسْتِمَاعِ وَالْعَفْوِ وَالدَّعْمِ وَعَدَمِ الْإِيذَاءِ."
+      },
+      "es": {
+        "q": "¿Cómo se muestra la misericordia en la familia?",
+        "a": "Escuchando, perdonando, apoyando y sin hacer daño."
+      },
+      "it": {
+        "q": "Come si manifesta la misericordia nella famiglia?",
+        "a": "Ascoltando, perdonando, sostenendo e senza ferire."
+      },
+      "pt": {
+        "q": "Como se demonstra a misericórdia na família?",
+        "a": "Ouvindo, perdoando, apoiando e não magoando."
+      },
+      "ko": {
+        "q": "가정에서 자비는 어떻게 나타납니까?",
+        "a": "경청하고 용서하며 돕고 상처 주지 않음으로써입니다."
+      },
+      "vi": {
+        "q": "Lòng thương xót được thể hiện trong gia đình như thế nào?",
+        "a": "Bằng cách lắng nghe, tha thứ, hỗ trợ và không làm tổn thương."
+      },
+      "ja": {
+        "q": "家族の中で慈悲はどのように示されますか？",
+        "a": "耳を傾け、赦し、支え、傷つけないことによってです。"
+      },
+      "zh": {
+        "q": "家庭中如何体现慈爱？",
+        "a": "通过倾听、宽恕、支持和不伤害来体现。"
+      }
+    },
+    {
+      "id": 432,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Çocuk eğitimi neden önemlidir?",
+        "a": "İnanç, ahlâk ve sorumluluk bilincinin gelişmesi için."
+      },
+      "en": {
+        "q": "Why is children’s education important?",
+        "a": "To develop awareness of faith, morality and responsibility."
+      },
+      "de": {
+        "q": "Warum ist die Erziehung der Kinder wichtig?",
+        "a": "Zur Entwicklung des Bewusstseins für Glauben, Moral und Verantwortung."
+      },
+      "nl": {
+        "q": "Waarom is de opvoeding van kinderen belangrijk?",
+        "a": "Om bewustzijn van geloof, moraal en verantwoordelijkheid te ontwikkelen."
+      },
+      "fr": {
+        "q": "Pourquoi l’éducation des enfants est-elle importante ?",
+        "a": "Pour développer la conscience de la foi, de la morale et de la responsabilité."
+      },
+      "ru": {
+        "q": "Почему воспитание детей важно?",
+        "a": "Для развития осознания веры, нравственности и ответственности."
+      },
+      "ku": {
+        "q": "Çima perwerdehiya zarokan girîng e?",
+        "a": "Ji bo pêşxistina hişmendiya bawerî, exlaq û berpirsiyariyê."
+      },
+      "tt": {
+        "q": "Ни өчен балалар тәрбиясе мөһим?",
+        "a": "Иман, әхлак һәм җаваплылык аңын үстерү өчен."
+      },
+      "ar": {
+        "q": "لِمَاذَا تَرْبِيَةُ الْأَطْفَالِ مُهِمَّةٌ؟",
+        "a": "لِتَنْمِيَةِ وَعْيِ الْإِيمَانِ وَالْأَخْلَاقِ وَالْمَسْؤُولِيَّةِ."
+      },
+      "es": {
+        "q": "¿Por qué es importante la educación de los hijos?",
+        "a": "Para desarrollar la conciencia de la fe, la moral y la responsabilidad."
+      },
+      "it": {
+        "q": "Perché è importante l’educazione dei figli?",
+        "a": "Per sviluppare la consapevolezza della fede, della morale e della responsabilità."
+      },
+      "pt": {
+        "q": "Por que a educação das crianças é importante?",
+        "a": "Para desenvolver a consciência da fé, da moral e da responsabilidade."
+      },
+      "ko": {
+        "q": "자녀 교육이 왜 중요합니까?",
+        "a": "신앙, 도덕과 책임 의식을 발전시키기 위해서입니다."
+      },
+      "vi": {
+        "q": "Tại sao giáo dục trẻ em quan trọng?",
+        "a": "Để phát triển ý thức về đức tin, đạo đức và trách nhiệm."
+      },
+      "ja": {
+        "q": "子どもの教育はなぜ重要ですか？",
+        "a": "信仰、道徳、責任の意識を育てるためです。"
+      },
+      "zh": {
+        "q": "儿童教育为什么重要？",
+        "a": "为了培养信仰、道德和责任意识。"
+      }
+    },
+    {
+      "id": 433,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Aile içinde sır saklamak her zaman doğru mudur?",
+        "a": "Emanet ve mahremiyete saygı önemlidir; ancak zulmü veya ciddi zararı gizlemek doğru değildir."
+      },
+      "en": {
+        "q": "Is keeping secrets in the family always right?",
+        "a": "Respect for trust and privacy is important; however, hiding abuse or serious harm is not right."
+      },
+      "de": {
+        "q": "Ist es in der Familie immer richtig, Geheimnisse zu bewahren?",
+        "a": "Der Respekt vor anvertrauten Dingen und Privatsphäre ist wichtig; Missbrauch oder ernsthaften Schaden zu verbergen ist jedoch nicht richtig."
+      },
+      "nl": {
+        "q": "Is geheimhouding binnen het gezin altijd juist?",
+        "a": "Respect voor toevertrouwdheid en privacy is belangrijk; misbruik of ernstige schade verbergen is echter niet juist."
+      },
+      "fr": {
+        "q": "Garder un secret dans la famille est-il toujours juste ?",
+        "a": "Le respect de la confiance et de la vie privée est important ; cependant, cacher une injustice ou un grave danger n’est pas correct."
+      },
+      "ru": {
+        "q": "Всегда ли правильно хранить секреты в семье?",
+        "a": "Уважение к доверию и частной жизни важно; однако скрывать ظلم или серьезный вред неправильно."
+      },
+      "ku": {
+        "q": "Di malbatê de veşartina sirran her dem rast e?",
+        "a": "Rêzgirtina emanet û mahremiyê girîng e; lê veşartina zulm an zirarek cidî rast nîne."
+      },
+      "tt": {
+        "q": "Гаиләдә сер саклау һәрвакыт дөресме?",
+        "a": "Аманәткә һәм шәхси тормышка хөрмәт мөһим; әмма золымны яки җитди зыянны яшерү дөрес түгел."
+      },
+      "ar": {
+        "q": "هَلْ كِتْمَانُ الْأَسْرَارِ فِي الْأُسْرَةِ صَحِيحٌ دَائِمًا؟",
+        "a": "احْتِرَامُ الْأَمَانَةِ وَالْخُصُوصِيَّةِ مُهِمٌّ، وَلَكِنْ لَيْسَ صَحِيحًا إِخْفَاءُ الظُّلْمِ أَوِ الضَّرَرِ الْخَطِيرِ."
+      },
+      "es": {
+        "q": "¿Es siempre correcto guardar secretos en la familia?",
+        "a": "El respeto a la confianza y la privacidad es importante; sin embargo, no es correcto ocultar abusos o daños graves."
+      },
+      "it": {
+        "q": "È sempre giusto mantenere segreti in famiglia?",
+        "a": "Il rispetto della fiducia e della privacy è importante; tuttavia non è corretto nascondere abusi o gravi danni."
+      },
+      "pt": {
+        "q": "É sempre correto guardar segredos na família?",
+        "a": "Respeitar a confiança e a privacidade é importante; porém, não é correto esconder abuso ou dano grave."
+      },
+      "ko": {
+        "q": "가족 안에서 비밀을 지키는 것이 항상 옳습니까?",
+        "a": "신뢰와 사생활을 존중하는 것은 중요하지만, 학대나 심각한 피해를 숨기는 것은 옳지 않습니다."
+      },
+      "vi": {
+        "q": "Giữ bí mật trong gia đình có phải lúc nào cũng đúng không?",
+        "a": "Tôn trọng sự tin cậy và riêng tư là quan trọng; tuy nhiên, che giấu sự áp bức hoặc tổn hại nghiêm trọng là không đúng."
+      },
+      "ja": {
+        "q": "家族内で秘密を守ることは常に正しいですか？",
+        "a": "信頼とプライバシーを尊重することは重要ですが、虐待や重大な害を隠すのは正しくありません。"
+      },
+      "zh": {
+        "q": "在家庭中保守秘密总是正确的吗？",
+        "a": "尊重信托和隐私很重要；但隐瞒 ظلم 或严重伤害是不对的。"
+      }
+    },
+    {
+      "id": 434,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Evlilikte güven neden önemlidir?",
+        "a": "Sağlıklı iletişim ve huzurun temelidir."
+      },
+      "en": {
+        "q": "Why is trust important in marriage?",
+        "a": "It is the foundation of healthy communication and peace."
+      },
+      "de": {
+        "q": "Warum ist Vertrauen in der Ehe wichtig?",
+        "a": "Sie ist die Grundlage für gesunde Kommunikation und Frieden."
+      },
+      "nl": {
+        "q": "Waarom is vertrouwen in het huwelijk belangrijk?",
+        "a": "Het is de basis van gezonde communicatie en vrede."
+      },
+      "fr": {
+        "q": "Pourquoi la confiance est-elle importante dans le mariage ?",
+        "a": "Elle est la base d’une communication saine et de la paix."
+      },
+      "ru": {
+        "q": "Почему доверие важно в браке?",
+        "a": "Это основа здорового общения и спокойствия."
+      },
+      "ku": {
+        "q": "Çima bawerî di zewacê de girîng e?",
+        "a": "E bingeha ragihandina tendurist û aramiyê ye."
+      },
+      "tt": {
+        "q": "Ни өчен никахта ышаныч мөһим?",
+        "a": "Ул сәламәт аралашу һәм тынычлыкның нигезе."
+      },
+      "ar": {
+        "q": "لِمَاذَا الثِّقَةُ مُهِمَّةٌ فِي الزَّوَاجِ؟",
+        "a": "هِيَ أَسَاسُ التَّوَاصُلِ السَّلِيمِ وَالسَّكِينَةِ."
+      },
+      "es": {
+        "q": "¿Por qué es importante la confianza en el matrimonio?",
+        "a": "Es la base de una comunicación sana y de la paz."
+      },
+      "it": {
+        "q": "Perché la fiducia è importante nel matrimonio?",
+        "a": "È la base di una comunicazione sana e della serenità."
+      },
+      "pt": {
+        "q": "Por que a confiança é importante no casamento?",
+        "a": "É a base de uma comunicação saudável e da paz."
+      },
+      "ko": {
+        "q": "결혼에서 신뢰가 왜 중요합니까?",
+        "a": "건강한 의사소통과 평온의 기초입니다."
+      },
+      "vi": {
+        "q": "Tại sao niềm tin quan trọng trong hôn nhân?",
+        "a": "Là nền tảng của giao tiếp lành mạnh và bình an."
+      },
+      "ja": {
+        "q": "結婚生活で信頼がなぜ重要ですか？",
+        "a": "健全なコミュニケーションと平穏の基盤です。"
+      },
+      "zh": {
+        "q": "婚姻中为什么信任很重要？",
+        "a": "是健康沟通和安宁的基础。"
+      }
+    },
+    {
+      "id": 435,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Boşanma İslâm’da nasıl görülür?",
+        "a": "Mümkün olduğunda aileyi korumak esastır; ancak ciddi uyuşmazlıklarda şer‘î kurallara göre ayrılık mümkündür."
+      },
+      "en": {
+        "q": "How is divorce viewed in Islam?",
+        "a": "Protecting the family when possible is essential; however, separation is possible in serious disputes according to Islamic rules."
+      },
+      "de": {
+        "q": "Wie wird die Scheidung im Islam betrachtet?",
+        "a": "Wenn möglich, ist der Schutz der Familie grundlegend; bei schweren Konflikten ist jedoch eine Trennung nach islamischen Regeln möglich."
+      },
+      "nl": {
+        "q": "Hoe wordt echtscheiding in de islam gezien?",
+        "a": "Het gezin beschermen waar mogelijk is essentieel; bij ernstige conflicten is scheiding volgens islamitische regels echter mogelijk."
+      },
+      "fr": {
+        "q": "Comment le divorce est-il considéré en islam ?",
+        "a": "Préserver la famille lorsque cela est possible est essentiel ; toutefois, en cas de conflits graves, la séparation est possible selon les règles islamiques."
+      },
+      "ru": {
+        "q": "Как рассматривается развод в исламе?",
+        "a": "По возможности сохранение семьи является основой; однако при серьезных конфликтах развод возможен согласно исламским правилам."
+      },
+      "ku": {
+        "q": "Di Îslamê de berdayîn çawa tê dîtin?",
+        "a": "Dema ku gengaz e parastina malbatê bingehîn e; lê di nakokiyên cidî de li gorî rêzikên şerîetê veqetandin gengaz e."
+      },
+      "tt": {
+        "q": "Исламда аерылышуга ничек карала?",
+        "a": "Мөмкин булганда гаиләне саклау төп максат; әмма җитди каршылыкларда шәригать кагыйдәләре буенча аерылу мөмкин."
+      },
+      "ar": {
+        "q": "كَيْفَ يُنْظَرُ إِلَى الطَّلَاقِ فِي الْإِسْلَامِ؟",
+        "a": "الأَصْلُ حِفْظُ الْأُسْرَةِ مَا أَمْكَنَ، وَلَكِنْ عِنْدَ النِّزَاعِ الشَّدِيدِ يَجُوزُ الِافْتِرَاقُ وَفْقَ الْأَحْكَامِ الشَّرْعِيَّةِ."
+      },
+      "es": {
+        "q": "¿Cómo se considera el divorcio en el islam?",
+        "a": "Lo esencial es proteger la familia cuando sea posible; en conflictos graves, la separación es posible según las normas islámicas."
+      },
+      "it": {
+        "q": "Come viene considerato il divorzio nell’Islam?",
+        "a": "È essenziale proteggere la famiglia quando possibile; tuttavia, nei conflitti gravi, la separazione è possibile secondo le regole islamiche."
+      },
+      "pt": {
+        "q": "Como o divórcio é visto no Islã?",
+        "a": "É essencial proteger a família quando possível; porém, em conflitos graves, a separação é possível segundo as regras islâmicas."
+      },
+      "ko": {
+        "q": "이슬람에서 이혼은 어떻게 봅니까?",
+        "a": "가능하면 가정을 보호하는 것이 원칙이지만, 심각한 갈등에서는 이슬람 법규에 따라 별거 또는 이혼이 가능합니다."
+      },
+      "vi": {
+        "q": "Ly hôn được nhìn nhận thế nào trong Islam?",
+        "a": "Cốt lõi là bảo vệ gia đình khi có thể; nhưng trong bất đồng nghiêm trọng, có thể chia tay theo các quy tắc Hồi giáo."
+      },
+      "ja": {
+        "q": "イスラームでは離婚はどのように考えられていますか？",
+        "a": "可能な限り家庭を守ることが基本ですが、深刻な対立ではイスラームの規則に従って別離が可能です。"
+      },
+      "zh": {
+        "q": "伊斯兰如何看待离婚？",
+        "a": "在可能的情况下应维护家庭；但发生严重冲突时，可依伊斯兰规则分离。"
+      }
+    },
+    {
+      "id": 436,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "Akrabalık ilişkilerinde sabır neden önemlidir?",
+        "a": "Farklılıklar ve kırgınlıklar karşısında bağları korumaya yardımcı olur."
+      },
+      "en": {
+        "q": "Why is patience important in family relationships?",
+        "a": "It helps preserve relationships despite differences and hurt feelings."
+      },
+      "de": {
+        "q": "Warum ist Geduld in Verwandtschaftsbeziehungen wichtig?",
+        "a": "Sie hilft, Beziehungen trotz Unterschieden und Verletzungen zu bewahren."
+      },
+      "nl": {
+        "q": "Waarom is geduld belangrijk in familieverhoudingen?",
+        "a": "Het helpt relaties te behouden ondanks verschillen en gekwetste gevoelens."
+      },
+      "fr": {
+        "q": "Pourquoi la patience est-elle importante dans les relations familiales ?",
+        "a": "Elle aide à préserver les liens malgré les différences et les blessures affectives."
+      },
+      "ru": {
+        "q": "Почему терпение важно в родственных отношениях?",
+        "a": "Она помогает сохранять отношения несмотря на различия и обиды."
+      },
+      "ku": {
+        "q": "Çima sebr di têkiliyên xizmtiyê de girîng e?",
+        "a": "E alîkar e ku tevgerên têkiliyê li hember cûdahî û dilşewitî werin parastin."
+      },
+      "tt": {
+        "q": "Ни өчен туганлык мөнәсәбәтләрендә сабырлык мөһим?",
+        "a": "Ул аермалыклар һәм үпкәләргә карамастан мөнәсәбәтләрне сакларга ярдәм итә."
+      },
+      "ar": {
+        "q": "لِمَاذَا الصَّبْرُ مُهِمٌّ فِي الْعَلَاقَاتِ الْأُسَرِيَّةِ؟",
+        "a": "تُسَاعِدُ عَلَى حِفْظِ الرَّوَابِطِ رَغْمَ الِاخْتِلَافَاتِ وَالْجُرُوحِ النَّفْسِيَّةِ."
+      },
+      "es": {
+        "q": "¿Por qué es importante la paciencia en las relaciones familiares?",
+        "a": "Ayuda a conservar los lazos a pesar de las diferencias y los resentimientos."
+      },
+      "it": {
+        "q": "Perché la pazienza è importante nei rapporti familiari?",
+        "a": "Aiuta a preservare i legami nonostante le differenze e le offese."
+      },
+      "pt": {
+        "q": "Por que a paciência é importante nas relações familiares?",
+        "a": "Ajuda a preservar os laços apesar das diferenças e mágoas."
+      },
+      "ko": {
+        "q": "가족 관계에서 인내가 왜 중요합니까?",
+        "a": "차이와 서운함에도 관계를 지키는 데 도움이 됩니다."
+      },
+      "vi": {
+        "q": "Tại sao kiên nhẫn quan trọng trong các mối quan hệ họ hàng?",
+        "a": "Giúp duy trì mối quan hệ bất chấp khác biệt và tổn thương."
+      },
+      "ja": {
+        "q": "親族関係で忍耐がなぜ重要ですか？",
+        "a": "違いや心の傷があっても関係を保つ助けになります。"
+      },
+      "zh": {
+        "q": "亲属关系中为什么需要耐心？",
+        "a": "有助于在差异和受伤的情绪中保持关系。"
+      }
+    },
+    {
+      "id": 437,
+      "day": 23,
+      "sources": [
+        "📖 Kur’an — Rûm 30:21 — https://quran.com/30/21",
+        "📖 Kur’an — İsrâ 17:23 — https://quran.com/17/23"
+      ],
+      "tr": {
+        "q": "İslâm’da ailenin temel ruhu nedir?",
+        "a": "Sevgi, merhamet, sorumluluk, adalet ve Allah’a kulluk."
+      },
+      "en": {
+        "q": "What is the essential spirit of family in Islam?",
+        "a": "Love, mercy, responsibility, justice and worship of Allah."
+      },
+      "de": {
+        "q": "Was ist der grundlegende Geist der Familie im Islam?",
+        "a": "Liebe, Barmherzigkeit, Verantwortung, Gerechtigkeit und die Anbetung Allahs."
+      },
+      "nl": {
+        "q": "Wat is de kern van het gezin in de islam?",
+        "a": "Liefde, barmhartigheid, verantwoordelijkheid, rechtvaardigheid en aanbidding van Allah."
+      },
+      "fr": {
+        "q": "Quel est l’esprit fondamental de la famille en islam ?",
+        "a": "L’amour, la miséricorde, la responsabilité, la justice et l’adoration d’Allah."
+      },
+      "ru": {
+        "q": "Каков основной дух семьи в исламе?",
+        "a": "Любовь, милосердие, ответственность, справедливость и поклонение Аллаху."
+      },
+      "ku": {
+        "q": "Di Îslamê de ruhê bingehîn ê malbatê çi ye?",
+        "a": "Evîn, merhemet, berpirsiyarî, dad û perestina Allah."
+      },
+      "tt": {
+        "q": "Исламда гаиләнең төп рухы нинди?",
+        "a": "Мәхәббәт, мәрхәмәт, җаваплылык, гаделлек һәм Аллаһка гыйбадәт."
+      },
+      "ar": {
+        "q": "مَا هُوَ الرُّوحُ الْأَسَاسِيُّ لِلْأُسْرَةِ فِي الْإِسْلَامِ؟",
+        "a": "الْمَحَبَّةُ وَالرَّحْمَةُ وَالْمَسْؤُولِيَّةُ وَالْعَدْلُ وَعِبَادَةُ اللَّهِ."
+      },
+      "es": {
+        "q": "¿Cuál es el espíritu fundamental de la familia en el islam?",
+        "a": "Amor, misericordia, responsabilidad, justicia y adoración de Allah."
+      },
+      "it": {
+        "q": "Qual è lo spirito fondamentale della famiglia nell’Islam?",
+        "a": "Amore, misericordia, responsabilità, giustizia e adorazione di Allah."
+      },
+      "pt": {
+        "q": "Qual é o espírito fundamental da família no Islã?",
+        "a": "Amor, misericórdia, responsabilidade, justiça e adoração a Allah."
+      },
+      "ko": {
+        "q": "이슬람에서 가족의 기본 정신은 무엇입니까?",
+        "a": "사랑, 자비, 책임, 공정함과 알라에 대한 예배입니다."
+      },
+      "vi": {
+        "q": "Tinh thần cốt lõi của gia đình trong Islam là gì?",
+        "a": "Tình yêu, lòng thương xót, trách nhiệm, công bằng và thờ phượng Allah."
+      },
+      "ja": {
+        "q": "イスラームにおける家族の基本的精神は何ですか？",
+        "a": "愛、慈悲、責任、公正、そしてアッラーへの礼拝です。"
+      },
+      "zh": {
+        "q": "伊斯兰家庭的核心精神是什么？",
+        "a": "爱、慈悲、责任、公平以及对真主的崇拜。"
+      }
+    }
+  ]
+}
